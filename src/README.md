@@ -25,10 +25,10 @@
 | `--dropout=<float>` | Dropout probability. Default: 0.25 |
 | `--alpha=<float>` | Label smoothing rate. Default: 0.0 |
 | `--test=test_set` | Puts program into testing mode (skips training). Takes the name of the subfolder to do testing with as an argument. Pairs with `--dataset_path` to get the full path to data. Default: test |
-| `--subset=[0|1|2]` | Break data into [0] Full, [1] Theorems Only, or [2] Proofs Only. Default: 0 |
+| `--subset=[0\|1\|2]` | Break data into [0] Full, [1] Theorems Only, or [2] Proofs Only. Default: 0 |
 | `--load` | Resume training by loading the `.pt` file specified by `--model`. |
 | `--model=model_name` | Name of the `.pt` file (excluding `.pt`) the model will be saved to/loaded from. Default: ltc |
-| `--scheduler=[step|exponential|plateau]` | Learning rate scheduler. Default: step |
+| `--scheduler=[step\|exponential\|plateau]` | Learning rate scheduler. Default: step |
 | `--step=<int>` | Step size for StepLR learning rate scheduler. Default: 25 |
 | `--gamma=<float>` | Gamma value for ExponentialLR learning rate scheduler. Default: 0.9 |
 | `--patience=<int>` | Patience size for ReduceLROnPlateau learning rate scheduler. Default: 10 |
