@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:70> $ is $ <var:K> \times <var:u> $ assuming $ <var:K> $ , and $ <var:u> $ where $ <var:K> $ , $ <var:u> > <nat:1> $ . \end{theorem} \begin{proof} Assume $ <var:u> = <nat:7> $ , $ <var:K> = <nat:10> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:K> <var:u> : nat , ( <nat:70> = <var:K> * <var:u> ) /\ ( <var:K> > <nat:1> ) /\ ( <var:u> > <nat:1> ) . Proof . exists <nat:10> . exists <nat:7> . lia . Qed . 

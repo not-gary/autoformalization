@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:i> \in \mathbb{N} $ such that $ <var:i> $ more than or equal to <nat:2> plus satisfying the condition that $ <nat:128> $ is $ <var:i> ^ <nat:7> $ . \end{theorem} \begin{proof} Allow $ <var:i> = <nat:2> $ . We prove $ <var:i> ^ <nat:7> = <nat:128> $ . We prove the formula holds seeing that $ <nat:128> = <var:i> ^ <nat:7> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:i> : nat , ( <var:i> >= <nat:2> ) /\ ( <nat:128> = <var:i> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:1040> is the multiplication between numbers $ <var:s> $ , $ <var:B> $ and $ <var:A> $ . \end{theorem} \begin{proof} Let $ <var:B> = <nat:10> $ , $ <var:A> = <nat:13> $ , $ <var:s> = <nat:8> $ . We justify $ <nat:1040> = <var:s> \cdot <var:B> \cdot <var:A> $ . Note that $ <nat:1040> = <var:B> * <var:s> * <var:A> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:s> <var:B> <var:A> : nat , ( <nat:1040> = <var:s> * <var:B> * <var:A> ) . Proof . exists <nat:8> . exists <nat:10> . exists <nat:13> . repeat split . all : lia . Qed . 

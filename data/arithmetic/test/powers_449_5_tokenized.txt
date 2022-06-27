@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} We denote that given there exists whole number $ <var:J> $ denote that some integer $ <var:U> $ will be considered to be a <def:penteract> when $ <var:U> = <var:J> ^ <nat:5> $ . Thus the natural number <nat:32> is a <def:penteract> whole number . \end{theorem} \begin{proof} Notice that $ <nat:2> ^ <nat:5> = <nat:32> = <var:J> ^ <nat:5> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:penteract> ( <var:U> : nat ) := exists <var:J> : nat , ( <var:U> = <var:J> ^ <nat:5> ) . Theorem <genP:1> : <def:penteract> <nat:32> . Proof . unfold <def:penteract> . exists <nat:2> . auto . Qed . 

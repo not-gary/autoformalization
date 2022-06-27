@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:k> \cdot <var:O> \cdot <var:h> $ is the same as $ <nat:120> $ . \end{theorem} \begin{proof} We show $ <var:O> \cdot <var:h> \cdot <var:k> = <nat:120> $ . Notice $ <nat:5> \times <nat:2> \times <nat:12> = <nat:120> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:h> <var:O> <var:k> : nat , ( <var:k> * <var:O> * <var:h> = <nat:120> ) . Proof . exists <nat:2> . exists <nat:5> . exists <nat:12> . repeat split . all : lia . Qed . 

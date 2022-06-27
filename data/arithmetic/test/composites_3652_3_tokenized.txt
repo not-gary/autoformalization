@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:100> $ equals $ <var:X> * <var:y> * <var:P> $ . \end{theorem} \begin{proof} We prove the claim is valid on account of $ <nat:10> \times <nat:2> \times <nat:5> = <nat:100> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:P> <var:X> <var:y> : nat , ( <nat:100> = <var:X> * <var:y> * <var:P> ) . Proof . exists <nat:10> . exists <nat:2> . exists <nat:5> . repeat split . all : lia . Qed . 

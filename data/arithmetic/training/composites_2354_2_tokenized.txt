@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} We say that whenever there are natural numbers $ <var:D> $ , $ <var:l> $ say that $ <var:P> \in \mathbb{N} $ will be a <def:two-composite> positive integer given $ <var:D> * <var:l> = <var:P> $ . Thus $ <nat:27> = <var:P> $ is a <def:two-composite> integer . \end{theorem} \begin{proof} Allow $ <var:l> = <nat:3> $ , $ <var:D> = <nat:9> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Definition <def:two-composite> ( <var:P> : nat ) := exists <var:D> <var:l> : nat , ( <var:D> * <var:l> = <var:P> ) . Theorem <genP:1> : <def:two-composite> <nat:27> . Proof . unfold <def:two-composite> . exists <nat:9> . exists <nat:3> . lia . Qed . 

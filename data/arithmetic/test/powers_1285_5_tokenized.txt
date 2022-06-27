@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some number $ <var:Z> $ such that $ <nat:32> $ is equivalent to $ <var:Z> ^ <nat:5> $ . \end{theorem} \begin{proof} Allow $ <var:Z> = <nat:2> $ . We show <nat:32> is the exponent between $ <var:Z> \in \mathbb{N} $ taken to the exponent <nat:5> . This suggests the claim is true . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <nat:32> = <var:Z> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

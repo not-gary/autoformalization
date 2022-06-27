@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} Take $ <var:l> $ as whole numbers . Claim that some whole number $ <var:N> $ will be considered to be a <def:square> whole number assuming $ <var:l> ^ <nat:2> = <var:N> $ . \end{definition} \begin{theorem} The number <nat:4> is a <def:square> integer . \end{theorem} \begin{proof} Take $ <var:l> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:square> ( <var:N> : nat ) := exists <var:l> : nat , ( <var:l> ^ <nat:2> = <var:N> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

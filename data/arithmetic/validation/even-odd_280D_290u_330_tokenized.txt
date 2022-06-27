@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using every variables $ <var:D> $ , and $ <var:u> $ the expression $ <nat:330> + <var:D> \cdot <nat:280> + <var:u> \cdot <nat:290> $ is even . \end{theorem} \begin{proof} The addition between even numbers and an even element of $ \mathbb{Z}^+ $ will be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:D> <var:u> : nat , Nat . even ( <nat:280> * <var:D> + <nat:290> * <var:u> + <nat:330> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

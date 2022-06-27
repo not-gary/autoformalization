@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:f> <nat:346> + <var:e> <nat:80> + <nat:58> $ is even using terms $ <var:f> $ , and $ <var:e> $ . \end{theorem} \begin{proof} We demonstrate our theorem must be true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:f> <var:e> : nat , Nat . even ( <nat:346> * <var:f> + <nat:80> * <var:e> + <nat:58> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

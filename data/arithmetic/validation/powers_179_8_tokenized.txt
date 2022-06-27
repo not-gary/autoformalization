@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:F> \in \mathbb{Z}^+ $ where $ <var:F> $ larger than <nat:1> and such that $ <var:F> ^ <nat:8> $ equals $ <nat:256> $ . \end{theorem} \begin{proof} Let $ <var:F> = <nat:2> $ . We confirm our theorem is valid on account of In view of $ <var:F> = <nat:2> > <nat:1> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <var:F> > <nat:1> ) /\ ( <var:F> ^ <nat:8> = <nat:256> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . apply <genH> . auto . Qed . 

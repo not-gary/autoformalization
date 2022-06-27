@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> $ is equal to $ <var:Q> ^ <nat:2> $ . \end{theorem} \begin{proof} Allow $ <var:Q> = <nat:2> $ . We present the claim is true for $ <nat:2> ^ <nat:2> = <nat:4> = <var:Q> ^ <nat:2> $ . As a result , $ <var:Q> ^ <nat:2> = <nat:4> $ has been verified . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Q> : nat , ( <nat:4> = <var:Q> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:t> \in \mathbb{Z}^+ $ where $ <var:t> $ greater than <nat:1> as well as such that the positive integer <nat:128> is the exponent of number $ <var:t> \in \mathbb{Z}^+ $ taken to the degree <nat:7> . \end{theorem} \begin{proof} We confirm the claim is true in view of $ <nat:128> = <nat:2> ^ <nat:7> $ . Hence , $ <var:t> ^ <nat:7> = <nat:128> $ is validated . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <var:t> > <nat:1> ) /\ ( <nat:128> = <var:t> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

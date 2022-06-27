@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:H> \times <nat:306> + <var:v> \times <nat:84> + <nat:168> \times <var:Q> + <nat:440> $ will be even taking all integers $ <var:H> $ , $ <var:v> $ , and $ <var:Q> $ . \end{theorem} \begin{proof} Claim trivially holds . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:H> <var:v> <var:Q> : nat , Nat . even ( <nat:306> * <var:H> + <nat:84> * <var:v> + <nat:168> * <var:Q> + <nat:440> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

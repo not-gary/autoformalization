@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:c> \times <var:V> \times <var:D> \times <var:O> = <nat:1620> $ . \end{theorem} \begin{proof} We confirm our thesis is true as $ <nat:12> \cdot <nat:3> \cdot <nat:9> \cdot <nat:5> = <nat:1620> = <var:D> \cdot <var:c> \cdot <var:O> \cdot <var:V> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:O> <var:D> <var:c> <var:V> : nat , ( <var:c> * <var:V> * <var:D> * <var:O> = <nat:1620> ) . Proof . exists <nat:9> . exists <nat:12> . exists <nat:3> . exists <nat:5> . repeat split . all : lia . Qed . 

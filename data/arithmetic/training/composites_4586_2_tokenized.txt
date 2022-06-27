@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:D> $ and $ <var:g> \in \mathbb{N} $ where $ <var:g> \cdot <var:D> = <nat:90> $ . \end{theorem} \begin{proof} Allow $ <var:g> = <nat:10> $ and $ <var:D> = <nat:9> $ . This hints the theorem is true . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:D> <var:g> : nat , ( <var:g> * <var:D> = <nat:90> ) . Proof . exists <nat:9> . exists <nat:10> . lia . Qed . 

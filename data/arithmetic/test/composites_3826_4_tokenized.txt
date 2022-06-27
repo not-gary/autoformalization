@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:1040> = <var:U> * <var:F> * <var:H> * <var:a> $ . \end{theorem} \begin{proof} We present $ <var:a> \times <var:F> \times <var:U> \times <var:H> = <nat:1040> $ . Note $ <nat:1040> = <var:H> \cdot <var:a> \cdot <var:U> \cdot <var:F> $ hints $ <var:U> = <nat:2> $ , $ <var:F> = <nat:4> $ , $ <var:H> = <nat:13> $ , and $ <var:a> = <nat:10> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:a> <var:U> <var:F> <var:H> : nat , ( <nat:1040> = <var:U> * <var:F> * <var:H> * <var:a> ) . Proof . exists <nat:10> . exists <nat:2> . exists <nat:4> . exists <nat:13> . repeat split . all : lia . Qed . 

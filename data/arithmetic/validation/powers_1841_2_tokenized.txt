@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:d> $ are numbers so that the integer <nat:4> is the raising of of number $ <var:d> $ taken to the power <nat:2> . \end{theorem} \begin{proof} Take $ <var:d> = <nat:2> $ . Observe that $ <nat:4> = <var:d> ^ <nat:2> = <nat:2> ^ <nat:2> $ . This hints the theory is true . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <nat:4> = <var:d> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

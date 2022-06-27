@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:v> $ and $ <var:o> $ are whole numbers where $ <var:o> $ , and $ <var:v> $ more than or equivalent to <nat:2> and such that the natural number <nat:117> is the product of positive integers $ <var:v> $ , and $ <var:o> $ . \end{theorem} \begin{proof} Assume $ <var:o> = <nat:9> $ and $ <var:v> = <nat:13> $ . Observe $ <nat:117> = <var:o> * <var:v> $ . This gives the claim is true . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:v> <var:o> : nat , ( <var:o> >= <nat:2> ) /\ ( <var:v> >= <nat:2> ) /\ ( <nat:117> = <var:v> * <var:o> ) . Proof . exists <nat:13> . exists <nat:9> . lia . Qed . 

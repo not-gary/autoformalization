@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:g> ^ <nat:7> $ is equal to $ <nat:128> $ with $ <var:g> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We present $ <var:g> ^ <nat:7> = <nat:128> $ . Note that $ <var:g> ^ <nat:7> = <nat:128> $ yields $ <var:g> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:g> : nat , ( <var:g> ^ <nat:7> = <nat:128> ) . Proof . exists <nat:2> . auto . Qed . 

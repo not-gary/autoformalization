@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:8> $ is the same as $ <var:t> ^ <nat:3> $ given $ <var:t> \in \mathbb{N} $ satisfying the condition that $ <var:t> $ larger than <nat:1> . \end{theorem} \begin{proof} Notice that $ <var:t> ^ <nat:3> = <nat:8> $ suggests $ <var:t> = <nat:2> $ . Additionally notice $ <nat:2> > <nat:1> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <nat:8> = <var:t> ^ <nat:3> ) /\ ( <var:t> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

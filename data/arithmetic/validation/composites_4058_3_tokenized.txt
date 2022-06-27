@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:f> * <var:L> * <var:y> $ is the same as $ <nat:36> $ . \end{theorem} \begin{proof} We demonstrate the theory is true in consideration of $ <var:y> \times <var:f> \times <var:L> = <nat:36> $ indicates $ <var:L> = <nat:2> $ , $ <var:f> = <nat:3> $ and $ <var:y> = <nat:6> $ . Thus , $ <var:L> \cdot <var:f> \cdot <var:y> = <nat:36> $ is verified . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:y> <var:L> <var:f> : nat , ( <var:f> * <var:L> * <var:y> = <nat:36> ) . Proof . exists <nat:6> . exists <nat:2> . exists <nat:3> . repeat split . all : lia . Qed . 

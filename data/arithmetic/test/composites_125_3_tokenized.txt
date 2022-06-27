@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:56> is the product of positive integers $ <var:p> $ , $ <var:R> $ , $ <var:k> $ where $ <var:k> $ , $ <var:p> $ , and $ <var:R> $ greater than <nat:1> . \end{theorem} \begin{proof} Let $ <var:R> = <nat:2> $ , $ <var:k> = <nat:7> $ and $ <var:p> = <nat:4> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:p> <var:R> <var:k> : nat , ( <nat:56> = <var:p> * <var:R> * <var:k> ) /\ ( <var:k> > <nat:1> ) /\ ( <var:p> > <nat:1> ) /\ ( <var:R> > <nat:1> ) . Proof . exists <nat:4> . exists <nat:2> . exists <nat:7> . repeat split . all : lia . Qed . 

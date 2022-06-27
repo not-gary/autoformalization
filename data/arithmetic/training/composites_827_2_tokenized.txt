@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:48> is the multiplication between integers $ <var:a> $ , and $ <var:s> $ where $ <var:a> $ , $ <var:s> $ more than or equivalent to <nat:2> . \end{theorem} \begin{proof} We present $ <nat:48> = <var:a> \cdot <var:s> $ . Notice $ <var:s> * <var:a> = <nat:48> = <nat:8> * <nat:6> $ . This produces the formula holds . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:a> <var:s> : nat , ( <nat:48> = <var:a> * <var:s> ) /\ ( <var:a> >= <nat:2> ) /\ ( <var:s> >= <nat:2> ) . Proof . exists <nat:6> . exists <nat:8> . lia . Qed . 

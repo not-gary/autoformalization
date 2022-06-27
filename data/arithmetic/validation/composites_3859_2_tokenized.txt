@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:x> $ , $ <var:F> \in \mathbb{N} $ so that <nat:132> is the multiplication of positive integers $ <var:x> $ , and $ <var:F> \in \mathbb{N} $ . \end{theorem} \begin{proof} Assume $ <var:x> = <nat:12> $ , and $ <var:F> = <nat:11> $ . We show $ <var:x> * <var:F> = <nat:132> $ . We verify the theory is true in view of $ <var:x> \cdot <var:F> = <nat:132> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:x> <var:F> : nat , ( <nat:132> = <var:x> * <var:F> ) . Proof . exists <nat:12> . exists <nat:11> . lia . Qed . 

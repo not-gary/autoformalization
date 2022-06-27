@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:70> is the multiplication of integers $ <var:v> $ , $ <var:M> $ . \end{theorem} \begin{proof} We demonstrate <nat:70> is the multiplication between some whole numbers $ <var:v> $ and $ <var:M> $ . Observe $ <nat:70> = <var:v> \cdot <var:M> $ hints $ <var:M> = <nat:10> $ , and $ <var:v> = <nat:7> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:v> <var:M> : nat , ( <nat:70> = <var:v> * <var:M> ) . Proof . exists <nat:7> . exists <nat:10> . lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given all positive numbers $ <var:C> $ , $ <var:F> $ , $ <var:e> $ , and $ <var:d> $ $ <nat:338> + <nat:72> \times <var:F> + <var:d> \times <nat:252> + <nat:482> \times <var:C> + <var:e> \times <nat:246> $ is guaranteed to be even . \end{theorem} \begin{proof} Main result trivially is true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:C> <var:F> <var:e> <var:d> : nat , Nat . even ( <nat:72> * <var:F> + <nat:252> * <var:d> + <nat:482> * <var:C> + <nat:246> * <var:e> + <nat:338> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

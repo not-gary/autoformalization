@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> $ is equal to $ <var:M> ^ <nat:2> $ given $ <var:M> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We justify <nat:4> is the repeated product between $ <var:M> \in \mathbb{Z}^+ $ taken to the power <nat:2> . Observe $ <var:M> ^ <nat:2> = <nat:4> = <nat:2> ^ <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:M> : nat , ( <nat:4> = <var:M> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

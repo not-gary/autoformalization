@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:464> + <nat:438> <var:F> + <var:u> <nat:108> $ must be even . \end{theorem} \begin{proof} See $ <nat:464> $ is known to be even . From the knowledge the product of an even number in $ \mathbb{Z}^+ $ and any natural will be an even whole number , hence the claim is true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:F> <var:u> : nat , Nat . even ( <nat:438> * <var:F> + <nat:108> * <var:u> + <nat:464> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:464> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

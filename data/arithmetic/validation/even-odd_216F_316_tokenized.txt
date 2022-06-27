@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:216> <var:F> + <nat:316> $ is even taking all positive numbers $ <var:F> $ . \end{theorem} \begin{proof} $ <var:F> \times <nat:216> $ is trivially even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:F> : nat , Nat . even ( <nat:216> * <var:F> + <nat:316> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:216> * <var:F> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:792> is the multiplication of whole numbers $ <var:f> $ , $ <var:H> $ and $ <var:U> $ where $ <var:H> $ , $ <var:f> $ , $ <var:U> $ greater than <nat:1> . \end{theorem} \begin{proof} Notice $ <nat:9> \times <nat:11> \times <nat:8> = <var:H> \times <var:U> \times <var:f> = <nat:792> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:f> <var:H> <var:U> : nat , ( <nat:792> = <var:f> * <var:H> * <var:U> ) /\ ( <var:H> > <nat:1> ) /\ ( <var:f> > <nat:1> ) /\ ( <var:U> > <nat:1> ) . Proof . exists <nat:8> . exists <nat:9> . exists <nat:11> . repeat split . all : lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For some positive terms $ <var:K> $ , and $ <var:j> $ the expression $ <var:K> <nat:260> + <var:j> <nat:380> + <nat:384> $ is even . \end{theorem} \begin{proof} Result obivously must be true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:K> <var:j> : nat , Nat . even ( <nat:260> * <var:K> + <nat:380> * <var:j> + <nat:384> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

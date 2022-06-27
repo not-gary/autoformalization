@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some numbers $ <var:b> $ , $ <var:B> $ , $ <var:a> $ where the integer <nat:385> is the multiplication between positive integers $ <var:b> $ , $ <var:B> $ , and $ <var:a> $ . \end{theorem} \begin{proof} Assume $ <var:a> = <nat:5> $ , $ <var:B> = <nat:7> $ and $ <var:b> = <nat:11> $ . Note $ <var:a> * <var:B> * <var:b> = <nat:385> $ . This gives the theory holds . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:b> <var:B> <var:a> : nat , ( <nat:385> = <var:b> * <var:B> * <var:a> ) . Proof . exists <nat:11> . exists <nat:7> . exists <nat:5> . repeat split . all : lia . Qed . 

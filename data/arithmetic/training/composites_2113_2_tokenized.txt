@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:J> $ , $ <var:i> $ such that $ <var:J> $ , $ <var:i> $ larger than <nat:1> and satisfying the condition that $ <nat:35> $ is equivalent to $ <var:i> \times <var:J> $ . \end{theorem} \begin{proof} Let $ <var:i> = <nat:7> $ and $ <var:J> = <nat:5> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:J> <var:i> : nat , ( <var:J> > <nat:1> ) /\ ( <var:i> > <nat:1> ) /\ ( <nat:35> = <var:i> * <var:J> ) . Proof . exists <nat:5> . exists <nat:7> . lia . Qed . 

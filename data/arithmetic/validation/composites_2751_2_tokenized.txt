@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:120> is the product of whole numbers $ <var:K> $ , and $ <var:T> $ where $ <var:K> $ and $ <var:T> \geq <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:T> = <nat:10> $ , and $ <var:K> = <nat:12> $ . Note $ <nat:12> * <nat:10> = <nat:120> $ . This shows our belief is valid . Therefore , $ <nat:120> = <var:T> * <var:K> $ plus $ <var:T> $ , $ <var:K> \geq <nat:2> $ has been validated . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:K> <var:T> : nat , ( <nat:120> = <var:K> * <var:T> ) /\ ( <var:K> >= <nat:2> ) /\ ( <var:T> >= <nat:2> ) . Proof . exists <nat:12> . exists <nat:10> . lia . Qed . 

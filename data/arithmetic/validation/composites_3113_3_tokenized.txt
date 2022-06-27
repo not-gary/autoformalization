@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:p> * <var:b> * <var:M> $ is equivalent to $ <nat:135> $ . \end{theorem} \begin{proof} Allow $ <var:b> = <nat:3> $ , $ <var:M> = <nat:9> $ and $ <var:p> = <nat:5> $ . Note $ <var:b> \times <var:p> \times <var:M> = <nat:135> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:p> <var:b> <var:M> : nat , ( <var:p> * <var:b> * <var:M> = <nat:135> ) . Proof . exists <nat:5> . exists <nat:3> . exists <nat:9> . repeat split . all : lia . Qed . 

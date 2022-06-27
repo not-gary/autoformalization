@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:32> is the repeated product between number $ <var:L> $ raised to the power <nat:5> such that $ <var:L> \geq <nat:2> $ . \end{theorem} \begin{proof} Take $ <var:L> = <nat:2> $ . We present $ <var:L> ^ <nat:5> = <nat:32> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:L> : nat , ( <nat:32> = <var:L> ^ <nat:5> ) /\ ( <var:L> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

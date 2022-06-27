@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} We claim that granted that there exists $ <var:K> \in \mathbb{Z}^+ $ we say that some whole number $ <var:c> $ will be a <def:penteract> if $ <var:K> ^ <nat:5> = <var:c> $ . Then $ <var:c> = <nat:32> $ is a <def:penteract> positive integer . \end{theorem} \begin{proof} Allow $ <var:K> = <nat:2> $ . This shows our thesis holds . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:penteract> ( <var:c> : nat ) := exists <var:K> : nat , ( <var:K> ^ <nat:5> = <var:c> ) . Theorem <genP:1> : <def:penteract> <nat:32> . Proof . unfold <def:penteract> . exists <nat:2> . auto . Qed . 

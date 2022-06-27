@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:1024> is the repeated multiplication between integer $ <var:o> $ exponentiated to the degree <nat:10> . \end{theorem} \begin{proof} Notice $ <var:o> ^ <nat:10> = <nat:1024> $ yields $ <var:o> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:o> : nat , ( <nat:1024> = <var:o> ^ <nat:10> ) . Proof . exists <nat:2> . auto . Qed . 

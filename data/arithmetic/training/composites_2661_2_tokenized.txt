@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:h> $ and $ <var:y> \in \mathbb{Z}^+ $ satisfying the condition that the positive integer <nat:120> is the product between positive integers $ <var:h> $ , $ <var:y> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Observe that $ <var:y> \cdot <var:h> = <nat:120> $ produces $ <var:y> = <nat:12> $ , $ <var:h> = <nat:10> $ . So , <nat:120> is the multiplication between $ <var:y> $ , and $ <var:h> \in \mathbb{Z}^+ $ is proven . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:h> <var:y> : nat , ( <nat:120> = <var:h> * <var:y> ) . Proof . exists <nat:10> . exists <nat:12> . lia . Qed . 

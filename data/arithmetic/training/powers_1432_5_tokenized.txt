@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:e> ^ <nat:5> $ is equal to $ <nat:32> $ satisfying the condition that $ <var:e> \geq <nat:2> $ . \end{theorem} \begin{proof} Take $ <var:e> = <nat:2> $ . We confirm $ <var:e> \geq <nat:2> $ as well as <nat:32> is the repeated multiplication between $ <var:e> \in \mathbb{N} $ exponentiated to the degree <nat:5> . This hints the thesis is valid . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <var:e> ^ <nat:5> = <nat:32> ) /\ ( <var:e> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

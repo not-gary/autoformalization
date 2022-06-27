@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:r> \times <nat:486> + <nat:444> $ is guaranteed to be even taking any unknowns $ <var:r> $ . \end{theorem} \begin{proof} The positive integer $ <nat:486> $ is even \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:r> : nat , Nat . even ( <nat:486> * <var:r> + <nat:444> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:486> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

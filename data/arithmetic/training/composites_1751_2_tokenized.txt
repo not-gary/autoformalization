@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some numbers $ <var:F> $ , $ <var:S> $ satisfying the condition that the whole number <nat:63> is the product between $ <var:F> $ , and $ <var:S> $ . \end{theorem} \begin{proof} We show our belief is true in consideration of $ <nat:63> = <var:F> \cdot <var:S> $ produces $ <var:F> = <nat:7> $ and $ <var:S> = <nat:9> $ . As a result , <nat:63> is the multiplication between some whole numbers $ <var:S> $ , $ <var:F> $ has been validated . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:F> <var:S> : nat , ( <nat:63> = <var:F> * <var:S> ) . Proof . exists <nat:7> . exists <nat:9> . lia . Qed . 

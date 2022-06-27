@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:x> $ , $ <var:q> $ and $ <var:J> \in \mathbb{Z}^+ $ such that $ <var:q> \cdot <var:J> \cdot <var:x> $ is equivalent to $ <nat:560> $ . \end{theorem} \begin{proof} Notice $ <nat:560> = <nat:10> \cdot <nat:7> \cdot <nat:8> = <var:x> \cdot <var:J> \cdot <var:q> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:x> <var:q> <var:J> : nat , ( <var:q> * <var:J> * <var:x> = <nat:560> ) . Proof . exists <nat:10> . exists <nat:8> . exists <nat:7> . repeat split . all : lia . Qed . 

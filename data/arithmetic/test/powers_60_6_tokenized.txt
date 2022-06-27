@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:S> \in \mathbb{N} $ . Take as given that $ <var:B> \in \mathbb{Z}^+ $ will be a <def:hexeract> positive integer when $ <var:B> = <var:S> ^ <nat:6> $ . Accordingly the natural number <nat:64> is a <def:hexeract> . \end{theorem} \begin{proof} Allow $ <var:S> = <nat:2> $ . We verify $ <var:S> ^ <nat:6> = <nat:64> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:hexeract> ( <var:B> : nat ) := exists <var:S> : nat , ( <var:B> = <var:S> ^ <nat:6> ) . Theorem <genP:1> : <def:hexeract> <nat:64> . Proof . unfold <def:hexeract> . exists <nat:2> . auto . Qed . 

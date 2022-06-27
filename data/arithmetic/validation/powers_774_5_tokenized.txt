@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:m> $ be natural numbers where the natural number <nat:32> is the raising of between $ <var:m> $ repeatedly multiplied to the degree <nat:5> . \end{theorem} \begin{proof} Assume $ <var:m> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:m> : nat , ( <nat:32> = <var:m> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some natural number $ <var:f> $ such that $ <var:f> \geq <nat:2> $ plus so that the positive integer <nat:8> is the exponential between number $ <var:f> $ repeatedly multiplied to the exponential <nat:3> . \end{theorem} \begin{proof} Assume $ <var:f> = <nat:2> $ . This shows the thesis is valid . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:f> : nat , ( <var:f> >= <nat:2> ) /\ ( <nat:8> = <var:f> ^ <nat:3> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

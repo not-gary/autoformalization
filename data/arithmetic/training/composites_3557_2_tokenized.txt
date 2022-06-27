@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:F> $ and $ <var:I> $ as whole numbers so that $ <var:I> $ , $ <var:F> $ larger than <nat:1> . $ <var:F> \cdot <var:I> $ is the same as $ <nat:72> $ . \end{theorem} \begin{proof} Allow $ <var:F> = <nat:12> $ and $ <var:I> = <nat:6> $ . We demonstrate $ <nat:72> = <var:F> \times <var:I> $ and $ <var:F> $ , and $ <var:I> > <nat:1> $ . Observe $ <nat:12> \times <nat:6> = <nat:72> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:F> <var:I> : nat , ( <var:I> > <nat:1> ) /\ ( <var:F> > <nat:1> ) /\ ( <var:F> * <var:I> = <nat:72> ) . Proof . exists <nat:12> . exists <nat:6> . lia . Qed . 

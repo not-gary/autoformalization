@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:144> is the product between positive integers $ <var:H> $ , $ <var:x> $ , $ <var:m> \in \mathbb{N} $ . \end{theorem} \begin{proof} Let $ <var:x> = <nat:4> $ , $ <var:m> = <nat:3> $ and $ <var:H> = <nat:12> $ . We present <nat:144> is the product of some whole numbers $ <var:m> $ , $ <var:x> $ , $ <var:H> $ . This indicates the belief holds . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:H> <var:x> <var:m> : nat , ( <nat:144> = <var:H> * <var:x> * <var:m> ) . Proof . exists <nat:12> . exists <nat:4> . exists <nat:3> . repeat split . all : lia . Qed . 

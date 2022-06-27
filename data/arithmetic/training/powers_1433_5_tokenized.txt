@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:R> $ as natural numbers . We define that some integer $ <var:G> $ is a <def:penteract> natural number assuming $ <var:R> ^ <nat:5> = <var:G> $ plus where $ <var:R> > <nat:1> $ . So $ <nat:32> = <var:G> $ is a <def:penteract> whole number . \end{theorem} \begin{proof} Assume $ <var:R> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:penteract> ( <var:G> : nat ) := exists <var:R> : nat , ( <var:R> ^ <nat:5> = <var:G> ) /\ ( <var:R> > <nat:1> ) . Theorem <genP:1> : <def:penteract> <nat:32> . Proof . unfold <def:penteract> . exists <nat:2> . split . auto . lia . Qed . 

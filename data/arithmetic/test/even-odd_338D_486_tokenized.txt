@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:486> + <nat:338> <var:D> $ is even . \end{theorem} \begin{proof} We prove the sum $ <var:D> \cdot <nat:338> + <nat:486> $ is guaranteed to be even . See $ <nat:486> $ is an even element of $ \mathbb{N} $ . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:D> : nat , Nat . even ( <nat:338> * <var:D> + <nat:486> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:486> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

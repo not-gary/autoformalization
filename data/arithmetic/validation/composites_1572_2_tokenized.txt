@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some positive integers $ <var:w> $ and $ <var:r> $ such that $ <var:w> * <var:r> $ is equivalent to $ <nat:55> $ . \end{theorem} \begin{proof} Let $ <var:w> = <nat:5> $ , $ <var:r> = <nat:11> $ . Notice that $ <nat:55> = <nat:5> \cdot <nat:11> $ . This indicates our result holds . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:w> <var:r> : nat , ( <var:w> * <var:r> = <nat:55> ) . Proof . exists <nat:5> . exists <nat:11> . lia . Qed . 

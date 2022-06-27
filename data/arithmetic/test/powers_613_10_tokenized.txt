@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:b> \in \mathbb{N} $ so that the integer <nat:1024> is the repeated product between whole number $ <var:b> \in \mathbb{Z}^+ $ taken to the exponential <nat:10> . \end{theorem} \begin{proof} Take $ <var:b> = <nat:2> $ . We show our formula holds in view of $ <var:b> ^ <nat:10> = <nat:2> ^ <nat:10> = <nat:1024> $ . Therefore , $ <var:b> ^ <nat:10> = <nat:1024> $ has been verified . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:b> : nat , ( <nat:1024> = <var:b> ^ <nat:10> ) . Proof . exists <nat:2> . auto . Qed . 

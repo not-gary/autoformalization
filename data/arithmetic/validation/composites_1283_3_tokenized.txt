@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:378> $ is the same as $ <var:n> \cdot <var:N> \cdot <var:c> $ . \end{theorem} \begin{proof} Notice that $ <var:n> \times <var:c> \times <var:N> = <nat:378> $ indicates $ <var:N> = <nat:9> $ , $ <var:n> = <nat:7> $ , $ <var:c> = <nat:6> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:N> <var:n> <var:c> : nat , ( <nat:378> = <var:n> * <var:N> * <var:c> ) . Proof . exists <nat:9> . exists <nat:7> . exists <nat:6> . repeat split . all : lia . Qed . 

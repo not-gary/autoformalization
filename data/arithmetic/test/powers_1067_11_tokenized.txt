@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:W> \in \mathbb{Z}^+ $ satisfying the condition that $ <nat:2048> $ is equivalent to $ <var:W> ^ <nat:11> $ . \end{theorem} \begin{proof} Notice $ <nat:2048> = <var:W> ^ <nat:11> $ produces $ <var:W> = <nat:2> $ . This indicates our proposition is valid . Thus , $ <nat:2048> = <var:W> ^ <nat:11> $ is validated . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:W> : nat , ( <nat:2048> = <var:W> ^ <nat:11> ) . Proof . exists <nat:2> . auto . Qed . 

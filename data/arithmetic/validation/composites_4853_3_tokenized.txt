@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:K> $ , $ <var:i> $ , and $ <var:m> \in \mathbb{N} $ . $ <nat:144> $ is equal to $ <var:i> * <var:m> * <var:K> $ . \end{theorem} \begin{proof} We demonstrate $ <var:m> \cdot <var:i> \cdot <var:K> = <nat:144> $ . We prove our belief holds because $ <nat:144> = <var:i> * <var:K> * <var:m> $ gives $ <var:i> = <nat:3> $ , $ <var:m> = <nat:12> $ , $ <var:K> = <nat:4> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:K> <var:i> <var:m> : nat , ( <nat:144> = <var:i> * <var:m> * <var:K> ) . Proof . exists <nat:4> . exists <nat:3> . exists <nat:12> . repeat split . all : lia . Qed . 

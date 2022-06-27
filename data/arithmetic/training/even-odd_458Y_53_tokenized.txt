@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:53> + <nat:458> * <var:Y> $ is odd taking every natural terms $ <var:Y> $ . \end{theorem} \begin{proof} We prove our claim is proven . Take note the addition between even whole numbers with an odd number in $ \mathbb{Z}^+ $ must be trivially an odd number in $ \mathbb{Z}^+ $ . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:Y> : nat , Nat . odd ( <nat:458> * <var:Y> + <nat:53> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

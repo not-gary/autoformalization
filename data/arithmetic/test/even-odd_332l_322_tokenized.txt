@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given any positive integers $ <var:l> $ the formula $ <nat:332> \times <var:l> + <nat:322> $ must be even . \end{theorem} \begin{proof} $ <nat:332> * <var:l> $ is known as an even natural . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:l> : nat , Nat . even ( <nat:332> * <var:l> + <nat:322> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:332> * <var:l> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

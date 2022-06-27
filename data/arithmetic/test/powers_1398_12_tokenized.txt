@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:Y> $ as integers such that the positive integer <nat:4096> is the raising of of natural number $ <var:Y> $ repeatedly multiplied to the exponent <nat:12> . \end{theorem} \begin{proof} Let $ <var:Y> = <nat:2> $ . We demonstrate our statement holds because $ <nat:4096> = <var:Y> ^ <nat:12> $ . So , $ <var:Y> ^ <nat:12> = <nat:4096> $ has been validated . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Y> : nat , ( <nat:4096> = <var:Y> ^ <nat:12> ) . Proof . exists <nat:2> . auto . Qed . 

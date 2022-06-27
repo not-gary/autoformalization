@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:Z> \in \mathbb{Z}^+ $ where $ <var:Z> \geq <nat:2> $ and satisfying the condition that the positive integer <nat:64> is the raising of between integer $ <var:Z> \in \mathbb{Z}^+ $ raised to the degree <nat:6> . \end{theorem} \begin{proof} Note that $ <nat:2> ^ <nat:6> = <nat:64> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <var:Z> >= <nat:2> ) /\ ( <nat:64> = <var:Z> ^ <nat:6> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:e> $ are natural numbers such that $ <var:e> $ greater than or equivalent to <nat:2> . $ <var:e> ^ <nat:9> $ is equivalent to $ <nat:512> $ . \end{theorem} \begin{proof} Notice that $ <nat:2> \geq <nat:2> $ . Additionally observe too $ <var:e> ^ <nat:9> = <nat:512> $ produces $ <var:e> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <var:e> >= <nat:2> ) /\ ( <var:e> ^ <nat:9> = <nat:512> ) . Proof . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } exists <nat:2> . split . apply <genH> . auto . Qed . 

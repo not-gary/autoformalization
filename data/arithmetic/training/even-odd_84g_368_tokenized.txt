@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:84> <var:g> + <nat:368> $ must be even assuming any terms $ <var:g> $ . \end{theorem} \begin{proof} The addition of even positive integers with an even element of $ \mathbb{N} $ is even . Because multiplying of an even integer with some element of $ \mathbb{Z}^+ $ is an even positive integer , as a consequence this main result must be true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:g> : nat , Nat . even ( <nat:84> * <var:g> + <nat:368> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:e> $ so that the natural number <nat:32> is the exponential between natural number $ <var:e> $ exponentiated to the power <nat:5> . \end{theorem} \begin{proof} We confirm our theorem holds in view of $ <nat:32> = <nat:2> ^ <nat:5> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <nat:32> = <var:e> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

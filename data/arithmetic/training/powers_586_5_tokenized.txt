@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With the condition that we get $ <var:h> ^ <nat:5> = <var:Q> $ assuming some $ <var:Q> $ , assume that $ <var:Q> $ is a <def:penteract> integer using some $ <var:h> \in \mathbb{N} $ . Then $ <var:Q> = <nat:32> $ is a <def:penteract> integer . \end{theorem} \begin{proof} Note $ <nat:32> = <nat:2> ^ <nat:5> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:penteract> ( <var:Q> : nat ) := exists <var:h> : nat , ( <var:h> ^ <nat:5> = <var:Q> ) . Theorem <genP:1> : <def:penteract> <nat:32> . Proof . unfold <def:penteract> . exists <nat:2> . auto . Qed . 

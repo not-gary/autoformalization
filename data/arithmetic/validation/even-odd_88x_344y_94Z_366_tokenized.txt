@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:88> \times <var:x> + <var:y> \times <nat:344> + <nat:366> + <var:Z> \times <nat:94> $ is even . \end{theorem} \begin{proof} Main result holds . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:x> <var:y> <var:Z> : nat , Nat . even ( <nat:88> * <var:x> + <nat:344> * <var:y> + <nat:94> * <var:Z> + <nat:366> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

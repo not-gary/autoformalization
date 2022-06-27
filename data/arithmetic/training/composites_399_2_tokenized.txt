@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:s> $ , $ <var:S> \in \mathbb{N} $ where the whole number <nat:56> is the product of integers $ <var:s> $ and $ <var:S> \in \mathbb{N} $ . \end{theorem} \begin{proof} Note $ <var:S> \times <var:s> = <nat:56> $ indicates $ <var:S> = <nat:7> $ , and $ <var:s> = <nat:8> $ . Hence , <nat:56> is the multiplication between some integers $ <var:s> $ and $ <var:S> $ is proven . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:s> <var:S> : nat , ( <nat:56> = <var:s> * <var:S> ) . Proof . exists <nat:8> . exists <nat:7> . lia . Qed . 

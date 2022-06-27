@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:8> is the exponential between $ <var:a> $ raised to the degree <nat:3> . \end{theorem} \begin{proof} We confirm our belief holds by reason of $ <nat:2> ^ <nat:3> = <nat:8> = <var:a> ^ <nat:3> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:a> : nat , ( <nat:8> = <var:a> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

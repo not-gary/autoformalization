@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:V> $ , $ <var:J> $ and $ <var:D> \in \mathbb{Z}^+ $ . $ <nat:40> $ is equal to $ <var:V> * <var:J> * <var:D> $ . \end{theorem} \begin{proof} Assume $ <var:J> = <nat:4> $ , $ <var:V> = <nat:5> $ , $ <var:D> = <nat:2> $ . We show $ <nat:40> = <var:V> \cdot <var:D> \cdot <var:J> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:V> <var:J> <var:D> : nat , ( <nat:40> = <var:V> * <var:J> * <var:D> ) . Proof . exists <nat:5> . exists <nat:4> . exists <nat:2> . repeat split . all : lia . Qed . 

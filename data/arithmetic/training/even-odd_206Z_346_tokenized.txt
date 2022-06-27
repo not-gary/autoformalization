@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With every terms $ <var:Z> $ the sum $ <nat:346> + <nat:206> \cdot <var:Z> $ is guaranteed to be even . \end{theorem} \begin{proof} We check the result is true . $ <var:Z> \cdot <nat:206> $ is known to be an even number . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:Z> : nat , Nat . even ( <nat:206> * <var:Z> + <nat:346> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:206> * <var:Z> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

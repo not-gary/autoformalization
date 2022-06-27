@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some natural numbers $ <var:w> $ , $ <var:G> $ such that $ <var:w> $ , $ <var:G> $ larger than <nat:1> as well as so that $ <var:w> \cdot <var:G> $ is $ <nat:88> $ . \end{theorem} \begin{proof} Let $ <var:w> = <nat:11> $ , and $ <var:G> = <nat:8> $ . We demonstrate $ <nat:88> = <var:w> \cdot <var:G> $ . Note that $ <nat:88> = <var:G> * <var:w> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:w> <var:G> : nat , ( <var:w> > <nat:1> ) /\ ( <var:G> > <nat:1> ) /\ ( <var:w> * <var:G> = <nat:88> ) . Proof . exists <nat:11> . exists <nat:8> . lia . Qed . 

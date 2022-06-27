@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:B> $ , $ <var:r> \in \mathbb{N} $ satisfying the condition that $ <var:B> $ , and $ <var:r> $ more than <nat:1> as well as satisfying the condition that $ <var:B> * <var:r> = <nat:70> $ . \end{theorem} \begin{proof} Let $ <var:B> = <nat:7> $ , $ <var:r> = <nat:10> $ . We confirm our claim holds in consideration of $ <nat:70> = <nat:7> * <nat:10> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:B> <var:r> : nat , ( <var:B> > <nat:1> ) /\ ( <var:r> > <nat:1> ) /\ ( <var:B> * <var:r> = <nat:70> ) . Proof . exists <nat:7> . exists <nat:10> . lia . Qed . 

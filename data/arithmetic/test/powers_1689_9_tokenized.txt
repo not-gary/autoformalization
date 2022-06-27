@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:512> is the raising of between $ <var:Q> \in \mathbb{Z}^+ $ raised to the degree <nat:9> so that $ <var:Q> $ more than <nat:1> . \end{theorem} \begin{proof} Assume $ <var:Q> = <nat:2> $ . Further notice that $ <var:Q> = <nat:2> $ is larger than <nat:1> . This gives the principle is valid . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Q> : nat , ( <nat:512> = <var:Q> ^ <nat:9> ) /\ ( <var:Q> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

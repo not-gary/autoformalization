@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using integers $ <var:o> $ the expression $ <var:o> \cdot <nat:264> + <nat:396> $ is guaranteed to be even . \end{theorem} \begin{proof} It can be proven that the lemma is proven . Remember the natural number $ <nat:264> $ is known as an even number \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:o> : nat , Nat . even ( <nat:264> * <var:o> + <nat:396> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:264> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

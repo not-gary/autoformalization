@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some $ <var:Y> $ , $ <var:S> $ so that the positive integer <nat:66> is the product between positive integers $ <var:Y> $ , $ <var:S> $ . \end{theorem} \begin{proof} Assume $ <var:S> = <nat:11> $ , and $ <var:Y> = <nat:6> $ . Observe $ <nat:66> = <var:Y> * <var:S> $ . So , $ <var:Y> * <var:S> = <nat:66> $ is validated . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:Y> <var:S> : nat , ( <nat:66> = <var:Y> * <var:S> ) . Proof . exists <nat:6> . exists <nat:11> . lia . Qed . 

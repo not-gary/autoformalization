@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:r> $ as natural numbers so that $ <var:r> \geq <nat:2> $ and where the integer <nat:8> is the raising of of integer $ <var:r> $ repeatedly multiplied to the exponent <nat:3> . \end{theorem} \begin{proof} Note $ <var:r> ^ <nat:3> = <nat:8> $ shows $ <var:r> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:r> : nat , ( <var:r> >= <nat:2> ) /\ ( <nat:8> = <var:r> ^ <nat:3> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

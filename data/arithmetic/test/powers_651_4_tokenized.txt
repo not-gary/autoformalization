@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:16> $ is equal to $ <var:s> ^ <nat:4> $ given $ <var:s> $ so that $ <var:s> \geq <nat:2> $ . \end{theorem} \begin{proof} Allow $ <var:s> = <nat:2> $ . We verify $ <nat:16> = <var:s> ^ <nat:4> $ . Notice that $ <var:s> ^ <nat:4> = <nat:16> = <nat:2> ^ <nat:4> $ . This hints the result is valid . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:s> : nat , ( <nat:16> = <var:s> ^ <nat:4> ) /\ ( <var:s> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

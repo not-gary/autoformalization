@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:443> + <var:g> * <nat:232> $ must be odd with whole numbers $ <var:g> $ . \end{theorem} \begin{proof} Observe that the summation of even elements of $ \mathbb{Z}^+ $ concurrently and an odd element of $ \mathbb{Z}^+ $ is odd . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:g> : nat , Nat . odd ( <nat:232> * <var:g> + <nat:443> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

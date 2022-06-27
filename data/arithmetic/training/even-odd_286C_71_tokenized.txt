@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking any natural numbers $ <var:C> $ the formula $ <nat:286> <var:C> + <nat:71> $ must be odd . \end{theorem} \begin{proof} Because the summing between even integers together with an odd element of $ \mathbb{Z}^+ $ is guaranteed to be an odd number in $ \mathbb{N} $ , as a consequence the formula $ <nat:71> + <var:C> \cdot <nat:286> $ must be odd . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:C> : nat , Nat . odd ( <nat:286> * <var:C> + <nat:71> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:g> \in \mathbb{N} $ where $ <var:g> ^ <nat:2> $ is equal to $ <nat:4> $ . \end{theorem} \begin{proof} Notice that $ <nat:4> = <var:g> ^ <nat:2> = <nat:2> ^ <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:g> : nat , ( <var:g> ^ <nat:2> = <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

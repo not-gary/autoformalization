@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:4> is the repeated product between $ <var:v> \in \mathbb{Z}^+ $ taken to the degree <nat:2> where $ <var:v> \geq <nat:2> $ . \end{theorem} \begin{proof} We demonstrate our theorem is valid in consideration of $ <nat:4> = <var:v> ^ <nat:2> $ yields $ <var:v> = <nat:2> $ . So , $ <nat:4> = <var:v> ^ <nat:2> $ and $ <var:v> $ is greater than or equal to <nat:2> has been verified . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:v> : nat , ( <nat:4> = <var:v> ^ <nat:2> ) /\ ( <var:v> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

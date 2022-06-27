@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:r> \in \mathbb{Z}^+ $ . Take as given that some positive integer $ <var:J> $ will be considered a <def:dodekeract> whole number given $ <var:r> ^ <nat:12> = <var:J> $ . For this reason the natural number <nat:4096> is a <def:dodekeract> natural number . \end{theorem} \begin{proof} Let $ <var:r> = <nat:2> $ . This gives the theory holds . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:dodekeract> ( <var:J> : nat ) := exists <var:r> : nat , ( <var:r> ^ <nat:12> = <var:J> ) . Theorem <genP:1> : <def:dodekeract> <nat:4096> . Proof . unfold <def:dodekeract> . exists <nat:2> . auto . Qed . 

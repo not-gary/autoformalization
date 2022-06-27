@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming some unknowns $ <var:I> $ , $ <var:s> $ , and $ <var:O> $ $ <nat:300> + <var:I> \times <nat:378> + <var:s> \times <nat:30> + <nat:44> \times <var:O> $ will be even . \end{theorem} \begin{proof} Remember that the multiplication of even integers is guaranteed to be even . We check our result is true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:I> <var:s> <var:O> : nat , Nat . even ( <nat:378> * <var:I> + <nat:30> * <var:s> + <nat:44> * <var:O> + <nat:300> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

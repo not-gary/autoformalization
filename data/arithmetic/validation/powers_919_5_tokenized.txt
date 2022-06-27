@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:32> is the repeated product between number $ <var:s> \in \mathbb{N} $ taken to the exponent <nat:5> satisfying the condition that $ <var:s> \geq <nat:2> $ . \end{theorem} \begin{proof} Note that $ <nat:32> = <nat:2> ^ <nat:5> $ . In addition observe that $ <nat:2> \geq <nat:2> $ . This hints our statement is valid . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:s> : nat , ( <nat:32> = <var:s> ^ <nat:5> ) /\ ( <var:s> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

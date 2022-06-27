@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:y> $ , $ <var:W> \in \mathbb{Z}^+ $ so that $ <nat:24> $ is the same as $ <var:W> * <var:y> $ . \end{theorem} \begin{proof} Assume $ <var:y> = <nat:12> $ , $ <var:W> = <nat:2> $ . We justify $ <var:y> \times <var:W> = <nat:24> $ . We demonstrate our belief is valid because $ <nat:24> = <var:W> \cdot <var:y> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:y> <var:W> : nat , ( <nat:24> = <var:W> * <var:y> ) . Proof . exists <nat:12> . exists <nat:2> . lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With positive numbers $ <var:E> $ , and $ <var:k> $ $ <nat:440> * <var:E> + <nat:322> + <nat:432> * <var:k> $ must be even . \end{theorem} \begin{proof} Take note that the totaling between even natural numbers concurrently will be an even integer . The product between an even number with an arbitrary number in $ \mathbb{N} $ must be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:E> <var:k> : nat , Nat . even ( <nat:440> * <var:E> + <nat:432> * <var:k> + <nat:322> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

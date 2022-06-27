@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For some $ <var:G> \in \mathbb{Z}^+ $ $ <nat:66> + <nat:196> <var:G> $ is guaranteed to be even . \end{theorem} \begin{proof} See the multiplication between an even whole number with an arbitrary positive integer is guaranteed to be an even whole number . We know that $ <nat:66> $ is obviously an even number . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:G> : nat , Nat . even ( <nat:196> * <var:G> + <nat:66> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . assert ( <genH> : Nat . even <nat:66> = true ) . { auto . } rewrite <genH> . auto . Qed . 

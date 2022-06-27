@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:g> * <nat:450> + <nat:290> $ will be even . \end{theorem} \begin{proof} We know that the integer $ <nat:450> $ is trivially even Multiplying of even numbers in $ \mathbb{Z}^+ $ must be even . Hence , the summation $ <nat:290> + <nat:450> <var:g> $ will be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:g> : nat , Nat . even ( <nat:450> * <var:g> + <nat:290> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:450> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:76> \times <var:M> + <nat:202> $ is guaranteed to be even . \end{theorem} \begin{proof} From the knowledge the product between an even number in $ \mathbb{Z}^+ $ with a element of $ \mathbb{N} $ is even , $ <nat:202> + <var:M> \cdot <nat:76> $ fundamentally is guaranteed to be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:M> : nat , Nat . even ( <nat:76> * <var:M> + <nat:202> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:N> \cdot <nat:94> + <nat:186> \cdot <var:P> + <nat:267> + <var:z> \cdot <nat:306> + <nat:338> \cdot <var:V> $ will be odd . \end{theorem} \begin{proof} The summation between an even natural number and an odd positive integer is odd . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:N> <var:P> <var:z> <var:V> : nat , Nat . odd ( <nat:94> * <var:N> + <nat:186> * <var:P> + <nat:306> * <var:z> + <nat:338> * <var:V> + <nat:267> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

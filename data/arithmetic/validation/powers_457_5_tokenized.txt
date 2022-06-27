@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:32> $ is equal to $ <var:t> ^ <nat:5> $ assuming $ <var:t> $ . \end{theorem} \begin{proof} We verify our proposition is true because $ <var:t> ^ <nat:5> = <nat:32> $ indicates $ <var:t> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <nat:32> = <var:t> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

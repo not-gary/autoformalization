@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With all positive numbers $ <var:F> $ the expression $ <var:F> \times <nat:394> + <nat:126> $ is even . \end{theorem} \begin{proof} The addition of even whole numbers collectively will be itself an even natural . The integer $ <nat:394> $ is an even number in $ \mathbb{N} $ We show our claim must be true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:F> : nat , Nat . even ( <nat:394> * <var:F> + <nat:126> ) = true . Proof . intros . repeat rewrite Nat . even_add . assert ( <genH> : Nat . even <nat:394> = true ) . { auto . } repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

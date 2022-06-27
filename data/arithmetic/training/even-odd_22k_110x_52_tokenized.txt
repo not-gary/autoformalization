@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:22> \times <var:k> + <nat:110> \times <var:x> + <nat:52> $ will be even . \end{theorem} \begin{proof} Take note that taking the product of an even integer and an arbitrary element of $ \mathbb{Z}^+ $ must be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:k> <var:x> : nat , Nat . even ( <nat:22> * <var:k> + <nat:110> * <var:x> + <nat:52> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

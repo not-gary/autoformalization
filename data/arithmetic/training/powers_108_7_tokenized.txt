@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:128> is the repeated product between whole number $ <var:h> \in \mathbb{Z}^+ $ exponentiated to the power <nat:7> such that $ <var:h> $ greater than or equivalent to <nat:2> . \end{theorem} \begin{proof} Allow $ <var:h> = <nat:2> $ . We present our statement holds by reason of $ <var:h> ^ <nat:7> = <nat:128> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:h> : nat , ( <nat:128> = <var:h> ^ <nat:7> ) /\ ( <var:h> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

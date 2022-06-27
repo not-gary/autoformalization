@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:e> ^ <nat:8> = <nat:256> $ satisfying the condition that $ <var:e> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} We show our claim holds seeing that $ <var:e> ^ <nat:8> = <nat:256> $ produces $ <var:e> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <var:e> ^ <nat:8> = <nat:256> ) /\ ( <var:e> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

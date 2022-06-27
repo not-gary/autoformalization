@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:378> + <nat:400> \times <var:u> $ is guaranteed to be even . \end{theorem} \begin{proof} Observe the pair $ <var:u> \cdot <nat:400> $ is known to be even as a consequence that taking the product of an even natural with a element of $ \mathbb{N} $ must be an even natural . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:u> : nat , Nat . even ( <nat:400> * <var:u> + <nat:378> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:400> * <var:u> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

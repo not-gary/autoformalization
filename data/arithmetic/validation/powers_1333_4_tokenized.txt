@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:16> is the raising of between number $ <var:N> \in \mathbb{Z}^+ $ repeatedly multiplied to the degree <nat:4> where $ <var:N> $ greater than <nat:1> . \end{theorem} \begin{proof} Take $ <var:N> = <nat:2> $ . Observe $ <nat:16> = <var:N> ^ <nat:4> $ . As a consequence , $ <var:N> ^ <nat:4> = <nat:16> $ plus $ <var:N> > <nat:1> $ is true has been proven . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <nat:16> = <var:N> ^ <nat:4> ) /\ ( <var:N> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

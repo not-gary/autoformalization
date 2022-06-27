@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:2112> is the product of integers $ <var:f> $ , $ <var:i> $ , $ <var:O> $ , $ <var:z> \in \mathbb{N} $ . \end{theorem} \begin{proof} Observe that $ <nat:2112> = <var:z> \cdot <var:O> \cdot <var:i> \cdot <var:f> $ gives $ <var:i> = <nat:4> $ , $ <var:z> = <nat:6> $ , $ <var:f> = <nat:11> $ , and $ <var:O> = <nat:8> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:f> <var:i> <var:O> <var:z> : nat , ( <nat:2112> = <var:f> * <var:i> * <var:O> * <var:z> ) . Proof . exists <nat:11> . exists <nat:4> . exists <nat:8> . exists <nat:6> . repeat split . all : lia . Qed . 

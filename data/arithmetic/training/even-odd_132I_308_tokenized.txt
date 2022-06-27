@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming any unknowns $ <var:I> $ the expression $ <var:I> \cdot <nat:132> + <nat:308> $ will be even . \end{theorem} \begin{proof} The product of an even integer and an arbitrary number is by definition an even natural . See that $ <nat:308> $ is clearly an even whole number . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:I> : nat , Nat . even ( <nat:132> * <var:I> + <nat:308> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . assert ( <genH> : Nat . even <nat:308> = true ) . { auto . } rewrite <genH> . auto . Qed . 

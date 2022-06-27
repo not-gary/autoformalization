@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:k> $ and $ <var:E> \in \mathbb{N} $ satisfying the condition that the natural number <nat:21> is the product between $ <var:k> $ and $ <var:E> \in \mathbb{N} $ . \end{theorem} \begin{proof} We show $ <var:k> \cdot <var:E> = <nat:21> $ . We prove the belief is valid because $ <var:k> \cdot <var:E> = <nat:21> $ gives $ <var:E> = <nat:7> $ , and $ <var:k> = <nat:3> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:k> <var:E> : nat , ( <nat:21> = <var:k> * <var:E> ) . Proof . exists <nat:3> . exists <nat:7> . lia . Qed . 

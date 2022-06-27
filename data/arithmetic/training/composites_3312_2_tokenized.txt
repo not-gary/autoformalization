@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some integers $ <var:J> $ , $ <var:u> $ satisfying the condition that $ <var:J> * <var:u> $ is the same as $ <nat:96> $ . \end{theorem} \begin{proof} Take $ <var:u> = <nat:12> $ and $ <var:J> = <nat:8> $ . We prove <nat:96> is the product between some integers $ <var:J> $ and $ <var:u> $ . Note that $ <nat:96> = <nat:12> \cdot <nat:8> = <var:u> \cdot <var:J> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:J> <var:u> : nat , ( <var:J> * <var:u> = <nat:96> ) . Proof . exists <nat:8> . exists <nat:12> . lia . Qed . 

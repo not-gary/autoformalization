@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:F> $ , $ <var:l> $ , $ <var:c> $ , and $ <var:h> $ as numbers where $ <nat:880> $ is the same as $ <var:l> * <var:h> * <var:c> * <var:F> $ . \end{theorem} \begin{proof} Allow $ <var:c> = <nat:10> $ , $ <var:l> = <nat:11> $ , $ <var:h> = <nat:4> $ , and $ <var:F> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:F> <var:l> <var:c> <var:h> : nat , ( <nat:880> = <var:l> * <var:h> * <var:c> * <var:F> ) . Proof . exists <nat:2> . exists <nat:11> . exists <nat:10> . exists <nat:4> . repeat split . all : lia . Qed . 

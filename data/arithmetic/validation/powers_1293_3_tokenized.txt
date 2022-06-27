@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:8> $ is equivalent to $ <var:f> ^ <nat:3> $ assuming $ <var:f> $ where $ <var:f> $ larger than <nat:1> . \end{theorem} \begin{proof} Notice that $ <nat:8> = <nat:2> ^ <nat:3> $ . Therefore , $ <var:f> $ is more than <nat:1> as well as <nat:8> is the exponential between $ <var:f> \in \mathbb{Z}^+ $ raised to the degree <nat:3> has been verified . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:f> : nat , ( <nat:8> = <var:f> ^ <nat:3> ) /\ ( <var:f> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

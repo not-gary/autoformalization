@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using any variables $ <var:m> $ , and $ <var:s> $ $ <var:m> \times <nat:100> + <nat:368> + <var:s> \times <nat:208> $ must be even . \end{theorem} \begin{proof} Result trivially holds . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:m> <var:s> : nat , Nat . even ( <nat:100> * <var:m> + <nat:208> * <var:s> + <nat:368> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

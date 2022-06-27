@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:256> is the raising of between natural number $ <var:a> \in \mathbb{N} $ exponentiated to the power <nat:8> where $ <var:a> \geq <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:a> = <nat:2> $ . Observe that $ <var:a> ^ <nat:8> = <nat:256> $ . This hints the result is true . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:a> : nat , ( <nat:256> = <var:a> ^ <nat:8> ) /\ ( <var:a> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:h> $ , $ <var:Q> $ as natural numbers such that $ <var:h> \cdot <var:Q> $ equals $ <nat:54> $ . \end{theorem} \begin{proof} Assume $ <var:h> = <nat:9> $ , and $ <var:Q> = <nat:6> $ . We present $ <var:h> * <var:Q> = <nat:54> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:h> <var:Q> : nat , ( <var:h> * <var:Q> = <nat:54> ) . Proof . exists <nat:9> . exists <nat:6> . lia . Qed . 

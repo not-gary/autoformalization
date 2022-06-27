@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:328> \times <var:o> + <nat:70> + <var:B> \times <nat:370> $ will be even . \end{theorem} \begin{proof} We know $ <nat:70> $ is clearly an even element of $ \mathbb{Z}^+ $ . The addition of an even positive integer and an even natural must be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:o> <var:B> : nat , Nat . even ( <nat:328> * <var:o> + <nat:370> * <var:B> + <nat:70> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:70> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

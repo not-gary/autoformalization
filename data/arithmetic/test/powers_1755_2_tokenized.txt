@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some number $ <var:K> $ so that $ <var:K> ^ <nat:2> $ is the same as $ <nat:4> $ . \end{theorem} \begin{proof} Notice that $ <nat:2> ^ <nat:2> = <nat:4> $ . Consequently , $ <var:K> ^ <nat:2> = <nat:4> $ is validated . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <var:K> ^ <nat:2> = <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

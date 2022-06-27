@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:J> \in \mathbb{N} $ such that $ <var:J> $ more than or equivalent to <nat:2> plus such that <nat:4> is the raising of of integer $ <var:J> \in \mathbb{Z}^+ $ taken to the exponential <nat:2> . \end{theorem} \begin{proof} Allow $ <var:J> = <nat:2> $ . Notice that $ <var:J> ^ <nat:2> = <nat:4> = <nat:2> ^ <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:J> : nat , ( <var:J> >= <nat:2> ) /\ ( <nat:4> = <var:J> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

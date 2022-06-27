@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} If there is $ <var:d> $ then we define that some positive integer $ <var:N> $ is defined to be a <def:hepteract> whole number given $ <var:d> ^ <nat:7> = <var:N> $ . Hence $ <var:N> = <nat:128> $ is a <def:hepteract> natural number . \end{theorem} \begin{proof} Let $ <var:d> = <nat:2> $ . Note that $ <nat:128> = <var:d> ^ <nat:7> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:hepteract> ( <var:N> : nat ) := exists <var:d> : nat , ( <var:d> ^ <nat:7> = <var:N> ) . Theorem <genP:1> : <def:hepteract> <nat:128> . Proof . unfold <def:hepteract> . exists <nat:2> . auto . Qed . 

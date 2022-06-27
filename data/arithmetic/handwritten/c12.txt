@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} A <def:composite> number is a natural number $ <var:x> $ that is the product of natural numbers $ <var:a> $ and $ <var:b> $ that are <nat:2> or larger . \end{definition} \begin{theorem} <nat:56> is a <def:composite> number . \end{theorem} \begin{proof} Let $ <var:a> = <nat:7> $ and $ <var:b> = <nat:8> $ . Since $ <var:a> \geq <nat:2> $ and $ <var:b> \geq <nat:2> $ , <nat:56> is a <def:composite> number . \end{proof} \end{document}
+~
+Proof

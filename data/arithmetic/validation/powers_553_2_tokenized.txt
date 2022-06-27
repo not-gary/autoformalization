@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:4> is the raising of of number $ <var:p> $ exponentiated to the exponent <nat:2> . \end{theorem} \begin{proof} Notice that $ <nat:4> = <nat:2> ^ <nat:2> $ . This shows the belief is valid . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:p> : nat , ( <nat:4> = <var:p> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

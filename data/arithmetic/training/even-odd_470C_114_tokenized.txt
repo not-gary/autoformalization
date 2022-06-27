@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For any unknowns $ <var:C> $ the summation $ <var:C> \cdot <nat:470> + <nat:114> $ is guaranteed to be even . \end{theorem} \begin{proof} We know that $ <nat:114> $ is known to be an even integer . Observe that the summing of even integers concurrently is even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:C> : nat , Nat . even ( <nat:470> * <var:C> + <nat:114> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:114> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

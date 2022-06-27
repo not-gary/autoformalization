@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:m> $ , $ <var:o> $ , $ <var:e> $ as whole numbers such that $ <var:e> $ , $ <var:o> $ , and $ <var:m> > <nat:1> $ plus such that $ <var:o> \cdot <var:e> \cdot <var:m> $ is $ <nat:72> $ . \end{theorem} \begin{proof} Note $ <nat:2> \times <nat:3> \times <nat:12> = <nat:72> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:m> <var:o> <var:e> : nat , ( <var:e> > <nat:1> ) /\ ( <var:o> > <nat:1> ) /\ ( <var:m> > <nat:1> ) /\ ( <var:o> * <var:e> * <var:m> = <nat:72> ) . Proof . exists <nat:3> . exists <nat:12> . exists <nat:2> . repeat split . all : lia . Qed . 

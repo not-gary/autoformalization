@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:450> $ is the same as $ <var:Q> \times <var:I> \times <var:t> $ with $ <var:I> $ , $ <var:t> $ and $ <var:Q> $ . \end{theorem} \begin{proof} We show <nat:450> is the product of $ <var:Q> $ , $ <var:I> $ and $ <var:t> \in \mathbb{N} $ . Observe that $ <nat:9> \times <nat:5> \times <nat:10> = <nat:450> = <var:t> \times <var:I> \times <var:Q> $ . This implies our statement holds . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:I> <var:t> <var:Q> : nat , ( <nat:450> = <var:Q> * <var:I> * <var:t> ) . Proof . exists <nat:5> . exists <nat:9> . exists <nat:10> . repeat split . all : lia . Qed . 

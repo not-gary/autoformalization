@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:910> is the product of positive integers $ <var:P> $ , $ <var:q> $ , and $ <var:c> \in \mathbb{N} $ . \end{theorem} \begin{proof} Note $ <var:c> \times <var:P> \times <var:q> = <nat:910> $ suggests $ <var:P> = <nat:7> $ , $ <var:c> = <nat:13> $ , and $ <var:q> = <nat:10> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:P> <var:q> <var:c> : nat , ( <nat:910> = <var:P> * <var:q> * <var:c> ) . Proof . exists <nat:7> . exists <nat:10> . exists <nat:13> . repeat split . all : lia . Qed . 

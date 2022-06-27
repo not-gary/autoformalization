@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:m> \times <var:T> $ is equivalent to $ <nat:63> $ so that $ <var:T> $ and $ <var:m> \geq <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:m> = <nat:9> $ , and $ <var:T> = <nat:7> $ . We justify $ <var:T> \cdot <var:m> = <nat:63> $ plus $ <var:m> $ and $ <var:T> \geq <nat:2> $ . We show the proposition is true in consideration of $ <var:m> * <var:T> = <nat:63> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:T> <var:m> : nat , ( <var:m> * <var:T> = <nat:63> ) /\ ( <var:T> >= <nat:2> ) /\ ( <var:m> >= <nat:2> ) . Proof . exists <nat:7> . exists <nat:9> . lia . Qed . 

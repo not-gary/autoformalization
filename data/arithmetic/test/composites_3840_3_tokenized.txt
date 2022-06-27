@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:616> $ is equal to $ <var:L> \times <var:C> \times <var:F> $ . \end{theorem} \begin{proof} We show $ <nat:616> = <var:F> * <var:C> * <var:L> $ . Notice $ <nat:616> = <nat:8> * <nat:11> * <nat:7> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:C> <var:F> <var:L> : nat , ( <nat:616> = <var:L> * <var:C> * <var:F> ) . Proof . exists <nat:8> . exists <nat:11> . exists <nat:7> . repeat split . all : lia . Qed . 

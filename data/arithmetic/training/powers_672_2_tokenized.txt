@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:f> ^ <nat:2> $ is $ <nat:4> $ assuming $ <var:f> \in \mathbb{N} $ such that $ <var:f> \geq <nat:2> $ . \end{theorem} \begin{proof} We justify $ <var:f> ^ <nat:2> = <nat:4> $ . We prove our principle holds in consideration of $ <var:f> ^ <nat:2> = <nat:4> $ shows $ <var:f> = <nat:2> $ as well as $ <nat:2> \geq <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:f> : nat , ( <var:f> ^ <nat:2> = <nat:4> ) /\ ( <var:f> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

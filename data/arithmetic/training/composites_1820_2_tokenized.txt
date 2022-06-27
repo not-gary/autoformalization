@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:z> $ and $ <var:C> $ are positive integers . $ <var:C> \times <var:z> $ is equal to $ <nat:35> $ . \end{theorem} \begin{proof} Assume $ <var:C> = <nat:5> $ and $ <var:z> = <nat:7> $ . Note that $ <nat:5> \times <nat:7> = <nat:35> = <var:C> \times <var:z> $ . Because of this , $ <nat:35> = <var:C> \times <var:z> $ has been validated . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:z> <var:C> : nat , ( <var:C> * <var:z> = <nat:35> ) . Proof . exists <nat:7> . exists <nat:5> . lia . Qed . 

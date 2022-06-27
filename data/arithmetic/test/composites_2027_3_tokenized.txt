@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:H> $ , $ <var:w> $ , $ <var:G> $ be integers so that $ <var:w> \times <var:H> \times <var:G> $ is equivalent to $ <nat:702> $ . \end{theorem} \begin{proof} Take $ <var:G> = <nat:9> $ , $ <var:H> = <nat:6> $ , $ <var:w> = <nat:13> $ . We present our principle is true as $ <var:H> \times <var:w> \times <var:G> = <nat:702> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:H> <var:w> <var:G> : nat , ( <var:w> * <var:H> * <var:G> = <nat:702> ) . Proof . exists <nat:6> . exists <nat:13> . exists <nat:9> . repeat split . all : lia . Qed . 

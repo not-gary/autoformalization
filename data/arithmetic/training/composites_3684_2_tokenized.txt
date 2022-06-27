@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:J> * <var:b> $ is $ <nat:12> $ assuming $ <var:J> $ , $ <var:b> $ . \end{theorem} \begin{proof} Take $ <var:J> = <nat:6> $ and $ <var:b> = <nat:2> $ . We demonstrate $ <var:J> \cdot <var:b> = <nat:12> $ . Notice that $ <nat:12> = <nat:6> \cdot <nat:2> $ . This shows our proposition is true . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:J> <var:b> : nat , ( <var:J> * <var:b> = <nat:12> ) . Proof . exists <nat:6> . exists <nat:2> . lia . Qed . 

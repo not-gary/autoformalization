@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:z> \cdot <var:B> \cdot <var:o> $ is equal to $ <nat:216> $ . \end{theorem} \begin{proof} Let $ <var:B> = <nat:6> $ , $ <var:z> = <nat:12> $ , and $ <var:o> = <nat:3> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:o> <var:B> <var:z> : nat , ( <var:z> * <var:B> * <var:o> = <nat:216> ) . Proof . exists <nat:3> . exists <nat:6> . exists <nat:12> . repeat split . all : lia . Qed . 

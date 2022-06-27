@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:276> + <var:h> \cdot <nat:210> $ will be even given every $ <var:h> \in \mathbb{N} $ . \end{theorem} \begin{proof} Take note that $ <nat:276> $ is even . It can be shown that our proposition is proven . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:h> : nat , Nat . even ( <nat:210> * <var:h> + <nat:276> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:276> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

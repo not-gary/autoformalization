@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:W> $ , $ <var:M> \in \mathbb{Z}^+ $ where the number <nat:96> is the product of integers $ <var:W> $ , and $ <var:M> \in \mathbb{N} $ . \end{theorem} \begin{proof} We justify the theory is true seeing that $ <nat:96> = <var:M> \cdot <var:W> $ hints $ <var:W> = <nat:12> $ and $ <var:M> = <nat:8> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:W> <var:M> : nat , ( <nat:96> = <var:W> * <var:M> ) . Proof . exists <nat:12> . exists <nat:8> . lia . Qed . 

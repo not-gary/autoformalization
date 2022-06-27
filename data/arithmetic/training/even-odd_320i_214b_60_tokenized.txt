@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With every positive terms $ <var:b> $ , and $ <var:i> $ the expression $ <var:i> \times <nat:320> + <nat:214> \times <var:b> + <nat:60> $ is guaranteed to be even . \end{theorem} \begin{proof} We demonstrate $ <var:i> \times <nat:320> + <var:b> \times <nat:214> + <nat:60> $ will be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:b> <var:i> : nat , Nat . even ( <nat:320> * <var:i> + <nat:214> * <var:b> + <nat:60> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

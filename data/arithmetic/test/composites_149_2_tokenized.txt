@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:132> is the multiplication of natural numbers $ <var:y> $ and $ <var:z> \in \mathbb{N} $ such that $ <var:y> $ , $ <var:z> > <nat:1> $ . \end{theorem} \begin{proof} We present our principle is valid because $ <var:y> \cdot <var:z> = <nat:132> $ produces $ <var:z> = <nat:11> $ and $ <var:y> = <nat:12> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:y> <var:z> : nat , ( <nat:132> = <var:y> * <var:z> ) /\ ( <var:y> > <nat:1> ) /\ ( <var:z> > <nat:1> ) . Proof . exists <nat:12> . exists <nat:11> . lia . Qed . 

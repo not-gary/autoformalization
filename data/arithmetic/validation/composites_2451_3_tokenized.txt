@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:b> * <var:X> * <var:O> $ is the same as $ <nat:231> $ with $ <var:X> $ , $ <var:O> $ , $ <var:b> $ . \end{theorem} \begin{proof} We present $ <nat:231> = <var:X> * <var:b> * <var:O> $ . Observe $ <nat:231> = <var:X> * <var:O> * <var:b> $ produces $ <var:O> = <nat:7> $ , $ <var:b> = <nat:3> $ , and $ <var:X> = <nat:11> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:X> <var:O> <var:b> : nat , ( <var:b> * <var:X> * <var:O> = <nat:231> ) . Proof . exists <nat:11> . exists <nat:7> . exists <nat:3> . repeat split . all : lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:r> $ , $ <var:F> \in \mathbb{Z}^+ $ such that $ <var:r> \cdot <var:F> $ is $ <nat:30> $ . \end{theorem} \begin{proof} Assume $ <var:r> = <nat:10> $ , and $ <var:F> = <nat:3> $ . We demonstrate $ <nat:30> = <var:F> \cdot <var:r> $ . We present the statement is valid in consideration of $ <nat:30> = <nat:3> \cdot <nat:10> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:r> <var:F> : nat , ( <var:r> * <var:F> = <nat:30> ) . Proof . exists <nat:10> . exists <nat:3> . lia . Qed . 

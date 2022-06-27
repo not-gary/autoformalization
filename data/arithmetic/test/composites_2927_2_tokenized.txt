@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:10> is the product of integers $ <var:r> $ , and $ <var:y> $ so that $ <var:y> $ , $ <var:r> $ larger than or equivalent to <nat:2> . \end{theorem} \begin{proof} Notice $ <nat:2> \cdot <nat:5> = <nat:10> = <var:r> \cdot <var:y> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:r> <var:y> : nat , ( <nat:10> = <var:r> * <var:y> ) /\ ( <var:y> >= <nat:2> ) /\ ( <var:r> >= <nat:2> ) . Proof . exists <nat:2> . exists <nat:5> . lia . Qed . 

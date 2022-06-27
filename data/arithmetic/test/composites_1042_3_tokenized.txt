@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:300> = <var:D> \times <var:m> \times <var:R> $ with $ <var:m> $ , $ <var:D> $ and $ <var:R> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Assume $ <var:D> = <nat:10> $ , $ <var:m> = <nat:5> $ , and $ <var:R> = <nat:6> $ . We demonstrate $ <var:D> \times <var:m> \times <var:R> = <nat:300> $ . Observe $ <var:D> * <var:R> * <var:m> = <nat:10> * <nat:6> * <nat:5> = <nat:300> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:m> <var:D> <var:R> : nat , ( <nat:300> = <var:D> * <var:m> * <var:R> ) . Proof . exists <nat:5> . exists <nat:10> . exists <nat:6> . repeat split . all : lia . Qed . 

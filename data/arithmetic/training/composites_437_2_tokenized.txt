@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:c> $ , $ <var:l> $ are positive integers such that $ <var:c> \times <var:l> $ is equivalent to $ <nat:24> $ . \end{theorem} \begin{proof} Assume $ <var:l> = <nat:6> $ and $ <var:c> = <nat:4> $ . Note $ <var:l> \cdot <var:c> = <nat:24> $ . This indicates our result holds . As a result , <nat:24> is the product of some $ <var:l> $ and $ <var:c> $ is proven . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:c> <var:l> : nat , ( <var:c> * <var:l> = <nat:24> ) . Proof . exists <nat:4> . exists <nat:6> . lia . Qed . 

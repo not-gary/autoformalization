@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:110> $ equals $ <var:u> * <var:J> $ so that $ <var:u> $ , and $ <var:J> $ more than or equivalent to <nat:2> . \end{theorem} \begin{proof} We prove our proposition is valid in view of $ <nat:110> = <nat:11> * <nat:10> $ . As a result , $ <var:u> * <var:J> = <nat:110> $ has been validated . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:u> <var:J> : nat , ( <nat:110> = <var:u> * <var:J> ) /\ ( <var:u> >= <nat:2> ) /\ ( <var:J> >= <nat:2> ) . Proof . exists <nat:10> . exists <nat:11> . lia . Qed . 

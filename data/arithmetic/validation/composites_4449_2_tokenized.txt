@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:C> $ and $ <var:w> \in \mathbb{N} $ where $ <var:w> $ and $ <var:C> \geq <nat:2> $ as well as satisfying the condition that $ <nat:24> $ is $ <var:w> * <var:C> $ . \end{theorem} \begin{proof} Allow $ <var:C> = <nat:6> $ , and $ <var:w> = <nat:4> $ . Observe $ <nat:4> * <nat:6> = <nat:24> = <var:w> * <var:C> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:C> <var:w> : nat , ( <var:w> >= <nat:2> ) /\ ( <var:C> >= <nat:2> ) /\ ( <nat:24> = <var:w> * <var:C> ) . Proof . exists <nat:6> . exists <nat:4> . lia . Qed . 

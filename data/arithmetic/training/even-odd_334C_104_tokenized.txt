@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For any $ <var:C> $ the summation $ <var:C> <nat:334> + <nat:104> $ is even . \end{theorem} \begin{proof} Lemma clearly holds . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:C> : nat , Nat . even ( <nat:334> * <var:C> + <nat:104> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

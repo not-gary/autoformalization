@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} A <def:cadillact> is a number $ <var:a> $ such that $ <var:a> = <var:b> ^ <nat:11> $ , where $ <var:b> $ is a natural number . \end{definition} \begin{theorem} <nat:2048> is a <def:cadillact> . \end{theorem} \begin{proof} <nat:2048> is equal to <nat:2> raised to the power <nat:11> , and is therefore a <def:cadillact> by definition . \end{proof} \end{document}
+~
+Proof

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:78> \times <var:y> + <nat:198> + <var:x> \times <nat:488> $ is guaranteed to be even . \end{theorem} \begin{proof} We verify the formula $ <nat:198> + <nat:78> \cdot <var:y> + <nat:488> \cdot <var:x> $ must be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:y> <var:x> : nat , Nat . even ( <nat:78> * <var:y> + <nat:488> * <var:x> + <nat:198> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

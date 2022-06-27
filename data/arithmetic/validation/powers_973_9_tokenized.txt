@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:Z> $ are natural numbers so that $ <var:Z> $ greater than <nat:1> plus so that the positive integer <nat:512> is the exponent of positive integer $ <var:Z> $ raised to the exponential <nat:9> . \end{theorem} \begin{proof} We show our formula holds seeing that $ <nat:2> ^ <nat:9> = <nat:512> $ and on account of $ <nat:2> $ is more than <nat:1> . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <var:Z> > <nat:1> ) /\ ( <nat:512> = <var:Z> ^ <nat:9> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . apply <genH> . auto . Qed . 

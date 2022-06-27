@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:s> $ , $ <var:H> $ , $ <var:N> \in \mathbb{N} $ so that $ <nat:1248> $ equals $ <var:N> \cdot <var:s> \cdot <var:H> $ . \end{theorem} \begin{proof} Take $ <var:N> = <nat:12> $ , $ <var:s> = <nat:13> $ , and $ <var:H> = <nat:8> $ . Notice $ <var:N> \times <var:s> \times <var:H> = <nat:1248> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:s> <var:H> <var:N> : nat , ( <nat:1248> = <var:N> * <var:s> * <var:H> ) . Proof . exists <nat:13> . exists <nat:8> . exists <nat:12> . repeat split . all : lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:C> $ , $ <var:d> $ as numbers . $ <var:C> * <var:d> = <nat:32> $ . \end{theorem} \begin{proof} Assume $ <var:C> = <nat:4> $ , $ <var:d> = <nat:8> $ . This yields the belief is valid . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:C> <var:d> : nat , ( <var:C> * <var:d> = <nat:32> ) . Proof . exists <nat:4> . exists <nat:8> . lia . Qed . 

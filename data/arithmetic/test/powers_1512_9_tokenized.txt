@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:N> ^ <nat:9> $ is equivalent to $ <nat:512> $ given $ <var:N> \in \mathbb{N} $ so that $ <var:N> $ greater than <nat:1> . \end{theorem} \begin{proof} Assume $ <var:N> = <nat:2> $ . We demonstrate the result is true in view of $ <var:N> = <nat:2> $ is larger than <nat:1> . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <var:N> ^ <nat:9> = <nat:512> ) /\ ( <var:N> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:243> + <var:c> \times <nat:312> $ must be odd . \end{theorem} \begin{proof} Observe $ <nat:243> $ is guaranteed to be odd . We demonstrate the main result is proven . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:c> : nat , Nat . odd ( <nat:312> * <var:c> + <nat:243> ) = true . Proof . intros . assert ( <genH> : Nat . odd <nat:243> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:A> \times <var:x> \times <var:s> $ is equivalent to $ <nat:528> $ assuming $ <var:x> $ , $ <var:s> $ , and $ <var:A> $ . \end{theorem} \begin{proof} Take $ <var:s> = <nat:11> $ , $ <var:A> = <nat:12> $ , $ <var:x> = <nat:4> $ . We confirm $ <var:x> * <var:s> * <var:A> = <nat:528> $ . We present the thesis holds seeing that $ <nat:528> = <var:s> \cdot <var:A> \cdot <var:x> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:x> <var:s> <var:A> : nat , ( <var:A> * <var:x> * <var:s> = <nat:528> ) . Proof . exists <nat:4> . exists <nat:11> . exists <nat:12> . repeat split . all : lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Only if we have $ <var:N> ^ <nat:5> = <var:Z> $ with $ <var:Z> \in \mathbb{N} $ , then we assume that $ <var:Z> $ is a <def:penteract> natural number with some natural number $ <var:N> $ . Accordingly the whole number <nat:32> is a <def:penteract> integer . \end{theorem} \begin{proof} Take $ <var:N> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:penteract> ( <var:Z> : nat ) := exists <var:N> : nat , ( <var:N> ^ <nat:5> = <var:Z> ) . Theorem <genP:1> : <def:penteract> <nat:32> . Proof . unfold <def:penteract> . exists <nat:2> . auto . Qed . 

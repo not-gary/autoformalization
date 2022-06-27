@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:512> is the exponential of positive integer $ <var:I> $ exponentiated to the exponential <nat:9> such that $ <var:I> $ more than <nat:1> . \end{theorem} \begin{proof} Note $ <var:I> ^ <nat:9> = <nat:512> $ produces $ <var:I> = <nat:2> $ . Additionally observe $ <nat:2> $ is more than <nat:1> . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:I> : nat , ( <nat:512> = <var:I> ^ <nat:9> ) /\ ( <var:I> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

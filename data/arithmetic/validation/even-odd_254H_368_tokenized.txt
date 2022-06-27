@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:368> + <nat:254> \cdot <var:H> $ will be even with any positive numbers $ <var:H> $ . \end{theorem} \begin{proof} See that $ <nat:368> $ is known as even . It can be demonstrated that our theorem is proven . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:H> : nat , Nat . even ( <nat:254> * <var:H> + <nat:368> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:368> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

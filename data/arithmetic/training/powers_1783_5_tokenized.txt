@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:g> $ as positive integers so that $ <var:g> $ larger than or equal to <nat:2> plus so that $ <var:g> ^ <nat:5> $ is equal to $ <nat:32> $ . \end{theorem} \begin{proof} Notice that $ <nat:2> ^ <nat:5> = <var:g> ^ <nat:5> = <nat:32> $ . This suggests the principle is valid . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:g> : nat , ( <var:g> >= <nat:2> ) /\ ( <var:g> ^ <nat:5> = <nat:32> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

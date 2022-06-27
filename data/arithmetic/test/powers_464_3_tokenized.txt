@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some natural number $ <var:t> $ so that the number <nat:8> is the repeated multiplication between whole number $ <var:t> $ exponentiated to the exponent <nat:3> . \end{theorem} \begin{proof} Assume $ <var:t> = <nat:2> $ . We verify $ <nat:8> = <var:t> ^ <nat:3> $ . Notice $ <nat:8> = <var:t> ^ <nat:3> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <nat:8> = <var:t> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

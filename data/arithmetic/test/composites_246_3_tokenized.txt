@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:D> $ , $ <var:S> $ , and $ <var:P> $ be natural numbers where $ <var:P> \times <var:S> \times <var:D> $ is the same as $ <nat:220> $ . \end{theorem} \begin{proof} We present $ <var:P> \cdot <var:S> \cdot <var:D> = <nat:220> $ . Observe $ <var:S> * <var:P> * <var:D> = <nat:11> * <nat:5> * <nat:4> = <nat:220> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:D> <var:S> <var:P> : nat , ( <var:P> * <var:S> * <var:D> = <nat:220> ) . Proof . exists <nat:4> . exists <nat:11> . exists <nat:5> . repeat split . all : lia . Qed . 

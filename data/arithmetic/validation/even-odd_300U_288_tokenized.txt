@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:U> * <nat:300> + <nat:288> $ is even taking every variables $ <var:U> $ . \end{theorem} \begin{proof} Multiplying between an even whole number with some natural must be even . As a consequence , our lemma is true . Remember that $ <nat:288> $ is guaranteed to be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:U> : nat , Nat . even ( <nat:300> * <var:U> + <nat:288> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . assert ( <genH> : Nat . even <nat:288> = true ) . { auto . } rewrite <genH> . auto . Qed . 

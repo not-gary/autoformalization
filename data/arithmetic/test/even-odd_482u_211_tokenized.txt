@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:u> \cdot <nat:482> + <nat:211> $ must be odd taking every positive numbers $ <var:u> $ . \end{theorem} \begin{proof} The totaling between an even number in $ \mathbb{Z}^+ $ with an odd positive integer must be odd . Remember that $ <nat:211> $ is odd . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:u> : nat , Nat . odd ( <nat:482> * <var:u> + <nat:211> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . assert ( <genH> : Nat . odd <nat:211> = true ) . { auto . } repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

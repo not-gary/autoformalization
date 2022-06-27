@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:62> \times <var:s> + <nat:373> + <nat:444> \times <var:l> $ will be odd . \end{theorem} \begin{proof} Lemma is proven . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:s> <var:l> : nat , Nat . odd ( <nat:62> * <var:s> + <nat:444> * <var:l> + <nat:373> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

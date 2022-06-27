@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:8> is the repeated multiplication of positive integer $ <var:R> $ raised to the exponent <nat:3> where $ <var:R> > <nat:1> $ . \end{theorem} \begin{proof} We verify our theory holds as $ <nat:8> = <var:R> ^ <nat:3> $ produces $ <var:R> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:R> : nat , ( <nat:8> = <var:R> ^ <nat:3> ) /\ ( <var:R> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:42> is the multiplication between whole numbers $ <var:f> $ , and $ <var:O> $ such that $ <var:f> $ , and $ <var:O> $ greater than <nat:1> . \end{theorem} \begin{proof} Assume $ <var:f> = <nat:7> $ , $ <var:O> = <nat:6> $ . Note $ <nat:7> \times <nat:6> = <nat:42> $ . Consequently , $ <var:O> $ and $ <var:f> > <nat:1> $ and $ <var:O> \cdot <var:f> = <nat:42> $ is true has been proven . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:f> <var:O> : nat , ( <nat:42> = <var:f> * <var:O> ) /\ ( <var:f> > <nat:1> ) /\ ( <var:O> > <nat:1> ) . Proof . exists <nat:7> . exists <nat:6> . lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:128> is the repeated product between positive integer $ <var:R> \in \mathbb{Z}^+ $ exponentiated to the exponential <nat:7> where $ <var:R> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} We prove our statement is valid by reason of $ <var:R> ^ <nat:7> = <nat:2> ^ <nat:7> = <nat:128> $ . Therefore , $ <var:R> ^ <nat:7> = <nat:128> $ and $ <var:R> \geq <nat:2> $ is true has been proven . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:R> : nat , ( <nat:128> = <var:R> ^ <nat:7> ) /\ ( <var:R> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

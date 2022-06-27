@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:P> $ , $ <var:X> $ and $ <var:a> \in \mathbb{N} $ satisfying the condition that $ <var:a> * <var:X> * <var:P> $ is equal to $ <nat:264> $ . \end{theorem} \begin{proof} Allow $ <var:a> = <nat:2> $ , $ <var:X> = <nat:12> $ , $ <var:P> = <nat:11> $ . We demonstrate our claim holds seeing that $ <nat:264> = <var:P> \cdot <var:X> \cdot <var:a> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:P> <var:X> <var:a> : nat , ( <var:a> * <var:X> * <var:P> = <nat:264> ) . Proof . exists <nat:11> . exists <nat:12> . exists <nat:2> . repeat split . all : lia . Qed . 

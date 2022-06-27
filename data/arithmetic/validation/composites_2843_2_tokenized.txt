@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:40> is the product between positive integers $ <var:J> $ , and $ <var:k> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Let $ <var:J> = <nat:4> $ , $ <var:k> = <nat:10> $ . Note $ <nat:40> = <var:J> * <var:k> $ . Consequently , <nat:40> is the multiplication of some positive integers $ <var:J> $ , $ <var:k> $ is proven . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:J> <var:k> : nat , ( <nat:40> = <var:J> * <var:k> ) . Proof . exists <nat:4> . exists <nat:10> . lia . Qed . 

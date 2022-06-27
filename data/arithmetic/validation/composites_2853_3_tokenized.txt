@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:T> \cdot <var:o> \cdot <var:F> = <nat:528> $ satisfying the condition that $ <var:o> $ , $ <var:F> $ , and $ <var:T> > <nat:1> $ . \end{theorem} \begin{proof} Observe that $ <var:o> \cdot <var:T> \cdot <var:F> = <nat:528> $ indicates $ <var:T> = <nat:6> $ , $ <var:o> = <nat:8> $ , and $ <var:F> = <nat:11> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:F> <var:o> <var:T> : nat , ( <var:T> * <var:o> * <var:F> = <nat:528> ) /\ ( <var:o> > <nat:1> ) /\ ( <var:F> > <nat:1> ) /\ ( <var:T> > <nat:1> ) . Proof . exists <nat:11> . exists <nat:8> . exists <nat:6> . repeat split . all : lia . Qed . 

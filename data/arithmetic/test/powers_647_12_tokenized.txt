@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:K> \in \mathbb{Z}^+ $ . We claim that some natural number $ <var:q> $ will be a <def:dodekeract> positive integer given $ <var:q> = <var:K> ^ <nat:12> $ . Therefore the positive integer <nat:4096> is a <def:dodekeract> integer . \end{theorem} \begin{proof} Note $ <var:K> ^ <nat:12> = <nat:2> ^ <nat:12> = <nat:4096> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:dodekeract> ( <var:q> : nat ) := exists <var:K> : nat , ( <var:q> = <var:K> ^ <nat:12> ) . Theorem <genP:1> : <def:dodekeract> <nat:4096> . Proof . unfold <def:dodekeract> . exists <nat:2> . auto . Qed . 

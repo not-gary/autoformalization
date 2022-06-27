@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:M> $ , and $ <var:t> \in \mathbb{N} $ . the natural number <nat:40> is the multiplication between $ <var:M> $ , $ <var:t> \in \mathbb{N} $ . \end{theorem} \begin{proof} We present $ <var:t> \cdot <var:M> = <nat:40> $ . We prove our proposition is true on account of $ <nat:40> = <var:M> \cdot <var:t> $ yields $ <var:t> = <nat:10> $ , $ <var:M> = <nat:4> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:M> <var:t> : nat , ( <nat:40> = <var:M> * <var:t> ) . Proof . exists <nat:4> . exists <nat:10> . lia . Qed . 

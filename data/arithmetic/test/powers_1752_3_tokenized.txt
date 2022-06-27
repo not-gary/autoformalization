@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:V> $ as positive integers satisfying the condition that the whole number <nat:8> is the exponent between whole number $ <var:V> $ exponentiated to the exponential <nat:3> . \end{theorem} \begin{proof} Take $ <var:V> = <nat:2> $ . We prove our theory is true considering $ <nat:2> ^ <nat:3> = <nat:8> $ . Consequently , $ <var:V> ^ <nat:3> = <nat:8> $ is validated . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <nat:8> = <var:V> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

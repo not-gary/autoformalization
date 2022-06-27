@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming there is positive integer $ <var:y> $ assume that some positive integer $ <var:m> $ will be named a <def:cube> positive integer given $ <var:y> ^ <nat:3> = <var:m> $ . Therefore $ <nat:8> = <var:m> $ is a <def:cube> whole number . \end{theorem} \begin{proof} Allow $ <var:y> = <nat:2> $ . Observe $ <nat:2> ^ <nat:3> = <var:y> ^ <nat:3> = <nat:8> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:m> : nat ) := exists <var:y> : nat , ( <var:y> ^ <nat:3> = <var:m> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

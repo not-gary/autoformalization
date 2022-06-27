@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:128> is the exponential of number $ <var:Q> \in \mathbb{Z}^+ $ taken to the degree <nat:7> . \end{theorem} \begin{proof} Take $ <var:Q> = <nat:2> $ . We prove $ <var:Q> ^ <nat:7> = <nat:128> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Q> : nat , ( <nat:128> = <var:Q> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

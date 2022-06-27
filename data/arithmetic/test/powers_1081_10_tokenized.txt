@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming there is $ <var:V> \in \mathbb{N} $ where $ <var:V> \geq <nat:2> $ . Assume that $ <var:K> \in \mathbb{Z}^+ $ will be called a <def:dekeract> integer assuming $ <var:V> ^ <nat:10> = <var:K> $ . Then $ <var:K> = <nat:1024> $ is a <def:dekeract> number . \end{theorem} \begin{proof} Take $ <var:V> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:dekeract> ( <var:K> : nat ) := exists <var:V> : nat , ( <var:V> >= <nat:2> ) /\ ( <var:V> ^ <nat:10> = <var:K> ) . Theorem <genP:1> : <def:dekeract> <nat:1024> . Proof . unfold <def:dekeract> . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:T> \in \mathbb{N} $ satisfying the condition that $ <var:T> $ more than or equivalent to <nat:2> . $ <nat:32> $ is equivalent to $ <var:T> ^ <nat:5> $ . \end{theorem} \begin{proof} Notice $ <nat:32> = <nat:2> ^ <nat:5> $ . Moreover notice that $ <nat:2> \geq <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:T> : nat , ( <var:T> >= <nat:2> ) /\ ( <nat:32> = <var:T> ^ <nat:5> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . apply <genH> . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} When we get $ <var:s> = <var:Z> ^ <nat:2> $ with $ <var:s> \in \mathbb{N} $ assuming some $ <var:Z> \in \mathbb{N} $ , then we define that $ <var:s> $ is a <def:square> whole number . \end{definition} \begin{theorem} $ <var:s> = <nat:4> $ is a <def:square> integer . \end{theorem} \begin{proof} Let $ <var:Z> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:square> ( <var:s> : nat ) := exists <var:Z> : nat , ( <var:s> = <var:Z> ^ <nat:2> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

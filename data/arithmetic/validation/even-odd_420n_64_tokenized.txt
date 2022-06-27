@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:n> \times <nat:420> + <nat:64> $ must be even assuming every $ <var:n> $ . \end{theorem} \begin{proof} See that the leading term $ <nat:420> $ is known to be an even whole number \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:n> : nat , Nat . even ( <nat:420> * <var:n> + <nat:64> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:420> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

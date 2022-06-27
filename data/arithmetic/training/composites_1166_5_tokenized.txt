@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:O> $ , $ <var:m> $ , $ <var:n> $ , $ <var:I> $ and $ <var:G> $ are numbers such that $ <nat:11880> $ is the same as $ <var:G> \times <var:m> \times <var:n> \times <var:I> \times <var:O> $ . \end{theorem} \begin{proof} Note $ <nat:11880> = <nat:8> \times <nat:11> \times <nat:5> \times <nat:3> \times <nat:9> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:O> <var:m> <var:n> <var:I> <var:G> : nat , ( <nat:11880> = <var:G> * <var:m> * <var:n> * <var:I> * <var:O> ) . Proof . exists <nat:11> . exists <nat:8> . exists <nat:3> . exists <nat:5> . exists <nat:9> . repeat split . all : lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:8> is the raising of of $ <var:m> $ taken to the exponent <nat:3> . \end{theorem} \begin{proof} Note $ <nat:2> ^ <nat:3> = <nat:8> $ . This gives our theorem is valid . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:m> : nat , ( <nat:8> = <var:m> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

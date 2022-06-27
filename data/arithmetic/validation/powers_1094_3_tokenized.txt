@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some positive integer $ <var:u> $ such that the integer <nat:8> is the repeated multiplication of natural number $ <var:u> $ exponentiated to the power <nat:3> . \end{theorem} \begin{proof} We demonstrate $ <nat:8> = <var:u> ^ <nat:3> $ . Notice $ <var:u> ^ <nat:3> = <nat:8> = <nat:2> ^ <nat:3> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <nat:8> = <var:u> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

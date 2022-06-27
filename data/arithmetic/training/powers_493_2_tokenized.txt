@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some whole number $ <var:m> $ satisfying the condition that $ <var:m> $ greater than <nat:1> and so that the integer <nat:4> is the repeated multiplication of integer $ <var:m> $ taken to the exponential <nat:2> . \end{theorem} \begin{proof} We show $ <nat:4> = <var:m> ^ <nat:2> $ . Notice $ <var:m> ^ <nat:2> = <nat:4> = <nat:2> ^ <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:m> : nat , ( <var:m> > <nat:1> ) /\ ( <nat:4> = <var:m> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

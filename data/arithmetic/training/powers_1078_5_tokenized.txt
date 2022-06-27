@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:M> \in \mathbb{Z}^+ $ . Assume that some integer $ <var:u> $ is called a <def:penteract> integer given $ <var:M> ^ <nat:5> = <var:u> $ . Then $ <var:u> = <nat:32> $ is a <def:penteract> integer . \end{theorem} \begin{proof} Note $ <nat:32> = <nat:2> ^ <nat:5> $ . This gives <nat:32> is a <def:penteract> integer . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:penteract> ( <var:u> : nat ) := exists <var:M> : nat , ( <var:M> ^ <nat:5> = <var:u> ) . Theorem <genP:1> : <def:penteract> <nat:32> . Proof . unfold <def:penteract> . exists <nat:2> . auto . Qed . 

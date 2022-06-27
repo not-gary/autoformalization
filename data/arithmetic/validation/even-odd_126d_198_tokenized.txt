@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For $ <var:d> \in \mathbb{Z}^+ $ the sum $ <var:d> * <nat:126> + <nat:198> $ is guaranteed to be even . \end{theorem} \begin{proof} $ <var:d> * <nat:126> $ is known to be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:d> : nat , Nat . even ( <nat:126> * <var:d> + <nat:198> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:126> * <var:d> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

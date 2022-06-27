@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:t> $ , $ <var:g> $ , and $ <var:U> $ as integers where $ <nat:385> = <var:g> \times <var:t> \times <var:U> $ . \end{theorem} \begin{proof} We confirm the statement is valid because $ <nat:385> = <nat:7> \cdot <nat:11> \cdot <nat:5> $ . So , $ <var:g> \times <var:U> \times <var:t> = <nat:385> $ is verified . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:t> <var:g> <var:U> : nat , ( <nat:385> = <var:g> * <var:t> * <var:U> ) . Proof . exists <nat:5> . exists <nat:11> . exists <nat:7> . repeat split . all : lia . Qed . 

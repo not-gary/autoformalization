@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:66> is the multiplication of numbers $ <var:X> $ and $ <var:J> $ . \end{theorem} \begin{proof} Notice $ <nat:6> \cdot <nat:11> = <nat:66> = <var:X> \cdot <var:J> $ . This produces our thesis is valid . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:X> <var:J> : nat , ( <nat:66> = <var:X> * <var:J> ) . Proof . exists <nat:6> . exists <nat:11> . lia . Qed . 

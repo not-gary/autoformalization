@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:e> * <var:r> * <var:y> * <var:M> $ is $ <nat:5040> $ . \end{theorem} \begin{proof} Notice that $ <var:e> * <var:M> * <var:y> * <var:r> = <nat:5040> $ hints $ <var:y> = <nat:10> $ , $ <var:e> = <nat:6> $ , $ <var:M> = <nat:7> $ , $ <var:r> = <nat:12> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:y> <var:e> <var:r> <var:M> : nat , ( <var:e> * <var:r> * <var:y> * <var:M> = <nat:5040> ) . Proof . exists <nat:10> . exists <nat:6> . exists <nat:12> . exists <nat:7> . repeat split . all : lia . Qed . 

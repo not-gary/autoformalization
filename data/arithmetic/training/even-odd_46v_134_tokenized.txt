@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:134> + <var:v> <nat:46> $ will be even . \end{theorem} \begin{proof} Observe that the adding of even numbers in $ \mathbb{N} $ successively is even . Notice that the term $ <nat:46> \cdot <var:v> $ is clearly even . It can be proven that this main result must be true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:v> : nat , Nat . even ( <nat:46> * <var:v> + <nat:134> ) = true . Proof . intros . repeat rewrite Nat . even_add . assert ( <genH> : Nat . even ( <nat:46> * <var:v> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite <genH> . auto . Qed . 

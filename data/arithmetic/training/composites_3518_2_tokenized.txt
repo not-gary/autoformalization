@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:36> $ is the same as $ <var:z> \cdot <var:I> $ . \end{theorem} \begin{proof} We confirm the formula is valid because $ <var:z> \times <var:I> = <nat:3> \times <nat:12> = <nat:36> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:z> <var:I> : nat , ( <nat:36> = <var:z> * <var:I> ) . Proof . exists <nat:3> . exists <nat:12> . lia . Qed . 

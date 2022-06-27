@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:U> * <var:l> * <var:K> = <nat:270> $ where $ <var:K> $ , $ <var:l> $ and $ <var:U> > <nat:1> $ . \end{theorem} \begin{proof} Note $ <nat:9> \times <nat:3> \times <nat:10> = <nat:270> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:l> <var:K> <var:U> : nat , ( <var:U> * <var:l> * <var:K> = <nat:270> ) /\ ( <var:K> > <nat:1> ) /\ ( <var:l> > <nat:1> ) /\ ( <var:U> > <nat:1> ) . Proof . exists <nat:9> . exists <nat:10> . exists <nat:3> . repeat split . all : lia . Qed . 

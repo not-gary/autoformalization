@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:H> $ , $ <var:Q> $ , $ <var:F> \in \mathbb{N} $ satisfying the condition that the integer <nat:160> is the multiplication of positive integers $ <var:H> $ , $ <var:Q> $ , $ <var:F> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Let $ <var:Q> = <nat:4> $ , $ <var:H> = <nat:5> $ and $ <var:F> = <nat:8> $ . Note $ <nat:160> = <var:Q> * <var:F> * <var:H> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:H> <var:Q> <var:F> : nat , ( <nat:160> = <var:H> * <var:Q> * <var:F> ) . Proof . exists <nat:5> . exists <nat:4> . exists <nat:8> . repeat split . all : lia . Qed . 

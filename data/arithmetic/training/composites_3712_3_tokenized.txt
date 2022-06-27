@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:60> $ is equivalent to $ <var:w> * <var:u> * <var:p> $ so that $ <var:u> $ , $ <var:p> $ , $ <var:w> \geq <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:w> = <nat:5> $ , $ <var:u> = <nat:4> $ and $ <var:p> = <nat:3> $ . This indicates our thesis holds . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:u> <var:w> <var:p> : nat , ( <nat:60> = <var:w> * <var:u> * <var:p> ) /\ ( <var:u> >= <nat:2> ) /\ ( <var:p> >= <nat:2> ) /\ ( <var:w> >= <nat:2> ) . Proof . exists <nat:4> . exists <nat:5> . exists <nat:3> . repeat split . all : lia . Qed . 

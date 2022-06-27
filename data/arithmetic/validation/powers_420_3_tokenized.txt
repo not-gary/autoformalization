@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given we have $ <var:g> ^ <nat:3> = <var:m> $ for some $ <var:m> $ , then we say that $ <var:m> $ is a <def:cube> positive integer given some $ <var:g> \in \mathbb{Z}^+ $ . Consequently the positive integer <nat:8> is a <def:cube> . \end{theorem} \begin{proof} Take $ <var:g> = <nat:2> $ . We justify $ <nat:8> = <var:g> ^ <nat:3> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:m> : nat ) := exists <var:g> : nat , ( <var:g> ^ <nat:3> = <var:m> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

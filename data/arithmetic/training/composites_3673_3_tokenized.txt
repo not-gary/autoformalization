@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:Y> $ , $ <var:l> $ , and $ <var:d> $ as numbers such that the whole number <nat:264> is the product between whole numbers $ <var:Y> $ , $ <var:l> $ and $ <var:d> $ . \end{theorem} \begin{proof} Allow $ <var:d> = <nat:3> $ , $ <var:Y> = <nat:11> $ and $ <var:l> = <nat:8> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:Y> <var:l> <var:d> : nat , ( <nat:264> = <var:Y> * <var:l> * <var:d> ) . Proof . exists <nat:11> . exists <nat:8> . exists <nat:3> . repeat split . all : lia . Qed . 

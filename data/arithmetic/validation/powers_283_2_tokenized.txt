@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> $ equals $ <var:F> ^ <nat:2> $ with $ <var:F> $ . \end{theorem} \begin{proof} Let $ <var:F> = <nat:2> $ . Note $ <nat:4> = <var:F> ^ <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <nat:4> = <var:F> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:X> * <nat:24> + <nat:17> $ will be odd . \end{theorem} \begin{proof} We justify the sum $ <nat:17> + <nat:24> * <var:X> $ is guaranteed to be odd . Remember that the multiplication of even natural numbers will be by definition an even number in $ \mathbb{N} $ . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:X> : nat , Nat . odd ( <nat:24> * <var:X> + <nat:17> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given every whole numbers $ <var:P> $ the summation $ <var:P> * <nat:126> + <nat:232> $ must be even . \end{theorem} \begin{proof} $ <nat:126> \times <var:P> $ is even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:P> : nat , Nat . even ( <nat:126> * <var:P> + <nat:232> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:126> * <var:P> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:j> ^ <nat:9> $ is $ <nat:512> $ assuming $ <var:j> \in \mathbb{Z}^+ $ such that $ <var:j> > <nat:1> $ . \end{theorem} \begin{proof} Take $ <var:j> = <nat:2> $ . We demonstrate $ <nat:512> = <var:j> ^ <nat:9> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <var:j> ^ <nat:9> = <nat:512> ) /\ ( <var:j> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

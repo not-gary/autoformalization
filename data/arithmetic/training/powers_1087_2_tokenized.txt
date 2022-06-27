@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:H> \in \mathbb{N} $ . Denote that some integer $ <var:e> $ is called a <def:square> number when $ <var:e> = <var:H> ^ <nat:2> $ . So the natural number <nat:4> is a <def:square> whole number . \end{theorem} \begin{proof} Take $ <var:H> = <nat:2> $ . This yields our theory holds . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:square> ( <var:e> : nat ) := exists <var:H> : nat , ( <var:e> = <var:H> ^ <nat:2> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

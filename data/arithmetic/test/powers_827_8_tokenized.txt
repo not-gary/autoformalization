@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:256> is the repeated product between $ <var:B> \in \mathbb{Z}^+ $ raised to the degree <nat:8> . \end{theorem} \begin{proof} Take $ <var:B> = <nat:2> $ . Notice that $ <nat:256> = <var:B> ^ <nat:8> = <nat:2> ^ <nat:8> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:B> : nat , ( <nat:256> = <var:B> ^ <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

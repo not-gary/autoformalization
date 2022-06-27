@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:K> \in \mathbb{N} $ such that $ <var:K> > <nat:1> $ and so that $ <nat:256> $ is equivalent to $ <var:K> ^ <nat:8> $ . \end{theorem} \begin{proof} Assume $ <var:K> = <nat:2> $ . Notice $ <nat:2> $ is greater than <nat:1> . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <var:K> > <nat:1> ) /\ ( <nat:256> = <var:K> ^ <nat:8> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . apply <genH> . auto . Qed . 

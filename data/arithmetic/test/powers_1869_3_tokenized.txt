@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:8> is the exponent of whole number $ <var:d> \in \mathbb{N} $ raised to the exponent <nat:3> . \end{theorem} \begin{proof} Take $ <var:d> = <nat:2> $ . This gives the formula holds . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <nat:8> = <var:d> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

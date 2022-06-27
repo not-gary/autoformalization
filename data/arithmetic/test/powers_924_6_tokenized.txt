@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some $ <var:K> $ such that $ <var:K> $ more than <nat:1> plus so that $ <nat:64> $ is equivalent to $ <var:K> ^ <nat:6> $ . \end{theorem} \begin{proof} We prove <nat:64> is the repeated multiplication between $ <var:K> \in \mathbb{N} $ taken to the exponential <nat:6> . Observe that $ <var:K> ^ <nat:6> = <nat:64> $ implies $ <var:K> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <var:K> > <nat:1> ) /\ ( <nat:64> = <var:K> ^ <nat:6> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

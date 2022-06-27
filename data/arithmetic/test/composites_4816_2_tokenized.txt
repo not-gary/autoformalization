@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:x> $ and $ <var:P> $ as integers where $ <var:x> $ and $ <var:P> $ more than <nat:1> as well as so that the integer <nat:40> is the product between natural numbers $ <var:x> $ , $ <var:P> $ . \end{theorem} \begin{proof} Let $ <var:P> = <nat:10> $ , $ <var:x> = <nat:4> $ . We show the principle is valid considering $ <nat:40> = <var:x> * <var:P> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:x> <var:P> : nat , ( <var:x> > <nat:1> ) /\ ( <var:P> > <nat:1> ) /\ ( <nat:40> = <var:x> * <var:P> ) . Proof . exists <nat:4> . exists <nat:10> . lia . Qed . 

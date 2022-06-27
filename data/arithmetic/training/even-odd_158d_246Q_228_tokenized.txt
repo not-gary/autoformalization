@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:d> <nat:158> + <var:Q> <nat:246> + <nat:228> $ must be even . \end{theorem} \begin{proof} Notice $ <nat:228> $ is an even positive integer . It can be shown that $ <nat:158> \cdot <var:d> + <nat:228> + <var:Q> \cdot <nat:246> $ must be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:d> <var:Q> : nat , Nat . even ( <nat:158> * <var:d> + <nat:246> * <var:Q> + <nat:228> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:228> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:V> ^ <nat:3> $ is equivalent to $ <nat:8> $ such that $ <var:V> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} Take $ <var:V> = <nat:2> $ . We confirm our principle is true for $ <nat:2> $ is more than or equal to <nat:2> plus on account of $ <nat:8> = <var:V> ^ <nat:3> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <var:V> ^ <nat:3> = <nat:8> ) /\ ( <var:V> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

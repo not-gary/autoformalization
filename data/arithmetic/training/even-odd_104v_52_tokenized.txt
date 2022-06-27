@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:52> + <var:v> \cdot <nat:104> $ must be even . \end{theorem} \begin{proof} The number $ <nat:104> $ is trivially even . Thus , the product $ <var:v> \cdot <nat:104> $ must be even also . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:v> : nat , Nat . even ( <nat:104> * <var:v> + <nat:52> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:104> = true ) . { auto . } assert ( <genH> : Nat . even ( <nat:104> * <var:v> ) = true ) . { rewrite Nat . even_mul . rewrite <genH> . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

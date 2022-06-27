@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Say that $ <var:F> $ is a <def:square> whole number wherever $ \exists <var:U> \in \mathbb{N} $ so that $ <var:F> = <var:U> ^ <nat:2> $ assuming some natural number $ <var:F> $ . For this reason the positive integer <nat:4> is a <def:square> positive integer . \end{theorem} \begin{proof} Assume $ <var:U> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:square> ( <var:F> : nat ) := exists <var:U> : nat , ( <var:F> = <var:U> ^ <nat:2> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

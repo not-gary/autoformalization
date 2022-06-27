@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:Y> $ and $ <var:r> $ as natural numbers so that $ <var:r> $ , and $ <var:Y> $ larger than or equivalent to <nat:2> . $ <var:Y> * <var:r> = <nat:14> $ . \end{theorem} \begin{proof} Let $ <var:Y> = <nat:2> $ and $ <var:r> = <nat:7> $ . We verify our theorem is valid in view of $ <var:r> \times <var:Y> = <nat:14> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:Y> <var:r> : nat , ( <var:r> >= <nat:2> ) /\ ( <var:Y> >= <nat:2> ) /\ ( <var:Y> * <var:r> = <nat:14> ) . Proof . exists <nat:2> . exists <nat:7> . lia . Qed . 

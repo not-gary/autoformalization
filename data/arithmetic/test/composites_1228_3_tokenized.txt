@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:720> is the product between positive integers $ <var:u> $ , $ <var:v> $ , $ <var:H> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We demonstrate the claim holds by reason of $ <var:H> \cdot <var:u> \cdot <var:v> = <nat:720> $ indicates $ <var:H> = <nat:8> $ , $ <var:v> = <nat:9> $ , and $ <var:u> = <nat:10> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:u> <var:v> <var:H> : nat , ( <nat:720> = <var:u> * <var:v> * <var:H> ) . Proof . exists <nat:10> . exists <nat:9> . exists <nat:8> . repeat split . all : lia . Qed . 

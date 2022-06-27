@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:D> ^ <nat:6> $ is equivalent to $ <nat:64> $ given $ <var:D> \in \mathbb{Z}^+ $ such that $ <var:D> \geq <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:D> = <nat:2> $ . We confirm the result is valid on account of $ <nat:64> = <nat:2> ^ <nat:6> = <var:D> ^ <nat:6> $ . As a consequence , $ <var:D> ^ <nat:6> = <nat:64> $ is proven . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:D> : nat , ( <var:D> ^ <nat:6> = <nat:64> ) /\ ( <var:D> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

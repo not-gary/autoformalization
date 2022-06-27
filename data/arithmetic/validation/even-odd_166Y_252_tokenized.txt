@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:252> + <var:Y> <nat:166> $ is even . \end{theorem} \begin{proof} On top of this , notice the products $ <nat:166> \times <var:Y> $ are known as even since the natural numbers $ <nat:166> $ are trivially even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:Y> : nat , Nat . even ( <nat:166> * <var:Y> + <nat:252> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:166> = true ) . { auto . } assert ( <genH> : Nat . even ( <nat:166> * <var:Y> ) = true ) . { rewrite Nat . even_mul . rewrite <genH> . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:24> $ is equivalent to $ <var:x> \times <var:h> $ given $ <var:x> $ , $ <var:h> \in \mathbb{N} $ . \end{theorem} \begin{proof} We demonstrate $ <nat:24> = <var:x> * <var:h> $ . We demonstrate the claim is true because $ <var:x> \cdot <var:h> = <nat:24> $ shows $ <var:h> = <nat:3> $ , and $ <var:x> = <nat:8> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:x> <var:h> : nat , ( <nat:24> = <var:x> * <var:h> ) . Proof . exists <nat:8> . exists <nat:3> . lia . Qed . 

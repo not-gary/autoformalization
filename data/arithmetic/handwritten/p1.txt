@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} $ <var:a> \in \mathbb{N} $ is called a <def:cataract> if there is a natural number $ <var:b> $ such that $ <var:a> = <var:b> ^ <nat:12> $ . \end{definition} \begin{theorem} <nat:4096> is a <def:cataract> . \end{theorem} \begin{proof} Let $ <var:b> = <nat:2> $ . Then $ <nat:4096> = <var:b> ^ <nat:12> $ , which gives that it is a <def:cataract> . \end{proof} \end{document}
+~
+Proof

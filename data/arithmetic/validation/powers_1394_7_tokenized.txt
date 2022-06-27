@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:128> is the raising of between positive integer $ <var:S> $ raised to the exponential <nat:7> satisfying the condition that $ <var:S> > <nat:1> $ . \end{theorem} \begin{proof} Allow $ <var:S> = <nat:2> $ . We demonstrate $ <var:S> > <nat:1> $ as well as $ <var:S> ^ <nat:7> = <nat:128> $ . Observe that $ <var:S> ^ <nat:7> = <nat:128> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <nat:128> = <var:S> ^ <nat:7> ) /\ ( <var:S> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

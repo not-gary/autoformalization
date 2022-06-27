@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:R> $ as positive integers . Assume that $ <var:Q> \in \mathbb{N} $ will be considered a <def:hepteract> integer if $ <var:Q> = <var:R> ^ <nat:7> $ . Accordingly $ <nat:128> = <var:Q> $ is a <def:hepteract> . \end{theorem} \begin{proof} We prove the principle is true in view of $ <nat:128> = <nat:2> ^ <nat:7> = <var:R> ^ <nat:7> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:hepteract> ( <var:Q> : nat ) := exists <var:R> : nat , ( <var:Q> = <var:R> ^ <nat:7> ) . Theorem <genP:1> : <def:hepteract> <nat:128> . Proof . unfold <def:hepteract> . exists <nat:2> . auto . Qed . 

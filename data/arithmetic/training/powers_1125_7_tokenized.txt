@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:128> is the raising of of positive integer $ <var:E> $ exponentiated to the exponent <nat:7> . \end{theorem} \begin{proof} Let $ <var:E> = <nat:2> $ . We verify $ <var:E> ^ <nat:7> = <nat:128> $ . We demonstrate our theorem is valid on account of $ <nat:128> = <nat:2> ^ <nat:7> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:E> : nat , ( <nat:128> = <var:E> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

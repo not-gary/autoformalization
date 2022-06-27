@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some positive integers $ <var:V> $ , $ <var:I> $ where $ <var:V> \cdot <var:I> $ is $ <nat:36> $ . \end{theorem} \begin{proof} Assume $ <var:V> = <nat:4> $ , and $ <var:I> = <nat:9> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:V> <var:I> : nat , ( <var:V> * <var:I> = <nat:36> ) . Proof . exists <nat:4> . exists <nat:9> . lia . Qed . 

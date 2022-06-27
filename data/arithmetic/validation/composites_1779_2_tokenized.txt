@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:g> \cdot <var:x> $ is $ <nat:42> $ such that $ <var:g> $ and $ <var:x> $ larger than or equal to <nat:2> . \end{theorem} \begin{proof} Assume $ <var:x> = <nat:7> $ , $ <var:g> = <nat:6> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:x> <var:g> : nat , ( <var:g> * <var:x> = <nat:42> ) /\ ( <var:g> >= <nat:2> ) /\ ( <var:x> >= <nat:2> ) . Proof . exists <nat:7> . exists <nat:6> . lia . Qed . 

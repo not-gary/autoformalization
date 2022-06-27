@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:L> \in \mathbb{N} $ . Let that some integer $ <var:y> $ is considered a <def:enneract> natural number assuming $ <var:y> = <var:L> ^ <nat:9> $ . For this reason $ <var:y> = <nat:512> $ is a <def:enneract> natural number . \end{theorem} \begin{proof} Notice that $ <nat:512> = <var:L> ^ <nat:9> = <nat:2> ^ <nat:9> $ . This hints our result is valid . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:enneract> ( <var:y> : nat ) := exists <var:L> : nat , ( <var:y> = <var:L> ^ <nat:9> ) . Theorem <genP:1> : <def:enneract> <nat:512> . Proof . unfold <def:enneract> . exists <nat:2> . auto . Qed . 

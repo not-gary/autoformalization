@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given all positive numbers $ <var:b> $ the sum $ <nat:394> + <nat:294> * <var:b> $ is guaranteed to be even . \end{theorem} \begin{proof} The natural number $ <nat:294> $ is clearly even It can be proven that $ <nat:394> + <nat:294> \times <var:b> $ must be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:b> : nat , Nat . even ( <nat:294> * <var:b> + <nat:394> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:294> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

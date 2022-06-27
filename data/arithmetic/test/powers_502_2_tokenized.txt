@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume that $ <var:a> $ is a <def:square> only if there exists $ <var:i> \in \mathbb{N} $ where $ <var:a> = <var:i> ^ <nat:2> $ for some integer $ <var:a> $ . Accordingly the number <nat:4> is a <def:square> number . \end{theorem} \begin{proof} Let $ <var:i> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:square> ( <var:a> : nat ) := exists <var:i> : nat , ( <var:a> = <var:i> ^ <nat:2> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

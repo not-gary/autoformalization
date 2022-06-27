@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:g> \in \mathbb{Z}^+ $ satisfying the condition that the whole number <nat:8> is the repeated multiplication between $ <var:g> \in \mathbb{N} $ exponentiated to the exponential <nat:3> . \end{theorem} \begin{proof} We confirm our theorem is true because $ <nat:8> = <var:g> ^ <nat:3> = <nat:2> ^ <nat:3> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:g> : nat , ( <nat:8> = <var:g> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

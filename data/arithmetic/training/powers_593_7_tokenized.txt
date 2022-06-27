@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Only if we have $ <var:u> = <var:z> ^ <nat:7> $ given $ <var:u> \in \mathbb{Z}^+ $ with some $ <var:z> \in \mathbb{Z}^+ $ , take as given that $ <var:u> $ is a <def:hepteract> integer . Therefore the integer <nat:128> is a <def:hepteract> integer . \end{theorem} \begin{proof} Note $ <nat:2> ^ <nat:7> = <nat:128> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:hepteract> ( <var:u> : nat ) := exists <var:z> : nat , ( <var:u> = <var:z> ^ <nat:7> ) . Theorem <genP:1> : <def:hepteract> <nat:128> . Proof . unfold <def:hepteract> . exists <nat:2> . auto . Qed . 

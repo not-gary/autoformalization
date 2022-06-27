@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:128> is the repeated multiplication of whole number $ <var:x> $ repeatedly multiplied to the power <nat:7> satisfying the condition that $ <var:x> > <nat:1> $ . \end{theorem} \begin{proof} Take $ <var:x> = <nat:2> $ . We present our theorem holds because $ <nat:2> > <nat:1> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:x> : nat , ( <nat:128> = <var:x> ^ <nat:7> ) /\ ( <var:x> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:144> $ is equal to $ <var:V> \times <var:b> \times <var:w> $ . \end{theorem} \begin{proof} We prove $ <var:V> * <var:w> * <var:b> = <nat:144> $ . Notice that $ <var:w> \cdot <var:V> \cdot <var:b> = <nat:144> $ produces $ <var:V> = <nat:6> $ , $ <var:b> = <nat:12> $ , and $ <var:w> = <nat:2> $ . This hints our theorem is valid . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:b> <var:V> <var:w> : nat , ( <nat:144> = <var:V> * <var:b> * <var:w> ) . Proof . exists <nat:12> . exists <nat:6> . exists <nat:2> . repeat split . all : lia . Qed . 

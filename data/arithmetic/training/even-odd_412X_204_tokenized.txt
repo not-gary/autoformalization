@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:204> + <nat:412> \cdot <var:X> $ must be even . \end{theorem} \begin{proof} See that $ <nat:204> $ is obviously even . It can be justified that our lemma is true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:X> : nat , Nat . even ( <nat:412> * <var:X> + <nat:204> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:204> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

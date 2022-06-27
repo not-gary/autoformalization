@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:R> $ be natural numbers such that $ <var:R> $ greater than <nat:1> and satisfying the condition that $ <var:R> ^ <nat:9> $ is the same as $ <nat:512> $ . \end{theorem} \begin{proof} Notice that $ <nat:512> = <var:R> ^ <nat:9> $ shows $ <var:R> = <nat:2> $ . This hints our principle holds . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:R> : nat , ( <var:R> > <nat:1> ) /\ ( <var:R> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Define that $ <var:r> $ is a <def:cube> with the condition that there exists some $ <var:s> $ where $ <var:r> = <var:s> ^ <nat:3> $ assuming $ <var:r> \in \mathbb{Z}^+ $ . Hence <nat:8> is a <def:cube> integer . \end{theorem} \begin{proof} Let $ <var:s> = <nat:2> $ . This yields our claim is true . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:r> : nat ) := exists <var:s> : nat , ( <var:r> = <var:s> ^ <nat:3> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

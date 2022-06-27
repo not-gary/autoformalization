@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:4> is the raising of between integer $ <var:q> $ raised to the power <nat:2> such that $ <var:q> $ more than <nat:1> . \end{theorem} \begin{proof} We prove $ <var:q> ^ <nat:2> = <nat:4> $ . Note $ <nat:4> = <nat:2> ^ <nat:2> = <var:q> ^ <nat:2> $ . Plus observe that $ <nat:2> $ is more than <nat:1> . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:q> : nat , ( <nat:4> = <var:q> ^ <nat:2> ) /\ ( <var:q> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

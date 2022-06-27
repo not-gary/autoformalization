@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:q> * <nat:286> + <nat:264> $ will be even . \end{theorem} \begin{proof} We know $ <nat:264> $ is guaranteed to be even . Taking the product of even naturals must be even . Consequently , the lemma must be true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:q> : nat , Nat . even ( <nat:286> * <var:q> + <nat:264> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:264> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For any integers $ <var:a> $ and $ <var:b> $ it must be true that $ <nat:44> \times <var:a> + <nat:62> \times <var:b> + <nat:14> $ is even . \end{theorem} \begin{proof} The terms $ <nat:44> \times <var:a> $ and $ <nat:62> \times <var:b> $ must be even using the fact that the multiplication of an even number with any integer is even . Since the sum of even numbers must be even , the expression $ <nat:44> \times <var:a> + <nat:62> \times <var:b> + <nat:14> $ is even . \end{proof} \end{document}
+~
+Proof

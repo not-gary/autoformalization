@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:576> is the multiplication between numbers $ <var:l> $ , $ <var:L> $ , $ <var:b> $ and $ <var:X> \in \mathbb{N} $ . \end{theorem} \begin{proof} Take $ <var:l> = <nat:2> $ , $ <var:L> = <nat:4> $ , $ <var:X> = <nat:9> $ , $ <var:b> = <nat:8> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:l> <var:L> <var:b> <var:X> : nat , ( <nat:576> = <var:l> * <var:L> * <var:b> * <var:X> ) . Proof . exists <nat:2> . exists <nat:4> . exists <nat:8> . exists <nat:9> . repeat split . all : lia . Qed . 

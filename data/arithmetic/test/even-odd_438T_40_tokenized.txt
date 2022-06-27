@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:438> \cdot <var:T> + <nat:40> $ must be even . \end{theorem} \begin{proof} Recall the natural number $ <nat:438> $ is an even positive integer \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:T> : nat , Nat . even ( <nat:438> * <var:T> + <nat:40> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:438> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

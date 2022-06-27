@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} Allow $ <var:L> $ are whole numbers . Say that $ <var:N> \in \mathbb{Z}^+ $ will be considered a <def:enneract> positive integer given $ <var:N> = <var:L> ^ <nat:9> $ . \end{definition} \begin{theorem} <nat:512> is a <def:enneract> whole number . \end{theorem} \begin{proof} Take $ <var:L> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:enneract> ( <var:N> : nat ) := exists <var:L> : nat , ( <var:N> = <var:L> ^ <nat:9> ) . Theorem <genP:1> : <def:enneract> <nat:512> . Proof . unfold <def:enneract> . exists <nat:2> . auto . Qed . 

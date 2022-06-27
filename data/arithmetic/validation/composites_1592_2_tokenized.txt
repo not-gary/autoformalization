@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some integers $ <var:L> $ , and $ <var:z> $ such that $ <var:L> \cdot <var:z> $ is $ <nat:132> $ . \end{theorem} \begin{proof} Assume $ <var:L> = <nat:12> $ , $ <var:z> = <nat:11> $ . Notice that $ <var:L> \cdot <var:z> = <nat:132> $ . Hence , <nat:132> is the product of some integers $ <var:L> $ and $ <var:z> $ is validated . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:L> <var:z> : nat , ( <var:L> * <var:z> = <nat:132> ) . Proof . exists <nat:12> . exists <nat:11> . lia . Qed . 

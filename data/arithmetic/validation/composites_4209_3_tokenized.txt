@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:r> * <var:C> * <var:m> = <nat:189> $ . \end{theorem} \begin{proof} We demonstrate the formula is true seeing that $ <var:r> * <var:m> * <var:C> = <nat:189> = <nat:3> * <nat:9> * <nat:7> $ . Hence , <nat:189> is the multiplication of some $ <var:m> $ , $ <var:C> $ , $ <var:r> $ is true has been proven . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:r> <var:C> <var:m> : nat , ( <var:r> * <var:C> * <var:m> = <nat:189> ) . Proof . exists <nat:3> . exists <nat:7> . exists <nat:9> . repeat split . all : lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:366> \cdot <var:U> + <var:s> \cdot <nat:268> + <nat:164> \cdot <var:Y> + <var:z> \cdot <nat:454> + <nat:103> $ will be odd . \end{theorem} \begin{proof} Lemma trivially is proven . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:U> <var:s> <var:Y> <var:z> : nat , Nat . odd ( <nat:366> * <var:U> + <nat:268> * <var:s> + <nat:164> * <var:Y> + <nat:454> * <var:z> + <nat:103> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

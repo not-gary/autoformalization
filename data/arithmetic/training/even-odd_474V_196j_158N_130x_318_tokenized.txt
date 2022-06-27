@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:318> + <nat:474> \times <var:V> + <nat:196> \times <var:j> + <var:N> \times <nat:158> + <var:x> \times <nat:130> $ is guaranteed to be even . \end{theorem} \begin{proof} Result holds . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:V> <var:j> <var:N> <var:x> : nat , Nat . even ( <nat:474> * <var:V> + <nat:196> * <var:j> + <nat:158> * <var:N> + <nat:130> * <var:x> + <nat:318> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

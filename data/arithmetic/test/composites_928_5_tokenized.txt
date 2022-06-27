@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:i> \cdot <var:Z> \cdot <var:b> \cdot <var:G> \cdot <var:t> $ is $ <nat:4158> $ . \end{theorem} \begin{proof} Take $ <var:i> = <nat:11> $ , $ <var:Z> = <nat:3> $ , $ <var:G> = <nat:2> $ , $ <var:t> = <nat:9> $ , and $ <var:b> = <nat:7> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:i> <var:G> <var:Z> <var:t> <var:b> : nat , ( <var:i> * <var:Z> * <var:b> * <var:G> * <var:t> = <nat:4158> ) . Proof . exists <nat:11> . exists <nat:2> . exists <nat:3> . exists <nat:9> . exists <nat:7> . repeat split . all : lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:494> <var:t> + <nat:110> $ is even . \end{theorem} \begin{proof} To start , see that the adding of even positive integers successively will be by definition an even natural . Remember multiplying between an even number in $ \mathbb{Z}^+ $ with some number must be even . The whole number $ <nat:494> $ is trivially even \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:t> : nat , Nat . even ( <nat:494> * <var:t> + <nat:110> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . assert ( <genH> : Nat . even <nat:494> = true ) . { auto . } rewrite <genH> . auto . Qed . 

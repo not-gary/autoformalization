@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:256> is the exponent of natural number $ <var:V> $ exponentiated to the degree <nat:8> such that $ <var:V> $ greater than or equivalent to <nat:2> . \end{theorem} \begin{proof} We confirm $ <var:V> $ is larger than or equivalent to <nat:2> and $ <var:V> ^ <nat:8> = <nat:256> $ . Note that $ <nat:256> = <nat:2> ^ <nat:8> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <nat:256> = <var:V> ^ <nat:8> ) /\ ( <var:V> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

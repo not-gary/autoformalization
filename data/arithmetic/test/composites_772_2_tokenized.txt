@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:I> $ , $ <var:x> \in \mathbb{Z}^+ $ where $ <var:I> $ , $ <var:x> > <nat:1> $ as well as where $ <nat:22> = <var:x> \cdot <var:I> $ . \end{theorem} \begin{proof} Take $ <var:x> = <nat:2> $ , $ <var:I> = <nat:11> $ . Observe $ <nat:22> = <var:x> \cdot <var:I> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:I> <var:x> : nat , ( <var:I> > <nat:1> ) /\ ( <var:x> > <nat:1> ) /\ ( <nat:22> = <var:x> * <var:I> ) . Proof . exists <nat:11> . exists <nat:2> . lia . Qed . 

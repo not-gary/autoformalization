@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:154> \cdot <var:t> + <nat:80> \cdot <var:M> + <nat:352> \cdot <var:K> + <nat:294> \cdot <var:E> + <nat:10> $ will be even . \end{theorem} \begin{proof} Claim trivially is true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:t> <var:M> <var:K> <var:E> : nat , Nat . even ( <nat:154> * <var:t> + <nat:80> * <var:M> + <nat:352> * <var:K> + <nat:294> * <var:E> + <nat:10> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

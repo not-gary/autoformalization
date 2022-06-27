@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:D> \times <var:E> \times <var:W> $ equals $ <nat:660> $ for $ <var:D> $ , $ <var:W> $ , $ <var:E> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Note $ <nat:660> = <nat:12> * <nat:5> * <nat:11> $ . Hence , $ <var:D> \cdot <var:E> \cdot <var:W> = <nat:660> $ has been verified . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:D> <var:W> <var:E> : nat , ( <var:D> * <var:E> * <var:W> = <nat:660> ) . Proof . exists <nat:5> . exists <nat:12> . exists <nat:11> . repeat split . all : lia . Qed . 

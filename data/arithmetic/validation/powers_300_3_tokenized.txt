@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:q> $ are whole numbers such that $ <var:q> $ larger than <nat:1> plus where $ <nat:8> $ is equal to $ <var:q> ^ <nat:3> $ . \end{theorem} \begin{proof} We justify $ <var:q> $ is greater than <nat:1> and <nat:8> is the repeated multiplication between $ <var:q> \in \mathbb{Z}^+ $ exponentiated to the exponent <nat:3> . Note that $ <nat:8> = <nat:2> ^ <nat:3> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:q> : nat , ( <var:q> > <nat:1> ) /\ ( <nat:8> = <var:q> ^ <nat:3> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

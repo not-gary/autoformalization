@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:8> is the multiplication between numbers $ <var:T> $ , $ <var:S> $ . \end{theorem} \begin{proof} Assume $ <var:T> = <nat:4> $ , $ <var:S> = <nat:2> $ . Note $ <var:S> \cdot <var:T> = <nat:8> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:T> <var:S> : nat , ( <nat:8> = <var:T> * <var:S> ) . Proof . exists <nat:4> . exists <nat:2> . lia . Qed . 

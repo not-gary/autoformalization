@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:320> is the product of integers $ <var:J> $ , $ <var:u> $ , $ <var:R> \in \mathbb{Z}^+ $ such that $ <var:R> $ , $ <var:J> $ , $ <var:u> \geq <nat:2> $ . \end{theorem} \begin{proof} Note $ <var:J> \cdot <var:R> \cdot <var:u> = <nat:320> = <nat:8> \cdot <nat:10> \cdot <nat:4> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:J> <var:u> <var:R> : nat , ( <nat:320> = <var:J> * <var:u> * <var:R> ) /\ ( <var:R> >= <nat:2> ) /\ ( <var:J> >= <nat:2> ) /\ ( <var:u> >= <nat:2> ) . Proof . exists <nat:8> . exists <nat:4> . exists <nat:10> . repeat split . all : lia . Qed . 

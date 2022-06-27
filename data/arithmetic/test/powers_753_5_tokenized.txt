@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:b> \in \mathbb{Z}^+ $ so that $ <var:b> > <nat:1> $ and where the number <nat:32> is the repeated multiplication between whole number $ <var:b> \in \mathbb{N} $ exponentiated to the exponent <nat:5> . \end{theorem} \begin{proof} Let $ <var:b> = <nat:2> $ . We verify the formula holds seeing that $ <nat:32> = <var:b> ^ <nat:5> $ . As a result , $ <var:b> ^ <nat:5> = <nat:32> $ has been verified . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:b> : nat , ( <var:b> > <nat:1> ) /\ ( <nat:32> = <var:b> ^ <nat:5> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

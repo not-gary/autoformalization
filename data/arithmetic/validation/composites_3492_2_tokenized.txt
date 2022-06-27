@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:I> \cdot <var:d> $ equals $ <nat:48> $ . \end{theorem} \begin{proof} Allow $ <var:I> = <nat:8> $ , and $ <var:d> = <nat:6> $ . We verify $ <nat:48> = <var:I> \times <var:d> $ . This hints our proposition holds . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:I> <var:d> : nat , ( <var:I> * <var:d> = <nat:48> ) . Proof . exists <nat:8> . exists <nat:6> . lia . Qed . 

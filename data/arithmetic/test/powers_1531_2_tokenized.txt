@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:a> $ satisfying the condition that $ <var:a> $ more than <nat:1> and satisfying the condition that $ <nat:4> $ is $ <var:a> ^ <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:a> = <nat:2> $ . Note that $ <nat:2> ^ <nat:2> = <nat:4> $ . This gives the thesis is valid . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:a> : nat , ( <var:a> > <nat:1> ) /\ ( <nat:4> = <var:a> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

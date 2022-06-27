@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:128> is the raising of between integer $ <var:u> $ exponentiated to the exponential <nat:7> . \end{theorem} \begin{proof} We present <nat:128> is the repeated product between $ <var:u> \in \mathbb{Z}^+ $ exponentiated to the exponential <nat:7> . Observe $ <nat:128> = <var:u> ^ <nat:7> $ yields $ <var:u> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <nat:128> = <var:u> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

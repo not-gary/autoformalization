@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:440> \cdot <var:I> + <nat:178> \cdot <var:i> + <var:A> \cdot <nat:338> + <nat:242> $ is even with every variables $ <var:i> $ , $ <var:I> $ , and $ <var:A> $ . \end{theorem} \begin{proof} We show the claim is proven . Notice $ <nat:242> $ is even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:i> <var:I> <var:A> : nat , Nat . even ( <nat:440> * <var:I> + <nat:178> * <var:i> + <nat:338> * <var:A> + <nat:242> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:242> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

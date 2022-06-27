@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Say that under the condition that there is $ <var:n> \in \mathbb{Z}^+ $ take that $ <var:y> \in \mathbb{Z}^+ $ is a <def:square> whole number assuming $ <var:y> = <var:n> ^ <nat:2> $ . Hence $ <var:y> = <nat:4> $ is a <def:square> whole number . \end{theorem} \begin{proof} Note $ <nat:4> = <nat:2> ^ <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:square> ( <var:y> : nat ) := exists <var:n> : nat , ( <var:y> = <var:n> ^ <nat:2> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

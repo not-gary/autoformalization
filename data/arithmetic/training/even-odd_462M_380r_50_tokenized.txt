@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:462> <var:M> + <nat:380> <var:r> + <nat:50> $ must be even taking any terms $ <var:M> $ , and $ <var:r> $ . \end{theorem} \begin{proof} See that taking the product between even numbers in $ \mathbb{N} $ is guaranteed to be an even element of $ \mathbb{Z}^+ $ . It can be checked that the claim is true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:M> <var:r> : nat , Nat . even ( <nat:462> * <var:M> + <nat:380> * <var:r> + <nat:50> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:A> \in \mathbb{Z}^+ $ so that $ <var:A> $ more than <nat:1> and such that $ <nat:4> $ equals $ <var:A> ^ <nat:2> $ . \end{theorem} \begin{proof} We justify the proposition is true for $ <var:A> ^ <nat:2> = <nat:4> $ hints $ <var:A> = <nat:2> $ as well as because $ <nat:2> $ is more than <nat:1> . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:A> : nat , ( <var:A> > <nat:1> ) /\ ( <nat:4> = <var:A> ^ <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . apply <genH> . auto . Qed . 

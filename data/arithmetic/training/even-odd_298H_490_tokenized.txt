@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:298> \cdot <var:H> + <nat:490> $ must be even . \end{theorem} \begin{proof} Take note that $ <nat:490> $ is obviously an even natural number . It can be proven that $ <var:H> \cdot <nat:298> + <nat:490> $ is guaranteed to be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:H> : nat , Nat . even ( <nat:298> * <var:H> + <nat:490> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:490> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:32> $ is the same as $ <var:Z> ^ <nat:5> $ with $ <var:Z> \in \mathbb{N} $ satisfying the condition that $ <var:Z> $ more than <nat:1> . \end{theorem} \begin{proof} Notice $ <nat:2> ^ <nat:5> = <nat:32> $ . This indicates the formula is valid . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <nat:32> = <var:Z> ^ <nat:5> ) /\ ( <var:Z> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

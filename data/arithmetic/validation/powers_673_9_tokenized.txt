@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:x> ^ <nat:9> $ is $ <nat:512> $ with $ <var:x> $ . \end{theorem} \begin{proof} Take $ <var:x> = <nat:2> $ . Observe that $ <nat:512> = <nat:2> ^ <nat:9> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:x> : nat , ( <var:x> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . auto . Qed . 

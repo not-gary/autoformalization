@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:X> $ , and $ <var:g> $ as integers where $ <var:X> $ , and $ <var:g> > <nat:1> $ and such that the natural number <nat:48> is the multiplication of positive integers $ <var:X> $ , $ <var:g> $ . \end{theorem} \begin{proof} We prove the statement is valid considering $ <var:X> \cdot <var:g> = <nat:48> $ implies $ <var:g> = <nat:12> $ and $ <var:X> = <nat:4> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:X> <var:g> : nat , ( <var:X> > <nat:1> ) /\ ( <var:g> > <nat:1> ) /\ ( <nat:48> = <var:X> * <var:g> ) . Proof . exists <nat:4> . exists <nat:12> . lia . Qed . 

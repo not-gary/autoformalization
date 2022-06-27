@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:T> \cdot <var:a> \cdot <var:o> $ is equal to $ <nat:24> $ such that $ <var:T> $ , $ <var:o> $ , $ <var:a> > <nat:1> $ . \end{theorem} \begin{proof} Assume $ <var:o> = <nat:4> $ , $ <var:T> = <nat:2> $ , $ <var:a> = <nat:3> $ . This yields our statement holds . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:a> <var:T> <var:o> : nat , ( <var:T> * <var:a> * <var:o> = <nat:24> ) /\ ( <var:T> > <nat:1> ) /\ ( <var:o> > <nat:1> ) /\ ( <var:a> > <nat:1> ) . Proof . exists <nat:3> . exists <nat:2> . exists <nat:4> . repeat split . all : lia . Qed . 

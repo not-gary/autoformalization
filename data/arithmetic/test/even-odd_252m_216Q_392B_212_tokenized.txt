@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:252> <var:m> + <nat:212> + <var:Q> <nat:216> + <var:B> <nat:392> $ must be even with any terms $ <var:m> $ , $ <var:Q> $ , and $ <var:B> $ . \end{theorem} \begin{proof} It can be checked that the proposition is true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:m> <var:Q> <var:B> : nat , Nat . even ( <nat:252> * <var:m> + <nat:216> * <var:Q> + <nat:392> * <var:B> + <nat:212> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

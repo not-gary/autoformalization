@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:Y> \cdot <nat:150> + <nat:496> + <var:M> \cdot <nat:458> $ is guaranteed to be even given every positive numbers $ <var:M> $ , and $ <var:Y> $ . \end{theorem} \begin{proof} Claim obivously is true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:M> <var:Y> : nat , Nat . even ( <nat:150> * <var:Y> + <nat:458> * <var:M> + <nat:496> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

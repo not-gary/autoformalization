@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:132> $ is $ <var:E> \cdot <var:b> \cdot <var:W> $ with $ <var:W> $ , $ <var:E> $ , $ <var:b> $ . \end{theorem} \begin{proof} We demonstrate $ <var:b> \cdot <var:E> \cdot <var:W> = <nat:132> $ . Note $ <var:b> * <var:W> * <var:E> = <nat:132> $ suggests $ <var:b> = <nat:11> $ , $ <var:W> = <nat:2> $ and $ <var:E> = <nat:6> $ . This gives our thesis holds . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:W> <var:E> <var:b> : nat , ( <nat:132> = <var:E> * <var:b> * <var:W> ) . Proof . exists <nat:2> . exists <nat:6> . exists <nat:11> . repeat split . all : lia . Qed . 

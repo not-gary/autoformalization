@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:8> is the exponent of $ <var:y> $ taken to the degree <nat:3> such that $ <var:y> $ larger than <nat:1> . \end{theorem} \begin{proof} Let $ <var:y> = <nat:2> $ . Note that $ <nat:8> = <var:y> ^ <nat:3> $ . This hints the theorem is true . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:y> : nat , ( <nat:8> = <var:y> ^ <nat:3> ) /\ ( <var:y> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

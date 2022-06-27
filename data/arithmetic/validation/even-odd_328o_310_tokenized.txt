@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:310> + <var:o> * <nat:328> $ is even . \end{theorem} \begin{proof} Remember the summation of an even positive integer and an even natural number will be an even integer . Similarly , see the product between an even positive integer with some positive integer will be even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:o> : nat , Nat . even ( <nat:328> * <var:o> + <nat:310> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

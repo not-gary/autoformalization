@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With every variables $ <var:w> $ , and $ <var:g> $ the summation $ <nat:106> * <var:g> + <nat:82> * <var:w> + <nat:252> $ is even . \end{theorem} \begin{proof} We show the summation $ <var:g> \times <nat:106> + <nat:252> + <var:w> \times <nat:82> $ is even . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:w> <var:g> : nat , Nat . even ( <nat:106> * <var:g> + <nat:82> * <var:w> + <nat:252> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

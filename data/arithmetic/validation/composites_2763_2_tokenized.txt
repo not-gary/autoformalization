@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some $ <var:l> $ and $ <var:e> $ so that the integer <nat:88> is the multiplication between $ <var:l> $ , $ <var:e> $ . \end{theorem} \begin{proof} Notice that $ <nat:88> = <var:l> \cdot <var:e> $ suggests $ <var:e> = <nat:11> $ , $ <var:l> = <nat:8> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:l> <var:e> : nat , ( <nat:88> = <var:l> * <var:e> ) . Proof . exists <nat:8> . exists <nat:11> . lia . Qed . 

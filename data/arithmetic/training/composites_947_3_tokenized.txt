@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:198> is the multiplication between numbers $ <var:D> $ , $ <var:N> $ , and $ <var:V> \in \mathbb{N} $ . \end{theorem} \begin{proof} Note $ <var:N> * <var:V> * <var:D> = <nat:11> * <nat:9> * <nat:2> = <nat:198> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:D> <var:N> <var:V> : nat , ( <nat:198> = <var:D> * <var:N> * <var:V> ) . Proof . exists <nat:2> . exists <nat:11> . exists <nat:9> . repeat split . all : lia . Qed . 

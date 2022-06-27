@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:Y> $ are natural numbers so that $ <var:Y> \geq <nat:2> $ and so that $ <nat:128> $ is $ <var:Y> ^ <nat:7> $ . \end{theorem} \begin{proof} Assume $ <var:Y> = <nat:2> $ . We demonstrate the claim is valid for $ <nat:2> \geq <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Y> : nat , ( <var:Y> >= <nat:2> ) /\ ( <nat:128> = <var:Y> ^ <nat:7> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . apply <genH> . auto . Qed . 

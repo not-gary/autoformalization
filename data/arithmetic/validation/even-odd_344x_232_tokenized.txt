@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given every positive terms $ <var:x> $ the sum $ <nat:232> + <nat:344> \times <var:x> $ is guaranteed to be even . \end{theorem} \begin{proof} Main result clearly is proven . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:x> : nat , Nat . even ( <nat:344> * <var:x> + <nat:232> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

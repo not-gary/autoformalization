@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:w> <nat:326> + <var:E> <nat:422> + <nat:41> + <var:j> <nat:452> + <var:r> <nat:296> $ is guaranteed to be odd for every positive numbers $ <var:E> $ , $ <var:w> $ , $ <var:r> $ , and $ <var:j> $ . \end{theorem} \begin{proof} Claim obivously is true . \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:E> <var:w> <var:r> <var:j> : nat , Nat . odd ( <nat:326> * <var:w> + <nat:422> * <var:E> + <nat:452> * <var:j> + <nat:296> * <var:r> + <nat:41> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

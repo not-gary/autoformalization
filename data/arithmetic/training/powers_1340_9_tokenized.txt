@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:g> ^ <nat:9> $ is the same as $ <nat:512> $ where $ <var:g> > <nat:1> $ . \end{theorem} \begin{proof} Let $ <var:g> = <nat:2> $ . We confirm $ <var:g> > <nat:1> $ as well as $ <var:g> ^ <nat:9> = <nat:512> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:g> : nat , ( <var:g> ^ <nat:9> = <nat:512> ) /\ ( <var:g> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

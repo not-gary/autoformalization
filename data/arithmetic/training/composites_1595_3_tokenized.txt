@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:S> $ , $ <var:P> $ , and $ <var:Q> \in \mathbb{Z}^+ $ satisfying the condition that $ <nat:110> = <var:Q> \cdot <var:P> \cdot <var:S> $ . \end{theorem} \begin{proof} We present $ <var:Q> * <var:S> * <var:P> = <nat:110> $ . Note $ <nat:110> = <var:Q> * <var:S> * <var:P> $ implies $ <var:S> = <nat:11> $ , $ <var:P> = <nat:5> $ , and $ <var:Q> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:S> <var:P> <var:Q> : nat , ( <nat:110> = <var:Q> * <var:P> * <var:S> ) . Proof . exists <nat:11> . exists <nat:5> . exists <nat:2> . repeat split . all : lia . Qed . 

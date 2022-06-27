@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:0> + <var:q> * <nat:74> $ is even with all terms $ <var:q> $ . \end{theorem} \begin{proof} Notice $ <nat:0> $ is even . The summing of an even integer and an even natural number must be even . The whole number $ <nat:74> $ is obviously even \end{proof} \end{document} 
+~
+Require Import Arith . Theorem <genP:1> : forall <var:q> : nat , Nat . even ( <nat:74> * <var:q> + <nat:0> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:0> = true ) . { auto . } repeat rewrite Nat . even_add . assert ( <genH> : Nat . even <nat:74> = true ) . { auto . } repeat rewrite Nat . even_mul . rewrite <genH> . rewrite <genH> . auto . Qed . 

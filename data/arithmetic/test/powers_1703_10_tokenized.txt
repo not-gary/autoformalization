@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some whole number $ <var:p> $ such that the positive integer <nat:1024> is the raising of between integer $ <var:p> $ repeatedly multiplied to the degree <nat:10> . \end{theorem} \begin{proof} Take $ <var:p> = <nat:2> $ . We prove our result holds by reason of $ <var:p> ^ <nat:10> = <nat:1024> $ . Therefore , $ <var:p> ^ <nat:10> = <nat:1024> $ has been verified . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:p> : nat , ( <nat:1024> = <var:p> ^ <nat:10> ) . Proof . exists <nat:2> . auto . Qed . 

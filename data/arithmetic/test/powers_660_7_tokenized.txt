@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:128> is the exponent of integer $ <var:w> $ raised to the degree <nat:7> . \end{theorem} \begin{proof} We show $ <nat:128> = <var:w> ^ <nat:7> $ . We show our thesis is valid by reason of $ <nat:128> = <nat:2> ^ <nat:7> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:w> : nat , ( <nat:128> = <var:w> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

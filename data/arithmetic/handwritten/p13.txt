@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some integer $ <var:x> $ satisfying the condition $ <nat:243> = <var:x> ^ <nat:5> $ . \end{theorem} \begin{proof} The number $ <nat:3> $ raised to the power of $ <nat:5> $ is equal to $ <nat:243> $ , hence the theorem clearly holds . \end{proof} \end{document}
+~
+Proof

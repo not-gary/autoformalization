@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With the condition we get $ <var:o> ^ <nat:9> = <var:n> $ assuming $ <var:n> \in \mathbb{N} $ assuming some number $ <var:o> $ , say that $ <var:n> $ is a <def:enneract> . Consequently $ <nat:512> = <var:n> $ is a <def:enneract> positive integer . \end{theorem} \begin{proof} Let $ <var:o> = <nat:2> $ . So , $ <var:o> ^ <nat:9> = <nat:512> $ is validated . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Definition <def:enneract> ( <var:n> : nat ) := exists <var:o> : nat , ( <var:o> ^ <nat:9> = <var:n> ) . Theorem <genP:1> : <def:enneract> <nat:512> . Proof . unfold <def:enneract> . exists <nat:2> . auto . Qed . 

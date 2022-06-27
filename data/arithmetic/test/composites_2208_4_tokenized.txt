@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:z> * <var:Z> * <var:e> * <var:I> $ is equivalent to $ <nat:400> $ . \end{theorem} \begin{proof} Take $ <var:I> = <nat:10> $ , $ <var:Z> = <nat:2> $ , $ <var:z> = <nat:5> $ and $ <var:e> = <nat:4> $ . This produces our belief is true . \end{proof} \end{document} 
+~
+Require Import Lia . Theorem <genP:1> : exists <var:I> <var:Z> <var:z> <var:e> : nat , ( <var:z> * <var:Z> * <var:e> * <var:I> = <nat:400> ) . Proof . exists <nat:10> . exists <nat:2> . exists <nat:5> . exists <nat:4> . repeat split . all : lia . Qed . 

@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:16> is the exponential between integer $ <var:P> $ repeatedly multiplied to the power <nat:4> such that $ <var:P> $ more than or equal to <nat:2> . \end{theorem} \begin{proof} Notice $ <var:P> ^ <nat:4> = <nat:16> $ gives $ <var:P> = <nat:2> $ . This gives our claim holds . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:P> : nat , ( <nat:16> = <var:P> ^ <nat:4> ) /\ ( <var:P> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

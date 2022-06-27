@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:J> $ are whole numbers satisfying the condition that $ <var:J> > <nat:1> $ . $ <nat:32> $ is $ <var:J> ^ <nat:5> $ . \end{theorem} \begin{proof} We present our theory is valid as $ <var:J> ^ <nat:5> = <nat:32> $ produces $ <var:J> = <nat:2> $ . \end{proof} \end{document} 
+~
+Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:J> : nat , ( <var:J> > <nat:1> ) /\ ( <nat:32> = <var:J> ^ <nat:5> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 
