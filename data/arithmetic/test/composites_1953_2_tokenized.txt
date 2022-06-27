@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:28> $ is $ <var:Z> \cdot <var:J> $ given $ <var:Z> $ and $ <var:J> $ . \end{theorem} \begin{proof} Let $ <var:Z> = <nat:4> $ , and $ <var:J> = <nat:7> $ . We prove our claim holds for $ <nat:28> = <var:J> \times <var:Z> $ . Therefore , <nat:28> is the product between $ <var:J> $ , and $ <var:Z> \in \mathbb{Z}^+ $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Z> <var:J> : nat , ( <nat:28> = <var:Z> * <var:J> ) . Proof . exists <nat:4> . exists <nat:7> . lia . Qed . 

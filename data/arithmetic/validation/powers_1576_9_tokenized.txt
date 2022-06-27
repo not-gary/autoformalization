@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:e> ^ <nat:9> $ equals $ <nat:512> $ assuming $ <var:e> $ such that $ <var:e> > <nat:1> $ . \end{theorem} \begin{proof} We verify <nat:512> is the repeated product between $ <var:e> \in \mathbb{N} $ repeatedly multiplied to the power <nat:9> . Observe that $ <nat:512> = <var:e> ^ <nat:9> $ suggests $ <var:e> = <nat:2> $ . This suggests our theory holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <var:e> ^ <nat:9> = <nat:512> ) /\ ( <var:e> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

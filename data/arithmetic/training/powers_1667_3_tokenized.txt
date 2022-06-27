@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:C> $ as integers satisfying the condition that $ <nat:8> $ is $ <var:C> ^ <nat:3> $ . \end{theorem} \begin{proof} Take $ <var:C> = <nat:2> $ . Note $ <nat:8> = <nat:2> ^ <nat:3> = <var:C> ^ <nat:3> $ . This suggests our result is true . So , $ <var:C> ^ <nat:3> = <nat:8> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:C> : nat , ( <nat:8> = <var:C> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:326> \times <var:U> + <nat:132> + <nat:250> \times <var:S> + <nat:174> \times <var:O> + <nat:332> \times <var:M> $ must be even with unknowns $ <var:S> $ , $ <var:O> $ , $ <var:M> $ , and $ <var:U> $ . \end{theorem} \begin{proof} Result clearly is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:S> <var:O> <var:M> <var:U> : nat , Nat . even ( <nat:326> * <var:U> + <nat:250> * <var:S> + <nat:174> * <var:O> + <nat:332> * <var:M> + <nat:132> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

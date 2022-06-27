@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:24> is the product between $ <var:v> $ , and $ <var:Y> $ where $ <var:v> $ , and $ <var:Y> $ more than <nat:1> . \end{theorem} \begin{proof} We prove our principle holds for $ <nat:24> = <var:v> * <var:Y> $ suggests $ <var:v> = <nat:8> $ and $ <var:Y> = <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:v> <var:Y> : nat , ( <nat:24> = <var:v> * <var:Y> ) /\ ( <var:v> > <nat:1> ) /\ ( <var:Y> > <nat:1> ) . Proof . exists <nat:8> . exists <nat:3> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:180> + <var:V> <nat:154> $ is guaranteed to be even using all positive numbers $ <var:V> $ . \end{theorem} \begin{proof} The summation of even positive integers with an even number in $ \mathbb{Z}^+ $ is guaranteed to be even . See that the multiplication of even numbers is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:V> : nat , Nat . even ( <nat:154> * <var:V> + <nat:180> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

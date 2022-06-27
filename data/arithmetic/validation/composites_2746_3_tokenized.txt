@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:c> $ , $ <var:g> $ and $ <var:D> \in \mathbb{Z}^+ $ so that $ <var:D> \cdot <var:g> \cdot <var:c> $ is equal to $ <nat:270> $ . \end{theorem} \begin{proof} Assume $ <var:g> = <nat:9> $ , $ <var:c> = <nat:10> $ , $ <var:D> = <nat:3> $ . Notice $ <nat:9> \times <nat:3> \times <nat:10> = <var:g> \times <var:D> \times <var:c> = <nat:270> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:c> <var:g> <var:D> : nat , ( <var:D> * <var:g> * <var:c> = <nat:270> ) . Proof . exists <nat:10> . exists <nat:9> . exists <nat:3> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:j> $ , $ <var:N> $ , $ <var:o> \in \mathbb{N} $ . the integer <nat:72> is the multiplication of integers $ <var:j> $ , $ <var:N> $ and $ <var:o> \in \mathbb{N} $ . \end{theorem} \begin{proof} Notice $ <var:j> \cdot <var:N> \cdot <var:o> = <nat:72> $ hints $ <var:j> = <nat:2> $ , $ <var:N> = <nat:3> $ and $ <var:o> = <nat:12> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:j> <var:N> <var:o> : nat , ( <nat:72> = <var:j> * <var:N> * <var:o> ) . Proof . exists <nat:2> . exists <nat:3> . exists <nat:12> . repeat split . all : lia . Qed . 

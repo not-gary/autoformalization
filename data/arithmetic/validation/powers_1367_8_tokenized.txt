@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:Z> $ as integers such that $ <var:Z> > <nat:1> $ and satisfying the condition that the positive integer <nat:256> is the exponential of whole number $ <var:Z> $ exponentiated to the degree <nat:8> . \end{theorem} \begin{proof} We confirm the principle holds seeing that $ <nat:256> = <var:Z> ^ <nat:8> $ hints $ <var:Z> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <var:Z> > <nat:1> ) /\ ( <nat:256> = <var:Z> ^ <nat:8> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:M> $ , and $ <var:K> \in \mathbb{Z}^+ $ so that $ <var:K> $ and $ <var:M> > <nat:1> $ and such that $ <nat:42> = <var:M> \times <var:K> $ . \end{theorem} \begin{proof} Assume $ <var:K> = <nat:6> $ , and $ <var:M> = <nat:7> $ . Note $ <var:K> \cdot <var:M> = <nat:42> $ . This suggests the formula is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:M> <var:K> : nat , ( <var:K> > <nat:1> ) /\ ( <var:M> > <nat:1> ) /\ ( <nat:42> = <var:M> * <var:K> ) . Proof . exists <nat:7> . exists <nat:6> . lia . Qed . 

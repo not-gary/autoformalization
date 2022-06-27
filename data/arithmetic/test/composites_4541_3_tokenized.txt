@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:360> is the product between $ <var:f> $ , $ <var:W> $ and $ <var:t> $ . \end{theorem} \begin{proof} Notice $ <nat:5> \cdot <nat:9> \cdot <nat:8> = <nat:360> $ . This indicates the belief is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:f> <var:W> <var:t> : nat , ( <nat:360> = <var:f> * <var:W> * <var:t> ) . Proof . exists <nat:5> . exists <nat:8> . exists <nat:9> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:O> $ are whole numbers . $ <var:O> ^ <nat:11> $ is the same as $ <nat:2048> $ . \end{theorem} \begin{proof} Let $ <var:O> = <nat:2> $ . We verify our result is true by reason of $ <var:O> ^ <nat:11> = <nat:2048> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:O> : nat , ( <var:O> ^ <nat:11> = <nat:2048> ) . Proof . exists <nat:2> . auto . Qed . 

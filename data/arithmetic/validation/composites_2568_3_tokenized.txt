@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:A> $ , $ <var:V> $ , and $ <var:w> $ be positive integers so that $ <var:A> $ , $ <var:w> $ , $ <var:V> > <nat:1> $ and satisfying the condition that $ <var:w> \cdot <var:A> \cdot <var:V> = <nat:48> $ . \end{theorem} \begin{proof} Let $ <var:w> = <nat:3> $ , $ <var:A> = <nat:8> $ , $ <var:V> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:A> <var:V> <var:w> : nat , ( <var:A> > <nat:1> ) /\ ( <var:w> > <nat:1> ) /\ ( <var:V> > <nat:1> ) /\ ( <var:w> * <var:A> * <var:V> = <nat:48> ) . Proof . exists <nat:8> . exists <nat:2> . exists <nat:3> . repeat split . all : lia . Qed . 

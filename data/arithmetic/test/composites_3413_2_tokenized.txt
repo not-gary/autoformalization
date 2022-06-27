@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:u> \times <var:R> $ equals $ <nat:70> $ given $ <var:R> $ , and $ <var:u> $ . \end{theorem} \begin{proof} Allow $ <var:u> = <nat:7> $ , and $ <var:R> = <nat:10> $ . We justify <nat:70> is the multiplication between some natural numbers $ <var:u> $ , and $ <var:R> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:R> <var:u> : nat , ( <var:u> * <var:R> = <nat:70> ) . Proof . exists <nat:10> . exists <nat:7> . lia . Qed . 

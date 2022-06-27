@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:b> $ , and $ <var:U> \in \mathbb{N} $ so that $ <nat:36> $ is the same as $ <var:b> \times <var:U> $ . \end{theorem} \begin{proof} Observe that $ <nat:36> = <nat:12> \cdot <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:b> <var:U> : nat , ( <nat:36> = <var:b> * <var:U> ) . Proof . exists <nat:12> . exists <nat:3> . lia . Qed . 

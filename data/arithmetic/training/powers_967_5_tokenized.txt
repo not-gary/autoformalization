@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:32> is the raising of between integer $ <var:s> $ repeatedly multiplied to the degree <nat:5> where $ <var:s> \geq <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:s> = <nat:2> $ . We demonstrate our claim is valid because For $ <var:s> = <nat:2> \geq <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:s> : nat , ( <nat:32> = <var:s> ^ <nat:5> ) /\ ( <var:s> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

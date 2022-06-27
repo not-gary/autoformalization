@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:55> $ equals $ <var:x> \times <var:H> $ given $ <var:H> $ and $ <var:x> \in \mathbb{N} $ . \end{theorem} \begin{proof} Let $ <var:x> = <nat:5> $ and $ <var:H> = <nat:11> $ . Note $ <nat:55> = <nat:11> \times <nat:5> $ . This hints the statement holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:H> <var:x> : nat , ( <nat:55> = <var:x> * <var:H> ) . Proof . exists <nat:11> . exists <nat:5> . lia . Qed . 

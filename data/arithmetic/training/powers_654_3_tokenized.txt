@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:x> ^ <nat:3> $ is $ <nat:8> $ with $ <var:x> $ . \end{theorem} \begin{proof} Allow $ <var:x> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:x> : nat , ( <var:x> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

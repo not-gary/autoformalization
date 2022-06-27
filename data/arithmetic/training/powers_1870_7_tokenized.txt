@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:F> \in \mathbb{N} $ satisfying the condition that the integer <nat:128> is the repeated multiplication of $ <var:F> \in \mathbb{Z}^+ $ repeatedly multiplied to the power <nat:7> . \end{theorem} \begin{proof} Allow $ <var:F> = <nat:2> $ . Note $ <nat:128> = <var:F> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <nat:128> = <var:F> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

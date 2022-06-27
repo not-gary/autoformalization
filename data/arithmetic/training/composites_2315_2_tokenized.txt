@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:X> $ , $ <var:h> \in \mathbb{N} $ satisfying the condition that $ <var:h> $ , $ <var:X> $ greater than <nat:1> and such that $ <nat:72> $ is $ <var:h> * <var:X> $ . \end{theorem} \begin{proof} Notice $ <nat:12> * <nat:6> = <var:X> * <var:h> = <nat:72> $ . As a result , $ <nat:72> = <var:X> \times <var:h> $ and $ <var:h> $ and $ <var:X> $ are more than <nat:1> has been verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:X> <var:h> : nat , ( <var:h> > <nat:1> ) /\ ( <var:X> > <nat:1> ) /\ ( <nat:72> = <var:h> * <var:X> ) . Proof . exists <nat:12> . exists <nat:6> . lia . Qed . 

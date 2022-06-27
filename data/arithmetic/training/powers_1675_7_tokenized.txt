@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:128> $ is equivalent to $ <var:C> ^ <nat:7> $ where $ <var:C> \geq <nat:2> $ . \end{theorem} \begin{proof} Observe $ <nat:128> = <var:C> ^ <nat:7> $ gives $ <var:C> = <nat:2> $ . This indicates our theorem holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:C> : nat , ( <nat:128> = <var:C> ^ <nat:7> ) /\ ( <var:C> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

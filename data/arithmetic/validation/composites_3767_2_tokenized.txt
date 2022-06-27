@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:U> $ and $ <var:b> $ are natural numbers such that the positive integer <nat:20> is the multiplication of $ <var:U> $ , and $ <var:b> $ . \end{theorem} \begin{proof} Notice that $ <var:U> * <var:b> = <nat:20> $ hints $ <var:U> = <nat:5> $ , and $ <var:b> = <nat:4> $ . Consequently , $ <nat:20> = <var:U> * <var:b> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:U> <var:b> : nat , ( <nat:20> = <var:U> * <var:b> ) . Proof . exists <nat:5> . exists <nat:4> . lia . Qed . 

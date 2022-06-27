@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:64> = <var:W> ^ <nat:6> $ so that $ <var:W> \geq <nat:2> $ . \end{theorem} \begin{proof} Observe $ <nat:2> ^ <nat:6> = <nat:64> = <var:W> ^ <nat:6> $ . This implies the statement is true . Therefore , $ <var:W> ^ <nat:6> = <nat:64> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:W> : nat , ( <nat:64> = <var:W> ^ <nat:6> ) /\ ( <var:W> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

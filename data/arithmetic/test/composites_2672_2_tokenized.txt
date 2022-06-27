@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:J> $ , and $ <var:V> \in \mathbb{Z}^+ $ such that $ <nat:156> $ is equivalent to $ <var:J> \times <var:V> $ . \end{theorem} \begin{proof} Allow $ <var:J> = <nat:12> $ and $ <var:V> = <nat:13> $ . Observe that $ <nat:156> = <nat:13> \cdot <nat:12> $ . Because of this , $ <var:V> \times <var:J> = <nat:156> $ is verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:J> <var:V> : nat , ( <nat:156> = <var:J> * <var:V> ) . Proof . exists <nat:12> . exists <nat:13> . lia . Qed . 

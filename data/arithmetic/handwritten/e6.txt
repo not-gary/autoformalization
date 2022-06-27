@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For any natural numbers $ <var:a> $ and $ <var:b> $ , $ <nat:6> \times <var:a> + <nat:14> \times <var:b> + <nat:5> $ is odd . \end{theorem} \begin{proof} $ <nat:6> $ is even , therefore $ <nat:6> \times <var:a> $ is even . Similarly , $ <nat:14> \times <var:b> $ is even because $ <nat:14> $ is even . Since the sum of even numbers is an even number , $ <nat:6> \times <var:a> + <nat:14> \times <var:b> $ must be even . The addition of the odd number $ <nat:5> $ with an even number must be odd . Therefore , $ <nat:6> \times <var:a> + <nat:14> \times <var:b> + <nat:5> $ is odd . \end{proof} \end{document}
-~
-Proof

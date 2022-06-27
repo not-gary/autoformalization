@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:a> $ as numbers . We claim that $ <var:V> \in \mathbb{N} $ will be considered to be a <def:enneract> integer if $ <var:V> = <var:a> ^ <nat:9> $ . For this reason <nat:512> is a <def:enneract> number . \end{theorem} \begin{proof} Allow $ <var:a> = <nat:2> $ . Observe that $ <nat:512> = <nat:2> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:enneract> ( <var:V> : nat ) := exists <var:a> : nat , ( <var:V> = <var:a> ^ <nat:9> ) . Theorem <genP:1> : <def:enneract> <nat:512> . Proof . unfold <def:enneract> . exists <nat:2> . auto . Qed . 

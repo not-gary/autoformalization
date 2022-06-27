@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:18> is the multiplication of $ <var:n> $ , and $ <var:K> $ . \end{theorem} \begin{proof} Note $ <var:K> \cdot <var:n> = <nat:3> \cdot <nat:6> = <nat:18> $ . This gives the proposition is valid . Thus , $ <nat:18> = <var:K> \times <var:n> $ is verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:n> <var:K> : nat , ( <nat:18> = <var:n> * <var:K> ) . Proof . exists <nat:6> . exists <nat:3> . lia . Qed . 

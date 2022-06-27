@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:6> is the product of whole numbers $ <var:W> $ and $ <var:V> $ . \end{theorem} \begin{proof} Allow $ <var:W> = <nat:3> $ , $ <var:V> = <nat:2> $ . Because of this , $ <var:W> * <var:V> = <nat:6> $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:W> <var:V> : nat , ( <nat:6> = <var:W> * <var:V> ) . Proof . exists <nat:3> . exists <nat:2> . lia . Qed . 

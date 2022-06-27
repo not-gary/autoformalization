@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:33> is the product between integers $ <var:t> $ and $ <var:M> \in \mathbb{N} $ such that $ <var:M> $ and $ <var:t> $ larger than <nat:1> . \end{theorem} \begin{proof} Note $ <nat:33> = <var:M> * <var:t> $ hints $ <var:t> = <nat:3> $ , $ <var:M> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:t> <var:M> : nat , ( <nat:33> = <var:t> * <var:M> ) /\ ( <var:M> > <nat:1> ) /\ ( <var:t> > <nat:1> ) . Proof . exists <nat:3> . exists <nat:11> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:18> is the product between whole numbers $ <var:D> $ and $ <var:S> $ so that $ <var:S> $ , and $ <var:D> $ more than <nat:1> . \end{theorem} \begin{proof} Allow $ <var:D> = <nat:6> $ , $ <var:S> = <nat:3> $ . Note $ <nat:18> = <nat:6> \cdot <nat:3> = <var:D> \cdot <var:S> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:D> <var:S> : nat , ( <nat:18> = <var:D> * <var:S> ) /\ ( <var:S> > <nat:1> ) /\ ( <var:D> > <nat:1> ) . Proof . exists <nat:6> . exists <nat:3> . lia . Qed . 

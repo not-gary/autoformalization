@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:512> is the exponential between positive integer $ <var:K> \in \mathbb{N} $ raised to the exponential <nat:9> where $ <var:K> \geq <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:K> = <nat:2> $ . We demonstrate the principle is valid as In view of $ <var:K> = <nat:2> $ is larger than or equal to <nat:2> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <nat:512> = <var:K> ^ <nat:9> ) /\ ( <var:K> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

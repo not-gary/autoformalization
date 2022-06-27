@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:162> is the product between numbers $ <var:u> $ , $ <var:R> $ and $ <var:s> $ . \end{theorem} \begin{proof} Let $ <var:u> = <nat:3> $ , $ <var:R> = <nat:6> $ , and $ <var:s> = <nat:9> $ . We demonstrate our claim holds in view of $ <nat:3> \cdot <nat:6> \cdot <nat:9> = <nat:162> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:u> <var:R> <var:s> : nat , ( <nat:162> = <var:u> * <var:R> * <var:s> ) . Proof . exists <nat:3> . exists <nat:6> . exists <nat:9> . repeat split . all : lia . Qed . 

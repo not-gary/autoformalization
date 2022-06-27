@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some whole number $ <var:E> $ so that $ <var:E> $ greater than <nat:1> as well as where the positive integer <nat:8> is the raising of of positive integer $ <var:E> $ repeatedly multiplied to the exponential <nat:3> . \end{theorem} \begin{proof} Take $ <var:E> = <nat:2> $ . Notice $ <var:E> ^ <nat:3> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:E> : nat , ( <var:E> > <nat:1> ) /\ ( <nat:8> = <var:E> ^ <nat:3> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some number $ <var:u> $ such that <nat:4> is the repeated product of positive integer $ <var:u> $ repeatedly multiplied to the degree <nat:2> . \end{theorem} \begin{proof} Take $ <var:u> = <nat:2> $ . Thus , <nat:4> is the exponential between $ <var:u> \in \mathbb{Z}^+ $ exponentiated to the degree <nat:2> has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <nat:4> = <var:u> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

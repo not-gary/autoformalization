@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:60> is the product between integers $ <var:u> $ , $ <var:t> $ , $ <var:y> \in \mathbb{N} $ . \end{theorem} \begin{proof} We prove the belief is true considering $ <var:y> \times <var:t> \times <var:u> = <nat:60> $ gives $ <var:t> = <nat:10> $ , $ <var:y> = <nat:3> $ and $ <var:u> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:u> <var:t> <var:y> : nat , ( <nat:60> = <var:u> * <var:t> * <var:y> ) . Proof . exists <nat:2> . exists <nat:10> . exists <nat:3> . repeat split . all : lia . Qed . 

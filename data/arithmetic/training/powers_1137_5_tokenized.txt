@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:V> ^ <nat:5> $ equals $ <nat:32> $ given $ <var:V> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Take $ <var:V> = <nat:2> $ . We confirm $ <var:V> ^ <nat:5> = <nat:32> $ . Note $ <var:V> ^ <nat:5> = <nat:32> $ . This suggests the theorem holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <var:V> ^ <nat:5> = <nat:32> ) . Proof . exists <nat:2> . auto . Qed . 

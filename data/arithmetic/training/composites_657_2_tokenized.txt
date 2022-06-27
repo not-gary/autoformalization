@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:B> $ , $ <var:a> $ where $ <var:B> $ and $ <var:a> $ more than or equivalent to <nat:2> and so that the integer <nat:110> is the multiplication between numbers $ <var:B> $ and $ <var:a> $ . \end{theorem} \begin{proof} We confirm our principle holds in view of $ <nat:110> = <var:a> \times <var:B> $ indicates $ <var:a> = <nat:11> $ and $ <var:B> = <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:B> <var:a> : nat , ( <var:B> >= <nat:2> ) /\ ( <var:a> >= <nat:2> ) /\ ( <nat:110> = <var:B> * <var:a> ) . Proof . exists <nat:10> . exists <nat:11> . lia . Qed . 

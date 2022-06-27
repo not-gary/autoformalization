@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:u> $ , $ <var:b> \in \mathbb{N} $ such that <nat:40> is the product between positive integers $ <var:u> $ and $ <var:b> \in \mathbb{N} $ . \end{theorem} \begin{proof} Take $ <var:b> = <nat:4> $ , $ <var:u> = <nat:10> $ . We justify our statement holds as $ <nat:4> \cdot <nat:10> = <var:b> \cdot <var:u> = <nat:40> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:u> <var:b> : nat , ( <nat:40> = <var:u> * <var:b> ) . Proof . exists <nat:10> . exists <nat:4> . lia . Qed . 

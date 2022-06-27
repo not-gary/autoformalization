@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming all $ <var:z> $ $ <var:z> <nat:160> + <nat:82> $ is guaranteed to be even . \end{theorem} \begin{proof} The whole number $ <nat:160> $ is even \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:z> : nat , Nat . even ( <nat:160> * <var:z> + <nat:82> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:160> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

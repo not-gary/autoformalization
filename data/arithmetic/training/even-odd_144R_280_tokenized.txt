@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:144> * <var:R> + <nat:280> $ is guaranteed to be even . \end{theorem} \begin{proof} We know the summation of even numbers concurrently is an even element of $ \mathbb{Z}^+ $ . The product between an even natural number and some number in $ \mathbb{N} $ will be an even whole number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:R> : nat , Nat . even ( <nat:144> * <var:R> + <nat:280> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

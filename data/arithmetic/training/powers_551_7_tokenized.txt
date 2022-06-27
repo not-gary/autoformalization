@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:128> is the exponential between natural number $ <var:f> $ exponentiated to the degree <nat:7> where $ <var:f> $ more than <nat:1> . \end{theorem} \begin{proof} Take $ <var:f> = <nat:2> $ . We present our formula is true because $ <var:f> = <nat:2> > <nat:1> $ plus $ <var:f> ^ <nat:7> = <nat:128> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:f> : nat , ( <nat:128> = <var:f> ^ <nat:7> ) /\ ( <var:f> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

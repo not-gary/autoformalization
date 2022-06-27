@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some integers $ <var:V> $ and $ <var:X> $ where $ <var:V> $ , $ <var:X> $ larger than <nat:1> plus where $ <var:V> \times <var:X> $ is $ <nat:18> $ . \end{theorem} \begin{proof} We prove the thesis is true in consideration of $ <nat:18> = <nat:6> \cdot <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:V> <var:X> : nat , ( <var:V> > <nat:1> ) /\ ( <var:X> > <nat:1> ) /\ ( <var:V> * <var:X> = <nat:18> ) . Proof . exists <nat:6> . exists <nat:3> . lia . Qed . 

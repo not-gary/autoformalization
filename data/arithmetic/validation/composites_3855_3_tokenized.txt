@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:540> is the multiplication of integers $ <var:P> $ , $ <var:e> $ , $ <var:n> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We demonstrate the formula is valid for $ <nat:540> = <nat:9> \cdot <nat:6> \cdot <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:P> <var:e> <var:n> : nat , ( <nat:540> = <var:P> * <var:e> * <var:n> ) . Proof . exists <nat:6> . exists <nat:10> . exists <nat:9> . repeat split . all : lia . Qed . 

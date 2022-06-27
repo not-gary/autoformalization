@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:k> $ as natural numbers where $ <var:k> > <nat:1> $ . $ <var:k> ^ <nat:9> $ equals $ <nat:512> $ . \end{theorem} \begin{proof} Take $ <var:k> = <nat:2> $ . Notice $ <nat:512> = <var:k> ^ <nat:9> $ . This suggests the result holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:k> : nat , ( <var:k> > <nat:1> ) /\ ( <var:k> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

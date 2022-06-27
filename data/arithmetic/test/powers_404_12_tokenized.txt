@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:u> ^ <nat:12> $ equals $ <nat:4096> $ with $ <var:u> \in \mathbb{N} $ . \end{theorem} \begin{proof} Let $ <var:u> = <nat:2> $ . We show our principle holds considering $ <var:u> ^ <nat:12> = <nat:4096> $ . Consequently , <nat:4096> is the raising of between some $ <var:u> $ repeatedly multiplied to the exponential <nat:12> is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <var:u> ^ <nat:12> = <nat:4096> ) . Proof . exists <nat:2> . auto . Qed . 

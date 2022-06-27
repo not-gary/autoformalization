@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:106> + <var:K> * <nat:188> $ must be even assuming all variables $ <var:K> $ . \end{theorem} \begin{proof} See $ <nat:106> $ is an even natural . The product of even positive integers will be an even integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:K> : nat , Nat . even ( <nat:188> * <var:K> + <nat:106> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:106> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

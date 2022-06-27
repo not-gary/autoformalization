@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:200> + <nat:462> <var:F> + <var:p> <nat:180> + <var:o> <nat:392> + <nat:368> <var:Y> + <var:m> <nat:58> + <nat:130> <var:Z> + <var:q> <nat:2> $ is even . \end{theorem} \begin{proof} Main result obivously holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:F> <var:p> <var:o> <var:Y> <var:m> <var:Z> <var:q> : nat , Nat . even ( <nat:462> * <var:F> + <nat:180> * <var:p> + <nat:392> * <var:o> + <nat:368> * <var:Y> + <nat:58> * <var:m> + <nat:130> * <var:Z> + <nat:2> * <var:q> + <nat:200> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

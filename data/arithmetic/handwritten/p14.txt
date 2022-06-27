@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:x> \in \mathbb{N} $ such that $ <var:x> ^ <nat:2> = <nat:16> $ . \end{theorem} \begin{proof} $ <nat:4> ^ <nat:2> = <nat:16> $ . \end{proof} \end{document}
-~
-Proof

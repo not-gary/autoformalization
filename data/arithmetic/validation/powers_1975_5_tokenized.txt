@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:o> ^ <nat:5> $ is the same as $ <nat:32> $ given $ <var:o> $ where $ <var:o> $ more than <nat:1> . \end{theorem} \begin{proof} Note that $ <nat:32> = <nat:2> ^ <nat:5> $ . This implies our result is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:o> : nat , ( <var:o> ^ <nat:5> = <nat:32> ) /\ ( <var:o> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

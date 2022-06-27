@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:7560> $ is $ <var:D> * <var:W> * <var:S> * <var:l> * <var:O> $ . \end{theorem} \begin{proof} Assume $ <var:W> = <nat:7> $ , $ <var:l> = <nat:3> $ , $ <var:D> = <nat:9> $ , $ <var:S> = <nat:4> $ and $ <var:O> = <nat:10> $ . This shows the principle holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:D> <var:l> <var:O> <var:S> <var:W> : nat , ( <nat:7560> = <var:D> * <var:W> * <var:S> * <var:l> * <var:O> ) . Proof . exists <nat:9> . exists <nat:3> . exists <nat:10> . exists <nat:4> . exists <nat:7> . repeat split . all : lia . Qed . 

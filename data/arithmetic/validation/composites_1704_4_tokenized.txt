@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:K> * <var:W> * <var:G> * <var:J> $ is the same as $ <nat:1050> $ for $ <var:G> $ , $ <var:K> $ , $ <var:W> $ , $ <var:J> \in \mathbb{N} $ . \end{theorem} \begin{proof} Note that $ <nat:1050> = <nat:7> * <nat:5> * <nat:3> * <nat:10> $ . This yields our theory is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:G> <var:K> <var:W> <var:J> : nat , ( <var:K> * <var:W> * <var:G> * <var:J> = <nat:1050> ) . Proof . exists <nat:3> . exists <nat:10> . exists <nat:5> . exists <nat:7> . repeat split . all : lia . Qed . 

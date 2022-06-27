@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> $ is $ <var:N> ^ <nat:2> $ with $ <var:N> $ such that $ <var:N> > <nat:1> $ . \end{theorem} \begin{proof} Take $ <var:N> = <nat:2> $ . We verify <nat:4> is the raising of of some integer $ <var:N> $ exponentiated to the power <nat:2> and $ <var:N> $ is more than <nat:1> . Note $ <nat:4> = <nat:2> ^ <nat:2> = <var:N> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <nat:4> = <var:N> ^ <nat:2> ) /\ ( <var:N> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

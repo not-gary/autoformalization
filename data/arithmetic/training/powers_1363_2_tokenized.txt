@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:4> is the exponent between integer $ <var:j> $ exponentiated to the exponential <nat:2> so that $ <var:j> \geq <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:j> = <nat:2> $ . This indicates the proposition is true . So , $ <var:j> ^ <nat:2> = <nat:4> $ is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <nat:4> = <var:j> ^ <nat:2> ) /\ ( <var:j> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

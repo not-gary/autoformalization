@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:l> \in \mathbb{N} $ so that $ <var:l> ^ <nat:4> = <nat:16> $ . \end{theorem} \begin{proof} Notice that $ <var:l> ^ <nat:4> = <nat:16> $ produces $ <var:l> = <nat:2> $ . This gives our result is valid . Because of this , $ <nat:16> = <var:l> ^ <nat:4> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:l> : nat , ( <var:l> ^ <nat:4> = <nat:16> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With every integers $ <var:p> $ the formula $ <nat:132> \cdot <var:p> + <nat:398> $ is even . \end{theorem} \begin{proof} Starting , we know the summation of even elements of $ \mathbb{N} $ concurrently is even . Next off , notice taking the product of an even number in $ \mathbb{N} $ with an arbitrary number is an even number in $ \mathbb{Z}^+ $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:p> : nat , Nat . even ( <nat:132> * <var:p> + <nat:398> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

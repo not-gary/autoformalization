@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using natural numbers $ <var:p> $ $ <nat:394> \cdot <var:p> + <nat:105> $ must be odd . \end{theorem} \begin{proof} Result is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:p> : nat , Nat . odd ( <nat:394> * <var:p> + <nat:105> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

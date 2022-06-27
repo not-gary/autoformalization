@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:h> \in \mathbb{N} $ where the natural number <nat:256> is the raising of between $ <var:h> \in \mathbb{Z}^+ $ repeatedly multiplied to the power <nat:8> . \end{theorem} \begin{proof} We show $ <nat:256> = <var:h> ^ <nat:8> $ . We demonstrate the theorem is true considering $ <var:h> ^ <nat:8> = <nat:256> = <nat:2> ^ <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:h> : nat , ( <nat:256> = <var:h> ^ <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

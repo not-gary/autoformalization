@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:99> = <var:W> \cdot <var:P> $ . \end{theorem} \begin{proof} We show $ <var:P> * <var:W> = <nat:99> $ . Notice $ <var:P> * <var:W> = <nat:99> $ implies $ <var:W> = <nat:11> $ , and $ <var:P> = <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:W> <var:P> : nat , ( <nat:99> = <var:W> * <var:P> ) . Proof . exists <nat:11> . exists <nat:9> . lia . Qed . 

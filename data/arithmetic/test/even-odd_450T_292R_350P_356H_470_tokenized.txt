@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:450> \times <var:T> + <nat:292> \times <var:R> + <nat:470> + <var:P> \times <nat:350> + <nat:356> \times <var:H> $ must be even . \end{theorem} \begin{proof} Proposition clearly is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:T> <var:R> <var:P> <var:H> : nat , Nat . even ( <nat:450> * <var:T> + <nat:292> * <var:R> + <nat:350> * <var:P> + <nat:356> * <var:H> + <nat:470> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

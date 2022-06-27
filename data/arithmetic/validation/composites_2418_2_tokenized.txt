@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:36> is the multiplication of numbers $ <var:F> $ , and $ <var:H> $ . \end{theorem} \begin{proof} Take $ <var:H> = <nat:3> $ , $ <var:F> = <nat:12> $ . We confirm the belief is valid in consideration of $ <nat:36> = <var:F> \cdot <var:H> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:F> <var:H> : nat , ( <nat:36> = <var:F> * <var:H> ) . Proof . exists <nat:12> . exists <nat:3> . lia . Qed . 

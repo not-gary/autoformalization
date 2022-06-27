@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:99> is the multiplication of $ <var:w> $ , $ <var:b> $ . \end{theorem} \begin{proof} Note that $ <nat:99> = <var:b> \cdot <var:w> $ gives $ <var:b> = <nat:9> $ , $ <var:w> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:w> <var:b> : nat , ( <nat:99> = <var:w> * <var:b> ) . Proof . exists <nat:11> . exists <nat:9> . lia . Qed . 

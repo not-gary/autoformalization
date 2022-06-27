@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:1024> is the exponent of number $ <var:R> \in \mathbb{Z}^+ $ taken to the exponent <nat:10> . \end{theorem} \begin{proof} Let $ <var:R> = <nat:2> $ . We demonstrate our belief is valid in view of $ <nat:1024> = <nat:2> ^ <nat:10> = <var:R> ^ <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:R> : nat , ( <nat:1024> = <var:R> ^ <nat:10> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:G> $ , $ <var:Z> $ are whole numbers where $ <var:Z> * <var:G> = <nat:22> $ . \end{theorem} \begin{proof} Allow $ <var:G> = <nat:11> $ , $ <var:Z> = <nat:2> $ . Notice $ <var:G> \cdot <var:Z> = <nat:22> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:G> <var:Z> : nat , ( <var:Z> * <var:G> = <nat:22> ) . Proof . exists <nat:11> . exists <nat:2> . lia . Qed . 

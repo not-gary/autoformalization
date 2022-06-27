@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some integer $ <var:O> $ satisfying the condition that $ <var:O> > <nat:1> $ as well as where the number <nat:4> is the repeated product of whole number $ <var:O> $ raised to the degree <nat:2> . \end{theorem} \begin{proof} Assume $ <var:O> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:O> : nat , ( <var:O> > <nat:1> ) /\ ( <nat:4> = <var:O> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

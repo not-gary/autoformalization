@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:o> $ , $ <var:G> \in \mathbb{N} $ so that $ <nat:72> $ equals $ <var:o> \times <var:G> $ . \end{theorem} \begin{proof} Allow $ <var:o> = <nat:9> $ , and $ <var:G> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:o> <var:G> : nat , ( <nat:72> = <var:o> * <var:G> ) . Proof . exists <nat:9> . exists <nat:8> . lia . Qed . 

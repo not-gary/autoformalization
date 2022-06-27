@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:396> * <var:c> + <nat:196> $ must be even taking all positive numbers $ <var:c> $ . \end{theorem} \begin{proof} The adding between even numbers in $ \mathbb{N} $ together with an even natural must be even . Taking the product of an even number in $ \mathbb{N} $ and a number in $ \mathbb{N} $ will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:c> : nat , Nat . even ( <nat:396> * <var:c> + <nat:196> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

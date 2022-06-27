@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For all unknowns $ <var:d> $ the expression $ <var:d> \cdot <nat:366> + <nat:52> $ is even . \end{theorem} \begin{proof} Remember that the natural number $ <nat:366> $ is even \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:d> : nat , Nat . even ( <nat:366> * <var:d> + <nat:52> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:366> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

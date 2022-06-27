@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:264> is the product of integers $ <var:T> $ , $ <var:W> $ , $ <var:N> $ such that $ <var:W> $ , $ <var:N> $ , $ <var:T> \geq <nat:2> $ . \end{theorem} \begin{proof} Observe that $ <nat:264> = <nat:4> * <nat:6> * <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:T> <var:W> <var:N> : nat , ( <nat:264> = <var:T> * <var:W> * <var:N> ) /\ ( <var:W> >= <nat:2> ) /\ ( <var:N> >= <nat:2> ) /\ ( <var:T> >= <nat:2> ) . Proof . exists <nat:11> . exists <nat:6> . exists <nat:4> . repeat split . all : lia . Qed . 

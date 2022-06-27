@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some integer $ <var:I> $ where the whole number <nat:16> is the raising of between positive integer $ <var:I> $ taken to the exponent <nat:4> . \end{theorem} \begin{proof} Assume $ <var:I> = <nat:2> $ . Consequently , <nat:16> is the repeated product between $ <var:I> \in \mathbb{N} $ taken to the degree <nat:4> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:I> : nat , ( <nat:16> = <var:I> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

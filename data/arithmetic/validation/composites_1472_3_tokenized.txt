@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:504> $ is equivalent to $ <var:G> \times <var:m> \times <var:e> $ . \end{theorem} \begin{proof} Observe that $ <nat:504> = <var:G> * <var:e> * <var:m> $ gives $ <var:G> = <nat:6> $ , $ <var:m> = <nat:12> $ and $ <var:e> = <nat:7> $ . This hints the principle holds . So , <nat:504> is the multiplication between $ <var:G> $ , $ <var:m> $ , $ <var:e> \in \mathbb{N} $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:m> <var:e> <var:G> : nat , ( <nat:504> = <var:G> * <var:m> * <var:e> ) . Proof . exists <nat:12> . exists <nat:7> . exists <nat:6> . repeat split . all : lia . Qed . 

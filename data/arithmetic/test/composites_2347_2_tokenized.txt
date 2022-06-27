@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:60> $ equals $ <var:n> * <var:A> $ . \end{theorem} \begin{proof} Take $ <var:A> = <nat:6> $ , and $ <var:n> = <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:n> <var:A> : nat , ( <nat:60> = <var:n> * <var:A> ) . Proof . exists <nat:10> . exists <nat:6> . lia . Qed . 

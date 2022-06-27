@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:16> is the repeated product of natural number $ <var:E> $ raised to the exponential <nat:4> . \end{theorem} \begin{proof} We demonstrate $ <var:E> ^ <nat:4> = <nat:16> $ . We prove our formula holds seeing that $ <var:E> ^ <nat:4> = <nat:16> $ implies $ <var:E> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:E> : nat , ( <nat:16> = <var:E> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

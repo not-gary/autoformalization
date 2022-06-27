@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:O> $ , and $ <var:l> $ are integers where the natural number <nat:99> is the product of numbers $ <var:O> $ , $ <var:l> $ . \end{theorem} \begin{proof} Take $ <var:O> = <nat:9> $ , $ <var:l> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:O> <var:l> : nat , ( <nat:99> = <var:O> * <var:l> ) . Proof . exists <nat:9> . exists <nat:11> . lia . Qed . 

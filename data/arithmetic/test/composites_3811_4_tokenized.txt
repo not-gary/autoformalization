@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:2640> is the product of natural numbers $ <var:C> $ , $ <var:R> $ , $ <var:v> $ and $ <var:J> $ . \end{theorem} \begin{proof} Let $ <var:C> = <nat:4> $ , $ <var:R> = <nat:5> $ , $ <var:v> = <nat:12> $ , $ <var:J> = <nat:11> $ . Notice that $ <nat:2640> = <var:R> \cdot <var:C> \cdot <var:v> \cdot <var:J> $ . This produces our thesis holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:R> <var:v> <var:J> : nat , ( <nat:2640> = <var:C> * <var:R> * <var:v> * <var:J> ) . Proof . exists <nat:4> . exists <nat:5> . exists <nat:12> . exists <nat:11> . repeat split . all : lia . Qed . 

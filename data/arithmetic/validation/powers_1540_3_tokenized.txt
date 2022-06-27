@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:N> $ be natural numbers satisfying the condition that $ <var:N> > <nat:1> $ and satisfying the condition that $ <nat:8> $ is equal to $ <var:N> ^ <nat:3> $ . \end{theorem} \begin{proof} Assume $ <var:N> = <nat:2> $ . We show the belief is true in view of $ <var:N> ^ <nat:3> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <var:N> > <nat:1> ) /\ ( <nat:8> = <var:N> ^ <nat:3> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

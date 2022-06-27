@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:f> $ , $ <var:C> $ , $ <var:U> $ , $ <var:P> \in \mathbb{Z}^+ $ where $ <var:f> \times <var:P> \times <var:C> \times <var:U> = <nat:1080> $ . \end{theorem} \begin{proof} We present the result is valid because $ <nat:1080> = <nat:9> \cdot <nat:6> \cdot <nat:5> \cdot <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:f> <var:C> <var:U> <var:P> : nat , ( <var:f> * <var:P> * <var:C> * <var:U> = <nat:1080> ) . Proof . exists <nat:4> . exists <nat:9> . exists <nat:6> . exists <nat:5> . repeat split . all : lia . Qed . 

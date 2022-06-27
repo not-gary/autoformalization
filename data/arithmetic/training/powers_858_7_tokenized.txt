@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:128> is the raising of between whole number $ <var:B> \in \mathbb{Z}^+ $ raised to the exponential <nat:7> . \end{theorem} \begin{proof} Observe that $ <var:B> ^ <nat:7> = <nat:128> $ suggests $ <var:B> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:B> : nat , ( <nat:128> = <var:B> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

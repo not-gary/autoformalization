@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:8> is the exponential between whole number $ <var:P> $ raised to the exponent <nat:3> satisfying the condition that $ <var:P> $ larger than <nat:1> . \end{theorem} \begin{proof} We prove $ <nat:8> = <var:P> ^ <nat:3> $ plus $ <var:P> $ is larger than <nat:1> . We confirm the theorem is true because $ <var:P> ^ <nat:3> = <nat:8> $ suggests $ <var:P> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:P> : nat , ( <nat:8> = <var:P> ^ <nat:3> ) /\ ( <var:P> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

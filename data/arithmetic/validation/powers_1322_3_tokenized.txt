@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:y> \in \mathbb{Z}^+ $ where $ <var:y> $ greater than or equivalent to <nat:2> and where the natural number <nat:8> is the raising of between number $ <var:y> \in \mathbb{Z}^+ $ taken to the exponent <nat:3> . \end{theorem} \begin{proof} Note that $ <var:y> ^ <nat:3> = <nat:8> $ gives $ <var:y> = <nat:2> $ . Therefore , $ <nat:8> = <var:y> ^ <nat:3> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:y> : nat , ( <var:y> >= <nat:2> ) /\ ( <nat:8> = <var:y> ^ <nat:3> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

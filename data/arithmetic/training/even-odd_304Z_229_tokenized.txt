@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:229> + <nat:304> <var:Z> $ must be odd . \end{theorem} \begin{proof} Notice the natural number $ <nat:304> $ is trivially even \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:Z> : nat , Nat . odd ( <nat:304> * <var:Z> + <nat:229> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:304> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

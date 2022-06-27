@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:o> $ , $ <var:v> \in \mathbb{Z}^+ $ such that $ <nat:30> $ is the same as $ <var:v> * <var:o> $ . \end{theorem} \begin{proof} Allow $ <var:o> = <nat:6> $ , $ <var:v> = <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:o> <var:v> : nat , ( <nat:30> = <var:v> * <var:o> ) . Proof . exists <nat:6> . exists <nat:5> . lia . Qed . 

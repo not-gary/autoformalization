@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using all $ <var:k> $ $ <nat:88> \cdot <var:k> + <nat:444> $ will be even . \end{theorem} \begin{proof} The product of an even integer and a natural must be even . It can be justified that the summation $ <nat:444> + <nat:88> \times <var:k> $ is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:k> : nat , Nat . even ( <nat:88> * <var:k> + <nat:444> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

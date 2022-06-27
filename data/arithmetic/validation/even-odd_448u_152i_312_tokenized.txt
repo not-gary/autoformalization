@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:312> + <var:u> \cdot <nat:448> + <nat:152> \cdot <var:i> $ will be even . \end{theorem} \begin{proof} Take note taking the product between even numbers in $ \mathbb{N} $ is guaranteed to be even . Observe $ <nat:312> $ is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:u> <var:i> : nat , Nat . even ( <nat:448> * <var:u> + <nat:152> * <var:i> + <nat:312> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . assert ( <genH> : Nat . even <nat:312> = true ) . { auto . } rewrite <genH> . auto . Qed . 

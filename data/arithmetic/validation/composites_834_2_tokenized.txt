@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:b> $ , and $ <var:D> \in \mathbb{Z}^+ $ . the positive integer <nat:80> is the multiplication of natural numbers $ <var:b> $ and $ <var:D> \in \mathbb{N} $ . \end{theorem} \begin{proof} We prove <nat:80> is the multiplication of $ <var:b> $ , $ <var:D> \in \mathbb{Z}^+ $ . Observe that $ <nat:80> = <var:b> * <var:D> $ suggests $ <var:b> = <nat:10> $ , $ <var:D> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:b> <var:D> : nat , ( <nat:80> = <var:b> * <var:D> ) . Proof . exists <nat:10> . exists <nat:8> . lia . Qed . 

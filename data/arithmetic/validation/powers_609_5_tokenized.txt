@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:S> ^ <nat:5> $ equals $ <nat:32> $ with $ <var:S> \in \mathbb{N} $ satisfying the condition that $ <var:S> $ larger than <nat:1> . \end{theorem} \begin{proof} Allow $ <var:S> = <nat:2> $ . Notice $ <var:S> ^ <nat:5> = <nat:32> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <var:S> ^ <nat:5> = <nat:32> ) /\ ( <var:S> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

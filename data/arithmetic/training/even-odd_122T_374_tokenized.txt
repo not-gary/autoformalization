@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:T> \times <nat:122> + <nat:374> $ is guaranteed to be even . \end{theorem} \begin{proof} To start with , observe the totaling of even elements of $ \mathbb{N} $ concurrently and an even natural number is guaranteed to be even , as well as subsequently , see the product of an even number in $ \mathbb{Z}^+ $ with some positive integer will be by definition an even natural . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:T> : nat , Nat . even ( <nat:122> * <var:T> + <nat:374> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

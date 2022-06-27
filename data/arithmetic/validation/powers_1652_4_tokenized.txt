@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:16> is the raising of between natural number $ <var:X> $ repeatedly multiplied to the exponential <nat:4> . \end{theorem} \begin{proof} Observe that $ <var:X> ^ <nat:4> = <nat:2> ^ <nat:4> = <nat:16> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:X> : nat , ( <nat:16> = <var:X> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

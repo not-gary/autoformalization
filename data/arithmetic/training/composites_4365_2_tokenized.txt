@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:y> * <var:k> $ is $ <nat:80> $ . \end{theorem} \begin{proof} We prove our formula holds on account of $ <var:y> * <var:k> = <nat:8> * <nat:10> = <nat:80> $ . As a result , <nat:80> is the product between $ <var:k> $ , $ <var:y> \in \mathbb{Z}^+ $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:y> <var:k> : nat , ( <var:y> * <var:k> = <nat:80> ) . Proof . exists <nat:8> . exists <nat:10> . lia . Qed . 

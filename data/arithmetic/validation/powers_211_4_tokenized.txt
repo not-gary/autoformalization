@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:16> is the exponent of natural number $ <var:E> \in \mathbb{N} $ taken to the exponent <nat:4> . \end{theorem} \begin{proof} Assume $ <var:E> = <nat:2> $ . We show our theorem is valid seeing that $ <nat:16> = <var:E> ^ <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:E> : nat , ( <nat:16> = <var:E> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

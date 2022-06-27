@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:P> $ , $ <var:o> \in \mathbb{Z}^+ $ such that <nat:50> is the product of $ <var:P> $ , and $ <var:o> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Note $ <nat:50> = <var:P> * <var:o> $ indicates $ <var:P> = <nat:5> $ and $ <var:o> = <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:P> <var:o> : nat , ( <nat:50> = <var:P> * <var:o> ) . Proof . exists <nat:5> . exists <nat:10> . lia . Qed . 

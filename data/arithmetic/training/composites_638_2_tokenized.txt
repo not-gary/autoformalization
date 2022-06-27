@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:56> is the multiplication between positive integers $ <var:R> $ , $ <var:n> $ such that $ <var:R> $ and $ <var:n> $ more than <nat:1> . \end{theorem} \begin{proof} Notice $ <var:n> \cdot <var:R> = <nat:7> \cdot <nat:8> = <nat:56> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:R> <var:n> : nat , ( <nat:56> = <var:R> * <var:n> ) /\ ( <var:R> > <nat:1> ) /\ ( <var:n> > <nat:1> ) . Proof . exists <nat:8> . exists <nat:7> . lia . Qed . 

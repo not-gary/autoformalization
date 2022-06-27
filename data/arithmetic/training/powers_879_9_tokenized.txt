@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:t> $ as numbers where $ <var:t> $ more than <nat:1> plus such that $ <nat:512> = <var:t> ^ <nat:9> $ . \end{theorem} \begin{proof} Assume $ <var:t> = <nat:2> $ . We demonstrate <nat:512> is the raising of between some integer $ <var:t> $ repeatedly multiplied to the power <nat:9> plus $ <var:t> > <nat:1> $ . This shows our belief holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <var:t> > <nat:1> ) /\ ( <nat:512> = <var:t> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

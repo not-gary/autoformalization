@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:C> $ be numbers satisfying the condition that $ <nat:128> $ is $ <var:C> ^ <nat:7> $ . \end{theorem} \begin{proof} Assume $ <var:C> = <nat:2> $ . Note $ <nat:128> = <var:C> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:C> : nat , ( <nat:128> = <var:C> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

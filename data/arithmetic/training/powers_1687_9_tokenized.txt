@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:s> $ as whole numbers so that $ <var:s> \geq <nat:2> $ plus such that $ <var:s> ^ <nat:9> $ is equal to $ <nat:512> $ . \end{theorem} \begin{proof} Notice $ <nat:512> = <var:s> ^ <nat:9> $ gives $ <var:s> = <nat:2> $ . This indicates the theory is true . So , <nat:512> is the exponential between some whole number $ <var:s> $ raised to the exponent <nat:9> is true has been proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:s> : nat , ( <var:s> >= <nat:2> ) /\ ( <var:s> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

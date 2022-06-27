@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:T> ^ <nat:6> $ is the same as $ <nat:64> $ . \end{theorem} \begin{proof} Assume $ <var:T> = <nat:2> $ . We show $ <nat:64> = <var:T> ^ <nat:6> $ . This implies the formula is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:T> : nat , ( <var:T> ^ <nat:6> = <nat:64> ) . Proof . exists <nat:2> . auto . Qed . 

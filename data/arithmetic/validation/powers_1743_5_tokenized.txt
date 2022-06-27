@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:32> $ is equal to $ <var:n> ^ <nat:5> $ . \end{theorem} \begin{proof} Let $ <var:n> = <nat:2> $ . Notice $ <nat:32> = <var:n> ^ <nat:5> $ . Hence , <nat:32> is the repeated product of $ <var:n> \in \mathbb{Z}^+ $ repeatedly multiplied to the exponential <nat:5> has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <nat:32> = <var:n> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

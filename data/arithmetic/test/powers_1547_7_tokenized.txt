@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:128> is the exponent between whole number $ <var:Q> \in \mathbb{Z}^+ $ taken to the exponential <nat:7> . \end{theorem} \begin{proof} Assume $ <var:Q> = <nat:2> $ . Note that $ <nat:128> = <var:Q> ^ <nat:7> $ . This implies the proposition holds . Therefore , <nat:128> is the exponential between $ <var:Q> \in \mathbb{N} $ exponentiated to the degree <nat:7> has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Q> : nat , ( <nat:128> = <var:Q> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

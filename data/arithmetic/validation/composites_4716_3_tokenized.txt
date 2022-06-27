@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:450> is the multiplication between natural numbers $ <var:x> $ , $ <var:Y> $ and $ <var:c> $ . \end{theorem} \begin{proof} Allow $ <var:x> = <nat:5> $ , $ <var:Y> = <nat:9> $ , and $ <var:c> = <nat:10> $ . This yields the result is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:x> <var:Y> <var:c> : nat , ( <nat:450> = <var:x> * <var:Y> * <var:c> ) . Proof . exists <nat:5> . exists <nat:9> . exists <nat:10> . repeat split . all : lia . Qed . 

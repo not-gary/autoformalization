@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:r> <nat:360> + <var:o> <nat:348> + <nat:250> <var:R> + <var:E> <nat:226> + <nat:195> $ is odd assuming all natural terms $ <var:o> $ , $ <var:r> $ , $ <var:E> $ , and $ <var:R> $ . \end{theorem} \begin{proof} Claim clearly holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:o> <var:r> <var:E> <var:R> : nat , Nat . odd ( <nat:360> * <var:r> + <nat:348> * <var:o> + <nat:250> * <var:R> + <nat:226> * <var:E> + <nat:195> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

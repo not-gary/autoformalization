@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:F> ^ <nat:7> $ is equivalent to $ <nat:128> $ for $ <var:F> \in \mathbb{N} $ . \end{theorem} \begin{proof} We present our belief holds in view of $ <var:F> ^ <nat:7> = <nat:128> $ hints $ <var:F> = <nat:2> $ . So , <nat:128> is the exponent of some whole number $ <var:F> $ repeatedly multiplied to the exponent <nat:7> is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <var:F> ^ <nat:7> = <nat:128> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:R> \in \mathbb{N} $ such that $ <var:R> \geq <nat:2> $ and where the whole number <nat:512> is the exponent of $ <var:R> \in \mathbb{N} $ taken to the exponent <nat:9> . \end{theorem} \begin{proof} Let $ <var:R> = <nat:2> $ . We justify $ <var:R> ^ <nat:9> = <nat:512> $ and $ <var:R> \geq <nat:2> $ . This implies our result is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:R> : nat , ( <var:R> >= <nat:2> ) /\ ( <nat:512> = <var:R> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

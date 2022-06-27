@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:38> + <var:M> <nat:458> + <var:o> <nat:392> $ will be even . \end{theorem} \begin{proof} Multiplying of even naturals must be even . It can be proven that the claim is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:M> <var:o> : nat , Nat . even ( <nat:458> * <var:M> + <nat:392> * <var:o> + <nat:38> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:I> $ and $ <var:w> \in \mathbb{Z}^+ $ where <nat:10> is the multiplication between natural numbers $ <var:I> $ , and $ <var:w> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We confirm $ <nat:10> = <var:I> \times <var:w> $ . We present the thesis holds by reason of $ <nat:10> = <var:I> * <var:w> = <nat:5> * <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:I> <var:w> : nat , ( <nat:10> = <var:I> * <var:w> ) . Proof . exists <nat:5> . exists <nat:2> . lia . Qed . 

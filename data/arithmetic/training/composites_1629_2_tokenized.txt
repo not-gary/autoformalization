@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:18> $ equals $ <var:t> * <var:A> $ with $ <var:t> $ , and $ <var:A> \in \mathbb{N} $ such that $ <var:t> $ and $ <var:A> > <nat:1> $ . \end{theorem} \begin{proof} We verify <nat:18> is the multiplication of $ <var:A> $ and $ <var:t> \in \mathbb{N} $ . Note that $ <nat:18> = <var:A> \cdot <var:t> $ suggests $ <var:A> = <nat:2> $ , $ <var:t> = <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:t> <var:A> : nat , ( <nat:18> = <var:t> * <var:A> ) /\ ( <var:t> > <nat:1> ) /\ ( <var:A> > <nat:1> ) . Proof . exists <nat:9> . exists <nat:2> . lia . Qed . 

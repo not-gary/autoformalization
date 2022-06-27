@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using $ <var:L> \in \mathbb{Z}^+ $ the summation $ <nat:94> + <var:L> * <nat:496> $ is guaranteed to be even . \end{theorem} \begin{proof} Notice that $ <nat:94> $ is obviously even . The summation of even integers successively is an even number in $ \mathbb{Z}^+ $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:L> : nat , Nat . even ( <nat:496> * <var:L> + <nat:94> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:94> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

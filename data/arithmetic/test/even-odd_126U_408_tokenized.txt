@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With positive terms $ <var:U> $ $ <nat:126> \times <var:U> + <nat:408> $ is even . \end{theorem} \begin{proof} It can be checked that the summation $ <var:U> \times <nat:126> + <nat:408> $ will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:U> : nat , Nat . even ( <nat:126> * <var:U> + <nat:408> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

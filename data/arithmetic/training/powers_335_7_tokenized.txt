@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:128> is the repeated multiplication of number $ <var:E> $ exponentiated to the power <nat:7> . \end{theorem} \begin{proof} We verify the theorem is true as $ <var:E> ^ <nat:7> = <nat:128> = <nat:2> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:E> : nat , ( <nat:128> = <var:E> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

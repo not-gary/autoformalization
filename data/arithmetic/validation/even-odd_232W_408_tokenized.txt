@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:W> \cdot <nat:232> + <nat:408> $ is guaranteed to be even . \end{theorem} \begin{proof} Multiplying of an even element of $ \mathbb{N} $ and an arbitrary natural is even . Remember that $ <nat:408> $ is trivially an even number in $ \mathbb{N} $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:W> : nat , Nat . even ( <nat:232> * <var:W> + <nat:408> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . assert ( <genH> : Nat . even <nat:408> = true ) . { auto . } rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given all positive integers $ <var:r> $ , $ <var:U> $ , $ <var:E> $ , and $ <var:R> $ the sum $ <nat:308> <var:R> + <nat:36> <var:E> + <nat:218> + <var:U> <nat:168> + <var:r> <nat:350> $ must be even . \end{theorem} \begin{proof} Claim trivially is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:r> <var:U> <var:E> <var:R> : nat , Nat . even ( <nat:308> * <var:R> + <nat:36> * <var:E> + <nat:168> * <var:U> + <nat:350> * <var:r> + <nat:218> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

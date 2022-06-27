@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:128> is the exponential between positive integer $ <var:n> $ taken to the exponent <nat:7> . \end{theorem} \begin{proof} Take $ <var:n> = <nat:2> $ . We present the thesis is true seeing that $ <var:n> ^ <nat:7> = <nat:128> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <nat:128> = <var:n> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

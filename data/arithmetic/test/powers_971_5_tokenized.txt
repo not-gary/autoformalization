@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:X> \in \mathbb{N} $ so that $ <var:X> \geq <nat:2> $ plus where the number <nat:32> is the repeated product between integer $ <var:X> \in \mathbb{Z}^+ $ raised to the power <nat:5> . \end{theorem} \begin{proof} Notice that $ <var:X> ^ <nat:5> = <nat:32> $ yields $ <var:X> = <nat:2> $ . Further note $ <nat:2> \geq <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:X> : nat , ( <var:X> >= <nat:2> ) /\ ( <nat:32> = <var:X> ^ <nat:5> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . apply <genH> . auto . Qed . 

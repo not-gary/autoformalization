@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using all terms $ <var:e> $ $ <nat:419> + <var:e> \cdot <nat:252> $ will be odd . \end{theorem} \begin{proof} See that the summation of an even integer and an odd number in $ \mathbb{N} $ is guaranteed to be odd . Remember the whole number $ <nat:252> $ is clearly even \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:e> : nat , Nat . odd ( <nat:252> * <var:e> + <nat:419> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . assert ( <genH> : Nat . even <nat:252> = true ) . { auto . } repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

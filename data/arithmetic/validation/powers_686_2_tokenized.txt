@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:o> $ as positive integers where $ <nat:4> $ is equal to $ <var:o> ^ <nat:2> $ . \end{theorem} \begin{proof} We present $ <var:o> ^ <nat:2> = <nat:4> $ . We verify the claim is true in view of $ <nat:2> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:o> : nat , ( <nat:4> = <var:o> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:8> is the repeated product between integer $ <var:j> \in \mathbb{N} $ repeatedly multiplied to the exponential <nat:3> such that $ <var:j> > <nat:1> $ . \end{theorem} \begin{proof} Note $ <var:j> ^ <nat:3> = <nat:8> $ produces $ <var:j> = <nat:2> $ . As a consequence , $ <nat:8> = <var:j> ^ <nat:3> $ and $ <var:j> $ is greater than <nat:1> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <nat:8> = <var:j> ^ <nat:3> ) /\ ( <var:j> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

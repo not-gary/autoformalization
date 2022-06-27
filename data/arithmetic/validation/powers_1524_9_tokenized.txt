@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:c> $ are whole numbers so that $ <nat:512> = <var:c> ^ <nat:9> $ . \end{theorem} \begin{proof} We prove our thesis is valid in view of $ <var:c> ^ <nat:9> = <nat:512> $ produces $ <var:c> = <nat:2> $ . Hence , <nat:512> is the raising of of some whole number $ <var:c> $ taken to the exponential <nat:9> is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:c> : nat , ( <nat:512> = <var:c> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

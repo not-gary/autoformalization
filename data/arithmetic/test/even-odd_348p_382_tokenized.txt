@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:p> \times <nat:348> + <nat:382> $ must be even assuming all positive terms $ <var:p> $ . \end{theorem} \begin{proof} It can be proven that the sum $ <nat:348> * <var:p> + <nat:382> $ must be even . The positive integer $ <nat:348> $ is known as even \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:p> : nat , Nat . even ( <nat:348> * <var:p> + <nat:382> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:348> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

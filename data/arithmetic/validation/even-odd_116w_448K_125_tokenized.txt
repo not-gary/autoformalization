@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:w> <nat:116> + <var:K> <nat:448> + <nat:125> $ will be odd . \end{theorem} \begin{proof} The formula $ <var:w> \times <nat:116> + <nat:448> \times <var:K> $ is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:w> <var:K> : nat , Nat . odd ( <nat:116> * <var:w> + <nat:448> * <var:K> + <nat:125> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:116> * <var:w> + <nat:448> * <var:K> ) = true ) . { repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . rewrite <genH> . auto . Qed . 

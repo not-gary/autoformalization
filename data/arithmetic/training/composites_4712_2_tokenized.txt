@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:I> $ , and $ <var:p> \in \mathbb{N} $ so that $ <var:I> $ , $ <var:p> $ greater than or equivalent to <nat:2> plus satisfying the condition that $ <var:I> \times <var:p> $ is $ <nat:60> $ . \end{theorem} \begin{proof} Assume $ <var:I> = <nat:12> $ and $ <var:p> = <nat:5> $ . We justify the claim holds in view of $ <nat:60> = <var:I> * <var:p> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:I> <var:p> : nat , ( <var:I> >= <nat:2> ) /\ ( <var:p> >= <nat:2> ) /\ ( <var:I> * <var:p> = <nat:60> ) . Proof . exists <nat:12> . exists <nat:5> . lia . Qed . 

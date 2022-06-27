@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:648> $ is equivalent to $ <var:o> * <var:S> * <var:Y> $ assuming $ <var:Y> $ , $ <var:o> $ , $ <var:S> $ . \end{theorem} \begin{proof} Note $ <var:o> \times <var:Y> \times <var:S> = <nat:648> $ hints $ <var:Y> = <nat:6> $ , $ <var:S> = <nat:12> $ , and $ <var:o> = <nat:9> $ . So , $ <nat:648> = <var:o> * <var:Y> * <var:S> $ is verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Y> <var:o> <var:S> : nat , ( <nat:648> = <var:o> * <var:S> * <var:Y> ) . Proof . exists <nat:6> . exists <nat:9> . exists <nat:12> . repeat split . all : lia . Qed . 

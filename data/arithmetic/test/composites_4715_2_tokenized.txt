@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are some numbers $ <var:V> $ , and $ <var:D> $ so that the natural number <nat:70> is the product between numbers $ <var:V> $ , $ <var:D> $ . \end{theorem} \begin{proof} Notice that $ <nat:70> = <nat:10> \times <nat:7> = <var:D> \times <var:V> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:V> <var:D> : nat , ( <nat:70> = <var:V> * <var:D> ) . Proof . exists <nat:7> . exists <nat:10> . lia . Qed . 

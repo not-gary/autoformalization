@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:4> is the repeated multiplication between $ <var:m> $ raised to the power <nat:2> such that $ <var:m> $ larger than <nat:1> . \end{theorem} \begin{proof} We verify $ <var:m> > <nat:1> $ as well as $ <nat:4> = <var:m> ^ <nat:2> $ . Note $ <nat:4> = <var:m> ^ <nat:2> $ shows $ <var:m> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:m> : nat , ( <nat:4> = <var:m> ^ <nat:2> ) /\ ( <var:m> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

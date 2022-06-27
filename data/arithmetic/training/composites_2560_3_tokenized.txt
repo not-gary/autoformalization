@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:q> $ , $ <var:W> $ and $ <var:A> $ are natural numbers . $ <var:q> \times <var:W> \times <var:A> $ is equal to $ <nat:360> $ . \end{theorem} \begin{proof} Let $ <var:q> = <nat:5> $ , $ <var:A> = <nat:6> $ and $ <var:W> = <nat:12> $ . Observe $ <nat:12> \cdot <nat:6> \cdot <nat:5> = <nat:360> $ . This gives the belief holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:q> <var:W> <var:A> : nat , ( <var:q> * <var:W> * <var:A> = <nat:360> ) . Proof . exists <nat:5> . exists <nat:12> . exists <nat:6> . repeat split . all : lia . Qed . 

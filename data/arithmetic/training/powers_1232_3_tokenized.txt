@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:a> \in \mathbb{N} $ . the positive integer <nat:8> is the repeated product of natural number $ <var:a> \in \mathbb{N} $ exponentiated to the exponential <nat:3> . \end{theorem} \begin{proof} Take $ <var:a> = <nat:2> $ . We show $ <nat:8> = <var:a> ^ <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:a> : nat , ( <nat:8> = <var:a> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

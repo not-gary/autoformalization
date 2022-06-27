@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:R> $ , $ <var:j> \in \mathbb{Z}^+ $ where $ <var:j> $ and $ <var:R> \geq <nat:2> $ as well as such that $ <nat:48> $ is the same as $ <var:R> \cdot <var:j> $ . \end{theorem} \begin{proof} Take $ <var:j> = <nat:8> $ and $ <var:R> = <nat:6> $ . We show $ <var:j> * <var:R> = <nat:48> $ as well as $ <var:R> $ and $ <var:j> $ are greater than or equivalent to <nat:2> . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:R> <var:j> : nat , ( <var:j> >= <nat:2> ) /\ ( <var:R> >= <nat:2> ) /\ ( <nat:48> = <var:R> * <var:j> ) . Proof . exists <nat:6> . exists <nat:8> . lia . Qed . 

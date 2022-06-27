@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some positive integer $ <var:C> $ so that $ <var:C> $ greater than <nat:1> and such that $ <var:C> ^ <nat:10> $ is $ <nat:1024> $ . \end{theorem} \begin{proof} Assume $ <var:C> = <nat:2> $ . We verify <nat:1024> is the raising of between $ <var:C> \in \mathbb{N} $ repeatedly multiplied to the exponential <nat:10> . We prove our statement is valid for $ <nat:1024> = <var:C> ^ <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:C> : nat , ( <var:C> > <nat:1> ) /\ ( <var:C> ^ <nat:10> = <nat:1024> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

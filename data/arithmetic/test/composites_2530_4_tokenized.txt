@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:960> is the multiplication between integers $ <var:O> $ , $ <var:e> $ , $ <var:V> $ and $ <var:c> $ . \end{theorem} \begin{proof} Assume $ <var:V> = <nat:4> $ , $ <var:O> = <nat:5> $ , $ <var:c> = <nat:8> $ and $ <var:e> = <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:O> <var:e> <var:V> <var:c> : nat , ( <nat:960> = <var:O> * <var:e> * <var:V> * <var:c> ) . Proof . exists <nat:5> . exists <nat:6> . exists <nat:4> . exists <nat:8> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:128> is the exponent between number $ <var:Z> $ exponentiated to the power <nat:7> . \end{theorem} \begin{proof} Notice $ <var:Z> ^ <nat:7> = <nat:128> = <nat:2> ^ <nat:7> $ . So , $ <var:Z> ^ <nat:7> = <nat:128> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <nat:128> = <var:Z> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

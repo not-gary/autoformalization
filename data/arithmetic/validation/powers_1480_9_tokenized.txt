@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:i> \in \mathbb{Z}^+ $ such that the natural number <nat:512> is the raising of of whole number $ <var:i> \in \mathbb{N} $ taken to the degree <nat:9> . \end{theorem} \begin{proof} Allow $ <var:i> = <nat:2> $ . Observe $ <nat:512> = <nat:2> ^ <nat:9> = <var:i> ^ <nat:9> $ . Because of this , $ <var:i> ^ <nat:9> = <nat:512> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:i> : nat , ( <nat:512> = <var:i> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

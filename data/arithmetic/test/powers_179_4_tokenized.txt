@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:16> is the exponential between number $ <var:w> $ exponentiated to the exponent <nat:4> . \end{theorem} \begin{proof} Observe $ <nat:16> = <var:w> ^ <nat:4> $ shows $ <var:w> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:w> : nat , ( <nat:16> = <var:w> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

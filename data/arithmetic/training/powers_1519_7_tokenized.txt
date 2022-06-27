@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some positive integer $ <var:l> $ so that $ <var:l> $ more than or equivalent to <nat:2> as well as such that $ <var:l> ^ <nat:7> $ equals $ <nat:128> $ . \end{theorem} \begin{proof} Allow $ <var:l> = <nat:2> $ . Notice $ <var:l> ^ <nat:7> = <nat:128> $ . This shows our claim holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:l> : nat , ( <var:l> >= <nat:2> ) /\ ( <var:l> ^ <nat:7> = <nat:128> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

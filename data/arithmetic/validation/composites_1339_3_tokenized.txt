@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:L> $ , $ <var:R> $ , and $ <var:V> $ are natural numbers where $ <var:L> \cdot <var:R> \cdot <var:V> = <nat:270> $ . \end{theorem} \begin{proof} Note $ <nat:270> = <var:L> \cdot <var:V> \cdot <var:R> $ shows $ <var:R> = <nat:3> $ , $ <var:V> = <nat:10> $ , $ <var:L> = <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:L> <var:R> <var:V> : nat , ( <var:L> * <var:R> * <var:V> = <nat:270> ) . Proof . exists <nat:9> . exists <nat:3> . exists <nat:10> . repeat split . all : lia . Qed . 

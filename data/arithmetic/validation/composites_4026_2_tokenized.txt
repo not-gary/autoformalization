@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some natural numbers $ <var:H> $ and $ <var:v> $ such that the positive integer <nat:56> is the product of integers $ <var:H> $ and $ <var:v> $ . \end{theorem} \begin{proof} Let $ <var:H> = <nat:8> $ , and $ <var:v> = <nat:7> $ . Consequently , <nat:56> is the multiplication of some integers $ <var:H> $ , $ <var:v> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:H> <var:v> : nat , ( <nat:56> = <var:H> * <var:v> ) . Proof . exists <nat:8> . exists <nat:7> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:60> is the multiplication between positive integers $ <var:l> $ , $ <var:m> $ , $ <var:t> $ . \end{theorem} \begin{proof} Let $ <var:m> = <nat:5> $ , $ <var:t> = <nat:2> $ and $ <var:l> = <nat:6> $ . Therefore , $ <var:l> \cdot <var:t> \cdot <var:m> = <nat:60> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:m> <var:t> : nat , ( <nat:60> = <var:l> * <var:m> * <var:t> ) . Proof . exists <nat:6> . exists <nat:5> . exists <nat:2> . repeat split . all : lia . Qed . 

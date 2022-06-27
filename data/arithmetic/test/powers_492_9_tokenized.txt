@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:I> \in \mathbb{N} $ satisfying the condition that $ <var:I> $ more than <nat:1> plus so that the natural number <nat:512> is the exponential between number $ <var:I> \in \mathbb{Z}^+ $ taken to the power <nat:9> . \end{theorem} \begin{proof} Let $ <var:I> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:I> : nat , ( <var:I> > <nat:1> ) /\ ( <nat:512> = <var:I> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

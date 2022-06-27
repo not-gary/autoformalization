@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using some integers $ <var:M> $ , $ <var:t> $ , and $ <var:g> $ the summation $ <var:t> * <nat:70> + <nat:476> * <var:M> + <nat:208> * <var:g> + <nat:350> $ will be even . \end{theorem} \begin{proof} Lemma holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:M> <var:t> <var:g> : nat , Nat . even ( <nat:70> * <var:t> + <nat:476> * <var:M> + <nat:208> * <var:g> + <nat:350> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

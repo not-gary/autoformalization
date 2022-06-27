@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:297> + <nat:76> <var:N> $ is odd . \end{theorem} \begin{proof} The adding of an even element of $ \mathbb{N} $ and an odd number must be odd . Take note that $ <nat:297> $ is guaranteed to be odd . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:N> : nat , Nat . odd ( <nat:76> * <var:N> + <nat:297> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . assert ( <genH> : Nat . odd <nat:297> = true ) . { auto . } repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

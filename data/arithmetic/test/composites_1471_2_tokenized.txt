@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:s> $ , and $ <var:K> $ are positive integers . the whole number <nat:156> is the multiplication between whole numbers $ <var:s> $ and $ <var:K> $ . \end{theorem} \begin{proof} Note $ <nat:12> \cdot <nat:13> = <nat:156> $ . This implies our theorem is valid . Because of this , $ <var:K> \times <var:s> = <nat:156> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:s> <var:K> : nat , ( <nat:156> = <var:s> * <var:K> ) . Proof . exists <nat:12> . exists <nat:13> . lia . Qed . 

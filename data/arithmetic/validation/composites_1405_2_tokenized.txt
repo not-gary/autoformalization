@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:24> is the product between whole numbers $ <var:c> $ and $ <var:w> $ . \end{theorem} \begin{proof} Note $ <nat:3> \times <nat:8> = <nat:24> $ . This indicates the theory is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:c> <var:w> : nat , ( <nat:24> = <var:c> * <var:w> ) . Proof . exists <nat:8> . exists <nat:3> . lia . Qed . 

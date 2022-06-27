@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:S> \in \mathbb{Z}^+ $ so that $ <var:S> \geq <nat:2> $ as well as so that $ <nat:16> $ is $ <var:S> ^ <nat:4> $ . \end{theorem} \begin{proof} Notice that $ <var:S> ^ <nat:4> = <nat:16> $ indicates $ <var:S> = <nat:2> $ . Hence , $ <var:S> $ is more than or equal to <nat:2> as well as $ <nat:16> = <var:S> ^ <nat:4> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <var:S> >= <nat:2> ) /\ ( <nat:16> = <var:S> ^ <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

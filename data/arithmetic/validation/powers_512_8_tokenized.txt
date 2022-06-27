@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} With the condition we have $ <var:Y> ^ <nat:8> = <var:r> $ with some whole number $ <var:r> $ with some $ <var:Y> $ , take that $ <var:r> $ is a <def:octeract> . \end{definition} \begin{theorem} $ <var:r> = <nat:256> $ is a <def:octeract> number . \end{theorem} \begin{proof} Take $ <var:Y> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:octeract> ( <var:r> : nat ) := exists <var:Y> : nat , ( <var:Y> ^ <nat:8> = <var:r> ) . Theorem <genP:1> : <def:octeract> <nat:256> . Proof . unfold <def:octeract> . exists <nat:2> . auto . Qed . 

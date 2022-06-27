@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some whole number $ <var:V> $ satisfying the condition that $ <var:V> $ larger than <nat:1> plus where the whole number <nat:4> is the exponential between number $ <var:V> $ repeatedly multiplied to the exponential <nat:2> . \end{theorem} \begin{proof} Assume $ <var:V> = <nat:2> $ . We verify our formula holds seeing that $ <var:V> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <var:V> > <nat:1> ) /\ ( <nat:4> = <var:V> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

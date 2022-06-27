@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The sum $ <nat:22> \times <var:a> + <nat:60> \times <var:b> + <nat:34> \times <var:c> + <nat:10> $ is even , for any natural numbers $ <var:a> $ , $ <var:b> $ , and $ <var:c> $ . \end{theorem} \begin{proof} $ <nat:22> $ is even , therefore $ <nat:22> \times <var:a> $ must be even . $ <nat:60> $ is even , therefore $ <nat:60> \times <var:b> $ is even too . $ <nat:34> $ is even , therefore $ <nat:34> \times <var:c> $ is even too . Since the sum of even numbers is even , and $ <nat:10> $ is also even , $ <nat:22> \times <var:a> + <nat:60> \times <var:b> + <nat:34> \times <var:c> + <nat:10> $ is even . \end{proof} \end{document}
-~
-Proof

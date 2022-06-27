@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:4> is the exponential between integer $ <var:e> $ repeatedly multiplied to the exponential <nat:2> . \end{theorem} \begin{proof} We justify $ <nat:4> = <var:e> ^ <nat:2> $ . Notice that $ <nat:4> = <var:e> ^ <nat:2> = <nat:2> ^ <nat:2> $ . This shows our claim is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <nat:4> = <var:e> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

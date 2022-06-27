@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:512> is the repeated multiplication between whole number $ <var:i> $ taken to the exponential <nat:9> satisfying the condition that $ <var:i> \geq <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:i> = <nat:2> $ . We confirm the statement is true on account of $ <nat:2> $ is larger than or equal to <nat:2> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:i> : nat , ( <nat:512> = <var:i> ^ <nat:9> ) /\ ( <var:i> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

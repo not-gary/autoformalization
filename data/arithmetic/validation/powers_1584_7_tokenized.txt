@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:128> is the exponential between integer $ <var:v> $ taken to the exponential <nat:7> such that $ <var:v> \geq <nat:2> $ . \end{theorem} \begin{proof} We verify the theory holds considering $ <nat:128> = <nat:2> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:v> : nat , ( <nat:128> = <var:v> ^ <nat:7> ) /\ ( <var:v> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

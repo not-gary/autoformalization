@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:44> is the multiplication between natural numbers $ <var:g> $ , and $ <var:o> $ . \end{theorem} \begin{proof} Take $ <var:g> = <nat:11> $ , $ <var:o> = <nat:4> $ . Observe that $ <nat:44> = <var:o> * <var:g> = <nat:4> * <nat:11> $ . This gives our result holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:g> <var:o> : nat , ( <nat:44> = <var:g> * <var:o> ) . Proof . exists <nat:11> . exists <nat:4> . lia . Qed . 

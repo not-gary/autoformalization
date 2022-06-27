@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given there exists $ <var:a> \in \mathbb{Z}^+ $ greater than or equivalent to <nat:2> . We say that $ <var:V> \in \mathbb{Z}^+ $ is considered to be a <def:hepteract> when $ <var:V> = <var:a> ^ <nat:7> $ . So <nat:128> is a <def:hepteract> positive integer . \end{theorem} \begin{proof} Allow $ <var:a> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:hepteract> ( <var:V> : nat ) := exists <var:a> : nat , ( <var:a> >= <nat:2> ) /\ ( <var:V> = <var:a> ^ <nat:7> ) . Theorem <genP:1> : <def:hepteract> <nat:128> . Proof . unfold <def:hepteract> . exists <nat:2> . split . lia . auto . Qed . 

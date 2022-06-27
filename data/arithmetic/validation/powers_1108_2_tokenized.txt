@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:L> $ such that $ <var:L> $ more than or equivalent to <nat:2> plus satisfying the condition that $ <nat:4> $ is equal to $ <var:L> ^ <nat:2> $ . \end{theorem} \begin{proof} We prove our principle holds seeing that $ <var:L> ^ <nat:2> = <nat:4> $ indicates $ <var:L> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:L> : nat , ( <var:L> >= <nat:2> ) /\ ( <nat:4> = <var:L> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

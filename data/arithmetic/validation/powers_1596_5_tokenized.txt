@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:b> ^ <nat:5> $ is equal to $ <nat:32> $ assuming $ <var:b> $ satisfying the condition that $ <var:b> > <nat:1> $ . \end{theorem} \begin{proof} We verify the theorem is true on account of $ <var:b> ^ <nat:5> = <nat:32> = <nat:2> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:b> : nat , ( <var:b> ^ <nat:5> = <nat:32> ) /\ ( <var:b> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

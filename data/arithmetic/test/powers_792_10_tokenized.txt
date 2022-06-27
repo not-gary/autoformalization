@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:F> \in \mathbb{N} $ satisfying the condition that $ <var:F> > <nat:1> $ and such that $ <nat:1024> = <var:F> ^ <nat:10> $ . \end{theorem} \begin{proof} We present $ <nat:1024> = <var:F> ^ <nat:10> $ plus $ <var:F> > <nat:1> $ . Notice $ <nat:2> ^ <nat:10> = <nat:1024> $ . This gives the theory is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <var:F> > <nat:1> ) /\ ( <nat:1024> = <var:F> ^ <nat:10> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

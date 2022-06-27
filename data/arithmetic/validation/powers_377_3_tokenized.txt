@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} Let $ <var:u> \in \mathbb{N} $ . We denote that $ <var:z> \in \mathbb{N} $ will be called a <def:cube> natural number given $ <var:u> ^ <nat:3> = <var:z> $ . \end{definition} \begin{theorem} $ <var:z> = <nat:8> $ is a <def:cube> . \end{theorem} \begin{proof} Let $ <var:u> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:z> : nat ) := exists <var:u> : nat , ( <var:u> ^ <nat:3> = <var:z> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

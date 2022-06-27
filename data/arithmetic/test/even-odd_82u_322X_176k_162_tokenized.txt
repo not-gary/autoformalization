@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:u> <nat:82> + <nat:162> + <var:X> <nat:322> + <nat:176> <var:k> $ is guaranteed to be even taking positive numbers $ <var:u> $ , $ <var:k> $ , and $ <var:X> $ . \end{theorem} \begin{proof} Proposition clearly must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:u> <var:k> <var:X> : nat , Nat . even ( <nat:82> * <var:u> + <nat:322> * <var:X> + <nat:176> * <var:k> + <nat:162> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

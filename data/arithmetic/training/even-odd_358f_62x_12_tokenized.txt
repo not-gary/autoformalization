@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:358> \times <var:f> + <nat:12> + <nat:62> \times <var:x> $ must be even . \end{theorem} \begin{proof} Recall that the addition of even numbers in $ \mathbb{Z}^+ $ together with an even element of $ \mathbb{Z}^+ $ is even . Notice that the multiplication between an even natural number with a number in $ \mathbb{N} $ will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:f> <var:x> : nat , Nat . even ( <nat:358> * <var:f> + <nat:62> * <var:x> + <nat:12> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

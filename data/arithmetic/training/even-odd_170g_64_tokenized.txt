@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given all positive numbers $ <var:g> $ the sum $ <nat:64> + <var:g> \times <nat:170> $ must be even . \end{theorem} \begin{proof} $ <var:g> <nat:170> $ is obviously even by reason that taking the product between an even natural number and any integer must be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:g> : nat , Nat . even ( <nat:170> * <var:g> + <nat:64> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:170> * <var:g> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

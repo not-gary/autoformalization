@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using all $ <var:a> \in \mathbb{N} $ the formula $ <nat:158> + <nat:10> \cdot <var:a> $ will be even . \end{theorem} \begin{proof} Theorem obivously must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:a> : nat , Nat . even ( <nat:10> * <var:a> + <nat:158> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

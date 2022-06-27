@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:494> + <var:n> <nat:496> $ is guaranteed to be even given all positive integers $ <var:n> $ . \end{theorem} \begin{proof} The positive integer $ <nat:496> $ is obviously an even number in $ \mathbb{Z}^+ $ \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:n> : nat , Nat . even ( <nat:496> * <var:n> + <nat:494> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:496> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} We assume that $ <var:q> $ is a <def:enneract> natural number granted that for some natural number $ <var:I> $ we have $ <var:q> = <var:I> ^ <nat:9> $ with $ <var:q> \in \mathbb{Z}^+ $ . Thus the positive integer <nat:512> is a <def:enneract> . \end{theorem} \begin{proof} Notice $ <var:I> ^ <nat:9> = <nat:512> $ gives $ <var:I> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:enneract> ( <var:q> : nat ) := exists <var:I> : nat , ( <var:q> = <var:I> ^ <nat:9> ) . Theorem <genP:1> : <def:enneract> <nat:512> . Proof . unfold <def:enneract> . exists <nat:2> . auto . Qed . 

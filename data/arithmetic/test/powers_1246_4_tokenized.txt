@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some whole number $ <var:L> $ where $ <var:L> $ more than <nat:1> as well as where the natural number <nat:16> is the exponent between integer $ <var:L> $ exponentiated to the exponent <nat:4> . \end{theorem} \begin{proof} Take $ <var:L> = <nat:2> $ . We prove $ <nat:16> = <var:L> ^ <nat:4> $ . We demonstrate the theorem holds as $ <nat:2> ^ <nat:4> = <var:L> ^ <nat:4> = <nat:16> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:L> : nat , ( <var:L> > <nat:1> ) /\ ( <nat:16> = <var:L> ^ <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

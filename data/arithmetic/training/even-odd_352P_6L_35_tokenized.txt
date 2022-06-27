@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:P> <nat:352> + <var:L> <nat:6> + <nat:35> $ is guaranteed to be odd for variables $ <var:L> $ , and $ <var:P> $ . \end{theorem} \begin{proof} $ <var:P> <nat:352> + <var:L> <nat:6> $ is trivially even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:L> <var:P> : nat , Nat . odd ( <nat:352> * <var:P> + <nat:6> * <var:L> + <nat:35> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:352> * <var:P> + <nat:6> * <var:L> ) = true ) . { repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . rewrite <genH> . auto . Qed . 

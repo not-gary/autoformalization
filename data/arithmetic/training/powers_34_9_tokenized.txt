@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:C> \in \mathbb{N} $ such that the integer <nat:512> is the raising of of number $ <var:C> \in \mathbb{N} $ taken to the degree <nat:9> . \end{theorem} \begin{proof} Take $ <var:C> = <nat:2> $ . So , $ <nat:512> = <var:C> ^ <nat:9> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:C> : nat , ( <nat:512> = <var:C> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

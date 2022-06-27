@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:Q> \in \mathbb{N} $ so that $ <var:Q> > <nat:1> $ as well as satisfying the condition that $ <var:Q> ^ <nat:12> $ is $ <nat:4096> $ . \end{theorem} \begin{proof} Assume $ <var:Q> = <nat:2> $ . Note $ <var:Q> ^ <nat:12> = <nat:4096> = <nat:2> ^ <nat:12> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Q> : nat , ( <var:Q> > <nat:1> ) /\ ( <var:Q> ^ <nat:12> = <nat:4096> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

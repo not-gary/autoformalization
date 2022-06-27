@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:4096> is the repeated product between integer $ <var:a> $ repeatedly multiplied to the degree <nat:12> so that $ <var:a> \geq <nat:2> $ . \end{theorem} \begin{proof} Take $ <var:a> = <nat:2> $ . Observe $ <nat:4096> = <var:a> ^ <nat:12> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:a> : nat , ( <nat:4096> = <var:a> ^ <nat:12> ) /\ ( <var:a> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

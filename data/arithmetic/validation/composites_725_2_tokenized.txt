@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:z> $ , and $ <var:X> \in \mathbb{N} $ satisfying the condition that $ <nat:70> $ is the same as $ <var:z> \cdot <var:X> $ . \end{theorem} \begin{proof} Assume $ <var:X> = <nat:7> $ and $ <var:z> = <nat:10> $ . This suggests our thesis is valid . As a consequence , $ <nat:70> = <var:z> \times <var:X> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:z> <var:X> : nat , ( <nat:70> = <var:z> * <var:X> ) . Proof . exists <nat:10> . exists <nat:7> . lia . Qed . 

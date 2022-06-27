@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:234> <var:A> + <nat:440> $ will be even . \end{theorem} \begin{proof} $ <var:A> <nat:234> $ is guaranteed to be an even natural number as a consequence that the leading term $ <nat:234> $ is clearly even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:A> : nat , Nat . even ( <nat:234> * <var:A> + <nat:440> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:234> = true ) . { auto . } assert ( <genH> : Nat . even ( <nat:234> * <var:A> ) = true ) . { rewrite Nat . even_mul . rewrite <genH> . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

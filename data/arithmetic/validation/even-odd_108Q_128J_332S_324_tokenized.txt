@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:128> <var:J> + <nat:324> + <var:S> <nat:332> + <var:Q> <nat:108> $ is even . \end{theorem} \begin{proof} The multiplication of an even natural and any element of $ \mathbb{N} $ is even . We check the sum $ <nat:108> * <var:Q> + <nat:324> + <nat:128> * <var:J> + <nat:332> * <var:S> $ must be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:J> <var:S> <var:Q> : nat , Nat . even ( <nat:128> * <var:J> + <nat:332> * <var:S> + <nat:108> * <var:Q> + <nat:324> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

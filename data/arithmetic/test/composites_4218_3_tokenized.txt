@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:80> $ equals $ <var:b> * <var:M> * <var:A> $ . \end{theorem} \begin{proof} Note that $ <var:A> \times <var:b> \times <var:M> = <nat:80> $ yields $ <var:A> = <nat:10> $ , $ <var:b> = <nat:4> $ , $ <var:M> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:M> <var:A> <var:b> : nat , ( <nat:80> = <var:b> * <var:M> * <var:A> ) . Proof . exists <nat:2> . exists <nat:10> . exists <nat:4> . repeat split . all : lia . Qed . 

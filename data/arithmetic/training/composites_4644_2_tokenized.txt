@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are some numbers $ <var:g> $ , $ <var:h> $ where $ <var:h> $ , and $ <var:g> > <nat:1> $ and satisfying the condition that $ <nat:48> $ is the same as $ <var:h> \cdot <var:g> $ . \end{theorem} \begin{proof} Observe that $ <nat:48> = <var:g> \cdot <var:h> $ suggests $ <var:g> = <nat:4> $ , and $ <var:h> = <nat:12> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:g> <var:h> : nat , ( <var:h> > <nat:1> ) /\ ( <var:g> > <nat:1> ) /\ ( <nat:48> = <var:h> * <var:g> ) . Proof . exists <nat:4> . exists <nat:12> . lia . Qed . 

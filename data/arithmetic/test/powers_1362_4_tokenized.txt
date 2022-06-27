@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:s> \in \mathbb{Z}^+ $ so that $ <nat:16> $ is the same as $ <var:s> ^ <nat:4> $ . \end{theorem} \begin{proof} Let $ <var:s> = <nat:2> $ . We prove our proposition holds considering $ <nat:2> ^ <nat:4> = <nat:16> = <var:s> ^ <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:s> : nat , ( <nat:16> = <var:s> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

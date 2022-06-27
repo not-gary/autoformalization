@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Say that whenever there exists $ <var:y> $ denote that $ <var:a> \in \mathbb{Z}^+ $ is a <def:tesseract> whole number when $ <var:a> = <var:y> ^ <nat:4> $ . Accordingly $ <var:a> = <nat:16> $ is a <def:tesseract> . \end{theorem} \begin{proof} Observe $ <nat:2> ^ <nat:4> = <nat:16> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:tesseract> ( <var:a> : nat ) := exists <var:y> : nat , ( <var:a> = <var:y> ^ <nat:4> ) . Theorem <genP:1> : <def:tesseract> <nat:16> . Proof . unfold <def:tesseract> . exists <nat:2> . auto . Qed . 

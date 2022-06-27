@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:128> is the exponential between number $ <var:j> \in \mathbb{N} $ repeatedly multiplied to the exponential <nat:7> satisfying the condition that $ <var:j> > <nat:1> $ . \end{theorem} \begin{proof} Notice that $ <nat:128> = <nat:2> ^ <nat:7> $ . Similarly note $ <nat:2> > <nat:1> $ . This suggests the claim is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <nat:128> = <var:j> ^ <nat:7> ) /\ ( <var:j> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

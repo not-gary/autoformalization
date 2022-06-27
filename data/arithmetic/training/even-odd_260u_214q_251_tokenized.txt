@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming every terms $ <var:u> $ , and $ <var:q> $ $ <var:u> <nat:260> + <var:q> <nat:214> + <nat:251> $ must be odd . \end{theorem} \begin{proof} See multiplying between even naturals is guaranteed to be an even number in $ \mathbb{Z}^+ $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:u> <var:q> : nat , Nat . odd ( <nat:260> * <var:u> + <nat:214> * <var:q> + <nat:251> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

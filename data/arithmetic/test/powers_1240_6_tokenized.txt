@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:64> is the exponent of natural number $ <var:o> $ repeatedly multiplied to the degree <nat:6> such that $ <var:o> $ larger than <nat:1> . \end{theorem} \begin{proof} Notice that $ <var:o> ^ <nat:6> = <nat:2> ^ <nat:6> = <nat:64> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:o> : nat , ( <nat:64> = <var:o> ^ <nat:6> ) /\ ( <var:o> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

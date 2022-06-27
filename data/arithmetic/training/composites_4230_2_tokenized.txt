@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:u> $ , $ <var:N> $ such that the number <nat:40> is the multiplication between positive integers $ <var:u> $ , and $ <var:N> $ . \end{theorem} \begin{proof} Let $ <var:u> = <nat:8> $ , $ <var:N> = <nat:5> $ . We prove our thesis is valid by reason of $ <var:u> \times <var:N> = <nat:40> $ . Consequently , $ <var:u> \cdot <var:N> = <nat:40> $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:u> <var:N> : nat , ( <nat:40> = <var:u> * <var:N> ) . Proof . exists <nat:8> . exists <nat:5> . lia . Qed . 

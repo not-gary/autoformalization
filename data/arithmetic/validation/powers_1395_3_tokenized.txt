@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:Z> \in \mathbb{N} $ such that $ <var:Z> \geq <nat:2> $ . the whole number <nat:8> is the repeated multiplication of integer $ <var:Z> \in \mathbb{N} $ exponentiated to the power <nat:3> . \end{theorem} \begin{proof} Assume $ <var:Z> = <nat:2> $ . We present $ <var:Z> ^ <nat:3> = <nat:8> $ . This implies our proposition holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <var:Z> >= <nat:2> ) /\ ( <nat:8> = <var:Z> ^ <nat:3> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

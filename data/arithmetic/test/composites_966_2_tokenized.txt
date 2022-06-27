@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:g> \cdot <var:I> $ equals $ <nat:18> $ so that $ <var:I> $ and $ <var:g> > <nat:1> $ . \end{theorem} \begin{proof} Observe that $ <nat:18> = <nat:2> * <nat:9> $ . Hence , $ <var:g> $ and $ <var:I> $ are larger than <nat:1> and <nat:18> is the product of $ <var:g> $ , and $ <var:I> \in \mathbb{N} $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:I> <var:g> : nat , ( <var:g> * <var:I> = <nat:18> ) /\ ( <var:I> > <nat:1> ) /\ ( <var:g> > <nat:1> ) . Proof . exists <nat:9> . exists <nat:2> . lia . Qed . 

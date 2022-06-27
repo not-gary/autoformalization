@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:32> is the exponential of positive integer $ <var:F> $ exponentiated to the power <nat:5> such that $ <var:F> > <nat:1> $ . \end{theorem} \begin{proof} We show $ <var:F> ^ <nat:5> = <nat:32> $ plus $ <var:F> > <nat:1> $ . Note $ <nat:32> = <var:F> ^ <nat:5> $ shows $ <var:F> = <nat:2> $ . Furthermore notice $ <nat:2> $ is more than <nat:1> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <nat:32> = <var:F> ^ <nat:5> ) /\ ( <var:F> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

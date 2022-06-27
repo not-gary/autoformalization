@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:16> is the raising of between $ <var:c> $ repeatedly multiplied to the power <nat:4> . \end{theorem} \begin{proof} Allow $ <var:c> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:c> : nat , ( <nat:16> = <var:c> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

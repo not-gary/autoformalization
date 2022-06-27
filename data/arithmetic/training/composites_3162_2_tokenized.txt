@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:d> $ , and $ <var:e> $ be whole numbers satisfying the condition that $ <var:e> * <var:d> $ equals $ <nat:99> $ . \end{theorem} \begin{proof} Allow $ <var:d> = <nat:11> $ , $ <var:e> = <nat:9> $ . We confirm $ <nat:99> = <var:e> * <var:d> $ . We present our thesis holds as $ <var:e> * <var:d> = <nat:9> * <nat:11> = <nat:99> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:d> <var:e> : nat , ( <var:e> * <var:d> = <nat:99> ) . Proof . exists <nat:11> . exists <nat:9> . lia . Qed . 

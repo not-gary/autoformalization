@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:256> $ is equal to $ <var:V> ^ <nat:8> $ with $ <var:V> $ satisfying the condition that $ <var:V> $ larger than or equal to <nat:2> . \end{theorem} \begin{proof} We verify our proposition is true on account of $ <nat:2> ^ <nat:8> = <var:V> ^ <nat:8> = <nat:256> $ and as $ <nat:2> \geq <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <nat:256> = <var:V> ^ <nat:8> ) /\ ( <var:V> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

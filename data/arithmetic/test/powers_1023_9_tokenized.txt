@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:512> is the repeated product of whole number $ <var:b> \in \mathbb{Z}^+ $ exponentiated to the exponent <nat:9> such that $ <var:b> $ more than <nat:1> . \end{theorem} \begin{proof} Take $ <var:b> = <nat:2> $ . We verify $ <var:b> ^ <nat:9> = <nat:512> $ . This hints our principle is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:b> : nat , ( <nat:512> = <var:b> ^ <nat:9> ) /\ ( <var:b> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

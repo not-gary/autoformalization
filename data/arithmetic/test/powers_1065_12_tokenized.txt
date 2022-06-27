@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:4096> is the repeated product of positive integer $ <var:h> $ raised to the exponential <nat:12> . \end{theorem} \begin{proof} Assume $ <var:h> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:h> : nat , ( <nat:4096> = <var:h> ^ <nat:12> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:Y> * <var:n> * <var:C> * <var:g> $ is equivalent to $ <nat:300> $ . \end{theorem} \begin{proof} Allow $ <var:n> = <nat:2> $ , $ <var:C> = <nat:5> $ , $ <var:Y> = <nat:3> $ , $ <var:g> = <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Y> <var:n> <var:C> <var:g> : nat , ( <var:Y> * <var:n> * <var:C> * <var:g> = <nat:300> ) . Proof . exists <nat:3> . exists <nat:2> . exists <nat:5> . exists <nat:10> . repeat split . all : lia . Qed . 

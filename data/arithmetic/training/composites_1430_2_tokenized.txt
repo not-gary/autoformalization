@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:99> $ is $ <var:H> \times <var:b> $ . \end{theorem} \begin{proof} Take $ <var:H> = <nat:11> $ , $ <var:b> = <nat:9> $ . We prove the formula is true for $ <nat:9> * <nat:11> = <nat:99> $ . Consequently , $ <var:b> \times <var:H> = <nat:99> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:H> <var:b> : nat , ( <nat:99> = <var:H> * <var:b> ) . Proof . exists <nat:11> . exists <nat:9> . lia . Qed . 

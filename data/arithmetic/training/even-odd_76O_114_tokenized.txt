@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:76> \times <var:O> + <nat:114> $ must be even . \end{theorem} \begin{proof} We prove $ <nat:114> + <var:O> * <nat:76> $ is guaranteed to be even . See the leading term $ <nat:76> $ is clearly an even positive integer \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:O> : nat , Nat . even ( <nat:76> * <var:O> + <nat:114> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:76> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

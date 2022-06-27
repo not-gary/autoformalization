@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:k> $ , $ <var:I> $ as integers where $ <nat:60> = <var:k> \cdot <var:I> $ . \end{theorem} \begin{proof} Note that $ <nat:5> \times <nat:12> = <nat:60> = <var:k> \times <var:I> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:k> <var:I> : nat , ( <nat:60> = <var:k> * <var:I> ) . Proof . exists <nat:5> . exists <nat:12> . lia . Qed . 

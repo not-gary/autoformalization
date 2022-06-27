@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:256> $ is $ <var:q> ^ <nat:8> $ assuming $ <var:q> \in \mathbb{Z}^+ $ so that $ <var:q> \geq <nat:2> $ . \end{theorem} \begin{proof} Notice $ <var:q> ^ <nat:8> = <nat:2> ^ <nat:8> = <nat:256> $ . Consequently , <nat:256> is the repeated product between some integer $ <var:q> $ taken to the exponential <nat:8> as well as $ <var:q> \geq <nat:2> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:q> : nat , ( <nat:256> = <var:q> ^ <nat:8> ) /\ ( <var:q> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

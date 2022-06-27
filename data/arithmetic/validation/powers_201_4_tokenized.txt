@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:j> \in \mathbb{N} $ satisfying the condition that $ <var:j> > <nat:1> $ as well as so that $ <nat:16> $ is $ <var:j> ^ <nat:4> $ . \end{theorem} \begin{proof} We demonstrate our thesis is true seeing that $ <var:j> ^ <nat:4> = <nat:16> $ gives $ <var:j> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <var:j> > <nat:1> ) /\ ( <nat:16> = <var:j> ^ <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:t> $ , and $ <var:l> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:t> $ , $ <var:l> $ more than <nat:1> and such that the integer <nat:10> is the product between $ <var:t> $ , and $ <var:l> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Note that $ <var:t> \times <var:l> = <nat:10> $ gives $ <var:t> = <nat:5> $ , $ <var:l> = <nat:2> $ . This shows the theorem is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:t> <var:l> : nat , ( <var:t> > <nat:1> ) /\ ( <var:l> > <nat:1> ) /\ ( <nat:10> = <var:t> * <var:l> ) . Proof . exists <nat:5> . exists <nat:2> . lia . Qed . 

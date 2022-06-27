@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are some $ <var:Z> $ and $ <var:o> $ such that $ <var:o> $ , and $ <var:Z> $ greater than <nat:1> as well as such that $ <var:o> \times <var:Z> $ equals $ <nat:35> $ . \end{theorem} \begin{proof} Allow $ <var:o> = <nat:5> $ and $ <var:Z> = <nat:7> $ . Observe $ <nat:35> = <nat:5> * <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Z> <var:o> : nat , ( <var:o> > <nat:1> ) /\ ( <var:Z> > <nat:1> ) /\ ( <var:o> * <var:Z> = <nat:35> ) . Proof . exists <nat:7> . exists <nat:5> . lia . Qed . 

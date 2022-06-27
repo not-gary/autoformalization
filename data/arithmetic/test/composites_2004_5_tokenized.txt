@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:3696> is the product of $ <var:T> $ , $ <var:v> $ , $ <var:d> $ , $ <var:t> $ , and $ <var:Y> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Notice $ <nat:3696> = <var:d> * <var:T> * <var:Y> * <var:t> * <var:v> = <nat:3> * <nat:8> * <nat:11> * <nat:7> * <nat:2> $ . This produces our belief is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:T> <var:v> <var:d> <var:t> <var:Y> : nat , ( <nat:3696> = <var:T> * <var:v> * <var:d> * <var:t> * <var:Y> ) . Proof . exists <nat:8> . exists <nat:2> . exists <nat:3> . exists <nat:7> . exists <nat:11> . repeat split . all : lia . Qed . 

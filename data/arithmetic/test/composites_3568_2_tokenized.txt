@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:Q> $ , $ <var:G> \in \mathbb{Z}^+ $ so that $ <var:G> $ and $ <var:Q> $ more than <nat:1> and so that the natural number <nat:80> is the multiplication of positive integers $ <var:Q> $ , and $ <var:G> \in \mathbb{N} $ . \end{theorem} \begin{proof} Allow $ <var:Q> = <nat:8> $ , $ <var:G> = <nat:10> $ . This yields our formula is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Q> <var:G> : nat , ( <var:G> > <nat:1> ) /\ ( <var:Q> > <nat:1> ) /\ ( <nat:80> = <var:Q> * <var:G> ) . Proof . exists <nat:8> . exists <nat:10> . lia . Qed . 

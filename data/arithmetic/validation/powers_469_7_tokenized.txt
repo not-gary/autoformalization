@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:128> is the exponent of integer $ <var:u> $ exponentiated to the exponent <nat:7> so that $ <var:u> \geq <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:u> = <nat:2> $ . We present the principle holds by reason of $ <nat:2> ^ <nat:7> = <var:u> ^ <nat:7> = <nat:128> $ . Because of this , $ <nat:128> = <var:u> ^ <nat:7> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <nat:128> = <var:u> ^ <nat:7> ) /\ ( <var:u> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

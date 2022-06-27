@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:6> is the multiplication of $ <var:R> $ , $ <var:w> \in \mathbb{N} $ . \end{theorem} \begin{proof} Assume $ <var:R> = <nat:3> $ , $ <var:w> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:R> <var:w> : nat , ( <nat:6> = <var:R> * <var:w> ) . Proof . exists <nat:3> . exists <nat:2> . lia . Qed . 

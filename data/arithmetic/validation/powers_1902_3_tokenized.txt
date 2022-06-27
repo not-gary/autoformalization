@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} We denote that $ <var:L> $ is a <def:cube> wherever $ \exists <var:Q> \in \mathbb{N} $ such that $ <var:Q> ^ <nat:3> = <var:L> $ for some integer $ <var:L> $ . Accordingly $ <var:L> = <nat:8> $ is a <def:cube> natural number . \end{theorem} \begin{proof} We show <nat:8> is a <def:cube> natural number considering $ <nat:2> ^ <nat:3> = <var:Q> ^ <nat:3> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:L> : nat ) := exists <var:Q> : nat , ( <var:Q> ^ <nat:3> = <var:L> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

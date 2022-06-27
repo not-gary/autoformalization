@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:302> + <var:I> * <nat:48> $ must be even given some natural numbers $ <var:I> $ . \end{theorem} \begin{proof} Result clearly is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:I> : nat , Nat . even ( <nat:48> * <var:I> + <nat:302> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

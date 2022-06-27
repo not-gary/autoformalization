@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:383> + <nat:468> \times <var:W> $ will be odd . \end{theorem} \begin{proof} Proposition must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:W> : nat , Nat . odd ( <nat:468> * <var:W> + <nat:383> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:j> ^ <nat:2> $ is $ <nat:4> $ for $ <var:j> $ . \end{theorem} \begin{proof} Assume $ <var:j> = <nat:2> $ . We justify the formula is valid considering $ <nat:2> ^ <nat:2> = <nat:4> $ . Hence , $ <nat:4> = <var:j> ^ <nat:2> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <var:j> ^ <nat:2> = <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

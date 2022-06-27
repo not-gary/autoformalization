@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} A <def:google> is a number $ <var:n> $ such that there exists a $ <var:k> $ such that $ <var:n> = <var:k> ^ <nat:100> $ . \end{definition} \begin{theorem} The number $ <nat:1> $ is a <def:google> . \end{theorem} \begin{proof} Note that $ <nat:1> ^ <nat:100> = <nat:1> $ , and hence that $ <nat:1> $ is a <def:google> . \end{proof} \end{document}
-~
-Proof

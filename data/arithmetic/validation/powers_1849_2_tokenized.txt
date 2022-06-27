@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:y> $ as positive integers . the integer <nat:4> is the exponent between natural number $ <var:y> $ repeatedly multiplied to the power <nat:2> . \end{theorem} \begin{proof} Let $ <var:y> = <nat:2> $ . This suggests the statement is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:y> : nat , ( <nat:4> = <var:y> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

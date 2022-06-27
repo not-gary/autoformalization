@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:8580> = <var:L> * <var:x> * <var:U> * <var:Q> * <var:t> $ for $ <var:Q> $ , $ <var:x> $ , $ <var:U> $ , $ <var:L> $ and $ <var:t> $ . \end{theorem} \begin{proof} Allow $ <var:Q> = <nat:13> $ , $ <var:t> = <nat:3> $ , $ <var:x> = <nat:10> $ , $ <var:L> = <nat:2> $ and $ <var:U> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Q> <var:x> <var:U> <var:L> <var:t> : nat , ( <nat:8580> = <var:L> * <var:x> * <var:U> * <var:Q> * <var:t> ) . Proof . exists <nat:13> . exists <nat:10> . exists <nat:11> . exists <nat:2> . exists <nat:3> . repeat split . all : lia . Qed . 

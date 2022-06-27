@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:128> $ is equal to $ <var:u> ^ <nat:7> $ . \end{theorem} \begin{proof} Let $ <var:u> = <nat:2> $ . Note that $ <nat:128> = <nat:2> ^ <nat:7> = <var:u> ^ <nat:7> $ . This gives our statement is true . So , <nat:128> is the raising of between some integer $ <var:u> $ exponentiated to the degree <nat:7> is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <nat:128> = <var:u> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

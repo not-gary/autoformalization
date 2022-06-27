@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given some variables $ <var:K> $ the expression $ <nat:115> + <nat:498> \cdot <var:K> $ is guaranteed to be odd . \end{theorem} \begin{proof} The product $ <nat:498> \times <var:K> $ is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:K> : nat , Nat . odd ( <nat:498> * <var:K> + <nat:115> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:498> * <var:K> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:90> <var:d> + <nat:372> $ is even taking any $ <var:d> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} The pair $ <nat:90> <var:d> $ is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:d> : nat , Nat . even ( <nat:90> * <var:d> + <nat:372> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:90> * <var:d> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

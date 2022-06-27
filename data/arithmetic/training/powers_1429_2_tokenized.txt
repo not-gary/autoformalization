@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Define that $ <var:L> $ is a <def:square> natural number assuming that for some $ <var:k> \in \mathbb{N} $ we get $ <var:L> = <var:k> ^ <nat:2> $ assuming some $ <var:L> $ . So $ <nat:4> = <var:L> $ is a <def:square> number . \end{theorem} \begin{proof} Let $ <var:k> = <nat:2> $ . Note $ <nat:2> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:L> : nat ) := exists <var:k> : nat , ( <var:L> = <var:k> ^ <nat:2> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:V> ^ <nat:7> = <nat:128> $ given $ <var:V> \in \mathbb{N} $ so that $ <var:V> $ larger than or equal to <nat:2> . \end{theorem} \begin{proof} Let $ <var:V> = <nat:2> $ . We confirm $ <var:V> \geq <nat:2> $ and $ <var:V> ^ <nat:7> = <nat:128> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <var:V> ^ <nat:7> = <nat:128> ) /\ ( <var:V> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

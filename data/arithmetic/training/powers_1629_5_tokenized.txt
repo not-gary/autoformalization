@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:32> is the repeated multiplication between positive integer $ <var:z> \in \mathbb{N} $ repeatedly multiplied to the degree <nat:5> satisfying the condition that $ <var:z> \geq <nat:2> $ . \end{theorem} \begin{proof} We present $ <nat:32> = <var:z> ^ <nat:5> $ . Notice that $ <var:z> ^ <nat:5> = <nat:32> $ hints $ <var:z> = <nat:2> $ . This shows our theorem is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:z> : nat , ( <nat:32> = <var:z> ^ <nat:5> ) /\ ( <var:z> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

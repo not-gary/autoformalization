@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:i> \in \mathbb{Z}^+ $ so that the positive integer <nat:512> is the exponential between number $ <var:i> \in \mathbb{N} $ raised to the degree <nat:9> . \end{theorem} \begin{proof} We present $ <var:i> ^ <nat:9> = <nat:512> $ . We confirm our statement holds as $ <nat:512> = <nat:2> ^ <nat:9> = <var:i> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:i> : nat , ( <nat:512> = <var:i> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

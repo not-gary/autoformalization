@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:280> is the multiplication of natural numbers $ <var:S> $ , $ <var:E> $ , and $ <var:U> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We verify the belief is valid because $ <nat:10> \cdot <nat:4> \cdot <nat:7> = <nat:280> = <var:E> \cdot <var:S> \cdot <var:U> $ . Therefore , $ <var:U> \cdot <var:S> \cdot <var:E> = <nat:280> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:S> <var:E> <var:U> : nat , ( <nat:280> = <var:S> * <var:E> * <var:U> ) . Proof . exists <nat:4> . exists <nat:10> . exists <nat:7> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some whole numbers $ <var:l> $ and $ <var:k> $ where the whole number <nat:6> is the multiplication of positive integers $ <var:l> $ and $ <var:k> $ . \end{theorem} \begin{proof} Let $ <var:k> = <nat:3> $ and $ <var:l> = <nat:2> $ . Observe that $ <nat:6> = <var:l> \times <var:k> $ . Because of this , $ <nat:6> = <var:l> \cdot <var:k> $ is verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:k> : nat , ( <nat:6> = <var:l> * <var:k> ) . Proof . exists <nat:2> . exists <nat:3> . lia . Qed . 

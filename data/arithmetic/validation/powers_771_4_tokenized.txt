@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:16> $ equals $ <var:S> ^ <nat:4> $ where $ <var:S> $ larger than <nat:1> . \end{theorem} \begin{proof} We verify the result is true seeing that $ <var:S> ^ <nat:4> = <nat:16> $ shows $ <var:S> = <nat:2> $ . Thus , <nat:16> is the repeated product between some natural number $ <var:S> $ exponentiated to the exponential <nat:4> and $ <var:S> > <nat:1> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <nat:16> = <var:S> ^ <nat:4> ) /\ ( <var:S> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

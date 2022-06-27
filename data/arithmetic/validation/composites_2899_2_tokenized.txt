@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:44> is the multiplication between $ <var:Y> $ , and $ <var:j> \in \mathbb{N} $ where $ <var:Y> $ , and $ <var:j> \geq <nat:2> $ . \end{theorem} \begin{proof} Take $ <var:Y> = <nat:11> $ and $ <var:j> = <nat:4> $ . Note $ <var:Y> \times <var:j> = <nat:44> $ . This indicates the thesis holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Y> <var:j> : nat , ( <nat:44> = <var:Y> * <var:j> ) /\ ( <var:Y> >= <nat:2> ) /\ ( <var:j> >= <nat:2> ) . Proof . exists <nat:11> . exists <nat:4> . lia . Qed . 

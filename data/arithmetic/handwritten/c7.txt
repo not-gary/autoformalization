@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} A <def:composite> number is any $ <var:n> \in \mathbb{N} $ that is a product $ <var:a> * <var:b> $ , where $ <var:a> $ and $ <var:b> $ are natural numbers greater than or equal to <nat:2> . \end{definition} \begin{theorem} <nat:1749> is a <def:composite> number . \end{theorem} \begin{proof} $ <nat:1749> = <nat:53> * <nat:33> $ , which is by definition a <def:composite> number . \end{proof} \end{document}
-~
-Proof

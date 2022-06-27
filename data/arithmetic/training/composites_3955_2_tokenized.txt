@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:40> is the product of positive integers $ <var:O> $ , and $ <var:i> $ . \end{theorem} \begin{proof} Observe $ <nat:40> = <nat:10> \cdot <nat:4> $ . Because of this , $ <nat:40> = <var:i> \times <var:O> $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:O> <var:i> : nat , ( <nat:40> = <var:O> * <var:i> ) . Proof . exists <nat:4> . exists <nat:10> . lia . Qed . 

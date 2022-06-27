@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:V> \times <var:x> $ is $ <nat:72> $ with $ <var:V> $ , and $ <var:x> $ . \end{theorem} \begin{proof} Notice $ <nat:72> = <nat:12> \cdot <nat:6> $ . So , <nat:72> is the product between some whole numbers $ <var:V> $ and $ <var:x> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:V> <var:x> : nat , ( <var:V> * <var:x> = <nat:72> ) . Proof . exists <nat:12> . exists <nat:6> . lia . Qed . 

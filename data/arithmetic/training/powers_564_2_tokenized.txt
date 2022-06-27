@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:4> is the repeated product between number $ <var:l> \in \mathbb{N} $ repeatedly multiplied to the degree <nat:2> . \end{theorem} \begin{proof} We confirm our theorem is valid by reason of $ <nat:4> = <nat:2> ^ <nat:2> = <var:l> ^ <nat:2> $ . Therefore , <nat:4> is the repeated product between $ <var:l> \in \mathbb{N} $ taken to the power <nat:2> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:l> : nat , ( <nat:4> = <var:l> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

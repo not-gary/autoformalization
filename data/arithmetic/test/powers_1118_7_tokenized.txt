@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:l> ^ <nat:7> $ is $ <nat:128> $ . \end{theorem} \begin{proof} Assume $ <var:l> = <nat:2> $ . Notice $ <nat:128> = <var:l> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:l> : nat , ( <var:l> ^ <nat:7> = <nat:128> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Denote that $ <var:v> $ is a <def:hepteract> positive integer only if for some $ <var:Z> \in \mathbb{N} $ we have $ <var:v> = <var:Z> ^ <nat:7> $ assuming some number $ <var:v> $ . Hence the number <nat:128> is a <def:hepteract> number . \end{theorem} \begin{proof} Note that $ <nat:128> = <var:Z> ^ <nat:7> $ hints $ <var:Z> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:hepteract> ( <var:v> : nat ) := exists <var:Z> : nat , ( <var:v> = <var:Z> ^ <nat:7> ) . Theorem <genP:1> : <def:hepteract> <nat:128> . Proof . unfold <def:hepteract> . exists <nat:2> . auto . Qed . 

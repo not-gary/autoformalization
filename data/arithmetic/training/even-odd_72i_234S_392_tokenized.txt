@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:i> \times <nat:72> + <nat:234> \times <var:S> + <nat:392> $ is even given any variables $ <var:i> $ , and $ <var:S> $ . \end{theorem} \begin{proof} We verify the main result is proven . Recall that $ <nat:392> $ is known to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:i> <var:S> : nat , Nat . even ( <nat:72> * <var:i> + <nat:234> * <var:S> + <nat:392> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:392> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

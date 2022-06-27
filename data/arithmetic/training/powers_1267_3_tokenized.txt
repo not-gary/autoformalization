@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:W> \in \mathbb{Z}^+ $ . <nat:8> is the exponent of natural number $ <var:W> \in \mathbb{Z}^+ $ repeatedly multiplied to the exponent <nat:3> . \end{theorem} \begin{proof} Allow $ <var:W> = <nat:2> $ . Note $ <var:W> ^ <nat:3> = <nat:2> ^ <nat:3> = <nat:8> $ . Consequently , $ <var:W> ^ <nat:3> = <nat:8> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:W> : nat , ( <nat:8> = <var:W> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number $ <var:n> $ is said to be a <def:composite> given $ <var:A> $ , $ <var:d> $ , $ <var:m> \in \mathbb{N} $ are greater than or equal to <nat:2> , and $ <var:A> \times <var:d> \times <var:m> = <var:n> $ . \end{theorem} \begin{proof} $ <nat:2> \cdot <nat:3> \cdot <nat:5> = <nat:30> $ , therefore <nat:30> must be as in the theorem . \end{proof} \end{document}
-~
-Proof

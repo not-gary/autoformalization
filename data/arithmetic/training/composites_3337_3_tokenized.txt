@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:360> is the product of natural numbers $ <var:q> $ , $ <var:t> $ , $ <var:g> $ so that $ <var:q> $ , $ <var:t> $ , $ <var:g> > <nat:1> $ . \end{theorem} \begin{proof} Observe $ <nat:360> = <nat:5> \cdot <nat:6> \cdot <nat:12> $ . This yields the proposition is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:q> <var:t> <var:g> : nat , ( <nat:360> = <var:q> * <var:t> * <var:g> ) /\ ( <var:q> > <nat:1> ) /\ ( <var:t> > <nat:1> ) /\ ( <var:g> > <nat:1> ) . Proof . exists <nat:12> . exists <nat:5> . exists <nat:6> . repeat split . all : lia . Qed . 

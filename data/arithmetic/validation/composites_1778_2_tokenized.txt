@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:72> is the product between $ <var:m> $ , and $ <var:W> $ where $ <var:W> $ , $ <var:m> $ larger than <nat:1> . \end{theorem} \begin{proof} Allow $ <var:W> = <nat:9> $ and $ <var:m> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:m> <var:W> : nat , ( <nat:72> = <var:m> * <var:W> ) /\ ( <var:W> > <nat:1> ) /\ ( <var:m> > <nat:1> ) . Proof . exists <nat:8> . exists <nat:9> . lia . Qed . 

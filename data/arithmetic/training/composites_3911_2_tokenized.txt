@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:z> $ , and $ <var:q> \in \mathbb{Z}^+ $ such that $ <var:q> * <var:z> = <nat:55> $ . \end{theorem} \begin{proof} Assume $ <var:z> = <nat:5> $ , and $ <var:q> = <nat:11> $ . We confirm <nat:55> is the product between some natural numbers $ <var:z> $ , $ <var:q> $ . We prove our theory is valid considering $ <nat:55> = <var:q> \times <var:z> = <nat:11> \times <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:z> <var:q> : nat , ( <var:q> * <var:z> = <nat:55> ) . Proof . exists <nat:5> . exists <nat:11> . lia . Qed . 

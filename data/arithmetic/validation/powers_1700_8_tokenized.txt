@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:c> $ be natural numbers so that <nat:256> is the exponential of integer $ <var:c> $ exponentiated to the degree <nat:8> . \end{theorem} \begin{proof} We confirm our theory is valid as $ <var:c> ^ <nat:8> = <nat:256> = <nat:2> ^ <nat:8> $ . Thus , $ <nat:256> = <var:c> ^ <nat:8> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:c> : nat , ( <nat:256> = <var:c> ^ <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

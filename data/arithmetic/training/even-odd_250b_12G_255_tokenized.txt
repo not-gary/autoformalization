@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:255> + <nat:250> \cdot <var:b> + <var:G> \cdot <nat:12> $ is odd with variables $ <var:b> $ , and $ <var:G> $ . \end{theorem} \begin{proof} It can be checked that this lemma holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:b> <var:G> : nat , Nat . odd ( <nat:250> * <var:b> + <nat:12> * <var:G> + <nat:255> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

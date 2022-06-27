@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some whole number $ <var:v> $ satisfying the condition that the number <nat:128> is the repeated multiplication between positive integer $ <var:v> $ repeatedly multiplied to the power <nat:7> . \end{theorem} \begin{proof} Take $ <var:v> = <nat:2> $ . We prove our theory is valid as $ <nat:128> = <var:v> ^ <nat:7> = <nat:2> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:v> : nat , ( <nat:128> = <var:v> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

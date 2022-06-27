@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:E> $ , and $ <var:G> \in \mathbb{Z}^+ $ where $ <nat:99> $ equals $ <var:E> * <var:G> $ . \end{theorem} \begin{proof} We verify <nat:99> is the multiplication between $ <var:G> $ , $ <var:E> \in \mathbb{N} $ . Note that $ <var:E> \cdot <var:G> = <nat:99> = <nat:11> \cdot <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:E> <var:G> : nat , ( <nat:99> = <var:E> * <var:G> ) . Proof . exists <nat:11> . exists <nat:9> . lia . Qed . 

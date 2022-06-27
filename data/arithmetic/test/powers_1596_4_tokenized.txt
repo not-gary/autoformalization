@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:16> is the raising of between integer $ <var:w> $ exponentiated to the exponential <nat:4> where $ <var:w> $ more than or equivalent to <nat:2> . \end{theorem} \begin{proof} Assume $ <var:w> = <nat:2> $ . So , $ <nat:16> = <var:w> ^ <nat:4> $ is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:w> : nat , ( <nat:16> = <var:w> ^ <nat:4> ) /\ ( <var:w> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

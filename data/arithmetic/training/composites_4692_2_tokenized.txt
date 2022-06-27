@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:U> * <var:B> $ is equivalent to $ <nat:44> $ given $ <var:U> $ and $ <var:B> \in \mathbb{N} $ such that $ <var:B> $ , and $ <var:U> $ greater than or equivalent to <nat:2> . \end{theorem} \begin{proof} Notice that $ <nat:44> = <var:U> \times <var:B> $ implies $ <var:U> = <nat:4> $ , and $ <var:B> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:U> <var:B> : nat , ( <var:U> * <var:B> = <nat:44> ) /\ ( <var:B> >= <nat:2> ) /\ ( <var:U> >= <nat:2> ) . Proof . exists <nat:4> . exists <nat:11> . lia . Qed . 

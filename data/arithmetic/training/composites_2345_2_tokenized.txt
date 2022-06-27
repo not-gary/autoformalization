@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:110> is the multiplication of natural numbers $ <var:T> $ , and $ <var:C> \in \mathbb{Z}^+ $ so that $ <var:T> $ and $ <var:C> \geq <nat:2> $ . \end{theorem} \begin{proof} Allow $ <var:C> = <nat:10> $ , $ <var:T> = <nat:11> $ . Observe $ <nat:110> = <nat:11> * <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:T> <var:C> : nat , ( <nat:110> = <var:T> * <var:C> ) /\ ( <var:T> >= <nat:2> ) /\ ( <var:C> >= <nat:2> ) . Proof . exists <nat:11> . exists <nat:10> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:A> \in \mathbb{N} $ where $ <var:A> > <nat:1> $ and such that the integer <nat:512> is the repeated multiplication of whole number $ <var:A> \in \mathbb{N} $ raised to the exponential <nat:9> . \end{theorem} \begin{proof} We demonstrate $ <var:A> ^ <nat:9> = <nat:512> $ . We verify the claim holds for $ <var:A> ^ <nat:9> = <nat:512> $ suggests $ <var:A> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:A> : nat , ( <var:A> > <nat:1> ) /\ ( <nat:512> = <var:A> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

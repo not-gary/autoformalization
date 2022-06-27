@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:308> <var:B> + <nat:269> $ will be odd . \end{theorem} \begin{proof} We demonstrate this claim must be true . The summation between even whole numbers successively with an odd integer is guaranteed to be clearly an odd natural . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:B> : nat , Nat . odd ( <nat:308> * <var:B> + <nat:269> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

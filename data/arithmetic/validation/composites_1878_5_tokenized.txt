@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:2016> is the product between positive integers $ <var:f> $ , $ <var:M> $ , $ <var:S> $ , $ <var:y> $ , and $ <var:F> \in \mathbb{N} $ . \end{theorem} \begin{proof} Notice $ <nat:2016> = <nat:7> \times <nat:3> \times <nat:6> \times <nat:8> \times <nat:2> $ . This produces the statement holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:f> <var:M> <var:S> <var:y> <var:F> : nat , ( <nat:2016> = <var:f> * <var:M> * <var:S> * <var:y> * <var:F> ) . Proof . exists <nat:2> . exists <nat:6> . exists <nat:3> . exists <nat:7> . exists <nat:8> . repeat split . all : lia . Qed . 

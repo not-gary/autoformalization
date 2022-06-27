@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some number $ <var:F> $ such that $ <nat:8> $ is $ <var:F> ^ <nat:3> $ . \end{theorem} \begin{proof} Take $ <var:F> = <nat:2> $ . This produces the proposition holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <nat:8> = <var:F> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

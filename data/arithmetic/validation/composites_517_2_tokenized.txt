@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:M> $ , $ <var:V> \in \mathbb{N} $ such that $ <nat:12> $ equals $ <var:V> * <var:M> $ . \end{theorem} \begin{proof} Let $ <var:M> = <nat:2> $ and $ <var:V> = <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:M> <var:V> : nat , ( <nat:12> = <var:V> * <var:M> ) . Proof . exists <nat:2> . exists <nat:6> . lia . Qed . 

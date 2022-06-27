@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:420> is the product between whole numbers $ <var:v> $ , $ <var:I> $ , $ <var:c> $ and $ <var:w> $ . \end{theorem} \begin{proof} Notice $ <nat:420> = <nat:10> \times <nat:7> \times <nat:2> \times <nat:3> $ . Hence , <nat:420> is the multiplication between $ <var:w> $ , $ <var:v> $ , $ <var:c> $ , and $ <var:I> \in \mathbb{N} $ is validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:v> <var:I> <var:c> <var:w> : nat , ( <nat:420> = <var:v> * <var:I> * <var:c> * <var:w> ) . Proof . exists <nat:2> . exists <nat:3> . exists <nat:7> . exists <nat:10> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:a> $ and $ <var:z> \in \mathbb{N} $ where $ <var:z> $ , $ <var:a> > <nat:1> $ and such that $ <nat:66> $ is equivalent to $ <var:z> \cdot <var:a> $ . \end{theorem} \begin{proof} Notice that $ <nat:66> = <nat:11> \times <nat:6> = <var:z> \times <var:a> $ . This implies the thesis holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:a> <var:z> : nat , ( <var:z> > <nat:1> ) /\ ( <var:a> > <nat:1> ) /\ ( <nat:66> = <var:z> * <var:a> ) . Proof . exists <nat:6> . exists <nat:11> . lia . Qed . 

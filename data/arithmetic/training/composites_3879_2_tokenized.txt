@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:E> $ and $ <var:c> \in \mathbb{N} $ . the integer <nat:50> is the product of numbers $ <var:E> $ and $ <var:c> \in \mathbb{N} $ . \end{theorem} \begin{proof} We present $ <var:E> \cdot <var:c> = <nat:50> $ . Notice that $ <nat:50> = <var:E> \cdot <var:c> $ shows $ <var:c> = <nat:5> $ , $ <var:E> = <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:E> <var:c> : nat , ( <nat:50> = <var:E> * <var:c> ) . Proof . exists <nat:10> . exists <nat:5> . lia . Qed . 

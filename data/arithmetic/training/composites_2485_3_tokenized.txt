@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:D> \cdot <var:w> \cdot <var:W> $ is equal to $ <nat:120> $ satisfying the condition that $ <var:W> $ , $ <var:D> $ and $ <var:w> $ more than <nat:1> . \end{theorem} \begin{proof} Let $ <var:w> = <nat:5> $ , $ <var:W> = <nat:12> $ and $ <var:D> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:W> <var:w> <var:D> : nat , ( <var:D> * <var:w> * <var:W> = <nat:120> ) /\ ( <var:W> > <nat:1> ) /\ ( <var:D> > <nat:1> ) /\ ( <var:w> > <nat:1> ) . Proof . exists <nat:12> . exists <nat:5> . exists <nat:2> . repeat split . all : lia . Qed . 

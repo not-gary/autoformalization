@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:1024> is the raising of between $ <var:U> \in \mathbb{N} $ taken to the power <nat:10> where $ <var:U> > <nat:1> $ . \end{theorem} \begin{proof} Let $ <var:U> = <nat:2> $ . Notice that $ <var:U> ^ <nat:10> = <nat:1024> = <nat:2> ^ <nat:10> $ . This suggests the proposition is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:U> : nat , ( <nat:1024> = <var:U> ^ <nat:10> ) /\ ( <var:U> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

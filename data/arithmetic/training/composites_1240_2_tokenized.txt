@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:20> is the product of $ <var:k> $ , and $ <var:y> $ . \end{theorem} \begin{proof} Take $ <var:k> = <nat:5> $ , $ <var:y> = <nat:4> $ . We show our claim holds in view of $ <var:k> \times <var:y> = <nat:20> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:k> <var:y> : nat , ( <nat:20> = <var:k> * <var:y> ) . Proof . exists <nat:5> . exists <nat:4> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:33> $ is equivalent to $ <var:u> \times <var:M> $ with $ <var:M> $ , and $ <var:u> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We confirm $ <nat:33> = <var:u> \cdot <var:M> $ . Note that $ <nat:33> = <nat:11> \times <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:M> <var:u> : nat , ( <nat:33> = <var:u> * <var:M> ) . Proof . exists <nat:3> . exists <nat:11> . lia . Qed . 

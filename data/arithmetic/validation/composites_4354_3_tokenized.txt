@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:g> $ , $ <var:O> $ , $ <var:c> $ such that the natural number <nat:112> is the multiplication of positive integers $ <var:g> $ , $ <var:O> $ , $ <var:c> $ . \end{theorem} \begin{proof} Observe that $ <nat:7> \times <nat:8> \times <nat:2> = <nat:112> $ . As a result , $ <var:c> \cdot <var:O> \cdot <var:g> = <nat:112> $ is verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:g> <var:O> <var:c> : nat , ( <nat:112> = <var:g> * <var:O> * <var:c> ) . Proof . exists <nat:7> . exists <nat:2> . exists <nat:8> . repeat split . all : lia . Qed . 

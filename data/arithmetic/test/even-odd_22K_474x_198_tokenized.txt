@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking any natural numbers $ <var:K> $ , and $ <var:x> $ $ <nat:22> \times <var:K> + <var:x> \times <nat:474> + <nat:198> $ will be even . \end{theorem} \begin{proof} Take note that $ <nat:198> $ is an even element of $ \mathbb{Z}^+ $ . We demonstrate the claim is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:K> <var:x> : nat , Nat . even ( <nat:22> * <var:K> + <nat:474> * <var:x> + <nat:198> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:198> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

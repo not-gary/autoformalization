@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some $ <var:N> $ , $ <var:D> $ and $ <var:Y> $ where the number <nat:960> is the multiplication between numbers $ <var:N> $ , $ <var:D> $ , and $ <var:Y> $ . \end{theorem} \begin{proof} Allow $ <var:N> = <nat:10> $ , $ <var:D> = <nat:12> $ and $ <var:Y> = <nat:8> $ . We prove our statement holds considering $ <var:N> * <var:Y> * <var:D> = <nat:960> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:N> <var:D> <var:Y> : nat , ( <nat:960> = <var:N> * <var:D> * <var:Y> ) . Proof . exists <nat:10> . exists <nat:12> . exists <nat:8> . repeat split . all : lia . Qed . 

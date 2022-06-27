@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking any positive numbers $ <var:B> $ the expression $ <nat:287> + <var:B> <nat:322> $ must be odd . \end{theorem} \begin{proof} Recall that the leading term $ <nat:322> $ is known to be even \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:B> : nat , Nat . odd ( <nat:322> * <var:B> + <nat:287> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:322> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

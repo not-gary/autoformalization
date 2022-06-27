@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:t> $ as integers . <nat:512> is the exponential of number $ <var:t> $ taken to the degree <nat:9> . \end{theorem} \begin{proof} We prove <nat:512> is the exponential between $ <var:t> \in \mathbb{Z}^+ $ exponentiated to the exponent <nat:9> . Note that $ <var:t> ^ <nat:9> = <nat:512> $ hints $ <var:t> = <nat:2> $ . This shows the statement is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <nat:512> = <var:t> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

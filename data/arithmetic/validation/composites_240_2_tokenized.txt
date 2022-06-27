@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:48> is the multiplication between natural numbers $ <var:l> $ , and $ <var:g> $ . \end{theorem} \begin{proof} Assume $ <var:l> = <nat:6> $ , $ <var:g> = <nat:8> $ . We justify $ <var:l> * <var:g> = <nat:48> $ . This shows our proposition is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:g> : nat , ( <nat:48> = <var:l> * <var:g> ) . Proof . exists <nat:6> . exists <nat:8> . lia . Qed . 

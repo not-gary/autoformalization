@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With any positive integers $ <var:q> $ the formula $ <nat:220> <var:q> + <nat:410> $ is guaranteed to be even . \end{theorem} \begin{proof} Take note that the adding between even naturals successively must be even . Take note that the natural number $ <nat:220> $ is trivially an even number \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:q> : nat , Nat . even ( <nat:220> * <var:q> + <nat:410> ) = true . Proof . intros . repeat rewrite Nat . even_add . assert ( <genH> : Nat . even <nat:220> = true ) . { auto . } repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

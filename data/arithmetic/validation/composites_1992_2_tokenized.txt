@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some whole numbers $ <var:A> $ and $ <var:v> $ so that $ <var:A> $ , and $ <var:v> $ larger than <nat:1> and satisfying the condition that $ <nat:56> $ is equivalent to $ <var:A> \times <var:v> $ . \end{theorem} \begin{proof} Let $ <var:A> = <nat:8> $ , and $ <var:v> = <nat:7> $ . We demonstrate our proposition is true by reason of $ <var:A> \times <var:v> = <nat:56> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:A> <var:v> : nat , ( <var:A> > <nat:1> ) /\ ( <var:v> > <nat:1> ) /\ ( <nat:56> = <var:A> * <var:v> ) . Proof . exists <nat:8> . exists <nat:7> . lia . Qed . 

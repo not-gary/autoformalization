@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:32> is the exponential of whole number $ <var:C> $ exponentiated to the degree <nat:5> . \end{theorem} \begin{proof} Assume $ <var:C> = <nat:2> $ . Notice that $ <nat:32> = <var:C> ^ <nat:5> $ . This implies our theory is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:C> : nat , ( <nat:32> = <var:C> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

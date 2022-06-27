@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:630> = <var:T> \cdot <var:v> \cdot <var:X> $ so that $ <var:v> $ , $ <var:X> $ , and $ <var:T> \geq <nat:2> $ . \end{theorem} \begin{proof} Observe that $ <nat:9> \times <nat:7> \times <nat:10> = <nat:630> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:X> <var:T> <var:v> : nat , ( <nat:630> = <var:T> * <var:v> * <var:X> ) /\ ( <var:v> >= <nat:2> ) /\ ( <var:X> >= <nat:2> ) /\ ( <var:T> >= <nat:2> ) . Proof . exists <nat:10> . exists <nat:7> . exists <nat:9> . repeat split . all : lia . Qed . 

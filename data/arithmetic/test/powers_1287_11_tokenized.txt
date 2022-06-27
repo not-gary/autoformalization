@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:2048> is the exponent of integer $ <var:G> $ exponentiated to the exponential <nat:11> . \end{theorem} \begin{proof} We show $ <nat:2048> = <var:G> ^ <nat:11> $ . We verify our principle holds considering $ <nat:2048> = <var:G> ^ <nat:11> $ indicates $ <var:G> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:G> : nat , ( <nat:2048> = <var:G> ^ <nat:11> ) . Proof . exists <nat:2> . auto . Qed . 

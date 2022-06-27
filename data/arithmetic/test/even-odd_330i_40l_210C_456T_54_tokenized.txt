@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:330> <var:i> + <var:l> <nat:40> + <var:C> <nat:210> + <nat:456> <var:T> + <nat:54> $ must be even . \end{theorem} \begin{proof} Lemma trivially is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:i> <var:l> <var:C> <var:T> : nat , Nat . even ( <nat:330> * <var:i> + <nat:40> * <var:l> + <nat:210> * <var:C> + <nat:456> * <var:T> + <nat:54> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

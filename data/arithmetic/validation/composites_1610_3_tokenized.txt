@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:90> is the multiplication between integers $ <var:J> $ , $ <var:D> $ , and $ <var:B> $ . \end{theorem} \begin{proof} Note that $ <nat:90> = <var:J> \times <var:D> \times <var:B> = <nat:6> \times <nat:3> \times <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:J> <var:D> <var:B> : nat , ( <nat:90> = <var:J> * <var:D> * <var:B> ) . Proof . exists <nat:6> . exists <nat:3> . exists <nat:5> . repeat split . all : lia . Qed . 

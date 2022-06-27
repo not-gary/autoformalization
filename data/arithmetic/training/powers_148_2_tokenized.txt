@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:4> is the repeated multiplication of whole number $ <var:K> $ raised to the exponential <nat:2> where $ <var:K> > <nat:1> $ . \end{theorem} \begin{proof} We prove the theorem holds seeing that $ <nat:4> = <var:K> ^ <nat:2> $ produces $ <var:K> = <nat:2> $ plus for $ <nat:2> > <nat:1> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <nat:4> = <var:K> ^ <nat:2> ) /\ ( <var:K> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

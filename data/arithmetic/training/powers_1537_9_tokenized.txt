@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:512> is the repeated product between natural number $ <var:F> $ repeatedly multiplied to the degree <nat:9> satisfying the condition that $ <var:F> \geq <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:F> = <nat:2> $ . Note that $ <nat:512> = <var:F> ^ <nat:9> $ . This yields the proposition is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <nat:512> = <var:F> ^ <nat:9> ) /\ ( <var:F> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

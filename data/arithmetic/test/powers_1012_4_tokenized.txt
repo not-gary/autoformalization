@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:Y> $ as numbers so that the number <nat:16> is the repeated multiplication of number $ <var:Y> $ repeatedly multiplied to the degree <nat:4> . \end{theorem} \begin{proof} We prove our result is valid in consideration of $ <nat:16> = <nat:2> ^ <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Y> : nat , ( <nat:16> = <var:Y> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

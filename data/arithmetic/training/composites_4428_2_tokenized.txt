@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:30> is the multiplication of natural numbers $ <var:E> $ and $ <var:l> \in \mathbb{N} $ . \end{theorem} \begin{proof} Take $ <var:l> = <nat:6> $ , and $ <var:E> = <nat:5> $ . We show our theory holds for $ <nat:5> \times <nat:6> = <nat:30> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:E> <var:l> : nat , ( <nat:30> = <var:E> * <var:l> ) . Proof . exists <nat:5> . exists <nat:6> . lia . Qed . 

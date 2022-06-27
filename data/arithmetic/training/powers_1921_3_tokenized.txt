@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:8> $ is the same as $ <var:x> ^ <nat:3> $ given $ <var:x> \in \mathbb{Z}^+ $ so that $ <var:x> $ more than <nat:1> . \end{theorem} \begin{proof} Take $ <var:x> = <nat:2> $ . Note $ <nat:8> = <nat:2> ^ <nat:3> $ . So , $ <var:x> ^ <nat:3> = <nat:8> $ is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:x> : nat , ( <nat:8> = <var:x> ^ <nat:3> ) /\ ( <var:x> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

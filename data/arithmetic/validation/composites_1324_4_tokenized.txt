@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:w> $ , $ <var:a> $ , $ <var:l> $ , $ <var:R> $ as natural numbers . $ <var:R> * <var:a> * <var:w> * <var:l> $ is equivalent to $ <nat:3080> $ . \end{theorem} \begin{proof} We present our theorem holds because $ <nat:3080> = <nat:7> * <nat:4> * <nat:10> * <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:w> <var:a> <var:l> <var:R> : nat , ( <var:R> * <var:a> * <var:w> * <var:l> = <nat:3080> ) . Proof . exists <nat:11> . exists <nat:7> . exists <nat:4> . exists <nat:10> . repeat split . all : lia . Qed . 

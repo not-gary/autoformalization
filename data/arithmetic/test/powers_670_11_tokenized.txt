@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:f> $ so that $ <var:f> $ larger than <nat:1> plus where $ <nat:2048> $ is the same as $ <var:f> ^ <nat:11> $ . \end{theorem} \begin{proof} Assume $ <var:f> = <nat:2> $ . We demonstrate $ <var:f> ^ <nat:11> = <nat:2048> $ . We prove the proposition holds in consideration of $ <nat:2048> = <var:f> ^ <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:f> : nat , ( <var:f> > <nat:1> ) /\ ( <nat:2048> = <var:f> ^ <nat:11> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

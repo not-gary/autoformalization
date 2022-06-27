@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:p> \in \mathbb{Z}^+ $ so that <nat:128> is the repeated product between number $ <var:p> \in \mathbb{Z}^+ $ taken to the exponent <nat:7> . \end{theorem} \begin{proof} Take $ <var:p> = <nat:2> $ . We justify $ <nat:128> = <var:p> ^ <nat:7> $ . Observe $ <nat:128> = <var:p> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:p> : nat , ( <nat:128> = <var:p> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

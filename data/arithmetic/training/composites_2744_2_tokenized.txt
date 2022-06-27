@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:44> is the product of positive integers $ <var:d> $ , $ <var:k> $ . \end{theorem} \begin{proof} We verify $ <nat:44> = <var:k> \cdot <var:d> $ . Notice that $ <var:d> \cdot <var:k> = <nat:44> = <nat:4> \cdot <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:d> <var:k> : nat , ( <nat:44> = <var:d> * <var:k> ) . Proof . exists <nat:4> . exists <nat:11> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:l> \times <nat:60> + <nat:136> $ is even given $ <var:l> $ . \end{theorem} \begin{proof} Recall $ <nat:136> $ is clearly even . Notice that the product of even positive integers will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:l> : nat , Nat . even ( <nat:60> * <var:l> + <nat:136> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:136> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:166> + <nat:314> <var:R> $ is guaranteed to be even . \end{theorem} \begin{proof} The product between even numbers must be even . In consequence , our claim holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:R> : nat , Nat . even ( <nat:314> * <var:R> + <nat:166> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

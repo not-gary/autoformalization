@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:8> is the repeated product between number $ <var:d> \in \mathbb{Z}^+ $ repeatedly multiplied to the exponent <nat:3> where $ <var:d> > <nat:1> $ . \end{theorem} \begin{proof} Assume $ <var:d> = <nat:2> $ . We verify our belief is valid as $ <var:d> ^ <nat:3> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <nat:8> = <var:d> ^ <nat:3> ) /\ ( <var:d> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

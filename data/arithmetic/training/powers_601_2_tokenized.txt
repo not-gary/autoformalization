@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:n> \in \mathbb{Z}^+ $ where $ <var:n> > <nat:1> $ as well as where $ <var:n> ^ <nat:2> $ equals $ <nat:4> $ . \end{theorem} \begin{proof} Let $ <var:n> = <nat:2> $ . This gives the theory is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <var:n> > <nat:1> ) /\ ( <var:n> ^ <nat:2> = <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

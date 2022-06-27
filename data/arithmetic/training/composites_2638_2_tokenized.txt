@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:O> $ and $ <var:I> $ are integers . $ <nat:36> $ is the same as $ <var:I> * <var:O> $ . \end{theorem} \begin{proof} We present our theorem is valid on account of $ <nat:36> = <var:I> \cdot <var:O> $ shows $ <var:I> = <nat:12> $ and $ <var:O> = <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:O> <var:I> : nat , ( <nat:36> = <var:I> * <var:O> ) . Proof . exists <nat:3> . exists <nat:12> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} Assume $ <var:v> $ are numbers . We define that $ <var:o> \in \mathbb{N} $ is named a <def:enneract> whole number when $ <var:v> ^ <nat:9> = <var:o> $ . \end{definition} \begin{theorem} The number <nat:512> is a <def:enneract> natural number . \end{theorem} \begin{proof} Take $ <var:v> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:enneract> ( <var:o> : nat ) := exists <var:v> : nat , ( <var:v> ^ <nat:9> = <var:o> ) . Theorem <genP:1> : <def:enneract> <nat:512> . Proof . unfold <def:enneract> . exists <nat:2> . auto . Qed . 

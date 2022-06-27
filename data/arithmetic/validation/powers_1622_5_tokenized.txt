@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Supposing we get $ <var:P> ^ <nat:5> = <var:g> $ for some $ <var:g> $ using some $ <var:P> \in \mathbb{N} $ , take that $ <var:g> $ is a <def:penteract> number . Accordingly the integer <nat:32> is a <def:penteract> integer . \end{theorem} \begin{proof} Assume $ <var:P> = <nat:2> $ . Notice that $ <var:P> ^ <nat:5> = <nat:32> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:penteract> ( <var:g> : nat ) := exists <var:P> : nat , ( <var:P> ^ <nat:5> = <var:g> ) . Theorem <genP:1> : <def:penteract> <nat:32> . Proof . unfold <def:penteract> . exists <nat:2> . auto . Qed . 

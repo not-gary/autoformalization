@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:32> is the multiplication of whole numbers $ <var:V> $ , $ <var:t> $ . \end{theorem} \begin{proof} Allow $ <var:t> = <nat:4> $ , $ <var:V> = <nat:8> $ . We prove our formula is true seeing that $ <var:t> \times <var:V> = <nat:32> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:V> <var:t> : nat , ( <nat:32> = <var:V> * <var:t> ) . Proof . exists <nat:8> . exists <nat:4> . lia . Qed . 

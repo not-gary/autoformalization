@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:R> $ , $ <var:Y> \in \mathbb{Z}^+ $ where <nat:26> is the product between natural numbers $ <var:R> $ , and $ <var:Y> \in \mathbb{N} $ . \end{theorem} \begin{proof} Allow $ <var:Y> = <nat:2> $ and $ <var:R> = <nat:13> $ . We demonstrate $ <nat:26> = <var:R> \cdot <var:Y> $ . Note $ <var:R> \times <var:Y> = <nat:13> \times <nat:2> = <nat:26> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:R> <var:Y> : nat , ( <nat:26> = <var:R> * <var:Y> ) . Proof . exists <nat:13> . exists <nat:2> . lia . Qed . 

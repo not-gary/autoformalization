@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:S> * <var:u> = <nat:70> $ such that $ <var:u> $ and $ <var:S> \geq <nat:2> $ . \end{theorem} \begin{proof} We verify the result holds as $ <nat:10> $ , $ <nat:7> \geq <nat:2> $ and by reason of $ <nat:70> = <nat:10> \times <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:S> <var:u> : nat , ( <var:S> * <var:u> = <nat:70> ) /\ ( <var:u> >= <nat:2> ) /\ ( <var:S> >= <nat:2> ) . Proof . assert ( <genH> : <nat:10> >= <nat:2> ) . { lia . } assert ( <genH> : <nat:7> >= <nat:2> ) . { lia . } exists <nat:7> . exists <nat:10> . repeat split . all : try apply <genH> . all : try apply <genH> . Qed . 

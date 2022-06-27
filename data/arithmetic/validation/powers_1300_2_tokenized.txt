@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:k> \in \mathbb{Z}^+ $ satisfying the condition that the whole number <nat:4> is the raising of of integer $ <var:k> \in \mathbb{Z}^+ $ taken to the power <nat:2> . \end{theorem} \begin{proof} Observe that $ <var:k> ^ <nat:2> = <nat:4> $ gives $ <var:k> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:k> : nat , ( <nat:4> = <var:k> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

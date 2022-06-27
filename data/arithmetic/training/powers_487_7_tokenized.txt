@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:128> is the exponent of $ <var:c> \in \mathbb{Z}^+ $ taken to the power <nat:7> . \end{theorem} \begin{proof} Let $ <var:c> = <nat:2> $ . We demonstrate the principle is valid considering $ <nat:2> ^ <nat:7> = <nat:128> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:c> : nat , ( <nat:128> = <var:c> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

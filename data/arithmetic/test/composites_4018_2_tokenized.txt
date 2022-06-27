@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:24> is the product between $ <var:Y> $ , and $ <var:T> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Note $ <var:Y> \cdot <var:T> = <nat:24> $ hints $ <var:Y> = <nat:4> $ , $ <var:T> = <nat:6> $ . This hints the claim is true . As a result , <nat:24> is the product between $ <var:T> $ , and $ <var:Y> \in \mathbb{N} $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Y> <var:T> : nat , ( <nat:24> = <var:Y> * <var:T> ) . Proof . exists <nat:4> . exists <nat:6> . lia . Qed . 

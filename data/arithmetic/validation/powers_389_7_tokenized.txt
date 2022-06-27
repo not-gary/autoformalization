@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:M> $ are positive integers . $ <var:M> ^ <nat:7> $ equals $ <nat:128> $ . \end{theorem} \begin{proof} Observe that $ <var:M> ^ <nat:7> = <nat:128> $ shows $ <var:M> = <nat:2> $ . This implies our thesis is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:M> : nat , ( <var:M> ^ <nat:7> = <nat:128> ) . Proof . exists <nat:2> . auto . Qed . 

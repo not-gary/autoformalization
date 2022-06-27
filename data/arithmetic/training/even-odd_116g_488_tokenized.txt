@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:488> + <var:g> \cdot <nat:116> $ must be even assuming positive numbers $ <var:g> $ . \end{theorem} \begin{proof} The adding of an even natural and an even natural is guaranteed to be an even number in $ \mathbb{N} $ . It can be checked that our proposition is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:g> : nat , Nat . even ( <nat:116> * <var:g> + <nat:488> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

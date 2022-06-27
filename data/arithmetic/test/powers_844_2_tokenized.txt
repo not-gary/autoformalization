@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some positive integer $ <var:g> $ such that the integer <nat:4> is the exponent of whole number $ <var:g> $ raised to the exponential <nat:2> . \end{theorem} \begin{proof} Assume $ <var:g> = <nat:2> $ . We verify the theorem is true because $ <nat:2> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:g> : nat , ( <nat:4> = <var:g> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

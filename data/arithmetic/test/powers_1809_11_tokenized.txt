@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:2048> = <var:v> ^ <nat:11> $ so that $ <var:v> \geq <nat:2> $ . \end{theorem} \begin{proof} We present <nat:2048> is the exponential between $ <var:v> \in \mathbb{N} $ raised to the exponent <nat:11> . Observe $ <var:v> ^ <nat:11> = <nat:2048> = <nat:2> ^ <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:v> : nat , ( <nat:2048> = <var:v> ^ <nat:11> ) /\ ( <var:v> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

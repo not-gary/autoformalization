@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:14> is the product between numbers $ <var:X> $ , and $ <var:W> $ . \end{theorem} \begin{proof} Allow $ <var:X> = <nat:2> $ and $ <var:W> = <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:X> <var:W> : nat , ( <nat:14> = <var:X> * <var:W> ) . Proof . exists <nat:2> . exists <nat:7> . lia . Qed . 

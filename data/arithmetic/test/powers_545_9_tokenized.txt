@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:s> ^ <nat:9> $ equals $ <nat:512> $ assuming $ <var:s> $ where $ <var:s> > <nat:1> $ . \end{theorem} \begin{proof} Assume $ <var:s> = <nat:2> $ . Note that $ <var:s> = <nat:2> > <nat:1> $ . This gives our formula is true . Thus , $ <var:s> > <nat:1> $ plus $ <var:s> ^ <nat:9> = <nat:512> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:s> : nat , ( <var:s> ^ <nat:9> = <nat:512> ) /\ ( <var:s> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

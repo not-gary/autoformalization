@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:77> is the multiplication between integers $ <var:e> $ and $ <var:v> $ so that $ <var:v> $ , $ <var:e> \geq <nat:2> $ . \end{theorem} \begin{proof} Take $ <var:e> = <nat:11> $ and $ <var:v> = <nat:7> $ . We show the proposition holds for $ <var:v> * <var:e> = <nat:77> = <nat:7> * <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:e> <var:v> : nat , ( <nat:77> = <var:e> * <var:v> ) /\ ( <var:v> >= <nat:2> ) /\ ( <var:e> >= <nat:2> ) . Proof . exists <nat:11> . exists <nat:7> . lia . Qed . 

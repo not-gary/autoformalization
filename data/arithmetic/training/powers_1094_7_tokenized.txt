@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some $ <var:h> $ so that $ <nat:128> $ is $ <var:h> ^ <nat:7> $ . \end{theorem} \begin{proof} Assume $ <var:h> = <nat:2> $ . Notice $ <nat:128> = <var:h> ^ <nat:7> $ . This gives the principle is true . Because of this , $ <nat:128> = <var:h> ^ <nat:7> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:h> : nat , ( <nat:128> = <var:h> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

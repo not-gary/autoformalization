@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:H> ^ <nat:7> $ is $ <nat:128> $ given $ <var:H> \in \mathbb{Z}^+ $ such that $ <var:H> \geq <nat:2> $ . \end{theorem} \begin{proof} We justify $ <nat:128> = <var:H> ^ <nat:7> $ plus $ <var:H> \geq <nat:2> $ . Notice that $ <var:H> ^ <nat:7> = <nat:128> $ hints $ <var:H> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:H> : nat , ( <var:H> ^ <nat:7> = <nat:128> ) /\ ( <var:H> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:128> is the exponent between $ <var:j> $ exponentiated to the exponential <nat:7> where $ <var:j> $ more than or equivalent to <nat:2> . \end{theorem} \begin{proof} We demonstrate <nat:128> is the exponential between $ <var:j> \in \mathbb{Z}^+ $ raised to the degree <nat:7> plus $ <var:j> $ is larger than or equal to <nat:2> . Observe $ <var:j> ^ <nat:7> = <nat:128> $ produces $ <var:j> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <nat:128> = <var:j> ^ <nat:7> ) /\ ( <var:j> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

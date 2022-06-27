@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:192> is the multiplication between $ <var:W> $ , $ <var:R> $ , and $ <var:Z> $ such that $ <var:Z> $ , $ <var:W> $ and $ <var:R> $ greater than <nat:1> . \end{theorem} \begin{proof} Observe that $ <nat:192> = <nat:4> * <nat:8> * <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:W> <var:R> <var:Z> : nat , ( <nat:192> = <var:W> * <var:R> * <var:Z> ) /\ ( <var:Z> > <nat:1> ) /\ ( <var:W> > <nat:1> ) /\ ( <var:R> > <nat:1> ) . Proof . exists <nat:8> . exists <nat:4> . exists <nat:6> . repeat split . all : lia . Qed . 

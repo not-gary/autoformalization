@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:W> \in \mathbb{Z}^+ $ where $ <var:W> $ more than <nat:1> plus so that the number <nat:16> is the raising of between $ <var:W> \in \mathbb{Z}^+ $ taken to the power <nat:4> . \end{theorem} \begin{proof} We present $ <nat:16> = <var:W> ^ <nat:4> $ as well as $ <var:W> > <nat:1> $ . We verify our claim is true as $ <var:W> ^ <nat:4> = <nat:16> $ indicates $ <var:W> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:W> : nat , ( <var:W> > <nat:1> ) /\ ( <nat:16> = <var:W> ^ <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

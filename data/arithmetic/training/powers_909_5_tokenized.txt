@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:B> \in \mathbb{Z}^+ $ where the natural number <nat:32> is the raising of between whole number $ <var:B> \in \mathbb{Z}^+ $ repeatedly multiplied to the degree <nat:5> . \end{theorem} \begin{proof} We justify <nat:32> is the repeated multiplication between $ <var:B> \in \mathbb{Z}^+ $ taken to the degree <nat:5> . We verify our statement is true in view of $ <nat:2> ^ <nat:5> = <nat:32> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:B> : nat , ( <nat:32> = <var:B> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

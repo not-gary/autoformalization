@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:128> is the repeated product of integer $ <var:F> $ raised to the exponent <nat:7> . \end{theorem} \begin{proof} Notice that $ <nat:128> = <var:F> ^ <nat:7> $ yields $ <var:F> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <nat:128> = <var:F> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

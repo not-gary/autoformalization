@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:p> $ are integers so that the natural number <nat:2048> is the repeated product between $ <var:p> $ repeatedly multiplied to the exponent <nat:11> . \end{theorem} \begin{proof} Let $ <var:p> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:p> : nat , ( <nat:2048> = <var:p> ^ <nat:11> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:S> ^ <nat:4> $ is equal to $ <nat:16> $ given $ <var:S> \in \mathbb{N} $ satisfying the condition that $ <var:S> \geq <nat:2> $ . \end{theorem} \begin{proof} Take $ <var:S> = <nat:2> $ . This yields our principle is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <var:S> ^ <nat:4> = <nat:16> ) /\ ( <var:S> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} We claim that assuming that there is whole number $ <var:H> $ then we claim that $ <var:Z> \in \mathbb{N} $ is defined to be a <def:square> whole number given $ <var:Z> = <var:H> ^ <nat:2> $ . Then $ <var:Z> = <nat:4> $ is a <def:square> integer . \end{theorem} \begin{proof} Notice $ <nat:4> = <var:H> ^ <nat:2> $ gives $ <var:H> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:Z> : nat ) := exists <var:H> : nat , ( <var:Z> = <var:H> ^ <nat:2> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

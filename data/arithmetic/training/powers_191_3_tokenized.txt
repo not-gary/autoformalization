@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:G> $ such that $ <var:G> $ larger than <nat:1> plus such that <nat:8> is the repeated multiplication between integer $ <var:G> $ raised to the degree <nat:3> . \end{theorem} \begin{proof} Assume $ <var:G> = <nat:2> $ . Observe that $ <var:G> = <nat:2> $ is more than <nat:1> . Moreover note additionally $ <nat:8> = <var:G> ^ <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:G> : nat , ( <var:G> > <nat:1> ) /\ ( <nat:8> = <var:G> ^ <nat:3> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . apply <genH> . auto . Qed . 

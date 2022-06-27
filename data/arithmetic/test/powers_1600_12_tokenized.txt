@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:i> $ as numbers where $ <var:i> > <nat:1> $ . the positive integer <nat:4096> is the exponent of number $ <var:i> $ exponentiated to the exponential <nat:12> . \end{theorem} \begin{proof} Allow $ <var:i> = <nat:2> $ . This shows the result holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:i> : nat , ( <var:i> > <nat:1> ) /\ ( <nat:4096> = <var:i> ^ <nat:12> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

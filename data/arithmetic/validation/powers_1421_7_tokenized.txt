@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:128> is the repeated product of natural number $ <var:k> $ taken to the degree <nat:7> . \end{theorem} \begin{proof} Assume $ <var:k> = <nat:2> $ . Thus , <nat:128> is the exponential of some integer $ <var:k> $ repeatedly multiplied to the exponential <nat:7> is true has been proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:k> : nat , ( <nat:128> = <var:k> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming some unknowns $ <var:l> $ , and $ <var:n> $ the sum $ <nat:119> + <var:n> <nat:12> + <var:l> <nat:54> $ will be odd . \end{theorem} \begin{proof} Notice taking the product of even integers will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:l> <var:n> : nat , Nat . odd ( <nat:12> * <var:n> + <nat:54> * <var:l> + <nat:119> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

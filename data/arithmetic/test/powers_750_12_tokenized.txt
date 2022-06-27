@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:4096> is the repeated product between positive integer $ <var:a> \in \mathbb{Z}^+ $ exponentiated to the degree <nat:12> . \end{theorem} \begin{proof} We prove $ <nat:4096> = <var:a> ^ <nat:12> $ . Notice $ <var:a> ^ <nat:12> = <nat:4096> = <nat:2> ^ <nat:12> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:a> : nat , ( <nat:4096> = <var:a> ^ <nat:12> ) . Proof . exists <nat:2> . auto . Qed . 

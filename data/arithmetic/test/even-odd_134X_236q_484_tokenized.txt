@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:134> <var:X> + <nat:484> + <var:q> <nat:236> $ must be even . \end{theorem} \begin{proof} The multiplication between even integers will be even . In consequence , the proposition must be true . Notice that $ <nat:484> $ is trivially even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:X> <var:q> : nat , Nat . even ( <nat:134> * <var:X> + <nat:236> * <var:q> + <nat:484> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . assert ( <genH> : Nat . even <nat:484> = true ) . { auto . } rewrite <genH> . auto . Qed . 

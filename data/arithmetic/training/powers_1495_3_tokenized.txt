@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some positive integer $ <var:B> $ satisfying the condition that $ <var:B> $ larger than or equal to <nat:2> and where the number <nat:8> is the raising of of positive integer $ <var:B> $ raised to the exponential <nat:3> . \end{theorem} \begin{proof} Allow $ <var:B> = <nat:2> $ . As a result , $ <var:B> $ is greater than or equal to <nat:2> as well as $ <var:B> ^ <nat:3> = <nat:8> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:B> : nat , ( <var:B> >= <nat:2> ) /\ ( <nat:8> = <var:B> ^ <nat:3> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

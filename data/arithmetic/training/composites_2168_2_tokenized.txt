@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:A> \times <var:G> $ equals $ <nat:6> $ assuming $ <var:G> $ , and $ <var:A> $ . \end{theorem} \begin{proof} Allow $ <var:G> = <nat:2> $ and $ <var:A> = <nat:3> $ . We demonstrate $ <var:G> \cdot <var:A> = <nat:6> $ . Note that $ <nat:3> \cdot <nat:2> = <nat:6> $ . This implies our statement is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:G> <var:A> : nat , ( <var:A> * <var:G> = <nat:6> ) . Proof . exists <nat:2> . exists <nat:3> . lia . Qed . 

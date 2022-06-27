@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:U> $ as integers such that $ <var:U> > <nat:1> $ . <nat:32> is the exponential of $ <var:U> $ exponentiated to the degree <nat:5> . \end{theorem} \begin{proof} Let $ <var:U> = <nat:2> $ . We verify $ <nat:32> = <var:U> ^ <nat:5> $ . Observe $ <nat:32> = <nat:2> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:U> : nat , ( <var:U> > <nat:1> ) /\ ( <nat:32> = <var:U> ^ <nat:5> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

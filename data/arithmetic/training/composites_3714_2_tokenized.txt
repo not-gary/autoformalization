@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:C> $ and $ <var:z> $ as positive integers where $ <var:z> \cdot <var:C> $ is the same as $ <nat:24> $ . \end{theorem} \begin{proof} Allow $ <var:C> = <nat:6> $ and $ <var:z> = <nat:4> $ . We prove <nat:24> is the multiplication between some positive integers $ <var:C> $ , $ <var:z> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:z> : nat , ( <var:z> * <var:C> = <nat:24> ) . Proof . exists <nat:6> . exists <nat:4> . lia . Qed . 

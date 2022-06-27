@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:o> $ , and $ <var:U> \in \mathbb{Z}^+ $ such that $ <nat:88> $ is $ <var:U> \cdot <var:o> $ . \end{theorem} \begin{proof} Take $ <var:o> = <nat:11> $ , $ <var:U> = <nat:8> $ . We show <nat:88> is the multiplication between some numbers $ <var:o> $ and $ <var:U> $ . We confirm the statement is valid because $ <nat:88> = <nat:8> \cdot <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:o> <var:U> : nat , ( <nat:88> = <var:U> * <var:o> ) . Proof . exists <nat:11> . exists <nat:8> . lia . Qed . 

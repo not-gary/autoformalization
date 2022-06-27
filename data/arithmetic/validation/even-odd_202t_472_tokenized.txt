@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For all terms $ <var:t> $ $ <nat:202> * <var:t> + <nat:472> $ must be even . \end{theorem} \begin{proof} Recall that the multiplication of an even whole number with some whole number must be an even positive integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:t> : nat , Nat . even ( <nat:202> * <var:t> + <nat:472> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

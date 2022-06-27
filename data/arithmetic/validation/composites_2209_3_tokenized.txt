@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:288> is the product between positive integers $ <var:o> $ , $ <var:P> $ and $ <var:B> \in \mathbb{N} $ . \end{theorem} \begin{proof} Assume $ <var:P> = <nat:4> $ , $ <var:B> = <nat:8> $ and $ <var:o> = <nat:9> $ . Observe $ <nat:288> = <var:P> \times <var:B> \times <var:o> $ . This indicates the claim is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:o> <var:P> <var:B> : nat , ( <nat:288> = <var:o> * <var:P> * <var:B> ) . Proof . exists <nat:9> . exists <nat:4> . exists <nat:8> . repeat split . all : lia . Qed . 

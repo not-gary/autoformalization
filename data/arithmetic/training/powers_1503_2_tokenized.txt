@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> $ is equal to $ <var:X> ^ <nat:2> $ such that $ <var:X> $ more than <nat:1> . \end{theorem} \begin{proof} Observe $ <nat:4> = <var:X> ^ <nat:2> $ produces $ <var:X> = <nat:2> $ . Hence , <nat:4> is the repeated multiplication of $ <var:X> \in \mathbb{N} $ exponentiated to the degree <nat:2> is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:X> : nat , ( <nat:4> = <var:X> ^ <nat:2> ) /\ ( <var:X> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

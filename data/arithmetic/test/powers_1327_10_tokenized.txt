@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:1024> is the raising of of whole number $ <var:e> $ exponentiated to the power <nat:10> such that $ <var:e> $ more than or equivalent to <nat:2> . \end{theorem} \begin{proof} Observe that $ <nat:1024> = <nat:2> ^ <nat:10> $ . This shows the proposition is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <nat:1024> = <var:e> ^ <nat:10> ) /\ ( <var:e> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

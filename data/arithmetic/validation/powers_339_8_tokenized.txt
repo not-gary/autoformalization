@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:n> $ are positive integers where $ <var:n> $ more than or equal to <nat:2> . $ <var:n> ^ <nat:8> $ is equal to $ <nat:256> $ . \end{theorem} \begin{proof} Note $ <nat:256> = <var:n> ^ <nat:8> $ indicates $ <var:n> = <nat:2> $ . Consequently , <nat:256> is the repeated product between $ <var:n> \in \mathbb{Z}^+ $ repeatedly multiplied to the power <nat:8> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <var:n> >= <nat:2> ) /\ ( <var:n> ^ <nat:8> = <nat:256> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

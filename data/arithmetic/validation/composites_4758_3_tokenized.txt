@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:216> $ is $ <var:z> * <var:O> * <var:s> $ satisfying the condition that $ <var:s> $ , $ <var:z> $ , $ <var:O> $ greater than <nat:1> . \end{theorem} \begin{proof} Assume $ <var:O> = <nat:9> $ , $ <var:s> = <nat:8> $ , $ <var:z> = <nat:3> $ . This shows our belief is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:O> <var:s> <var:z> : nat , ( <nat:216> = <var:z> * <var:O> * <var:s> ) /\ ( <var:s> > <nat:1> ) /\ ( <var:z> > <nat:1> ) /\ ( <var:O> > <nat:1> ) . Proof . exists <nat:9> . exists <nat:8> . exists <nat:3> . repeat split . all : lia . Qed . 

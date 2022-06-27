@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:J> \in \mathbb{Z}^+ $ so that $ <var:J> $ greater than or equivalent to <nat:2> as well as satisfying the condition that $ <nat:512> $ is $ <var:J> ^ <nat:9> $ . \end{theorem} \begin{proof} Allow $ <var:J> = <nat:2> $ . Observe $ <nat:512> = <var:J> ^ <nat:9> $ . Similarly notice that $ <nat:2> $ is more than or equivalent to <nat:2> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:J> : nat , ( <var:J> >= <nat:2> ) /\ ( <nat:512> = <var:J> ^ <nat:9> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . apply <genH> . auto . Qed . 

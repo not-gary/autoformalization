@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:18> $ equals $ <var:V> \cdot <var:C> $ assuming $ <var:C> $ , $ <var:V> $ satisfying the condition that $ <var:C> $ and $ <var:V> $ greater than <nat:1> . \end{theorem} \begin{proof} Notice that $ <var:V> \cdot <var:C> = <nat:18> $ indicates $ <var:C> = <nat:9> $ and $ <var:V> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:V> : nat , ( <nat:18> = <var:V> * <var:C> ) /\ ( <var:C> > <nat:1> ) /\ ( <var:V> > <nat:1> ) . Proof . exists <nat:9> . exists <nat:2> . lia . Qed . 

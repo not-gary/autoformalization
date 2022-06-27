@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:E> \in \mathbb{N} $ so that $ <var:E> ^ <nat:9> = <nat:512> $ . \end{theorem} \begin{proof} Take $ <var:E> = <nat:2> $ . We prove <nat:512> is the exponential between some whole number $ <var:E> $ exponentiated to the degree <nat:9> . Note that $ <nat:2> ^ <nat:9> = <nat:512> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:E> : nat , ( <var:E> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . auto . Qed . 

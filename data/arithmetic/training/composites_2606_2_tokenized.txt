@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:77> is the multiplication of positive integers $ <var:J> $ , and $ <var:r> \in \mathbb{N} $ such that $ <var:r> $ , $ <var:J> $ more than or equivalent to <nat:2> . \end{theorem} \begin{proof} Note that $ <nat:77> = <nat:11> \cdot <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:J> <var:r> : nat , ( <nat:77> = <var:J> * <var:r> ) /\ ( <var:r> >= <nat:2> ) /\ ( <var:J> >= <nat:2> ) . Proof . exists <nat:11> . exists <nat:7> . lia . Qed . 

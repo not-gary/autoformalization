@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:K> \cdot <var:T> $ is equivalent to $ <nat:50> $ where $ <var:K> $ , $ <var:T> > <nat:1> $ . \end{theorem} \begin{proof} Take $ <var:K> = <nat:10> $ , and $ <var:T> = <nat:5> $ . This shows the result holds . As a result , $ <nat:50> = <var:T> \cdot <var:K> $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:T> <var:K> : nat , ( <var:K> * <var:T> = <nat:50> ) /\ ( <var:K> > <nat:1> ) /\ ( <var:T> > <nat:1> ) . Proof . exists <nat:5> . exists <nat:10> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:t> \in \mathbb{N} $ so that $ <var:t> > <nat:1> $ and so that <nat:64> is the exponential between number $ <var:t> \in \mathbb{Z}^+ $ raised to the power <nat:6> . \end{theorem} \begin{proof} Take $ <var:t> = <nat:2> $ . We show $ <var:t> ^ <nat:6> = <nat:64> $ plus $ <var:t> $ is larger than <nat:1> . Notice $ <nat:64> = <nat:2> ^ <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <var:t> > <nat:1> ) /\ ( <nat:64> = <var:t> ^ <nat:6> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

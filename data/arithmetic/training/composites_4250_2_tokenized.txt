@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:99> is the multiplication of natural numbers $ <var:I> $ and $ <var:c> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:c> $ and $ <var:I> $ more than <nat:1> . \end{theorem} \begin{proof} Notice $ <nat:99> = <var:I> \times <var:c> $ hints $ <var:I> = <nat:11> $ and $ <var:c> = <nat:9> $ . This implies our theory is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:I> <var:c> : nat , ( <nat:99> = <var:I> * <var:c> ) /\ ( <var:c> > <nat:1> ) /\ ( <var:I> > <nat:1> ) . Proof . exists <nat:11> . exists <nat:9> . lia . Qed . 

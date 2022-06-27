@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For any $ <var:R> $ the summation $ <var:R> \times <nat:326> + <nat:284> $ will be even . \end{theorem} \begin{proof} The number $ <nat:326> $ is known as an even number in $ \mathbb{Z}^+ $ It can be demonstrated that the expression $ <nat:284> + <var:R> \times <nat:326> $ is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:R> : nat , Nat . even ( <nat:326> * <var:R> + <nat:284> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:326> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

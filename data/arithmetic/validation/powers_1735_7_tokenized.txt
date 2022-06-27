@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some natural number $ <var:t> $ satisfying the condition that the positive integer <nat:128> is the repeated multiplication between integer $ <var:t> $ raised to the degree <nat:7> . \end{theorem} \begin{proof} Note $ <var:t> ^ <nat:7> = <nat:128> $ hints $ <var:t> = <nat:2> $ . This indicates our thesis holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <nat:128> = <var:t> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

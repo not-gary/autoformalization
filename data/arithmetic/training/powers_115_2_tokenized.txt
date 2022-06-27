@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} When we have $ <var:w> ^ <nat:2> = <var:c> $ given $ <var:c> \in \mathbb{Z}^+ $ with some $ <var:w> \in \mathbb{N} $ , then say that $ <var:c> $ is a <def:square> . Thus $ <var:c> = <nat:4> $ is a <def:square> whole number . \end{theorem} \begin{proof} We confirm $ <var:w> ^ <nat:2> = <nat:4> $ . Notice $ <nat:4> = <var:w> ^ <nat:2> = <nat:2> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:c> : nat ) := exists <var:w> : nat , ( <var:w> ^ <nat:2> = <var:c> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

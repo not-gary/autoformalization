@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:24> $ is equivalent to $ <var:j> \times <var:W> \times <var:T> $ for $ <var:W> $ , $ <var:T> $ and $ <var:j> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Let $ <var:j> = <nat:2> $ , $ <var:W> = <nat:3> $ and $ <var:T> = <nat:4> $ . Consequently , $ <nat:24> = <var:W> \times <var:j> \times <var:T> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:W> <var:T> <var:j> : nat , ( <nat:24> = <var:j> * <var:W> * <var:T> ) . Proof . exists <nat:3> . exists <nat:4> . exists <nat:2> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Denote that when there is whole number $ <var:D> $ we define that some natural number $ <var:p> $ is defined to be a <def:enneract> integer if $ <var:p> = <var:D> ^ <nat:9> $ . So $ <nat:512> = <var:p> $ is a <def:enneract> positive integer . \end{theorem} \begin{proof} Observe $ <nat:512> = <var:D> ^ <nat:9> $ implies $ <var:D> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:enneract> ( <var:p> : nat ) := exists <var:D> : nat , ( <var:p> = <var:D> ^ <nat:9> ) . Theorem <genP:1> : <def:enneract> <nat:512> . Proof . unfold <def:enneract> . exists <nat:2> . auto . Qed . 

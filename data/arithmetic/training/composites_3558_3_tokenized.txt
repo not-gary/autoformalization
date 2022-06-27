@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:d> \times <var:w> \times <var:Z> $ is equivalent to $ <nat:924> $ . \end{theorem} \begin{proof} Allow $ <var:d> = <nat:11> $ , $ <var:w> = <nat:12> $ , $ <var:Z> = <nat:7> $ . We demonstrate the thesis is true for $ <var:w> \cdot <var:d> \cdot <var:Z> = <nat:12> \cdot <nat:11> \cdot <nat:7> = <nat:924> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:d> <var:Z> <var:w> : nat , ( <var:d> * <var:w> * <var:Z> = <nat:924> ) . Proof . exists <nat:11> . exists <nat:7> . exists <nat:12> . repeat split . all : lia . Qed . 

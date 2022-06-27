@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:F> \in \mathbb{N} $ such that the integer <nat:32> is the repeated product of positive integer $ <var:F> \in \mathbb{N} $ repeatedly multiplied to the power <nat:5> . \end{theorem} \begin{proof} Observe $ <nat:32> = <nat:2> ^ <nat:5> $ . This shows the proposition is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <nat:32> = <var:F> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

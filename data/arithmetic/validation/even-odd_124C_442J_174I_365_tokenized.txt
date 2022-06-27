@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given positive terms $ <var:I> $ , $ <var:J> $ , and $ <var:C> $ the summation $ <var:C> <nat:124> + <nat:442> <var:J> + <nat:174> <var:I> + <nat:365> $ must be odd . \end{theorem} \begin{proof} Theorem clearly holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:I> <var:J> <var:C> : nat , Nat . odd ( <nat:124> * <var:C> + <nat:442> * <var:J> + <nat:174> * <var:I> + <nat:365> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

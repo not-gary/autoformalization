@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:Q> $ and $ <var:y> $ such that $ <var:y> $ and $ <var:Q> $ larger than or equivalent to <nat:2> plus such that $ <nat:117> $ is equivalent to $ <var:y> \cdot <var:Q> $ . \end{theorem} \begin{proof} Note that $ <nat:13> * <nat:9> = <nat:117> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Q> <var:y> : nat , ( <var:y> >= <nat:2> ) /\ ( <var:Q> >= <nat:2> ) /\ ( <nat:117> = <var:y> * <var:Q> ) . Proof . exists <nat:13> . exists <nat:9> . lia . Qed . 

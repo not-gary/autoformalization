@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:4> is the raising of between $ <var:h> $ repeatedly multiplied to the exponential <nat:2> where $ <var:h> $ more than or equal to <nat:2> . \end{theorem} \begin{proof} Note $ <nat:2> ^ <nat:2> = <nat:4> = <var:h> ^ <nat:2> $ . As a consequence , <nat:4> is the repeated multiplication of $ <var:h> \in \mathbb{N} $ taken to the exponential <nat:2> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:h> : nat , ( <nat:4> = <var:h> ^ <nat:2> ) /\ ( <var:h> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

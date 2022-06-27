@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:k> \times <var:S> \times <var:D> \times <var:s> $ is the same as $ <nat:704> $ . \end{theorem} \begin{proof} We confirm $ <nat:704> = <var:s> \cdot <var:S> \cdot <var:k> \cdot <var:D> $ . Note that $ <nat:704> = <nat:4> \times <nat:11> \times <nat:2> \times <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:S> <var:D> <var:k> <var:s> : nat , ( <var:k> * <var:S> * <var:D> * <var:s> = <nat:704> ) . Proof . exists <nat:8> . exists <nat:4> . exists <nat:11> . exists <nat:2> . repeat split . all : lia . Qed . 

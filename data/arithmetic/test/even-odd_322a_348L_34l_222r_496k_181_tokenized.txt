@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:322> \times <var:a> + <var:L> \times <nat:348> + <nat:181> + <var:l> \times <nat:34> + <var:r> \times <nat:222> + <nat:496> \times <var:k> $ is guaranteed to be odd . \end{theorem} \begin{proof} Claim trivially holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:a> <var:L> <var:l> <var:r> <var:k> : nat , Nat . odd ( <nat:322> * <var:a> + <nat:348> * <var:L> + <nat:34> * <var:l> + <nat:222> * <var:r> + <nat:496> * <var:k> + <nat:181> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

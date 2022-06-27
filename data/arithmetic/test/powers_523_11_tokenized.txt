@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:F> $ are numbers so that $ <var:F> $ larger than or equivalent to <nat:2> and such that $ <nat:2048> = <var:F> ^ <nat:11> $ . \end{theorem} \begin{proof} Observe that $ <var:F> ^ <nat:11> = <nat:2048> $ yields $ <var:F> = <nat:2> $ . This indicates our theorem is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <var:F> >= <nat:2> ) /\ ( <nat:2048> = <var:F> ^ <nat:11> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

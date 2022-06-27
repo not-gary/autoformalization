@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:18> is the multiplication of positive integers $ <var:b> $ , and $ <var:N> \in \mathbb{N} $ where $ <var:N> $ and $ <var:b> > <nat:1> $ . \end{theorem} \begin{proof} Take $ <var:N> = <nat:2> $ , and $ <var:b> = <nat:9> $ . This indicates the formula is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:b> <var:N> : nat , ( <nat:18> = <var:b> * <var:N> ) /\ ( <var:N> > <nat:1> ) /\ ( <var:b> > <nat:1> ) . Proof . exists <nat:9> . exists <nat:2> . lia . Qed . 

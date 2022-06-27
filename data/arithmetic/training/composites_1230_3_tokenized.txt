@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:396> is the product of positive integers $ <var:w> $ , $ <var:Y> $ , and $ <var:m> $ . \end{theorem} \begin{proof} Note $ <nat:396> = <nat:9> * <nat:11> * <nat:4> $ . This yields the principle holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:w> <var:Y> <var:m> : nat , ( <nat:396> = <var:w> * <var:Y> * <var:m> ) . Proof . exists <nat:11> . exists <nat:9> . exists <nat:4> . repeat split . all : lia . Qed . 

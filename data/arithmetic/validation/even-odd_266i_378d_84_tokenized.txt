@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:266> \times <var:i> + <nat:84> + <var:d> \times <nat:378> $ must be even . \end{theorem} \begin{proof} The summation between even whole numbers concurrently is by definition an even number in $ \mathbb{N} $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:i> <var:d> : nat , Nat . even ( <nat:266> * <var:i> + <nat:378> * <var:d> + <nat:84> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

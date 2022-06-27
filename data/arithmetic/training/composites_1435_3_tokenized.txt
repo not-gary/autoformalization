@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:M> $ , $ <var:K> $ , and $ <var:E> $ as positive integers such that $ <var:K> $ , $ <var:E> $ , $ <var:M> > <nat:1> $ as well as such that $ <var:E> * <var:M> * <var:K> $ is equal to $ <nat:42> $ . \end{theorem} \begin{proof} Assume $ <var:M> = <nat:2> $ , $ <var:E> = <nat:7> $ , and $ <var:K> = <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:M> <var:K> <var:E> : nat , ( <var:K> > <nat:1> ) /\ ( <var:E> > <nat:1> ) /\ ( <var:M> > <nat:1> ) /\ ( <var:E> * <var:M> * <var:K> = <nat:42> ) . Proof . exists <nat:2> . exists <nat:3> . exists <nat:7> . repeat split . all : lia . Qed . 

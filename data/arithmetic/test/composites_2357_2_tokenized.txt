@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:a> $ , and $ <var:Y> $ are numbers such that $ <var:a> $ , and $ <var:Y> > <nat:1> $ and where <nat:20> is the multiplication between natural numbers $ <var:a> $ , and $ <var:Y> $ . \end{theorem} \begin{proof} Assume $ <var:a> = <nat:5> $ , and $ <var:Y> = <nat:4> $ . Notice $ <var:Y> * <var:a> = <nat:20> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:a> <var:Y> : nat , ( <var:a> > <nat:1> ) /\ ( <var:Y> > <nat:1> ) /\ ( <nat:20> = <var:a> * <var:Y> ) . Proof . exists <nat:5> . exists <nat:4> . lia . Qed . 

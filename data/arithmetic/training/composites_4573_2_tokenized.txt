@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:36> is the multiplication between $ <var:b> $ and $ <var:w> $ satisfying the condition that $ <var:w> $ and $ <var:b> > <nat:1> $ . \end{theorem} \begin{proof} Allow $ <var:b> = <nat:4> $ , $ <var:w> = <nat:9> $ . We demonstrate $ <var:w> \cdot <var:b> = <nat:36> $ . This gives the belief is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:b> <var:w> : nat , ( <nat:36> = <var:b> * <var:w> ) /\ ( <var:w> > <nat:1> ) /\ ( <var:b> > <nat:1> ) . Proof . exists <nat:4> . exists <nat:9> . lia . Qed . 

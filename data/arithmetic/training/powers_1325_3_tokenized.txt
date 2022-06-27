@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:U> $ satisfying the condition that $ <var:U> ^ <nat:3> $ equals $ <nat:8> $ . \end{theorem} \begin{proof} We present $ <var:U> ^ <nat:3> = <nat:8> $ . Observe that $ <nat:8> = <var:U> ^ <nat:3> $ hints $ <var:U> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:U> : nat , ( <var:U> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

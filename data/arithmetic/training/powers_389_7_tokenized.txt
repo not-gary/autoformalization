@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:J> \in \mathbb{N} $ so that $ <var:J> ^ <nat:7> $ is equivalent to $ <nat:128> $ . \end{theorem} \begin{proof} Assume $ <var:J> = <nat:2> $ . We prove $ <nat:128> = <var:J> ^ <nat:7> $ . We confirm our theorem is valid seeing that $ <nat:128> = <var:J> ^ <nat:7> = <nat:2> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:J> : nat , ( <var:J> ^ <nat:7> = <nat:128> ) . Proof . exists <nat:2> . auto . Qed . 

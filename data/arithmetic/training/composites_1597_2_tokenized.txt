@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:21> $ is the same as $ <var:C> * <var:O> $ . \end{theorem} \begin{proof} We present $ <nat:21> = <var:O> \times <var:C> $ . Note $ <nat:21> = <var:C> \times <var:O> $ shows $ <var:C> = <nat:7> $ , $ <var:O> = <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:O> : nat , ( <nat:21> = <var:C> * <var:O> ) . Proof . exists <nat:7> . exists <nat:3> . lia . Qed . 

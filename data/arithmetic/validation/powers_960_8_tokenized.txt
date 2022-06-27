@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:e> \in \mathbb{N} $ such that $ <nat:256> $ is equivalent to $ <var:e> ^ <nat:8> $ . \end{theorem} \begin{proof} Take $ <var:e> = <nat:2> $ . We verify the claim is true because $ <nat:256> = <var:e> ^ <nat:8> $ . Because of this , <nat:256> is the raising of between some whole number $ <var:e> $ repeatedly multiplied to the power <nat:8> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <nat:256> = <var:e> ^ <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

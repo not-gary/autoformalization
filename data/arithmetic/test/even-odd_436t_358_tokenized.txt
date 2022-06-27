@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:358> + <nat:436> <var:t> $ will be even with whole numbers $ <var:t> $ . \end{theorem} \begin{proof} We show the lemma is proven . Take note that $ <nat:358> $ is an even element of $ \mathbb{Z}^+ $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:t> : nat , Nat . even ( <nat:436> * <var:t> + <nat:358> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:358> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

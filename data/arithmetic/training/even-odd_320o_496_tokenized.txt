@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:496> + <nat:320> <var:o> $ must be even . \end{theorem} \begin{proof} What's more , the whole numbers $ <nat:320> $ are trivially even elements of $ \mathbb{N} $ . So , the terms $ <var:o> <nat:320> $ will be even at the same time . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:o> : nat , Nat . even ( <nat:320> * <var:o> + <nat:496> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:320> = true ) . { auto . } assert ( <genH> : Nat . even ( <nat:320> * <var:o> ) = true ) . { rewrite Nat . even_mul . rewrite <genH> . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

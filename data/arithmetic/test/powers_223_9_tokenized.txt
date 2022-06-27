@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some positive integer $ <var:V> $ satisfying the condition that the natural number <nat:512> is the repeated product between natural number $ <var:V> $ raised to the degree <nat:9> . \end{theorem} \begin{proof} Assume $ <var:V> = <nat:2> $ . Note that $ <nat:512> = <var:V> ^ <nat:9> $ . This hints the result is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <nat:512> = <var:V> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

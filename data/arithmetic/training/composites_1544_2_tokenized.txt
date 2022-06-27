@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:Q> $ and $ <var:N> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:N> \times <var:Q> $ is equivalent to $ <nat:84> $ . \end{theorem} \begin{proof} We confirm $ <nat:84> = <var:N> \times <var:Q> $ . We demonstrate the principle is true on account of $ <nat:7> \times <nat:12> = <nat:84> = <var:N> \times <var:Q> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Q> <var:N> : nat , ( <var:N> * <var:Q> = <nat:84> ) . Proof . exists <nat:12> . exists <nat:7> . lia . Qed . 

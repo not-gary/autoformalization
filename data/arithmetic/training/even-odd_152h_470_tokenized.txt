@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:152> \cdot <var:h> + <nat:470> $ must be even . \end{theorem} \begin{proof} The term $ <var:h> \times <nat:152> $ is trivially an even integer . It can be proven that this result holds . Take note $ <nat:470> $ is clearly even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:h> : nat , Nat . even ( <nat:152> * <var:h> + <nat:470> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:152> * <var:h> ) = true ) . { rewrite Nat . even_mul . auto . } assert ( <genH> : Nat . even <nat:470> = true ) . { auto . } repeat rewrite Nat . even_add . rewrite <genH> . rewrite <genH> . auto . Qed . 

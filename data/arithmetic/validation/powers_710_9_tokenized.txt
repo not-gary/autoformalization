@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:c> \in \mathbb{Z}^+ $ such that $ <var:c> $ greater than or equivalent to <nat:2> plus so that $ <nat:512> $ equals $ <var:c> ^ <nat:9> $ . \end{theorem} \begin{proof} Notice $ <nat:2> ^ <nat:9> = <nat:512> = <var:c> ^ <nat:9> $ . Therefore , <nat:512> is the repeated multiplication between some natural number $ <var:c> $ raised to the exponent <nat:9> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:c> : nat , ( <var:c> >= <nat:2> ) /\ ( <nat:512> = <var:c> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

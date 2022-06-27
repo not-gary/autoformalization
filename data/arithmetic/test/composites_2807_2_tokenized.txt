@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:s> $ , $ <var:R> \in \mathbb{N} $ so that $ <var:s> $ , $ <var:R> $ larger than <nat:1> . the integer <nat:35> is the multiplication between whole numbers $ <var:s> $ , and $ <var:R> \in \mathbb{N} $ . \end{theorem} \begin{proof} We demonstrate $ <nat:35> = <var:s> \cdot <var:R> $ . Observe that $ <nat:35> = <var:s> \cdot <var:R> $ gives $ <var:s> = <nat:7> $ and $ <var:R> = <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:s> <var:R> : nat , ( <var:s> > <nat:1> ) /\ ( <var:R> > <nat:1> ) /\ ( <nat:35> = <var:s> * <var:R> ) . Proof . exists <nat:7> . exists <nat:5> . lia . Qed . 

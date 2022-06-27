@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:f> \in \mathbb{N} $ . Let that $ <var:S> \in \mathbb{N} $ will be considered a <def:hepteract> given $ <var:f> ^ <nat:7> = <var:S> $ . Consequently $ <nat:128> = <var:S> $ is a <def:hepteract> number . \end{theorem} \begin{proof} Let $ <var:f> = <nat:2> $ . This implies our theory is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:hepteract> ( <var:S> : nat ) := exists <var:f> : nat , ( <var:f> ^ <nat:7> = <var:S> ) . Theorem <genP:1> : <def:hepteract> <nat:128> . Proof . unfold <def:hepteract> . exists <nat:2> . auto . Qed . 

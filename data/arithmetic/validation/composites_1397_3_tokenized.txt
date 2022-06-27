@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:L> \times <var:B> \times <var:X> $ is the same as $ <nat:440> $ given $ <var:L> $ , $ <var:B> $ and $ <var:X> $ . \end{theorem} \begin{proof} Allow $ <var:L> = <nat:11> $ , $ <var:X> = <nat:5> $ and $ <var:B> = <nat:8> $ . We show $ <var:B> \times <var:X> \times <var:L> = <nat:440> $ . Note that $ <nat:8> \cdot <nat:5> \cdot <nat:11> = <nat:440> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:L> <var:B> <var:X> : nat , ( <var:L> * <var:B> * <var:X> = <nat:440> ) . Proof . exists <nat:11> . exists <nat:8> . exists <nat:5> . repeat split . all : lia . Qed . 

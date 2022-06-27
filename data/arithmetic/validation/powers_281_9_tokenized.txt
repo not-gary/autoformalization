@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:512> is the raising of between whole number $ <var:V> \in \mathbb{N} $ raised to the exponent <nat:9> . \end{theorem} \begin{proof} Allow $ <var:V> = <nat:2> $ . Observe $ <nat:512> = <var:V> ^ <nat:9> = <nat:2> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <nat:512> = <var:V> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:t> $ and $ <var:m> \in \mathbb{Z}^+ $ such that $ <nat:24> = <var:m> \times <var:t> $ . \end{theorem} \begin{proof} Note $ <nat:24> = <nat:3> \times <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:t> <var:m> : nat , ( <nat:24> = <var:m> * <var:t> ) . Proof . exists <nat:8> . exists <nat:3> . lia . Qed . 

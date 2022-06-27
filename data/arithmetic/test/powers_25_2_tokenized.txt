@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:4> is the raising of between integer $ <var:A> \in \mathbb{N} $ raised to the power <nat:2> where $ <var:A> \geq <nat:2> $ . \end{theorem} \begin{proof} Note $ <var:A> ^ <nat:2> = <nat:4> $ gives $ <var:A> = <nat:2> $ . As a consequence , <nat:4> is the exponent between $ <var:A> \in \mathbb{Z}^+ $ repeatedly multiplied to the exponent <nat:2> has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:A> : nat , ( <nat:4> = <var:A> ^ <nat:2> ) /\ ( <var:A> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

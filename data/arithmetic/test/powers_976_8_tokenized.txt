@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:256> is the repeated multiplication between integer $ <var:s> $ raised to the exponential <nat:8> . \end{theorem} \begin{proof} We prove <nat:256> is the exponential of $ <var:s> \in \mathbb{N} $ raised to the power <nat:8> . We present the proposition is true by reason of $ <nat:256> = <var:s> ^ <nat:8> $ produces $ <var:s> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:s> : nat , ( <nat:256> = <var:s> ^ <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

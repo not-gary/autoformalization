@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming whole numbers $ <var:e> $ the sum $ <nat:488> \cdot <var:e> + <nat:184> $ is guaranteed to be even . \end{theorem} \begin{proof} The term $ <var:e> * <nat:488> $ is obviously an even integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:e> : nat , Nat . even ( <nat:488> * <var:e> + <nat:184> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:488> * <var:e> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

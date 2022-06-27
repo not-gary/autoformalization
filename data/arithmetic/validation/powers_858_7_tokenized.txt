@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:P> $ as numbers . We denote that $ <var:s> \in \mathbb{Z}^+ $ will be a <def:hepteract> positive integer given $ <var:s> = <var:P> ^ <nat:7> $ and more than <nat:1> . Accordingly $ <nat:128> = <var:s> $ is a <def:hepteract> integer . \end{theorem} \begin{proof} Let $ <var:P> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:hepteract> ( <var:s> : nat ) := exists <var:P> : nat , ( <var:s> = <var:P> ^ <nat:7> ) /\ ( <var:P> > <nat:1> ) . Theorem <genP:1> : <def:hepteract> <nat:128> . Proof . unfold <def:hepteract> . exists <nat:2> . split . auto . lia . Qed . 

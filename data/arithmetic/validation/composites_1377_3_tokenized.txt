@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:180> $ is the same as $ <var:r> * <var:U> * <var:j> $ for $ <var:r> $ , $ <var:U> $ , and $ <var:j> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Note that $ <nat:180> = <var:U> \cdot <var:r> \cdot <var:j> = <nat:3> \cdot <nat:5> \cdot <nat:12> $ . Therefore , <nat:180> is the product between some numbers $ <var:r> $ , $ <var:U> $ , and $ <var:j> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:r> <var:U> <var:j> : nat , ( <nat:180> = <var:r> * <var:U> * <var:j> ) . Proof . exists <nat:5> . exists <nat:3> . exists <nat:12> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:i> <nat:418> + <nat:441> $ will be odd for every $ <var:i> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} It can be verified that our result is proven . Observe the pair $ <var:i> \cdot <nat:418> $ is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:i> : nat , Nat . odd ( <nat:418> * <var:i> + <nat:441> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:418> * <var:i> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

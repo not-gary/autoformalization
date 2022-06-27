@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:12> is the multiplication between positive integers $ <var:j> $ and $ <var:m> \in \mathbb{Z}^+ $ so that $ <var:m> $ , and $ <var:j> \geq <nat:2> $ . \end{theorem} \begin{proof} Observe $ <nat:12> = <var:j> \times <var:m> = <nat:4> \times <nat:3> $ . Therefore , $ <var:j> \times <var:m> = <nat:12> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:j> <var:m> : nat , ( <nat:12> = <var:j> * <var:m> ) /\ ( <var:m> >= <nat:2> ) /\ ( <var:j> >= <nat:2> ) . Proof . exists <nat:4> . exists <nat:3> . lia . Qed . 

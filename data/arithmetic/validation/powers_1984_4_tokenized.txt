@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:16> is the raising of between natural number $ <var:c> $ exponentiated to the degree <nat:4> . \end{theorem} \begin{proof} Let $ <var:c> = <nat:2> $ . Notice that $ <nat:16> = <nat:2> ^ <nat:4> = <var:c> ^ <nat:4> $ . Because of this , $ <var:c> ^ <nat:4> = <nat:16> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:c> : nat , ( <nat:16> = <var:c> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

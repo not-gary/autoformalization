@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With any natural numbers $ <var:M> $ the sum $ <var:M> \cdot <nat:128> + <nat:100> $ is even . \end{theorem} \begin{proof} See the positive integer $ <nat:128> $ is known as an even element of $ \mathbb{Z}^+ $ The addition between even numbers in $ \mathbb{Z}^+ $ is an even positive integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:M> : nat , Nat . even ( <nat:128> * <var:M> + <nat:100> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:128> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

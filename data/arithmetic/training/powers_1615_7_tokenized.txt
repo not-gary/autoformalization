@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some positive integer $ <var:x> $ satisfying the condition that <nat:128> is the repeated multiplication of integer $ <var:x> $ taken to the degree <nat:7> . \end{theorem} \begin{proof} We verify <nat:128> is the exponent between some whole number $ <var:x> $ repeatedly multiplied to the degree <nat:7> . Note that $ <nat:128> = <var:x> ^ <nat:7> $ shows $ <var:x> = <nat:2> $ . This gives the principle is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:x> : nat , ( <nat:128> = <var:x> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

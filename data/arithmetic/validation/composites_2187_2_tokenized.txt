@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:n> \times <var:w> $ equals $ <nat:96> $ given $ <var:w> $ , $ <var:n> \in \mathbb{N} $ . \end{theorem} \begin{proof} We show our theory is true for $ <nat:96> = <var:w> \times <var:n> $ indicates $ <var:w> = <nat:12> $ , and $ <var:n> = <nat:8> $ . As a result , $ <nat:96> = <var:n> \cdot <var:w> $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:w> <var:n> : nat , ( <var:n> * <var:w> = <nat:96> ) . Proof . exists <nat:12> . exists <nat:8> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:M> \in \mathbb{N} $ so that the whole number <nat:4> is the exponential between positive integer $ <var:M> \in \mathbb{Z}^+ $ taken to the power <nat:2> . \end{theorem} \begin{proof} Allow $ <var:M> = <nat:2> $ . Observe that $ <nat:2> ^ <nat:2> = <nat:4> $ . This shows our thesis is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:M> : nat , ( <nat:4> = <var:M> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

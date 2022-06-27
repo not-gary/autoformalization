@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:d> <nat:448> + <var:w> <nat:156> + <nat:370> $ is guaranteed to be even . \end{theorem} \begin{proof} Notice $ <nat:370> $ is known to be even . It can be shown that our claim holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:d> <var:w> : nat , Nat . even ( <nat:448> * <var:d> + <nat:156> * <var:w> + <nat:370> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:370> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

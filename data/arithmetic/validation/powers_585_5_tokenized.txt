@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:J> \in \mathbb{N} $ satisfying the condition that $ <var:J> > <nat:1> $ plus satisfying the condition that $ <nat:32> $ equals $ <var:J> ^ <nat:5> $ . \end{theorem} \begin{proof} We justify our belief holds in view of $ <nat:2> > <nat:1> $ as well as as $ <nat:32> = <nat:2> ^ <nat:5> = <var:J> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:J> : nat , ( <var:J> > <nat:1> ) /\ ( <nat:32> = <var:J> ^ <nat:5> ) . Proof . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } exists <nat:2> . split . apply <genH> . auto . Qed . 

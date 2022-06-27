@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:B> \in \mathbb{Z}^+ $ satisfying the condition that the integer <nat:512> is the repeated product between whole number $ <var:B> \in \mathbb{Z}^+ $ exponentiated to the power <nat:9> . \end{theorem} \begin{proof} We confirm <nat:512> is the repeated multiplication of some $ <var:B> $ raised to the degree <nat:9> . Note that $ <var:B> ^ <nat:9> = <nat:512> $ produces $ <var:B> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:B> : nat , ( <nat:512> = <var:B> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking all terms $ <var:H> $ , $ <var:P> $ , $ <var:S> $ , and $ <var:k> $ the sum $ <var:k> <nat:154> + <nat:298> + <nat:266> <var:P> + <nat:274> <var:S> + <nat:22> <var:H> $ is guaranteed to be even . \end{theorem} \begin{proof} Claim holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:H> <var:P> <var:S> <var:k> : nat , Nat . even ( <nat:154> * <var:k> + <nat:266> * <var:P> + <nat:274> * <var:S> + <nat:22> * <var:H> + <nat:298> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

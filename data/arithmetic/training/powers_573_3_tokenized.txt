@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:N> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:N> ^ <nat:3> $ equals $ <nat:8> $ . \end{theorem} \begin{proof} Let $ <var:N> = <nat:2> $ . Note that $ <nat:8> = <var:N> ^ <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <var:N> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

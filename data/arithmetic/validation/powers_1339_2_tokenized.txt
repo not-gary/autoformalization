@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:n> $ satisfying the condition that $ <var:n> \geq <nat:2> $ and so that the integer <nat:4> is the raising of of positive integer $ <var:n> $ raised to the degree <nat:2> . \end{theorem} \begin{proof} We confirm our theorem holds seeing that $ <var:n> ^ <nat:2> = <nat:4> $ produces $ <var:n> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <var:n> >= <nat:2> ) /\ ( <nat:4> = <var:n> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

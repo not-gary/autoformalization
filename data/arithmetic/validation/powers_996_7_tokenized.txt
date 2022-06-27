@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:128> is the exponential of positive integer $ <var:x> \in \mathbb{N} $ raised to the exponential <nat:7> such that $ <var:x> \geq <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:x> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:x> : nat , ( <nat:128> = <var:x> ^ <nat:7> ) /\ ( <var:x> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

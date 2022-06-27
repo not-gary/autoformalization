@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:32> $ is $ <var:j> ^ <nat:5> $ where $ <var:j> $ greater than <nat:1> . \end{theorem} \begin{proof} Note $ <nat:32> = <nat:2> ^ <nat:5> = <var:j> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <nat:32> = <var:j> ^ <nat:5> ) /\ ( <var:j> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

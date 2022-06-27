@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:N> $ , and $ <var:t> $ be natural numbers such that $ <var:t> $ , and $ <var:N> $ more than or equal to <nat:2> as well as where $ <var:N> \times <var:t> $ is equal to $ <nat:77> $ . \end{theorem} \begin{proof} Observe $ <nat:77> = <var:N> * <var:t> = <nat:11> * <nat:7> $ . As a consequence , $ <var:N> $ , $ <var:t> \geq <nat:2> $ plus $ <var:N> \cdot <var:t> = <nat:77> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:N> <var:t> : nat , ( <var:t> >= <nat:2> ) /\ ( <var:N> >= <nat:2> ) /\ ( <var:N> * <var:t> = <nat:77> ) . Proof . exists <nat:11> . exists <nat:7> . lia . Qed . 

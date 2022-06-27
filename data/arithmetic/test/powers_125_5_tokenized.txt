@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:w> $ satisfying the condition that $ <var:w> $ more than or equal to <nat:2> plus such that $ <nat:32> $ is equal to $ <var:w> ^ <nat:5> $ . \end{theorem} \begin{proof} Allow $ <var:w> = <nat:2> $ . Notice $ <nat:32> = <var:w> ^ <nat:5> $ . This gives the theorem is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:w> : nat , ( <var:w> >= <nat:2> ) /\ ( <nat:32> = <var:w> ^ <nat:5> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

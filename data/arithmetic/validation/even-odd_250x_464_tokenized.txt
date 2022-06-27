@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:464> + <var:x> * <nat:250> $ will be even . \end{theorem} \begin{proof} See that the pair $ <nat:250> * <var:x> $ is obviously an even whole number by reason that the multiplication between an even number in $ \mathbb{Z}^+ $ and some number must be an even number in $ \mathbb{N} $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:x> : nat , Nat . even ( <nat:250> * <var:x> + <nat:464> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:250> * <var:x> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

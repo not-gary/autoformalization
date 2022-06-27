@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:58> \times <var:L> + <nat:454> $ must be even with any terms $ <var:L> $ . \end{theorem} \begin{proof} Notice that multiplying of an even number in $ \mathbb{Z}^+ $ and some number in $ \mathbb{N} $ must be an even number in $ \mathbb{N} $ . We prove this result is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:L> : nat , Nat . even ( <nat:58> * <var:L> + <nat:454> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

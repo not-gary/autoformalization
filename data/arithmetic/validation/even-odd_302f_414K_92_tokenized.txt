@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using every variables $ <var:f> $ , and $ <var:K> $ the summation $ <var:f> <nat:302> + <nat:414> <var:K> + <nat:92> $ is guaranteed to be even . \end{theorem} \begin{proof} See that taking the product between an even whole number with some element of $ \mathbb{Z}^+ $ is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:f> <var:K> : nat , Nat . even ( <nat:302> * <var:f> + <nat:414> * <var:K> + <nat:92> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

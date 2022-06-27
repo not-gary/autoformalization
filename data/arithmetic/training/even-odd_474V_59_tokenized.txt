@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given every integers $ <var:V> $ the summation $ <var:V> * <nat:474> + <nat:59> $ must be odd . \end{theorem} \begin{proof} We know $ <nat:59> $ is guaranteed to be an odd positive integer . We justify our proposition is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:V> : nat , Nat . odd ( <nat:474> * <var:V> + <nat:59> ) = true . Proof . intros . assert ( <genH> : Nat . odd <nat:59> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

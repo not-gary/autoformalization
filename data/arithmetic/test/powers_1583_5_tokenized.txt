@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:L> $ be positive integers such that $ <nat:32> $ is the same as $ <var:L> ^ <nat:5> $ . \end{theorem} \begin{proof} Notice that $ <var:L> ^ <nat:5> = <nat:2> ^ <nat:5> = <nat:32> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:L> : nat , ( <nat:32> = <var:L> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

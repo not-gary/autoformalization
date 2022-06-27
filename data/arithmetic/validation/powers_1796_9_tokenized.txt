@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:L> \in \mathbb{N} $ so that $ <var:L> > <nat:1> $ as well as so that $ <nat:512> $ equals $ <var:L> ^ <nat:9> $ . \end{theorem} \begin{proof} Notice $ <var:L> ^ <nat:9> = <nat:512> $ implies $ <var:L> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:L> : nat , ( <var:L> > <nat:1> ) /\ ( <nat:512> = <var:L> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

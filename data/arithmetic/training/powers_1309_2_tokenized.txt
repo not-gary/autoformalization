@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:M> \in \mathbb{Z}^+ $ . the number <nat:4> is the repeated product between $ <var:M> \in \mathbb{Z}^+ $ exponentiated to the degree <nat:2> . \end{theorem} \begin{proof} We show the proposition is true on account of $ <nat:2> ^ <nat:2> = <nat:4> $ . As a result , $ <nat:4> = <var:M> ^ <nat:2> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:M> : nat , ( <nat:4> = <var:M> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

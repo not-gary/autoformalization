@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:N> $ are natural numbers so that $ <var:N> $ more than or equivalent to <nat:2> as well as so that $ <nat:512> $ is the same as $ <var:N> ^ <nat:9> $ . \end{theorem} \begin{proof} Observe $ <nat:512> = <var:N> ^ <nat:9> $ shows $ <var:N> = <nat:2> $ . This gives our statement is valid . Hence , $ <var:N> $ is larger than or equal to <nat:2> as well as $ <var:N> ^ <nat:9> = <nat:512> $ is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <var:N> >= <nat:2> ) /\ ( <nat:512> = <var:N> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

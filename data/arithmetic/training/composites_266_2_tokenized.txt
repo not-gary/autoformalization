@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:l> \cdot <var:D> $ equals $ <nat:15> $ . \end{theorem} \begin{proof} Observe that $ <nat:15> = <var:D> \cdot <var:l> $ indicates $ <var:l> = <nat:3> $ , $ <var:D> = <nat:5> $ . This gives our statement is true . Consequently , <nat:15> is the multiplication of some positive integers $ <var:l> $ , $ <var:D> $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:D> <var:l> : nat , ( <var:l> * <var:D> = <nat:15> ) . Proof . exists <nat:5> . exists <nat:3> . lia . Qed . 

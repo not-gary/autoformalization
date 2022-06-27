@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:C> \in \mathbb{N} $ so that $ <var:C> \geq <nat:2> $ plus such that $ <nat:4> = <var:C> ^ <nat:2> $ . \end{theorem} \begin{proof} Observe that $ <nat:4> = <var:C> ^ <nat:2> $ shows $ <var:C> = <nat:2> $ . This hints the proposition is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:C> : nat , ( <var:C> >= <nat:2> ) /\ ( <nat:4> = <var:C> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

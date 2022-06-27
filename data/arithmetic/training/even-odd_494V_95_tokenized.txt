@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For whole numbers $ <var:V> $ the formula $ <nat:95> + <nat:494> \times <var:V> $ is odd . \end{theorem} \begin{proof} We justify the lemma must be true . The totaling of an even number in $ \mathbb{Z}^+ $ with an odd natural number is odd . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:V> : nat , Nat . odd ( <nat:494> * <var:V> + <nat:95> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

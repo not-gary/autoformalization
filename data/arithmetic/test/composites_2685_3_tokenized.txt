@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:h> $ , $ <var:O> $ and $ <var:p> $ be whole numbers where $ <var:h> $ , $ <var:O> $ , and $ <var:p> $ more than <nat:1> plus satisfying the condition that $ <nat:140> $ equals $ <var:h> \cdot <var:O> \cdot <var:p> $ . \end{theorem} \begin{proof} Observe $ <nat:7> * <nat:5> * <nat:4> = <nat:140> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:h> <var:O> <var:p> : nat , ( <var:h> > <nat:1> ) /\ ( <var:O> > <nat:1> ) /\ ( <var:p> > <nat:1> ) /\ ( <nat:140> = <var:h> * <var:O> * <var:p> ) . Proof . exists <nat:5> . exists <nat:4> . exists <nat:7> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:324> <var:A> + <nat:104> $ is even . \end{theorem} \begin{proof} $ <nat:324> \cdot <var:A> $ is even since multiplying of an even number in $ \mathbb{N} $ with any number is by its very nature an even natural number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:A> : nat , Nat . even ( <nat:324> * <var:A> + <nat:104> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:324> * <var:A> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

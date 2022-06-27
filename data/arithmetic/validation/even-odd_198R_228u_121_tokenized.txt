@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:R> <nat:198> + <nat:121> + <nat:228> <var:u> $ is guaranteed to be odd . \end{theorem} \begin{proof} $ <var:R> * <nat:198> + <nat:228> * <var:u> $ is known to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:R> <var:u> : nat , Nat . odd ( <nat:198> * <var:R> + <nat:228> * <var:u> + <nat:121> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:198> * <var:R> + <nat:228> * <var:u> ) = true ) . { repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . rewrite <genH> . auto . Qed . 

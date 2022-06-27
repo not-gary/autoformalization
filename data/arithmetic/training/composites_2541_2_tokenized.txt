@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:132> is the product between numbers $ <var:X> $ , and $ <var:B> $ . \end{theorem} \begin{proof} Take $ <var:B> = <nat:12> $ and $ <var:X> = <nat:11> $ . We verify $ <nat:132> = <var:X> \cdot <var:B> $ . We show the thesis holds in view of $ <var:B> \times <var:X> = <nat:132> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:X> <var:B> : nat , ( <nat:132> = <var:X> * <var:B> ) . Proof . exists <nat:11> . exists <nat:12> . lia . Qed . 

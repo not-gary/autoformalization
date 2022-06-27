@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:512> is the repeated multiplication between positive integer $ <var:f> $ taken to the degree <nat:9> where $ <var:f> $ larger than <nat:1> . \end{theorem} \begin{proof} Let $ <var:f> = <nat:2> $ . Note $ <nat:2> ^ <nat:9> = <nat:512> $ . Because of this , $ <var:f> > <nat:1> $ as well as $ <var:f> ^ <nat:9> = <nat:512> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:f> : nat , ( <nat:512> = <var:f> ^ <nat:9> ) /\ ( <var:f> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

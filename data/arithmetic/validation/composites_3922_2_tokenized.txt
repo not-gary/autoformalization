@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:F> $ , $ <var:S> $ such that $ <nat:18> $ equals $ <var:F> \times <var:S> $ . \end{theorem} \begin{proof} Assume $ <var:S> = <nat:2> $ , and $ <var:F> = <nat:9> $ . Notice that $ <var:S> \cdot <var:F> = <nat:18> $ . This shows the belief holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:F> <var:S> : nat , ( <nat:18> = <var:F> * <var:S> ) . Proof . exists <nat:9> . exists <nat:2> . lia . Qed . 

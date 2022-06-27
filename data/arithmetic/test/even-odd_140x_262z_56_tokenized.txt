@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:x> * <nat:140> + <nat:262> * <var:z> + <nat:56> $ is even . \end{theorem} \begin{proof} Lemma holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:x> <var:z> : nat , Nat . even ( <nat:140> * <var:x> + <nat:262> * <var:z> + <nat:56> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

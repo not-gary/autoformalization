@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:a> $ be numbers so that $ <var:a> > <nat:1> $ as well as where <nat:32> is the exponential of number $ <var:a> $ exponentiated to the exponential <nat:5> . \end{theorem} \begin{proof} Take $ <var:a> = <nat:2> $ . We prove the result is true because $ <nat:2> ^ <nat:5> = <nat:32> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:a> : nat , ( <var:a> > <nat:1> ) /\ ( <nat:32> = <var:a> ^ <nat:5> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

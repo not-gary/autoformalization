@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:32> is the repeated product of number $ <var:G> $ raised to the exponent <nat:5> . \end{theorem} \begin{proof} Allow $ <var:G> = <nat:2> $ . Notice that $ <var:G> ^ <nat:5> = <nat:32> = <nat:2> ^ <nat:5> $ . As a result , <nat:32> is the repeated product between $ <var:G> \in \mathbb{N} $ exponentiated to the degree <nat:5> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:G> : nat , ( <nat:32> = <var:G> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

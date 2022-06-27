@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:485> + <nat:160> <var:e> $ must be odd taking any $ <var:e> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} The coefficient $ <nat:160> $ is trivially an even integer \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:e> : nat , Nat . odd ( <nat:160> * <var:e> + <nat:485> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:160> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

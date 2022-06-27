@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:84> is the multiplication between whole numbers $ <var:Q> $ , $ <var:V> $ and $ <var:u> \in \mathbb{N} $ . \end{theorem} \begin{proof} Notice that $ <nat:84> = <var:u> \cdot <var:Q> \cdot <var:V> = <nat:6> \cdot <nat:2> \cdot <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Q> <var:V> <var:u> : nat , ( <nat:84> = <var:Q> * <var:V> * <var:u> ) . Proof . exists <nat:2> . exists <nat:7> . exists <nat:6> . repeat split . all : lia . Qed . 

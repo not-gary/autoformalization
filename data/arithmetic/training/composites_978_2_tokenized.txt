@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:i> $ , and $ <var:f> \in \mathbb{Z}^+ $ so that the whole number <nat:108> is the product between positive integers $ <var:i> $ , $ <var:f> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Observe that $ <nat:9> * <nat:12> = <nat:108> $ . This produces our proposition is true . Because of this , $ <var:i> \times <var:f> = <nat:108> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:i> <var:f> : nat , ( <nat:108> = <var:i> * <var:f> ) . Proof . exists <nat:9> . exists <nat:12> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:4> is the exponent between positive integer $ <var:G> $ exponentiated to the degree <nat:2> . \end{theorem} \begin{proof} Notice $ <nat:4> = <nat:2> ^ <nat:2> $ . Hence , <nat:4> is the exponential of some integer $ <var:G> $ raised to the degree <nat:2> is true has been proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:G> : nat , ( <nat:4> = <var:G> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

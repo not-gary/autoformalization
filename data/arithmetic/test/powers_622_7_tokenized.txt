@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:128> is the raising of between number $ <var:d> \in \mathbb{Z}^+ $ raised to the power <nat:7> satisfying the condition that $ <var:d> $ larger than <nat:1> . \end{theorem} \begin{proof} Allow $ <var:d> = <nat:2> $ . We demonstrate the formula holds in consideration of $ <nat:128> = <var:d> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <nat:128> = <var:d> ^ <nat:7> ) /\ ( <var:d> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

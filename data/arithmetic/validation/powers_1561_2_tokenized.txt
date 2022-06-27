@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:z> ^ <nat:2> $ is $ <nat:4> $ satisfying the condition that $ <var:z> $ larger than <nat:1> . \end{theorem} \begin{proof} Allow $ <var:z> = <nat:2> $ . Observe $ <nat:4> = <nat:2> ^ <nat:2> $ . This gives the statement is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:z> : nat , ( <var:z> ^ <nat:2> = <nat:4> ) /\ ( <var:z> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

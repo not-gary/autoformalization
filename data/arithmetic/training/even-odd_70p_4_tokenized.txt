@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> + <var:p> \cdot <nat:70> $ is even given any variables $ <var:p> $ . \end{theorem} \begin{proof} We know that the whole number $ <nat:70> $ is trivially even \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:p> : nat , Nat . even ( <nat:70> * <var:p> + <nat:4> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:70> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

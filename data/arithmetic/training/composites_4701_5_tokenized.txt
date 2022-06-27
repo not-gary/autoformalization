@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:p> \times <var:u> \times <var:r> \times <var:A> \times <var:a> = <nat:16128> $ . \end{theorem} \begin{proof} Take $ <var:A> = <nat:4> $ , $ <var:a> = <nat:12> $ , $ <var:r> = <nat:6> $ , $ <var:u> = <nat:8> $ and $ <var:p> = <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:a> <var:A> <var:u> <var:p> <var:r> : nat , ( <var:p> * <var:u> * <var:r> * <var:A> * <var:a> = <nat:16128> ) . Proof . exists <nat:12> . exists <nat:4> . exists <nat:8> . exists <nat:7> . exists <nat:6> . repeat split . all : lia . Qed . 

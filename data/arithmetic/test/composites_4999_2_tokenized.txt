@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some $ <var:b> $ and $ <var:I> $ where the positive integer <nat:30> is the multiplication of natural numbers $ <var:b> $ , $ <var:I> $ . \end{theorem} \begin{proof} Let $ <var:I> = <nat:6> $ and $ <var:b> = <nat:5> $ . Note that $ <nat:30> = <var:b> \cdot <var:I> = <nat:5> \cdot <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:b> <var:I> : nat , ( <nat:30> = <var:b> * <var:I> ) . Proof . exists <nat:5> . exists <nat:6> . lia . Qed . 

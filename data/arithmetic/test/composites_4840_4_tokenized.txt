@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:J> $ , $ <var:I> $ , $ <var:j> $ and $ <var:c> \in \mathbb{N} $ such that the number <nat:840> is the multiplication between numbers $ <var:J> $ , $ <var:I> $ , $ <var:j> $ , $ <var:c> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Allow $ <var:j> = <nat:4> $ , $ <var:c> = <nat:5> $ , $ <var:I> = <nat:7> $ , and $ <var:J> = <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:J> <var:I> <var:j> <var:c> : nat , ( <nat:840> = <var:J> * <var:I> * <var:j> * <var:c> ) . Proof . exists <nat:6> . exists <nat:7> . exists <nat:4> . exists <nat:5> . repeat split . all : lia . Qed . 

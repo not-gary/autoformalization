@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:u> $ as numbers where $ <nat:4> = <var:u> ^ <nat:2> $ . \end{theorem} \begin{proof} We present <nat:4> is the raising of between $ <var:u> \in \mathbb{Z}^+ $ taken to the degree <nat:2> . Observe that $ <nat:4> = <var:u> ^ <nat:2> $ yields $ <var:u> = <nat:2> $ . This hints our result is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <nat:4> = <var:u> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

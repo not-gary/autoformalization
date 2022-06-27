@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:h> \cdot <nat:316> + <var:V> \cdot <nat:126> + <var:a> \cdot <nat:432> + <nat:364> + <var:x> \cdot <nat:122> $ is even . \end{theorem} \begin{proof} See the summing of even integers together is even . It can be verified that the result is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:h> <var:V> <var:a> <var:x> : nat , Nat . even ( <nat:316> * <var:h> + <nat:126> * <var:V> + <nat:432> * <var:a> + <nat:122> * <var:x> + <nat:364> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

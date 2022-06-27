@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> * <var:a> + <nat:9> $ is an odd integer for any $ <var:a> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Since $ <nat:4> $ is even , $ <nat:4> * <var:a> $ is even . Clearly , $ <nat:9> $ is odd . The sum of an even integer with an odd integer is an odd integer . Thus , the expression is odd . \end{proof} \end{document}
-~
-Proof

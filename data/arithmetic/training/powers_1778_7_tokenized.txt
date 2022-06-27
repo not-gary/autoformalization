@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:128> is the raising of between number $ <var:V> $ repeatedly multiplied to the power <nat:7> . \end{theorem} \begin{proof} Take $ <var:V> = <nat:2> $ . Observe that $ <var:V> ^ <nat:7> = <nat:128> $ . Therefore , $ <var:V> ^ <nat:7> = <nat:128> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <nat:128> = <var:V> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

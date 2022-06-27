@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:T> * <nat:280> + <nat:480> $ is guaranteed to be even assuming some positive integers $ <var:T> $ . \end{theorem} \begin{proof} The positive integer $ <nat:280> $ is trivially an even integer \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:T> : nat , Nat . even ( <nat:280> * <var:T> + <nat:480> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:280> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

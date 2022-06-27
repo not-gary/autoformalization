@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking natural terms $ <var:W> $ , and $ <var:J> $ $ <nat:276> + <var:J> \cdot <nat:8> + <nat:458> \cdot <var:W> $ is even . \end{theorem} \begin{proof} It can be checked that $ <nat:276> + <nat:458> \times <var:W> + <nat:8> \times <var:J> $ will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:W> <var:J> : nat , Nat . even ( <nat:8> * <var:J> + <nat:458> * <var:W> + <nat:276> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

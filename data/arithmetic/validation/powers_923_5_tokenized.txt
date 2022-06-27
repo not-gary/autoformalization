@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:I> $ are numbers so that $ <nat:32> $ equals $ <var:I> ^ <nat:5> $ . \end{theorem} \begin{proof} Allow $ <var:I> = <nat:2> $ . This indicates the formula holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:I> : nat , ( <nat:32> = <var:I> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

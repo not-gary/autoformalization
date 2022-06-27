@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:z> <nat:450> + <nat:199> $ is odd with every positive terms $ <var:z> $ . \end{theorem} \begin{proof} Observe that the natural number $ <nat:450> $ is clearly an even number in $ \mathbb{Z}^+ $ \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:z> : nat , Nat . odd ( <nat:450> * <var:z> + <nat:199> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:450> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:189> + <nat:250> \times <var:G> + <var:a> \times <nat:142> $ is guaranteed to be odd . \end{theorem} \begin{proof} Lemma must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:G> <var:a> : nat , Nat . odd ( <nat:250> * <var:G> + <nat:142> * <var:a> + <nat:189> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

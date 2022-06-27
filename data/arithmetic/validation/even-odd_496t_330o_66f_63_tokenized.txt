@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:496> <var:t> + <var:o> <nat:330> + <nat:63> + <var:f> <nat:66> $ must be odd . \end{theorem} \begin{proof} Observe that the summing between an even number in $ \mathbb{Z}^+ $ and an odd positive integer will be an odd number in $ \mathbb{Z}^+ $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:t> <var:o> <var:f> : nat , Nat . odd ( <nat:496> * <var:t> + <nat:330> * <var:o> + <nat:66> * <var:f> + <nat:63> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

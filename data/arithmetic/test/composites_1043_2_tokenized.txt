@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:T> $ and $ <var:H> $ as numbers . the integer <nat:50> is the product of numbers $ <var:T> $ and $ <var:H> $ . \end{theorem} \begin{proof} We justify the thesis holds as $ <var:H> \cdot <var:T> = <nat:50> $ hints $ <var:T> = <nat:10> $ , $ <var:H> = <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:T> <var:H> : nat , ( <nat:50> = <var:T> * <var:H> ) . Proof . exists <nat:10> . exists <nat:5> . lia . Qed . 

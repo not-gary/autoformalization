@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:63> $ is equal to $ <var:H> \times <var:d> $ . \end{theorem} \begin{proof} Notice $ <nat:63> = <var:d> \times <var:H> $ implies $ <var:d> = <nat:7> $ , $ <var:H> = <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:d> <var:H> : nat , ( <nat:63> = <var:H> * <var:d> ) . Proof . exists <nat:7> . exists <nat:9> . lia . Qed . 

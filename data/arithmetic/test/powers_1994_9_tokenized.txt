@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:a> $ are whole numbers . <nat:512> is the repeated product between natural number $ <var:a> $ raised to the exponent <nat:9> . \end{theorem} \begin{proof} Let $ <var:a> = <nat:2> $ . We present $ <var:a> ^ <nat:9> = <nat:512> $ . Observe that $ <nat:2> ^ <nat:9> = <nat:512> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:a> : nat , ( <nat:512> = <var:a> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

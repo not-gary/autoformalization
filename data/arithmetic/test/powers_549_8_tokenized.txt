@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:K> $ be whole numbers such that $ <var:K> $ more than <nat:1> as well as where the whole number <nat:256> is the exponent of $ <var:K> $ repeatedly multiplied to the exponential <nat:8> . \end{theorem} \begin{proof} Assume $ <var:K> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <var:K> > <nat:1> ) /\ ( <nat:256> = <var:K> ^ <nat:8> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:A> \cdot <var:R> $ equals $ <nat:28> $ satisfying the condition that $ <var:A> $ , $ <var:R> $ more than <nat:1> . \end{theorem} \begin{proof} We verify $ <var:A> \cdot <var:R> = <nat:28> $ . Notice $ <nat:28> = <var:R> \times <var:A> $ indicates $ <var:A> = <nat:4> $ and $ <var:R> = <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:R> <var:A> : nat , ( <var:A> * <var:R> = <nat:28> ) /\ ( <var:A> > <nat:1> ) /\ ( <var:R> > <nat:1> ) . Proof . exists <nat:7> . exists <nat:4> . lia . Qed . 

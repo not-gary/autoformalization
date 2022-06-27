@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:h> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:h> $ greater than <nat:1> as well as where the natural number <nat:128> is the repeated multiplication of natural number $ <var:h> \in \mathbb{Z}^+ $ repeatedly multiplied to the power <nat:7> . \end{theorem} \begin{proof} Observe that $ <nat:128> = <nat:2> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:h> : nat , ( <var:h> > <nat:1> ) /\ ( <nat:128> = <var:h> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

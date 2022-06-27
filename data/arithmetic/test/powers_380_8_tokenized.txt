@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:o> \in \mathbb{N} $ so that $ <var:o> > <nat:1> $ plus satisfying the condition that the number <nat:256> is the exponential of natural number $ <var:o> \in \mathbb{Z}^+ $ taken to the exponent <nat:8> . \end{theorem} \begin{proof} Assume $ <var:o> = <nat:2> $ . Note $ <nat:256> = <var:o> ^ <nat:8> $ . This yields the theory holds . Therefore , $ <var:o> ^ <nat:8> = <nat:256> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:o> : nat , ( <var:o> > <nat:1> ) /\ ( <nat:256> = <var:o> ^ <nat:8> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

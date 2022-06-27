@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:y> $ where $ <var:y> $ greater than <nat:1> as well as satisfying the condition that <nat:128> is the exponent of number $ <var:y> $ taken to the exponent <nat:7> . \end{theorem} \begin{proof} We prove $ <nat:128> = <var:y> ^ <nat:7> $ . We prove our statement is true in consideration of $ <nat:128> = <var:y> ^ <nat:7> $ hints $ <var:y> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:y> : nat , ( <var:y> > <nat:1> ) /\ ( <nat:128> = <var:y> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

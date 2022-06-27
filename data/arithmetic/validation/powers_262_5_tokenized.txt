@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:32> $ is equal to $ <var:G> ^ <nat:5> $ with $ <var:G> $ such that $ <var:G> \geq <nat:2> $ . \end{theorem} \begin{proof} Notice $ <nat:2> \geq <nat:2> $ . Plus observe that moreover $ <nat:32> = <var:G> ^ <nat:5> $ hints $ <var:G> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:G> : nat , ( <nat:32> = <var:G> ^ <nat:5> ) /\ ( <var:G> >= <nat:2> ) . Proof . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } exists <nat:2> . split . auto . apply <genH> . Qed . 

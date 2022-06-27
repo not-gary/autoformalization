@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:770> is the product between integers $ <var:j> $ , $ <var:l> $ , $ <var:N> \in \mathbb{N} $ . \end{theorem} \begin{proof} Take $ <var:j> = <nat:10> $ , $ <var:l> = <nat:11> $ , and $ <var:N> = <nat:7> $ . We verify $ <var:l> * <var:N> * <var:j> = <nat:770> $ . Observe that $ <nat:770> = <var:N> * <var:j> * <var:l> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:j> <var:l> <var:N> : nat , ( <nat:770> = <var:j> * <var:l> * <var:N> ) . Proof . exists <nat:10> . exists <nat:11> . exists <nat:7> . repeat split . all : lia . Qed . 

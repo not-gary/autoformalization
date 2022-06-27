@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:70> is the product between numbers $ <var:f> $ and $ <var:h> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:f> $ and $ <var:h> $ larger than <nat:1> . \end{theorem} \begin{proof} Assume $ <var:f> = <nat:10> $ and $ <var:h> = <nat:7> $ . We justify our theorem holds considering $ <var:f> * <var:h> = <nat:70> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:f> <var:h> : nat , ( <nat:70> = <var:f> * <var:h> ) /\ ( <var:f> > <nat:1> ) /\ ( <var:h> > <nat:1> ) . Proof . exists <nat:10> . exists <nat:7> . lia . Qed . 

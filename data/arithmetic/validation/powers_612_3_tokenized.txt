@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} We denote that $ <var:O> $ is a <def:cube> number given with some integer $ <var:L> $ we have $ <var:O> = <var:L> ^ <nat:3> $ with some positive integer $ <var:O> $ . \end{definition} \begin{theorem} The natural number <nat:8> is a <def:cube> whole number . \end{theorem} \begin{proof} Allow $ <var:L> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:O> : nat ) := exists <var:L> : nat , ( <var:O> = <var:L> ^ <nat:3> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

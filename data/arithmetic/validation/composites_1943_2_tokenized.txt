@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:90> is the product of numbers $ <var:Y> $ and $ <var:a> \in \mathbb{N} $ . \end{theorem} \begin{proof} We demonstrate our proposition holds considering $ <nat:90> = <nat:9> \times <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Y> <var:a> : nat , ( <nat:90> = <var:Y> * <var:a> ) . Proof . exists <nat:10> . exists <nat:9> . lia . Qed . 

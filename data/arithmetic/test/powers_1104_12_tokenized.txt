@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:4096> is the raising of between number $ <var:n> $ raised to the degree <nat:12> . \end{theorem} \begin{proof} Take $ <var:n> = <nat:2> $ . Note that $ <var:n> ^ <nat:12> = <nat:4096> $ . As a result , <nat:4096> is the raising of between $ <var:n> \in \mathbb{Z}^+ $ taken to the exponent <nat:12> is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <nat:4096> = <var:n> ^ <nat:12> ) . Proof . exists <nat:2> . auto . Qed . 

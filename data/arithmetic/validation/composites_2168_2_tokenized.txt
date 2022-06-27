@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:y> \cdot <var:r> $ is $ <nat:14> $ . \end{theorem} \begin{proof} Take $ <var:r> = <nat:7> $ , and $ <var:y> = <nat:2> $ . Notice $ <nat:14> = <var:y> \cdot <var:r> $ . This indicates the belief holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:y> <var:r> : nat , ( <var:y> * <var:r> = <nat:14> ) . Proof . exists <nat:2> . exists <nat:7> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using all natural numbers $ <var:u> $ the expression $ <var:u> <nat:488> + <nat:334> $ will be even . \end{theorem} \begin{proof} Theorem trivially must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:u> : nat , Nat . even ( <nat:488> * <var:u> + <nat:334> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

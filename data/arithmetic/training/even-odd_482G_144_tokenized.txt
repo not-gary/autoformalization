@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:144> + <var:G> * <nat:482> $ must be even . \end{theorem} \begin{proof} The integer $ <nat:482> $ is trivially even Recall $ <nat:144> $ is clearly even . We demonstrate this result holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:G> : nat , Nat . even ( <nat:482> * <var:G> + <nat:144> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:482> = true ) . { auto . } assert ( <genH> : Nat . even <nat:144> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . rewrite <genH> . auto . Qed . 

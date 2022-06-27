@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some $ <var:f> $ and $ <var:Y> $ satisfying the condition that $ <nat:20> $ is equivalent to $ <var:Y> \cdot <var:f> $ . \end{theorem} \begin{proof} Take $ <var:f> = <nat:2> $ and $ <var:Y> = <nat:10> $ . We demonstrate $ <var:f> \times <var:Y> = <nat:20> $ . We show the statement is valid considering $ <nat:20> = <nat:10> * <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:f> <var:Y> : nat , ( <nat:20> = <var:Y> * <var:f> ) . Proof . exists <nat:2> . exists <nat:10> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:M> ^ <nat:3> $ is equal to $ <nat:8> $ with $ <var:M> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:M> \geq <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:M> = <nat:2> $ . Note that $ <nat:2> \geq <nat:2> $ . So , <nat:8> is the exponent between some $ <var:M> $ taken to the exponential <nat:3> has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:M> : nat , ( <var:M> ^ <nat:3> = <nat:8> ) /\ ( <var:M> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

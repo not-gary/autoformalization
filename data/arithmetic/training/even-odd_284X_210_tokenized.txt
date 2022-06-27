@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking any variables $ <var:X> $ the summation $ <nat:284> \cdot <var:X> + <nat:210> $ is guaranteed to be even . \end{theorem} \begin{proof} Claim clearly holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:X> : nat , Nat . even ( <nat:284> * <var:X> + <nat:210> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

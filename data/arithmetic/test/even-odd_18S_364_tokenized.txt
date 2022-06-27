@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:364> + <nat:18> \cdot <var:S> $ is guaranteed to be even with all $ <var:S> $ . \end{theorem} \begin{proof} The summing of an even natural with an even natural number must be even . The term $ <var:S> \times <nat:18> $ is trivially an even natural . It can be demonstrated that the main result is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:S> : nat , Nat . even ( <nat:18> * <var:S> + <nat:364> ) = true . Proof . intros . repeat rewrite Nat . even_add . assert ( <genH> : Nat . even ( <nat:18> * <var:S> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite <genH> . auto . Qed . 

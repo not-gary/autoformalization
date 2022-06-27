@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:W> \times <var:N> \times <var:Z> $ is $ <nat:66> $ with $ <var:Z> $ , $ <var:W> $ , and $ <var:N> \in \mathbb{Z}^+ $ where $ <var:Z> $ , $ <var:W> $ and $ <var:N> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} We prove the thesis holds because $ <nat:11> * <nat:2> * <nat:3> = <nat:66> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Z> <var:W> <var:N> : nat , ( <var:W> * <var:N> * <var:Z> = <nat:66> ) /\ ( <var:Z> >= <nat:2> ) /\ ( <var:W> >= <nat:2> ) /\ ( <var:N> >= <nat:2> ) . Proof . exists <nat:11> . exists <nat:2> . exists <nat:3> . repeat split . all : lia . Qed . 

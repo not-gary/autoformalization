@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:16> = <var:x> ^ <nat:4> $ assuming $ <var:x> $ so that $ <var:x> > <nat:1> $ . \end{theorem} \begin{proof} Observe $ <var:x> ^ <nat:4> = <nat:16> $ implies $ <var:x> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:x> : nat , ( <nat:16> = <var:x> ^ <nat:4> ) /\ ( <var:x> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

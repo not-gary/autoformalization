@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:99> is the product of $ <var:a> $ , $ <var:b> \in \mathbb{N} $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} <nat:99> is the product of the factors <nat:3> and <nat:33> , thus the theorem is proven . \end{proof} \end{document}
-~
-Proof

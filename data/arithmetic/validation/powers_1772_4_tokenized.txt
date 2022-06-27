@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:16> = <var:t> ^ <nat:4> $ given $ <var:t> \in \mathbb{Z}^+ $ such that $ <var:t> $ larger than <nat:1> . \end{theorem} \begin{proof} Observe that $ <var:t> ^ <nat:4> = <nat:16> $ produces $ <var:t> = <nat:2> $ . This produces the statement is valid . Thus , $ <var:t> $ is more than <nat:1> as well as $ <nat:16> = <var:t> ^ <nat:4> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <nat:16> = <var:t> ^ <nat:4> ) /\ ( <var:t> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

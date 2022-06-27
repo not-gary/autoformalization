@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:A> $ as numbers so that $ <var:A> > <nat:1> $ as well as where $ <nat:4> $ is equivalent to $ <var:A> ^ <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:A> = <nat:2> $ . We confirm $ <nat:4> = <var:A> ^ <nat:2> $ as well as $ <var:A> $ is larger than <nat:1> . Notice $ <var:A> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:A> : nat , ( <var:A> > <nat:1> ) /\ ( <nat:4> = <var:A> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

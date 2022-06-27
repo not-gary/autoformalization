@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:42> is the product of natural numbers $ <var:Z> $ , and $ <var:l> \in \mathbb{N} $ . \end{theorem} \begin{proof} We confirm <nat:42> is the product between $ <var:l> $ , and $ <var:Z> \in \mathbb{N} $ . Notice that $ <nat:42> = <nat:7> * <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Z> <var:l> : nat , ( <nat:42> = <var:Z> * <var:l> ) . Proof . exists <nat:6> . exists <nat:7> . lia . Qed . 

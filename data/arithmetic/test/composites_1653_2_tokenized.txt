@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:39> $ is equal to $ <var:P> \cdot <var:Q> $ for $ <var:P> $ , and $ <var:Q> \in \mathbb{N} $ . \end{theorem} \begin{proof} Assume $ <var:Q> = <nat:13> $ , and $ <var:P> = <nat:3> $ . We verify our statement is true because $ <var:Q> \cdot <var:P> = <nat:39> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:P> <var:Q> : nat , ( <nat:39> = <var:P> * <var:Q> ) . Proof . exists <nat:3> . exists <nat:13> . lia . Qed . 

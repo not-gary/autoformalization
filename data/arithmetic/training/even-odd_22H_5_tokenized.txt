@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given unknowns $ <var:H> $ $ <var:H> \cdot <nat:22> + <nat:5> $ is odd . \end{theorem} \begin{proof} Claim is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:H> : nat , Nat . odd ( <nat:22> * <var:H> + <nat:5> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

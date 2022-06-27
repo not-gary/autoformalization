@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:36> is the product of natural numbers $ <var:j> $ , $ <var:p> $ . \end{theorem} \begin{proof} We confirm <nat:36> is the product of some $ <var:p> $ , $ <var:j> $ . Note $ <var:p> \cdot <var:j> = <nat:36> $ suggests $ <var:j> = <nat:9> $ , and $ <var:p> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:j> <var:p> : nat , ( <nat:36> = <var:j> * <var:p> ) . Proof . exists <nat:9> . exists <nat:4> . lia . Qed . 

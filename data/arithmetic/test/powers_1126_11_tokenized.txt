@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:D> \in \mathbb{Z}^+ $ where $ <nat:2048> $ is the same as $ <var:D> ^ <nat:11> $ . \end{theorem} \begin{proof} We confirm our principle holds for $ <nat:2> ^ <nat:11> = <var:D> ^ <nat:11> = <nat:2048> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:D> : nat , ( <nat:2048> = <var:D> ^ <nat:11> ) . Proof . exists <nat:2> . auto . Qed . 

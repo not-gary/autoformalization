@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:y> $ and $ <var:q> $ satisfying the condition that $ <var:q> $ , $ <var:y> $ larger than <nat:1> as well as satisfying the condition that $ <nat:77> $ is the same as $ <var:q> * <var:y> $ . \end{theorem} \begin{proof} Take $ <var:q> = <nat:7> $ , and $ <var:y> = <nat:11> $ . Note $ <nat:77> = <var:y> \cdot <var:q> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:y> <var:q> : nat , ( <var:q> > <nat:1> ) /\ ( <var:y> > <nat:1> ) /\ ( <nat:77> = <var:q> * <var:y> ) . Proof . exists <nat:11> . exists <nat:7> . lia . Qed . 

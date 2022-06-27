@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:144> + <var:X> * <nat:446> $ is even given some natural numbers $ <var:X> $ . \end{theorem} \begin{proof} The summing of even numbers successively is guaranteed to be even . We justify this claim must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:X> : nat , Nat . even ( <nat:446> * <var:X> + <nat:144> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

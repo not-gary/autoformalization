@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:i> \in \mathbb{N} $ satisfying the condition that $ <var:i> \geq <nat:2> $ plus so that $ <nat:64> $ is $ <var:i> ^ <nat:6> $ . \end{theorem} \begin{proof} We confirm the theory holds because $ <nat:64> = <var:i> ^ <nat:6> $ produces $ <var:i> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:i> : nat , ( <var:i> >= <nat:2> ) /\ ( <nat:64> = <var:i> ^ <nat:6> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

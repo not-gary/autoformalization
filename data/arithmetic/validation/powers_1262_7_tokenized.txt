@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:128> is the repeated multiplication between number $ <var:S> \in \mathbb{N} $ exponentiated to the power <nat:7> . \end{theorem} \begin{proof} We verify <nat:128> is the exponential of $ <var:S> \in \mathbb{N} $ repeatedly multiplied to the exponent <nat:7> . Note that $ <var:S> ^ <nat:7> = <nat:128> $ gives $ <var:S> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <nat:128> = <var:S> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

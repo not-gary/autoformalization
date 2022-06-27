@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:u> $ , and $ <var:Q> \in \mathbb{Z}^+ $ so that $ <var:Q> $ and $ <var:u> $ greater than <nat:1> . $ <nat:39> $ is equivalent to $ <var:u> \cdot <var:Q> $ . \end{theorem} \begin{proof} Notice $ <nat:39> = <var:Q> * <var:u> $ gives $ <var:Q> = <nat:3> $ and $ <var:u> = <nat:13> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:u> <var:Q> : nat , ( <var:Q> > <nat:1> ) /\ ( <var:u> > <nat:1> ) /\ ( <nat:39> = <var:u> * <var:Q> ) . Proof . exists <nat:13> . exists <nat:3> . lia . Qed . 

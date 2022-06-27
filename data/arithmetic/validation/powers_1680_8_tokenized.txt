@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:v> ^ <nat:8> = <nat:256> $ given $ <var:v> \in \mathbb{N} $ where $ <var:v> $ more than or equal to <nat:2> . \end{theorem} \begin{proof} Take $ <var:v> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:v> : nat , ( <var:v> ^ <nat:8> = <nat:256> ) /\ ( <var:v> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

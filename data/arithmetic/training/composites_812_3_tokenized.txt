@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some positive integers $ <var:Y> $ , $ <var:C> $ and $ <var:c> $ so that $ <var:Y> \times <var:C> \times <var:c> $ is equal to $ <nat:560> $ . \end{theorem} \begin{proof} Let $ <var:c> = <nat:8> $ , $ <var:Y> = <nat:10> $ and $ <var:C> = <nat:7> $ . We justify $ <nat:560> = <var:c> \cdot <var:Y> \cdot <var:C> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Y> <var:C> <var:c> : nat , ( <var:Y> * <var:C> * <var:c> = <nat:560> ) . Proof . exists <nat:10> . exists <nat:7> . exists <nat:8> . repeat split . all : lia . Qed . 

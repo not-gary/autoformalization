@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:334> + <var:N> * <nat:338> $ is even for some integers $ <var:N> $ . \end{theorem} \begin{proof} The summing of even natural numbers together will be fundamentally an even number . See that the term $ <var:N> \cdot <nat:338> $ is trivially even . We prove our main result holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:N> : nat , Nat . even ( <nat:338> * <var:N> + <nat:334> ) = true . Proof . intros . repeat rewrite Nat . even_add . assert ( <genH> : Nat . even ( <nat:338> * <var:N> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:240> $ equals $ <var:B> \times <var:u> \times <var:H> $ so that $ <var:u> $ , $ <var:H> $ , and $ <var:B> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} Notice $ <nat:240> = <nat:10> \cdot <nat:4> \cdot <nat:6> = <var:u> \cdot <var:H> \cdot <var:B> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:B> <var:u> <var:H> : nat , ( <nat:240> = <var:B> * <var:u> * <var:H> ) /\ ( <var:u> >= <nat:2> ) /\ ( <var:H> >= <nat:2> ) /\ ( <var:B> >= <nat:2> ) . Proof . exists <nat:6> . exists <nat:10> . exists <nat:4> . repeat split . all : lia . Qed . 

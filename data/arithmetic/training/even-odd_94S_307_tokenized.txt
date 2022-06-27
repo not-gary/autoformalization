@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking every terms $ <var:S> $ $ <var:S> \times <nat:94> + <nat:307> $ must be odd . \end{theorem} \begin{proof} Take note $ <var:S> * <nat:94> $ is an even natural . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:S> : nat , Nat . odd ( <nat:94> * <var:S> + <nat:307> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:94> * <var:S> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

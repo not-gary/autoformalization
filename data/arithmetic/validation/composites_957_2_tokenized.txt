@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:F> $ and $ <var:u> \in \mathbb{N} $ so that $ <var:F> $ , $ <var:u> $ greater than <nat:1> plus so that the whole number <nat:44> is the product between integers $ <var:F> $ , and $ <var:u> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We present our statement holds for $ <var:u> \cdot <var:F> = <nat:44> $ implies $ <var:u> = <nat:4> $ and $ <var:F> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:F> <var:u> : nat , ( <var:F> > <nat:1> ) /\ ( <var:u> > <nat:1> ) /\ ( <nat:44> = <var:F> * <var:u> ) . Proof . exists <nat:11> . exists <nat:4> . lia . Qed . 

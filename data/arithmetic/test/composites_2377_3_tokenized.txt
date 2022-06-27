@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some integers $ <var:n> $ , $ <var:z> $ , $ <var:v> $ where $ <nat:616> $ is equal to $ <var:z> \times <var:n> \times <var:v> $ . \end{theorem} \begin{proof} Assume $ <var:n> = <nat:11> $ , $ <var:z> = <nat:7> $ , and $ <var:v> = <nat:8> $ . We justify our principle is true for $ <var:z> * <var:v> * <var:n> = <nat:616> $ . Thus , $ <var:v> * <var:n> * <var:z> = <nat:616> $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:n> <var:z> <var:v> : nat , ( <nat:616> = <var:z> * <var:n> * <var:v> ) . Proof . exists <nat:11> . exists <nat:7> . exists <nat:8> . repeat split . all : lia . Qed . 

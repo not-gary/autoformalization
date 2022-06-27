@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:X> \in \mathbb{Z}^+ $ such that $ <var:X> > <nat:1> $ plus such that <nat:32> is the raising of between positive integer $ <var:X> \in \mathbb{N} $ repeatedly multiplied to the exponential <nat:5> . \end{theorem} \begin{proof} Notice $ <nat:32> = <var:X> ^ <nat:5> $ produces $ <var:X> = <nat:2> $ . This suggests the principle holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:X> : nat , ( <var:X> > <nat:1> ) /\ ( <nat:32> = <var:X> ^ <nat:5> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

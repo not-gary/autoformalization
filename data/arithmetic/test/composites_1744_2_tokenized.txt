@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:i> \cdot <var:o> $ is equal to $ <nat:117> $ with $ <var:o> $ and $ <var:i> $ . \end{theorem} \begin{proof} Note $ <nat:13> * <nat:9> = <nat:117> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:o> <var:i> : nat , ( <var:i> * <var:o> = <nat:117> ) . Proof . exists <nat:13> . exists <nat:9> . lia . Qed . 

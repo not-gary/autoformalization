@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:128> is the repeated product of number $ <var:P> $ taken to the exponential <nat:7> such that $ <var:P> \geq <nat:2> $ . \end{theorem} \begin{proof} Observe that $ <var:P> ^ <nat:7> = <nat:128> $ hints $ <var:P> = <nat:2> $ . This hints the result is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:P> : nat , ( <nat:128> = <var:P> ^ <nat:7> ) /\ ( <var:P> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:Q> $ as natural numbers so that the natural number <nat:16> is the exponent of $ <var:Q> $ repeatedly multiplied to the degree <nat:4> . \end{theorem} \begin{proof} Observe that $ <nat:16> = <nat:2> ^ <nat:4> $ . This yields our result holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Q> : nat , ( <nat:16> = <var:Q> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

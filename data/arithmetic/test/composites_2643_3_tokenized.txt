@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:S> * <var:v> * <var:M> $ is equal to $ <nat:192> $ . \end{theorem} \begin{proof} Allow $ <var:S> = <nat:8> $ , $ <var:v> = <nat:2> $ , $ <var:M> = <nat:12> $ . This hints the proposition is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:S> <var:M> <var:v> : nat , ( <var:S> * <var:v> * <var:M> = <nat:192> ) . Proof . exists <nat:8> . exists <nat:12> . exists <nat:2> . repeat split . all : lia . Qed . 

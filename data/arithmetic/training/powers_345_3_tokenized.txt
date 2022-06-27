@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:J> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:J> ^ <nat:3> = <nat:8> $ . \end{theorem} \begin{proof} Assume $ <var:J> = <nat:2> $ . We demonstrate <nat:8> is the raising of between some integer $ <var:J> $ exponentiated to the exponential <nat:3> . We prove the formula holds in view of $ <nat:2> ^ <nat:3> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:J> : nat , ( <var:J> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:f> $ , $ <var:h> $ , $ <var:Y> $ as whole numbers where $ <var:h> \cdot <var:f> \cdot <var:Y> = <nat:600> $ . \end{theorem} \begin{proof} Note that $ <nat:10> \cdot <nat:12> \cdot <nat:5> = <nat:600> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:f> <var:h> <var:Y> : nat , ( <var:h> * <var:f> * <var:Y> = <nat:600> ) . Proof . exists <nat:12> . exists <nat:10> . exists <nat:5> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:D> \cdot <nat:194> + <nat:268> $ is even given some $ <var:D> \in \mathbb{N} $ . \end{theorem} \begin{proof} Take note that $ <nat:268> $ is trivially an even integer . It can be demonstrated that the formula $ <var:D> <nat:194> + <nat:268> $ will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:D> : nat , Nat . even ( <nat:194> * <var:D> + <nat:268> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:268> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

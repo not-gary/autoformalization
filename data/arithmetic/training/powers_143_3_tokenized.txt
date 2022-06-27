@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:8> is the exponent between $ <var:q> \in \mathbb{Z}^+ $ taken to the power <nat:3> satisfying the condition that $ <var:q> > <nat:1> $ . \end{theorem} \begin{proof} Allow $ <var:q> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:q> : nat , ( <nat:8> = <var:q> ^ <nat:3> ) /\ ( <var:q> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

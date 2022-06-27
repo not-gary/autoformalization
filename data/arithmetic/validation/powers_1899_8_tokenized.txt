@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:256> is the exponent between $ <var:L> \in \mathbb{N} $ raised to the degree <nat:8> such that $ <var:L> \geq <nat:2> $ . \end{theorem} \begin{proof} Take $ <var:L> = <nat:2> $ . Notice that $ <nat:2> $ is larger than or equivalent to <nat:2> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:L> : nat , ( <nat:256> = <var:L> ^ <nat:8> ) /\ ( <var:L> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:n> $ satisfying the condition that $ <var:n> > <nat:1> $ plus such that $ <var:n> ^ <nat:3> $ equals $ <nat:8> $ . \end{theorem} \begin{proof} We demonstrate <nat:8> is the exponent between $ <var:n> \in \mathbb{N} $ repeatedly multiplied to the exponential <nat:3> . Note $ <var:n> ^ <nat:3> = <nat:8> $ produces $ <var:n> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <var:n> > <nat:1> ) /\ ( <var:n> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

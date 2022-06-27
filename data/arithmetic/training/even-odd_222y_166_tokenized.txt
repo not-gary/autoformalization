@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:166> + <var:y> * <nat:222> $ will be even with some integers $ <var:y> $ . \end{theorem} \begin{proof} The product $ <var:y> \times <nat:222> $ is guaranteed to be even . Take note that the adding between even positive integers concurrently is guaranteed to be by definition an even positive integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:y> : nat , Nat . even ( <nat:222> * <var:y> + <nat:166> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:222> * <var:y> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

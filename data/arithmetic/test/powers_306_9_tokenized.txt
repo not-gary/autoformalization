@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:i> \in \mathbb{Z}^+ $ where the natural number <nat:512> is the repeated multiplication between $ <var:i> \in \mathbb{Z}^+ $ taken to the exponent <nat:9> . \end{theorem} \begin{proof} Let $ <var:i> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:i> : nat , ( <nat:512> = <var:i> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

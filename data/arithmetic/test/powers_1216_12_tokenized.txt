@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:D> \in \mathbb{N} $ so that $ <var:D> \geq <nat:2> $ as well as so that <nat:4096> is the repeated product of $ <var:D> \in \mathbb{N} $ raised to the degree <nat:12> . \end{theorem} \begin{proof} Allow $ <var:D> = <nat:2> $ . We prove the statement holds on account of $ <var:D> ^ <nat:12> = <nat:4096> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:D> : nat , ( <var:D> >= <nat:2> ) /\ ( <nat:4096> = <var:D> ^ <nat:12> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

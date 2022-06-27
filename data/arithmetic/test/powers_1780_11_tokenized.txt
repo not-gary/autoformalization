@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some positive integer $ <var:r> $ satisfying the condition that $ <var:r> ^ <nat:11> = <nat:2048> $ . \end{theorem} \begin{proof} Assume $ <var:r> = <nat:2> $ . We demonstrate the thesis is true seeing that $ <nat:2048> = <nat:2> ^ <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:r> : nat , ( <var:r> ^ <nat:11> = <nat:2048> ) . Proof . exists <nat:2> . auto . Qed . 

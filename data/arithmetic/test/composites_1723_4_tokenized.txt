@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:H> * <var:r> * <var:D> * <var:y> $ is equal to $ <nat:792> $ . \end{theorem} \begin{proof} Allow $ <var:y> = <nat:4> $ , $ <var:D> = <nat:9> $ , $ <var:r> = <nat:11> $ , $ <var:H> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:y> <var:r> <var:D> <var:H> : nat , ( <var:H> * <var:r> * <var:D> * <var:y> = <nat:792> ) . Proof . exists <nat:4> . exists <nat:11> . exists <nat:9> . exists <nat:2> . repeat split . all : lia . Qed . 

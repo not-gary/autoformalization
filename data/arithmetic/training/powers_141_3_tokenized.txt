@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:t> \in \mathbb{Z}^+ $ so that $ <var:t> $ larger than <nat:1> as well as so that $ <var:t> ^ <nat:3> $ is equal to $ <nat:8> $ . \end{theorem} \begin{proof} We justify <nat:8> is the exponential between $ <var:t> \in \mathbb{N} $ repeatedly multiplied to the degree <nat:3> . We verify the thesis is valid by reason of $ <nat:8> = <var:t> ^ <nat:3> $ indicates $ <var:t> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <var:t> > <nat:1> ) /\ ( <var:t> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:85> + <var:b> \times <nat:124> $ is guaranteed to be odd . \end{theorem} \begin{proof} We know the leading term $ <nat:124> $ is known as an even number in $ \mathbb{N} $ \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:b> : nat , Nat . odd ( <nat:124> * <var:b> + <nat:85> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:124> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

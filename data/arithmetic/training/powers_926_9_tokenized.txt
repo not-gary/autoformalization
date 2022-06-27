@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} We assume that $ <var:G> $ is a <def:enneract> number granted there exists $ <var:y> \in \mathbb{N} $ so that $ <var:y> ^ <nat:9> = <var:G> $ assuming $ <var:G> \in \mathbb{N} $ . Hence the integer <nat:512> is a <def:enneract> integer . \end{theorem} \begin{proof} Take $ <var:y> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:enneract> ( <var:G> : nat ) := exists <var:y> : nat , ( <var:y> ^ <nat:9> = <var:G> ) . Theorem <genP:1> : <def:enneract> <nat:512> . Proof . unfold <def:enneract> . exists <nat:2> . auto . Qed . 

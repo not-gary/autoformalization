@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given terms $ <var:j> $ the sum $ <var:j> * <nat:134> + <nat:325> $ must be odd . \end{theorem} \begin{proof} Notice that $ <nat:325> $ is known as an odd whole number . The summing between an even element of $ \mathbb{N} $ and an odd number in $ \mathbb{Z}^+ $ is odd . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:j> : nat , Nat . odd ( <nat:134> * <var:j> + <nat:325> ) = true . Proof . intros . assert ( <genH> : Nat . odd <nat:325> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

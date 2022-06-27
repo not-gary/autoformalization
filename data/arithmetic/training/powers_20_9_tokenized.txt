@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:w> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:w> \geq <nat:2> $ and so that the integer <nat:512> is the repeated multiplication between positive integer $ <var:w> \in \mathbb{Z}^+ $ taken to the degree <nat:9> . \end{theorem} \begin{proof} Let $ <var:w> = <nat:2> $ . Observe that $ <nat:512> = <var:w> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:w> : nat , ( <var:w> >= <nat:2> ) /\ ( <nat:512> = <var:w> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

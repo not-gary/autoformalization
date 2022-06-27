@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:360> is the product between $ <var:C> $ , $ <var:w> $ , $ <var:s> $ . \end{theorem} \begin{proof} Let $ <var:w> = <nat:3> $ , $ <var:s> = <nat:10> $ and $ <var:C> = <nat:12> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:w> <var:s> : nat , ( <nat:360> = <var:C> * <var:w> * <var:s> ) . Proof . exists <nat:12> . exists <nat:3> . exists <nat:10> . repeat split . all : lia . Qed . 

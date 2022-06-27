@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:344> <var:n> + <nat:356> $ is even given every variables $ <var:n> $ . \end{theorem} \begin{proof} We verify our proposition is true . The whole number $ <nat:344> $ is even Take note the adding of an even element of $ \mathbb{N} $ and an even element of $ \mathbb{Z}^+ $ is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:n> : nat , Nat . even ( <nat:344> * <var:n> + <nat:356> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:344> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

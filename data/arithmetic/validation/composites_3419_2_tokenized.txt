@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:24> is the multiplication between numbers $ <var:O> $ and $ <var:E> \in \mathbb{Z}^+ $ such that $ <var:E> $ , $ <var:O> \geq <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:E> = <nat:4> $ , and $ <var:O> = <nat:6> $ . We present the formula is true for $ <nat:6> * <nat:4> = <nat:24> = <var:O> * <var:E> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:O> <var:E> : nat , ( <nat:24> = <var:O> * <var:E> ) /\ ( <var:E> >= <nat:2> ) /\ ( <var:O> >= <nat:2> ) . Proof . exists <nat:6> . exists <nat:4> . lia . Qed . 

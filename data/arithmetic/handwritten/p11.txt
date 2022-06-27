@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} A number $ <var:n> $ is a <def:quasi-half-google> if there exists an integer $ <var:a> $ such that $ <var:n> = <var:a> ^ <nat:5> $ , where $ <var:a> > <nat:1> $ . \end{definition} \begin{theorem} The number $ <nat:243> $ is a <def:quasi-half-google> . \end{theorem} \begin{proof} Let $ <var:a> = <nat:3> $ . Then , $ <nat:243> = <nat:3> ^ <nat:5> $ . Hence , it is a <def:quasi-half-google> . \end{proof} \end{document}
-~
-Proof

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:162> + <nat:200> \cdot <var:m> $ will be even . \end{theorem} \begin{proof} It can be checked that the formula $ <nat:162> + <nat:200> \times <var:m> $ is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:m> : nat , Nat . even ( <nat:200> * <var:m> + <nat:162> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:48> = <var:p> \cdot <var:N> $ for $ <var:N> $ , and $ <var:p> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Allow $ <var:N> = <nat:6> $ , and $ <var:p> = <nat:8> $ . We show $ <nat:48> = <var:p> * <var:N> $ . This suggests the formula is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:N> <var:p> : nat , ( <nat:48> = <var:p> * <var:N> ) . Proof . exists <nat:6> . exists <nat:8> . lia . Qed . 

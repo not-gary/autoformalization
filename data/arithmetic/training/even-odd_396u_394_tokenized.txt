@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given every integers $ <var:u> $ the formula $ <nat:396> <var:u> + <nat:394> $ will be even . \end{theorem} \begin{proof} The product between an even number in $ \mathbb{N} $ and a number in $ \mathbb{Z}^+ $ is an even integer . The positive integer $ <nat:396> $ is even \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:u> : nat , Nat . even ( <nat:396> * <var:u> + <nat:394> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . assert ( <genH> : Nat . even <nat:396> = true ) . { auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

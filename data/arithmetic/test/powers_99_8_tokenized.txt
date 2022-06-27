@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} If and only if there is positive integer $ <var:M> $ assume that $ <var:T> \in \mathbb{Z}^+ $ is defined as a <def:octeract> given $ <var:T> = <var:M> ^ <nat:8> $ . So the natural number <nat:256> is a <def:octeract> whole number . \end{theorem} \begin{proof} Note $ <nat:2> ^ <nat:8> = <nat:256> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:octeract> ( <var:T> : nat ) := exists <var:M> : nat , ( <var:T> = <var:M> ^ <nat:8> ) . Theorem <genP:1> : <def:octeract> <nat:256> . Proof . unfold <def:octeract> . exists <nat:2> . auto . Qed . 

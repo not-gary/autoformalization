@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some integer $ <var:O> $ such that $ <var:O> $ larger than or equal to <nat:2> and such that the whole number <nat:128> is the repeated product between positive integer $ <var:O> $ taken to the exponent <nat:7> . \end{theorem} \begin{proof} Observe $ <nat:2> ^ <nat:7> = <var:O> ^ <nat:7> = <nat:128> $ . As a consequence , $ <var:O> ^ <nat:7> = <nat:128> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:O> : nat , ( <var:O> >= <nat:2> ) /\ ( <nat:128> = <var:O> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

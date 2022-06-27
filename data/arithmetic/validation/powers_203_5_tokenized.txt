@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:t> $ as natural numbers where $ <var:t> \geq <nat:2> $ . <nat:32> is the repeated product of number $ <var:t> $ taken to the degree <nat:5> . \end{theorem} \begin{proof} We demonstrate $ <nat:32> = <var:t> ^ <nat:5> $ . Notice that $ <nat:32> = <var:t> ^ <nat:5> = <nat:2> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <var:t> >= <nat:2> ) /\ ( <nat:32> = <var:t> ^ <nat:5> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

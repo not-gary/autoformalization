@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:S> $ are integers so that the integer <nat:128> is the exponent of positive integer $ <var:S> $ repeatedly multiplied to the exponent <nat:7> . \end{theorem} \begin{proof} Let $ <var:S> = <nat:2> $ . This gives our formula is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <nat:128> = <var:S> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

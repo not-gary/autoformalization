@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:W> <nat:474> + <nat:14> $ will be even . \end{theorem} \begin{proof} Further , observe that the positive integers $ <nat:474> $ are obviously even . So , the products $ <var:W> * <nat:474> $ must be even at the same time . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:W> : nat , Nat . even ( <nat:474> * <var:W> + <nat:14> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:474> = true ) . { auto . } assert ( <genH> : Nat . even ( <nat:474> * <var:W> ) = true ) . { rewrite Nat . even_mul . rewrite <genH> . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

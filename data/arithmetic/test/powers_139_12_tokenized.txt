@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:Z> ^ <nat:12> $ is the same as $ <nat:4096> $ . \end{theorem} \begin{proof} Notice $ <var:Z> ^ <nat:12> = <nat:2> ^ <nat:12> = <nat:4096> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <var:Z> ^ <nat:12> = <nat:4096> ) . Proof . exists <nat:2> . auto . Qed . 

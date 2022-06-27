@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:p> $ so that the whole number <nat:512> is the repeated product of positive integer $ <var:p> $ repeatedly multiplied to the power <nat:9> . \end{theorem} \begin{proof} Assume $ <var:p> = <nat:2> $ . This hints our principle holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:p> : nat , ( <nat:512> = <var:p> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

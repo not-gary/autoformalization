@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:r> \in \mathbb{Z}^+ $ so that $ <var:r> $ greater than <nat:1> as well as such that $ <nat:128> = <var:r> ^ <nat:7> $ . \end{theorem} \begin{proof} Let $ <var:r> = <nat:2> $ . We present $ <var:r> > <nat:1> $ and $ <nat:128> = <var:r> ^ <nat:7> $ . Notice that $ <var:r> = <nat:2> > <nat:1> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:r> : nat , ( <var:r> > <nat:1> ) /\ ( <nat:128> = <var:r> ^ <nat:7> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . apply <genH> . auto . Qed . 

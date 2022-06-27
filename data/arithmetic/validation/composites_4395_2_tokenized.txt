@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:55> = <var:v> \times <var:V> $ satisfying the condition that $ <var:V> $ , $ <var:v> \geq <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:v> = <nat:11> $ , $ <var:V> = <nat:5> $ . Notice that $ <nat:55> = <var:v> \cdot <var:V> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:v> <var:V> : nat , ( <nat:55> = <var:v> * <var:V> ) /\ ( <var:V> >= <nat:2> ) /\ ( <var:v> >= <nat:2> ) . Proof . exists <nat:11> . exists <nat:5> . lia . Qed . 

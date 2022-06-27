@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:X> * <nat:4> + <nat:190> + <var:A> * <nat:376> + <nat:496> * <var:a> $ must be even . \end{theorem} \begin{proof} The multiplication between an even number and an arbitrary element of $ \mathbb{N} $ is even . We know $ <nat:190> $ is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:X> <var:A> <var:a> : nat , Nat . even ( <nat:4> * <var:X> + <nat:376> * <var:A> + <nat:496> * <var:a> + <nat:190> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . assert ( <genH> : Nat . even <nat:190> = true ) . { auto . } rewrite <genH> . auto . Qed . 

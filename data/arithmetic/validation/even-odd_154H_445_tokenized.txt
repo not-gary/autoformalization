@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking every variables $ <var:H> $ the sum $ <nat:445> + <var:H> * <nat:154> $ will be odd . \end{theorem} \begin{proof} The product $ <var:H> <nat:154> $ is clearly even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:H> : nat , Nat . odd ( <nat:154> * <var:H> + <nat:445> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:154> * <var:H> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

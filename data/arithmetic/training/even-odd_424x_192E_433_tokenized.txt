@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:x> \cdot <nat:424> + <nat:433> + <nat:192> \cdot <var:E> $ is guaranteed to be odd . \end{theorem} \begin{proof} Result clearly holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:x> <var:E> : nat , Nat . odd ( <nat:424> * <var:x> + <nat:192> * <var:E> + <nat:433> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

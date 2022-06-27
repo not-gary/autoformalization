@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:K> ^ <nat:3> $ equals $ <nat:8> $ so that $ <var:K> \geq <nat:2> $ . \end{theorem} \begin{proof} Take $ <var:K> = <nat:2> $ . Note that $ <var:K> = <nat:2> \geq <nat:2> $ . Also observe that additionally $ <var:K> ^ <nat:3> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <var:K> ^ <nat:3> = <nat:8> ) /\ ( <var:K> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

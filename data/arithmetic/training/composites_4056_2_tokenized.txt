@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:50> is the product of integers $ <var:S> $ , $ <var:u> \in \mathbb{N} $ . \end{theorem} \begin{proof} Note $ <var:u> * <var:S> = <nat:10> * <nat:5> = <nat:50> $ . So , $ <nat:50> = <var:u> \times <var:S> $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:S> <var:u> : nat , ( <nat:50> = <var:S> * <var:u> ) . Proof . exists <nat:5> . exists <nat:10> . lia . Qed . 

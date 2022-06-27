@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:d> $ and $ <var:Z> \in \mathbb{N} $ such that the integer <nat:21> is the multiplication between integers $ <var:d> $ , and $ <var:Z> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Allow $ <var:Z> = <nat:7> $ and $ <var:d> = <nat:3> $ . We present $ <nat:21> = <var:d> \times <var:Z> $ . Observe $ <nat:21> = <var:d> \cdot <var:Z> $ . This indicates the principle is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:d> <var:Z> : nat , ( <nat:21> = <var:d> * <var:Z> ) . Proof . exists <nat:3> . exists <nat:7> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With all positive numbers $ <var:v> $ , and $ <var:Q> $ the summation $ <nat:194> + <var:Q> <nat:246> + <var:v> <nat:200> $ is guaranteed to be even . \end{theorem} \begin{proof} It can be proven that our claim is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:v> <var:Q> : nat , Nat . even ( <nat:246> * <var:Q> + <nat:200> * <var:v> + <nat:194> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

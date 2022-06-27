@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:n> \cdot <var:M> \cdot <var:w> \cdot <var:V> $ is equivalent to $ <nat:420> $ . \end{theorem} \begin{proof} Observe that $ <nat:420> = <var:M> \cdot <var:V> \cdot <var:n> \cdot <var:w> $ indicates $ <var:n> = <nat:6> $ , $ <var:w> = <nat:2> $ , $ <var:V> = <nat:7> $ and $ <var:M> = <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:V> <var:w> <var:M> <var:n> : nat , ( <var:n> * <var:M> * <var:w> * <var:V> = <nat:420> ) . Proof . exists <nat:7> . exists <nat:2> . exists <nat:5> . exists <nat:6> . repeat split . all : lia . Qed . 

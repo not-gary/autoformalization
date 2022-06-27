@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking some natural terms $ <var:L> $ the expression $ <nat:92> + <nat:34> \cdot <var:L> $ is even . \end{theorem} \begin{proof} Proposition trivially is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:L> : nat , Nat . even ( <nat:34> * <var:L> + <nat:92> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

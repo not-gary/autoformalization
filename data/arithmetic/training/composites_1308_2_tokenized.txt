@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:27> is the product between $ <var:N> $ , $ <var:X> $ satisfying the condition that $ <var:N> $ , and $ <var:X> > <nat:1> $ . \end{theorem} \begin{proof} Let $ <var:X> = <nat:9> $ , and $ <var:N> = <nat:3> $ . We present $ <nat:27> = <var:X> \times <var:N> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:N> <var:X> : nat , ( <nat:27> = <var:N> * <var:X> ) /\ ( <var:N> > <nat:1> ) /\ ( <var:X> > <nat:1> ) . Proof . exists <nat:3> . exists <nat:9> . lia . Qed . 

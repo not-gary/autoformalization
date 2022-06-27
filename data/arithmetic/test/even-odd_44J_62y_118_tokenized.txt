@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:J> <nat:44> + <nat:118> + <var:y> <nat:62> $ is even . \end{theorem} \begin{proof} We check this lemma holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:J> <var:y> : nat , Nat . even ( <nat:44> * <var:J> + <nat:62> * <var:y> + <nat:118> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

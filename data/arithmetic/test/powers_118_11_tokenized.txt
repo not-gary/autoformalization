@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:Q> $ are numbers such that $ <var:Q> $ greater than or equal to <nat:2> . the positive integer <nat:2048> is the exponent of whole number $ <var:Q> $ raised to the degree <nat:11> . \end{theorem} \begin{proof} Note that $ <nat:2048> = <var:Q> ^ <nat:11> $ gives $ <var:Q> = <nat:2> $ . This hints the formula is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Q> : nat , ( <var:Q> >= <nat:2> ) /\ ( <nat:2048> = <var:Q> ^ <nat:11> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

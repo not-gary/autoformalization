@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:k> $ are positive integers where the integer <nat:2048> is the raising of of positive integer $ <var:k> $ raised to the exponent <nat:11> . \end{theorem} \begin{proof} Assume $ <var:k> = <nat:2> $ . Thus , $ <nat:2048> = <var:k> ^ <nat:11> $ is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:k> : nat , ( <nat:2048> = <var:k> ^ <nat:11> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are some integers $ <var:Q> $ , and $ <var:g> $ such that $ <nat:66> = <var:Q> \times <var:g> $ . \end{theorem} \begin{proof} Let $ <var:g> = <nat:6> $ , $ <var:Q> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Q> <var:g> : nat , ( <nat:66> = <var:Q> * <var:g> ) . Proof . exists <nat:11> . exists <nat:6> . lia . Qed . 

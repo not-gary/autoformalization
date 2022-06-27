@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:8> is the multiplication between integers $ <var:L> $ , and $ <var:S> \in \mathbb{N} $ . \end{theorem} \begin{proof} Take $ <var:L> = <nat:2> $ and $ <var:S> = <nat:4> $ . We justify the belief is valid as $ <nat:8> = <var:L> \cdot <var:S> $ . Thus , <nat:8> is the product between $ <var:L> $ , $ <var:S> \in \mathbb{Z}^+ $ is validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:L> <var:S> : nat , ( <nat:8> = <var:L> * <var:S> ) . Proof . exists <nat:2> . exists <nat:4> . lia . Qed . 

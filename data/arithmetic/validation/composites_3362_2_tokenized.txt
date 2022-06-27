@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:U> $ and $ <var:N> $ are integers so that $ <var:N> $ , $ <var:U> $ more than <nat:1> and satisfying the condition that the natural number <nat:108> is the multiplication between integers $ <var:U> $ , and $ <var:N> $ . \end{theorem} \begin{proof} We prove the belief holds because $ <nat:108> = <nat:12> * <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:U> <var:N> : nat , ( <var:N> > <nat:1> ) /\ ( <var:U> > <nat:1> ) /\ ( <nat:108> = <var:U> * <var:N> ) . Proof . exists <nat:9> . exists <nat:12> . lia . Qed . 

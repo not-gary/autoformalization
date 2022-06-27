@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:Z> $ as natural numbers satisfying the condition that $ <nat:512> $ is equal to $ <var:Z> ^ <nat:9> $ . \end{theorem} \begin{proof} Let $ <var:Z> = <nat:2> $ . We prove $ <nat:512> = <var:Z> ^ <nat:9> $ . We verify the statement is valid as $ <nat:2> ^ <nat:9> = <nat:512> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <nat:512> = <var:Z> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:128> is the raising of of number $ <var:b> \in \mathbb{Z}^+ $ exponentiated to the degree <nat:7> so that $ <var:b> $ larger than or equal to <nat:2> . \end{theorem} \begin{proof} We verify the thesis is valid because $ <nat:2> ^ <nat:7> = <nat:128> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:b> : nat , ( <nat:128> = <var:b> ^ <nat:7> ) /\ ( <var:b> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

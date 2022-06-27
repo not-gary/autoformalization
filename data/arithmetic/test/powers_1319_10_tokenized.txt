@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:V> \in \mathbb{Z}^+ $ such that $ <var:V> > <nat:1> $ as well as such that the integer <nat:1024> is the exponent of whole number $ <var:V> \in \mathbb{Z}^+ $ taken to the exponent <nat:10> . \end{theorem} \begin{proof} Let $ <var:V> = <nat:2> $ . We confirm $ <var:V> ^ <nat:10> = <nat:1024> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <var:V> > <nat:1> ) /\ ( <nat:1024> = <var:V> ^ <nat:10> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

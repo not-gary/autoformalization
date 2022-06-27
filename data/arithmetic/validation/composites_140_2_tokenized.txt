@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:h> $ , and $ <var:C> \in \mathbb{Z}^+ $ such that $ <var:C> $ , $ <var:h> \geq <nat:2> $ and satisfying the condition that the whole number <nat:8> is the multiplication between numbers $ <var:h> $ , $ <var:C> \in \mathbb{N} $ . \end{theorem} \begin{proof} Note $ <var:h> \times <var:C> = <nat:8> = <nat:4> \times <nat:2> $ . This suggests the principle is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:h> <var:C> : nat , ( <var:C> >= <nat:2> ) /\ ( <var:h> >= <nat:2> ) /\ ( <nat:8> = <var:h> * <var:C> ) . Proof . exists <nat:4> . exists <nat:2> . lia . Qed . 

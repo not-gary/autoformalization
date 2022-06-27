@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:S> $ , and $ <var:Q> \in \mathbb{N} $ where $ <var:Q> $ , and $ <var:S> \geq <nat:2> $ and such that the number <nat:48> is the product between numbers $ <var:S> $ , and $ <var:Q> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Note $ <var:Q> \cdot <var:S> = <nat:48> = <nat:6> \cdot <nat:8> $ . This hints our statement is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:S> <var:Q> : nat , ( <var:Q> >= <nat:2> ) /\ ( <var:S> >= <nat:2> ) /\ ( <nat:48> = <var:S> * <var:Q> ) . Proof . exists <nat:8> . exists <nat:6> . lia . Qed . 

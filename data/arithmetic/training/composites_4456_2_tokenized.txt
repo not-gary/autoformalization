@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:r> * <var:z> $ equals $ <nat:18> $ given $ <var:z> $ , and $ <var:r> $ satisfying the condition that $ <var:r> $ and $ <var:z> \geq <nat:2> $ . \end{theorem} \begin{proof} Take $ <var:z> = <nat:2> $ , and $ <var:r> = <nat:9> $ . Notice $ <nat:18> = <var:z> \times <var:r> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:z> <var:r> : nat , ( <var:r> * <var:z> = <nat:18> ) /\ ( <var:r> >= <nat:2> ) /\ ( <var:z> >= <nat:2> ) . Proof . exists <nat:2> . exists <nat:9> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:Z> \in \mathbb{Z}^+ $ where $ <var:Z> $ greater than <nat:1> plus so that the whole number <nat:8> is the repeated multiplication between $ <var:Z> \in \mathbb{N} $ repeatedly multiplied to the exponent <nat:3> . \end{theorem} \begin{proof} Allow $ <var:Z> = <nat:2> $ . We confirm $ <var:Z> ^ <nat:3> = <nat:8> $ and $ <var:Z> $ is greater than <nat:1> . Note $ <nat:8> = <var:Z> ^ <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <var:Z> > <nat:1> ) /\ ( <nat:8> = <var:Z> ^ <nat:3> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

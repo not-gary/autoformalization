@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:X> ^ <nat:7> = <nat:128> $ so that $ <var:X> $ more than or equivalent to <nat:2> . \end{theorem} \begin{proof} We show the theorem is true for $ <nat:2> \geq <nat:2> $ and in consideration of $ <nat:128> = <nat:2> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:X> : nat , ( <var:X> ^ <nat:7> = <nat:128> ) /\ ( <var:X> >= <nat:2> ) . Proof . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } exists <nat:2> . split . auto . apply <genH> . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:E> \in \mathbb{Z}^+ $ such that <nat:128> is the repeated product of number $ <var:E> \in \mathbb{Z}^+ $ raised to the power <nat:7> . \end{theorem} \begin{proof} Allow $ <var:E> = <nat:2> $ . Observe that $ <nat:128> = <var:E> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:E> : nat , ( <nat:128> = <var:E> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

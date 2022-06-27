@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:N> \cdot <var:S> $ is equal to $ <nat:50> $ with $ <var:N> $ and $ <var:S> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Observe that $ <nat:5> \times <nat:10> = <nat:50> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:N> <var:S> : nat , ( <var:N> * <var:S> = <nat:50> ) . Proof . exists <nat:5> . exists <nat:10> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:o> $ as whole numbers such that $ <var:o> ^ <nat:4> $ is equivalent to $ <nat:16> $ . \end{theorem} \begin{proof} Observe that $ <nat:16> = <nat:2> ^ <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:o> : nat , ( <var:o> ^ <nat:4> = <nat:16> ) . Proof . exists <nat:2> . auto . Qed . 

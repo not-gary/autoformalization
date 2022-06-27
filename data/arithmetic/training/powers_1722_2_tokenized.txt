@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> $ is equal to $ <var:M> ^ <nat:2> $ for $ <var:M> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:M> > <nat:1> $ . \end{theorem} \begin{proof} Let $ <var:M> = <nat:2> $ . Notice that $ <nat:4> = <var:M> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:M> : nat , ( <nat:4> = <var:M> ^ <nat:2> ) /\ ( <var:M> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

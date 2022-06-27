@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:u> * <var:j> = <nat:72> $ assuming $ <var:u> $ , $ <var:j> \in \mathbb{N} $ where $ <var:j> $ , $ <var:u> $ larger than or equivalent to <nat:2> . \end{theorem} \begin{proof} Assume $ <var:j> = <nat:8> $ , $ <var:u> = <nat:9> $ . We confirm our belief is true because $ <nat:72> = <var:u> * <var:j> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:u> <var:j> : nat , ( <var:u> * <var:j> = <nat:72> ) /\ ( <var:j> >= <nat:2> ) /\ ( <var:u> >= <nat:2> ) . Proof . exists <nat:9> . exists <nat:8> . lia . Qed . 

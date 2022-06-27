@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some integer $ <var:R> $ where the natural number <nat:32> is the raising of of $ <var:R> $ taken to the degree <nat:5> . \end{theorem} \begin{proof} Take $ <var:R> = <nat:2> $ . As a result , $ <nat:32> = <var:R> ^ <nat:5> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:R> : nat , ( <nat:32> = <var:R> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

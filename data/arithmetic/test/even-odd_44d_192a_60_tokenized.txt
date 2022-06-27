@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking some $ <var:d> $ , and $ <var:a> \in \mathbb{Z}^+ $ the formula $ <var:d> <nat:44> + <nat:60> + <var:a> <nat:192> $ will be even . \end{theorem} \begin{proof} The summation of an even integer with an even natural number will be even . It can be shown that $ <nat:60> + <var:d> * <nat:44> + <nat:192> * <var:a> $ must be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:d> <var:a> : nat , Nat . even ( <nat:44> * <var:d> + <nat:192> * <var:a> + <nat:60> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

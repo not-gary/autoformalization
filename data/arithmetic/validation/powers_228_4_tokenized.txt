@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} Let $ <var:x> $ be integers . Define that some whole number $ <var:H> $ will be considered a <def:tesseract> given $ <var:H> = <var:x> ^ <nat:4> $ . \end{definition} \begin{theorem} $ <var:H> = <nat:16> $ is a <def:tesseract> whole number . \end{theorem} \begin{proof} Notice that $ <nat:16> = <nat:2> ^ <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:tesseract> ( <var:H> : nat ) := exists <var:x> : nat , ( <var:H> = <var:x> ^ <nat:4> ) . Theorem <genP:1> : <def:tesseract> <nat:16> . Proof . unfold <def:tesseract> . exists <nat:2> . auto . Qed . 

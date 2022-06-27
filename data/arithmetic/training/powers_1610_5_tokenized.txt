@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:l> \in \mathbb{Z}^+ $ such that the number <nat:32> is the repeated multiplication of $ <var:l> \in \mathbb{N} $ taken to the exponential <nat:5> . \end{theorem} \begin{proof} We confirm <nat:32> is the raising of between some number $ <var:l> $ taken to the degree <nat:5> . We justify the formula is true in consideration of $ <nat:32> = <var:l> ^ <nat:5> = <nat:2> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:l> : nat , ( <nat:32> = <var:l> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

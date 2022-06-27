@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:90> $ is the same as $ <var:e> \times <var:g> $ so that $ <var:e> $ , $ <var:g> \geq <nat:2> $ . \end{theorem} \begin{proof} Observe that $ <var:g> \times <var:e> = <nat:90> = <nat:9> \times <nat:10> $ . As a consequence , $ <var:g> \times <var:e> = <nat:90> $ is verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:e> <var:g> : nat , ( <nat:90> = <var:e> * <var:g> ) /\ ( <var:e> >= <nat:2> ) /\ ( <var:g> >= <nat:2> ) . Proof . exists <nat:10> . exists <nat:9> . lia . Qed . 

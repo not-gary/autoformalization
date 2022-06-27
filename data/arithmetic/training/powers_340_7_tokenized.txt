@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:h> \in \mathbb{N} $ where the whole number <nat:128> is the repeated multiplication between $ <var:h> \in \mathbb{N} $ taken to the power <nat:7> . \end{theorem} \begin{proof} Allow $ <var:h> = <nat:2> $ . Notice that $ <nat:128> = <var:h> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:h> : nat , ( <nat:128> = <var:h> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

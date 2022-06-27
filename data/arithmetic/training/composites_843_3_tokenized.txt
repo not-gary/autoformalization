@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:105> $ equals $ <var:P> \times <var:B> \times <var:Q> $ . \end{theorem} \begin{proof} Take $ <var:P> = <nat:5> $ , $ <var:B> = <nat:7> $ , and $ <var:Q> = <nat:3> $ . We verify our thesis is true because $ <nat:105> = <var:P> \times <var:Q> \times <var:B> = <nat:5> \times <nat:3> \times <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:B> <var:P> <var:Q> : nat , ( <nat:105> = <var:P> * <var:B> * <var:Q> ) . Proof . exists <nat:7> . exists <nat:5> . exists <nat:3> . repeat split . all : lia . Qed . 

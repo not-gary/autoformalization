@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:128> + <nat:190> \cdot <var:l> + <var:r> \cdot <nat:56> $ is guaranteed to be even given some positive terms $ <var:r> $ , and $ <var:l> $ . \end{theorem} \begin{proof} We justify this proposition is true . See that the addition of even elements of $ \mathbb{N} $ successively is guaranteed to be itself an even natural number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:r> <var:l> : nat , Nat . even ( <nat:190> * <var:l> + <nat:56> * <var:r> + <nat:128> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

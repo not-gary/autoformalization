@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some positive integer $ <var:Z> $ so that $ <var:Z> \geq <nat:2> $ plus such that $ <var:Z> ^ <nat:10> $ is $ <nat:1024> $ . \end{theorem} \begin{proof} Assume $ <var:Z> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <var:Z> >= <nat:2> ) /\ ( <var:Z> ^ <nat:10> = <nat:1024> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

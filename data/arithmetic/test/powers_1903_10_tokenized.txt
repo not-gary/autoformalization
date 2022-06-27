@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:l> ^ <nat:10> $ equals $ <nat:1024> $ with $ <var:l> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:l> \geq <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:l> = <nat:2> $ . This shows the formula is valid . So , $ <var:l> \geq <nat:2> $ plus $ <var:l> ^ <nat:10> = <nat:1024> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:l> : nat , ( <var:l> ^ <nat:10> = <nat:1024> ) /\ ( <var:l> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:P> $ as whole numbers such that $ <var:P> \geq <nat:2> $ . Denote that some number $ <var:i> $ is called a <def:enneract> number if $ <var:P> ^ <nat:9> = <var:i> $ . For this reason the number <nat:512> is a <def:enneract> number . \end{theorem} \begin{proof} Allow $ <var:P> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:enneract> ( <var:i> : nat ) := exists <var:P> : nat , ( <var:P> >= <nat:2> ) /\ ( <var:P> ^ <nat:9> = <var:i> ) . Theorem <genP:1> : <def:enneract> <nat:512> . Proof . unfold <def:enneract> . exists <nat:2> . split . lia . auto . Qed . 

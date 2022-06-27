@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:M> $ , and $ <var:F> \in \mathbb{Z}^+ $ where $ <var:F> $ , $ <var:M> $ more than or equal to <nat:2> and so that $ <nat:48> $ equals $ <var:F> * <var:M> $ . \end{theorem} \begin{proof} Notice that $ <nat:48> = <nat:6> \times <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:M> <var:F> : nat , ( <var:F> >= <nat:2> ) /\ ( <var:M> >= <nat:2> ) /\ ( <nat:48> = <var:F> * <var:M> ) . Proof . exists <nat:8> . exists <nat:6> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:n> \in \mathbb{N} $ such that $ <var:n> \geq <nat:2> $ and such that the natural number <nat:512> is the repeated multiplication between $ <var:n> \in \mathbb{N} $ taken to the power <nat:9> . \end{theorem} \begin{proof} Observe that $ <nat:2> \geq <nat:2> $ . Moreover observe that likewise $ <nat:2> ^ <nat:9> = <nat:512> = <var:n> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <var:n> >= <nat:2> ) /\ ( <nat:512> = <var:n> ^ <nat:9> ) . Proof . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } exists <nat:2> . split . apply <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:t> $ be natural numbers . $ <nat:1024> $ is equivalent to $ <var:t> ^ <nat:10> $ . \end{theorem} \begin{proof} Let $ <var:t> = <nat:2> $ . We demonstrate $ <nat:1024> = <var:t> ^ <nat:10> $ . Observe $ <var:t> ^ <nat:10> = <nat:1024> $ . This implies the belief is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <nat:1024> = <var:t> ^ <nat:10> ) . Proof . exists <nat:2> . auto . Qed . 

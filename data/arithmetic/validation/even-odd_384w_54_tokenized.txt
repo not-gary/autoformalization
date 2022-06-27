@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With every whole numbers $ <var:w> $ $ <nat:384> \cdot <var:w> + <nat:54> $ will be even . \end{theorem} \begin{proof} The product $ <nat:384> \cdot <var:w> $ is obviously an even element of $ \mathbb{Z}^+ $ . See the totaling of even integers successively with an even whole number will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:w> : nat , Nat . even ( <nat:384> * <var:w> + <nat:54> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:384> * <var:w> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

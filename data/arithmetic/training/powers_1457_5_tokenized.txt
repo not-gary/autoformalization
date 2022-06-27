@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:d> $ where $ <var:d> > <nat:1> $ and so that the natural number <nat:32> is the exponential of whole number $ <var:d> $ exponentiated to the degree <nat:5> . \end{theorem} \begin{proof} Notice $ <nat:32> = <var:d> ^ <nat:5> = <nat:2> ^ <nat:5> $ . This produces the proposition holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <var:d> > <nat:1> ) /\ ( <nat:32> = <var:d> ^ <nat:5> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

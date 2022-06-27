@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given all positive numbers $ <var:P> $ the sum $ <nat:496> <var:P> + <nat:262> $ must be even . \end{theorem} \begin{proof} We verify our lemma must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:P> : nat , Nat . even ( <nat:496> * <var:P> + <nat:262> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

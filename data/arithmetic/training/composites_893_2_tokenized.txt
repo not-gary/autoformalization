@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:24> is the product between integers $ <var:f> $ , and $ <var:U> $ so that $ <var:U> $ , $ <var:f> > <nat:1> $ . \end{theorem} \begin{proof} Allow $ <var:f> = <nat:12> $ and $ <var:U> = <nat:2> $ . We demonstrate $ <var:U> * <var:f> = <nat:24> $ as well as $ <var:f> $ and $ <var:U> > <nat:1> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:f> <var:U> : nat , ( <nat:24> = <var:f> * <var:U> ) /\ ( <var:U> > <nat:1> ) /\ ( <var:f> > <nat:1> ) . Proof . exists <nat:12> . exists <nat:2> . lia . Qed . 

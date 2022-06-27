@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:32> is the raising of of integer $ <var:S> $ taken to the exponential <nat:5> . \end{theorem} \begin{proof} Take $ <var:S> = <nat:2> $ . Observe $ <var:S> ^ <nat:5> = <nat:32> $ . This hints our thesis holds . Hence , $ <var:S> ^ <nat:5> = <nat:32> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <nat:32> = <var:S> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

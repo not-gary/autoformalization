@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:V> $ so that the integer <nat:32> is the exponential of natural number $ <var:V> $ raised to the exponential <nat:5> . \end{theorem} \begin{proof} Allow $ <var:V> = <nat:2> $ . This indicates our result holds . Thus , <nat:32> is the exponential of some integer $ <var:V> $ repeatedly multiplied to the degree <nat:5> has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <nat:32> = <var:V> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

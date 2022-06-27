@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some natural number $ <var:k> $ such that $ <var:k> ^ <nat:12> $ is $ <nat:4096> $ . \end{theorem} \begin{proof} We show $ <var:k> ^ <nat:12> = <nat:4096> $ . Note that $ <nat:2> ^ <nat:12> = <nat:4096> $ . This implies the thesis is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:k> : nat , ( <var:k> ^ <nat:12> = <nat:4096> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are some whole numbers $ <var:z> $ , $ <var:O> $ satisfying the condition that the positive integer <nat:48> is the product of numbers $ <var:z> $ and $ <var:O> $ . \end{theorem} \begin{proof} Allow $ <var:O> = <nat:6> $ , $ <var:z> = <nat:8> $ . We verify the principle is valid considering $ <var:O> \cdot <var:z> = <nat:48> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:z> <var:O> : nat , ( <nat:48> = <var:z> * <var:O> ) . Proof . exists <nat:8> . exists <nat:6> . lia . Qed . 

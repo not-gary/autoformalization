@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:280> + <var:t> <nat:306> $ is guaranteed to be even taking unknowns $ <var:t> $ . \end{theorem} \begin{proof} Recall the summing of an even whole number with an even number in $ \mathbb{Z}^+ $ is an even integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:t> : nat , Nat . even ( <nat:306> * <var:t> + <nat:280> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

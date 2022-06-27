@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:368> \cdot <var:v> + <nat:50> $ must be even with every integers $ <var:v> $ . \end{theorem} \begin{proof} It can be proven that our main result is true . The positive integer $ <nat:368> $ is trivially even The adding of even whole numbers successively must be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:v> : nat , Nat . even ( <nat:368> * <var:v> + <nat:50> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:368> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

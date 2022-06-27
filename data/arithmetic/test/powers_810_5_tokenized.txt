@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:32> $ is $ <var:H> ^ <nat:5> $ assuming $ <var:H> $ satisfying the condition that $ <var:H> $ larger than <nat:1> . \end{theorem} \begin{proof} Take $ <var:H> = <nat:2> $ . We show the theory is true because $ <var:H> ^ <nat:5> = <nat:32> $ . As a consequence , $ <var:H> $ is more than <nat:1> plus $ <var:H> ^ <nat:5> = <nat:32> $ is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:H> : nat , ( <nat:32> = <var:H> ^ <nat:5> ) /\ ( <var:H> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

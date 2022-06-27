@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:352> <var:k> + <nat:291> $ is guaranteed to be odd with positive terms $ <var:k> $ . \end{theorem} \begin{proof} We know the term $ <nat:352> <var:k> $ is trivially even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:k> : nat , Nat . odd ( <nat:352> * <var:k> + <nat:291> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:352> * <var:k> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

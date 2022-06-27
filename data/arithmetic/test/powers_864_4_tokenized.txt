@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:16> is the exponent between number $ <var:H> \in \mathbb{Z}^+ $ repeatedly multiplied to the power <nat:4> . \end{theorem} \begin{proof} We justify the thesis holds as $ <nat:16> = <var:H> ^ <nat:4> $ gives $ <var:H> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:H> : nat , ( <nat:16> = <var:H> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

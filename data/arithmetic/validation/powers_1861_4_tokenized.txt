@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Define that $ <var:e> $ is a <def:tesseract> number granted there is $ <var:c> \in \mathbb{Z}^+ $ where $ <var:c> ^ <nat:4> = <var:e> $ with $ <var:e> \in \mathbb{N} $ . Consequently $ <nat:16> = <var:e> $ is a <def:tesseract> positive integer . \end{theorem} \begin{proof} Notice $ <var:c> ^ <nat:4> = <nat:16> = <nat:2> ^ <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:tesseract> ( <var:e> : nat ) := exists <var:c> : nat , ( <var:c> ^ <nat:4> = <var:e> ) . Theorem <genP:1> : <def:tesseract> <nat:16> . Proof . unfold <def:tesseract> . exists <nat:2> . auto . Qed . 

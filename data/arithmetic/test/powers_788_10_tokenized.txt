@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some $ <var:e> $ so that $ <nat:1024> $ is $ <var:e> ^ <nat:10> $ . \end{theorem} \begin{proof} We justify our proposition is true because $ <var:e> ^ <nat:10> = <nat:1024> $ produces $ <var:e> = <nat:2> $ . Therefore , <nat:1024> is the exponent between some whole number $ <var:e> $ repeatedly multiplied to the power <nat:10> has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <nat:1024> = <var:e> ^ <nat:10> ) . Proof . exists <nat:2> . auto . Qed . 

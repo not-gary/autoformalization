@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For some $ <var:e> $ $ <nat:373> + <var:e> * <nat:200> $ will be odd . \end{theorem} \begin{proof} We check $ <nat:200> \cdot <var:e> + <nat:373> $ is guaranteed to be odd . Notice that the whole number $ <nat:200> $ is clearly an even natural number \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:e> : nat , Nat . odd ( <nat:200> * <var:e> + <nat:373> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:200> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

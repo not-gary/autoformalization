@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} Let $ <var:Z> $ be numbers . We define that some positive integer $ <var:X> $ is considered to be a <def:penteract> integer given $ <var:X> = <var:Z> ^ <nat:5> $ . \end{definition} \begin{theorem} The integer <nat:32> is a <def:penteract> integer . \end{theorem} \begin{proof} Assume $ <var:Z> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:penteract> ( <var:X> : nat ) := exists <var:Z> : nat , ( <var:X> = <var:Z> ^ <nat:5> ) . Theorem <genP:1> : <def:penteract> <nat:32> . Proof . unfold <def:penteract> . exists <nat:2> . auto . Qed . 

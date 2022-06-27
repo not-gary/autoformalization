@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:460> \times <var:Q> + <var:Z> \times <nat:222> + <nat:158> + <var:v> \times <nat:116> $ must be even . \end{theorem} \begin{proof} Result obivously is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:Q> <var:Z> <var:v> : nat , Nat . even ( <nat:460> * <var:Q> + <nat:222> * <var:Z> + <nat:116> * <var:v> + <nat:158> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

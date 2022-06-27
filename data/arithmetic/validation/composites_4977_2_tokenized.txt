@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:n> $ , and $ <var:v> \in \mathbb{Z}^+ $ so that $ <var:n> $ , $ <var:v> > <nat:1> $ as well as such that the number <nat:18> is the multiplication of numbers $ <var:n> $ and $ <var:v> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Note $ <nat:6> \times <nat:3> = <nat:18> = <var:n> \times <var:v> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:n> <var:v> : nat , ( <var:n> > <nat:1> ) /\ ( <var:v> > <nat:1> ) /\ ( <nat:18> = <var:n> * <var:v> ) . Proof . exists <nat:6> . exists <nat:3> . lia . Qed . 

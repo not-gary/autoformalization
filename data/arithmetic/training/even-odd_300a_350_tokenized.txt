@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:a> <nat:300> + <nat:350> $ is guaranteed to be even . \end{theorem} \begin{proof} Observe the product $ <var:a> * <nat:300> $ is trivially an even number in $ \mathbb{N} $ since multiplying of an even number in $ \mathbb{Z}^+ $ with a integer must be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:a> : nat , Nat . even ( <nat:300> * <var:a> + <nat:350> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:300> * <var:a> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

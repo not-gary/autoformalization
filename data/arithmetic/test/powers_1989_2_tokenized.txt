@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:c> \in \mathbb{Z}^+ $ . Claim that $ <var:h> \in \mathbb{N} $ will be considered a <def:square> number assuming $ <var:h> = <var:c> ^ <nat:2> $ . So the whole number <nat:4> is a <def:square> . \end{theorem} \begin{proof} We verify $ <var:c> ^ <nat:2> = <nat:4> $ . Note $ <nat:2> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:h> : nat ) := exists <var:c> : nat , ( <var:h> = <var:c> ^ <nat:2> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

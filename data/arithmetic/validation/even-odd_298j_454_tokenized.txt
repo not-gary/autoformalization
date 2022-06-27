@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking every integers $ <var:j> $ $ <nat:454> + <nat:298> \cdot <var:j> $ must be even . \end{theorem} \begin{proof} $ <var:j> \cdot <nat:298> $ is guaranteed to be an even element of $ \mathbb{Z}^+ $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:j> : nat , Nat . even ( <nat:298> * <var:j> + <nat:454> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:298> * <var:j> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

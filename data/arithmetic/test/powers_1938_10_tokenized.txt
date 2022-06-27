@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:r> \in \mathbb{N} $ such that $ <nat:1024> $ is $ <var:r> ^ <nat:10> $ . \end{theorem} \begin{proof} Allow $ <var:r> = <nat:2> $ . We demonstrate <nat:1024> is the exponent between $ <var:r> \in \mathbb{Z}^+ $ raised to the degree <nat:10> . Note $ <var:r> ^ <nat:10> = <nat:1024> $ . This produces our statement is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:r> : nat , ( <nat:1024> = <var:r> ^ <nat:10> ) . Proof . exists <nat:2> . auto . Qed . 

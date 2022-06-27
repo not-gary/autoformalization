@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:56> is the product between positive integers $ <var:a> $ , $ <var:H> \in \mathbb{Z}^+ $ where $ <var:a> $ and $ <var:H> \geq <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:a> = <nat:7> $ , $ <var:H> = <nat:8> $ . As a result , $ <nat:56> = <var:H> \cdot <var:a> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:a> <var:H> : nat , ( <nat:56> = <var:a> * <var:H> ) /\ ( <var:a> >= <nat:2> ) /\ ( <var:H> >= <nat:2> ) . Proof . exists <nat:7> . exists <nat:8> . lia . Qed . 

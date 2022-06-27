@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some natural numbers $ <var:D> $ , and $ <var:I> $ such that the integer <nat:12> is the product between integers $ <var:D> $ and $ <var:I> $ . \end{theorem} \begin{proof} Assume $ <var:I> = <nat:3> $ , $ <var:D> = <nat:4> $ . Thus , $ <nat:12> = <var:D> \times <var:I> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:D> <var:I> : nat , ( <nat:12> = <var:D> * <var:I> ) . Proof . exists <nat:4> . exists <nat:3> . lia . Qed . 

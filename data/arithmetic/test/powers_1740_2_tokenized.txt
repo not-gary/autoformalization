@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:4> is the exponent between $ <var:q> \in \mathbb{N} $ taken to the exponential <nat:2> satisfying the condition that $ <var:q> $ more than or equivalent to <nat:2> . \end{theorem} \begin{proof} We demonstrate our formula is true by reason of $ <nat:4> = <nat:2> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:q> : nat , ( <nat:4> = <var:q> ^ <nat:2> ) /\ ( <var:q> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

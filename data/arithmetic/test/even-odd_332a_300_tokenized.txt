@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:300> + <nat:332> \cdot <var:a> $ will be even . \end{theorem} \begin{proof} Remember the term $ <var:a> \times <nat:332> $ is clearly even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:a> : nat , Nat . even ( <nat:332> * <var:a> + <nat:300> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:332> * <var:a> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

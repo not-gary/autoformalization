@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:Y> \in \mathbb{N} $ such that $ <var:Y> $ greater than <nat:1> and so that $ <var:Y> ^ <nat:3> $ is the same as $ <nat:8> $ . \end{theorem} \begin{proof} We show <nat:8> is the repeated multiplication between $ <var:Y> \in \mathbb{N} $ raised to the degree <nat:3> . Observe $ <nat:8> = <nat:2> ^ <nat:3> = <var:Y> ^ <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Y> : nat , ( <var:Y> > <nat:1> ) /\ ( <var:Y> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

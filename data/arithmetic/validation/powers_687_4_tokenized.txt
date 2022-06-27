@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:a> $ as numbers satisfying the condition that $ <nat:16> $ is equal to $ <var:a> ^ <nat:4> $ . \end{theorem} \begin{proof} Observe $ <nat:2> ^ <nat:4> = <nat:16> $ . Consequently , <nat:16> is the exponential between $ <var:a> \in \mathbb{N} $ repeatedly multiplied to the exponential <nat:4> has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:a> : nat , ( <nat:16> = <var:a> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

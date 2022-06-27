@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:128> is the repeated multiplication between number $ <var:C> \in \mathbb{Z}^+ $ taken to the degree <nat:7> . \end{theorem} \begin{proof} Note that $ <var:C> ^ <nat:7> = <nat:128> $ implies $ <var:C> = <nat:2> $ . As a result , $ <var:C> ^ <nat:7> = <nat:128> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:C> : nat , ( <nat:128> = <var:C> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

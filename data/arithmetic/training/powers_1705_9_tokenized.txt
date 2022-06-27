@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:Q> $ so that $ <var:Q> \geq <nat:2> $ plus such that $ <var:Q> ^ <nat:9> $ is $ <nat:512> $ . \end{theorem} \begin{proof} We prove $ <var:Q> \geq <nat:2> $ and $ <var:Q> ^ <nat:9> = <nat:512> $ . Note $ <nat:512> = <var:Q> ^ <nat:9> $ indicates $ <var:Q> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Q> : nat , ( <var:Q> >= <nat:2> ) /\ ( <var:Q> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

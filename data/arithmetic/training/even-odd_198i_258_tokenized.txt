@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming all natural numbers $ <var:i> $ the formula $ <nat:258> + <var:i> * <nat:198> $ is even . \end{theorem} \begin{proof} We know $ <nat:258> $ is known as an even integer . The summing of an even natural with an even whole number is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:i> : nat , Nat . even ( <nat:198> * <var:i> + <nat:258> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:258> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:g> \in \mathbb{N} $ so that $ <var:g> ^ <nat:9> $ is equal to $ <nat:512> $ . \end{theorem} \begin{proof} Notice that $ <nat:512> = <var:g> ^ <nat:9> $ produces $ <var:g> = <nat:2> $ . Because of this , $ <nat:512> = <var:g> ^ <nat:9> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:g> : nat , ( <var:g> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . auto . Qed . 

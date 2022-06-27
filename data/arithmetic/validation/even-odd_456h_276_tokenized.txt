@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using some $ <var:h> \in \mathbb{Z}^+ $ the summation $ <nat:456> \cdot <var:h> + <nat:276> $ is even . \end{theorem} \begin{proof} The multiplication of even naturals is guaranteed to be even . The totaling of even elements of $ \mathbb{Z}^+ $ together will be by its very nature an even number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:h> : nat , Nat . even ( <nat:456> * <var:h> + <nat:276> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . repeat rewrite Nat . even_add . auto . Qed . 

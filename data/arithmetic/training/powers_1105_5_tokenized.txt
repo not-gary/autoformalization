@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:32> is the raising of of positive integer $ <var:B> $ exponentiated to the exponential <nat:5> satisfying the condition that $ <var:B> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} We show our result is valid as $ <nat:32> = <var:B> ^ <nat:5> = <nat:2> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:B> : nat , ( <nat:32> = <var:B> ^ <nat:5> ) /\ ( <var:B> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

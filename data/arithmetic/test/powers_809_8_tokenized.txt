@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:256> is the exponent of integer $ <var:q> $ raised to the degree <nat:8> . \end{theorem} \begin{proof} Take $ <var:q> = <nat:2> $ . We demonstrate our thesis is true in view of $ <var:q> ^ <nat:8> = <nat:256> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:q> : nat , ( <nat:256> = <var:q> ^ <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

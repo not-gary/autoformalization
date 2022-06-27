@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:V> \in \mathbb{Z}^+ $ so that $ <var:V> $ more than <nat:1> as well as satisfying the condition that the natural number <nat:4> is the exponent of natural number $ <var:V> \in \mathbb{Z}^+ $ raised to the power <nat:2> . \end{theorem} \begin{proof} Note that $ <var:V> ^ <nat:2> = <nat:4> $ yields $ <var:V> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <var:V> > <nat:1> ) /\ ( <nat:4> = <var:V> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

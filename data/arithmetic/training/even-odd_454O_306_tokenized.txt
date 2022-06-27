@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:454> \cdot <var:O> + <nat:306> $ is even . \end{theorem} \begin{proof} The pair $ <nat:454> * <var:O> $ is guaranteed to be an even number in $ \mathbb{N} $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:O> : nat , Nat . even ( <nat:454> * <var:O> + <nat:306> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:454> * <var:O> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:p> \in \mathbb{N} $ satisfying the condition that $ <var:p> $ larger than or equivalent to <nat:2> plus such that $ <var:p> ^ <nat:7> $ is equal to $ <nat:128> $ . \end{theorem} \begin{proof} Take $ <var:p> = <nat:2> $ . Notice $ <var:p> ^ <nat:7> = <nat:128> $ . This produces the theorem is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:p> : nat , ( <var:p> >= <nat:2> ) /\ ( <var:p> ^ <nat:7> = <nat:128> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

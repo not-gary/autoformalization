@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:W> \in \mathbb{N} $ where $ <var:W> \geq <nat:2> $ and so that $ <var:W> ^ <nat:2> $ equals $ <nat:4> $ . \end{theorem} \begin{proof} We justify <nat:4> is the repeated product between some positive integer $ <var:W> $ raised to the exponential <nat:2> plus $ <var:W> $ is greater than or equivalent to <nat:2> . We confirm the belief holds for $ <var:W> ^ <nat:2> = <nat:4> $ shows $ <var:W> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:W> : nat , ( <var:W> >= <nat:2> ) /\ ( <var:W> ^ <nat:2> = <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:8> $ is equal to $ <var:E> ^ <nat:3> $ given $ <var:E> \in \mathbb{N} $ where $ <var:E> $ greater than or equivalent to <nat:2> . \end{theorem} \begin{proof} Assume $ <var:E> = <nat:2> $ . Notice $ <var:E> = <nat:2> $ is greater than or equivalent to <nat:2> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:E> : nat , ( <nat:8> = <var:E> ^ <nat:3> ) /\ ( <var:E> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

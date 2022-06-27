@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:x> \cdot <nat:66> + <nat:370> $ will be even using any natural numbers $ <var:x> $ . \end{theorem} \begin{proof} Observe $ <nat:370> $ is obviously an even natural . The multiplication of even elements of $ \mathbb{Z}^+ $ is in itself an even integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:x> : nat , Nat . even ( <nat:66> * <var:x> + <nat:370> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:370> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

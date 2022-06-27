@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} We say that $ <var:a> \in \mathbb{N} $ is an <def:artifact> of $ <var:b> \in \mathbb{N} $ if $ <var:a> = <var:b> ^ <nat:10> $ . \end{definition} \begin{theorem} <nat:1024> is an <def:artifact> of <nat:2> . \end{theorem} \begin{proof} By definition , <nat:1024> is an <def:artifact> of <nat:2> because it is equal to $ <nat:2> ^ <nat:10> $ . \end{proof} \end{document}
-~
-Proof

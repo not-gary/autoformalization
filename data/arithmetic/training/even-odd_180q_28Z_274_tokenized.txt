@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:q> \times <nat:180> + <nat:28> \times <var:Z> + <nat:274> $ is even . \end{theorem} \begin{proof} Result clearly is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:q> <var:Z> : nat , Nat . even ( <nat:180> * <var:q> + <nat:28> * <var:Z> + <nat:274> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

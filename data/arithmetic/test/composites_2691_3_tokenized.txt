@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:385> is the multiplication between integers $ <var:i> $ , $ <var:y> $ , $ <var:r> $ . \end{theorem} \begin{proof} Observe that $ <var:y> \cdot <var:r> \cdot <var:i> = <nat:385> = <nat:11> \cdot <nat:5> \cdot <nat:7> $ . Thus , $ <var:i> \times <var:r> \times <var:y> = <nat:385> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:i> <var:y> <var:r> : nat , ( <nat:385> = <var:i> * <var:y> * <var:r> ) . Proof . exists <nat:7> . exists <nat:11> . exists <nat:5> . repeat split . all : lia . Qed . 

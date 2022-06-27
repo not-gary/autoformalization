@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:T> $ , $ <var:H> $ , and $ <var:r> \in \mathbb{N} $ such that the integer <nat:120> is the multiplication between integers $ <var:T> $ , $ <var:H> $ , $ <var:r> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Take $ <var:H> = <nat:6> $ , $ <var:T> = <nat:10> $ , and $ <var:r> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:T> <var:H> <var:r> : nat , ( <nat:120> = <var:T> * <var:H> * <var:r> ) . Proof . exists <nat:10> . exists <nat:6> . exists <nat:2> . repeat split . all : lia . Qed . 

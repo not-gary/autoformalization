@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:P> \in \mathbb{N} $ . We define that some integer $ <var:A> $ will be named a <def:square> whole number if $ <var:P> ^ <nat:2> = <var:A> $ . Accordingly $ <var:A> = <nat:4> $ is a <def:square> whole number . \end{theorem} \begin{proof} We justify $ <var:P> ^ <nat:2> = <nat:4> $ . Observe that $ <nat:4> = <var:P> ^ <nat:2> = <nat:2> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:A> : nat ) := exists <var:P> : nat , ( <var:P> ^ <nat:2> = <var:A> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

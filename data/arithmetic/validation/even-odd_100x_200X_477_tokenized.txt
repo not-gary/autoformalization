@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:100> * <var:x> + <nat:200> * <var:X> + <nat:477> $ is guaranteed to be odd . \end{theorem} \begin{proof} Notice $ <nat:477> $ is trivially odd . The adding of an even whole number and an odd whole number must be odd . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:x> <var:X> : nat , Nat . odd ( <nat:100> * <var:x> + <nat:200> * <var:X> + <nat:477> ) = true . Proof . intros . assert ( <genH> : Nat . odd <nat:477> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

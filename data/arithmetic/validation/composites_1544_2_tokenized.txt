@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:63> $ is the same as $ <var:A> \times <var:F> $ assuming $ <var:A> $ and $ <var:F> $ . \end{theorem} \begin{proof} Let $ <var:F> = <nat:7> $ , and $ <var:A> = <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:A> <var:F> : nat , ( <nat:63> = <var:A> * <var:F> ) . Proof . exists <nat:9> . exists <nat:7> . lia . Qed . 

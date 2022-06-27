@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:Z> $ , $ <var:V> \in \mathbb{Z}^+ $ where $ <var:V> $ , $ <var:Z> > <nat:1> $ . $ <nat:20> = <var:V> * <var:Z> $ . \end{theorem} \begin{proof} Let $ <var:V> = <nat:2> $ , and $ <var:Z> = <nat:10> $ . Notice $ <nat:20> = <var:Z> \cdot <var:V> = <nat:10> \cdot <nat:2> $ . This gives our theory holds . As a consequence , $ <nat:20> = <var:V> * <var:Z> $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Z> <var:V> : nat , ( <var:V> > <nat:1> ) /\ ( <var:Z> > <nat:1> ) /\ ( <nat:20> = <var:V> * <var:Z> ) . Proof . exists <nat:10> . exists <nat:2> . lia . Qed . 

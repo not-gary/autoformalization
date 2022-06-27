@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:v> ^ <nat:7> $ is the same as $ <nat:128> $ satisfying the condition that $ <var:v> $ larger than or equal to <nat:2> . \end{theorem} \begin{proof} Take $ <var:v> = <nat:2> $ . Note $ <nat:2> \geq <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:v> : nat , ( <var:v> ^ <nat:7> = <nat:128> ) /\ ( <var:v> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

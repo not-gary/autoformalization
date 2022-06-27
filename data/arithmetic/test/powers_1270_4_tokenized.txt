@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:A> $ satisfying the condition that <nat:16> is the raising of of natural number $ <var:A> $ taken to the exponent <nat:4> . \end{theorem} \begin{proof} Assume $ <var:A> = <nat:2> $ . We justify the result holds in consideration of $ <nat:2> ^ <nat:4> = <nat:16> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:A> : nat , ( <nat:16> = <var:A> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

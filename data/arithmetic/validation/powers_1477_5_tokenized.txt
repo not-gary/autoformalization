@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:32> is the raising of between integer $ <var:w> $ taken to the power <nat:5> satisfying the condition that $ <var:w> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} Take $ <var:w> = <nat:2> $ . We show $ <nat:32> = <var:w> ^ <nat:5> $ . We justify the formula is true for $ <var:w> ^ <nat:5> = <nat:2> ^ <nat:5> = <nat:32> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:w> : nat , ( <nat:32> = <var:w> ^ <nat:5> ) /\ ( <var:w> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

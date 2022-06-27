@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:446> \times <var:H> + <nat:343> + <nat:348> \times <var:o> $ is guaranteed to be odd . \end{theorem} \begin{proof} Lemma clearly is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:H> <var:o> : nat , Nat . odd ( <nat:446> * <var:H> + <nat:348> * <var:o> + <nat:343> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:d> \in \mathbb{Z}^+ $ such that $ <var:d> > <nat:1> $ and satisfying the condition that $ <var:d> ^ <nat:7> $ is $ <nat:128> $ . \end{theorem} \begin{proof} Take $ <var:d> = <nat:2> $ . Note $ <var:d> ^ <nat:7> = <nat:128> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <var:d> > <nat:1> ) /\ ( <var:d> ^ <nat:7> = <nat:128> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

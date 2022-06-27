@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:454> + <var:r> \times <nat:206> $ is even . \end{theorem} \begin{proof} The product between an even element of $ \mathbb{Z}^+ $ and a whole number will be an even integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:r> : nat , Nat . even ( <nat:206> * <var:r> + <nat:454> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some positive integer $ <var:u> $ such that the integer <nat:2048> is the exponent between $ <var:u> $ repeatedly multiplied to the power <nat:11> . \end{theorem} \begin{proof} Assume $ <var:u> = <nat:2> $ . Notice $ <nat:2048> = <nat:2> ^ <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <nat:2048> = <var:u> ^ <nat:11> ) . Proof . exists <nat:2> . auto . Qed . 

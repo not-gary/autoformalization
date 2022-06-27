@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:t> $ be whole numbers where $ <var:t> > <nat:1> $ and where $ <var:t> ^ <nat:7> $ equals $ <nat:128> $ . \end{theorem} \begin{proof} Note that $ <var:t> ^ <nat:7> = <nat:128> $ suggests $ <var:t> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <var:t> > <nat:1> ) /\ ( <var:t> ^ <nat:7> = <nat:128> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

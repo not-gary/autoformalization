@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some positive integers $ <var:B> $ , and $ <var:e> $ satisfying the condition that $ <nat:42> $ is the same as $ <var:e> \cdot <var:B> $ . \end{theorem} \begin{proof} Assume $ <var:B> = <nat:7> $ and $ <var:e> = <nat:6> $ . This shows the principle holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:B> <var:e> : nat , ( <nat:42> = <var:e> * <var:B> ) . Proof . exists <nat:7> . exists <nat:6> . lia . Qed . 

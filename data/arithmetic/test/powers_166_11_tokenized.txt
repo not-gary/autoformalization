@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some number $ <var:q> $ satisfying the condition that $ <var:q> \geq <nat:2> $ as well as satisfying the condition that $ <nat:2048> $ is equivalent to $ <var:q> ^ <nat:11> $ . \end{theorem} \begin{proof} Observe that $ <nat:2048> = <var:q> ^ <nat:11> $ suggests $ <var:q> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:q> : nat , ( <var:q> >= <nat:2> ) /\ ( <nat:2048> = <var:q> ^ <nat:11> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

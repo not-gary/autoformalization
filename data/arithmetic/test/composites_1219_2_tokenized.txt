@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:N> $ , $ <var:k> \in \mathbb{N} $ where $ <var:N> $ , and $ <var:k> $ greater than <nat:1> plus such that $ <nat:44> $ is $ <var:N> \times <var:k> $ . \end{theorem} \begin{proof} Let $ <var:N> = <nat:4> $ , and $ <var:k> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:N> <var:k> : nat , ( <var:N> > <nat:1> ) /\ ( <var:k> > <nat:1> ) /\ ( <nat:44> = <var:N> * <var:k> ) . Proof . exists <nat:4> . exists <nat:11> . lia . Qed . 

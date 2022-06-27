@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> \times <var:o> + <nat:460> \times <var:D> + <nat:428> \times <var:V> + <nat:190> \times <var:y> + <nat:230> $ must be even for some natural numbers $ <var:o> $ , $ <var:D> $ , $ <var:y> $ , and $ <var:V> $ . \end{theorem} \begin{proof} Theorem obivously is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:o> <var:D> <var:y> <var:V> : nat , Nat . even ( <nat:4> * <var:o> + <nat:460> * <var:D> + <nat:428> * <var:V> + <nat:190> * <var:y> + <nat:230> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:256> $ is equivalent to $ <var:N> ^ <nat:8> $ satisfying the condition that $ <var:N> $ more than <nat:1> . \end{theorem} \begin{proof} Notice $ <var:N> ^ <nat:8> = <nat:256> $ gives $ <var:N> = <nat:2> $ . This hints our result holds . As a result , <nat:256> is the raising of between $ <var:N> \in \mathbb{Z}^+ $ repeatedly multiplied to the degree <nat:8> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <nat:256> = <var:N> ^ <nat:8> ) /\ ( <var:N> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

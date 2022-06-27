@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:a> ^ <nat:8> $ is equivalent to $ <nat:256> $ assuming $ <var:a> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Notice that $ <nat:256> = <var:a> ^ <nat:8> $ shows $ <var:a> = <nat:2> $ . So , $ <nat:256> = <var:a> ^ <nat:8> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:a> : nat , ( <var:a> ^ <nat:8> = <nat:256> ) . Proof . exists <nat:2> . auto . Qed . 

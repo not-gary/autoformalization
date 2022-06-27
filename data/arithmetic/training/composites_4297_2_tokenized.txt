@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:K> \cdot <var:G> $ equals $ <nat:88> $ so that $ <var:G> $ , $ <var:K> \geq <nat:2> $ . \end{theorem} \begin{proof} We verify our principle is valid as $ <var:K> * <var:G> = <nat:88> $ shows $ <var:K> = <nat:11> $ , and $ <var:G> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:K> <var:G> : nat , ( <var:K> * <var:G> = <nat:88> ) /\ ( <var:G> >= <nat:2> ) /\ ( <var:K> >= <nat:2> ) . Proof . exists <nat:11> . exists <nat:8> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:72> $ is equal to $ <var:t> \times <var:q> $ . \end{theorem} \begin{proof} Note $ <nat:72> = <var:t> \cdot <var:q> $ suggests $ <var:t> = <nat:9> $ , and $ <var:q> = <nat:8> $ . This gives our theory is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:t> <var:q> : nat , ( <nat:72> = <var:t> * <var:q> ) . Proof . exists <nat:9> . exists <nat:8> . lia . Qed . 

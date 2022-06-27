@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:4> is the repeated product between $ <var:V> \in \mathbb{N} $ repeatedly multiplied to the degree <nat:2> so that $ <var:V> \geq <nat:2> $ . \end{theorem} \begin{proof} Allow $ <var:V> = <nat:2> $ . We show our claim is true in consideration of $ <nat:4> = <var:V> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <nat:4> = <var:V> ^ <nat:2> ) /\ ( <var:V> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:p> \in \mathbb{Z}^+ $ satisfying the condition that the number <nat:4> is the repeated product between whole number $ <var:p> \in \mathbb{N} $ raised to the power <nat:2> . \end{theorem} \begin{proof} Assume $ <var:p> = <nat:2> $ . We justify our thesis is true in consideration of $ <nat:2> ^ <nat:2> = <nat:4> $ . Thus , $ <var:p> ^ <nat:2> = <nat:4> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:p> : nat , ( <nat:4> = <var:p> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

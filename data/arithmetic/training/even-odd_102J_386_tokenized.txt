@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:102> * <var:J> + <nat:386> $ is guaranteed to be even taking some natural terms $ <var:J> $ . \end{theorem} \begin{proof} Recall the summation between even elements of $ \mathbb{Z}^+ $ will be an even number . Similarly , observe that taking the product between an even natural number and an arbitrary number is instrinsically an even element of $ \mathbb{Z}^+ $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:J> : nat , Nat . even ( <nat:102> * <var:J> + <nat:386> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

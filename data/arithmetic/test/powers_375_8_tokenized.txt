@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:l> \in \mathbb{Z}^+ $ where $ <var:l> \geq <nat:2> $ and satisfying the condition that $ <var:l> ^ <nat:8> $ is the same as $ <nat:256> $ . \end{theorem} \begin{proof} Note that $ <nat:2> ^ <nat:8> = <nat:256> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:l> : nat , ( <var:l> >= <nat:2> ) /\ ( <var:l> ^ <nat:8> = <nat:256> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

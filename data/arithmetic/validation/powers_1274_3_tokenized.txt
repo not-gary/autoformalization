@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some whole number $ <var:Q> $ so that the integer <nat:8> is the exponent between natural number $ <var:Q> $ exponentiated to the power <nat:3> . \end{theorem} \begin{proof} Allow $ <var:Q> = <nat:2> $ . We prove our theory is valid for $ <var:Q> ^ <nat:3> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Q> : nat , ( <nat:8> = <var:Q> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

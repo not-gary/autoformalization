@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Claim that only if there is integer $ <var:X> $ we claim that some natural number $ <var:b> $ is considered a <def:penteract> natural number if $ <var:X> ^ <nat:5> = <var:b> $ and base is larger than <nat:1> . Hence the number <nat:32> is a <def:penteract> . \end{theorem} \begin{proof} Take $ <var:X> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:penteract> ( <var:b> : nat ) := exists <var:X> : nat , ( <var:X> ^ <nat:5> = <var:b> ) /\ ( <var:X> > <nat:1> ) . Theorem <genP:1> : <def:penteract> <nat:32> . Proof . unfold <def:penteract> . exists <nat:2> . split . auto . lia . Qed . 

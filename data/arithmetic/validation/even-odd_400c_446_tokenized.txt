@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:446> + <nat:400> * <var:c> $ must be even for every natural numbers $ <var:c> $ . \end{theorem} \begin{proof} We show $ <nat:400> \times <var:c> + <nat:446> $ is even . The integer $ <nat:400> $ is obviously even The summation of even positive integers concurrently will be by its very nature an even whole number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:c> : nat , Nat . even ( <nat:400> * <var:c> + <nat:446> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:400> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

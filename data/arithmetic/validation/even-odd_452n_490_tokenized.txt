@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:490> + <var:n> * <nat:452> $ will be even . \end{theorem} \begin{proof} Notice that the multiplication of even positive integers is by its very nature an even number in $ \mathbb{Z}^+ $ . We justify our claim is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:n> : nat , Nat . even ( <nat:452> * <var:n> + <nat:490> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

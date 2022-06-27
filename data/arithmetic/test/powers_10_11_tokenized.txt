@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:m> $ are numbers . Let that some number $ <var:p> $ is considered to be a <def:hendekeract> whole number given $ <var:p> = <var:m> ^ <nat:11> $ . Then $ <var:p> = <nat:2048> $ is a <def:hendekeract> integer . \end{theorem} \begin{proof} Take $ <var:m> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:hendekeract> ( <var:p> : nat ) := exists <var:m> : nat , ( <var:p> = <var:m> ^ <nat:11> ) . Theorem <genP:1> : <def:hendekeract> <nat:2048> . Proof . unfold <def:hendekeract> . exists <nat:2> . auto . Qed . 

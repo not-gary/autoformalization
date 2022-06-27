@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:C> $ and $ <var:q> $ are natural numbers such that $ <var:C> * <var:q> $ is $ <nat:33> $ . \end{theorem} \begin{proof} Note $ <nat:33> = <var:q> \cdot <var:C> $ yields $ <var:q> = <nat:3> $ , and $ <var:C> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:q> : nat , ( <var:C> * <var:q> = <nat:33> ) . Proof . exists <nat:11> . exists <nat:3> . lia . Qed . 

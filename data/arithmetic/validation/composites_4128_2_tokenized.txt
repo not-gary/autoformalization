@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:16> $ is equal to $ <var:d> * <var:r> $ . \end{theorem} \begin{proof} Assume $ <var:d> = <nat:8> $ and $ <var:r> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:d> <var:r> : nat , ( <nat:16> = <var:d> * <var:r> ) . Proof . exists <nat:8> . exists <nat:2> . lia . Qed . 

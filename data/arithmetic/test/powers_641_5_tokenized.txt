@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:32> $ is $ <var:E> ^ <nat:5> $ so that $ <var:E> $ greater than or equivalent to <nat:2> . \end{theorem} \begin{proof} We demonstrate $ <var:E> ^ <nat:5> = <nat:32> $ . We demonstrate our result holds for $ <nat:2> $ is greater than or equal to <nat:2> and for $ <var:E> ^ <nat:5> = <nat:32> $ produces $ <var:E> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:E> : nat , ( <nat:32> = <var:E> ^ <nat:5> ) /\ ( <var:E> >= <nat:2> ) . Proof . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } exists <nat:2> . split . auto . apply <genH> . Qed . 

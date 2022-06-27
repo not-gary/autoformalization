@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:q> * <nat:90> + <var:L> * <nat:204> + <nat:155> + <nat:8> * <var:C> $ is guaranteed to be odd assuming some positive numbers $ <var:L> $ , $ <var:C> $ , and $ <var:q> $ . \end{theorem} \begin{proof} Theorem obivously must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:L> <var:C> <var:q> : nat , Nat . odd ( <nat:90> * <var:q> + <nat:204> * <var:L> + <nat:8> * <var:C> + <nat:155> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

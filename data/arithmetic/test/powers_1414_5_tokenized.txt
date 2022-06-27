@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:32> is the repeated product between natural number $ <var:y> \in \mathbb{N} $ raised to the exponent <nat:5> where $ <var:y> $ larger than or equal to <nat:2> . \end{theorem} \begin{proof} Note that $ <var:y> ^ <nat:5> = <nat:32> $ produces $ <var:y> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:y> : nat , ( <nat:32> = <var:y> ^ <nat:5> ) /\ ( <var:y> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

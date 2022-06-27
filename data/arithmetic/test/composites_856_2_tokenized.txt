@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:m> $ and $ <var:L> $ where the natural number <nat:18> is the product of numbers $ <var:m> $ , $ <var:L> $ . \end{theorem} \begin{proof} Allow $ <var:m> = <nat:9> $ , and $ <var:L> = <nat:2> $ . We justify $ <nat:18> = <var:m> * <var:L> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:m> <var:L> : nat , ( <nat:18> = <var:m> * <var:L> ) . Proof . exists <nat:9> . exists <nat:2> . lia . Qed . 

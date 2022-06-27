@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using any terms $ <var:y> $ , and $ <var:a> $ the formula $ <var:y> \cdot <nat:392> + <nat:64> \cdot <var:a> + <nat:137> $ is odd . \end{theorem} \begin{proof} The multiplication of even positive integers is an even element of $ \mathbb{N} $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:y> <var:a> : nat , Nat . odd ( <nat:392> * <var:y> + <nat:64> * <var:a> + <nat:137> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

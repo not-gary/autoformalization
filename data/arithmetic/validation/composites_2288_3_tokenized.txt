@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some integers $ <var:l> $ , $ <var:m> $ , and $ <var:q> $ so that the natural number <nat:112> is the multiplication of numbers $ <var:l> $ , $ <var:m> $ , and $ <var:q> $ . \end{theorem} \begin{proof} Let $ <var:m> = <nat:7> $ , $ <var:q> = <nat:2> $ and $ <var:l> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:m> <var:q> : nat , ( <nat:112> = <var:l> * <var:m> * <var:q> ) . Proof . exists <nat:8> . exists <nat:7> . exists <nat:2> . repeat split . all : lia . Qed . 

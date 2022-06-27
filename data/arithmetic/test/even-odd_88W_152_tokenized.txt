@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using every integers $ <var:W> $ the sum $ <var:W> \cdot <nat:88> + <nat:152> $ is guaranteed to be even . \end{theorem} \begin{proof} The positive integer $ <nat:88> $ is obviously even The adding of even numbers in $ \mathbb{N} $ together will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:W> : nat , Nat . even ( <nat:88> * <var:W> + <nat:152> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:88> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

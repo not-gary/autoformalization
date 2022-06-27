@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:88> is the multiplication between $ <var:m> $ and $ <var:T> \in \mathbb{N} $ satisfying the condition that $ <var:T> $ and $ <var:m> $ larger than <nat:1> . \end{theorem} \begin{proof} Note $ <nat:88> = <nat:11> \cdot <nat:8> $ . Because of this , $ <var:T> \cdot <var:m> = <nat:88> $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:m> <var:T> : nat , ( <nat:88> = <var:m> * <var:T> ) /\ ( <var:T> > <nat:1> ) /\ ( <var:m> > <nat:1> ) . Proof . exists <nat:11> . exists <nat:8> . lia . Qed . 

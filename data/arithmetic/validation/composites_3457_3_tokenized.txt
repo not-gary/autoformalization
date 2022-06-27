@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some $ <var:l> $ , $ <var:d> $ and $ <var:A> $ such that $ <nat:264> $ is the same as $ <var:d> \cdot <var:l> \cdot <var:A> $ . \end{theorem} \begin{proof} Notice that $ <var:l> \cdot <var:d> \cdot <var:A> = <nat:264> $ yields $ <var:l> = <nat:8> $ , $ <var:d> = <nat:3> $ , $ <var:A> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:d> <var:A> : nat , ( <nat:264> = <var:d> * <var:l> * <var:A> ) . Proof . exists <nat:8> . exists <nat:3> . exists <nat:11> . repeat split . all : lia . Qed . 

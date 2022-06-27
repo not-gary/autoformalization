@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given any positive terms $ <var:q> $ the sum $ <var:q> \cdot <nat:248> + <nat:224> $ is even . \end{theorem} \begin{proof} See $ <nat:224> $ is guaranteed to be an even number in $ \mathbb{Z}^+ $ . Multiplying of even numbers in $ \mathbb{Z}^+ $ must be an even number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:q> : nat , Nat . even ( <nat:248> * <var:q> + <nat:224> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:224> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:134> + <var:E> \cdot <nat:130> $ will be even . \end{theorem} \begin{proof} We demonstrate this main result must be true . Take note that taking the product of even numbers in $ \mathbb{Z}^+ $ is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:E> : nat , Nat . even ( <nat:130> * <var:E> + <nat:134> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

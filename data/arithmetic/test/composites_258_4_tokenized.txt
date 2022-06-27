@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:10296> is the multiplication between numbers $ <var:s> $ , $ <var:k> $ , $ <var:J> $ , $ <var:y> \in \mathbb{N} $ . \end{theorem} \begin{proof} Assume $ <var:s> = <nat:6> $ , $ <var:J> = <nat:12> $ , $ <var:y> = <nat:11> $ , $ <var:k> = <nat:13> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:s> <var:k> <var:J> <var:y> : nat , ( <nat:10296> = <var:s> * <var:k> * <var:J> * <var:y> ) . Proof . exists <nat:6> . exists <nat:13> . exists <nat:12> . exists <nat:11> . repeat split . all : lia . Qed . 

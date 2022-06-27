@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:O> \times <nat:372> + <nat:62> $ is even . \end{theorem} \begin{proof} See the adding of even elements of $ \mathbb{Z}^+ $ with an even element of $ \mathbb{N} $ is guaranteed to be even . We check the expression $ <nat:62> + <var:O> * <nat:372> $ is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:O> : nat , Nat . even ( <nat:372> * <var:O> + <nat:62> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

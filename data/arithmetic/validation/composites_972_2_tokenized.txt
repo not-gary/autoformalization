@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:V> $ , and $ <var:C> \in \mathbb{N} $ where $ <var:C> $ , and $ <var:V> \geq <nat:2> $ as well as such that $ <var:C> * <var:V> $ equals $ <nat:40> $ . \end{theorem} \begin{proof} Take $ <var:V> = <nat:4> $ , and $ <var:C> = <nat:10> $ . We present our thesis is true as $ <nat:40> = <var:C> * <var:V> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:V> <var:C> : nat , ( <var:C> >= <nat:2> ) /\ ( <var:V> >= <nat:2> ) /\ ( <var:C> * <var:V> = <nat:40> ) . Proof . exists <nat:4> . exists <nat:10> . lia . Qed . 

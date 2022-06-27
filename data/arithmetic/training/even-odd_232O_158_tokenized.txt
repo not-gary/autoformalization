@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For some positive numbers $ <var:O> $ the formula $ <var:O> \times <nat:232> + <nat:158> $ is even . \end{theorem} \begin{proof} To begin , recall the totaling of even elements of $ \mathbb{Z}^+ $ together must be even , and likewise we know multiplying of an even element of $ \mathbb{Z}^+ $ and some natural must be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:O> : nat , Nat . even ( <nat:232> * <var:O> + <nat:158> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

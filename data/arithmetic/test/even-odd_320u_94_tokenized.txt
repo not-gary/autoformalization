@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:94> + <nat:320> \times <var:u> $ is even using any whole numbers $ <var:u> $ . \end{theorem} \begin{proof} Multiplying of an even positive integer and a number must be an even number . The adding between an even element of $ \mathbb{Z}^+ $ and an even number is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:u> : nat , Nat . even ( <nat:320> * <var:u> + <nat:94> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . repeat rewrite Nat . even_add . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:q> $ , $ <var:O> $ , and $ <var:Z> $ are numbers satisfying the condition that the integer <nat:252> is the product between $ <var:q> $ , $ <var:O> $ , and $ <var:Z> $ . \end{theorem} \begin{proof} Allow $ <var:O> = <nat:7> $ , $ <var:Z> = <nat:9> $ , $ <var:q> = <nat:4> $ . We confirm $ <nat:252> = <var:Z> \cdot <var:q> \cdot <var:O> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:q> <var:O> <var:Z> : nat , ( <nat:252> = <var:q> * <var:O> * <var:Z> ) . Proof . exists <nat:4> . exists <nat:7> . exists <nat:9> . repeat split . all : lia . Qed . 

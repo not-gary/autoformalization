@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:D> * <var:a> $ equals $ <nat:110> $ with $ <var:D> $ and $ <var:a> $ such that $ <var:a> $ , $ <var:D> \geq <nat:2> $ . \end{theorem} \begin{proof} Allow $ <var:a> = <nat:10> $ , $ <var:D> = <nat:11> $ . We prove <nat:110> is the product of $ <var:a> $ , and $ <var:D> \in \mathbb{N} $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:D> <var:a> : nat , ( <var:D> * <var:a> = <nat:110> ) /\ ( <var:a> >= <nat:2> ) /\ ( <var:D> >= <nat:2> ) . Proof . exists <nat:11> . exists <nat:10> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:416> <var:c> + <nat:164> $ must be even given every natural terms $ <var:c> $ . \end{theorem} \begin{proof} We justify $ <nat:164> + <nat:416> \cdot <var:c> $ will be even . Recall the summing of an even number in $ \mathbb{Z}^+ $ and an even element of $ \mathbb{N} $ is guaranteed to be even , additionally we know multiplying between an even natural number and a integer will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:c> : nat , Nat . even ( <nat:416> * <var:c> + <nat:164> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

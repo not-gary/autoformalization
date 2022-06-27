@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:l> \in \mathbb{N} $ satisfying the condition that $ <var:l> $ greater than <nat:1> as well as where the number <nat:4096> is the exponential of integer $ <var:l> \in \mathbb{Z}^+ $ exponentiated to the exponent <nat:12> . \end{theorem} \begin{proof} Let $ <var:l> = <nat:2> $ . Observe that $ <var:l> ^ <nat:12> = <nat:4096> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:l> : nat , ( <var:l> > <nat:1> ) /\ ( <nat:4096> = <var:l> ^ <nat:12> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

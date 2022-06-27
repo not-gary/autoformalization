@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:j> $ as natural numbers where $ <var:j> \geq <nat:2> $ . the natural number <nat:4> is the repeated multiplication between whole number $ <var:j> $ taken to the degree <nat:2> . \end{theorem} \begin{proof} We verify $ <var:j> ^ <nat:2> = <nat:4> $ as well as $ <var:j> \geq <nat:2> $ . Observe that $ <var:j> ^ <nat:2> = <nat:4> $ implies $ <var:j> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <var:j> >= <nat:2> ) /\ ( <nat:4> = <var:j> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

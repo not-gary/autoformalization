@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:408> + <nat:270> * <var:W> $ must be even . \end{theorem} \begin{proof} The adding of even numbers in $ \mathbb{N} $ and an even element of $ \mathbb{Z}^+ $ will be even . We verify the formula $ <nat:408> + <var:W> \cdot <nat:270> $ is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:W> : nat , Nat . even ( <nat:270> * <var:W> + <nat:408> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

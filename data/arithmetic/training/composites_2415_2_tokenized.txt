@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:96> is the multiplication of numbers $ <var:v> $ , and $ <var:K> \in \mathbb{N} $ . \end{theorem} \begin{proof} Notice that $ <nat:96> = <nat:8> * <nat:12> = <var:v> * <var:K> $ . Therefore , $ <var:v> \times <var:K> = <nat:96> $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:v> <var:K> : nat , ( <nat:96> = <var:v> * <var:K> ) . Proof . exists <nat:8> . exists <nat:12> . lia . Qed . 

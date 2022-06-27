@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:94> + <nat:92> \times <var:T> $ must be even . \end{theorem} \begin{proof} Take note the adding between even whole numbers successively must be by definition an even whole number . The pair $ <var:T> * <nat:92> $ is even . It can be shown that the formula $ <var:T> \times <nat:92> + <nat:94> $ must be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:T> : nat , Nat . even ( <nat:92> * <var:T> + <nat:94> ) = true . Proof . intros . repeat rewrite Nat . even_add . assert ( <genH> : Nat . even ( <nat:92> * <var:T> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:c> \times <var:o> \times <var:Y> \times <var:G> \times <var:F> $ is equal to $ <nat:8640> $ . \end{theorem} \begin{proof} Assume $ <var:F> = <nat:10> $ , $ <var:G> = <nat:4> $ , $ <var:Y> = <nat:8> $ , $ <var:o> = <nat:9> $ , $ <var:c> = <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:F> <var:G> <var:c> <var:o> <var:Y> : nat , ( <var:c> * <var:o> * <var:Y> * <var:G> * <var:F> = <nat:8640> ) . Proof . exists <nat:10> . exists <nat:4> . exists <nat:3> . exists <nat:9> . exists <nat:8> . repeat split . all : lia . Qed . 

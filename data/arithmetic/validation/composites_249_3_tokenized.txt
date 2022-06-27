@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:252> is the product between numbers $ <var:S> $ , $ <var:m> $ , and $ <var:r> $ . \end{theorem} \begin{proof} Take $ <var:S> = <nat:4> $ , $ <var:m> = <nat:7> $ , and $ <var:r> = <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:S> <var:m> <var:r> : nat , ( <nat:252> = <var:S> * <var:m> * <var:r> ) . Proof . exists <nat:4> . exists <nat:7> . exists <nat:9> . repeat split . all : lia . Qed . 

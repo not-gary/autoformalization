@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:d> \in \mathbb{Z}^+ $ such that $ <nat:128> = <var:d> ^ <nat:7> $ . \end{theorem} \begin{proof} Let $ <var:d> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <nat:128> = <var:d> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

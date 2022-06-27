@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:348> + <var:B> * <nat:4> $ must be even with every terms $ <var:B> $ . \end{theorem} \begin{proof} The product between even whole numbers will be even . Observe that $ <nat:348> $ is known to be an even positive integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:B> : nat , Nat . even ( <nat:4> * <var:B> + <nat:348> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . assert ( <genH> : Nat . even <nat:348> = true ) . { auto . } rewrite <genH> . auto . Qed . 

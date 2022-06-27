@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:Y> $ as natural numbers where $ <nat:128> = <var:Y> ^ <nat:7> $ . \end{theorem} \begin{proof} We confirm our theory is valid as $ <nat:128> = <var:Y> ^ <nat:7> = <nat:2> ^ <nat:7> $ . So , $ <var:Y> ^ <nat:7> = <nat:128> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Y> : nat , ( <nat:128> = <var:Y> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

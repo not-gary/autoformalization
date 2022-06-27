@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:m> ^ <nat:10> $ is equal to $ <nat:1024> $ satisfying the condition that $ <var:m> \geq <nat:2> $ . \end{theorem} \begin{proof} Allow $ <var:m> = <nat:2> $ . We confirm <nat:1024> is the exponent between some number $ <var:m> $ exponentiated to the exponent <nat:10> . We prove the formula is true for $ <nat:2> ^ <nat:10> = <nat:1024> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:m> : nat , ( <var:m> ^ <nat:10> = <nat:1024> ) /\ ( <var:m> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

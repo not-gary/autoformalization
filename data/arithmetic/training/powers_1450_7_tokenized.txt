@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:q> \in \mathbb{Z}^+ $ where $ <var:q> \geq <nat:2> $ and where $ <nat:128> $ is equal to $ <var:q> ^ <nat:7> $ . \end{theorem} \begin{proof} Assume $ <var:q> = <nat:2> $ . We verify our formula holds considering $ <nat:128> = <var:q> ^ <nat:7> $ . Hence , $ <var:q> ^ <nat:7> = <nat:128> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:q> : nat , ( <var:q> >= <nat:2> ) /\ ( <nat:128> = <var:q> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

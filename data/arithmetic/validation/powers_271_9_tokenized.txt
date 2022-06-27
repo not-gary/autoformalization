@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:512> is the exponential of whole number $ <var:u> \in \mathbb{Z}^+ $ exponentiated to the power <nat:9> . \end{theorem} \begin{proof} Let $ <var:u> = <nat:2> $ . We justify our belief is true as $ <nat:512> = <var:u> ^ <nat:9> $ . Therefore , <nat:512> is the exponent of some integer $ <var:u> $ exponentiated to the degree <nat:9> has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <nat:512> = <var:u> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

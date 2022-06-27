@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:t> $ are integers such that $ <var:t> $ more than or equal to <nat:2> and such that $ <var:t> ^ <nat:7> $ is $ <nat:128> $ . \end{theorem} \begin{proof} Take $ <var:t> = <nat:2> $ . This suggests the proposition holds . Hence , $ <nat:128> = <var:t> ^ <nat:7> $ as well as $ <var:t> \geq <nat:2> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <var:t> >= <nat:2> ) /\ ( <var:t> ^ <nat:7> = <nat:128> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

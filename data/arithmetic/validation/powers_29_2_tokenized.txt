@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:4> is the exponential of natural number $ <var:d> $ raised to the exponent <nat:2> satisfying the condition that $ <var:d> > <nat:1> $ . \end{theorem} \begin{proof} Take $ <var:d> = <nat:2> $ . Notice that $ <nat:4> = <var:d> ^ <nat:2> $ . Also observe $ <var:d> = <nat:2> $ is more than <nat:1> . This yields our thesis holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <nat:4> = <var:d> ^ <nat:2> ) /\ ( <var:d> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

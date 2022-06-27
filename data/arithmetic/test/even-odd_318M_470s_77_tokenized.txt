@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:M> <nat:318> + <nat:77> + <nat:470> <var:s> $ is guaranteed to be odd . \end{theorem} \begin{proof} Take note $ <nat:77> $ is clearly odd . It can be verified that the result is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:M> <var:s> : nat , Nat . odd ( <nat:318> * <var:M> + <nat:470> * <var:s> + <nat:77> ) = true . Proof . intros . assert ( <genH> : Nat . odd <nat:77> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

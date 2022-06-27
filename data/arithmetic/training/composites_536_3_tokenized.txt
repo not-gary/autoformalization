@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:B> $ , $ <var:P> $ , and $ <var:k> $ are integers such that the natural number <nat:378> is the product of positive integers $ <var:B> $ , $ <var:P> $ , and $ <var:k> $ . \end{theorem} \begin{proof} We verify $ <nat:378> = <var:B> * <var:k> * <var:P> $ . Notice $ <nat:378> = <var:P> * <var:B> * <var:k> = <nat:6> * <nat:9> * <nat:7> $ . This shows our formula is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:B> <var:P> <var:k> : nat , ( <nat:378> = <var:B> * <var:P> * <var:k> ) . Proof . exists <nat:9> . exists <nat:6> . exists <nat:7> . repeat split . all : lia . Qed . 

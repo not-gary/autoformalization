@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:256> = <var:t> ^ <nat:8> $ where $ <var:t> $ greater than <nat:1> . \end{theorem} \begin{proof} We prove $ <var:t> ^ <nat:8> = <nat:256> $ and $ <var:t> $ is larger than <nat:1> . Note $ <nat:2> ^ <nat:8> = <nat:256> $ . This shows the statement holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <nat:256> = <var:t> ^ <nat:8> ) /\ ( <var:t> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

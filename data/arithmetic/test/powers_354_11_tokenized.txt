@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:k> $ as positive integers such that the positive integer <nat:2048> is the exponent of $ <var:k> $ taken to the degree <nat:11> . \end{theorem} \begin{proof} Let $ <var:k> = <nat:2> $ . Hence , $ <var:k> ^ <nat:11> = <nat:2048> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:k> : nat , ( <nat:2048> = <var:k> ^ <nat:11> ) . Proof . exists <nat:2> . auto . Qed . 

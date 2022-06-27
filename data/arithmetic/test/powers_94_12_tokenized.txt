@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:k> $ as natural numbers so that $ <var:k> > <nat:1> $ plus so that <nat:4096> is the repeated product between whole number $ <var:k> $ repeatedly multiplied to the degree <nat:12> . \end{theorem} \begin{proof} Take $ <var:k> = <nat:2> $ . Observe that $ <var:k> ^ <nat:12> = <nat:4096> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:k> : nat , ( <var:k> > <nat:1> ) /\ ( <nat:4096> = <var:k> ^ <nat:12> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

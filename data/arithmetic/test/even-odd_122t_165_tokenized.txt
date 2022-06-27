@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:165> + <var:t> <nat:122> $ will be odd . \end{theorem} \begin{proof} It can be checked that the expression $ <var:t> \times <nat:122> + <nat:165> $ will be odd . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:t> : nat , Nat . odd ( <nat:122> * <var:t> + <nat:165> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

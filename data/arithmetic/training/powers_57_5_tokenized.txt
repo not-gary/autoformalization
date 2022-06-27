@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:32> is the repeated multiplication between $ <var:o> $ repeatedly multiplied to the power <nat:5> . \end{theorem} \begin{proof} Assume $ <var:o> = <nat:2> $ . We confirm $ <var:o> ^ <nat:5> = <nat:32> $ . Notice that $ <nat:32> = <nat:2> ^ <nat:5> $ . This indicates the formula is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:o> : nat , ( <nat:32> = <var:o> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

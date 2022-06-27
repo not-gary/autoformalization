@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:C> $ and $ <var:S> $ be numbers so that $ <var:S> \times <var:C> $ is equivalent to $ <nat:72> $ . \end{theorem} \begin{proof} We demonstrate the claim is valid on account of $ <nat:12> \cdot <nat:6> = <nat:72> $ . As a consequence , $ <nat:72> = <var:S> \times <var:C> $ is validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:S> : nat , ( <var:S> * <var:C> = <nat:72> ) . Proof . exists <nat:12> . exists <nat:6> . lia . Qed . 

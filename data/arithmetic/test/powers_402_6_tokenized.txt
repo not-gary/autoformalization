@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:64> $ is $ <var:F> ^ <nat:6> $ . \end{theorem} \begin{proof} Assume $ <var:F> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <nat:64> = <var:F> ^ <nat:6> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:128> $ is the same as $ <var:q> ^ <nat:7> $ so that $ <var:q> \geq <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:q> = <nat:2> $ . Observe $ <nat:2> ^ <nat:7> = <var:q> ^ <nat:7> = <nat:128> $ . Moreover notice that $ <nat:2> \geq <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:q> : nat , ( <nat:128> = <var:q> ^ <nat:7> ) /\ ( <var:q> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

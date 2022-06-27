@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:N> \times <var:P> \times <var:v> $ is the same as $ <nat:56> $ . \end{theorem} \begin{proof} Allow $ <var:v> = <nat:4> $ , $ <var:N> = <nat:7> $ and $ <var:P> = <nat:2> $ . We prove $ <var:N> * <var:P> * <var:v> = <nat:56> $ . Note $ <nat:7> * <nat:2> * <nat:4> = <var:N> * <var:P> * <var:v> = <nat:56> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:v> <var:N> <var:P> : nat , ( <var:N> * <var:P> * <var:v> = <nat:56> ) . Proof . exists <nat:4> . exists <nat:7> . exists <nat:2> . repeat split . all : lia . Qed . 

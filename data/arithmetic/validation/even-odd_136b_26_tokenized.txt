@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:b> \times <nat:136> + <nat:26> $ will be even . \end{theorem} \begin{proof} The product between even natural numbers will be an even whole number . The addition of an even number and an even number in $ \mathbb{Z}^+ $ must be clearly an even number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:b> : nat , Nat . even ( <nat:136> * <var:b> + <nat:26> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . repeat rewrite Nat . even_add . auto . Qed . 

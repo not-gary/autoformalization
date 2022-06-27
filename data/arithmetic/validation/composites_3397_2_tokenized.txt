@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:f> * <var:s> $ is $ <nat:24> $ for $ <var:s> $ and $ <var:f> $ . \end{theorem} \begin{proof} Let $ <var:f> = <nat:8> $ and $ <var:s> = <nat:3> $ . We present our principle is true on account of $ <nat:3> * <nat:8> = <nat:24> = <var:s> * <var:f> $ . Consequently , $ <var:f> * <var:s> = <nat:24> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:s> <var:f> : nat , ( <var:f> * <var:s> = <nat:24> ) . Proof . exists <nat:3> . exists <nat:8> . lia . Qed . 

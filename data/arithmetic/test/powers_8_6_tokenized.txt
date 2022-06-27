@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:64> is the repeated product between whole number $ <var:b> \in \mathbb{Z}^+ $ exponentiated to the power <nat:6> satisfying the condition that $ <var:b> $ greater than or equivalent to <nat:2> . \end{theorem} \begin{proof} We prove $ <nat:64> = <var:b> ^ <nat:6> $ . We verify the principle is true seeing that $ <nat:64> = <nat:2> ^ <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:b> : nat , ( <nat:64> = <var:b> ^ <nat:6> ) /\ ( <var:b> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

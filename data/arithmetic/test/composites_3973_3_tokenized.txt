@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:e> * <var:a> * <var:u> $ is the same as $ <nat:66> $ . \end{theorem} \begin{proof} Allow $ <var:a> = <nat:3> $ , $ <var:e> = <nat:2> $ and $ <var:u> = <nat:11> $ . We show our statement is true in view of $ <nat:66> = <nat:2> \cdot <nat:11> \cdot <nat:3> $ . Hence , <nat:66> is the multiplication between some numbers $ <var:e> $ , $ <var:a> $ , $ <var:u> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:e> <var:a> <var:u> : nat , ( <var:e> * <var:a> * <var:u> = <nat:66> ) . Proof . exists <nat:2> . exists <nat:3> . exists <nat:11> . repeat split . all : lia . Qed . 

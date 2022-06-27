@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:Z> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:Z> > <nat:1> $ . the positive integer <nat:16> is the exponent of whole number $ <var:Z> \in \mathbb{Z}^+ $ raised to the exponential <nat:4> . \end{theorem} \begin{proof} Assume $ <var:Z> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <var:Z> > <nat:1> ) /\ ( <nat:16> = <var:Z> ^ <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

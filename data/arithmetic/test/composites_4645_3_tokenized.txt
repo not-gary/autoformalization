@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:D> $ , $ <var:b> $ , $ <var:p> $ as whole numbers where $ <var:p> * <var:b> * <var:D> $ is equal to $ <nat:1001> $ . \end{theorem} \begin{proof} Allow $ <var:p> = <nat:7> $ , $ <var:D> = <nat:11> $ , $ <var:b> = <nat:13> $ . We justify <nat:1001> is the product of some numbers $ <var:p> $ , $ <var:D> $ , $ <var:b> $ . This gives our claim is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:D> <var:b> <var:p> : nat , ( <var:p> * <var:b> * <var:D> = <nat:1001> ) . Proof . exists <nat:11> . exists <nat:13> . exists <nat:7> . repeat split . all : lia . Qed . 

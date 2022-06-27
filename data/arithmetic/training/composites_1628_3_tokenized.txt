@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:264> is the product of natural numbers $ <var:m> $ , $ <var:H> $ , and $ <var:E> $ . \end{theorem} \begin{proof} Let $ <var:m> = <nat:4> $ , $ <var:H> = <nat:11> $ , $ <var:E> = <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:m> <var:H> <var:E> : nat , ( <nat:264> = <var:m> * <var:H> * <var:E> ) . Proof . exists <nat:4> . exists <nat:11> . exists <nat:6> . repeat split . all : lia . Qed . 

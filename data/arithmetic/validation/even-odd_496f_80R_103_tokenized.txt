@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using some positive integers $ <var:f> $ , and $ <var:R> $ the sum $ <nat:496> \cdot <var:f> + <nat:103> + <var:R> \cdot <nat:80> $ is odd . \end{theorem} \begin{proof} Claim obivously must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:f> <var:R> : nat , Nat . odd ( <nat:496> * <var:f> + <nat:80> * <var:R> + <nat:103> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

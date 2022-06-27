@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using all unknowns $ <var:R> $ , and $ <var:i> $ the sum $ <nat:378> + <nat:418> \cdot <var:i> + <nat:278> \cdot <var:R> $ must be even . \end{theorem} \begin{proof} The product of even numbers in $ \mathbb{Z}^+ $ is even . Recall $ <nat:378> $ is known to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:R> <var:i> : nat , Nat . even ( <nat:418> * <var:i> + <nat:278> * <var:R> + <nat:378> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . assert ( <genH> : Nat . even <nat:378> = true ) . { auto . } rewrite <genH> . auto . Qed . 

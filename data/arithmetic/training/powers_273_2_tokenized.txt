@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some positive integer $ <var:d> $ where the positive integer <nat:4> is the repeated multiplication between natural number $ <var:d> $ taken to the exponent <nat:2> . \end{theorem} \begin{proof} Notice that $ <nat:2> ^ <nat:2> = <var:d> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <nat:4> = <var:d> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

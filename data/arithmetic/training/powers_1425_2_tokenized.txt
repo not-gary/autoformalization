@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Supposing we have such that $ <var:J> > <nat:1> $ where with $ <var:M> \in \mathbb{N} $ , $ <var:J> ^ <nat:2> = <var:M> $ , we say that $ <var:M> $ is a <def:square> whole number taking some \in \mathbb{N} $ . Then $ <var:M> = <nat:4> $ is a <def:square> positive integer . \end{theorem} \begin{proof} Allow $ <var:J> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:M> : nat ) := exists <var:J> : nat , ( <var:J> > <nat:1> ) /\ ( <var:J> ^ <nat:2> = <var:M> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:72> is the product between positive integers $ <var:E> $ and $ <var:p> $ so that $ <var:E> $ , $ <var:p> > <nat:1> $ . \end{theorem} \begin{proof} Assume $ <var:E> = <nat:9> $ , $ <var:p> = <nat:8> $ . We show <nat:72> is the product of some $ <var:E> $ , $ <var:p> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:E> <var:p> : nat , ( <nat:72> = <var:E> * <var:p> ) /\ ( <var:E> > <nat:1> ) /\ ( <var:p> > <nat:1> ) . Proof . exists <nat:9> . exists <nat:8> . lia . Qed . 

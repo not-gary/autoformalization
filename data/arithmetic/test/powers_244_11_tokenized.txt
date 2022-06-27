@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:2048> is the raising of between integer $ <var:Z> $ repeatedly multiplied to the exponential <nat:11> such that $ <var:Z> $ more than <nat:1> . \end{theorem} \begin{proof} Observe that $ <nat:2048> = <nat:2> ^ <nat:11> = <var:Z> ^ <nat:11> $ . This produces the statement is true . Hence , $ <var:Z> ^ <nat:11> = <nat:2048> $ plus $ <var:Z> $ is more than <nat:1> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <nat:2048> = <var:Z> ^ <nat:11> ) /\ ( <var:Z> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

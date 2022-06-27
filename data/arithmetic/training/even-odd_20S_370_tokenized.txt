@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:S> \cdot <nat:20> + <nat:370> $ will be even . \end{theorem} \begin{proof} Take note taking the product between an even natural with some integer will be in itself an even natural . We demonstrate $ <nat:370> + <nat:20> \times <var:S> $ must be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:S> : nat , Nat . even ( <nat:20> * <var:S> + <nat:370> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

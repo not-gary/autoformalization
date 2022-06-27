@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:264> \cdot <var:K> + <nat:202> + <var:E> \cdot <nat:242> $ must be even assuming any positive numbers $ <var:E> $ , and $ <var:K> $ . \end{theorem} \begin{proof} Recall taking the product between an even integer and a number in $ \mathbb{N} $ will be an even element of $ \mathbb{N} $ . We demonstrate the claim holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:E> <var:K> : nat , Nat . even ( <nat:264> * <var:K> + <nat:242> * <var:E> + <nat:202> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

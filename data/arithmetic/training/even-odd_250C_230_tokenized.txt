@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:C> * <nat:250> + <nat:230> $ will be even for some positive integers $ <var:C> $ . \end{theorem} \begin{proof} We know the pair $ <var:C> * <nat:250> $ is known as an even whole number . It can be demonstrated that $ <nat:250> \times <var:C> + <nat:230> $ will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:C> : nat , Nat . even ( <nat:250> * <var:C> + <nat:230> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:250> * <var:C> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

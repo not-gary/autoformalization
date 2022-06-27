@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume that $ <var:j> $ is a <def:cube> integer with the condition there exists some integer $ <var:p> $ satisfying the condition that $ <var:j> = <var:p> ^ <nat:3> $ for some positive integer $ <var:j> $ . So the positive integer <nat:8> is a <def:cube> . \end{theorem} \begin{proof} Notice $ <var:p> ^ <nat:3> = <nat:2> ^ <nat:3> = <nat:8> $ . This shows the claim is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:j> : nat ) := exists <var:p> : nat , ( <var:j> = <var:p> ^ <nat:3> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

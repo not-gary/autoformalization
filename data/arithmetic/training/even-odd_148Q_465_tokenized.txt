@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:148> \cdot <var:Q> + <nat:465> $ is guaranteed to be odd . \end{theorem} \begin{proof} We justify the expression $ <nat:465> + <nat:148> <var:Q> $ is guaranteed to be odd . Recall the summation between an even number in $ \mathbb{N} $ and an odd number must be by itself an odd positive integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:Q> : nat , Nat . odd ( <nat:148> * <var:Q> + <nat:465> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

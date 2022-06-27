@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> $ is equivalent to $ <var:G> ^ <nat:2> $ for $ <var:G> \in \mathbb{N} $ . \end{theorem} \begin{proof} Let $ <var:G> = <nat:2> $ . We justify <nat:4> is the raising of of some whole number $ <var:G> $ taken to the degree <nat:2> . Observe that $ <var:G> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:G> : nat , ( <nat:4> = <var:G> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

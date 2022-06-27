@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:d> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:d> > <nat:1> $ as well as so that $ <var:d> ^ <nat:8> $ is $ <nat:256> $ . \end{theorem} \begin{proof} Notice $ <var:d> ^ <nat:8> = <nat:256> $ implies $ <var:d> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <var:d> > <nat:1> ) /\ ( <var:d> ^ <nat:8> = <nat:256> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

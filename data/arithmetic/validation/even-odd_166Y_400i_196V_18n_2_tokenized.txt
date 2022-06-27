@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming all positive integers $ <var:i> $ , $ <var:Y> $ , $ <var:V> $ , and $ <var:n> $ the formula $ <nat:166> <var:Y> + <var:i> <nat:400> + <var:V> <nat:196> + <nat:2> + <var:n> <nat:18> $ is guaranteed to be even . \end{theorem} \begin{proof} See that the totaling between even whole numbers together is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:i> <var:Y> <var:V> <var:n> : nat , Nat . even ( <nat:166> * <var:Y> + <nat:400> * <var:i> + <nat:196> * <var:V> + <nat:18> * <var:n> + <nat:2> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

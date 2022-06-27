@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:N> \in \mathbb{N} $ so that $ <var:N> \geq <nat:2> $ as well as where the integer <nat:512> is the exponential of whole number $ <var:N> \in \mathbb{Z}^+ $ taken to the power <nat:9> . \end{theorem} \begin{proof} Assume $ <var:N> = <nat:2> $ . We justify $ <nat:512> = <var:N> ^ <nat:9> $ . Notice that $ <nat:512> = <var:N> ^ <nat:9> = <nat:2> ^ <nat:9> $ . This indicates our theory is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <var:N> >= <nat:2> ) /\ ( <nat:512> = <var:N> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

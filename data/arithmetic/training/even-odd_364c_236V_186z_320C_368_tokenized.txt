@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:364> \times <var:c> + <nat:236> \times <var:V> + <nat:368> + <var:z> \times <nat:186> + <nat:320> \times <var:C> $ is guaranteed to be even using natural terms $ <var:z> $ , $ <var:C> $ , $ <var:c> $ , and $ <var:V> $ . \end{theorem} \begin{proof} Main result must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:z> <var:C> <var:c> <var:V> : nat , Nat . even ( <nat:364> * <var:c> + <nat:236> * <var:V> + <nat:186> * <var:z> + <nat:320> * <var:C> + <nat:368> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

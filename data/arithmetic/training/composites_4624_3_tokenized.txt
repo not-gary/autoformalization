@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:l> \cdot <var:H> \cdot <var:x> = <nat:200> $ such that $ <var:l> $ , $ <var:x> $ , and $ <var:H> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} Notice $ <nat:200> = <var:x> * <var:l> * <var:H> $ implies $ <var:l> = <nat:4> $ , $ <var:x> = <nat:10> $ and $ <var:H> = <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:H> <var:x> : nat , ( <var:l> * <var:H> * <var:x> = <nat:200> ) /\ ( <var:l> >= <nat:2> ) /\ ( <var:x> >= <nat:2> ) /\ ( <var:H> >= <nat:2> ) . Proof . exists <nat:4> . exists <nat:5> . exists <nat:10> . repeat split . all : lia . Qed . 

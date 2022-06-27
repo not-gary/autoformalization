@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:C> $ , and $ <var:J> \in \mathbb{Z}^+ $ satisfying the condition that the integer <nat:20> is the product between $ <var:C> $ , $ <var:J> \in \mathbb{N} $ . \end{theorem} \begin{proof} Let $ <var:J> = <nat:5> $ , $ <var:C> = <nat:4> $ . Note $ <var:J> \times <var:C> = <nat:20> = <nat:5> \times <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:J> : nat , ( <nat:20> = <var:C> * <var:J> ) . Proof . exists <nat:4> . exists <nat:5> . lia . Qed . 

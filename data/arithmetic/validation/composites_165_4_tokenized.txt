@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:378> is the product of whole numbers $ <var:z> $ , $ <var:P> $ , $ <var:h> $ , $ <var:j> $ . \end{theorem} \begin{proof} Let $ <var:P> = <nat:9> $ , $ <var:j> = <nat:7> $ , $ <var:z> = <nat:2> $ , and $ <var:h> = <nat:3> $ . This indicates our principle is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:z> <var:P> <var:h> <var:j> : nat , ( <nat:378> = <var:z> * <var:P> * <var:h> * <var:j> ) . Proof . exists <nat:2> . exists <nat:9> . exists <nat:3> . exists <nat:7> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:Q> $ , $ <var:Z> $ are whole numbers such that $ <var:Z> * <var:Q> $ is the same as $ <nat:30> $ . \end{theorem} \begin{proof} Note $ <nat:30> = <nat:6> \times <nat:5> = <var:Q> \times <var:Z> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Q> <var:Z> : nat , ( <var:Z> * <var:Q> = <nat:30> ) . Proof . exists <nat:6> . exists <nat:5> . lia . Qed . 

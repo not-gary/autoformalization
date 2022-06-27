@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:440> $ equals $ <var:j> \cdot <var:o> \cdot <var:h> $ . \end{theorem} \begin{proof} Note that $ <nat:440> = <nat:4> \times <nat:11> \times <nat:10> $ . So , $ <var:o> * <var:j> * <var:h> = <nat:440> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:h> <var:o> <var:j> : nat , ( <nat:440> = <var:j> * <var:o> * <var:h> ) . Proof . exists <nat:11> . exists <nat:4> . exists <nat:10> . repeat split . all : lia . Qed . 

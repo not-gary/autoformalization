@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:U> \times <nat:342> + <nat:73> + <var:B> \times <nat:368> + <var:e> \times <nat:20> $ must be odd . \end{theorem} \begin{proof} Observe that the totaling between an even integer and an odd element of $ \mathbb{Z}^+ $ is guaranteed to be fundamentally an odd integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:U> <var:B> <var:e> : nat , Nat . odd ( <nat:342> * <var:U> + <nat:368> * <var:B> + <nat:20> * <var:e> + <nat:73> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

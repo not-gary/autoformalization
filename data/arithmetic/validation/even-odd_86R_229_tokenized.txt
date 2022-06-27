@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:229> + <nat:86> \cdot <var:R> $ is odd . \end{theorem} \begin{proof} We check $ <nat:229> + <var:R> \times <nat:86> $ is odd . Remember the summing between an even element of $ \mathbb{Z}^+ $ and an odd element of $ \mathbb{Z}^+ $ must be by itself an odd number in $ \mathbb{N} $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:R> : nat , Nat . odd ( <nat:86> * <var:R> + <nat:229> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

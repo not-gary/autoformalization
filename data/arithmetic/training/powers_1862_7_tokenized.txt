@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:128> $ is the same as $ <var:D> ^ <nat:7> $ satisfying the condition that $ <var:D> $ larger than or equivalent to <nat:2> . \end{theorem} \begin{proof} Assume $ <var:D> = <nat:2> $ . We present our principle is valid in view of $ <nat:128> = <var:D> ^ <nat:7> $ . Hence , $ <nat:128> = <var:D> ^ <nat:7> $ plus $ <var:D> \geq <nat:2> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:D> : nat , ( <nat:128> = <var:D> ^ <nat:7> ) /\ ( <var:D> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

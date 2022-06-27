@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:C> $ , $ <var:u> \in \mathbb{N} $ so that $ <var:u> \times <var:C> $ is equal to $ <nat:48> $ . \end{theorem} \begin{proof} Allow $ <var:u> = <nat:8> $ , and $ <var:C> = <nat:6> $ . This yields our theory is valid . Because of this , <nat:48> is the product of some natural numbers $ <var:C> $ , $ <var:u> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:u> : nat , ( <var:u> * <var:C> = <nat:48> ) . Proof . exists <nat:6> . exists <nat:8> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:8> is the repeated product of natural number $ <var:U> $ exponentiated to the degree <nat:3> . \end{theorem} \begin{proof} We prove the belief is valid by reason of $ <var:U> ^ <nat:3> = <nat:8> $ gives $ <var:U> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:U> : nat , ( <nat:8> = <var:U> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

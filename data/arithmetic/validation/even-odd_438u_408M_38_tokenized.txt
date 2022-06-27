@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:u> \cdot <nat:438> + <var:M> \cdot <nat:408> + <nat:38> $ will be even . \end{theorem} \begin{proof} The addition of an even natural number and an even natural number will be by definition an even number in $ \mathbb{N} $ . We know $ <nat:38> $ is an even natural . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:u> <var:M> : nat , Nat . even ( <nat:438> * <var:u> + <nat:408> * <var:M> + <nat:38> ) = true . Proof . intros . repeat rewrite Nat . even_add . assert ( <genH> : Nat . even <nat:38> = true ) . { auto . } repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

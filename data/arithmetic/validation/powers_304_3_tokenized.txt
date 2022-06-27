@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:i> \in \mathbb{N} $ . Take as given that some number $ <var:V> $ will be considered as a <def:cube> integer assuming $ <var:i> ^ <nat:3> = <var:V> $ . So the integer <nat:8> is a <def:cube> whole number . \end{theorem} \begin{proof} Notice that $ <var:i> ^ <nat:3> = <nat:8> $ shows $ <var:i> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:V> : nat ) := exists <var:i> : nat , ( <var:i> ^ <nat:3> = <var:V> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

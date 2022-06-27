@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:j> ^ <nat:2> $ is $ <nat:4> $ assuming $ <var:j> \in \mathbb{N} $ so that $ <var:j> > <nat:1> $ . \end{theorem} \begin{proof} Note that $ <nat:2> > <nat:1> $ . In addition observe too $ <nat:2> ^ <nat:2> = <nat:4> $ . Thus , $ <var:j> ^ <nat:2> = <nat:4> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <var:j> ^ <nat:2> = <nat:4> ) /\ ( <var:j> > <nat:1> ) . Proof . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } exists <nat:2> . split . auto . apply <genH> . Qed . 

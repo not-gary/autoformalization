@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:540> $ equals $ <var:P> \times <var:O> \times <var:f> $ . \end{theorem} \begin{proof} Observe that $ <nat:540> = <var:P> \times <var:f> \times <var:O> $ implies $ <var:P> = <nat:9> $ , $ <var:O> = <nat:12> $ , $ <var:f> = <nat:5> $ . This suggests our claim is valid . As a result , $ <var:O> \times <var:f> \times <var:P> = <nat:540> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:O> <var:P> <var:f> : nat , ( <nat:540> = <var:P> * <var:O> * <var:f> ) . Proof . exists <nat:12> . exists <nat:9> . exists <nat:5> . repeat split . all : lia . Qed . 

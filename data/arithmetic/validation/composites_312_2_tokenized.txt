@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:K> $ , $ <var:C> $ be integers such that the natural number <nat:22> is the product of natural numbers $ <var:K> $ , and $ <var:C> $ . \end{theorem} \begin{proof} Assume $ <var:K> = <nat:2> $ and $ <var:C> = <nat:11> $ . We demonstrate $ <var:K> * <var:C> = <nat:22> $ . Note that $ <nat:22> = <nat:11> \times <nat:2> = <var:C> \times <var:K> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:K> <var:C> : nat , ( <nat:22> = <var:K> * <var:C> ) . Proof . exists <nat:2> . exists <nat:11> . lia . Qed . 

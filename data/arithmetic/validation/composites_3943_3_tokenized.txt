@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:v> $ , $ <var:C> $ , and $ <var:Z> $ where $ <nat:378> $ is the same as $ <var:v> \cdot <var:Z> \cdot <var:C> $ . \end{theorem} \begin{proof} We justify the theory is true because $ <nat:378> = <var:Z> \cdot <var:v> \cdot <var:C> = <nat:7> \cdot <nat:9> \cdot <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:v> <var:C> <var:Z> : nat , ( <nat:378> = <var:v> * <var:Z> * <var:C> ) . Proof . exists <nat:9> . exists <nat:6> . exists <nat:7> . repeat split . all : lia . Qed . 

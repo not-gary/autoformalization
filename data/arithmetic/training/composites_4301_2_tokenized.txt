@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:36> = <var:L> \cdot <var:E> $ . \end{theorem} \begin{proof} We present $ <nat:36> = <var:L> * <var:E> $ . Notice that $ <nat:36> = <var:E> * <var:L> $ indicates $ <var:L> = <nat:12> $ and $ <var:E> = <nat:3> $ . This shows the belief is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:E> <var:L> : nat , ( <nat:36> = <var:L> * <var:E> ) . Proof . exists <nat:3> . exists <nat:12> . lia . Qed . 

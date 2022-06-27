@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:4096> is the exponential between natural number $ <var:V> $ raised to the exponent <nat:12> satisfying the condition that $ <var:V> $ larger than <nat:1> . \end{theorem} \begin{proof} We demonstrate the result is valid for $ <nat:2> > <nat:1> $ and considering $ <var:V> ^ <nat:12> = <nat:2> ^ <nat:12> = <nat:4096> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <nat:4096> = <var:V> ^ <nat:12> ) /\ ( <var:V> > <nat:1> ) . Proof . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } exists <nat:2> . split . auto . apply <genH> . Qed . 

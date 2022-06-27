@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:U> $ and $ <var:x> \in \mathbb{Z}^+ $ . the whole number <nat:50> is the multiplication of $ <var:U> $ , $ <var:x> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Assume $ <var:x> = <nat:10> $ , $ <var:U> = <nat:5> $ . We verify $ <nat:50> = <var:U> \times <var:x> $ . This produces the formula is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:U> <var:x> : nat , ( <nat:50> = <var:U> * <var:x> ) . Proof . exists <nat:5> . exists <nat:10> . lia . Qed . 

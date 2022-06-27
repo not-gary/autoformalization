@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:316> + <nat:148> <var:a> $ must be even . \end{theorem} \begin{proof} See $ <nat:316> $ is guaranteed to be even . The multiplication between even elements of $ \mathbb{Z}^+ $ is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:a> : nat , Nat . even ( <nat:148> * <var:a> + <nat:316> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:316> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

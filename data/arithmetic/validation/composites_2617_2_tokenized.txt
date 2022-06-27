@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:20> is the product of $ <var:f> $ , and $ <var:H> \in \mathbb{N} $ . \end{theorem} \begin{proof} Notice $ <nat:20> = <var:f> \cdot <var:H> $ produces $ <var:H> = <nat:4> $ , and $ <var:f> = <nat:5> $ . This shows our statement is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:f> <var:H> : nat , ( <nat:20> = <var:f> * <var:H> ) . Proof . exists <nat:5> . exists <nat:4> . lia . Qed . 

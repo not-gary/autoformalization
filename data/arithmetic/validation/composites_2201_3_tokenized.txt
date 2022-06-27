@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:550> is the product of natural numbers $ <var:Q> $ , $ <var:R> $ , $ <var:F> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Assume $ <var:Q> = <nat:5> $ , $ <var:F> = <nat:11> $ and $ <var:R> = <nat:10> $ . We verify <nat:550> is the product of some integers $ <var:F> $ , $ <var:R> $ , and $ <var:Q> $ . This suggests our statement is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Q> <var:R> <var:F> : nat , ( <nat:550> = <var:Q> * <var:R> * <var:F> ) . Proof . exists <nat:5> . exists <nat:10> . exists <nat:11> . repeat split . all : lia . Qed . 

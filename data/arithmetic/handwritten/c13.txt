@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:12> = <var:a> <var:b> $ for $ <var:a> $ and $ <var:b> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} $ <nat:12> = <nat:4> \times <nat:3> $ . \end{proof} \end{document}
-~
-Proof

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:j> $ are positive integers such that the natural number <nat:32> is the raising of between whole number $ <var:j> $ exponentiated to the degree <nat:5> . \end{theorem} \begin{proof} Take $ <var:j> = <nat:2> $ . Observe $ <nat:32> = <nat:2> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <nat:32> = <var:j> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

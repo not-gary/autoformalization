@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:1024> is the repeated multiplication between positive integer $ <var:n> \in \mathbb{Z}^+ $ repeatedly multiplied to the degree <nat:10> . \end{theorem} \begin{proof} Assume $ <var:n> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <nat:1024> = <var:n> ^ <nat:10> ) . Proof . exists <nat:2> . auto . Qed . 

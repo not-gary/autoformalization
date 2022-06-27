@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} Only if $ \exists $ <var:O> \in \mathbb{N} $ then we say that $ <var:R> \in \mathbb{N} $ will be a <def:cube> given $ <var:R> = <var:O> ^ <nat:3> $ . \end{definition} \begin{theorem} The number <nat:8> is a <def:cube> . \end{theorem} \begin{proof} Allow $ <var:O> = <nat:2> $ . This gives <nat:8> is a <def:cube> natural number . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:R> : nat ) := exists <var:O> : nat , ( <var:R> = <var:O> ^ <nat:3> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

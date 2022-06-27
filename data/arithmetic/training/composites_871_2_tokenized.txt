@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:l> $ and $ <var:a> \in \mathbb{N} $ satisfying the condition that $ <nat:45> $ is equal to $ <var:a> \cdot <var:l> $ . \end{theorem} \begin{proof} Notice that $ <nat:45> = <var:l> \cdot <var:a> $ implies $ <var:a> = <nat:5> $ , and $ <var:l> = <nat:9> $ . This implies our result holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:a> : nat , ( <nat:45> = <var:a> * <var:l> ) . Proof . exists <nat:9> . exists <nat:5> . lia . Qed . 

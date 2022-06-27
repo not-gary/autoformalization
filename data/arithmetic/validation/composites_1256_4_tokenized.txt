@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:1728> is the product of integers $ <var:K> $ , $ <var:N> $ , $ <var:y> $ , $ <var:O> \in \mathbb{N} $ . \end{theorem} \begin{proof} Take $ <var:K> = <nat:3> $ , $ <var:N> = <nat:6> $ , $ <var:O> = <nat:12> $ and $ <var:y> = <nat:8> $ . This suggests the claim is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:K> <var:N> <var:y> <var:O> : nat , ( <nat:1728> = <var:K> * <var:N> * <var:y> * <var:O> ) . Proof . exists <nat:3> . exists <nat:6> . exists <nat:8> . exists <nat:12> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:8> is the raising of of integer $ <var:P> \in \mathbb{Z}^+ $ taken to the power <nat:3> satisfying the condition that $ <var:P> $ larger than <nat:1> . \end{theorem} \begin{proof} Assume $ <var:P> = <nat:2> $ . Consequently , <nat:8> is the exponential between $ <var:P> \in \mathbb{N} $ exponentiated to the power <nat:3> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:P> : nat , ( <nat:8> = <var:P> ^ <nat:3> ) /\ ( <var:P> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

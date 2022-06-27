@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking all natural numbers $ <var:O> $ $ <nat:14> + <var:O> <nat:100> $ will be even . \end{theorem} \begin{proof} The coefficient $ <nat:100> $ is obviously an even positive integer \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:O> : nat , Nat . even ( <nat:100> * <var:O> + <nat:14> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:100> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

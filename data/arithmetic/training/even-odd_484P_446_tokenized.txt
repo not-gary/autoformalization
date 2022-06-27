@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:446> + <var:P> \cdot <nat:484> $ will be even using every natural numbers $ <var:P> $ . \end{theorem} \begin{proof} From the knowledge taking the product between an even element of $ \mathbb{N} $ and an arbitrary natural number must be even , as a consequence the expression $ <nat:484> <var:P> + <nat:446> $ is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:P> : nat , Nat . even ( <nat:484> * <var:P> + <nat:446> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

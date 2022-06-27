@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:1100> $ is $ <var:F> * <var:N> * <var:X> * <var:S> $ . \end{theorem} \begin{proof} We prove $ <nat:1100> = <var:S> \cdot <var:X> \cdot <var:N> \cdot <var:F> $ . Notice that $ <var:N> * <var:F> * <var:S> * <var:X> = <nat:1100> $ suggests $ <var:X> = <nat:5> $ , $ <var:N> = <nat:10> $ , $ <var:F> = <nat:11> $ and $ <var:S> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:F> <var:N> <var:X> <var:S> : nat , ( <nat:1100> = <var:F> * <var:N> * <var:X> * <var:S> ) . Proof . exists <nat:11> . exists <nat:10> . exists <nat:5> . exists <nat:2> . repeat split . all : lia . Qed . 

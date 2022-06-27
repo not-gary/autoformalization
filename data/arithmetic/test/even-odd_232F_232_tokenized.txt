@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:232> + <var:F> * <nat:232> $ will be even . \end{theorem} \begin{proof} The product $ <var:F> * <nat:232> $ is clearly even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:F> : nat , Nat . even ( <nat:232> * <var:F> + <nat:232> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:232> * <var:F> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

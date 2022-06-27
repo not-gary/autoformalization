@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:u> \times <nat:340> + <nat:78> + <var:n> \times <nat:286> $ is even taking any natural numbers $ <var:u> $ , and $ <var:n> $ . \end{theorem} \begin{proof} Notice the summation of even numbers concurrently and an even element of $ \mathbb{N} $ must be clearly an even natural . It can be demonstrated that this theorem is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:u> <var:n> : nat , Nat . even ( <nat:340> * <var:u> + <nat:286> * <var:n> + <nat:78> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

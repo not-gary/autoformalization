@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:H> \in \mathbb{N} $ where $ <var:H> \geq <nat:2> $ plus satisfying the condition that the natural number <nat:8> is the repeated product between positive integer $ <var:H> \in \mathbb{N} $ repeatedly multiplied to the power <nat:3> . \end{theorem} \begin{proof} Take $ <var:H> = <nat:2> $ . Notice $ <nat:2> \geq <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:H> : nat , ( <var:H> >= <nat:2> ) /\ ( <nat:8> = <var:H> ^ <nat:3> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . apply <genH> . auto . Qed . 

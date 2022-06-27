@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:6048> = <var:u> * <var:U> * <var:N> * <var:F> * <var:j> $ . \end{theorem} \begin{proof} Allow $ <var:F> = <nat:8> $ , $ <var:u> = <nat:9> $ , $ <var:U> = <nat:3> $ , $ <var:N> = <nat:4> $ , and $ <var:j> = <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:j> <var:F> <var:u> <var:N> <var:U> : nat , ( <nat:6048> = <var:u> * <var:U> * <var:N> * <var:F> * <var:j> ) . Proof . exists <nat:7> . exists <nat:8> . exists <nat:9> . exists <nat:4> . exists <nat:3> . repeat split . all : lia . Qed . 

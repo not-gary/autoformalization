@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:d> \in \mathbb{Z}^+ $ where $ <var:d> $ more than or equal to <nat:2> plus so that the natural number <nat:8> is the repeated multiplication between integer $ <var:d> \in \mathbb{Z}^+ $ exponentiated to the degree <nat:3> . \end{theorem} \begin{proof} Note $ <nat:8> = <nat:2> ^ <nat:3> $ . Furthermore notice $ <nat:2> \geq <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <var:d> >= <nat:2> ) /\ ( <nat:8> = <var:d> ^ <nat:3> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . apply <genH> . auto . Qed . 

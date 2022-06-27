@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:K> \in \mathbb{N} $ satisfying the condition that $ <var:K> $ greater than or equivalent to <nat:2> and so that $ <nat:4> $ is $ <var:K> ^ <nat:2> $ . \end{theorem} \begin{proof} We justify our thesis holds on account of $ <nat:2> $ is more than or equivalent to <nat:2> as well as in consideration of $ <nat:2> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <var:K> >= <nat:2> ) /\ ( <nat:4> = <var:K> ^ <nat:2> ) . Proof . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } exists <nat:2> . split . apply <genH> . auto . Qed . 

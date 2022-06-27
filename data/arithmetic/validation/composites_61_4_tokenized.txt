@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:2160> is the multiplication between integers $ <var:c> $ , $ <var:a> $ , $ <var:E> $ , and $ <var:B> $ . \end{theorem} \begin{proof} Note that $ <var:a> * <var:c> * <var:E> * <var:B> = <nat:2160> $ indicates $ <var:a> = <nat:12> $ , $ <var:B> = <nat:2> $ , $ <var:c> = <nat:10> $ , $ <var:E> = <nat:9> $ . This implies our belief is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:c> <var:a> <var:E> <var:B> : nat , ( <nat:2160> = <var:c> * <var:a> * <var:E> * <var:B> ) . Proof . exists <nat:10> . exists <nat:12> . exists <nat:9> . exists <nat:2> . repeat split . all : lia . Qed . 

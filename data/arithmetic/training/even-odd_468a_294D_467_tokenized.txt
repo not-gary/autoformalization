@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming any natural numbers $ <var:a> $ , and $ <var:D> $ the expression $ <var:a> \cdot <nat:468> + <nat:467> + <var:D> \cdot <nat:294> $ will be odd . \end{theorem} \begin{proof} The addition of an even natural number with an odd number in $ \mathbb{N} $ is odd . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:a> <var:D> : nat , Nat . odd ( <nat:468> * <var:a> + <nat:294> * <var:D> + <nat:467> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

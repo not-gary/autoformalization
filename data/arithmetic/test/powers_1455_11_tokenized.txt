@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:2048> = <var:L> ^ <nat:11> $ so that $ <var:L> \geq <nat:2> $ . \end{theorem} \begin{proof} Notice $ <nat:2> $ is larger than or equal to <nat:2> . In addition note further $ <var:L> ^ <nat:11> = <nat:2048> $ produces $ <var:L> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:L> : nat , ( <nat:2048> = <var:L> ^ <nat:11> ) /\ ( <var:L> >= <nat:2> ) . Proof . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } exists <nat:2> . split . auto . apply <genH> . Qed . 

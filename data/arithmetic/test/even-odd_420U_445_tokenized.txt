@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:445> + <var:U> * <nat:420> $ is guaranteed to be odd taking all $ <var:U> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} $ <var:U> \times <nat:420> $ is known as an even natural number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:U> : nat , Nat . odd ( <nat:420> * <var:U> + <nat:445> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:420> * <var:U> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

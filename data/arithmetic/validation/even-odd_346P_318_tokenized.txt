@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:318> + <var:P> \cdot <nat:346> $ must be even taking every positive integers $ <var:P> $ . \end{theorem} \begin{proof} The term $ <nat:346> * <var:P> $ is known to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:P> : nat , Nat . even ( <nat:346> * <var:P> + <nat:318> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:346> * <var:P> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

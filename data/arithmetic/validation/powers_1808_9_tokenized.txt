@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:D> $ as positive integers where $ <var:D> ^ <nat:9> $ equals $ <nat:512> $ . \end{theorem} \begin{proof} We prove <nat:512> is the repeated product between $ <var:D> \in \mathbb{Z}^+ $ repeatedly multiplied to the power <nat:9> . Observe that $ <nat:512> = <var:D> ^ <nat:9> $ implies $ <var:D> = <nat:2> $ . This suggests our claim holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:D> : nat , ( <var:D> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . auto . Qed . 

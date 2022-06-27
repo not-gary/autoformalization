@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:462> + <nat:204> \times <var:m> $ will be even for any $ <var:m> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} It can be checked that the sum $ <var:m> <nat:204> + <nat:462> $ is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:m> : nat , Nat . even ( <nat:204> * <var:m> + <nat:462> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

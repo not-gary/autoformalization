@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:65> = <var:h> * <var:U> $ . \end{theorem} \begin{proof} Assume $ <var:U> = <nat:5> $ , $ <var:h> = <nat:13> $ . We show $ <var:h> \times <var:U> = <nat:65> $ . This hints our result is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:U> <var:h> : nat , ( <nat:65> = <var:h> * <var:U> ) . Proof . exists <nat:5> . exists <nat:13> . lia . Qed . 

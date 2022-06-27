@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some whole number $ <var:u> $ satisfying the condition that the integer <nat:128> is the raising of between natural number $ <var:u> $ raised to the power <nat:7> . \end{theorem} \begin{proof} Allow $ <var:u> = <nat:2> $ . We present $ <nat:128> = <var:u> ^ <nat:7> $ . Observe $ <nat:128> = <var:u> ^ <nat:7> $ . This shows the formula is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <nat:128> = <var:u> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

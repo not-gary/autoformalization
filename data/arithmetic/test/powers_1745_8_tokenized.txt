@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:v> $ be numbers satisfying the condition that the whole number <nat:256> is the repeated multiplication between whole number $ <var:v> $ repeatedly multiplied to the power <nat:8> . \end{theorem} \begin{proof} Take $ <var:v> = <nat:2> $ . We justify $ <var:v> ^ <nat:8> = <nat:256> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:v> : nat , ( <nat:256> = <var:v> ^ <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:h> $ , $ <var:u> $ , and $ <var:i> \in \mathbb{Z}^+ $ such that $ <var:h> \cdot <var:u> \cdot <var:i> $ is the same as $ <nat:576> $ . \end{theorem} \begin{proof} Note that $ <var:i> \cdot <var:u> \cdot <var:h> = <nat:576> $ indicates $ <var:h> = <nat:8> $ , $ <var:u> = <nat:6> $ , and $ <var:i> = <nat:12> $ . This shows our claim is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:h> <var:u> <var:i> : nat , ( <var:h> * <var:u> * <var:i> = <nat:576> ) . Proof . exists <nat:8> . exists <nat:6> . exists <nat:12> . repeat split . all : lia . Qed . 

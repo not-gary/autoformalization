@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:K> $ be natural numbers satisfying the condition that <nat:1024> is the exponential between $ <var:K> $ raised to the exponent <nat:10> . \end{theorem} \begin{proof} Assume $ <var:K> = <nat:2> $ . We justify the proposition is valid seeing that $ <nat:1024> = <var:K> ^ <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <nat:1024> = <var:K> ^ <nat:10> ) . Proof . exists <nat:2> . auto . Qed . 

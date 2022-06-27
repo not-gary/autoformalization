@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:f> $ and $ <var:V> \in \mathbb{Z}^+ $ such that $ <var:V> \times <var:f> $ is equivalent to $ <nat:16> $ . \end{theorem} \begin{proof} We show the result is valid as $ <var:f> \times <var:V> = <nat:16> $ suggests $ <var:V> = <nat:2> $ , $ <var:f> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:f> <var:V> : nat , ( <var:V> * <var:f> = <nat:16> ) . Proof . exists <nat:8> . exists <nat:2> . lia . Qed . 

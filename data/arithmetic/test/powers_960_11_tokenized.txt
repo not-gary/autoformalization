@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:2048> $ is equivalent to $ <var:O> ^ <nat:11> $ so that $ <var:O> $ greater than <nat:1> . \end{theorem} \begin{proof} Note $ <nat:2> ^ <nat:11> = <nat:2048> $ . Because of this , <nat:2048> is the repeated product between $ <var:O> \in \mathbb{N} $ exponentiated to the exponential <nat:11> and $ <var:O> $ is greater than <nat:1> is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:O> : nat , ( <nat:2048> = <var:O> ^ <nat:11> ) /\ ( <var:O> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

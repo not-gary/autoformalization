@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:Z> $ satisfying the condition that the number <nat:512> is the repeated product of natural number $ <var:Z> $ exponentiated to the exponent <nat:9> . \end{theorem} \begin{proof} Assume $ <var:Z> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <nat:512> = <var:Z> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> $ is $ <var:N> ^ <nat:2> $ satisfying the condition that $ <var:N> \geq <nat:2> $ . \end{theorem} \begin{proof} We prove $ <nat:4> = <var:N> ^ <nat:2> $ plus $ <var:N> $ is greater than or equal to <nat:2> . We demonstrate our proposition holds in view of $ <nat:2> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <nat:4> = <var:N> ^ <nat:2> ) /\ ( <var:N> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

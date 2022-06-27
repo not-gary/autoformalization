@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:H> \cdot <nat:60> + <nat:317> $ is odd . \end{theorem} \begin{proof} The totaling of even whole numbers collectively with an odd number in $ \mathbb{N} $ will be an odd number . On top of this the multiplication of an even element of $ \mathbb{Z}^+ $ with any positive integer will be even . For this reason , our main result is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:H> : nat , Nat . odd ( <nat:60> * <var:H> + <nat:317> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:132> is the multiplication between whole numbers $ <var:O> $ and $ <var:Q> \in \mathbb{N} $ . \end{theorem} \begin{proof} Take $ <var:Q> = <nat:11> $ and $ <var:O> = <nat:12> $ . This produces our thesis is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:O> <var:Q> : nat , ( <nat:132> = <var:O> * <var:Q> ) . Proof . exists <nat:12> . exists <nat:11> . lia . Qed . 

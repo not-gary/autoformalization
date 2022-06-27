@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:m> * <var:e> * <var:r> * <var:b> $ is $ <nat:1440> $ given $ <var:m> $ , $ <var:b> $ , $ <var:r> $ , $ <var:e> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Assume $ <var:r> = <nat:5> $ , $ <var:m> = <nat:12> $ , $ <var:e> = <nat:3> $ , $ <var:b> = <nat:8> $ . This suggests our proposition is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:m> <var:b> <var:r> <var:e> : nat , ( <var:m> * <var:e> * <var:r> * <var:b> = <nat:1440> ) . Proof . exists <nat:12> . exists <nat:8> . exists <nat:5> . exists <nat:3> . repeat split . all : lia . Qed . 

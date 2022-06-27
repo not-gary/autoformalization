@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:6> + <var:l> <nat:304> $ will be even given every $ <var:l> $ . \end{theorem} \begin{proof} It can be justified that the theorem is true . The summation between even numbers together and an even natural number is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:l> : nat , Nat . even ( <nat:304> * <var:l> + <nat:6> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

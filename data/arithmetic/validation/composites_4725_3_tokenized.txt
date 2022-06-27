@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:264> is the multiplication between integers $ <var:w> $ , $ <var:W> $ , $ <var:p> $ . \end{theorem} \begin{proof} Observe that $ <var:W> \cdot <var:w> \cdot <var:p> = <nat:264> $ gives $ <var:W> = <nat:11> $ , $ <var:p> = <nat:8> $ and $ <var:w> = <nat:3> $ . Therefore , $ <nat:264> = <var:p> \cdot <var:W> \cdot <var:w> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:w> <var:W> <var:p> : nat , ( <nat:264> = <var:w> * <var:W> * <var:p> ) . Proof . exists <nat:3> . exists <nat:11> . exists <nat:8> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:256> is the raising of of $ <var:n> $ exponentiated to the exponent <nat:8> where $ <var:n> \geq <nat:2> $ . \end{theorem} \begin{proof} Allow $ <var:n> = <nat:2> $ . We demonstrate $ <nat:256> = <var:n> ^ <nat:8> $ . This gives our principle is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <nat:256> = <var:n> ^ <nat:8> ) /\ ( <var:n> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

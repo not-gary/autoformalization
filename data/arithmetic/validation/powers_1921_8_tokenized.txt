@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:256> is the repeated product between natural number $ <var:S> \in \mathbb{Z}^+ $ exponentiated to the degree <nat:8> where $ <var:S> > <nat:1> $ . \end{theorem} \begin{proof} Assume $ <var:S> = <nat:2> $ . We prove $ <var:S> ^ <nat:8> = <nat:256> $ . We justify the proposition is true seeing that $ <var:S> ^ <nat:8> = <nat:2> ^ <nat:8> = <nat:256> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <nat:256> = <var:S> ^ <nat:8> ) /\ ( <var:S> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

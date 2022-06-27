@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:D> \in \mathbb{Z}^+ $ where $ <var:D> > <nat:1> $ plus so that the whole number <nat:32> is the repeated multiplication of whole number $ <var:D> \in \mathbb{N} $ raised to the exponential <nat:5> . \end{theorem} \begin{proof} Assume $ <var:D> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:D> : nat , ( <var:D> > <nat:1> ) /\ ( <nat:32> = <var:D> ^ <nat:5> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

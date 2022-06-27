@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using any natural numbers $ <var:H> $ $ <nat:366> + <nat:112> * <var:H> $ will be even . \end{theorem} \begin{proof} The term $ <nat:112> * <var:H> $ is clearly even . This fact holds because multiplying of an even positive integer with an arbitrary whole number is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:H> : nat , Nat . even ( <nat:112> * <var:H> + <nat:366> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:112> * <var:H> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

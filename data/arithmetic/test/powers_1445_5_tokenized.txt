@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some integer $ <var:W> $ satisfying the condition that $ <nat:32> $ is $ <var:W> ^ <nat:5> $ . \end{theorem} \begin{proof} We verify $ <var:W> ^ <nat:5> = <nat:32> $ . Note that $ <nat:32> = <var:W> ^ <nat:5> = <nat:2> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:W> : nat , ( <nat:32> = <var:W> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

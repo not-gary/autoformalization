@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:j> $ , and $ <var:t> \in \mathbb{Z}^+ $ such that $ <var:t> $ , and $ <var:j> > <nat:1> $ as well as such that the natural number <nat:132> is the multiplication of natural numbers $ <var:j> $ , $ <var:t> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Note $ <nat:132> = <nat:12> \times <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:j> <var:t> : nat , ( <var:t> > <nat:1> ) /\ ( <var:j> > <nat:1> ) /\ ( <nat:132> = <var:j> * <var:t> ) . Proof . exists <nat:12> . exists <nat:11> . lia . Qed . 

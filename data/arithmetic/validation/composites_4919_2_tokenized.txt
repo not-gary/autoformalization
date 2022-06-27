@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:h> $ , $ <var:J> \in \mathbb{Z}^+ $ where $ <nat:33> $ is the same as $ <var:h> \cdot <var:J> $ . \end{theorem} \begin{proof} Take $ <var:h> = <nat:3> $ and $ <var:J> = <nat:11> $ . We justify our claim holds because $ <nat:33> = <nat:11> * <nat:3> = <var:J> * <var:h> $ . Because of this , <nat:33> is the multiplication of $ <var:h> $ , and $ <var:J> \in \mathbb{N} $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:h> <var:J> : nat , ( <nat:33> = <var:h> * <var:J> ) . Proof . exists <nat:3> . exists <nat:11> . lia . Qed . 

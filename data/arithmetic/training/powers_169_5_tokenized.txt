@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:32> is the raising of between integer $ <var:e> \in \mathbb{N} $ repeatedly multiplied to the exponent <nat:5> satisfying the condition that $ <var:e> \geq <nat:2> $ . \end{theorem} \begin{proof} Take $ <var:e> = <nat:2> $ . Notice $ <nat:32> = <var:e> ^ <nat:5> $ . This gives the theorem holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <nat:32> = <var:e> ^ <nat:5> ) /\ ( <var:e> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

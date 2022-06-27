@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:Z> \in \mathbb{N} $ such that $ <var:Z> ^ <nat:6> $ is $ <nat:64> $ . \end{theorem} \begin{proof} Take $ <var:Z> = <nat:2> $ . Note $ <nat:64> = <nat:2> ^ <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Z> : nat , ( <var:Z> ^ <nat:6> = <nat:64> ) . Proof . exists <nat:2> . auto . Qed . 

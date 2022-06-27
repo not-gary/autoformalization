@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:30> is the product between integers $ <var:u> $ , $ <var:p> $ such that $ <var:p> $ , and $ <var:u> $ greater than <nat:1> . \end{theorem} \begin{proof} We confirm <nat:30> is the product of $ <var:p> $ and $ <var:u> \in \mathbb{N} $ . Notice $ <var:u> \times <var:p> = <nat:30> = <nat:3> \times <nat:10> $ . This hints our theorem is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:u> <var:p> : nat , ( <nat:30> = <var:u> * <var:p> ) /\ ( <var:p> > <nat:1> ) /\ ( <var:u> > <nat:1> ) . Proof . exists <nat:3> . exists <nat:10> . lia . Qed . 

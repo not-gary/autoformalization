@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:N> \in \mathbb{Z}^+ $ where <nat:512> is the exponential between number $ <var:N> \in \mathbb{N} $ repeatedly multiplied to the exponent <nat:9> . \end{theorem} \begin{proof} Take $ <var:N> = <nat:2> $ . So , $ <var:N> ^ <nat:9> = <nat:512> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <nat:512> = <var:N> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

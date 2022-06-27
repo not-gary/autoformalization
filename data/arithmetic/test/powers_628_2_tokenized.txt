@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:V> ^ <nat:2> $ is equal to $ <nat:4> $ so that $ <var:V> $ greater than <nat:1> . \end{theorem} \begin{proof} Notice that $ <var:V> ^ <nat:2> = <nat:4> = <nat:2> ^ <nat:2> $ . As a result , $ <var:V> ^ <nat:2> = <nat:4> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:V> : nat , ( <var:V> ^ <nat:2> = <nat:4> ) /\ ( <var:V> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

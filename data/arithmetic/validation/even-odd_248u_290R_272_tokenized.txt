@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:272> + <nat:248> <var:u> + <nat:290> <var:R> $ is guaranteed to be even with any natural terms $ <var:R> $ , and $ <var:u> $ . \end{theorem} \begin{proof} We show our proposition must be true . Recall $ <nat:272> $ is known as an even number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:R> <var:u> : nat , Nat . even ( <nat:248> * <var:u> + <nat:290> * <var:R> + <nat:272> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:272> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

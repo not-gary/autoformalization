@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:U> $ as whole numbers so that the positive integer <nat:16> is the exponent between whole number $ <var:U> $ exponentiated to the degree <nat:4> . \end{theorem} \begin{proof} Allow $ <var:U> = <nat:2> $ . Therefore , $ <var:U> ^ <nat:4> = <nat:16> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:U> : nat , ( <nat:16> = <var:U> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

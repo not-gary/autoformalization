@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:I> \in \mathbb{Z}^+ $ where $ <var:I> \geq <nat:2> $ as well as satisfying the condition that the positive integer <nat:128> is the exponential between integer $ <var:I> \in \mathbb{Z}^+ $ repeatedly multiplied to the power <nat:7> . \end{theorem} \begin{proof} Allow $ <var:I> = <nat:2> $ . This indicates the claim is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:I> : nat , ( <var:I> >= <nat:2> ) /\ ( <nat:128> = <var:I> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

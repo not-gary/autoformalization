@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:s> $ and $ <var:J> $ be integers where $ <var:s> $ , and $ <var:J> \geq <nat:2> $ and so that the natural number <nat:88> is the product of positive integers $ <var:s> $ and $ <var:J> $ . \end{theorem} \begin{proof} Take $ <var:J> = <nat:8> $ and $ <var:s> = <nat:11> $ . Notice that $ <nat:88> = <var:s> \cdot <var:J> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:s> <var:J> : nat , ( <var:s> >= <nat:2> ) /\ ( <var:J> >= <nat:2> ) /\ ( <nat:88> = <var:s> * <var:J> ) . Proof . exists <nat:11> . exists <nat:8> . lia . Qed . 

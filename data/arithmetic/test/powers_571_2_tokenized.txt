@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:S> \in \mathbb{N} $ . $ <nat:4> $ is $ <var:S> ^ <nat:2> $ . \end{theorem} \begin{proof} Take $ <var:S> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <nat:4> = <var:S> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

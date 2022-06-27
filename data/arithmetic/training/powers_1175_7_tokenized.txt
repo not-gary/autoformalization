@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:l> $ are integers satisfying the condition that the whole number <nat:128> is the exponential of integer $ <var:l> $ exponentiated to the power <nat:7> . \end{theorem} \begin{proof} We verify $ <nat:128> = <var:l> ^ <nat:7> $ . Observe $ <nat:128> = <var:l> ^ <nat:7> $ implies $ <var:l> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:l> : nat , ( <nat:128> = <var:l> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

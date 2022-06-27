@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:72> is the multiplication between whole numbers $ <var:U> $ , and $ <var:L> \in \mathbb{N} $ so that $ <var:U> $ and $ <var:L> $ more than <nat:1> . \end{theorem} \begin{proof} Take $ <var:L> = <nat:8> $ , and $ <var:U> = <nat:9> $ . This shows the proposition is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:U> <var:L> : nat , ( <nat:72> = <var:U> * <var:L> ) /\ ( <var:U> > <nat:1> ) /\ ( <var:L> > <nat:1> ) . Proof . exists <nat:9> . exists <nat:8> . lia . Qed . 

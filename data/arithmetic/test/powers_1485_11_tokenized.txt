@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some whole number $ <var:B> $ so that the whole number <nat:2048> is the exponent between $ <var:B> $ raised to the degree <nat:11> . \end{theorem} \begin{proof} Assume $ <var:B> = <nat:2> $ . We present $ <nat:2048> = <var:B> ^ <nat:11> $ . We present our formula is valid seeing that $ <var:B> ^ <nat:11> = <nat:2048> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:B> : nat , ( <nat:2048> = <var:B> ^ <nat:11> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:24> is the product of numbers $ <var:X> $ , $ <var:i> $ , and $ <var:d> \in \mathbb{N} $ . \end{theorem} \begin{proof} Assume $ <var:X> = <nat:4> $ , $ <var:d> = <nat:3> $ and $ <var:i> = <nat:2> $ . We demonstrate $ <var:d> * <var:i> * <var:X> = <nat:24> $ . We confirm our result is valid considering $ <var:X> \cdot <var:d> \cdot <var:i> = <nat:24> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:X> <var:i> <var:d> : nat , ( <nat:24> = <var:X> * <var:i> * <var:d> ) . Proof . exists <nat:4> . exists <nat:2> . exists <nat:3> . repeat split . all : lia . Qed . 

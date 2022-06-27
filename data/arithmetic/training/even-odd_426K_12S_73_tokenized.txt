@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:73> + <var:K> \cdot <nat:426> + <nat:12> \cdot <var:S> $ will be odd . \end{theorem} \begin{proof} Taking the product between even numbers in $ \mathbb{N} $ will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:K> <var:S> : nat , Nat . odd ( <nat:426> * <var:K> + <nat:12> * <var:S> + <nat:73> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

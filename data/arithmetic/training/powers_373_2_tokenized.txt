@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:K> $ be natural numbers such that $ <var:K> $ more than <nat:1> as well as so that $ <nat:4> = <var:K> ^ <nat:2> $ . \end{theorem} \begin{proof} We prove the formula is valid on account of $ <var:K> ^ <nat:2> = <nat:4> $ hints $ <var:K> = <nat:2> $ as well as in view of $ <nat:2> > <nat:1> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <var:K> > <nat:1> ) /\ ( <nat:4> = <var:K> ^ <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . apply <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:64> is the repeated multiplication between whole number $ <var:z> $ taken to the power <nat:6> satisfying the condition that $ <var:z> $ larger than or equivalent to <nat:2> . \end{theorem} \begin{proof} Note that $ <nat:64> = <var:z> ^ <nat:6> $ hints $ <var:z> = <nat:2> $ . This yields the claim is true . Hence , $ <nat:64> = <var:z> ^ <nat:6> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:z> : nat , ( <nat:64> = <var:z> ^ <nat:6> ) /\ ( <var:z> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

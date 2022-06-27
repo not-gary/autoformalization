@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:224> $ is equal to $ <var:d> \cdot <var:Z> \cdot <var:j> $ given $ <var:d> $ , $ <var:Z> $ , $ <var:j> \in \mathbb{N} $ . \end{theorem} \begin{proof} We justify $ <var:d> \cdot <var:j> \cdot <var:Z> = <nat:224> $ . We show our claim is valid in view of $ <nat:224> = <var:j> \times <var:d> \times <var:Z> $ suggests $ <var:Z> = <nat:8> $ , $ <var:j> = <nat:4> $ and $ <var:d> = <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:d> <var:Z> <var:j> : nat , ( <nat:224> = <var:d> * <var:Z> * <var:j> ) . Proof . exists <nat:7> . exists <nat:8> . exists <nat:4> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:c> ^ <nat:3> $ is $ <nat:8> $ such that $ <var:c> \geq <nat:2> $ . \end{theorem} \begin{proof} Allow $ <var:c> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:c> : nat , ( <var:c> ^ <nat:3> = <nat:8> ) /\ ( <var:c> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:B> $ , $ <var:i> $ are integers such that $ <nat:44> $ is $ <var:i> \cdot <var:B> $ . \end{theorem} \begin{proof} Notice that $ <var:i> \times <var:B> = <nat:44> $ implies $ <var:B> = <nat:4> $ , and $ <var:i> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:B> <var:i> : nat , ( <nat:44> = <var:i> * <var:B> ) . Proof . exists <nat:4> . exists <nat:11> . lia . Qed . 

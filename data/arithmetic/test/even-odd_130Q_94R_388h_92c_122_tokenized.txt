@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming some unknowns $ <var:h> $ , $ <var:c> $ , $ <var:R> $ , and $ <var:Q> $ $ <nat:130> * <var:Q> + <var:R> * <nat:94> + <nat:388> * <var:h> + <nat:92> * <var:c> + <nat:122> $ must be even . \end{theorem} \begin{proof} Main result trivially must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:h> <var:c> <var:R> <var:Q> : nat , Nat . even ( <nat:130> * <var:Q> + <nat:94> * <var:R> + <nat:388> * <var:h> + <nat:92> * <var:c> + <nat:122> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

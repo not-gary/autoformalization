@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:i> \cdot <var:G> \cdot <var:K> $ is equal to $ <nat:240> $ given $ <var:G> $ , $ <var:i> $ and $ <var:K> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Notice that $ <nat:240> = <var:K> \times <var:G> \times <var:i> = <nat:8> \times <nat:10> \times <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:G> <var:i> <var:K> : nat , ( <var:i> * <var:G> * <var:K> = <nat:240> ) . Proof . exists <nat:10> . exists <nat:3> . exists <nat:8> . repeat split . all : lia . Qed . 

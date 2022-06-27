@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given all positive terms $ <var:g> $ $ <nat:114> + <var:g> \cdot <nat:64> $ is even . \end{theorem} \begin{proof} Recall that the leading term $ <nat:64> $ is trivially even . Thus , the pair $ <nat:64> \times <var:g> $ will be even too . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:g> : nat , Nat . even ( <nat:64> * <var:g> + <nat:114> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:64> = true ) . { auto . } assert ( <genH> : Nat . even ( <nat:64> * <var:g> ) = true ) . { rewrite Nat . even_mul . rewrite <genH> . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

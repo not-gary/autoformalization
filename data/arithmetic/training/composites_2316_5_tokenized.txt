@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:10395> = <var:A> \times <var:H> \times <var:c> \times <var:B> \times <var:Y> $ given $ <var:c> $ , $ <var:A> $ , $ <var:H> $ , $ <var:Y> $ and $ <var:B> $ . \end{theorem} \begin{proof} Notice that $ <nat:11> * <nat:3> * <nat:7> * <nat:5> * <nat:9> = <nat:10395> $ . This indicates the proposition holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:c> <var:A> <var:H> <var:Y> <var:B> : nat , ( <nat:10395> = <var:A> * <var:H> * <var:c> * <var:B> * <var:Y> ) . Proof . exists <nat:9> . exists <nat:7> . exists <nat:3> . exists <nat:5> . exists <nat:11> . repeat split . all : lia . Qed . 

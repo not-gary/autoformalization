@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:18> is the multiplication of whole numbers $ <var:u> $ and $ <var:m> $ where $ <var:u> $ and $ <var:m> > <nat:1> $ . \end{theorem} \begin{proof} We verify our principle is true by reason of $ <var:m> * <var:u> = <nat:18> = <nat:9> * <nat:2> $ . Hence , $ <var:u> * <var:m> = <nat:18> $ as well as $ <var:m> $ , $ <var:u> $ are larger than <nat:1> has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:u> <var:m> : nat , ( <nat:18> = <var:u> * <var:m> ) /\ ( <var:u> > <nat:1> ) /\ ( <var:m> > <nat:1> ) . Proof . exists <nat:2> . exists <nat:9> . lia . Qed . 

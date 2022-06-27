@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:4> is the exponential between integer $ <var:J> $ exponentiated to the exponent <nat:2> . \end{theorem} \begin{proof} We show $ <var:J> ^ <nat:2> = <nat:4> $ . Notice $ <nat:4> = <nat:2> ^ <nat:2> = <var:J> ^ <nat:2> $ . This implies our thesis holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:J> : nat , ( <nat:4> = <var:J> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

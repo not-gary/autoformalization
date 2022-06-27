@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given some whole numbers $ <var:y> $ , and $ <var:f> $ the sum $ <nat:282> \cdot <var:y> + <var:f> \cdot <nat:302> + <nat:124> $ will be even . \end{theorem} \begin{proof} Take note that the product of even numbers is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:y> <var:f> : nat , Nat . even ( <nat:282> * <var:y> + <nat:302> * <var:f> + <nat:124> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

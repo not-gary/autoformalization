@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:16> is the exponent between $ <var:w> $ repeatedly multiplied to the degree <nat:4> . \end{theorem} \begin{proof} We demonstrate <nat:16> is the exponential between some $ <var:w> $ taken to the exponential <nat:4> . Observe that $ <nat:2> ^ <nat:4> = <nat:16> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:w> : nat , ( <nat:16> = <var:w> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

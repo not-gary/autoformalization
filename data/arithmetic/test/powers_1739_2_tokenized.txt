@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} We assume that $ <var:V> $ is a <def:square> integer with the condition there exists some number $ <var:y> $ such that $ <var:V> = <var:y> ^ <nat:2> $ for $ <var:V> \in \mathbb{Z}^+ $ . Thus the positive integer <nat:4> is a <def:square> positive integer . \end{theorem} \begin{proof} Assume $ <var:y> = <nat:2> $ . We prove $ <nat:4> = <var:y> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:V> : nat ) := exists <var:y> : nat , ( <var:V> = <var:y> ^ <nat:2> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

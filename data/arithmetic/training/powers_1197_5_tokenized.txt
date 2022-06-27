@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:32> is the repeated multiplication of whole number $ <var:M> $ exponentiated to the degree <nat:5> so that $ <var:M> $ more than or equivalent to <nat:2> . \end{theorem} \begin{proof} Notice $ <nat:32> = <nat:2> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:M> : nat , ( <nat:32> = <var:M> ^ <nat:5> ) /\ ( <var:M> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

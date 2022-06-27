@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} $ <var:x> $ is <def:composite> if there exist $ <var:a> $ , $ <var:b> \in \mathbb{N} $ such that $ <var:x> = <var:a> <var:b> $ and $ <var:a> $ , $ <var:b> $ are greater than or equal to <nat:2> . \end{definition} \begin{theorem} <nat:10> is <def:composite> . \end{theorem} \begin{proof} Let $ <var:a> = <nat:5> $ and $ <var:b> = <nat:2> $ . $ <var:a> <var:b> = <nat:5> \times <nat:2> = <nat:10> $ . \end{proof} \end{document}
-~
-Proof

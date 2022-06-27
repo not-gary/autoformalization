@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:b> $ are numbers . the whole number <nat:32> is the exponential between $ <var:b> $ taken to the exponent <nat:5> . \end{theorem} \begin{proof} Assume $ <var:b> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:b> : nat , ( <nat:32> = <var:b> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

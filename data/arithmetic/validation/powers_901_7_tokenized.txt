@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:P> $ such that $ <var:P> \geq <nat:2> $ plus where <nat:128> is the repeated multiplication between $ <var:P> $ taken to the exponential <nat:7> . \end{theorem} \begin{proof} Let $ <var:P> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:P> : nat , ( <var:P> >= <nat:2> ) /\ ( <nat:128> = <var:P> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

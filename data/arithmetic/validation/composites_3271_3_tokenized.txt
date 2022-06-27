@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:C> $ , $ <var:J> $ , $ <var:b> \in \mathbb{N} $ such that $ <nat:180> $ is the same as $ <var:b> \times <var:J> \times <var:C> $ . \end{theorem} \begin{proof} Take $ <var:b> = <nat:5> $ , $ <var:J> = <nat:3> $ and $ <var:C> = <nat:12> $ . Because of this , <nat:180> is the product between $ <var:C> $ , $ <var:J> $ , $ <var:b> \in \mathbb{N} $ is validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:J> <var:b> : nat , ( <nat:180> = <var:b> * <var:J> * <var:C> ) . Proof . exists <nat:12> . exists <nat:3> . exists <nat:5> . repeat split . all : lia . Qed . 

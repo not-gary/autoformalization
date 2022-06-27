@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:1024> is the exponential of $ <var:k> \in \mathbb{N} $ raised to the power <nat:10> . \end{theorem} \begin{proof} Note that $ <var:k> ^ <nat:10> = <nat:1024> $ hints $ <var:k> = <nat:2> $ . This yields our theory is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:k> : nat , ( <nat:1024> = <var:k> ^ <nat:10> ) . Proof . exists <nat:2> . auto . Qed . 

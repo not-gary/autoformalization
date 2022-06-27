@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:B> $ , $ <var:A> $ , and $ <var:z> \in \mathbb{N} $ . $ <var:z> \times <var:B> \times <var:A> $ is $ <nat:40> $ . \end{theorem} \begin{proof} Notice that $ <var:z> \cdot <var:B> \cdot <var:A> = <nat:40> $ gives $ <var:z> = <nat:4> $ , $ <var:A> = <nat:2> $ and $ <var:B> = <nat:5> $ . This suggests the theory is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:B> <var:A> <var:z> : nat , ( <var:z> * <var:B> * <var:A> = <nat:40> ) . Proof . exists <nat:5> . exists <nat:2> . exists <nat:4> . repeat split . all : lia . Qed . 

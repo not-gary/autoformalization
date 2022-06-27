@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:e> \in \mathbb{N} $ so that $ <var:e> > <nat:1> $ . the natural number <nat:1024> is the raising of between $ <var:e> \in \mathbb{Z}^+ $ repeatedly multiplied to the exponential <nat:10> . \end{theorem} \begin{proof} Let $ <var:e> = <nat:2> $ . This suggests our theory is valid . Hence , <nat:1024> is the exponential of some integer $ <var:e> $ raised to the exponential <nat:10> is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <var:e> > <nat:1> ) /\ ( <nat:1024> = <var:e> ^ <nat:10> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

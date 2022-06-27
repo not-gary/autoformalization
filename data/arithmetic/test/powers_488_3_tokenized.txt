@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:e> $ be integers so that the natural number <nat:8> is the repeated product between integer $ <var:e> $ raised to the degree <nat:3> . \end{theorem} \begin{proof} Notice that $ <var:e> ^ <nat:3> = <nat:8> $ produces $ <var:e> = <nat:2> $ . This suggests the theory holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <nat:8> = <var:e> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

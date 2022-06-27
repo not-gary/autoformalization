@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are some integers $ <var:J> $ , $ <var:O> $ such that $ <var:O> * <var:J> $ is the same as $ <nat:63> $ . \end{theorem} \begin{proof} We confirm our statement holds in consideration of $ <nat:9> \cdot <nat:7> = <var:O> \cdot <var:J> = <nat:63> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:J> <var:O> : nat , ( <var:O> * <var:J> = <nat:63> ) . Proof . exists <nat:7> . exists <nat:9> . lia . Qed . 

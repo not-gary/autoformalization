@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:85> + <nat:40> <var:a> + <var:C> <nat:78> + <var:p> <nat:412> $ is odd using some positive terms $ <var:C> $ , $ <var:a> $ , and $ <var:p> $ . \end{theorem} \begin{proof} We justify this result holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:C> <var:a> <var:p> : nat , Nat . odd ( <nat:40> * <var:a> + <nat:78> * <var:C> + <nat:412> * <var:p> + <nat:85> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

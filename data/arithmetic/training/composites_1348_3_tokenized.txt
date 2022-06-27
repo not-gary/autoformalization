@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:t> $ , $ <var:R> $ , $ <var:b> \in \mathbb{N} $ where $ <nat:336> $ is $ <var:b> * <var:t> * <var:R> $ . \end{theorem} \begin{proof} Observe that $ <var:R> * <var:b> * <var:t> = <nat:336> $ suggests $ <var:b> = <nat:7> $ , $ <var:t> = <nat:4> $ , $ <var:R> = <nat:12> $ . Thus , $ <var:t> * <var:b> * <var:R> = <nat:336> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:t> <var:R> <var:b> : nat , ( <nat:336> = <var:b> * <var:t> * <var:R> ) . Proof . exists <nat:4> . exists <nat:12> . exists <nat:7> . repeat split . all : lia . Qed . 

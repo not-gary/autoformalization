@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:512> $ is equivalent to $ <var:Y> ^ <nat:9> $ assuming $ <var:Y> $ . \end{theorem} \begin{proof} We confirm the principle is valid considering $ <var:Y> ^ <nat:9> = <nat:512> $ shows $ <var:Y> = <nat:2> $ . Therefore , <nat:512> is the repeated product between $ <var:Y> \in \mathbb{Z}^+ $ repeatedly multiplied to the degree <nat:9> has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Y> : nat , ( <nat:512> = <var:Y> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

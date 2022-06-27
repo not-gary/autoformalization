@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:128> = <var:s> ^ <nat:7> $ so that $ <var:s> \geq <nat:2> $ . \end{theorem} \begin{proof} Allow $ <var:s> = <nat:2> $ . This implies the thesis holds . Hence , $ <var:s> $ is more than or equivalent to <nat:2> plus <nat:128> is the repeated multiplication of $ <var:s> \in \mathbb{N} $ exponentiated to the power <nat:7> is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:s> : nat , ( <nat:128> = <var:s> ^ <nat:7> ) /\ ( <var:s> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

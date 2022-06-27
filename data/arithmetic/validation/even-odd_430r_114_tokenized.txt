@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:r> <nat:430> + <nat:114> $ is even for all natural numbers $ <var:r> $ . \end{theorem} \begin{proof} The totaling between an even integer and an even element of $ \mathbb{Z}^+ $ is even . The natural number $ <nat:430> $ is even \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:r> : nat , Nat . even ( <nat:430> * <var:r> + <nat:114> ) = true . Proof . intros . repeat rewrite Nat . even_add . assert ( <genH> : Nat . even <nat:430> = true ) . { auto . } repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

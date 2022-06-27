@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:K> \in \mathbb{N} $ such that $ <var:K> > <nat:1> $ and such that the whole number <nat:32> is the exponential between positive integer $ <var:K> \in \mathbb{N} $ taken to the exponent <nat:5> . \end{theorem} \begin{proof} Let $ <var:K> = <nat:2> $ . We show $ <var:K> $ is greater than <nat:1> plus $ <var:K> ^ <nat:5> = <nat:32> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <var:K> > <nat:1> ) /\ ( <nat:32> = <var:K> ^ <nat:5> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

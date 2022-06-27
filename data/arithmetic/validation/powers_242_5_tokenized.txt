@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:32> is the exponential between number $ <var:K> \in \mathbb{N} $ repeatedly multiplied to the power <nat:5> so that $ <var:K> > <nat:1> $ . \end{theorem} \begin{proof} Assume $ <var:K> = <nat:2> $ . We prove $ <var:K> ^ <nat:5> = <nat:32> $ plus $ <var:K> > <nat:1> $ . We present the theorem is valid by reason of $ <var:K> ^ <nat:5> = <nat:32> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <nat:32> = <var:K> ^ <nat:5> ) /\ ( <var:K> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

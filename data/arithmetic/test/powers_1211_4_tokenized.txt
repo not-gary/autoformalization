@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:W> $ are natural numbers such that $ <var:W> \geq <nat:2> $ as well as such that the positive integer <nat:16> is the repeated multiplication between $ <var:W> $ taken to the degree <nat:4> . \end{theorem} \begin{proof} Allow $ <var:W> = <nat:2> $ . Notice that $ <nat:16> = <nat:2> ^ <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:W> : nat , ( <var:W> >= <nat:2> ) /\ ( <nat:16> = <var:W> ^ <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

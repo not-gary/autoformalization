@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:H> ^ <nat:4> $ is $ <nat:16> $ assuming $ <var:H> $ where $ <var:H> \geq <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:H> = <nat:2> $ . Additionally notice $ <var:H> = <nat:2> \geq <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:H> : nat , ( <var:H> ^ <nat:4> = <nat:16> ) /\ ( <var:H> >= <nat:2> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . auto . apply <genH> . Qed . 

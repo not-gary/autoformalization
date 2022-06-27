@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:672> is the multiplication of positive integers $ <var:E> $ , $ <var:S> $ , and $ <var:F> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We prove our proposition holds because $ <nat:7> \times <nat:12> \times <nat:8> = <nat:672> = <var:E> \times <var:S> \times <var:F> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:E> <var:S> <var:F> : nat , ( <nat:672> = <var:E> * <var:S> * <var:F> ) . Proof . exists <nat:7> . exists <nat:12> . exists <nat:8> . repeat split . all : lia . Qed . 

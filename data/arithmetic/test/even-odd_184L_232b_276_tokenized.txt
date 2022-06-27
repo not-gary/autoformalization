@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:276> + <var:L> \times <nat:184> + <var:b> \times <nat:232> $ will be even . \end{theorem} \begin{proof} We demonstrate the sum $ <var:L> \times <nat:184> + <var:b> \times <nat:232> + <nat:276> $ is guaranteed to be even . Notice the summing of even whole numbers concurrently is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:L> <var:b> : nat , Nat . even ( <nat:184> * <var:L> + <nat:232> * <var:b> + <nat:276> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:X> $ , $ <var:S> \in \mathbb{N} $ where $ <var:X> $ , and $ <var:S> > <nat:1> $ plus where $ <var:X> \times <var:S> $ is the same as $ <nat:108> $ . \end{theorem} \begin{proof} Allow $ <var:S> = <nat:9> $ , and $ <var:X> = <nat:12> $ . Note that $ <var:X> \cdot <var:S> = <nat:108> $ . This suggests our theory holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:X> <var:S> : nat , ( <var:X> > <nat:1> ) /\ ( <var:S> > <nat:1> ) /\ ( <var:X> * <var:S> = <nat:108> ) . Proof . exists <nat:12> . exists <nat:9> . lia . Qed . 

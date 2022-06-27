@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:135> is the product between whole numbers $ <var:f> $ , $ <var:t> $ , $ <var:i> $ . \end{theorem} \begin{proof} Assume $ <var:t> = <nat:3> $ , $ <var:f> = <nat:5> $ and $ <var:i> = <nat:9> $ . We demonstrate $ <var:f> \cdot <var:i> \cdot <var:t> = <nat:135> $ . Observe that $ <var:t> \cdot <var:f> \cdot <var:i> = <nat:135> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:f> <var:t> <var:i> : nat , ( <nat:135> = <var:f> * <var:t> * <var:i> ) . Proof . exists <nat:5> . exists <nat:3> . exists <nat:9> . repeat split . all : lia . Qed . 

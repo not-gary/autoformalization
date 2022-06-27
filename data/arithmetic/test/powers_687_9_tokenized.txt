@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:t> \in \mathbb{Z}^+ $ such that $ <var:t> ^ <nat:9> $ is the same as $ <nat:512> $ . \end{theorem} \begin{proof} Notice $ <nat:512> = <var:t> ^ <nat:9> $ shows $ <var:t> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <var:t> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . auto . Qed . 

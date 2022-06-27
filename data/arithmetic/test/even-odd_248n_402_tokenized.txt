@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With integers $ <var:n> $ $ <nat:402> + <nat:248> \times <var:n> $ must be even . \end{theorem} \begin{proof} The product of even elements of $ \mathbb{Z}^+ $ must be even . We verify $ <var:n> <nat:248> + <nat:402> $ will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:n> : nat , Nat . even ( <nat:248> * <var:n> + <nat:402> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

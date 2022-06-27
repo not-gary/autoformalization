@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:k> $ be numbers so that the whole number <nat:128> is the repeated product of number $ <var:k> $ repeatedly multiplied to the degree <nat:7> . \end{theorem} \begin{proof} Observe that $ <nat:128> = <nat:2> ^ <nat:7> $ . This shows the theorem is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:k> : nat , ( <nat:128> = <var:k> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

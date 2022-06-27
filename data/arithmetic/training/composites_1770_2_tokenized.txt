@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some $ <var:K> $ , and $ <var:F> $ where $ <var:F> $ , $ <var:K> $ more than <nat:1> as well as so that $ <var:K> * <var:F> $ is equal to $ <nat:55> $ . \end{theorem} \begin{proof} Let $ <var:K> = <nat:5> $ , and $ <var:F> = <nat:11> $ . This shows the theorem is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:K> <var:F> : nat , ( <var:F> > <nat:1> ) /\ ( <var:K> > <nat:1> ) /\ ( <var:K> * <var:F> = <nat:55> ) . Proof . exists <nat:5> . exists <nat:11> . lia . Qed . 

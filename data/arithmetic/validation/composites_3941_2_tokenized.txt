@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:80> $ is equivalent to $ <var:y> \cdot <var:P> $ so that $ <var:y> $ , and $ <var:P> \geq <nat:2> $ . \end{theorem} \begin{proof} Take $ <var:P> = <nat:8> $ and $ <var:y> = <nat:10> $ . Notice that $ <nat:80> = <nat:8> * <nat:10> $ . Consequently , $ <var:y> \times <var:P> = <nat:80> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:y> <var:P> : nat , ( <nat:80> = <var:y> * <var:P> ) /\ ( <var:y> >= <nat:2> ) /\ ( <var:P> >= <nat:2> ) . Proof . exists <nat:10> . exists <nat:8> . lia . Qed . 

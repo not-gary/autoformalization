@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:r> <nat:284> + <nat:366> $ must be even . \end{theorem} \begin{proof} We check the summation $ <nat:366> + <nat:284> \times <var:r> $ must be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:r> : nat , Nat . even ( <nat:284> * <var:r> + <nat:366> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

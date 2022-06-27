@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:l> \times <nat:436> + <nat:262> $ is guaranteed to be even taking every positive integers $ <var:l> $ . \end{theorem} \begin{proof} Proposition clearly must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:l> : nat , Nat . even ( <nat:436> * <var:l> + <nat:262> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

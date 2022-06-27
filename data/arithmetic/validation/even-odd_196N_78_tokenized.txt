@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:196> \cdot <var:N> + <nat:78> $ is even given any $ <var:N> $ . \end{theorem} \begin{proof} We justify the summation $ <nat:78> + <var:N> \cdot <nat:196> $ is even according to the knowledge the totaling between an even number in $ \mathbb{Z}^+ $ and an even whole number is trivially an even natural . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:N> : nat , Nat . even ( <nat:196> * <var:N> + <nat:78> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

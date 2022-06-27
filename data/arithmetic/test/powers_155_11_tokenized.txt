@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:j> \in \mathbb{Z}^+ $ so that $ <var:j> $ larger than <nat:1> . the number <nat:2048> is the exponent between $ <var:j> \in \mathbb{N} $ exponentiated to the power <nat:11> . \end{theorem} \begin{proof} Allow $ <var:j> = <nat:2> $ . We justify $ <var:j> ^ <nat:11> = <nat:2048> $ . We justify the claim holds by reason of $ <nat:2> ^ <nat:11> = <nat:2048> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <var:j> > <nat:1> ) /\ ( <nat:2048> = <var:j> ^ <nat:11> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

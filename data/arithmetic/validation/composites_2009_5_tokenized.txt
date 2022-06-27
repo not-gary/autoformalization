@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:23760> is the product between whole numbers $ <var:T> $ , $ <var:n> $ , $ <var:q> $ , $ <var:U> $ , and $ <var:y> $ . \end{theorem} \begin{proof} Observe that $ <nat:23760> = <nat:4> \cdot <nat:11> \cdot <nat:5> \cdot <nat:12> \cdot <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:T> <var:n> <var:q> <var:U> <var:y> : nat , ( <nat:23760> = <var:T> * <var:n> * <var:q> * <var:U> * <var:y> ) . Proof . exists <nat:4> . exists <nat:9> . exists <nat:11> . exists <nat:12> . exists <nat:5> . repeat split . all : lia . Qed . 

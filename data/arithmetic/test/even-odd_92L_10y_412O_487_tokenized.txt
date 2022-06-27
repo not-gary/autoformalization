@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:92> * <var:L> + <var:y> * <nat:10> + <nat:412> * <var:O> + <nat:487> $ is guaranteed to be odd . \end{theorem} \begin{proof} Observe the product between even numbers in $ \mathbb{Z}^+ $ is an even number in $ \mathbb{Z}^+ $ . It can be checked that our theorem is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:L> <var:y> <var:O> : nat , Nat . odd ( <nat:92> * <var:L> + <nat:10> * <var:y> + <nat:412> * <var:O> + <nat:487> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

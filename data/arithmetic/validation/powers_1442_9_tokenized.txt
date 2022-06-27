@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:512> is the raising of of natural number $ <var:B> $ repeatedly multiplied to the exponential <nat:9> . \end{theorem} \begin{proof} Allow $ <var:B> = <nat:2> $ . We demonstrate the theory holds in view of $ <var:B> ^ <nat:9> = <nat:512> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:B> : nat , ( <nat:512> = <var:B> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

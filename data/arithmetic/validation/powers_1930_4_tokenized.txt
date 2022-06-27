@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:W> $ where $ <var:W> > <nat:1> $ plus satisfying the condition that $ <var:W> ^ <nat:4> $ is the same as $ <nat:16> $ . \end{theorem} \begin{proof} Observe $ <nat:16> = <nat:2> ^ <nat:4> = <var:W> ^ <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:W> : nat , ( <var:W> > <nat:1> ) /\ ( <var:W> ^ <nat:4> = <nat:16> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

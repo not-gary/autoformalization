@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:121> is the product of $ <var:a> $ , $ <var:b> \in \mathbb{N} $ that are greater than or equal to <nat:2> . \end{theorem} \begin{proof} $ <nat:121> = <var:a> * <var:b> $ , where $ <var:a> = <nat:11> $ and $ <var:b> = <nat:11> $ . \end{proof} \end{document}
-~
-Proof

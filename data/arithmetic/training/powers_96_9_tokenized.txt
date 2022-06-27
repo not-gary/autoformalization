@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some integer $ <var:v> $ such that $ <var:v> ^ <nat:9> $ is equal to $ <nat:512> $ . \end{theorem} \begin{proof} Let $ <var:v> = <nat:2> $ . Notice that $ <nat:512> = <var:v> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:v> : nat , ( <var:v> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . auto . Qed . 

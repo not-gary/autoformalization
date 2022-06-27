@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:720> $ is equal to $ <var:x> \cdot <var:E> \cdot <var:h> $ given $ <var:h> $ , $ <var:x> $ , and $ <var:E> $ . \end{theorem} \begin{proof} Assume $ <var:x> = <nat:10> $ , $ <var:E> = <nat:12> $ , $ <var:h> = <nat:6> $ . We present our belief is true in consideration of $ <var:E> \times <var:x> \times <var:h> = <nat:720> = <nat:12> \times <nat:10> \times <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:h> <var:x> <var:E> : nat , ( <nat:720> = <var:x> * <var:E> * <var:h> ) . Proof . exists <nat:6> . exists <nat:10> . exists <nat:12> . repeat split . all : lia . Qed . 

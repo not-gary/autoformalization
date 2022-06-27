@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some $ <var:T> $ , and $ <var:P> $ such that the whole number <nat:63> is the multiplication of $ <var:T> $ and $ <var:P> $ . \end{theorem} \begin{proof} Note that $ <var:T> * <var:P> = <nat:63> $ suggests $ <var:T> = <nat:7> $ , $ <var:P> = <nat:9> $ . As a result , $ <nat:63> = <var:T> \times <var:P> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:T> <var:P> : nat , ( <nat:63> = <var:T> * <var:P> ) . Proof . exists <nat:7> . exists <nat:9> . lia . Qed . 

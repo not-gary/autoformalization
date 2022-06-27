@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:n> $ as natural numbers . the positive integer <nat:512> is the raising of between positive integer $ <var:n> $ taken to the power <nat:9> . \end{theorem} \begin{proof} Assume $ <var:n> = <nat:2> $ . We present the statement is true for $ <nat:512> = <var:n> ^ <nat:9> = <nat:2> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <nat:512> = <var:n> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

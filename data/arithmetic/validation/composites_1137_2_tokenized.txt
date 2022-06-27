@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:b> * <var:s> = <nat:21> $ for $ <var:s> $ , and $ <var:b> $ . \end{theorem} \begin{proof} Allow $ <var:s> = <nat:3> $ , $ <var:b> = <nat:7> $ . Note that $ <nat:3> \cdot <nat:7> = <nat:21> = <var:s> \cdot <var:b> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:s> <var:b> : nat , ( <var:b> * <var:s> = <nat:21> ) . Proof . exists <nat:3> . exists <nat:7> . lia . Qed . 

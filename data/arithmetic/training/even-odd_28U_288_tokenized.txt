@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using $ <var:U> \in \mathbb{N} $ the expression $ <var:U> * <nat:28> + <nat:288> $ is even . \end{theorem} \begin{proof} Lemma trivially is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:U> : nat , Nat . even ( <nat:28> * <var:U> + <nat:288> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

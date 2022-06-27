@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:d> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:d> ^ <nat:6> $ is equivalent to $ <nat:64> $ . \end{theorem} \begin{proof} Note $ <nat:64> = <nat:2> ^ <nat:6> $ . Because of this , <nat:64> is the exponential of some $ <var:d> $ raised to the exponential <nat:6> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <var:d> ^ <nat:6> = <nat:64> ) . Proof . exists <nat:2> . auto . Qed . 

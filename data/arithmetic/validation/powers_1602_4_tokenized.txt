@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:e> \in \mathbb{N} $ such that <nat:16> is the raising of between natural number $ <var:e> \in \mathbb{N} $ repeatedly multiplied to the exponential <nat:4> . \end{theorem} \begin{proof} Observe $ <nat:16> = <nat:2> ^ <nat:4> $ . As a result , $ <nat:16> = <var:e> ^ <nat:4> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <nat:16> = <var:e> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} Let $ <var:h> \in \mathbb{Z}^+ $ . We say that some $ <var:W> $ is defined as a <def:penteract> natural number given $ <var:h> ^ <nat:5> = <var:W> $ . \end{definition} \begin{theorem} $ <nat:32> = <var:W> $ is a <def:penteract> whole number . \end{theorem} \begin{proof} Let $ <var:h> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:penteract> ( <var:W> : nat ) := exists <var:h> : nat , ( <var:h> ^ <nat:5> = <var:W> ) . Theorem <genP:1> : <def:penteract> <nat:32> . Proof . unfold <def:penteract> . exists <nat:2> . auto . Qed . 

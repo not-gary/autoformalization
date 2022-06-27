@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:M> $ where the positive integer <nat:32> is the raising of between $ <var:M> $ repeatedly multiplied to the power <nat:5> . \end{theorem} \begin{proof} Allow $ <var:M> = <nat:2> $ . Notice that $ <nat:2> ^ <nat:5> = <nat:32> $ . So , $ <var:M> ^ <nat:5> = <nat:32> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:M> : nat , ( <nat:32> = <var:M> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

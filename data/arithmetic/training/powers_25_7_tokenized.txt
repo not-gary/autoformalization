@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:e> ^ <nat:7> $ is the same as $ <nat:128> $ . \end{theorem} \begin{proof} Assume $ <var:e> = <nat:2> $ . We prove our statement holds for $ <nat:128> = <var:e> ^ <nat:7> = <nat:2> ^ <nat:7> $ . Hence , <nat:128> is the repeated product of $ <var:e> \in \mathbb{N} $ raised to the exponent <nat:7> is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <var:e> ^ <nat:7> = <nat:128> ) . Proof . exists <nat:2> . auto . Qed . 

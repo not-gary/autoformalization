@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:8> is the exponent between natural number $ <var:p> $ raised to the exponential <nat:3> where $ <var:p> $ greater than or equivalent to <nat:2> . \end{theorem} \begin{proof} Observe $ <var:p> ^ <nat:3> = <nat:8> $ yields $ <var:p> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:p> : nat , ( <nat:8> = <var:p> ^ <nat:3> ) /\ ( <var:p> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

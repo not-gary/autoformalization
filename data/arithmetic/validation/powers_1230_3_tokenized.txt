@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:L> \in \mathbb{N} $ satisfying the condition that $ <var:L> $ larger than or equivalent to <nat:2> plus such that $ <var:L> ^ <nat:3> $ equals $ <nat:8> $ . \end{theorem} \begin{proof} Assume $ <var:L> = <nat:2> $ . As a result , $ <nat:8> = <var:L> ^ <nat:3> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:L> : nat , ( <var:L> >= <nat:2> ) /\ ( <var:L> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

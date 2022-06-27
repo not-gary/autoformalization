@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:16> is the exponent between integer $ <var:O> $ taken to the power <nat:4> . \end{theorem} \begin{proof} We confirm our statement holds in consideration of $ <nat:16> = <nat:2> ^ <nat:4> $ . As a result , $ <var:O> ^ <nat:4> = <nat:16> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:O> : nat , ( <nat:16> = <var:O> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

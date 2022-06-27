@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:u> ^ <nat:2> $ is the same as $ <nat:4> $ assuming $ <var:u> \in \mathbb{Z}^+ $ where $ <var:u> \geq <nat:2> $ . \end{theorem} \begin{proof} We verify $ <var:u> ^ <nat:2> = <nat:4> $ and $ <var:u> $ is greater than or equal to <nat:2> . We prove the theorem is true on account of $ <var:u> ^ <nat:2> = <nat:4> $ shows $ <var:u> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <var:u> ^ <nat:2> = <nat:4> ) /\ ( <var:u> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

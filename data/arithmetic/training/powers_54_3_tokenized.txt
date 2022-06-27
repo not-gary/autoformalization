@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:d> \in \mathbb{N} $ . Say that some $ <var:W> $ is considered to be a <def:cube> integer if $ <var:d> ^ <nat:3> = <var:W> $ and satisfying the condition that $ <var:d> \geq <nat:2> $ . Then the positive integer <nat:8> is a <def:cube> number . \end{theorem} \begin{proof} Note $ <nat:8> = <nat:2> ^ <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:W> : nat ) := exists <var:d> : nat , ( <var:d> ^ <nat:3> = <var:W> ) /\ ( <var:d> >= <nat:2> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . split . auto . lia . Qed . 

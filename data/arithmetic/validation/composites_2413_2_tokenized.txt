@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:24> is the product of positive integers $ <var:C> $ , $ <var:x> \in \mathbb{Z}^+ $ so that $ <var:C> $ and $ <var:x> \geq <nat:2> $ . \end{theorem} \begin{proof} Notice $ <var:x> \cdot <var:C> = <nat:24> $ implies $ <var:C> = <nat:6> $ and $ <var:x> = <nat:4> $ . Hence , <nat:24> is the multiplication of $ <var:x> $ and $ <var:C> \in \mathbb{Z}^+ $ is proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:x> : nat , ( <nat:24> = <var:C> * <var:x> ) /\ ( <var:C> >= <nat:2> ) /\ ( <var:x> >= <nat:2> ) . Proof . exists <nat:6> . exists <nat:4> . lia . Qed . 

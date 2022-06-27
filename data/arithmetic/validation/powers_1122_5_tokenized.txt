@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:z> $ are positive integers so that the whole number <nat:32> is the raising of between number $ <var:z> $ taken to the exponential <nat:5> . \end{theorem} \begin{proof} Allow $ <var:z> = <nat:2> $ . Consequently , $ <nat:32> = <var:z> ^ <nat:5> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:z> : nat , ( <nat:32> = <var:z> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

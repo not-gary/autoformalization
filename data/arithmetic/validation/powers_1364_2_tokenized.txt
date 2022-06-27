@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given that we get $ <var:N> ^ <nat:2> = <var:G> $ given $ <var:G> \in \mathbb{Z}^+ $ , then we denote that $ <var:G> $ is a <def:square> using some $ <var:N> \in \mathbb{Z}^+ $ . Hence $ <nat:4> = <var:G> $ is a <def:square> . \end{theorem} \begin{proof} Allow $ <var:N> = <nat:2> $ . Because of this , $ <nat:4> = <var:N> ^ <nat:2> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:G> : nat ) := exists <var:N> : nat , ( <var:N> ^ <nat:2> = <var:G> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

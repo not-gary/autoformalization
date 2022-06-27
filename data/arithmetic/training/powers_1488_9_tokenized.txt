@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:P> \in \mathbb{N} $ so that the whole number <nat:512> is the repeated multiplication of integer $ <var:P> \in \mathbb{N} $ taken to the power <nat:9> . \end{theorem} \begin{proof} Allow $ <var:P> = <nat:2> $ . We show the claim is true in consideration of $ <nat:512> = <nat:2> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:P> : nat , ( <nat:512> = <var:P> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

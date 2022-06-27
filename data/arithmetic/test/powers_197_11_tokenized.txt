@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:2048> is the repeated multiplication between whole number $ <var:S> \in \mathbb{N} $ taken to the exponent <nat:11> where $ <var:S> $ larger than <nat:1> . \end{theorem} \begin{proof} Take $ <var:S> = <nat:2> $ . Observe $ <nat:2> $ is greater than <nat:1> . So , $ <var:S> $ is greater than <nat:1> plus $ <nat:2048> = <var:S> ^ <nat:11> $ is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <nat:2048> = <var:S> ^ <nat:11> ) /\ ( <var:S> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

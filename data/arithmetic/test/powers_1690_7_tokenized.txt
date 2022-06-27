@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:A> ^ <nat:7> $ equals $ <nat:128> $ assuming $ <var:A> $ satisfying the condition that $ <var:A> > <nat:1> $ . \end{theorem} \begin{proof} We prove our principle holds as $ <nat:128> = <nat:2> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:A> : nat , ( <var:A> ^ <nat:7> = <nat:128> ) /\ ( <var:A> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

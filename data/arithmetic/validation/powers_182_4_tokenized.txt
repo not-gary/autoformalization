@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:16> is the repeated multiplication between $ <var:Q> $ repeatedly multiplied to the exponential <nat:4> where $ <var:Q> \geq <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:Q> = <nat:2> $ . Observe that $ <nat:16> = <var:Q> ^ <nat:4> $ . As a consequence , $ <var:Q> $ is greater than or equal to <nat:2> plus $ <var:Q> ^ <nat:4> = <nat:16> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Q> : nat , ( <nat:16> = <var:Q> ^ <nat:4> ) /\ ( <var:Q> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

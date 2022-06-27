@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:e> \in \mathbb{Z}^+ $ . $ <var:e> ^ <nat:3> $ is the same as $ <nat:8> $ . \end{theorem} \begin{proof} We justify $ <var:e> ^ <nat:3> = <nat:8> $ . Notice $ <var:e> ^ <nat:3> = <nat:8> $ produces $ <var:e> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <var:e> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

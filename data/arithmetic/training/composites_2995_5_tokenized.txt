@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:10080> is the multiplication between $ <var:G> $ , $ <var:S> $ , $ <var:Z> $ , $ <var:C> $ and $ <var:c> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Take $ <var:C> = <nat:9> $ , $ <var:c> = <nat:8> $ , $ <var:Z> = <nat:5> $ , $ <var:G> = <nat:7> $ , $ <var:S> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:G> <var:S> <var:Z> <var:C> <var:c> : nat , ( <nat:10080> = <var:G> * <var:S> * <var:Z> * <var:C> * <var:c> ) . Proof . exists <nat:7> . exists <nat:4> . exists <nat:5> . exists <nat:9> . exists <nat:8> . repeat split . all : lia . Qed . 

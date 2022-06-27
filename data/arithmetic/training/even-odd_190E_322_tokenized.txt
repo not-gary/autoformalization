@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:322> + <nat:190> <var:E> $ will be even . \end{theorem} \begin{proof} It can be verified that the result is proven . The natural number $ <nat:190> $ is known as even See that the product between even naturals is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:E> : nat , Nat . even ( <nat:190> * <var:E> + <nat:322> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:190> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

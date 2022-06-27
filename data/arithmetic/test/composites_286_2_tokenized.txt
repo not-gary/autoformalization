@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:6> is the multiplication between $ <var:I> $ , $ <var:g> $ where $ <var:I> $ and $ <var:g> > <nat:1> $ . \end{theorem} \begin{proof} Assume $ <var:I> = <nat:2> $ and $ <var:g> = <nat:3> $ . We justify the belief is valid because $ <nat:6> = <nat:3> * <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:I> <var:g> : nat , ( <nat:6> = <var:I> * <var:g> ) /\ ( <var:I> > <nat:1> ) /\ ( <var:g> > <nat:1> ) . Proof . exists <nat:2> . exists <nat:3> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:30> is the multiplication between positive integers $ <var:B> $ , $ <var:N> \in \mathbb{Z}^+ $ where $ <var:N> $ and $ <var:B> > <nat:1> $ . \end{theorem} \begin{proof} Take $ <var:N> = <nat:5> $ , $ <var:B> = <nat:6> $ . Observe that $ <nat:30> = <nat:5> \times <nat:6> $ . Therefore , $ <nat:30> = <var:B> \cdot <var:N> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:B> <var:N> : nat , ( <nat:30> = <var:B> * <var:N> ) /\ ( <var:N> > <nat:1> ) /\ ( <var:B> > <nat:1> ) . Proof . exists <nat:6> . exists <nat:5> . lia . Qed . 

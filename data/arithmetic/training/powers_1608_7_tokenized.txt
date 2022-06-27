@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming we get $ <var:o> = <var:b> ^ <nat:7> $ given some $ <var:o> $ with some $ <var:b> \in \mathbb{Z}^+ $ , let that $ <var:o> $ is a <def:hepteract> number . Hence the number <nat:128> is a <def:hepteract> number . \end{theorem} \begin{proof} Allow $ <var:b> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:hepteract> ( <var:o> : nat ) := exists <var:b> : nat , ( <var:o> = <var:b> ^ <nat:7> ) . Theorem <genP:1> : <def:hepteract> <nat:128> . Proof . unfold <def:hepteract> . exists <nat:2> . auto . Qed . 

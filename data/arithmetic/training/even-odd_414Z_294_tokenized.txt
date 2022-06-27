@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given every $ <var:Z> \in \mathbb{N} $ the expression $ <nat:414> * <var:Z> + <nat:294> $ must be even . \end{theorem} \begin{proof} The totaling between an even element of $ \mathbb{Z}^+ $ with an even integer will be instrinsically an even number . The product between even numbers in $ \mathbb{N} $ will be clearly an even element of $ \mathbb{Z}^+ $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:Z> : nat , Nat . even ( <nat:414> * <var:Z> + <nat:294> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

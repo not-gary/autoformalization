@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:P> \times <var:N> \times <var:J> $ is $ <nat:108> $ . \end{theorem} \begin{proof} Assume $ <var:N> = <nat:2> $ , $ <var:J> = <nat:6> $ and $ <var:P> = <nat:9> $ . We present $ <var:N> \times <var:J> \times <var:P> = <nat:108> $ . Note $ <var:N> \times <var:P> \times <var:J> = <nat:2> \times <nat:9> \times <nat:6> = <nat:108> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:N> <var:J> <var:P> : nat , ( <var:P> * <var:N> * <var:J> = <nat:108> ) . Proof . exists <nat:2> . exists <nat:6> . exists <nat:9> . repeat split . all : lia . Qed . 

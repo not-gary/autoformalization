@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some whole numbers $ <var:S> $ , $ <var:F> $ , $ <var:C> $ satisfying the condition that $ <nat:240> $ is the same as $ <var:F> \cdot <var:C> \cdot <var:S> $ . \end{theorem} \begin{proof} We present $ <nat:240> = <var:C> * <var:S> * <var:F> $ . Note that $ <nat:240> = <var:S> * <var:C> * <var:F> $ yields $ <var:F> = <nat:4> $ , $ <var:S> = <nat:10> $ , and $ <var:C> = <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:S> <var:F> <var:C> : nat , ( <nat:240> = <var:F> * <var:C> * <var:S> ) . Proof . exists <nat:10> . exists <nat:4> . exists <nat:6> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:48> $ is the same as $ <var:H> \cdot <var:C> $ for $ <var:C> $ , and $ <var:H> $ . \end{theorem} \begin{proof} Observe $ <var:C> \times <var:H> = <nat:48> $ implies $ <var:C> = <nat:6> $ , $ <var:H> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:H> : nat , ( <nat:48> = <var:H> * <var:C> ) . Proof . exists <nat:6> . exists <nat:8> . lia . Qed . 

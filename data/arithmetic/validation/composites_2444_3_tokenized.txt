@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:J> $ , $ <var:d> $ and $ <var:A> $ are integers so that $ <nat:150> $ is equal to $ <var:d> * <var:J> * <var:A> $ . \end{theorem} \begin{proof} Observe that $ <nat:150> = <var:d> \times <var:A> \times <var:J> $ suggests $ <var:A> = <nat:3> $ , $ <var:J> = <nat:5> $ , $ <var:d> = <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:J> <var:d> <var:A> : nat , ( <nat:150> = <var:d> * <var:J> * <var:A> ) . Proof . exists <nat:5> . exists <nat:10> . exists <nat:3> . repeat split . all : lia . Qed . 

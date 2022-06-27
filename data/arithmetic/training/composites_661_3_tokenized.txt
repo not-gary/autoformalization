@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:K> $ , $ <var:a> $ , and $ <var:A> \in \mathbb{N} $ so that the natural number <nat:336> is the multiplication between integers $ <var:K> $ , $ <var:a> $ , and $ <var:A> \in \mathbb{N} $ . \end{theorem} \begin{proof} Note $ <nat:336> = <var:K> * <var:A> * <var:a> $ yields $ <var:a> = <nat:6> $ , $ <var:K> = <nat:8> $ , $ <var:A> = <nat:7> $ . This produces the result is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:K> <var:a> <var:A> : nat , ( <nat:336> = <var:K> * <var:a> * <var:A> ) . Proof . exists <nat:8> . exists <nat:6> . exists <nat:7> . repeat split . all : lia . Qed . 

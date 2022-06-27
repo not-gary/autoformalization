@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With positive terms $ <var:M> $ , $ <var:x> $ , $ <var:J> $ , and $ <var:a> $ $ <var:J> \cdot <nat:80> + <var:a> \cdot <nat:444> + <nat:162> \cdot <var:M> + <nat:348> + <nat:472> \cdot <var:x> $ will be even . \end{theorem} \begin{proof} Result obivously must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:M> <var:x> <var:J> <var:a> : nat , Nat . even ( <nat:80> * <var:J> + <nat:444> * <var:a> + <nat:162> * <var:M> + <nat:472> * <var:x> + <nat:348> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

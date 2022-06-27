@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:A> $ and $ <var:M> \in \mathbb{N} $ so that $ <nat:32> $ equals $ <var:M> \times <var:A> $ . \end{theorem} \begin{proof} Allow $ <var:A> = <nat:8> $ , $ <var:M> = <nat:4> $ . We show $ <nat:32> = <var:M> * <var:A> $ . Observe $ <nat:32> = <var:A> * <var:M> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:A> <var:M> : nat , ( <nat:32> = <var:M> * <var:A> ) . Proof . exists <nat:8> . exists <nat:4> . lia . Qed . 

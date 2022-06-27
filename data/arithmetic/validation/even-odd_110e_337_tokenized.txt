@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:e> * <nat:110> + <nat:337> $ is odd . \end{theorem} \begin{proof} Recall taking the product of even positive integers will be even . The addition of even integers concurrently with an odd number must be odd . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:e> : nat , Nat . odd ( <nat:110> * <var:e> + <nat:337> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . auto . Qed . 

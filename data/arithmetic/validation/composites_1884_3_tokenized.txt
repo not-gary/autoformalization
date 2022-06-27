@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:w> $ , $ <var:i> $ , and $ <var:f> \in \mathbb{Z}^+ $ so that the whole number <nat:288> is the multiplication of numbers $ <var:w> $ , $ <var:i> $ and $ <var:f> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We confirm the claim is true because $ <nat:288> = <var:f> \times <var:w> \times <var:i> $ implies $ <var:i> = <nat:4> $ , $ <var:w> = <nat:12> $ and $ <var:f> = <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:w> <var:i> <var:f> : nat , ( <nat:288> = <var:w> * <var:i> * <var:f> ) . Proof . exists <nat:12> . exists <nat:4> . exists <nat:6> . repeat split . all : lia . Qed . 

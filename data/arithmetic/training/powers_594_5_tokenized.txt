@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:32> is the exponential of number $ <var:F> $ raised to the degree <nat:5> . \end{theorem} \begin{proof} Observe that $ <nat:32> = <var:F> ^ <nat:5> $ indicates $ <var:F> = <nat:2> $ . This indicates our claim holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <nat:32> = <var:F> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

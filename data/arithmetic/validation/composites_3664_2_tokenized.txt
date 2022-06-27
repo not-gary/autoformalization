@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:63> is the product of whole numbers $ <var:v> $ , and $ <var:V> $ . \end{theorem} \begin{proof} We prove $ <nat:63> = <var:v> \times <var:V> $ . Notice $ <var:v> \times <var:V> = <nat:63> $ hints $ <var:v> = <nat:7> $ , and $ <var:V> = <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:v> <var:V> : nat , ( <nat:63> = <var:v> * <var:V> ) . Proof . exists <nat:7> . exists <nat:9> . lia . Qed . 

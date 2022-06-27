@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:256> is the raising of between positive integer $ <var:M> $ repeatedly multiplied to the exponent <nat:8> so that $ <var:M> \geq <nat:2> $ . \end{theorem} \begin{proof} Allow $ <var:M> = <nat:2> $ . We verify the theorem is valid on account of $ <var:M> ^ <nat:8> = <nat:256> = <nat:2> ^ <nat:8> $ . Therefore , $ <var:M> ^ <nat:8> = <nat:256> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:M> : nat , ( <nat:256> = <var:M> ^ <nat:8> ) /\ ( <var:M> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

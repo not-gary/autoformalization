@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:L> $ , $ <var:G> $ , $ <var:Q> $ and $ <var:k> \in \mathbb{Z}^+ $ . $ <nat:5940> $ is the same as $ <var:Q> \cdot <var:G> \cdot <var:L> \cdot <var:k> $ . \end{theorem} \begin{proof} We prove our theorem holds by reason of $ <nat:5940> = <nat:9> \cdot <nat:5> \cdot <nat:12> \cdot <nat:11> = <var:Q> \cdot <var:G> \cdot <var:L> \cdot <var:k> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:L> <var:G> <var:Q> <var:k> : nat , ( <nat:5940> = <var:Q> * <var:G> * <var:L> * <var:k> ) . Proof . exists <nat:12> . exists <nat:5> . exists <nat:9> . exists <nat:11> . repeat split . all : lia . Qed . 

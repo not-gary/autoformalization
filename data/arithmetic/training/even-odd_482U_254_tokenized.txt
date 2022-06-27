@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:254> + <nat:482> \cdot <var:U> $ is even . \end{theorem} \begin{proof} The summing of an even whole number with an even integer is guaranteed to be an even element of $ \mathbb{Z}^+ $ . See that $ <nat:254> $ is clearly an even number in $ \mathbb{Z}^+ $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:U> : nat , Nat . even ( <nat:482> * <var:U> + <nat:254> ) = true . Proof . intros . repeat rewrite Nat . even_add . assert ( <genH> : Nat . even <nat:254> = true ) . { auto . } repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

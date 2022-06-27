@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:t> $ , $ <var:M> \in \mathbb{Z}^+ $ so that $ <nat:28> $ equals $ <var:t> * <var:M> $ . \end{theorem} \begin{proof} We confirm the thesis is true as $ <var:M> \cdot <var:t> = <nat:28> $ indicates $ <var:t> = <nat:7> $ , $ <var:M> = <nat:4> $ . Hence , $ <var:t> \cdot <var:M> = <nat:28> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:t> <var:M> : nat , ( <nat:28> = <var:t> * <var:M> ) . Proof . exists <nat:7> . exists <nat:4> . lia . Qed . 

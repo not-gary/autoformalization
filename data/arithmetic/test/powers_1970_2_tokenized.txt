@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:q> \in \mathbb{Z}^+ $ such that $ <var:q> $ larger than or equivalent to <nat:2> as well as where $ <var:q> ^ <nat:2> $ equals $ <nat:4> $ . \end{theorem} \begin{proof} We present the claim is valid seeing that $ <nat:2> ^ <nat:2> = <nat:4> = <var:q> ^ <nat:2> $ . Because of this , $ <var:q> \geq <nat:2> $ plus $ <nat:4> = <var:q> ^ <nat:2> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:q> : nat , ( <var:q> >= <nat:2> ) /\ ( <var:q> ^ <nat:2> = <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

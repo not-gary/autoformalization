@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:K> $ and $ <var:w> \in \mathbb{Z}^+ $ such that $ <var:w> $ , and $ <var:K> $ greater than <nat:1> plus so that the number <nat:110> is the product of integers $ <var:K> $ , and $ <var:w> \in \mathbb{N} $ . \end{theorem} \begin{proof} Allow $ <var:K> = <nat:11> $ and $ <var:w> = <nat:10> $ . Observe $ <nat:10> \times <nat:11> = <nat:110> $ . This hints our thesis is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:K> <var:w> : nat , ( <var:w> > <nat:1> ) /\ ( <var:K> > <nat:1> ) /\ ( <nat:110> = <var:K> * <var:w> ) . Proof . exists <nat:11> . exists <nat:10> . lia . Qed . 

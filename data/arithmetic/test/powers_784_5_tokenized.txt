@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:32> is the repeated multiplication between whole number $ <var:b> \in \mathbb{Z}^+ $ exponentiated to the power <nat:5> so that $ <var:b> > <nat:1> $ . \end{theorem} \begin{proof} We confirm the theory is valid by reason of $ <nat:32> = <nat:2> ^ <nat:5> = <var:b> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:b> : nat , ( <nat:32> = <var:b> ^ <nat:5> ) /\ ( <var:b> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

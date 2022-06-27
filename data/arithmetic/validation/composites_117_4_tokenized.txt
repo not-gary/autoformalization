@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:c> * <var:V> * <var:a> * <var:p> $ is equal to $ <nat:1848> $ assuming $ <var:a> $ , $ <var:p> $ , $ <var:c> $ , $ <var:V> $ . \end{theorem} \begin{proof} Take $ <var:V> = <nat:3> $ , $ <var:a> = <nat:7> $ , $ <var:c> = <nat:11> $ , $ <var:p> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:a> <var:p> <var:c> <var:V> : nat , ( <var:c> * <var:V> * <var:a> * <var:p> = <nat:1848> ) . Proof . exists <nat:7> . exists <nat:8> . exists <nat:11> . exists <nat:3> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:316> + <nat:320> <var:i> $ must be even . \end{theorem} \begin{proof} Notice that the product $ <var:i> * <nat:320> $ is known to be even by reason that the multiplication between an even natural number and any natural number is an even whole number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:i> : nat , Nat . even ( <nat:320> * <var:i> + <nat:316> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:320> * <var:i> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

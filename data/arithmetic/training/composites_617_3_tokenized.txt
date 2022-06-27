@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:350> $ is equal to $ <var:T> \cdot <var:v> \cdot <var:a> $ . \end{theorem} \begin{proof} Note that $ <nat:350> = <var:T> \times <var:a> \times <var:v> $ produces $ <var:v> = <nat:5> $ , $ <var:T> = <nat:7> $ , $ <var:a> = <nat:10> $ . This hints our belief is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:a> <var:v> <var:T> : nat , ( <nat:350> = <var:T> * <var:v> * <var:a> ) . Proof . exists <nat:10> . exists <nat:5> . exists <nat:7> . repeat split . all : lia . Qed . 

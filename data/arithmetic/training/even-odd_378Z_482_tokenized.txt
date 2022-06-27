@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming some $ <var:Z> \in \mathbb{Z}^+ $ the formula $ <nat:378> * <var:Z> + <nat:482> $ will be even . \end{theorem} \begin{proof} See that the summing of even elements of $ \mathbb{Z}^+ $ successively is even . Notice the coefficient $ <nat:378> $ is obviously even We verify our claim must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:Z> : nat , Nat . even ( <nat:378> * <var:Z> + <nat:482> ) = true . Proof . intros . repeat rewrite Nat . even_add . assert ( <genH> : Nat . even <nat:378> = true ) . { auto . } repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

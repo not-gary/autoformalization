@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:X> $ where $ <nat:256> $ is the same as $ <var:X> ^ <nat:8> $ . \end{theorem} \begin{proof} Take $ <var:X> = <nat:2> $ . Observe $ <var:X> ^ <nat:8> = <nat:256> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:X> : nat , ( <nat:256> = <var:X> ^ <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

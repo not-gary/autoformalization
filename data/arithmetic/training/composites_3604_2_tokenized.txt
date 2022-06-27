@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:45> $ is equivalent to $ <var:k> \cdot <var:u> $ so that $ <var:u> $ , $ <var:k> \geq <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:k> = <nat:5> $ and $ <var:u> = <nat:9> $ . Observe that $ <nat:5> * <nat:9> = <var:k> * <var:u> = <nat:45> $ . This implies the statement is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:k> <var:u> : nat , ( <nat:45> = <var:k> * <var:u> ) /\ ( <var:u> >= <nat:2> ) /\ ( <var:k> >= <nat:2> ) . Proof . exists <nat:5> . exists <nat:9> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:f> $ , $ <var:o> $ and $ <var:F> \in \mathbb{N} $ so that $ <var:o> \times <var:f> \times <var:F> $ is $ <nat:320> $ . \end{theorem} \begin{proof} Assume $ <var:o> = <nat:4> $ , $ <var:F> = <nat:8> $ , and $ <var:f> = <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:f> <var:o> <var:F> : nat , ( <var:o> * <var:f> * <var:F> = <nat:320> ) . Proof . exists <nat:10> . exists <nat:4> . exists <nat:8> . repeat split . all : lia . Qed . 

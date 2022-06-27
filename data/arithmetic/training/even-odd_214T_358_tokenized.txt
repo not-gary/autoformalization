@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With every positive numbers $ <var:T> $ $ <nat:358> + <var:T> \cdot <nat:214> $ must be even . \end{theorem} \begin{proof} The positive integer $ <nat:214> $ is clearly an even number in $ \mathbb{N} $ \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:T> : nat , Nat . even ( <nat:214> * <var:T> + <nat:358> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:214> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

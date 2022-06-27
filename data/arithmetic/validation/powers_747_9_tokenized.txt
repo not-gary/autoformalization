@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:512> $ is equivalent to $ <var:a> ^ <nat:9> $ assuming $ <var:a> $ so that $ <var:a> > <nat:1> $ . \end{theorem} \begin{proof} Observe that $ <var:a> ^ <nat:9> = <nat:512> = <nat:2> ^ <nat:9> $ . This indicates our principle is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:a> : nat , ( <nat:512> = <var:a> ^ <nat:9> ) /\ ( <var:a> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

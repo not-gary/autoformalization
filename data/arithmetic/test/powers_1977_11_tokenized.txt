@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:x> \in \mathbb{N} $ such that the whole number <nat:2048> is the repeated product of positive integer $ <var:x> \in \mathbb{Z}^+ $ repeatedly multiplied to the degree <nat:11> . \end{theorem} \begin{proof} We present <nat:2048> is the exponential of $ <var:x> \in \mathbb{N} $ exponentiated to the power <nat:11> . We prove the claim is valid because $ <var:x> ^ <nat:11> = <nat:2048> = <nat:2> ^ <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:x> : nat , ( <nat:2048> = <var:x> ^ <nat:11> ) . Proof . exists <nat:2> . auto . Qed . 

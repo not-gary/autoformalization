@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For any $ <var:x> , <var:y> \in \mathbb{Z}^+ $ , the expression $ <nat:2> * <var:x> + <nat:4> * <var:y> + <nat:1> $ is guaranteed to be odd . \end{theorem} \begin{proof} Since $ <nat:2> $ is even , and $ <nat:4> $ is even , $ <nat:2> * <var:x> $ and $ <nat:4> * <var:y> $ are even . We know the addition of an even number with an even number is even . Furthermore , $ <nat:1> $ is trivially odd . Recall that the addition of an even number with an odd number is odd , thus the summation is an odd integer . \end{proof} \end{document}
-~
-Proof

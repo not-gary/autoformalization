@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some $ <var:n> $ satisfying the condition that the number <nat:128> is the exponential between number $ <var:n> $ raised to the exponent <nat:7> . \end{theorem} \begin{proof} Observe that $ <nat:128> = <nat:2> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <nat:128> = <var:n> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

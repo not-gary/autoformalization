@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:328> + <var:j> * <nat:38> $ is guaranteed to be even for all whole numbers $ <var:j> $ . \end{theorem} \begin{proof} The totaling of an even natural number with an even number will be by itself an even number in $ \mathbb{Z}^+ $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:j> : nat , Nat . even ( <nat:38> * <var:j> + <nat:328> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

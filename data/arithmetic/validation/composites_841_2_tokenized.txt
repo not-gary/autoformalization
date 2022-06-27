@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:24> is the multiplication between numbers $ <var:i> $ and $ <var:q> $ . \end{theorem} \begin{proof} Take $ <var:i> = <nat:2> $ , $ <var:q> = <nat:12> $ . Observe that $ <var:q> \cdot <var:i> = <nat:24> $ . Consequently , <nat:24> is the product between $ <var:i> $ , and $ <var:q> \in \mathbb{N} $ is verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:i> <var:q> : nat , ( <nat:24> = <var:i> * <var:q> ) . Proof . exists <nat:2> . exists <nat:12> . lia . Qed . 

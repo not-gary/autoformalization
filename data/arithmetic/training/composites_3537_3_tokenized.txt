@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:200> is the product between numbers $ <var:W> $ , $ <var:Z> $ , and $ <var:t> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Take $ <var:W> = <nat:10> $ , $ <var:t> = <nat:5> $ , $ <var:Z> = <nat:4> $ . Observe that $ <nat:200> = <var:W> \times <var:t> \times <var:Z> $ . This yields the proposition is valid . So , $ <var:Z> \cdot <var:t> \cdot <var:W> = <nat:200> $ is verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:W> <var:Z> <var:t> : nat , ( <nat:200> = <var:W> * <var:Z> * <var:t> ) . Proof . exists <nat:10> . exists <nat:4> . exists <nat:5> . repeat split . all : lia . Qed . 

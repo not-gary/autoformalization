@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:8> $ is equivalent to $ <var:H> ^ <nat:3> $ . \end{theorem} \begin{proof} Take $ <var:H> = <nat:2> $ . We prove <nat:8> is the exponent of $ <var:H> \in \mathbb{Z}^+ $ taken to the power <nat:3> . We prove our formula is valid considering $ <nat:8> = <nat:2> ^ <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:H> : nat , ( <nat:8> = <var:H> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

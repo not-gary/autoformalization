@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:s> \in \mathbb{Z}^+ $ where the number <nat:8> is the exponent between integer $ <var:s> \in \mathbb{Z}^+ $ repeatedly multiplied to the exponent <nat:3> . \end{theorem} \begin{proof} We prove the result holds considering $ <nat:2> ^ <nat:3> = <nat:8> $ . Because of this , $ <nat:8> = <var:s> ^ <nat:3> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:s> : nat , ( <nat:8> = <var:s> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:u> * <var:b> $ is the same as $ <nat:36> $ where $ <var:b> $ and $ <var:u> $ more than <nat:1> . \end{theorem} \begin{proof} Allow $ <var:b> = <nat:9> $ and $ <var:u> = <nat:4> $ . We demonstrate <nat:36> is the product between $ <var:u> $ , $ <var:b> \in \mathbb{N} $ . Note $ <nat:36> = <nat:4> \times <nat:9> = <var:u> \times <var:b> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:u> <var:b> : nat , ( <var:u> * <var:b> = <nat:36> ) /\ ( <var:b> > <nat:1> ) /\ ( <var:u> > <nat:1> ) . Proof . exists <nat:4> . exists <nat:9> . lia . Qed . 

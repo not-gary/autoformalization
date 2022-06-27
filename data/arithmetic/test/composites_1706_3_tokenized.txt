@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:160> $ is equal to $ <var:Y> * <var:h> * <var:U> $ . \end{theorem} \begin{proof} Notice $ <nat:160> = <nat:2> \cdot <nat:10> \cdot <nat:8> = <var:Y> \cdot <var:U> \cdot <var:h> $ . This gives the statement is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:U> <var:Y> <var:h> : nat , ( <nat:160> = <var:Y> * <var:h> * <var:U> ) . Proof . exists <nat:10> . exists <nat:2> . exists <nat:8> . repeat split . all : lia . Qed . 

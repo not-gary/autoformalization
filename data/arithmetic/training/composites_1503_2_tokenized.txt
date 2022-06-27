@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:J> $ , and $ <var:g> $ as numbers so that $ <var:J> $ , and $ <var:g> > <nat:1> $ as well as where $ <var:J> * <var:g> $ equals $ <nat:36> $ . \end{theorem} \begin{proof} Allow $ <var:g> = <nat:3> $ and $ <var:J> = <nat:12> $ . So , $ <var:J> $ , and $ <var:g> $ are greater than <nat:1> as well as $ <nat:36> = <var:J> \cdot <var:g> $ is verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:J> <var:g> : nat , ( <var:J> > <nat:1> ) /\ ( <var:g> > <nat:1> ) /\ ( <var:J> * <var:g> = <nat:36> ) . Proof . exists <nat:12> . exists <nat:3> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:12> is the product between numbers $ <var:i> $ and $ <var:Y> $ where $ <var:Y> $ and $ <var:i> > <nat:1> $ . \end{theorem} \begin{proof} Assume $ <var:i> = <nat:4> $ , $ <var:Y> = <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:i> <var:Y> : nat , ( <nat:12> = <var:i> * <var:Y> ) /\ ( <var:Y> > <nat:1> ) /\ ( <var:i> > <nat:1> ) . Proof . exists <nat:4> . exists <nat:3> . lia . Qed . 

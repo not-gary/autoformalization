@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:x> $ as natural numbers such that $ <var:x> $ more than or equal to <nat:2> and where the integer <nat:32> is the repeated product between positive integer $ <var:x> $ exponentiated to the degree <nat:5> . \end{theorem} \begin{proof} Notice $ <nat:2> ^ <nat:5> = <nat:32> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:x> : nat , ( <var:x> >= <nat:2> ) /\ ( <nat:32> = <var:x> ^ <nat:5> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:402> * <var:y> + <var:x> * <nat:342> + <var:E> * <nat:172> + <nat:22> * <var:A> + <nat:336> $ is even . \end{theorem} \begin{proof} Result clearly must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:y> <var:x> <var:E> <var:A> : nat , Nat . even ( <nat:402> * <var:y> + <nat:342> * <var:x> + <nat:172> * <var:E> + <nat:22> * <var:A> + <nat:336> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

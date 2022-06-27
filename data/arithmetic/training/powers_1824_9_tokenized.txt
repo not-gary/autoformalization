@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:n> $ as whole numbers such that $ <var:n> \geq <nat:2> $ as well as where $ <nat:512> $ is $ <var:n> ^ <nat:9> $ . \end{theorem} \begin{proof} Let $ <var:n> = <nat:2> $ . We show the proposition is true in consideration of $ <nat:512> = <var:n> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <var:n> >= <nat:2> ) /\ ( <nat:512> = <var:n> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

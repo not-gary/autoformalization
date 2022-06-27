@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let that $ <var:k> $ is a <def:square> number assuming there exists some whole number $ <var:n> $ where $ <var:k> = <var:n> ^ <nat:2> $ assuming some integer $ <var:k> $ . Therefore $ <var:k> = <nat:4> $ is a <def:square> . \end{theorem} \begin{proof} Note $ <nat:4> = <nat:2> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:k> : nat ) := exists <var:n> : nat , ( <var:k> = <var:n> ^ <nat:2> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

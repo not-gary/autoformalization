@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:b> \cdot <var:m> $ is $ <nat:90> $ so that $ <var:b> $ and $ <var:m> $ larger than <nat:1> . \end{theorem} \begin{proof} Take $ <var:m> = <nat:10> $ , and $ <var:b> = <nat:9> $ . In addition observe $ <nat:9> $ and $ <nat:10> > <nat:1> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:m> <var:b> : nat , ( <var:b> * <var:m> = <nat:90> ) /\ ( <var:b> > <nat:1> ) /\ ( <var:m> > <nat:1> ) . Proof . exists <nat:10> . exists <nat:9> . assert ( <genH> : <nat:9> > <nat:1> ) . { lia . } assert ( <genH> : <nat:10> > <nat:1> ) . { lia . } repeat split . all : try apply <genH> . all : try apply <genH> . Qed . 

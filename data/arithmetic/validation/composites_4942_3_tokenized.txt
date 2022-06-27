@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:112> is the product between numbers $ <var:H> $ , $ <var:E> $ , and $ <var:f> $ . \end{theorem} \begin{proof} We verify our belief is valid as $ <nat:7> * <nat:2> * <nat:8> = <nat:112> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:H> <var:E> <var:f> : nat , ( <nat:112> = <var:H> * <var:E> * <var:f> ) . Proof . exists <nat:7> . exists <nat:8> . exists <nat:2> . repeat split . all : lia . Qed . 

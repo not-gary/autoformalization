@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking every $ <var:l> $ , and $ <var:J> \in \mathbb{Z}^+ $ the sum $ <nat:288> * <var:J> + <nat:146> * <var:l> + <nat:156> $ will be even . \end{theorem} \begin{proof} We demonstrate the sum $ <nat:156> + <nat:288> * <var:J> + <nat:146> * <var:l> $ must be even . Taking the product between an even element of $ \mathbb{Z}^+ $ and an arbitrary natural number is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:l> <var:J> : nat , Nat . even ( <nat:288> * <var:J> + <nat:146> * <var:l> + <nat:156> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using all unknowns $ <var:n> $ $ <nat:416> \times <var:n> + <nat:138> $ is guaranteed to be even . \end{theorem} \begin{proof} We know the totaling between an even natural number and an even number is guaranteed to be an even natural . We verify this proposition is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:n> : nat , Nat . even ( <nat:416> * <var:n> + <nat:138> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

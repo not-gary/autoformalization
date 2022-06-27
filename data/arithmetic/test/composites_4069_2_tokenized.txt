@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:C> $ and $ <var:l> $ be numbers satisfying the condition that $ <var:C> $ , and $ <var:l> \geq <nat:2> $ as well as so that $ <var:l> * <var:C> $ is the same as $ <nat:20> $ . \end{theorem} \begin{proof} Allow $ <var:C> = <nat:4> $ and $ <var:l> = <nat:5> $ . We justify $ <var:C> \times <var:l> = <nat:20> $ . Observe that $ <var:C> * <var:l> = <nat:20> = <nat:4> * <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:l> : nat , ( <var:C> >= <nat:2> ) /\ ( <var:l> >= <nat:2> ) /\ ( <var:l> * <var:C> = <nat:20> ) . Proof . exists <nat:4> . exists <nat:5> . lia . Qed . 

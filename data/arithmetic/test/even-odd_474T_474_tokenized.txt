@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For positive terms $ <var:T> $ $ <nat:474> + <var:T> \cdot <nat:474> $ is guaranteed to be even . \end{theorem} \begin{proof} We show $ <nat:474> + <nat:474> <var:T> $ is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:T> : nat , Nat . even ( <nat:474> * <var:T> + <nat:474> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

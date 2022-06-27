@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:84> + <var:s> \times <nat:206> $ is even . \end{theorem} \begin{proof} Notice the leading term $ <nat:206> $ is obviously an even number . As a consequence , the pair $ <nat:206> <var:s> $ is even in addition . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:s> : nat , Nat . even ( <nat:206> * <var:s> + <nat:84> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:206> = true ) . { auto . } assert ( <genH> : Nat . even ( <nat:206> * <var:s> ) = true ) . { rewrite Nat . even_mul . rewrite <genH> . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

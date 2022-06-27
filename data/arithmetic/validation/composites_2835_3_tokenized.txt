@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:440> $ is $ <var:M> \times <var:r> \times <var:I> $ with $ <var:I> $ , $ <var:r> $ , $ <var:M> $ . \end{theorem} \begin{proof} Allow $ <var:M> = <nat:10> $ , $ <var:I> = <nat:4> $ and $ <var:r> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:I> <var:r> <var:M> : nat , ( <nat:440> = <var:M> * <var:r> * <var:I> ) . Proof . exists <nat:4> . exists <nat:11> . exists <nat:10> . repeat split . all : lia . Qed . 

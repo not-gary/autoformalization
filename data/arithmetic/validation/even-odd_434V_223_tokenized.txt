@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:V> * <nat:434> + <nat:223> $ must be odd using terms $ <var:V> $ . \end{theorem} \begin{proof} $ <nat:434> \times <var:V> $ is trivially an even positive integer by reason that multiplying between an even number and a whole number is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:V> : nat , Nat . odd ( <nat:434> * <var:V> + <nat:223> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:434> * <var:V> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

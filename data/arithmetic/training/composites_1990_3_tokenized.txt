@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:l> $ , $ <var:f> $ , and $ <var:c> $ be whole numbers so that $ <var:f> \times <var:c> \times <var:l> $ is equal to $ <nat:300> $ . \end{theorem} \begin{proof} Let $ <var:f> = <nat:5> $ , $ <var:c> = <nat:10> $ and $ <var:l> = <nat:6> $ . This shows our formula is valid . As a result , $ <nat:300> = <var:c> \times <var:f> \times <var:l> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:f> <var:c> : nat , ( <var:f> * <var:c> * <var:l> = <nat:300> ) . Proof . exists <nat:6> . exists <nat:5> . exists <nat:10> . repeat split . all : lia . Qed . 

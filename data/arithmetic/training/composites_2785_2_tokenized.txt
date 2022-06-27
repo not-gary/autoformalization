@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:o> \times <var:F> $ equals $ <nat:12> $ given $ <var:o> $ and $ <var:F> $ . \end{theorem} \begin{proof} Observe $ <nat:12> = <var:o> * <var:F> $ implies $ <var:F> = <nat:3> $ , $ <var:o> = <nat:4> $ . As a result , <nat:12> is the product of $ <var:F> $ , $ <var:o> \in \mathbb{N} $ is validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:o> <var:F> : nat , ( <var:o> * <var:F> = <nat:12> ) . Proof . exists <nat:4> . exists <nat:3> . lia . Qed . 

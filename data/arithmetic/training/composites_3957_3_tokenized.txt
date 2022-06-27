@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:m> * <var:z> * <var:E> $ is the same as $ <nat:1188> $ given $ <var:E> $ , $ <var:z> $ and $ <var:m> $ where $ <var:m> $ , $ <var:z> $ and $ <var:E> > <nat:1> $ . \end{theorem} \begin{proof} Observe that $ <nat:11> * <nat:12> * <nat:9> = <nat:1188> = <var:E> * <var:z> * <var:m> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:E> <var:z> <var:m> : nat , ( <var:m> * <var:z> * <var:E> = <nat:1188> ) /\ ( <var:m> > <nat:1> ) /\ ( <var:z> > <nat:1> ) /\ ( <var:E> > <nat:1> ) . Proof . exists <nat:11> . exists <nat:12> . exists <nat:9> . repeat split . all : lia . Qed . 

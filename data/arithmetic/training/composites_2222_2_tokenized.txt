@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:U> $ and $ <var:c> \in \mathbb{Z}^+ $ satisfying the condition that $ <nat:20> $ is equivalent to $ <var:U> * <var:c> $ . \end{theorem} \begin{proof} Take $ <var:c> = <nat:4> $ , and $ <var:U> = <nat:5> $ . Note $ <nat:20> = <nat:5> \cdot <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:U> <var:c> : nat , ( <nat:20> = <var:U> * <var:c> ) . Proof . exists <nat:5> . exists <nat:4> . lia . Qed . 

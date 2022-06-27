@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:s> \in \mathbb{Z}^+ $ where $ <var:s> $ more than or equal to <nat:2> and so that $ <nat:32> $ is equal to $ <var:s> ^ <nat:5> $ . \end{theorem} \begin{proof} Allow $ <var:s> = <nat:2> $ . We show the proposition is true as $ <nat:32> = <nat:2> ^ <nat:5> $ . Hence , $ <var:s> ^ <nat:5> = <nat:32> $ plus $ <var:s> \geq <nat:2> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:s> : nat , ( <var:s> >= <nat:2> ) /\ ( <nat:32> = <var:s> ^ <nat:5> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking $ <var:E> $ , and $ <var:C> \in \mathbb{Z}^+ $ the formula $ <nat:407> + <var:E> <nat:426> + <nat:272> <var:C> $ will be odd . \end{theorem} \begin{proof} We demonstrate this result is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:E> <var:C> : nat , Nat . odd ( <nat:426> * <var:E> + <nat:272> * <var:C> + <nat:407> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:M> $ , $ <var:d> $ so that $ <nat:99> $ is equivalent to $ <var:M> * <var:d> $ . \end{theorem} \begin{proof} Observe that $ <var:M> \times <var:d> = <nat:99> $ yields $ <var:M> = <nat:11> $ and $ <var:d> = <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:M> <var:d> : nat , ( <nat:99> = <var:M> * <var:d> ) . Proof . exists <nat:11> . exists <nat:9> . lia . Qed . 

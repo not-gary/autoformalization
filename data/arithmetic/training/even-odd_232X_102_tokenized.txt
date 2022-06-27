@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:X> \times <nat:232> + <nat:102> $ is even . \end{theorem} \begin{proof} The positive integer $ <nat:232> $ is obviously an even positive integer \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:X> : nat , Nat . even ( <nat:232> * <var:X> + <nat:102> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:232> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

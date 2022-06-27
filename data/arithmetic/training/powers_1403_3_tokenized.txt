@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:q> $ so that the integer <nat:8> is the exponent of integer $ <var:q> $ exponentiated to the exponential <nat:3> . \end{theorem} \begin{proof} We demonstrate <nat:8> is the exponent between $ <var:q> \in \mathbb{N} $ exponentiated to the exponent <nat:3> . Note $ <nat:2> ^ <nat:3> = <var:q> ^ <nat:3> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:q> : nat , ( <nat:8> = <var:q> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

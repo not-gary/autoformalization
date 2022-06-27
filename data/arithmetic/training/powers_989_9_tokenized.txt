@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:512> is the repeated product between integer $ <var:d> \in \mathbb{N} $ repeatedly multiplied to the exponential <nat:9> . \end{theorem} \begin{proof} Notice $ <var:d> ^ <nat:9> = <nat:512> $ produces $ <var:d> = <nat:2> $ . So , $ <var:d> ^ <nat:9> = <nat:512> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:d> : nat , ( <nat:512> = <var:d> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

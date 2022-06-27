@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:36> is the multiplication of natural numbers $ <var:P> $ , and $ <var:Q> $ . \end{theorem} \begin{proof} We prove the thesis is true considering $ <nat:9> \cdot <nat:4> = <nat:36> = <var:Q> \cdot <var:P> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:P> <var:Q> : nat , ( <nat:36> = <var:P> * <var:Q> ) . Proof . exists <nat:4> . exists <nat:9> . lia . Qed . 

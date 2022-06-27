@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:O> $ as whole numbers . We define that $ <var:q> \in \mathbb{N} $ is named a <def:hepteract> number given $ <var:q> = <var:O> ^ <nat:7> $ . Thus the number <nat:128> is a <def:hepteract> whole number . \end{theorem} \begin{proof} Allow $ <var:O> = <nat:2> $ . We prove our thesis holds as $ <var:O> ^ <nat:7> = <nat:128> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:hepteract> ( <var:q> : nat ) := exists <var:O> : nat , ( <var:q> = <var:O> ^ <nat:7> ) . Theorem <genP:1> : <def:hepteract> <nat:128> . Proof . unfold <def:hepteract> . exists <nat:2> . auto . Qed . 

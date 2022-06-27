@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:n> ^ <nat:3> $ is the same as $ <nat:8> $ . \end{theorem} \begin{proof} We show <nat:8> is the raising of between $ <var:n> \in \mathbb{Z}^+ $ repeatedly multiplied to the degree <nat:3> . Observe that $ <var:n> ^ <nat:3> = <nat:8> $ suggests $ <var:n> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:n> : nat , ( <var:n> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

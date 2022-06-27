@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using every terms $ <var:n> $ $ <nat:178> + <nat:166> \times <var:n> $ is even . \end{theorem} \begin{proof} Notice that $ <nat:178> $ is obviously even . The totaling between even positive integers together must be even . So , the sum $ <nat:178> + <var:n> * <nat:166> $ obviously will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:n> : nat , Nat . even ( <nat:166> * <var:n> + <nat:178> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:178> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

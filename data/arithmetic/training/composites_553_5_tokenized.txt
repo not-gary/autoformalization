@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:22680> is the multiplication between whole numbers $ <var:l> $ , $ <var:K> $ , $ <var:e> $ , $ <var:C> $ , $ <var:x> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We show the theory is true as $ <nat:22680> = <nat:12> \times <nat:9> \times <nat:6> \times <nat:7> \times <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:K> <var:e> <var:C> <var:x> : nat , ( <nat:22680> = <var:l> * <var:K> * <var:e> * <var:C> * <var:x> ) . Proof . exists <nat:6> . exists <nat:9> . exists <nat:12> . exists <nat:7> . exists <nat:5> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:u> $ such that $ <var:u> \geq <nat:2> $ plus satisfying the condition that the natural number <nat:2048> is the exponent of whole number $ <var:u> $ repeatedly multiplied to the exponential <nat:11> . \end{theorem} \begin{proof} Notice that $ <var:u> ^ <nat:11> = <nat:2048> $ implies $ <var:u> = <nat:2> $ . This hints the formula is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <var:u> >= <nat:2> ) /\ ( <nat:2048> = <var:u> ^ <nat:11> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

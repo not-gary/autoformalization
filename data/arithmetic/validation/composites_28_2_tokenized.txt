@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:J> $ and $ <var:a> $ as numbers where $ <var:J> $ , $ <var:a> $ greater than or equal to <nat:2> . $ <var:J> \cdot <var:a> $ is equivalent to $ <nat:84> $ . \end{theorem} \begin{proof} Note $ <nat:12> \cdot <nat:7> = <var:J> \cdot <var:a> = <nat:84> $ . This implies our principle holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:J> <var:a> : nat , ( <var:J> >= <nat:2> ) /\ ( <var:a> >= <nat:2> ) /\ ( <var:J> * <var:a> = <nat:84> ) . Proof . exists <nat:12> . exists <nat:7> . lia . Qed . 

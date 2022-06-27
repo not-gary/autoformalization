@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:8> = <var:l> ^ <nat:3> $ given $ <var:l> $ . \end{theorem} \begin{proof} Observe that $ <nat:2> ^ <nat:3> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:l> : nat , ( <nat:8> = <var:l> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

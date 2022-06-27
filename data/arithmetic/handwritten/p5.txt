@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} A natural number $ <var:a> $ is called a <def:megaloblast> if it is equal to $ <var:b> $ raised to the power <nat:10> , where $ <var:b> $ is a natural number . \end{definition} \begin{theorem} <nat:1024> is a <def:megaloblast> . \end{theorem} \begin{proof} $ <nat:1024> = <nat:2> ^ <nat:10> $ , therefore it is a <def:megaloblast> . \end{proof} \end{document}
-~
-Proof

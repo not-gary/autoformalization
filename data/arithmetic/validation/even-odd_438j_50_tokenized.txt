@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given all positive terms $ <var:j> $ $ <nat:50> + <var:j> * <nat:438> $ will be even . \end{theorem} \begin{proof} It can be verified that $ <nat:50> + <nat:438> \cdot <var:j> $ must be even . The term $ <var:j> <nat:438> $ is guaranteed to be even . Notice that the addition of even naturals together will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:j> : nat , Nat . even ( <nat:438> * <var:j> + <nat:50> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:438> * <var:j> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

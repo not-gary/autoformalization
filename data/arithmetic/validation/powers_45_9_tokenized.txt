@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:N> $ are positive integers satisfying the condition that $ <var:N> > <nat:1> $ plus where the positive integer <nat:512> is the exponent of number $ <var:N> $ raised to the exponent <nat:9> . \end{theorem} \begin{proof} Observe that $ <nat:2> ^ <nat:9> = <nat:512> $ . Furthermore notice that $ <nat:2> > <nat:1> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <var:N> > <nat:1> ) /\ ( <nat:512> = <var:N> ^ <nat:9> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . apply <genH> . auto . Qed . 

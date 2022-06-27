@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:G> $ , $ <var:N> $ , $ <var:r> $ and $ <var:h> $ as positive integers . the natural number <nat:1680> is the product between numbers $ <var:G> $ , $ <var:N> $ , $ <var:r> $ , $ <var:h> $ . \end{theorem} \begin{proof} Notice $ <nat:2> * <nat:12> * <nat:7> * <nat:10> = <nat:1680> $ . This indicates our belief is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:G> <var:N> <var:r> <var:h> : nat , ( <nat:1680> = <var:G> * <var:N> * <var:r> * <var:h> ) . Proof . exists <nat:2> . exists <nat:10> . exists <nat:12> . exists <nat:7> . repeat split . all : lia . Qed . 

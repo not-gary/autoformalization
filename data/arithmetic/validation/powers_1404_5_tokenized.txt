@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:D> \in \mathbb{Z}^+ $ so that the number <nat:32> is the exponent of natural number $ <var:D> \in \mathbb{Z}^+ $ taken to the power <nat:5> . \end{theorem} \begin{proof} We confirm $ <nat:32> = <var:D> ^ <nat:5> $ . Note $ <var:D> ^ <nat:5> = <nat:32> $ produces $ <var:D> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:D> : nat , ( <nat:32> = <var:D> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

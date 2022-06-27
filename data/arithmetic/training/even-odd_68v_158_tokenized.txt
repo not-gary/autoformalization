@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given any natural terms $ <var:v> $ the sum $ <var:v> \times <nat:68> + <nat:158> $ will be even . \end{theorem} \begin{proof} $ <nat:68> \times <var:v> $ is known to be an even number in $ \mathbb{N} $ . We show the expression $ <nat:158> + <nat:68> * <var:v> $ is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:v> : nat , Nat . even ( <nat:68> * <var:v> + <nat:158> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:68> * <var:v> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

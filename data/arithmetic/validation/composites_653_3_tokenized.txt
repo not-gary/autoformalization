@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:l> $ , $ <var:b> $ and $ <var:y> \in \mathbb{Z}^+ $ where $ <var:y> $ , $ <var:l> $ and $ <var:b> \geq <nat:2> $ as well as so that $ <nat:162> $ is $ <var:b> * <var:l> * <var:y> $ . \end{theorem} \begin{proof} We show the statement is true on account of $ <nat:162> = <nat:3> \cdot <nat:9> \cdot <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:b> <var:y> : nat , ( <var:y> >= <nat:2> ) /\ ( <var:l> >= <nat:2> ) /\ ( <var:b> >= <nat:2> ) /\ ( <nat:162> = <var:b> * <var:l> * <var:y> ) . Proof . exists <nat:6> . exists <nat:3> . exists <nat:9> . repeat split . all : lia . Qed . 

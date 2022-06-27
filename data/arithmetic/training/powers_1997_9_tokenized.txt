@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:D> $ as whole numbers where $ <var:D> > <nat:1> $ as well as satisfying the condition that the integer <nat:512> is the repeated multiplication between positive integer $ <var:D> $ raised to the degree <nat:9> . \end{theorem} \begin{proof} Let $ <var:D> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:D> : nat , ( <var:D> > <nat:1> ) /\ ( <nat:512> = <var:D> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

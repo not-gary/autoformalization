@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:g> \in \mathbb{N} $ where $ <var:g> $ larger than or equal to <nat:2> as well as satisfying the condition that the whole number <nat:8> is the repeated product between $ <var:g> \in \mathbb{Z}^+ $ repeatedly multiplied to the degree <nat:3> . \end{theorem} \begin{proof} We verify the thesis is true seeing that $ <var:g> ^ <nat:3> = <nat:8> $ shows $ <var:g> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:g> : nat , ( <var:g> >= <nat:2> ) /\ ( <nat:8> = <var:g> ^ <nat:3> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

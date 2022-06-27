@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:h> $ and $ <var:L> $ be positive integers where the natural number <nat:44> is the product of numbers $ <var:h> $ , $ <var:L> $ . \end{theorem} \begin{proof} Allow $ <var:L> = <nat:4> $ , and $ <var:h> = <nat:11> $ . We justify $ <nat:44> = <var:h> * <var:L> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:h> <var:L> : nat , ( <nat:44> = <var:h> * <var:L> ) . Proof . exists <nat:11> . exists <nat:4> . lia . Qed . 

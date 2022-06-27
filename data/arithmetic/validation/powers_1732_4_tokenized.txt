@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:J> \in \mathbb{N} $ such that $ <var:J> ^ <nat:4> $ is the same as $ <nat:16> $ . \end{theorem} \begin{proof} Let $ <var:J> = <nat:2> $ . We confirm the statement holds because $ <nat:16> = <var:J> ^ <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:J> : nat , ( <var:J> ^ <nat:4> = <nat:16> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming every positive terms $ <var:L> $ the sum $ <nat:426> \times <var:L> + <nat:270> $ will be even . \end{theorem} \begin{proof} Notice $ <nat:426> \times <var:L> $ is known to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:L> : nat , Nat . even ( <nat:426> * <var:L> + <nat:270> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:426> * <var:L> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

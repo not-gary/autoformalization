@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:N> \cdot <nat:446> + <nat:428> \cdot <var:f> + <nat:453> $ is odd for any positive terms $ <var:f> $ , and $ <var:N> $ . \end{theorem} \begin{proof} Recall multiplying between an even positive integer and any number is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:f> <var:N> : nat , Nat . odd ( <nat:446> * <var:N> + <nat:428> * <var:f> + <nat:453> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

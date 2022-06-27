@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:24> $ is $ <var:e> \times <var:m> $ assuming $ <var:m> $ and $ <var:e> \in \mathbb{N} $ . \end{theorem} \begin{proof} Assume $ <var:e> = <nat:4> $ and $ <var:m> = <nat:6> $ . Notice that $ <nat:24> = <nat:4> \cdot <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:m> <var:e> : nat , ( <nat:24> = <var:e> * <var:m> ) . Proof . exists <nat:6> . exists <nat:4> . lia . Qed . 

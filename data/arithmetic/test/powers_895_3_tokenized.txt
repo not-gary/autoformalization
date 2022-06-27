@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:8> is the exponential between integer $ <var:E> $ raised to the degree <nat:3> so that $ <var:E> > <nat:1> $ . \end{theorem} \begin{proof} Let $ <var:E> = <nat:2> $ . Note $ <nat:8> = <var:E> ^ <nat:3> = <nat:2> ^ <nat:3> $ . This gives the thesis holds . As a consequence , $ <var:E> ^ <nat:3> = <nat:8> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:E> : nat , ( <nat:8> = <var:E> ^ <nat:3> ) /\ ( <var:E> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

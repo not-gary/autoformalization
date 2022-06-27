@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:R> $ , and $ <var:B> $ are positive integers where $ <var:B> \cdot <var:R> $ is equal to $ <nat:77> $ . \end{theorem} \begin{proof} Assume $ <var:R> = <nat:11> $ and $ <var:B> = <nat:7> $ . We demonstrate <nat:77> is the multiplication of some positive integers $ <var:B> $ , and $ <var:R> $ . Notice $ <nat:77> = <nat:11> \cdot <nat:7> $ . This yields our proposition holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:R> <var:B> : nat , ( <var:B> * <var:R> = <nat:77> ) . Proof . exists <nat:11> . exists <nat:7> . lia . Qed . 

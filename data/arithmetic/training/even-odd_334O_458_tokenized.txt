@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:334> * <var:O> + <nat:458> $ is guaranteed to be even . \end{theorem} \begin{proof} See the adding of even natural numbers concurrently and an even number in $ \mathbb{N} $ is guaranteed to be even . It can be proven that our result is true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:O> : nat , Nat . even ( <nat:334> * <var:O> + <nat:458> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

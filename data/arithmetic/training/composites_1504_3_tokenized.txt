@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:770> is the multiplication between whole numbers $ <var:E> $ , $ <var:b> $ and $ <var:s> $ . \end{theorem} \begin{proof} Let $ <var:b> = <nat:7> $ , $ <var:E> = <nat:10> $ and $ <var:s> = <nat:11> $ . We present the formula is true in consideration of $ <nat:11> \times <nat:7> \times <nat:10> = <nat:770> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:E> <var:b> <var:s> : nat , ( <nat:770> = <var:E> * <var:b> * <var:s> ) . Proof . exists <nat:10> . exists <nat:7> . exists <nat:11> . repeat split . all : lia . Qed . 

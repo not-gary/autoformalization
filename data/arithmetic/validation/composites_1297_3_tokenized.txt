@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:B> $ , $ <var:K> $ , $ <var:V> $ as positive integers . the whole number <nat:495> is the product of integers $ <var:B> $ , $ <var:K> $ and $ <var:V> $ . \end{theorem} \begin{proof} We show the result is true because $ <nat:495> = <var:K> * <var:B> * <var:V> $ gives $ <var:B> = <nat:5> $ , $ <var:K> = <nat:11> $ , and $ <var:V> = <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:B> <var:K> <var:V> : nat , ( <nat:495> = <var:B> * <var:K> * <var:V> ) . Proof . exists <nat:5> . exists <nat:11> . exists <nat:9> . repeat split . all : lia . Qed . 

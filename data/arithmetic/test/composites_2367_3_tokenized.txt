@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:54> is the product of integers $ <var:D> $ , $ <var:x> $ , $ <var:Q> $ . \end{theorem} \begin{proof} We justify the thesis holds because $ <nat:54> = <var:x> \times <var:Q> \times <var:D> $ shows $ <var:D> = <nat:9> $ , $ <var:Q> = <nat:3> $ , and $ <var:x> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:D> <var:x> <var:Q> : nat , ( <nat:54> = <var:D> * <var:x> * <var:Q> ) . Proof . exists <nat:9> . exists <nat:2> . exists <nat:3> . repeat split . all : lia . Qed . 

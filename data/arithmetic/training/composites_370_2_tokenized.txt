@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:l> $ , and $ <var:v> $ as integers so that $ <var:v> $ , $ <var:l> $ greater than or equal to <nat:2> . $ <nat:18> $ equals $ <var:v> * <var:l> $ . \end{theorem} \begin{proof} Allow $ <var:v> = <nat:6> $ and $ <var:l> = <nat:3> $ . Observe that $ <var:l> \times <var:v> = <nat:3> \times <nat:6> = <nat:18> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:v> : nat , ( <var:v> >= <nat:2> ) /\ ( <var:l> >= <nat:2> ) /\ ( <nat:18> = <var:v> * <var:l> ) . Proof . exists <nat:3> . exists <nat:6> . lia . Qed . 

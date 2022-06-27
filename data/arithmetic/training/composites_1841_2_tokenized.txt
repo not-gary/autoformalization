@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:45> $ is $ <var:a> \times <var:T> $ such that $ <var:a> $ , and $ <var:T> \geq <nat:2> $ . \end{theorem} \begin{proof} Assume $ <var:T> = <nat:5> $ , $ <var:a> = <nat:9> $ . We justify <nat:45> is the product of $ <var:a> $ , $ <var:T> \in \mathbb{N} $ . Observe $ <var:a> \cdot <var:T> = <nat:45> $ . This gives the result is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:T> <var:a> : nat , ( <nat:45> = <var:a> * <var:T> ) /\ ( <var:a> >= <nat:2> ) /\ ( <var:T> >= <nat:2> ) . Proof . exists <nat:5> . exists <nat:9> . lia . Qed . 

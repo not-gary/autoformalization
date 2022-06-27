@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:L> $ and $ <var:V> $ are natural numbers satisfying the condition that the positive integer <nat:8> is the product of numbers $ <var:L> $ , $ <var:V> $ . \end{theorem} \begin{proof} Take $ <var:L> = <nat:2> $ and $ <var:V> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:L> <var:V> : nat , ( <nat:8> = <var:L> * <var:V> ) . Proof . exists <nat:2> . exists <nat:4> . lia . Qed . 

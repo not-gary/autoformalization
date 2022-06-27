@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some number $ <var:I> $ where $ <var:I> $ greater than or equivalent to <nat:2> and such that the whole number <nat:128> is the exponent of $ <var:I> $ exponentiated to the degree <nat:7> . \end{theorem} \begin{proof} Take $ <var:I> = <nat:2> $ . What's more observe that $ <nat:2> \geq <nat:2> $ . This hints the statement is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:I> : nat , ( <var:I> >= <nat:2> ) /\ ( <nat:128> = <var:I> ^ <nat:7> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . apply <genH> . auto . Qed . 

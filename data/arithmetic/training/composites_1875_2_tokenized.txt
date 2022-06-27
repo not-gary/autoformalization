@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:28> $ equals $ <var:J> \times <var:b> $ given $ <var:b> $ and $ <var:J> $ . \end{theorem} \begin{proof} We verify $ <var:b> \times <var:J> = <nat:28> $ . Observe that $ <nat:28> = <var:J> \cdot <var:b> $ yields $ <var:J> = <nat:7> $ , $ <var:b> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:b> <var:J> : nat , ( <nat:28> = <var:J> * <var:b> ) . Proof . exists <nat:4> . exists <nat:7> . lia . Qed . 

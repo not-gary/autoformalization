@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:y> $ , $ <var:m> $ as whole numbers where <nat:60> is the multiplication between whole numbers $ <var:y> $ , $ <var:m> $ . \end{theorem} \begin{proof} Notice $ <var:m> * <var:y> = <nat:60> $ gives $ <var:m> = <nat:5> $ , $ <var:y> = <nat:12> $ . This implies our statement holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:y> <var:m> : nat , ( <nat:60> = <var:y> * <var:m> ) . Proof . exists <nat:12> . exists <nat:5> . lia . Qed . 

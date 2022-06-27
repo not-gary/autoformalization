@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:53> + <nat:284> * <var:h> $ is odd for any variables $ <var:h> $ . \end{theorem} \begin{proof} We know the term $ <nat:284> <var:h> $ is clearly an even natural number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:h> : nat , Nat . odd ( <nat:284> * <var:h> + <nat:53> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:284> * <var:h> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

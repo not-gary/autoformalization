@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:4> is the raising of of $ <var:G> $ taken to the power <nat:2> satisfying the condition that $ <var:G> > <nat:1> $ . \end{theorem} \begin{proof} Assume $ <var:G> = <nat:2> $ . We prove $ <nat:4> = <var:G> ^ <nat:2> $ . We demonstrate the result is valid seeing that $ <var:G> = <nat:2> > <nat:1> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:G> : nat , ( <nat:4> = <var:G> ^ <nat:2> ) /\ ( <var:G> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

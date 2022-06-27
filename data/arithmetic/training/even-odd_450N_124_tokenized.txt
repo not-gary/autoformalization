@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For every $ <var:N> \in \mathbb{N} $ $ <nat:124> + <var:N> \times <nat:450> $ is guaranteed to be even . \end{theorem} \begin{proof} Taking the product between an even integer with an arbitrary element of $ \mathbb{N} $ is an even positive integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:N> : nat , Nat . even ( <nat:450> * <var:N> + <nat:124> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

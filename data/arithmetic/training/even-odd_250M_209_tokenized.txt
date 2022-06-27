@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming all positive integers $ <var:M> $ the expression $ <nat:209> + <nat:250> * <var:M> $ will be odd . \end{theorem} \begin{proof} The positive integer $ <nat:250> $ is guaranteed to be even \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:M> : nat , Nat . odd ( <nat:250> * <var:M> + <nat:209> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:250> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

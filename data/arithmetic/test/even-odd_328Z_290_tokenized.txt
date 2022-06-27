@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:Z> <nat:328> + <nat:290> $ is even given positive integers $ <var:Z> $ . \end{theorem} \begin{proof} Notice that the totaling between an even element of $ \mathbb{N} $ with an even integer is even . We know the product between an even number in $ \mathbb{N} $ and an arbitrary number in $ \mathbb{Z}^+ $ will be even . We demonstrate our claim is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:Z> : nat , Nat . even ( <nat:328> * <var:Z> + <nat:290> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

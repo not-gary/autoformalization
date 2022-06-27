@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:m> \in \mathbb{N} $ so that $ <var:m> $ more than <nat:1> as well as such that $ <var:m> ^ <nat:6> $ is the same as $ <nat:64> $ . \end{theorem} \begin{proof} We show $ <var:m> ^ <nat:6> = <nat:64> $ . Observe that $ <nat:64> = <var:m> ^ <nat:6> $ produces $ <var:m> = <nat:2> $ . This gives the result is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:m> : nat , ( <var:m> > <nat:1> ) /\ ( <var:m> ^ <nat:6> = <nat:64> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

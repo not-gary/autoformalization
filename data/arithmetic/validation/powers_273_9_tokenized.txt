@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:512> is the raising of of whole number $ <var:m> \in \mathbb{Z}^+ $ raised to the exponential <nat:9> . \end{theorem} \begin{proof} Let $ <var:m> = <nat:2> $ . We present our thesis holds as $ <nat:512> = <nat:2> ^ <nat:9> = <var:m> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:m> : nat , ( <nat:512> = <var:m> ^ <nat:9> ) . Proof . exists <nat:2> . auto . Qed . 

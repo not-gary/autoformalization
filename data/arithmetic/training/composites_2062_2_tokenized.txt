@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:J> $ and $ <var:S> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:S> $ and $ <var:J> $ greater than or equivalent to <nat:2> and so that $ <var:J> \cdot <var:S> $ is $ <nat:45> $ . \end{theorem} \begin{proof} Note $ <nat:5> \cdot <nat:9> = <var:J> \cdot <var:S> = <nat:45> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:J> <var:S> : nat , ( <var:S> >= <nat:2> ) /\ ( <var:J> >= <nat:2> ) /\ ( <var:J> * <var:S> = <nat:45> ) . Proof . exists <nat:5> . exists <nat:9> . lia . Qed . 

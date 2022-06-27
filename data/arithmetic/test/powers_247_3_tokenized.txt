@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some number $ <var:z> $ such that $ <var:z> \geq <nat:2> $ plus so that $ <var:z> ^ <nat:3> $ is equal to $ <nat:8> $ . \end{theorem} \begin{proof} Note that $ <var:z> ^ <nat:3> = <nat:8> $ produces $ <var:z> = <nat:2> $ . This implies the thesis holds . Hence , $ <var:z> ^ <nat:3> = <nat:8> $ and $ <var:z> \geq <nat:2> $ is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:z> : nat , ( <var:z> >= <nat:2> ) /\ ( <var:z> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

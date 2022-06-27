@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:4> is the repeated product between $ <var:q> \in \mathbb{N} $ taken to the exponential <nat:2> where $ <var:q> > <nat:1> $ . \end{theorem} \begin{proof} Let $ <var:q> = <nat:2> $ . We confirm the claim is true on account of $ <var:q> ^ <nat:2> = <nat:2> ^ <nat:2> = <nat:4> $ . Thus , $ <nat:4> = <var:q> ^ <nat:2> $ plus $ <var:q> > <nat:1> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:q> : nat , ( <nat:4> = <var:q> ^ <nat:2> ) /\ ( <var:q> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

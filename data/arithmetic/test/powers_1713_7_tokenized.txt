@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:v> $ be integers such that $ <var:v> $ more than or equal to <nat:2> . the positive integer <nat:128> is the exponential between integer $ <var:v> $ raised to the exponent <nat:7> . \end{theorem} \begin{proof} Assume $ <var:v> = <nat:2> $ . As a result , $ <nat:128> = <var:v> ^ <nat:7> $ and $ <var:v> \geq <nat:2> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:v> : nat , ( <var:v> >= <nat:2> ) /\ ( <nat:128> = <var:v> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

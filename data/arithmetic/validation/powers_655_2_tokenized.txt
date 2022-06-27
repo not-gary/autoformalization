@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Supposing that there is $ <var:Q> \in \mathbb{N} $ more than <nat:1> . Define that some whole number $ <var:d> $ is defined as a <def:square> integer if $ <var:Q> ^ <nat:2> = <var:d> $ . Accordingly the whole number <nat:4> is a <def:square> integer . \end{theorem} \begin{proof} Observe $ <nat:4> = <nat:2> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:d> : nat ) := exists <var:Q> : nat , ( <var:Q> > <nat:1> ) /\ ( <var:Q> ^ <nat:2> = <var:d> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . split . lia . auto . Qed . 

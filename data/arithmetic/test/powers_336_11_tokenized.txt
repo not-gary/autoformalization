@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:2048> is the raising of between positive integer $ <var:I> $ exponentiated to the power <nat:11> so that $ <var:I> $ greater than <nat:1> . \end{theorem} \begin{proof} We show our statement is valid for $ <var:I> ^ <nat:11> = <nat:2048> $ suggests $ <var:I> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:I> : nat , ( <nat:2048> = <var:I> ^ <nat:11> ) /\ ( <var:I> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

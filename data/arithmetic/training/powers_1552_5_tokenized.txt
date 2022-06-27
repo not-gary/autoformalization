@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:t> ^ <nat:5> $ is equal to $ <nat:32> $ where $ <var:t> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} We prove <nat:32> is the repeated product of some $ <var:t> $ exponentiated to the degree <nat:5> and $ <var:t> \geq <nat:2> $ . Note $ <var:t> ^ <nat:5> = <nat:32> $ yields $ <var:t> = <nat:2> $ . This implies the statement is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <var:t> ^ <nat:5> = <nat:32> ) /\ ( <var:t> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:I> $ and $ <var:Z> \in \mathbb{N} $ such that $ <var:I> $ , $ <var:Z> > <nat:1> $ . $ <var:I> \cdot <var:Z> $ equals $ <nat:40> $ . \end{theorem} \begin{proof} Assume $ <var:Z> = <nat:10> $ , and $ <var:I> = <nat:4> $ . We justify $ <nat:40> = <var:Z> * <var:I> $ . We justify our result holds considering $ <var:Z> * <var:I> = <nat:40> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:I> <var:Z> : nat , ( <var:I> > <nat:1> ) /\ ( <var:Z> > <nat:1> ) /\ ( <var:I> * <var:Z> = <nat:40> ) . Proof . exists <nat:4> . exists <nat:10> . lia . Qed . 

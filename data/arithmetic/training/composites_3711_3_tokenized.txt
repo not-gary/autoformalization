@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:616> is the multiplication between numbers $ <var:E> $ , $ <var:Q> $ , and $ <var:a> $ . \end{theorem} \begin{proof} Assume $ <var:a> = <nat:11> $ , $ <var:Q> = <nat:8> $ and $ <var:E> = <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:E> <var:Q> <var:a> : nat , ( <nat:616> = <var:E> * <var:Q> * <var:a> ) . Proof . exists <nat:7> . exists <nat:8> . exists <nat:11> . repeat split . all : lia . Qed . 

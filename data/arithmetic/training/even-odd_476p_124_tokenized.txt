@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using some $ <var:p> \in \mathbb{Z}^+ $ the sum $ <nat:124> + <var:p> \times <nat:476> $ is even . \end{theorem} \begin{proof} We prove the main result is proven . Observe the totaling between an even number and an even element of $ \mathbb{Z}^+ $ will be even , and moreover we know that multiplying of an even number in $ \mathbb{Z}^+ $ with any integer must be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:p> : nat , Nat . even ( <nat:476> * <var:p> + <nat:124> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:18> is the multiplication between natural numbers $ <var:N> $ , $ <var:m> $ such that $ <var:m> $ , and $ <var:N> $ larger than or equivalent to <nat:2> . \end{theorem} \begin{proof} Observe $ <nat:18> = <nat:2> \times <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:N> <var:m> : nat , ( <nat:18> = <var:N> * <var:m> ) /\ ( <var:m> >= <nat:2> ) /\ ( <var:N> >= <nat:2> ) . Proof . exists <nat:9> . exists <nat:2> . lia . Qed . 

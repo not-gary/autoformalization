@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:U> ^ <nat:3> $ is $ <nat:8> $ for $ <var:U> \in \mathbb{N} $ satisfying the condition that $ <var:U> > <nat:1> $ . \end{theorem} \begin{proof} Let $ <var:U> = <nat:2> $ . Observe that $ <nat:8> = <nat:2> ^ <nat:3> $ . Plus notice that $ <var:U> = <nat:2> $ is larger than <nat:1> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:U> : nat , ( <var:U> ^ <nat:3> = <nat:8> ) /\ ( <var:U> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

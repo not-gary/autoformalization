@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some $ <var:B> $ , $ <var:l> $ , $ <var:y> $ where $ <var:y> * <var:l> * <var:B> $ is equal to $ <nat:480> $ . \end{theorem} \begin{proof} Allow $ <var:l> = <nat:8> $ , $ <var:y> = <nat:10> $ , and $ <var:B> = <nat:6> $ . Observe that $ <nat:6> \cdot <nat:10> \cdot <nat:8> = <nat:480> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:B> <var:l> <var:y> : nat , ( <var:y> * <var:l> * <var:B> = <nat:480> ) . Proof . exists <nat:6> . exists <nat:8> . exists <nat:10> . repeat split . all : lia . Qed . 

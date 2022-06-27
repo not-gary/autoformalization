@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:S> ^ <nat:7> $ is the same as $ <nat:128> $ such that $ <var:S> $ greater than <nat:1> . \end{theorem} \begin{proof} Take $ <var:S> = <nat:2> $ . Because of this , $ <var:S> > <nat:1> $ as well as $ <nat:128> = <var:S> ^ <nat:7> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <var:S> ^ <nat:7> = <nat:128> ) /\ ( <var:S> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

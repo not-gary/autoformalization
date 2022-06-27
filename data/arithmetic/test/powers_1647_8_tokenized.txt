@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given that there is natural number $ <var:r> $ then say that some positive integer $ <var:K> $ will be a <def:octeract> integer when $ <var:r> ^ <nat:8> = <var:K> $ . Consequently $ <nat:256> = <var:K> $ is a <def:octeract> natural number . \end{theorem} \begin{proof} Assume $ <var:r> = <nat:2> $ . Notice $ <nat:2> ^ <nat:8> = <nat:256> = <var:r> ^ <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:octeract> ( <var:K> : nat ) := exists <var:r> : nat , ( <var:r> ^ <nat:8> = <var:K> ) . Theorem <genP:1> : <def:octeract> <nat:256> . Proof . unfold <def:octeract> . exists <nat:2> . auto . Qed . 

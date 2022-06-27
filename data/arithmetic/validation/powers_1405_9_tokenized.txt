@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:z> \in \mathbb{Z}^+ $ so that $ <var:z> \geq <nat:2> $ and satisfying the condition that $ <nat:512> $ is $ <var:z> ^ <nat:9> $ . \end{theorem} \begin{proof} Notice $ <var:z> ^ <nat:9> = <nat:512> $ indicates $ <var:z> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:z> : nat , ( <var:z> >= <nat:2> ) /\ ( <nat:512> = <var:z> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

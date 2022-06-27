@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:48> is the product between $ <var:i> $ , $ <var:a> $ , $ <var:O> \in \mathbb{Z}^+ $ so that $ <var:O> $ , $ <var:i> $ , and $ <var:a> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} Let $ <var:a> = <nat:6> $ , $ <var:O> = <nat:2> $ , $ <var:i> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:i> <var:a> <var:O> : nat , ( <nat:48> = <var:i> * <var:a> * <var:O> ) /\ ( <var:O> >= <nat:2> ) /\ ( <var:i> >= <nat:2> ) /\ ( <var:a> >= <nat:2> ) . Proof . exists <nat:4> . exists <nat:6> . exists <nat:2> . repeat split . all : lia . Qed . 

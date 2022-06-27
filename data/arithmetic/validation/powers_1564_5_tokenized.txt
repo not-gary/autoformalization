@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:O> ^ <nat:5> $ is equivalent to $ <nat:32> $ for $ <var:O> \in \mathbb{N} $ satisfying the condition that $ <var:O> \geq <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:O> = <nat:2> $ . We verify $ <var:O> $ is more than or equal to <nat:2> plus $ <nat:32> = <var:O> ^ <nat:5> $ . We demonstrate our thesis is valid as $ <var:O> ^ <nat:5> = <nat:32> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:O> : nat , ( <var:O> ^ <nat:5> = <nat:32> ) /\ ( <var:O> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

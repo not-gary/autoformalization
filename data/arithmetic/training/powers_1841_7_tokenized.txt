@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:a> \in \mathbb{N} $ so that $ <var:a> $ greater than <nat:1> . the whole number <nat:128> is the repeated product of whole number $ <var:a> \in \mathbb{Z}^+ $ exponentiated to the power <nat:7> . \end{theorem} \begin{proof} Allow $ <var:a> = <nat:2> $ . We show the theorem is true as $ <nat:2> $ is more than <nat:1> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:a> : nat , ( <var:a> > <nat:1> ) /\ ( <nat:128> = <var:a> ^ <nat:7> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . apply <genH> . auto . Qed . 

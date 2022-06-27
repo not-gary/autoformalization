@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:300> is the product of natural numbers $ <var:H> $ , $ <var:G> $ , and $ <var:y> \in \mathbb{N} $ . \end{theorem} \begin{proof} Assume $ <var:G> = <nat:6> $ , $ <var:H> = <nat:5> $ , and $ <var:y> = <nat:10> $ . Note that $ <nat:10> \times <nat:6> \times <nat:5> = <nat:300> = <var:y> \times <var:G> \times <var:H> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:H> <var:G> <var:y> : nat , ( <nat:300> = <var:H> * <var:G> * <var:y> ) . Proof . exists <nat:5> . exists <nat:6> . exists <nat:10> . repeat split . all : lia . Qed . 

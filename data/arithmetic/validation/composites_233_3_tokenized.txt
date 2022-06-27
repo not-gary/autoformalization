@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are some natural numbers $ <var:A> $ , $ <var:c> $ , and $ <var:k> $ satisfying the condition that the integer <nat:72> is the multiplication of whole numbers $ <var:A> $ , $ <var:c> $ and $ <var:k> $ . \end{theorem} \begin{proof} Assume $ <var:c> = <nat:6> $ , $ <var:A> = <nat:4> $ , $ <var:k> = <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:A> <var:c> <var:k> : nat , ( <nat:72> = <var:A> * <var:c> * <var:k> ) . Proof . exists <nat:4> . exists <nat:6> . exists <nat:3> . repeat split . all : lia . Qed . 

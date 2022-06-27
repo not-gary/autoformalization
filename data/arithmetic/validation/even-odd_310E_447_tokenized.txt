@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given any variables $ <var:E> $ the sum $ <nat:310> * <var:E> + <nat:447> $ is odd . \end{theorem} \begin{proof} The term $ <nat:310> \cdot <var:E> $ is guaranteed to be an even element of $ \mathbb{Z}^+ $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:E> : nat , Nat . odd ( <nat:310> * <var:E> + <nat:447> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:310> * <var:E> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

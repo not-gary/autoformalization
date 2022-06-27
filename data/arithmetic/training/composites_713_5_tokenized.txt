@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:3520> $ equals $ <var:Z> \cdot <var:j> \cdot <var:c> \cdot <var:X> \cdot <var:Q> $ . \end{theorem} \begin{proof} Note $ <nat:3520> = <var:Z> * <var:c> * <var:j> * <var:Q> * <var:X> $ hints $ <var:c> = <nat:5> $ , $ <var:Q> = <nat:8> $ , $ <var:X> = <nat:4> $ , $ <var:j> = <nat:11> $ and $ <var:Z> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Z> <var:j> <var:c> <var:Q> <var:X> : nat , ( <nat:3520> = <var:Z> * <var:j> * <var:c> * <var:X> * <var:Q> ) . Proof . exists <nat:2> . exists <nat:11> . exists <nat:5> . exists <nat:8> . exists <nat:4> . repeat split . all : lia . Qed . 

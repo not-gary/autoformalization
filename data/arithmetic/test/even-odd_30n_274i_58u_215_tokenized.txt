@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given positive terms $ <var:i> $ , $ <var:u> $ , and $ <var:n> $ the expression $ <nat:30> \cdot <var:n> + <nat:274> \cdot <var:i> + <nat:215> + <var:u> \cdot <nat:58> $ will be odd . \end{theorem} \begin{proof} Theorem holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:i> <var:u> <var:n> : nat , Nat . odd ( <nat:30> * <var:n> + <nat:274> * <var:i> + <nat:58> * <var:u> + <nat:215> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

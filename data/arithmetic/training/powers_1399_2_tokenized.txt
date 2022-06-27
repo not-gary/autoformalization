@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} We denote that $ <var:l> $ is a <def:square> positive integer assuming that for some $ <var:e> \in \mathbb{N} $ we have $ <var:e> ^ <nat:2> = <var:l> $ with some integer $ <var:l> $ . Then $ <var:l> = <nat:4> $ is a <def:square> whole number . \end{theorem} \begin{proof} Observe $ <nat:4> = <var:e> ^ <nat:2> $ suggests $ <var:e> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:l> : nat ) := exists <var:e> : nat , ( <var:e> ^ <nat:2> = <var:l> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

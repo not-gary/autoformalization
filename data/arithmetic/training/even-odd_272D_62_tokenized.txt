@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Using every unknowns $ <var:D> $ the summation $ <nat:62> + <var:D> <nat:272> $ is even . \end{theorem} \begin{proof} $ <var:D> * <nat:272> $ is known as even . This is true because the multiplication of an even integer with a number in $ \mathbb{N} $ is guaranteed to be an even whole number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:D> : nat , Nat . even ( <nat:272> * <var:D> + <nat:62> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:272> * <var:D> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

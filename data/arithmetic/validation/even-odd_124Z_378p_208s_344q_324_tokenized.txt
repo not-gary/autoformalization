@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming any terms $ <var:p> $ , $ <var:s> $ , $ <var:q> $ , and $ <var:Z> $ $ <var:Z> <nat:124> + <nat:378> <var:p> + <nat:208> <var:s> + <nat:324> + <var:q> <nat:344> $ is even . \end{theorem} \begin{proof} The multiplication of even positive integers is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:p> <var:s> <var:q> <var:Z> : nat , Nat . even ( <nat:124> * <var:Z> + <nat:378> * <var:p> + <nat:208> * <var:s> + <nat:344> * <var:q> + <nat:324> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

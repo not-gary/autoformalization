@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:210> $ is $ <var:u> * <var:y> * <var:C> * <var:L> $ given $ <var:u> $ , $ <var:C> $ , $ <var:y> $ and $ <var:L> \in \mathbb{N} $ . \end{theorem} \begin{proof} Observe that $ <nat:210> = <nat:5> \cdot <nat:7> \cdot <nat:3> \cdot <nat:2> $ . Thus , $ <var:C> \cdot <var:u> \cdot <var:y> \cdot <var:L> = <nat:210> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:u> <var:C> <var:y> <var:L> : nat , ( <nat:210> = <var:u> * <var:y> * <var:C> * <var:L> ) . Proof . exists <nat:3> . exists <nat:7> . exists <nat:5> . exists <nat:2> . repeat split . all : lia . Qed . 

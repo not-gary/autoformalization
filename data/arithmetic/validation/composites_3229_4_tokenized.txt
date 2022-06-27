@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:1260> is the multiplication between natural numbers $ <var:t> $ , $ <var:g> $ , $ <var:F> $ , $ <var:B> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Note that $ <var:F> * <var:B> * <var:g> * <var:t> = <nat:1260> $ shows $ <var:F> = <nat:3> $ , $ <var:B> = <nat:5> $ , $ <var:g> = <nat:12> $ , and $ <var:t> = <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:t> <var:g> <var:F> <var:B> : nat , ( <nat:1260> = <var:t> * <var:g> * <var:F> * <var:B> ) . Proof . exists <nat:7> . exists <nat:12> . exists <nat:3> . exists <nat:5> . repeat split . all : lia . Qed . 

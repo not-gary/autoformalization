@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:99> is the multiplication of positive integers $ <var:P> $ , and $ <var:I> \in \mathbb{N} $ so that $ <var:I> $ , $ <var:P> > <nat:1> $ . \end{theorem} \begin{proof} We verify the proposition is true because $ <nat:99> = <var:P> \times <var:I> $ gives $ <var:I> = <nat:9> $ and $ <var:P> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:P> <var:I> : nat , ( <nat:99> = <var:P> * <var:I> ) /\ ( <var:I> > <nat:1> ) /\ ( <var:P> > <nat:1> ) . Proof . exists <nat:11> . exists <nat:9> . lia . Qed . 

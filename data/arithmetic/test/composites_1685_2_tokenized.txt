@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:c> $ , and $ <var:d> \in \mathbb{N} $ where the whole number <nat:22> is the product of positive integers $ <var:c> $ , $ <var:d> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Allow $ <var:d> = <nat:2> $ , $ <var:c> = <nat:11> $ . We prove $ <nat:22> = <var:c> * <var:d> $ . Notice $ <var:c> \times <var:d> = <nat:22> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:c> <var:d> : nat , ( <nat:22> = <var:c> * <var:d> ) . Proof . exists <nat:11> . exists <nat:2> . lia . Qed . 

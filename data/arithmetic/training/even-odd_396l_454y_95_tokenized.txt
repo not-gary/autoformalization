@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking any $ <var:l> $ , and $ <var:y> $ the expression $ <nat:396> <var:l> + <var:y> <nat:454> + <nat:95> $ must be odd . \end{theorem} \begin{proof} It can be justified that this lemma must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:l> <var:y> : nat , Nat . odd ( <nat:396> * <var:l> + <nat:454> * <var:y> + <nat:95> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

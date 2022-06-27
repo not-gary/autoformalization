@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some natural number $ <var:k> $ where $ <var:k> ^ <nat:5> = <nat:32> $ . \end{theorem} \begin{proof} Note $ <nat:32> = <nat:2> ^ <nat:5> = <var:k> ^ <nat:5> $ . So , $ <nat:32> = <var:k> ^ <nat:5> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:k> : nat , ( <var:k> ^ <nat:5> = <nat:32> ) . Proof . exists <nat:2> . auto . Qed . 

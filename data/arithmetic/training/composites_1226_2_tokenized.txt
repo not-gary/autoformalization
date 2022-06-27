@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:18> $ is the same as $ <var:v> * <var:g> $ assuming $ <var:g> $ , and $ <var:v> $ where $ <var:g> $ , $ <var:v> \geq <nat:2> $ . \end{theorem} \begin{proof} Notice $ <nat:6> \cdot <nat:3> = <var:g> \cdot <var:v> = <nat:18> $ . So , $ <var:v> $ , and $ <var:g> \geq <nat:2> $ as well as $ <var:g> \cdot <var:v> = <nat:18> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:g> <var:v> : nat , ( <nat:18> = <var:v> * <var:g> ) /\ ( <var:g> >= <nat:2> ) /\ ( <var:v> >= <nat:2> ) . Proof . exists <nat:6> . exists <nat:3> . lia . Qed . 

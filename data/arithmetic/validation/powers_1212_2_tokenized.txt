@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> = <var:y> ^ <nat:2> $ . \end{theorem} \begin{proof} Observe $ <nat:4> = <var:y> ^ <nat:2> = <nat:2> ^ <nat:2> $ . This gives the theorem is valid . Thus , <nat:4> is the repeated multiplication between $ <var:y> \in \mathbb{Z}^+ $ repeatedly multiplied to the degree <nat:2> is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:y> : nat , ( <nat:4> = <var:y> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

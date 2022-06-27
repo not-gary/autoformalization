@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:P> $ and $ <var:B> \in \mathbb{Z}^+ $ where <nat:104> is the product of $ <var:P> $ , and $ <var:B> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Allow $ <var:B> = <nat:13> $ and $ <var:P> = <nat:8> $ . We prove our principle is valid considering $ <var:B> * <var:P> = <nat:104> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:P> <var:B> : nat , ( <nat:104> = <var:P> * <var:B> ) . Proof . exists <nat:8> . exists <nat:13> . lia . Qed . 

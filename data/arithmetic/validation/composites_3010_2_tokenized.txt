@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some natural numbers $ <var:F> $ and $ <var:G> $ so that the natural number <nat:14> is the product between $ <var:F> $ , and $ <var:G> $ . \end{theorem} \begin{proof} Take $ <var:F> = <nat:7> $ , and $ <var:G> = <nat:2> $ . Note that $ <nat:14> = <var:F> \cdot <var:G> $ . This implies our belief is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:F> <var:G> : nat , ( <nat:14> = <var:F> * <var:G> ) . Proof . exists <nat:7> . exists <nat:2> . lia . Qed . 

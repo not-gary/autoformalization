@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:u> \in \mathbb{N} $ so that $ <var:u> $ more than <nat:1> and satisfying the condition that the integer <nat:512> is the repeated product of whole number $ <var:u> \in \mathbb{Z}^+ $ raised to the exponent <nat:9> . \end{theorem} \begin{proof} Allow $ <var:u> = <nat:2> $ . This hints our theorem holds . Thus , $ <nat:512> = <var:u> ^ <nat:9> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <var:u> > <nat:1> ) /\ ( <nat:512> = <var:u> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

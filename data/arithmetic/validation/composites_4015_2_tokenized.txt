@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:24> is the multiplication of numbers $ <var:i> $ and $ <var:Z> $ such that $ <var:i> $ , $ <var:Z> > <nat:1> $ . \end{theorem} \begin{proof} Allow $ <var:i> = <nat:12> $ , $ <var:Z> = <nat:2> $ . We verify our belief holds as $ <var:i> \times <var:Z> = <nat:24> = <nat:12> \times <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:i> <var:Z> : nat , ( <nat:24> = <var:i> * <var:Z> ) /\ ( <var:i> > <nat:1> ) /\ ( <var:Z> > <nat:1> ) . Proof . exists <nat:12> . exists <nat:2> . lia . Qed . 

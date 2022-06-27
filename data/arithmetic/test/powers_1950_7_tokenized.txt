@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:128> is the exponential between positive integer $ <var:S> \in \mathbb{N} $ exponentiated to the power <nat:7> such that $ <var:S> $ larger than <nat:1> . \end{theorem} \begin{proof} We confirm <nat:128> is the raising of of some natural number $ <var:S> $ exponentiated to the power <nat:7> . Notice that $ <nat:128> = <var:S> ^ <nat:7> $ yields $ <var:S> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:S> : nat , ( <nat:128> = <var:S> ^ <nat:7> ) /\ ( <var:S> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

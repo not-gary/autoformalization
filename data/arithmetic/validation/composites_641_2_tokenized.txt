@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:24> is the multiplication of $ <var:M> $ and $ <var:O> $ where $ <var:M> $ , and $ <var:O> > <nat:1> $ . \end{theorem} \begin{proof} Assume $ <var:O> = <nat:3> $ and $ <var:M> = <nat:8> $ . This produces the thesis holds . Consequently , <nat:24> is the product of $ <var:O> $ , and $ <var:M> \in \mathbb{N} $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:M> <var:O> : nat , ( <nat:24> = <var:M> * <var:O> ) /\ ( <var:M> > <nat:1> ) /\ ( <var:O> > <nat:1> ) . Proof . exists <nat:8> . exists <nat:3> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:112> is the multiplication of numbers $ <var:C> $ , $ <var:q> $ and $ <var:v> \in \mathbb{N} $ . \end{theorem} \begin{proof} Allow $ <var:C> = <nat:8> $ , $ <var:v> = <nat:7> $ , $ <var:q> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:q> <var:v> : nat , ( <nat:112> = <var:C> * <var:q> * <var:v> ) . Proof . exists <nat:8> . exists <nat:2> . exists <nat:7> . repeat split . all : lia . Qed . 

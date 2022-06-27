@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:E> $ and $ <var:S> $ so that $ <nat:77> $ is the same as $ <var:E> \cdot <var:S> $ . \end{theorem} \begin{proof} We prove our belief is valid seeing that $ <nat:77> = <nat:7> \times <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:E> <var:S> : nat , ( <nat:77> = <var:E> * <var:S> ) . Proof . exists <nat:11> . exists <nat:7> . lia . Qed . 

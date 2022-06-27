@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:318> + <nat:176> \cdot <var:v> + <nat:352> \cdot <var:q> $ is guaranteed to be even . \end{theorem} \begin{proof} Claim obivously holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:v> <var:q> : nat , Nat . even ( <nat:176> * <var:v> + <nat:352> * <var:q> + <nat:318> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

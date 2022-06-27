@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:G> $ and $ <var:x> $ as natural numbers such that $ <var:x> $ , and $ <var:G> $ larger than <nat:1> and where $ <var:x> \times <var:G> $ is $ <nat:80> $ . \end{theorem} \begin{proof} Allow $ <var:G> = <nat:10> $ and $ <var:x> = <nat:8> $ . Note $ <var:G> \times <var:x> = <nat:80> $ . This yields the statement is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:G> <var:x> : nat , ( <var:x> > <nat:1> ) /\ ( <var:G> > <nat:1> ) /\ ( <var:x> * <var:G> = <nat:80> ) . Proof . exists <nat:10> . exists <nat:8> . lia . Qed . 

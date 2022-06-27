@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:a> $ and $ <var:d> \in \mathbb{Z}^+ $ such that $ <var:a> $ , $ <var:d> $ more than or equivalent to <nat:2> plus so that $ <var:d> \times <var:a> = <nat:42> $ . \end{theorem} \begin{proof} Observe $ <nat:42> = <nat:7> * <nat:6> = <var:d> * <var:a> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:a> <var:d> : nat , ( <var:a> >= <nat:2> ) /\ ( <var:d> >= <nat:2> ) /\ ( <var:d> * <var:a> = <nat:42> ) . Proof . exists <nat:6> . exists <nat:7> . lia . Qed . 

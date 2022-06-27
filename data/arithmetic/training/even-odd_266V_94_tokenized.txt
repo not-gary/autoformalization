@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:94> + <nat:266> \times <var:V> $ must be even for some positive integers $ <var:V> $ . \end{theorem} \begin{proof} The addition of an even number in $ \mathbb{N} $ and an even number in $ \mathbb{Z}^+ $ must be even . It can be shown that this main result is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:V> : nat , Nat . even ( <nat:266> * <var:V> + <nat:94> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

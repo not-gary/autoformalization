@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:U> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:U> $ more than <nat:1> and where $ <nat:1024> $ is $ <var:U> ^ <nat:10> $ . \end{theorem} \begin{proof} We present our thesis holds in view of $ <var:U> ^ <nat:10> = <nat:1024> $ implies $ <var:U> = <nat:2> $ . Because of this , $ <var:U> > <nat:1> $ and $ <var:U> ^ <nat:10> = <nat:1024> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:U> : nat , ( <var:U> > <nat:1> ) /\ ( <nat:1024> = <var:U> ^ <nat:10> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

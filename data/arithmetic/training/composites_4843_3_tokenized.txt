@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:k> * <var:X> * <var:v> $ is $ <nat:240> $ assuming $ <var:k> $ , $ <var:X> $ , and $ <var:v> $ . \end{theorem} \begin{proof} We demonstrate $ <var:v> \cdot <var:X> \cdot <var:k> = <nat:240> $ . Notice that $ <nat:240> = <nat:8> * <nat:5> * <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:k> <var:X> <var:v> : nat , ( <var:k> * <var:X> * <var:v> = <nat:240> ) . Proof . exists <nat:5> . exists <nat:8> . exists <nat:6> . repeat split . all : lia . Qed . 

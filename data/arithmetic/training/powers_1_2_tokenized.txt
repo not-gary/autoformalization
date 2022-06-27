@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:4> is the repeated product between natural number $ <var:u> \in \mathbb{Z}^+ $ raised to the exponent <nat:2> such that $ <var:u> $ more than <nat:1> . \end{theorem} \begin{proof} Notice that $ <nat:4> = <var:u> ^ <nat:2> $ suggests $ <var:u> = <nat:2> $ . As a result , $ <nat:4> = <var:u> ^ <nat:2> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <nat:4> = <var:u> ^ <nat:2> ) /\ ( <var:u> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} A <def:square> number is any number $ <var:y> $ where there is some $ <var:x> $ such that $ <var:x> ^ <nat:2> = <var:y> $ . \end{definition} \begin{theorem} <nat:16> is <def:square> . \end{theorem} \begin{proof} Let $ <var:x> = <nat:4> $ . Then $ <nat:4> ^ <nat:2> = <nat:16> $ . Therefore , <nat:16> is <def:square> . \end{proof} \end{document}
-~
-Proof

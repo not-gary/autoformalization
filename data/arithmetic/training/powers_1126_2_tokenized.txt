@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:4> is the exponential between natural number $ <var:b> \in \mathbb{Z}^+ $ raised to the power <nat:2> . \end{theorem} \begin{proof} Note that $ <nat:4> = <var:b> ^ <nat:2> $ shows $ <var:b> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:b> : nat , ( <nat:4> = <var:b> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

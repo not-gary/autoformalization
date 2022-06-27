@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:512> is the raising of between natural number $ <var:F> $ repeatedly multiplied to the exponential <nat:9> satisfying the condition that $ <var:F> > <nat:1> $ . \end{theorem} \begin{proof} Note that $ <nat:512> = <nat:2> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <nat:512> = <var:F> ^ <nat:9> ) /\ ( <var:F> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

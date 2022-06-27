@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:248> \times <var:V> + <nat:372> + <var:O> \times <nat:44> + <nat:486> \times <var:T> + <var:f> \times <nat:268> $ must be even . \end{theorem} \begin{proof} Observe the multiplication of an even integer with any positive integer is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:V> <var:O> <var:T> <var:f> : nat , Nat . even ( <nat:248> * <var:V> + <nat:44> * <var:O> + <nat:486> * <var:T> + <nat:268> * <var:f> + <nat:372> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

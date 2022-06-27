@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:q> * <var:d> $ is equal to $ <nat:6> $ for $ <var:d> $ , $ <var:q> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:q> $ and $ <var:d> > <nat:1> $ . \end{theorem} \begin{proof} We demonstrate the theorem is true on account of $ <nat:6> = <nat:2> \times <nat:3> $ . As a result , $ <var:d> \times <var:q> = <nat:6> $ and $ <var:d> $ , $ <var:q> > <nat:1> $ is validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:d> <var:q> : nat , ( <var:q> * <var:d> = <nat:6> ) /\ ( <var:q> > <nat:1> ) /\ ( <var:d> > <nat:1> ) . Proof . exists <nat:3> . exists <nat:2> . lia . Qed . 

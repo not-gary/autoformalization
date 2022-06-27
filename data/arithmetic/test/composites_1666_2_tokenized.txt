@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:33> is the product between $ <var:V> $ , and $ <var:h> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Allow $ <var:h> = <nat:3> $ , $ <var:V> = <nat:11> $ . We justify $ <nat:33> = <var:V> \cdot <var:h> $ . We justify our claim is true seeing that $ <nat:3> * <nat:11> = <nat:33> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:V> <var:h> : nat , ( <nat:33> = <var:V> * <var:h> ) . Proof . exists <nat:11> . exists <nat:3> . lia . Qed . 

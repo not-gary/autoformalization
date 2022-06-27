@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:27> is the product between $ <var:d> $ , and $ <var:g> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Assume $ <var:g> = <nat:3> $ and $ <var:d> = <nat:9> $ . We demonstrate $ <nat:27> = <var:d> * <var:g> $ . We verify the belief holds considering $ <nat:27> = <var:g> \cdot <var:d> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:d> <var:g> : nat , ( <nat:27> = <var:d> * <var:g> ) . Proof . exists <nat:9> . exists <nat:3> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:i> $ , and $ <var:s> \in \mathbb{Z}^+ $ such that $ <var:s> $ , and $ <var:i> > <nat:1> $ and so that the number <nat:45> is the product of integers $ <var:i> $ , and $ <var:s> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Observe $ <nat:45> = <var:i> \cdot <var:s> = <nat:5> \cdot <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:i> <var:s> : nat , ( <var:s> > <nat:1> ) /\ ( <var:i> > <nat:1> ) /\ ( <nat:45> = <var:i> * <var:s> ) . Proof . exists <nat:5> . exists <nat:9> . lia . Qed . 

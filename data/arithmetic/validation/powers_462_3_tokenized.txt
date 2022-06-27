@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some natural number $ <var:r> $ where the whole number <nat:8> is the repeated product between integer $ <var:r> $ taken to the exponent <nat:3> . \end{theorem} \begin{proof} Take $ <var:r> = <nat:2> $ . We demonstrate our claim is valid considering $ <nat:8> = <var:r> ^ <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:r> : nat , ( <nat:8> = <var:r> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

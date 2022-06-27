@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:32> is the exponent between number $ <var:A> $ exponentiated to the power <nat:5> . \end{theorem} \begin{proof} Assume $ <var:A> = <nat:2> $ . We present the statement is true by reason of $ <var:A> ^ <nat:5> = <nat:32> $ . As a consequence , $ <var:A> ^ <nat:5> = <nat:32> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:A> : nat , ( <nat:32> = <var:A> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

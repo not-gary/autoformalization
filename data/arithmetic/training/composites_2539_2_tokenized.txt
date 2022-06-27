@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:U> $ , $ <var:w> \in \mathbb{N} $ such that <nat:27> is the multiplication of whole numbers $ <var:U> $ and $ <var:w> \in \mathbb{N} $ . \end{theorem} \begin{proof} Take $ <var:U> = <nat:3> $ and $ <var:w> = <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:U> <var:w> : nat , ( <nat:27> = <var:U> * <var:w> ) . Proof . exists <nat:3> . exists <nat:9> . lia . Qed . 

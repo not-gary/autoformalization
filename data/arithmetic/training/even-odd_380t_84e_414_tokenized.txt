@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Taking all unknowns $ <var:e> $ , and $ <var:t> $ the sum $ <var:t> \cdot <nat:380> + <nat:414> + <var:e> \cdot <nat:84> $ will be even . \end{theorem} \begin{proof} Result trivially is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:e> <var:t> : nat , Nat . even ( <nat:380> * <var:t> + <nat:84> * <var:e> + <nat:414> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

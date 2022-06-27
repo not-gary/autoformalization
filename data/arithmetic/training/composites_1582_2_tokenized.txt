@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:n> $ , and $ <var:B> \in \mathbb{N} $ satisfying the condition that $ <var:B> $ and $ <var:n> $ more than <nat:1> plus so that $ <var:B> \cdot <var:n> $ is equal to $ <nat:36> $ . \end{theorem} \begin{proof} Notice that $ <nat:36> = <var:B> * <var:n> $ gives $ <var:n> = <nat:3> $ , $ <var:B> = <nat:12> $ . This hints our thesis is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:n> <var:B> : nat , ( <var:B> > <nat:1> ) /\ ( <var:n> > <nat:1> ) /\ ( <var:B> * <var:n> = <nat:36> ) . Proof . exists <nat:3> . exists <nat:12> . lia . Qed . 

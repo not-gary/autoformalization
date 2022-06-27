@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:45> is the multiplication of integers $ <var:g> $ and $ <var:S> $ where $ <var:S> $ and $ <var:g> $ larger than <nat:1> . \end{theorem} \begin{proof} Note $ <var:S> \cdot <var:g> = <nat:45> $ suggests $ <var:g> = <nat:5> $ , $ <var:S> = <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:g> <var:S> : nat , ( <nat:45> = <var:g> * <var:S> ) /\ ( <var:S> > <nat:1> ) /\ ( <var:g> > <nat:1> ) . Proof . exists <nat:5> . exists <nat:9> . lia . Qed . 

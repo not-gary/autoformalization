@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:60> is the multiplication of whole numbers $ <var:g> $ , $ <var:X> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:g> $ , and $ <var:X> \geq <nat:2> $ . \end{theorem} \begin{proof} Note that $ <nat:60> = <var:g> * <var:X> = <nat:10> * <nat:6> $ . This hints the proposition is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:g> <var:X> : nat , ( <nat:60> = <var:g> * <var:X> ) /\ ( <var:g> >= <nat:2> ) /\ ( <var:X> >= <nat:2> ) . Proof . exists <nat:10> . exists <nat:6> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:M> $ and $ <var:X> $ be whole numbers where $ <var:X> $ and $ <var:M> \geq <nat:2> $ as well as where $ <var:M> \cdot <var:X> $ equals $ <nat:120> $ . \end{theorem} \begin{proof} Observe that $ <nat:120> = <var:M> * <var:X> $ shows $ <var:X> = <nat:12> $ , and $ <var:M> = <nat:10> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:M> <var:X> : nat , ( <var:X> >= <nat:2> ) /\ ( <var:M> >= <nat:2> ) /\ ( <var:M> * <var:X> = <nat:120> ) . Proof . exists <nat:10> . exists <nat:12> . lia . Qed . 

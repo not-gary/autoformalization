@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:p> ^ <nat:9> = <nat:512> $ . \end{theorem} \begin{proof} Assume $ <var:p> = <nat:2> $ . We confirm $ <nat:512> = <var:p> ^ <nat:9> $ . Notice that $ <var:p> ^ <nat:9> = <nat:2> ^ <nat:9> = <nat:512> $ . This suggests our formula is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:p> : nat , ( <var:p> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . auto . Qed . 

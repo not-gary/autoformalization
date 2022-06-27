@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:L> \in \mathbb{N} $ . We define that $ <var:C> \in \mathbb{N} $ is called a <def:hepteract> when $ <var:L> ^ <nat:7> = <var:C> $ . Thus $ <nat:128> = <var:C> $ is a <def:hepteract> natural number . \end{theorem} \begin{proof} We show the belief holds on account of $ <nat:128> = <var:L> ^ <nat:7> $ suggests $ <var:L> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:hepteract> ( <var:C> : nat ) := exists <var:L> : nat , ( <var:L> ^ <nat:7> = <var:C> ) . Theorem <genP:1> : <def:hepteract> <nat:128> . Proof . unfold <def:hepteract> . exists <nat:2> . auto . Qed . 

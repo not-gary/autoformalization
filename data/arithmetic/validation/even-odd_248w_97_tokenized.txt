@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:97> + <var:w> \times <nat:248> $ is guaranteed to be odd . \end{theorem} \begin{proof} Recall the number $ <nat:248> $ is obviously even \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:w> : nat , Nat . odd ( <nat:248> * <var:w> + <nat:97> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:248> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

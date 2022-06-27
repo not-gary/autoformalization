@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:w> $ , $ <var:o> \in \mathbb{Z}^+ $ such that $ <var:o> $ , $ <var:w> > <nat:1> $ as well as so that $ <nat:24> $ is equivalent to $ <var:o> \times <var:w> $ . \end{theorem} \begin{proof} Allow $ <var:o> = <nat:4> $ , $ <var:w> = <nat:6> $ . We justify $ <var:w> $ , $ <var:o> $ are more than <nat:1> plus <nat:24> is the product between some integers $ <var:o> $ , $ <var:w> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:w> <var:o> : nat , ( <var:o> > <nat:1> ) /\ ( <var:w> > <nat:1> ) /\ ( <nat:24> = <var:o> * <var:w> ) . Proof . exists <nat:6> . exists <nat:4> . lia . Qed . 

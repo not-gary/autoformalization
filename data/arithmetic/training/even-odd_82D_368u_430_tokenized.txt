@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With every positive numbers $ <var:D> $ , and $ <var:u> $ the sum $ <nat:430> + <var:D> * <nat:82> + <nat:368> * <var:u> $ will be even . \end{theorem} \begin{proof} Lemma obivously is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:D> <var:u> : nat , Nat . even ( <nat:82> * <var:D> + <nat:368> * <var:u> + <nat:430> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

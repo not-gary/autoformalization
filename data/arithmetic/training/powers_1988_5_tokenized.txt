@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:p> $ as whole numbers . Denote that $ <var:Z> \in \mathbb{Z}^+ $ will be named a <def:penteract> positive integer given $ <var:Z> = <var:p> ^ <nat:5> $ . For this reason $ <var:Z> = <nat:32> $ is a <def:penteract> number . \end{theorem} \begin{proof} Observe that $ <var:p> ^ <nat:5> = <nat:32> $ gives $ <var:p> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:penteract> ( <var:Z> : nat ) := exists <var:p> : nat , ( <var:Z> = <var:p> ^ <nat:5> ) . Theorem <genP:1> : <def:penteract> <nat:32> . Proof . unfold <def:penteract> . exists <nat:2> . auto . Qed . 

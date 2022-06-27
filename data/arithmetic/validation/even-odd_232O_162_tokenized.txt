@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:232> * <var:O> + <nat:162> $ will be even . \end{theorem} \begin{proof} The adding between an even whole number with an even natural number is guaranteed to be even . See the product between an even natural and a natural is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:O> : nat , Nat . even ( <nat:232> * <var:O> + <nat:162> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

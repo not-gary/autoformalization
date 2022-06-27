@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For some $ <var:p> \in \mathbb{Z}^+ $ $ <var:p> <nat:112> + <nat:296> $ is even . \end{theorem} \begin{proof} Main result trivially holds . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:p> : nat , Nat . even ( <nat:112> * <var:p> + <nat:296> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

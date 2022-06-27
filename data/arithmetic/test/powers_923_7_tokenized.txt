@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:128> is the repeated multiplication of whole number $ <var:b> \in \mathbb{N} $ exponentiated to the exponential <nat:7> . \end{theorem} \begin{proof} We demonstrate the belief is valid in consideration of $ <var:b> ^ <nat:7> = <nat:128> = <nat:2> ^ <nat:7> $ . Hence , $ <nat:128> = <var:b> ^ <nat:7> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:b> : nat , ( <nat:128> = <var:b> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

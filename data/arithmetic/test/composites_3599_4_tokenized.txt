@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:384> $ equals $ <var:O> \times <var:Q> \times <var:i> \times <var:w> $ . \end{theorem} \begin{proof} We demonstrate our theorem is true by reason of $ <var:Q> \cdot <var:i> \cdot <var:O> \cdot <var:w> = <nat:384> $ produces $ <var:Q> = <nat:2> $ , $ <var:i> = <nat:4> $ , $ <var:O> = <nat:6> $ and $ <var:w> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:O> <var:i> <var:Q> <var:w> : nat , ( <nat:384> = <var:O> * <var:Q> * <var:i> * <var:w> ) . Proof . exists <nat:6> . exists <nat:4> . exists <nat:2> . exists <nat:8> . repeat split . all : lia . Qed . 

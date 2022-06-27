@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:220> is the product between positive integers $ <var:k> $ , $ <var:H> $ , $ <var:o> $ . \end{theorem} \begin{proof} Assume $ <var:o> = <nat:4> $ , $ <var:H> = <nat:5> $ , and $ <var:k> = <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:k> <var:H> <var:o> : nat , ( <nat:220> = <var:k> * <var:H> * <var:o> ) . Proof . exists <nat:11> . exists <nat:5> . exists <nat:4> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:4096> is the repeated multiplication between whole number $ <var:i> \in \mathbb{Z}^+ $ exponentiated to the degree <nat:12> satisfying the condition that $ <var:i> \geq <nat:2> $ . \end{theorem} \begin{proof} Notice $ <nat:2> \geq <nat:2> $ . Also observe that still $ <var:i> ^ <nat:12> = <nat:4096> $ yields $ <var:i> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:i> : nat , ( <nat:4096> = <var:i> ^ <nat:12> ) /\ ( <var:i> >= <nat:2> ) . Proof . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } exists <nat:2> . split . auto . apply <genH> . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:q> \in \mathbb{Z}^+ $ . Let that $ <var:G> \in \mathbb{N} $ will be considered to be a <def:cube> natural number if $ <var:q> ^ <nat:3> = <var:G> $ . Consequently $ <var:G> = <nat:8> $ is a <def:cube> number . \end{theorem} \begin{proof} Let $ <var:q> = <nat:2> $ . Observe $ <nat:8> = <nat:2> ^ <nat:3> = <var:q> ^ <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:G> : nat ) := exists <var:q> : nat , ( <var:q> ^ <nat:3> = <var:G> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

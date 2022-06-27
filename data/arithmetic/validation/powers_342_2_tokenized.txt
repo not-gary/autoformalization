@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:I> $ be whole numbers . Take that some whole number $ <var:Y> $ is a <def:square> natural number assuming $ <var:I> ^ <nat:2> = <var:Y> $ . Consequently the natural number <nat:4> is a <def:square> number . \end{theorem} \begin{proof} Take $ <var:I> = <nat:2> $ . We present our theory is valid as $ <nat:2> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:Y> : nat ) := exists <var:I> : nat , ( <var:I> ^ <nat:2> = <var:Y> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

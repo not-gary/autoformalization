@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:W> $ as natural numbers . Take that $ <var:q> \in \mathbb{Z}^+ $ is considered to be a <def:octeract> integer given $ <var:W> ^ <nat:8> = <var:q> $ . Therefore the positive integer <nat:256> is a <def:octeract> . \end{theorem} \begin{proof} We prove the formula is true as $ <nat:2> ^ <nat:8> = <nat:256> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:octeract> ( <var:q> : nat ) := exists <var:W> : nat , ( <var:W> ^ <nat:8> = <var:q> ) . Theorem <genP:1> : <def:octeract> <nat:256> . Proof . unfold <def:octeract> . exists <nat:2> . auto . Qed . 

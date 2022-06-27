@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4> $ is equivalent to $ <var:L> ^ <nat:2> $ for $ <var:L> $ where $ <var:L> $ larger than <nat:1> . \end{theorem} \begin{proof} We demonstrate $ <var:L> ^ <nat:2> = <nat:4> $ and $ <var:L> $ is larger than <nat:1> . Note $ <nat:4> = <var:L> ^ <nat:2> $ suggests $ <var:L> = <nat:2> $ . What's more note $ <nat:2> $ is greater than <nat:1> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:L> : nat , ( <nat:4> = <var:L> ^ <nat:2> ) /\ ( <var:L> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

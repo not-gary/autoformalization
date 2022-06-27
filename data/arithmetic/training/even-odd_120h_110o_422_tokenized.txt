@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:120> \cdot <var:h> + <nat:422> + <var:o> \cdot <nat:110> $ must be even taking all positive numbers $ <var:h> $ , and $ <var:o> $ . \end{theorem} \begin{proof} Recall the summation between even positive integers and an even natural will be an even natural number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:h> <var:o> : nat , Nat . even ( <nat:120> * <var:h> + <nat:110> * <var:o> + <nat:422> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

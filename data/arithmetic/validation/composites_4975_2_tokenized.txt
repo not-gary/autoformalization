@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some whole numbers $ <var:v> $ , and $ <var:f> $ where $ <var:v> * <var:f> $ is equal to $ <nat:45> $ . \end{theorem} \begin{proof} Let $ <var:v> = <nat:5> $ , and $ <var:f> = <nat:9> $ . This gives the theory holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:v> <var:f> : nat , ( <var:v> * <var:f> = <nat:45> ) . Proof . exists <nat:5> . exists <nat:9> . lia . Qed . 

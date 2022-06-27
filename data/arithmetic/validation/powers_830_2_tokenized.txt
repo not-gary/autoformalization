@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:e> \in \mathbb{Z}^+ $ satisfying the condition that $ <nat:4> $ is $ <var:e> ^ <nat:2> $ . \end{theorem} \begin{proof} Note that $ <nat:4> = <var:e> ^ <nat:2> $ implies $ <var:e> = <nat:2> $ . This hints the thesis is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:e> : nat , ( <nat:4> = <var:e> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} For some positive numbers $ <var:P> $ the sum $ <nat:180> + <nat:490> \cdot <var:P> $ will be even . \end{theorem} \begin{proof} The coefficient $ <nat:490> $ is trivially an even element of $ \mathbb{Z}^+ $ \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:P> : nat , Nat . even ( <nat:490> * <var:P> + <nat:180> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:490> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:47> + <nat:222> \cdot <var:C> $ will be odd using every unknowns $ <var:C> $ . \end{theorem} \begin{proof} Take note that the totaling between an even positive integer with an odd natural number must be odd . It can be demonstrated that the lemma must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:C> : nat , Nat . odd ( <nat:222> * <var:C> + <nat:47> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

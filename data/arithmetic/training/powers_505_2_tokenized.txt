@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Given we get $ <var:z> = <var:Q> ^ <nat:2> $ assuming some whole number $ <var:z> $ assuming some natural number $ <var:Q> $ , then we denote that $ <var:z> $ is a <def:square> positive integer . Hence <nat:4> is a <def:square> number . \end{theorem} \begin{proof} Assume $ <var:Q> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:z> : nat ) := exists <var:Q> : nat , ( <var:z> = <var:Q> ^ <nat:2> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

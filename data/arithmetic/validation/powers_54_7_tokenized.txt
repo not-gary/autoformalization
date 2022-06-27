@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:L> $ are whole numbers such that $ <var:L> \geq <nat:2> $ plus such that $ <nat:128> $ is $ <var:L> ^ <nat:7> $ . \end{theorem} \begin{proof} Assume $ <var:L> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:L> : nat , ( <var:L> >= <nat:2> ) /\ ( <nat:128> = <var:L> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

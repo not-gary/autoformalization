@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:8> is the repeated multiplication between integer $ <var:g> $ exponentiated to the degree <nat:3> such that $ <var:g> \geq <nat:2> $ . \end{theorem} \begin{proof} Notice $ <nat:8> = <var:g> ^ <nat:3> $ indicates $ <var:g> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:g> : nat , ( <nat:8> = <var:g> ^ <nat:3> ) /\ ( <var:g> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

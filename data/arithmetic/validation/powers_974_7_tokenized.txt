@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:f> \in \mathbb{Z}^+ $ such that the natural number <nat:128> is the repeated multiplication between positive integer $ <var:f> \in \mathbb{N} $ raised to the exponential <nat:7> . \end{theorem} \begin{proof} Assume $ <var:f> = <nat:2> $ . We confirm <nat:128> is the repeated product between $ <var:f> \in \mathbb{Z}^+ $ raised to the exponent <nat:7> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:f> : nat , ( <nat:128> = <var:f> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

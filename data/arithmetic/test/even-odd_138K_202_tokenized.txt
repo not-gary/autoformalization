@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With some variables $ <var:K> $ the formula $ <nat:202> + <nat:138> \cdot <var:K> $ is even . \end{theorem} \begin{proof} Observe that the addition between even integers concurrently with an even number is even . Subsequently , take note that the product of an even element of $ \mathbb{N} $ and a number in $ \mathbb{Z}^+ $ must be in itself an even element of $ \mathbb{N} $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:K> : nat , Nat . even ( <nat:138> * <var:K> + <nat:202> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

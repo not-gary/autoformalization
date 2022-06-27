@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:32> $ is $ <var:F> ^ <nat:5> $ for $ <var:F> \in \mathbb{N} $ so that $ <var:F> > <nat:1> $ . \end{theorem} \begin{proof} Notice $ <var:F> ^ <nat:5> = <nat:32> $ shows $ <var:F> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <nat:32> = <var:F> ^ <nat:5> ) /\ ( <var:F> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:j> $ , $ <var:a> $ and $ <var:b> \in \mathbb{Z}^+ $ . $ <nat:210> $ is $ <var:j> \times <var:b> \times <var:a> $ . \end{theorem} \begin{proof} Take $ <var:b> = <nat:7> $ , $ <var:a> = <nat:5> $ , $ <var:j> = <nat:6> $ . This implies the thesis is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:j> <var:a> <var:b> : nat , ( <nat:210> = <var:j> * <var:b> * <var:a> ) . Proof . exists <nat:6> . exists <nat:5> . exists <nat:7> . repeat split . all : lia . Qed . 

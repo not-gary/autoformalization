@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:H> \cdot <var:e> $ is $ <nat:33> $ given $ <var:e> $ , $ <var:H> \in \mathbb{Z}^+ $ so that $ <var:e> $ and $ <var:H> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} Observe $ <nat:33> = <nat:11> \times <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:e> <var:H> : nat , ( <var:H> * <var:e> = <nat:33> ) /\ ( <var:e> >= <nat:2> ) /\ ( <var:H> >= <nat:2> ) . Proof . exists <nat:3> . exists <nat:11> . lia . Qed . 

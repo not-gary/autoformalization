@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:168> is the product of positive integers $ <var:c> $ , $ <var:K> $ , $ <var:v> \in \mathbb{N} $ . \end{theorem} \begin{proof} Assume $ <var:v> = <nat:4> $ , $ <var:K> = <nat:7> $ and $ <var:c> = <nat:6> $ . This shows our principle is true . Consequently , <nat:168> is the multiplication of $ <var:K> $ , $ <var:c> $ , and $ <var:v> \in \mathbb{N} $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:c> <var:K> <var:v> : nat , ( <nat:168> = <var:c> * <var:K> * <var:v> ) . Proof . exists <nat:6> . exists <nat:7> . exists <nat:4> . repeat split . all : lia . Qed . 

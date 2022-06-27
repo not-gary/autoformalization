@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:435> + <var:a> * <nat:472> $ will be odd . \end{theorem} \begin{proof} We know that the whole number $ <nat:472> $ is even \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:a> : nat , Nat . odd ( <nat:472> * <var:a> + <nat:435> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:472> = true ) . { auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:C> $ and $ <var:X> $ be positive integers where the positive integer <nat:99> is the product between numbers $ <var:C> $ , and $ <var:X> $ . \end{theorem} \begin{proof} Notice that $ <nat:99> = <var:X> \cdot <var:C> $ suggests $ <var:X> = <nat:11> $ , $ <var:C> = <nat:9> $ . This yields the thesis holds . Because of this , $ <var:X> \cdot <var:C> = <nat:99> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:C> <var:X> : nat , ( <nat:99> = <var:C> * <var:X> ) . Proof . exists <nat:9> . exists <nat:11> . lia . Qed . 

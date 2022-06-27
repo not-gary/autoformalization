@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are $ <var:w> $ , and $ <var:a> \in \mathbb{Z}^+ $ satisfying the condition that the whole number <nat:110> is the multiplication between whole numbers $ <var:w> $ , $ <var:a> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We verify the formula is true by reason of $ <nat:11> \cdot <nat:10> = <var:w> \cdot <var:a> = <nat:110> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:w> <var:a> : nat , ( <nat:110> = <var:w> * <var:a> ) . Proof . exists <nat:11> . exists <nat:10> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists some number $ <var:C> $ such that $ <var:C> > <nat:1> $ plus such that $ <var:C> ^ <nat:4> $ equals $ <nat:16> $ . \end{theorem} \begin{proof} Take $ <var:C> = <nat:2> $ . We justify the thesis is valid by reason of $ <nat:2> ^ <nat:4> = <nat:16> = <var:C> ^ <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:C> : nat , ( <var:C> > <nat:1> ) /\ ( <var:C> ^ <nat:4> = <nat:16> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

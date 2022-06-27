@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:r> $ and $ <var:w> \in \mathbb{Z}^+ $ . $ <nat:32> $ is equivalent to $ <var:w> \times <var:r> $ . \end{theorem} \begin{proof} Note that $ <var:w> * <var:r> = <nat:4> * <nat:8> = <nat:32> $ . This indicates our formula is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:r> <var:w> : nat , ( <nat:32> = <var:w> * <var:r> ) . Proof . exists <nat:8> . exists <nat:4> . lia . Qed . 

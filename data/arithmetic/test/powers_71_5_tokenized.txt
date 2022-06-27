@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:Q> \in \mathbb{N} $ such that the natural number <nat:32> is the exponent of $ <var:Q> \in \mathbb{Z}^+ $ taken to the exponent <nat:5> . \end{theorem} \begin{proof} Let $ <var:Q> = <nat:2> $ . We present <nat:32> is the raising of between some $ <var:Q> $ taken to the degree <nat:5> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Q> : nat , ( <nat:32> = <var:Q> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

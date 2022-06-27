@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:284> <var:C> + <nat:370> $ must be even . \end{theorem} \begin{proof} Recall that $ <var:C> <nat:284> $ is an even element of $ \mathbb{Z}^+ $ . It can be proven that the claim is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:C> : nat , Nat . even ( <nat:284> * <var:C> + <nat:370> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:284> * <var:C> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

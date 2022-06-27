@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:j> $ be natural numbers . We say that $ <var:n> \in \mathbb{N} $ is considered a <def:hepteract> positive integer if $ <var:j> ^ <nat:7> = <var:n> $ . Consequently $ <nat:128> = <var:n> $ is a <def:hepteract> . \end{theorem} \begin{proof} Notice $ <nat:2> ^ <nat:7> = <nat:128> = <var:j> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:hepteract> ( <var:n> : nat ) := exists <var:j> : nat , ( <var:j> ^ <nat:7> = <var:n> ) . Theorem <genP:1> : <def:hepteract> <nat:128> . Proof . unfold <def:hepteract> . exists <nat:2> . auto . Qed . 

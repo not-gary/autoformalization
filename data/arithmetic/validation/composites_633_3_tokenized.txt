@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:440> $ equals $ <var:Z> * <var:P> * <var:p> $ assuming $ <var:Z> $ , $ <var:P> $ and $ <var:p> $ . \end{theorem} \begin{proof} Let $ <var:p> = <nat:5> $ , $ <var:Z> = <nat:8> $ , and $ <var:P> = <nat:11> $ . Observe $ <nat:440> = <var:P> \times <var:p> \times <var:Z> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Z> <var:P> <var:p> : nat , ( <nat:440> = <var:Z> * <var:P> * <var:p> ) . Proof . exists <nat:8> . exists <nat:11> . exists <nat:5> . repeat split . all : lia . Qed . 

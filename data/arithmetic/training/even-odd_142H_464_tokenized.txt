@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With some natural terms $ <var:H> $ the sum $ <nat:464> + <nat:142> * <var:H> $ is even . \end{theorem} \begin{proof} The addition of an even natural with an even number is an even natural number . It can be verified that our result must be true . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:H> : nat , Nat . even ( <nat:142> * <var:H> + <nat:464> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:g> \in \mathbb{N} $ where $ <var:g> $ larger than or equivalent to <nat:2> as well as such that $ <nat:16> $ is $ <var:g> ^ <nat:4> $ . \end{theorem} \begin{proof} We present $ <var:g> ^ <nat:4> = <nat:16> $ . Observe $ <nat:16> = <var:g> ^ <nat:4> $ suggests $ <var:g> = <nat:2> $ . In addition note that $ <nat:2> \geq <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:g> : nat , ( <var:g> >= <nat:2> ) /\ ( <nat:16> = <var:g> ^ <nat:4> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } split . apply <genH> . auto . Qed . 

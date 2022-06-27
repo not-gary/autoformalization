@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:k> $ are numbers . $ <nat:16> $ is equivalent to $ <var:k> ^ <nat:4> $ . \end{theorem} \begin{proof} We prove <nat:16> is the exponential between $ <var:k> \in \mathbb{Z}^+ $ taken to the power <nat:4> . We present our belief holds in consideration of $ <nat:2> ^ <nat:4> = <nat:16> = <var:k> ^ <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:k> : nat , ( <nat:16> = <var:k> ^ <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

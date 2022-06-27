@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:4> is the exponent of positive integer $ <var:x> $ exponentiated to the power <nat:2> . \end{theorem} \begin{proof} Let $ <var:x> = <nat:2> $ . Notice $ <var:x> ^ <nat:2> = <nat:4> $ . This gives our proposition is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:x> : nat , ( <nat:4> = <var:x> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

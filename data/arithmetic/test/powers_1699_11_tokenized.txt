@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:2048> is the raising of of integer $ <var:Q> \in \mathbb{N} $ taken to the power <nat:11> satisfying the condition that $ <var:Q> \geq <nat:2> $ . \end{theorem} \begin{proof} Allow $ <var:Q> = <nat:2> $ . Notice that $ <nat:2048> = <var:Q> ^ <nat:11> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Q> : nat , ( <nat:2048> = <var:Q> ^ <nat:11> ) /\ ( <var:Q> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

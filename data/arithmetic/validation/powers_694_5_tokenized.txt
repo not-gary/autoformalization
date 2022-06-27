@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:Y> \in \mathbb{Z}^+ $ where the whole number <nat:32> is the raising of between integer $ <var:Y> \in \mathbb{N} $ taken to the exponent <nat:5> . \end{theorem} \begin{proof} Let $ <var:Y> = <nat:2> $ . We confirm $ <nat:32> = <var:Y> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:Y> : nat , ( <nat:32> = <var:Y> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

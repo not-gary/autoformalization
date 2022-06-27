@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:f> \in \mathbb{N} $ . the positive integer <nat:4> is the repeated product between positive integer $ <var:f> \in \mathbb{N} $ raised to the degree <nat:2> . \end{theorem} \begin{proof} Let $ <var:f> = <nat:2> $ . We prove $ <nat:4> = <var:f> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:f> : nat , ( <nat:4> = <var:f> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:R> \in \mathbb{Z}^+ $ where the number <nat:4> is the exponential of integer $ <var:R> \in \mathbb{N} $ raised to the degree <nat:2> . \end{theorem} \begin{proof} We verify <nat:4> is the exponential of $ <var:R> \in \mathbb{N} $ repeatedly multiplied to the power <nat:2> . We demonstrate the claim is valid as $ <nat:4> = <var:R> ^ <nat:2> = <nat:2> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:R> : nat , ( <nat:4> = <var:R> ^ <nat:2> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:4096> is the raising of of natural number $ <var:J> $ exponentiated to the exponent <nat:12> such that $ <var:J> $ larger than <nat:1> . \end{theorem} \begin{proof} We prove the result holds by reason of $ <var:J> ^ <nat:12> = <nat:2> ^ <nat:12> = <nat:4096> $ . Hence , $ <var:J> ^ <nat:12> = <nat:4096> $ is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:J> : nat , ( <nat:4096> = <var:J> ^ <nat:12> ) /\ ( <var:J> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

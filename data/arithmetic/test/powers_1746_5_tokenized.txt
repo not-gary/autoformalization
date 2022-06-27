@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming that there is whole number $ <var:r> $ assume that $ <var:n> \in \mathbb{N} $ is called a <def:penteract> number assuming $ <var:r> ^ <nat:5> = <var:n> $ . Hence $ <nat:32> = <var:n> $ is a <def:penteract> number . \end{theorem} \begin{proof} We demonstrate the principle holds considering $ <var:r> ^ <nat:5> = <nat:32> $ gives $ <var:r> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:penteract> ( <var:n> : nat ) := exists <var:r> : nat , ( <var:r> ^ <nat:5> = <var:n> ) . Theorem <genP:1> : <def:penteract> <nat:32> . Proof . unfold <def:penteract> . exists <nat:2> . auto . Qed . 

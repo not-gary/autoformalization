@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:66> is the multiplication between positive integers $ <var:O> $ , $ <var:s> \in \mathbb{Z}^+ $ such that $ <var:s> $ , and $ <var:O> > <nat:1> $ . \end{theorem} \begin{proof} We confirm the proposition is true considering $ <var:O> \times <var:s> = <nat:11> \times <nat:6> = <nat:66> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:O> <var:s> : nat , ( <nat:66> = <var:O> * <var:s> ) /\ ( <var:s> > <nat:1> ) /\ ( <var:O> > <nat:1> ) . Proof . exists <nat:11> . exists <nat:6> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:B> $ , and $ <var:J> \in \mathbb{N} $ so that $ <var:J> * <var:B> $ equals $ <nat:78> $ . \end{theorem} \begin{proof} We confirm $ <var:J> * <var:B> = <nat:78> $ . Notice that $ <nat:78> = <nat:13> \times <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:B> <var:J> : nat , ( <var:J> * <var:B> = <nat:78> ) . Proof . exists <nat:13> . exists <nat:6> . lia . Qed . 

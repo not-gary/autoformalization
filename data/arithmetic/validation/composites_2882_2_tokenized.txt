@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:27> is the product between integers $ <var:l> $ , $ <var:P> $ . \end{theorem} \begin{proof} Note $ <var:P> * <var:l> = <nat:27> $ suggests $ <var:P> = <nat:9> $ , and $ <var:l> = <nat:3> $ . Thus , $ <var:P> \times <var:l> = <nat:27> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:P> : nat , ( <nat:27> = <var:l> * <var:P> ) . Proof . exists <nat:3> . exists <nat:9> . lia . Qed . 

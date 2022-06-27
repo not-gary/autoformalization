@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:T> $ , and $ <var:X> \in \mathbb{N} $ so that $ <var:X> $ , $ <var:T> \geq <nat:2> $ and so that $ <nat:16> = <var:T> \cdot <var:X> $ . \end{theorem} \begin{proof} Note that $ <nat:16> = <var:T> \times <var:X> $ yields $ <var:X> = <nat:2> $ , and $ <var:T> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:T> <var:X> : nat , ( <var:X> >= <nat:2> ) /\ ( <var:T> >= <nat:2> ) /\ ( <nat:16> = <var:T> * <var:X> ) . Proof . exists <nat:8> . exists <nat:2> . lia . Qed . 

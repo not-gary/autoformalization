@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:80> is the multiplication between $ <var:E> $ and $ <var:e> \in \mathbb{N} $ . \end{theorem} \begin{proof} We justify our formula is valid seeing that $ <var:e> \cdot <var:E> = <nat:80> = <nat:10> \cdot <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:E> <var:e> : nat , ( <nat:80> = <var:E> * <var:e> ) . Proof . exists <nat:8> . exists <nat:10> . lia . Qed . 

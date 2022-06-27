@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist $ <var:y> $ , $ <var:A> $ and $ <var:s> \in \mathbb{Z}^+ $ so that $ <var:y> * <var:A> * <var:s> $ is equivalent to $ <nat:135> $ . \end{theorem} \begin{proof} We justify the claim is valid on account of $ <nat:135> = <nat:5> \times <nat:3> \times <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:y> <var:A> <var:s> : nat , ( <var:y> * <var:A> * <var:s> = <nat:135> ) . Proof . exists <nat:3> . exists <nat:5> . exists <nat:9> . repeat split . all : lia . Qed . 

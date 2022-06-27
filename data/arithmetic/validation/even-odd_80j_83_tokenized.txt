@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:j> \times <nat:80> + <nat:83> $ is odd . \end{theorem} \begin{proof} We demonstrate $ <nat:83> + <var:j> * <nat:80> $ is odd . Multiplying of an even number and a natural will be an even element of $ \mathbb{N} $ . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:j> : nat , Nat . odd ( <nat:80> * <var:j> + <nat:83> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

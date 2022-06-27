@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:Y> $ , $ <var:c> $ as natural numbers satisfying the condition that $ <nat:20> = <var:c> * <var:Y> $ . \end{theorem} \begin{proof} Notice $ <var:Y> \cdot <var:c> = <nat:20> $ yields $ <var:c> = <nat:4> $ and $ <var:Y> = <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Y> <var:c> : nat , ( <nat:20> = <var:c> * <var:Y> ) . Proof . exists <nat:5> . exists <nat:4> . lia . Qed . 

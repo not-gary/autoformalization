@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:k> \in \mathbb{Z}^+ $ such that the integer <nat:128> is the repeated product of integer $ <var:k> \in \mathbb{N} $ exponentiated to the exponential <nat:7> . \end{theorem} \begin{proof} Note $ <var:k> ^ <nat:7> = <nat:128> $ yields $ <var:k> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:k> : nat , ( <nat:128> = <var:k> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

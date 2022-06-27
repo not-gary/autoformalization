@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:m> $ be positive integers so that $ <var:m> ^ <nat:9> $ equals $ <nat:512> $ . \end{theorem} \begin{proof} Let $ <var:m> = <nat:2> $ . We demonstrate the result holds in view of $ <nat:512> = <nat:2> ^ <nat:9> $ . As a result , $ <nat:512> = <var:m> ^ <nat:9> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:m> : nat , ( <var:m> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . auto . Qed . 

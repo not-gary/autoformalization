@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:Q> $ and $ <var:s> \in \mathbb{N} $ where $ <var:Q> $ , $ <var:s> $ larger than or equivalent to <nat:2> as well as so that $ <var:Q> \times <var:s> $ is $ <nat:45> $ . \end{theorem} \begin{proof} We confirm our statement holds as $ <var:Q> * <var:s> = <nat:45> $ gives $ <var:s> = <nat:5> $ and $ <var:Q> = <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Q> <var:s> : nat , ( <var:Q> >= <nat:2> ) /\ ( <var:s> >= <nat:2> ) /\ ( <var:Q> * <var:s> = <nat:45> ) . Proof . exists <nat:9> . exists <nat:5> . lia . Qed . 

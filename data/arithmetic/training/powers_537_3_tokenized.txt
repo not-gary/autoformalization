@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:w> \in \mathbb{N} $ . Let that some positive integer $ <var:R> $ is considered a <def:cube> natural number given $ <var:w> ^ <nat:3> = <var:R> $ . Accordingly the whole number <nat:8> is a <def:cube> . \end{theorem} \begin{proof} Take $ <var:w> = <nat:2> $ . Observe $ <var:w> ^ <nat:3> = <nat:8> $ . This yields our result is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:R> : nat ) := exists <var:w> : nat , ( <var:w> ^ <nat:3> = <var:R> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

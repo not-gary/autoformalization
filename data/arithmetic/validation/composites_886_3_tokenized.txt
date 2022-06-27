@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:k> \times <var:H> \times <var:r> = <nat:60> $ given $ <var:k> $ , $ <var:H> $ , $ <var:r> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Note that $ <var:k> * <var:r> * <var:H> = <nat:60> = <nat:5> * <nat:4> * <nat:3> $ . This indicates our theorem is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:k> <var:H> <var:r> : nat , ( <var:k> * <var:H> * <var:r> = <nat:60> ) . Proof . exists <nat:5> . exists <nat:3> . exists <nat:4> . repeat split . all : lia . Qed . 

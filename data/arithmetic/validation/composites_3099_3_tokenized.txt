@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:Q> \times <var:e> \times <var:O> $ is the same as $ <nat:270> $ . \end{theorem} \begin{proof} We confirm <nat:270> is the product between some whole numbers $ <var:e> $ , $ <var:Q> $ , and $ <var:O> $ . Observe that $ <var:e> \cdot <var:O> \cdot <var:Q> = <nat:270> $ produces $ <var:e> = <nat:9> $ , $ <var:O> = <nat:5> $ and $ <var:Q> = <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:e> <var:O> <var:Q> : nat , ( <var:Q> * <var:e> * <var:O> = <nat:270> ) . Proof . exists <nat:9> . exists <nat:5> . exists <nat:6> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:p> \in \mathbb{N} $ satisfying the condition that $ <var:p> > <nat:1> $ plus where the number <nat:512> is the repeated multiplication of integer $ <var:p> \in \mathbb{N} $ taken to the exponent <nat:9> . \end{theorem} \begin{proof} Allow $ <var:p> = <nat:2> $ . Moreover observe that $ <nat:2> $ is larger than <nat:1> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:p> : nat , ( <var:p> > <nat:1> ) /\ ( <nat:512> = <var:p> ^ <nat:9> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . apply <genH> . auto . Qed . 

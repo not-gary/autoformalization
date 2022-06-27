@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:11200> = <var:N> * <var:W> * <var:g> * <var:Q> * <var:D> $ . \end{theorem} \begin{proof} Note $ <nat:11200> = <var:Q> \cdot <var:g> \cdot <var:N> \cdot <var:D> \cdot <var:W> $ indicates $ <var:Q> = <nat:8> $ , $ <var:W> = <nat:5> $ , $ <var:g> = <nat:10> $ , $ <var:D> = <nat:4> $ , $ <var:N> = <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:D> <var:g> <var:W> <var:Q> <var:N> : nat , ( <nat:11200> = <var:N> * <var:W> * <var:g> * <var:Q> * <var:D> ) . Proof . exists <nat:4> . exists <nat:10> . exists <nat:5> . exists <nat:8> . exists <nat:7> . repeat split . all : lia . Qed . 

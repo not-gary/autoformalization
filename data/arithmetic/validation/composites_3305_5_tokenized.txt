@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:s> * <var:Q> * <var:M> * <var:l> * <var:j> $ is $ <nat:18480> $ . \end{theorem} \begin{proof} We justify $ <nat:18480> = <var:l> \cdot <var:Q> \cdot <var:j> \cdot <var:M> \cdot <var:s> $ . We show the statement is valid for $ <nat:6> \times <nat:8> \times <nat:5> \times <nat:7> \times <nat:11> = <nat:18480> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:M> <var:j> <var:l> <var:s> <var:Q> : nat , ( <var:s> * <var:Q> * <var:M> * <var:l> * <var:j> = <nat:18480> ) . Proof . exists <nat:7> . exists <nat:11> . exists <nat:5> . exists <nat:8> . exists <nat:6> . repeat split . all : lia . Qed . 

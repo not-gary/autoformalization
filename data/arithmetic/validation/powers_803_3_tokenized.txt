@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:i> \in \mathbb{Z}^+ $ so that $ <var:i> $ larger than <nat:1> as well as satisfying the condition that $ <var:i> ^ <nat:3> $ equals $ <nat:8> $ . \end{theorem} \begin{proof} Assume $ <var:i> = <nat:2> $ . This hints the result holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:i> : nat , ( <var:i> > <nat:1> ) /\ ( <var:i> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

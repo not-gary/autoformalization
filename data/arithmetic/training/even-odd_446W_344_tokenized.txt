@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:446> * <var:W> + <nat:344> $ must be even . \end{theorem} \begin{proof} We know $ <nat:344> $ is even . It can be checked that $ <nat:446> * <var:W> + <nat:344> $ must be even . We know that the pair $ <nat:446> * <var:W> $ is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:W> : nat , Nat . even ( <nat:446> * <var:W> + <nat:344> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:344> = true ) . { auto . } assert ( <genH> : Nat . even ( <nat:446> * <var:W> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:Y> \times <var:d> \times <var:c> $ is equivalent to $ <nat:352> $ . \end{theorem} \begin{proof} Observe $ <nat:352> = <var:Y> * <var:c> * <var:d> $ produces $ <var:Y> = <nat:11> $ , $ <var:d> = <nat:8> $ , $ <var:c> = <nat:4> $ . This indicates our result holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Y> <var:c> <var:d> : nat , ( <var:Y> * <var:d> * <var:c> = <nat:352> ) . Proof . exists <nat:11> . exists <nat:4> . exists <nat:8> . repeat split . all : lia . Qed . 

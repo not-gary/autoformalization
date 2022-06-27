@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} With some positive integers $ <var:R> $ $ <nat:46> + <var:R> \times <nat:316> $ is guaranteed to be even . \end{theorem} \begin{proof} $ <nat:316> \cdot <var:R> $ is known to be an even natural . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:R> : nat , Nat . even ( <nat:316> * <var:R> + <nat:46> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:316> * <var:R> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

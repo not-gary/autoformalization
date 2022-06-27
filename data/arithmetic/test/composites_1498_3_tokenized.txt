@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:168> is the product between $ <var:Z> $ , $ <var:H> $ and $ <var:z> $ . \end{theorem} \begin{proof} Note $ <nat:2> \cdot <nat:12> \cdot <nat:7> = <var:z> \cdot <var:Z> \cdot <var:H> = <nat:168> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Z> <var:H> <var:z> : nat , ( <nat:168> = <var:Z> * <var:H> * <var:z> ) . Proof . exists <nat:12> . exists <nat:7> . exists <nat:2> . repeat split . all : lia . Qed . 

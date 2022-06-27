@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:96> is the product between positive integers $ <var:k> $ , $ <var:J> $ . \end{theorem} \begin{proof} We justify $ <nat:96> = <var:J> \cdot <var:k> $ . Note $ <nat:96> = <var:k> \cdot <var:J> = <nat:12> \cdot <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:k> <var:J> : nat , ( <nat:96> = <var:k> * <var:J> ) . Proof . exists <nat:12> . exists <nat:8> . lia . Qed . 

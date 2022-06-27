@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:I> * <var:p> $ is $ <nat:21> $ . \end{theorem} \begin{proof} We verify the formula is true considering $ <nat:21> = <nat:7> \times <nat:3> $ . Thus , $ <var:I> * <var:p> = <nat:21> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:p> <var:I> : nat , ( <var:I> * <var:p> = <nat:21> ) . Proof . exists <nat:7> . exists <nat:3> . lia . Qed . 

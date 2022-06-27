@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:b> $ where $ <var:b> > <nat:1> $ and satisfying the condition that the positive integer <nat:128> is the exponent of natural number $ <var:b> $ exponentiated to the exponent <nat:7> . \end{theorem} \begin{proof} We demonstrate the claim is true in view of $ <nat:128> = <nat:2> ^ <nat:7> $ . Because of this , $ <nat:128> = <var:b> ^ <nat:7> $ is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:b> : nat , ( <var:b> > <nat:1> ) /\ ( <nat:128> = <var:b> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

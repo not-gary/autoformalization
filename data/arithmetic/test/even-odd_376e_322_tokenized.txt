@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:376> <var:e> + <nat:322> $ must be even . \end{theorem} \begin{proof} Additionally , observe the whole numbers $ <nat:376> $ must be even . Then , the products $ <var:e> \times <nat:376> $ is guaranteed to be even at the same time . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:e> : nat , Nat . even ( <nat:376> * <var:e> + <nat:322> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:376> = true ) . { auto . } assert ( <genH> : Nat . even ( <nat:376> * <var:e> ) = true ) . { rewrite Nat . even_mul . rewrite <genH> . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:H> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:H> > <nat:1> $ plus such that $ <var:H> ^ <nat:2> $ is equal to $ <nat:4> $ . \end{theorem} \begin{proof} Allow $ <var:H> = <nat:2> $ . We confirm our belief is valid in consideration of $ <nat:2> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:H> : nat , ( <var:H> > <nat:1> ) /\ ( <var:H> ^ <nat:2> = <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

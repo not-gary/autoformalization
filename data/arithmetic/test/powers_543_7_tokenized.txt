@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:128> $ is $ <var:U> ^ <nat:7> $ assuming $ <var:U> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Assume $ <var:U> = <nat:2> $ . Observe $ <var:U> ^ <nat:7> = <nat:128> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:U> : nat , ( <nat:128> = <var:U> ^ <nat:7> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:32> $ is equivalent to $ <var:O> ^ <nat:5> $ . \end{theorem} \begin{proof} Allow $ <var:O> = <nat:2> $ . We confirm <nat:32> is the repeated multiplication between some number $ <var:O> $ raised to the power <nat:5> . Observe that $ <var:O> ^ <nat:5> = <nat:32> $ . This produces the statement is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:O> : nat , ( <nat:32> = <var:O> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

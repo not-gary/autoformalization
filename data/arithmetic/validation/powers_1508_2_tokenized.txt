@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some integer $ <var:t> $ where $ <var:t> > <nat:1> $ plus where $ <nat:4> $ is equal to $ <var:t> ^ <nat:2> $ . \end{theorem} \begin{proof} We verify <nat:4> is the exponent between some whole number $ <var:t> $ raised to the exponent <nat:2> . Note that $ <nat:4> = <var:t> ^ <nat:2> = <nat:2> ^ <nat:2> $ . This shows the claim is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <var:t> > <nat:1> ) /\ ( <nat:4> = <var:t> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

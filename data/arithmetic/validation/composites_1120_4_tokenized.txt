@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:l> $ , $ <var:s> $ , $ <var:L> $ , and $ <var:n> $ be whole numbers satisfying the condition that the integer <nat:5544> is the multiplication of integers $ <var:l> $ , $ <var:s> $ , $ <var:L> $ , and $ <var:n> $ . \end{theorem} \begin{proof} Allow $ <var:n> = <nat:7> $ , $ <var:l> = <nat:11> $ , $ <var:s> = <nat:9> $ and $ <var:L> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:l> <var:s> <var:L> <var:n> : nat , ( <nat:5544> = <var:l> * <var:s> * <var:L> * <var:n> ) . Proof . exists <nat:11> . exists <nat:9> . exists <nat:8> . exists <nat:7> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:3240> is the multiplication of $ <var:y> $ , $ <var:f> $ , $ <var:P> $ , $ <var:t> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} We demonstrate $ <var:t> * <var:f> * <var:y> * <var:P> = <nat:3240> $ . Notice $ <nat:3> \times <nat:12> \times <nat:9> \times <nat:10> = <nat:3240> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:y> <var:f> <var:P> <var:t> : nat , ( <nat:3240> = <var:y> * <var:f> * <var:P> * <var:t> ) . Proof . exists <nat:9> . exists <nat:10> . exists <nat:3> . exists <nat:12> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:233> + <var:J> \times <nat:314> $ must be odd assuming some $ <var:J> $ . \end{theorem} \begin{proof} Multiplying between even naturals will be itself an even integer . So , $ <var:J> <nat:314> + <nat:233> $ must be odd . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:J> : nat , Nat . odd ( <nat:314> * <var:J> + <nat:233> ) = true . Proof . intros . rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

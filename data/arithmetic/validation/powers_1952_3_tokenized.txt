@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming that there exists natural number $ <var:m> $ then say that $ <var:b> \in \mathbb{N} $ will be considered to be a <def:cube> number given $ <var:b> = <var:m> ^ <nat:3> $ . Hence the number <nat:8> is a <def:cube> integer . \end{theorem} \begin{proof} Allow $ <var:m> = <nat:2> $ . We present $ <var:m> ^ <nat:3> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:b> : nat ) := exists <var:m> : nat , ( <var:b> = <var:m> ^ <nat:3> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

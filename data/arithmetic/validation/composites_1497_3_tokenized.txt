@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:140> is the product of $ <var:c> $ , $ <var:s> $ and $ <var:m> $ . \end{theorem} \begin{proof} Allow $ <var:m> = <nat:2> $ , $ <var:s> = <nat:7> $ , $ <var:c> = <nat:10> $ . We justify $ <nat:140> = <var:m> * <var:s> * <var:c> $ . Observe $ <var:c> * <var:s> * <var:m> = <nat:10> * <nat:7> * <nat:2> = <nat:140> $ . This yields our belief is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:c> <var:s> <var:m> : nat , ( <nat:140> = <var:c> * <var:s> * <var:m> ) . Proof . exists <nat:10> . exists <nat:7> . exists <nat:2> . repeat split . all : lia . Qed . 

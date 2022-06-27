@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are some whole numbers $ <var:d> $ , $ <var:M> $ , $ <var:u> $ so that $ <var:d> * <var:M> * <var:u> $ is equal to $ <nat:120> $ . \end{theorem} \begin{proof} Note $ <var:d> \times <var:M> \times <var:u> = <nat:120> $ shows $ <var:u> = <nat:8> $ , $ <var:M> = <nat:3> $ and $ <var:d> = <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:d> <var:M> <var:u> : nat , ( <var:d> * <var:M> * <var:u> = <nat:120> ) . Proof . exists <nat:5> . exists <nat:3> . exists <nat:8> . repeat split . all : lia . Qed . 

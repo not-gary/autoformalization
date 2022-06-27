@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:128> is the exponent between integer $ <var:c> \in \mathbb{N} $ raised to the degree <nat:7> so that $ <var:c> $ greater than or equivalent to <nat:2> . \end{theorem} \begin{proof} Take $ <var:c> = <nat:2> $ . We show $ <var:c> $ is larger than or equivalent to <nat:2> plus $ <nat:128> = <var:c> ^ <nat:7> $ . This yields our claim holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:c> : nat , ( <nat:128> = <var:c> ^ <nat:7> ) /\ ( <var:c> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

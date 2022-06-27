@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:R> \in \mathbb{N} $ such that $ <var:R> ^ <nat:5> = <nat:32> $ . \end{theorem} \begin{proof} Observe $ <nat:32> = <var:R> ^ <nat:5> $ shows $ <var:R> = <nat:2> $ . This implies the theory is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:R> : nat , ( <var:R> ^ <nat:5> = <nat:32> ) . Proof . exists <nat:2> . auto . Qed . 

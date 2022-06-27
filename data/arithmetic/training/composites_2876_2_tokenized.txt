@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:m> $ , $ <var:N> $ such that the positive integer <nat:110> is the product of integers $ <var:m> $ , $ <var:N> $ . \end{theorem} \begin{proof} Take $ <var:m> = <nat:11> $ and $ <var:N> = <nat:10> $ . Notice that $ <var:m> * <var:N> = <nat:110> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:m> <var:N> : nat , ( <nat:110> = <var:m> * <var:N> ) . Proof . exists <nat:11> . exists <nat:10> . lia . Qed . 

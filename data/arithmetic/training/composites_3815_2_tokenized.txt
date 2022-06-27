@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:20> $ is $ <var:V> \times <var:r> $ with $ <var:r> $ , and $ <var:V> $ . \end{theorem} \begin{proof} Take $ <var:r> = <nat:10> $ , $ <var:V> = <nat:2> $ . We demonstrate $ <var:V> \cdot <var:r> = <nat:20> $ . Note $ <nat:20> = <var:V> * <var:r> $ . This shows our formula is valid . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:r> <var:V> : nat , ( <nat:20> = <var:V> * <var:r> ) . Proof . exists <nat:10> . exists <nat:2> . lia . Qed . 

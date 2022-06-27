@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:w> $ be integers satisfying the condition that $ <var:w> $ more than or equivalent to <nat:2> as well as satisfying the condition that $ <var:w> ^ <nat:2> $ equals $ <nat:4> $ . \end{theorem} \begin{proof} Let $ <var:w> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:w> : nat , ( <var:w> >= <nat:2> ) /\ ( <var:w> ^ <nat:2> = <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

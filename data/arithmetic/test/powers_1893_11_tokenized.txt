@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} If and only if there is number $ <var:t> $ we define that $ <var:h> \in \mathbb{N} $ will be called a <def:hendekeract> integer assuming $ <var:t> ^ <nat:11> = <var:h> $ . Consequently the integer <nat:2048> is a <def:hendekeract> whole number . \end{theorem} \begin{proof} Take $ <var:t> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:hendekeract> ( <var:h> : nat ) := exists <var:t> : nat , ( <var:t> ^ <nat:11> = <var:h> ) . Theorem <genP:1> : <def:hendekeract> <nat:2048> . Proof . unfold <def:hendekeract> . exists <nat:2> . auto . Qed . 

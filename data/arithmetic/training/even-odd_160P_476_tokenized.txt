@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:P> <nat:160> + <nat:476> $ will be even . \end{theorem} \begin{proof} Take note that the term $ <nat:160> \cdot <var:P> $ is an even positive integer . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:P> : nat , Nat . even ( <nat:160> * <var:P> + <nat:476> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:160> * <var:P> ) = true ) . { rewrite Nat . even_mul . auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

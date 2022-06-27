@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:Y> $ , $ <var:j> $ , $ <var:u> $ , and $ <var:f> \in \mathbb{Z}^+ $ such that $ <var:Y> * <var:j> * <var:f> * <var:u> $ equals $ <nat:1152> $ . \end{theorem} \begin{proof} Take $ <var:u> = <nat:6> $ , $ <var:f> = <nat:8> $ , $ <var:j> = <nat:2> $ , $ <var:Y> = <nat:12> $ . Notice $ <nat:1152> = <var:f> \cdot <var:Y> \cdot <var:j> \cdot <var:u> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Y> <var:j> <var:u> <var:f> : nat , ( <var:Y> * <var:j> * <var:f> * <var:u> = <nat:1152> ) . Proof . exists <nat:12> . exists <nat:2> . exists <nat:6> . exists <nat:8> . repeat split . all : lia . Qed . 

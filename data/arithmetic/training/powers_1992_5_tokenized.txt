@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:32> is the exponential of natural number $ <var:z> \in \mathbb{Z}^+ $ exponentiated to the exponential <nat:5> . \end{theorem} \begin{proof} Assume $ <var:z> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:z> : nat , ( <nat:32> = <var:z> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

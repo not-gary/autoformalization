@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:K> \in \mathbb{Z}^+ $ such that $ <var:K> $ larger than <nat:1> and such that $ <var:K> ^ <nat:9> $ is the same as $ <nat:512> $ . \end{theorem} \begin{proof} Allow $ <var:K> = <nat:2> $ . Additionally notice $ <nat:2> $ is more than <nat:1> . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <var:K> > <nat:1> ) /\ ( <var:K> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . apply <genH> . auto . Qed . 

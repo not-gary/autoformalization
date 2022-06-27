@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:p> $ are natural numbers such that $ <var:p> ^ <nat:4> $ is equal to $ <nat:16> $ . \end{theorem} \begin{proof} Note that $ <nat:16> = <nat:2> ^ <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:p> : nat , ( <var:p> ^ <nat:4> = <nat:16> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:6> is the multiplication of positive integers $ <var:p> $ , and $ <var:Y> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Let $ <var:Y> = <nat:3> $ , $ <var:p> = <nat:2> $ . We confirm $ <var:Y> * <var:p> = <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:p> <var:Y> : nat , ( <nat:6> = <var:p> * <var:Y> ) . Proof . exists <nat:2> . exists <nat:3> . lia . Qed . 

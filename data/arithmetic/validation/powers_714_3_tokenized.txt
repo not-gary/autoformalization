@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The integer <nat:8> is the exponential between integer $ <var:R> $ exponentiated to the power <nat:3> . \end{theorem} \begin{proof} We justify the thesis holds in consideration of $ <nat:8> = <var:R> ^ <nat:3> $ shows $ <var:R> = <nat:2> $ . Because of this , $ <var:R> ^ <nat:3> = <nat:8> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:R> : nat , ( <nat:8> = <var:R> ^ <nat:3> ) . Proof . exists <nat:2> . auto . Qed . 

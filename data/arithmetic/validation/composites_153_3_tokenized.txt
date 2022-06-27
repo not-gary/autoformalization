@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:M> \cdot <var:K> \cdot <var:f> $ is $ <nat:180> $ with $ <var:K> $ , $ <var:f> $ and $ <var:M> \in \mathbb{N} $ . \end{theorem} \begin{proof} Allow $ <var:M> = <nat:4> $ , $ <var:K> = <nat:5> $ , and $ <var:f> = <nat:9> $ . Observe $ <nat:180> = <nat:5> * <nat:9> * <nat:4> $ . This shows our theory holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:K> <var:f> <var:M> : nat , ( <var:M> * <var:K> * <var:f> = <nat:180> ) . Proof . exists <nat:5> . exists <nat:9> . exists <nat:4> . repeat split . all : lia . Qed . 

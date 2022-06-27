@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:464> + <nat:414> \times <var:X> $ must be even using every natural terms $ <var:X> $ . \end{theorem} \begin{proof} Recall $ <nat:464> $ is trivially even . We know the multiplication of even naturals will be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:X> : nat , Nat . even ( <nat:414> * <var:X> + <nat:464> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:464> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

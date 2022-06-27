@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:V> $ , and $ <var:B> \in \mathbb{Z}^+ $ so that $ <var:B> * <var:V> $ equals $ <nat:108> $ . \end{theorem} \begin{proof} Assume $ <var:B> = <nat:12> $ , and $ <var:V> = <nat:9> $ . We justify $ <var:V> * <var:B> = <nat:108> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:V> <var:B> : nat , ( <var:B> * <var:V> = <nat:108> ) . Proof . exists <nat:9> . exists <nat:12> . lia . Qed . 

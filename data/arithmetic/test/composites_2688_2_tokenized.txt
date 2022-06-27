@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:110> is the product of numbers $ <var:D> $ , $ <var:c> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Take $ <var:D> = <nat:11> $ and $ <var:c> = <nat:10> $ . Notice that $ <nat:10> \cdot <nat:11> = <nat:110> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:D> <var:c> : nat , ( <nat:110> = <var:D> * <var:c> ) . Proof . exists <nat:11> . exists <nat:10> . lia . Qed . 

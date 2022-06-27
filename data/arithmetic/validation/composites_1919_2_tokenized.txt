@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:P> $ , and $ <var:D> \in \mathbb{N} $ such that the positive integer <nat:80> is the product between integers $ <var:P> $ , $ <var:D> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} Allow $ <var:P> = <nat:8> $ and $ <var:D> = <nat:10> $ . We confirm <nat:80> is the product between $ <var:D> $ , and $ <var:P> \in \mathbb{N} $ . Notice that $ <nat:8> * <nat:10> = <nat:80> $ . This implies the principle holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:P> <var:D> : nat , ( <nat:80> = <var:P> * <var:D> ) . Proof . exists <nat:8> . exists <nat:10> . lia . Qed . 

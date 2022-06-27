@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:E> ^ <nat:2> $ is the same as $ <nat:4> $ with $ <var:E> $ so that $ <var:E> > <nat:1> $ . \end{theorem} \begin{proof} Note that $ <nat:4> = <var:E> ^ <nat:2> $ yields $ <var:E> = <nat:2> $ . This shows the theory is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:E> : nat , ( <var:E> ^ <nat:2> = <nat:4> ) /\ ( <var:E> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

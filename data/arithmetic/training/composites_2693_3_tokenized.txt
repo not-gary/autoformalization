@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:z> \cdot <var:r> \cdot <var:m> $ is equivalent to $ <nat:150> $ for $ <var:z> $ , $ <var:m> $ and $ <var:r> $ . \end{theorem} \begin{proof} Note $ <nat:5> \times <nat:3> \times <nat:10> = <nat:150> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:z> <var:m> <var:r> : nat , ( <var:z> * <var:r> * <var:m> = <nat:150> ) . Proof . exists <nat:10> . exists <nat:3> . exists <nat:5> . repeat split . all : lia . Qed . 

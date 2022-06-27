@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:128> is the repeated product between $ <var:j> $ raised to the power <nat:7> where $ <var:j> $ larger than <nat:1> . \end{theorem} \begin{proof} Note that $ <nat:128> = <var:j> ^ <nat:7> $ indicates $ <var:j> = <nat:2> $ . This implies our formula holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <nat:128> = <var:j> ^ <nat:7> ) /\ ( <var:j> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

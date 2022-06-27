@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are some positive integers $ <var:K> $ , $ <var:F> $ so that the natural number <nat:18> is the multiplication of $ <var:K> $ , $ <var:F> $ . \end{theorem} \begin{proof} Assume $ <var:K> = <nat:6> $ , $ <var:F> = <nat:3> $ . We demonstrate $ <var:K> \times <var:F> = <nat:18> $ . This indicates our statement holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:K> <var:F> : nat , ( <nat:18> = <var:K> * <var:F> ) . Proof . exists <nat:6> . exists <nat:3> . lia . Qed . 

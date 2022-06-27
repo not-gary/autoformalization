@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is $ <var:t> \in \mathbb{Z}^+ $ satisfying the condition that $ <var:t> $ more than <nat:1> as well as so that the natural number <nat:128> is the repeated multiplication of integer $ <var:t> \in \mathbb{N} $ repeatedly multiplied to the exponential <nat:7> . \end{theorem} \begin{proof} Notice $ <nat:128> = <var:t> ^ <nat:7> $ hints $ <var:t> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:t> : nat , ( <var:t> > <nat:1> ) /\ ( <nat:128> = <var:t> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

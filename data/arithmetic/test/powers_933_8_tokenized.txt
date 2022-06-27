@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:256> is the repeated multiplication between number $ <var:R> $ repeatedly multiplied to the degree <nat:8> . \end{theorem} \begin{proof} We demonstrate our belief is true in consideration of $ <nat:256> = <var:R> ^ <nat:8> $ hints $ <var:R> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:R> : nat , ( <nat:256> = <var:R> ^ <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

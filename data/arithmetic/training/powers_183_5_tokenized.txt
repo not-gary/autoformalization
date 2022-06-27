@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:P> \in \mathbb{N} $ where $ <var:P> $ larger than or equivalent to <nat:2> and so that $ <var:P> ^ <nat:5> $ is equal to $ <nat:32> $ . \end{theorem} \begin{proof} Assume $ <var:P> = <nat:2> $ . Note that $ <nat:2> ^ <nat:5> = <nat:32> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:P> : nat , ( <var:P> >= <nat:2> ) /\ ( <var:P> ^ <nat:5> = <nat:32> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

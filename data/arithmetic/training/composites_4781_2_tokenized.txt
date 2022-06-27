@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:40> $ is equal to $ <var:R> \cdot <var:e> $ where $ <var:e> $ and $ <var:R> $ more than <nat:1> . \end{theorem} \begin{proof} Let $ <var:R> = <nat:8> $ , and $ <var:e> = <nat:5> $ . We present $ <nat:40> = <var:e> \cdot <var:R> $ as well as $ <var:e> $ and $ <var:R> > <nat:1> $ . Observe $ <nat:40> = <var:e> \cdot <var:R> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:e> <var:R> : nat , ( <nat:40> = <var:R> * <var:e> ) /\ ( <var:e> > <nat:1> ) /\ ( <var:R> > <nat:1> ) . Proof . exists <nat:5> . exists <nat:8> . lia . Qed . 

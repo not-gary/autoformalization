@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:r> $ , $ <var:d> $ , and $ <var:q> $ be integers such that the number <nat:384> is the product of $ <var:r> $ , $ <var:d> $ , $ <var:q> $ . \end{theorem} \begin{proof} Allow $ <var:q> = <nat:4> $ , $ <var:r> = <nat:8> $ , and $ <var:d> = <nat:12> $ . Hence , $ <nat:384> = <var:d> \times <var:q> \times <var:r> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:r> <var:d> <var:q> : nat , ( <nat:384> = <var:r> * <var:d> * <var:q> ) . Proof . exists <nat:8> . exists <nat:12> . exists <nat:4> . repeat split . all : lia . Qed . 

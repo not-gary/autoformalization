@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The whole number <nat:512> is the exponent of natural number $ <var:i> $ exponentiated to the degree <nat:9> satisfying the condition that $ <var:i> $ more than <nat:1> . \end{theorem} \begin{proof} Notice $ <nat:2> > <nat:1> $ . Further notice that also $ <nat:512> = <var:i> ^ <nat:9> $ shows $ <var:i> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:i> : nat , ( <nat:512> = <var:i> ^ <nat:9> ) /\ ( <var:i> > <nat:1> ) . Proof . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } exists <nat:2> . split . auto . apply <genH> . Qed . 

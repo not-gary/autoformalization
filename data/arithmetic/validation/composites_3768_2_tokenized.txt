@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:e> $ and $ <var:J> $ be positive integers satisfying the condition that $ <var:J> $ , $ <var:e> $ greater than or equal to <nat:2> as well as such that the whole number <nat:70> is the product of positive integers $ <var:e> $ , and $ <var:J> $ . \end{theorem} \begin{proof} Allow $ <var:J> = <nat:10> $ , $ <var:e> = <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:e> <var:J> : nat , ( <var:J> >= <nat:2> ) /\ ( <var:e> >= <nat:2> ) /\ ( <nat:70> = <var:e> * <var:J> ) . Proof . exists <nat:7> . exists <nat:10> . lia . Qed . 

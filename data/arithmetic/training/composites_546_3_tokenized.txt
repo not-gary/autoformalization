@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:135> is the product between integers $ <var:r> $ , $ <var:w> $ and $ <var:B> $ such that $ <var:w> $ , $ <var:r> $ , $ <var:B> $ more than <nat:1> . \end{theorem} \begin{proof} Assume $ <var:w> = <nat:3> $ , $ <var:r> = <nat:5> $ and $ <var:B> = <nat:9> $ . This indicates the theorem holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:r> <var:w> <var:B> : nat , ( <nat:135> = <var:r> * <var:w> * <var:B> ) /\ ( <var:w> > <nat:1> ) /\ ( <var:r> > <nat:1> ) /\ ( <var:B> > <nat:1> ) . Proof . exists <nat:5> . exists <nat:3> . exists <nat:9> . repeat split . all : lia . Qed . 

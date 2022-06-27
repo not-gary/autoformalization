@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:293> + <var:c> * <nat:34> $ is odd with any $ <var:c> \in \mathbb{Z}^+ $ . \end{theorem} \begin{proof} It can be proven that the formula $ <nat:293> + <var:c> \times <nat:34> $ is odd . The pair $ <nat:34> \times <var:c> $ is guaranteed to be an even number . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:c> : nat , Nat . odd ( <nat:34> * <var:c> + <nat:293> ) = true . Proof . intros . assert ( <genH> : Nat . even ( <nat:34> * <var:c> ) = true ) . { rewrite Nat . even_mul . auto . } rewrite Nat . odd_add . rewrite <- Nat . negb_even . repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

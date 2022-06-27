@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exists $ <var:j> \in \mathbb{N} $ where $ <var:j> $ larger than <nat:1> as well as such that $ <nat:16> $ is $ <var:j> ^ <nat:4> $ . \end{theorem} \begin{proof} Note that $ <nat:16> = <var:j> ^ <nat:4> $ hints $ <var:j> = <nat:2> $ . Thus , $ <var:j> ^ <nat:4> = <nat:16> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <var:j> > <nat:1> ) /\ ( <nat:16> = <var:j> ^ <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

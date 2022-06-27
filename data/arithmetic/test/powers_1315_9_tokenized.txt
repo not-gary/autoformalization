@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:D> $ be whole numbers so that $ <var:D> $ greater than or equal to <nat:2> as well as so that $ <var:D> ^ <nat:9> = <nat:512> $ . \end{theorem} \begin{proof} We verify <nat:512> is the repeated multiplication of some $ <var:D> $ repeatedly multiplied to the degree <nat:9> . We present our formula holds in consideration of $ <nat:512> = <nat:2> ^ <nat:9> = <var:D> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:D> : nat , ( <var:D> >= <nat:2> ) /\ ( <var:D> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

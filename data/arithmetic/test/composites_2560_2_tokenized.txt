@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:24> is the product between positive integers $ <var:X> $ and $ <var:l> \in \mathbb{N} $ such that $ <var:l> $ , and $ <var:X> \geq <nat:2> $ . \end{theorem} \begin{proof} Note $ <nat:12> \times <nat:2> = <nat:24> = <var:l> \times <var:X> $ . So , $ <var:l> \times <var:X> = <nat:24> $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:X> <var:l> : nat , ( <nat:24> = <var:X> * <var:l> ) /\ ( <var:l> >= <nat:2> ) /\ ( <var:X> >= <nat:2> ) . Proof . exists <nat:2> . exists <nat:12> . lia . Qed . 

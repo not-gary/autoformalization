@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:20> is the product between $ <var:K> $ , $ <var:p> $ . \end{theorem} \begin{proof} Allow $ <var:K> = <nat:10> $ , and $ <var:p> = <nat:2> $ . We verify $ <var:K> \cdot <var:p> = <nat:20> $ . Observe $ <nat:2> * <nat:10> = <nat:20> = <var:p> * <var:K> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:K> <var:p> : nat , ( <nat:20> = <var:K> * <var:p> ) . Proof . exists <nat:10> . exists <nat:2> . lia . Qed . 

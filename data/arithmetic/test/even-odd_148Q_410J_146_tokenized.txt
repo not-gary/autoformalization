@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:Q> \cdot <nat:148> + <nat:146> + <var:J> \cdot <nat:410> $ must be even using some natural terms $ <var:J> $ , and $ <var:Q> $ . \end{theorem} \begin{proof} Observe taking the product between even numbers in $ \mathbb{Z}^+ $ is guaranteed to be even . Recall the totaling between even naturals together must be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:J> <var:Q> : nat , Nat . even ( <nat:148> * <var:Q> + <nat:410> * <var:J> + <nat:146> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . repeat rewrite Nat . even_add . auto . Qed . 

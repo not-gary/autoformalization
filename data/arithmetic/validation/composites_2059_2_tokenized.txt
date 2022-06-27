@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:72> $ is equal to $ <var:x> \cdot <var:F> $ given $ <var:F> $ , and $ <var:x> \in \mathbb{N} $ . \end{theorem} \begin{proof} Allow $ <var:F> = <nat:12> $ , $ <var:x> = <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:F> <var:x> : nat , ( <nat:72> = <var:x> * <var:F> ) . Proof . exists <nat:12> . exists <nat:6> . lia . Qed . 

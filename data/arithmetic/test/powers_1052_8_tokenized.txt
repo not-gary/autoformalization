@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:256> is the repeated product between number $ <var:D> $ repeatedly multiplied to the exponent <nat:8> . \end{theorem} \begin{proof} Let $ <var:D> = <nat:2> $ . We present the formula is true considering $ <nat:256> = <var:D> ^ <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:D> : nat , ( <nat:256> = <var:D> ^ <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

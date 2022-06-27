@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:w> ^ <nat:2> $ equals $ <nat:4> $ assuming $ <var:w> $ . \end{theorem} \begin{proof} Let $ <var:w> = <nat:2> $ . Observe that $ <var:w> ^ <nat:2> = <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:w> : nat , ( <var:w> ^ <nat:2> = <nat:4> ) . Proof . exists <nat:2> . auto . Qed . 

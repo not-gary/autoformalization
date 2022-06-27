@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:s> $ are numbers satisfying the condition that $ <var:s> \geq <nat:2> $ as well as where $ <var:s> ^ <nat:9> $ is equivalent to $ <nat:512> $ . \end{theorem} \begin{proof} Assume $ <var:s> = <nat:2> $ . We confirm our proposition is true considering $ <nat:512> = <nat:2> ^ <nat:9> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:s> : nat , ( <var:s> >= <nat:2> ) /\ ( <var:s> ^ <nat:9> = <nat:512> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

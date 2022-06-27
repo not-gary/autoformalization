@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:H> \in \mathbb{Z}^+ $ where $ <var:H> $ larger than <nat:1> and where $ <var:H> ^ <nat:2> $ is equivalent to $ <nat:4> $ . \end{theorem} \begin{proof} Note that $ <var:H> ^ <nat:2> = <nat:4> = <nat:2> ^ <nat:2> $ . So , $ <nat:4> = <var:H> ^ <nat:2> $ is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:H> : nat , ( <var:H> > <nat:1> ) /\ ( <var:H> ^ <nat:2> = <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

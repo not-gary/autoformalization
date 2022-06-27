@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:412> + <var:l> <nat:370> $ must be even . \end{theorem} \begin{proof} Recall $ <nat:412> $ is known as an even element of $ \mathbb{Z}^+ $ . See that the adding between even positive integers together is even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:l> : nat , Nat . even ( <nat:370> * <var:l> + <nat:412> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:412> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

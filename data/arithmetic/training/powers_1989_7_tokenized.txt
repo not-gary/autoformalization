@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There is some number $ <var:N> $ where $ <var:N> \geq <nat:2> $ and where $ <nat:128> $ is equal to $ <var:N> ^ <nat:7> $ . \end{theorem} \begin{proof} Observe $ <nat:128> = <var:N> ^ <nat:7> = <nat:2> ^ <nat:7> $ . Hence , $ <var:N> \geq <nat:2> $ as well as $ <var:N> ^ <nat:7> = <nat:128> $ is verified . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <var:N> >= <nat:2> ) /\ ( <nat:128> = <var:N> ^ <nat:7> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

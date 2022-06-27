@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:Z> \in \mathbb{N} $ . Take that $ <var:K> \in \mathbb{Z}^+ $ will be named a <def:cube> positive integer assuming $ <var:Z> ^ <nat:3> = <var:K> $ . Hence the integer <nat:8> is a <def:cube> number . \end{theorem} \begin{proof} Take $ <var:Z> = <nat:2> $ . We present $ <nat:8> = <var:Z> ^ <nat:3> $ . Note that $ <nat:2> ^ <nat:3> = <var:Z> ^ <nat:3> = <nat:8> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:K> : nat ) := exists <var:Z> : nat , ( <var:Z> ^ <nat:3> = <var:K> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

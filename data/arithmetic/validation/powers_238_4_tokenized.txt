@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:y> $ as whole numbers where $ <var:y> \geq <nat:2> $ plus where the whole number <nat:16> is the exponent of natural number $ <var:y> $ raised to the power <nat:4> . \end{theorem} \begin{proof} Observe that $ <var:y> ^ <nat:4> = <nat:16> $ gives $ <var:y> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:y> : nat , ( <var:y> >= <nat:2> ) /\ ( <nat:16> = <var:y> ^ <nat:4> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

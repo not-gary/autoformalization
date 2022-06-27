@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ \exists <var:R> $ , $ <var:g> $ , and $ <var:F> $ where $ <nat:300> = <var:F> \cdot <var:R> \cdot <var:g> $ . \end{theorem} \begin{proof} Assume $ <var:g> = <nat:6> $ , $ <var:R> = <nat:5> $ , $ <var:F> = <nat:10> $ . We demonstrate the result holds by reason of $ <var:F> \cdot <var:R> \cdot <var:g> = <nat:300> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:R> <var:g> <var:F> : nat , ( <nat:300> = <var:F> * <var:R> * <var:g> ) . Proof . exists <nat:5> . exists <nat:6> . exists <nat:10> . repeat split . all : lia . Qed . 

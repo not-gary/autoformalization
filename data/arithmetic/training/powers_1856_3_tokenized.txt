@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:A> ^ <nat:3> $ is equal to $ <nat:8> $ given $ <var:A> $ . \end{theorem} \begin{proof} Observe $ <nat:8> = <var:A> ^ <nat:3> $ indicates $ <var:A> = <nat:2> $ . Therefore , <nat:8> is the raising of of some $ <var:A> $ exponentiated to the power <nat:3> is validated . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:A> : nat , ( <var:A> ^ <nat:3> = <nat:8> ) . Proof . exists <nat:2> . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:8> is the repeated multiplication of integer $ <var:L> $ exponentiated to the degree <nat:3> where $ <var:L> $ greater than or equal to <nat:2> . \end{theorem} \begin{proof} Observe that $ <nat:2> ^ <nat:3> = <nat:8> = <var:L> ^ <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:L> : nat , ( <nat:8> = <var:L> ^ <nat:3> ) /\ ( <var:L> >= <nat:2> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

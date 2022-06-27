@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:O> $ , $ <var:T> \in \mathbb{Z}^+ $ such that the positive integer <nat:28> is the multiplication of natural numbers $ <var:O> $ , and $ <var:T> \in \mathbb{N} $ . \end{theorem} \begin{proof} Take $ <var:O> = <nat:7> $ , and $ <var:T> = <nat:4> $ . We demonstrate $ <var:O> \cdot <var:T> = <nat:28> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:O> <var:T> : nat , ( <nat:28> = <var:O> * <var:T> ) . Proof . exists <nat:7> . exists <nat:4> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:120> is the product of integers $ <var:n> $ , $ <var:P> $ and $ <var:G> $ such that $ <var:P> $ , $ <var:n> $ , and $ <var:G> $ larger than <nat:1> . \end{theorem} \begin{proof} Note $ <nat:120> = <nat:5> * <nat:6> * <nat:4> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:n> <var:P> <var:G> : nat , ( <nat:120> = <var:n> * <var:P> * <var:G> ) /\ ( <var:P> > <nat:1> ) /\ ( <var:n> > <nat:1> ) /\ ( <var:G> > <nat:1> ) . Proof . exists <nat:6> . exists <nat:5> . exists <nat:4> . repeat split . all : lia . Qed . 

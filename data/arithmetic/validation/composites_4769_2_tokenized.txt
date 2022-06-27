@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:15> is the product of integers $ <var:H> $ , $ <var:z> $ satisfying the condition that $ <var:z> $ and $ <var:H> \geq <nat:2> $ . \end{theorem} \begin{proof} Let $ <var:H> = <nat:3> $ , and $ <var:z> = <nat:5> $ . We demonstrate $ <var:z> * <var:H> = <nat:15> $ . This suggests our belief is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:H> <var:z> : nat , ( <nat:15> = <var:H> * <var:z> ) /\ ( <var:z> >= <nat:2> ) /\ ( <var:H> >= <nat:2> ) . Proof . exists <nat:3> . exists <nat:5> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:K> $ as positive integers . the number <nat:32> is the exponential between integer $ <var:K> $ exponentiated to the exponent <nat:5> . \end{theorem} \begin{proof} Assume $ <var:K> = <nat:2> $ . We prove $ <nat:32> = <var:K> ^ <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:K> : nat , ( <nat:32> = <var:K> ^ <nat:5> ) . Proof . exists <nat:2> . auto . Qed . 

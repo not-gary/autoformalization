@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some whole numbers $ <var:t> $ and $ <var:v> $ satisfying the condition that $ <var:t> \cdot <var:v> $ is $ <nat:96> $ . \end{theorem} \begin{proof} Allow $ <var:v> = <nat:8> $ , $ <var:t> = <nat:12> $ . We justify $ <nat:96> = <var:t> * <var:v> $ . Note $ <var:v> \times <var:t> = <nat:96> = <nat:8> \times <nat:12> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:t> <var:v> : nat , ( <var:t> * <var:v> = <nat:96> ) . Proof . exists <nat:12> . exists <nat:8> . lia . Qed . 

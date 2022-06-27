@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are some positive integers $ <var:m> $ , $ <var:O> $ , $ <var:o> $ so that the integer <nat:120> is the multiplication between integers $ <var:m> $ , $ <var:O> $ and $ <var:o> $ . \end{theorem} \begin{proof} Allow $ <var:m> = <nat:10> $ , $ <var:o> = <nat:2> $ , and $ <var:O> = <nat:6> $ . This indicates our statement is true . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:m> <var:O> <var:o> : nat , ( <nat:120> = <var:m> * <var:O> * <var:o> ) . Proof . exists <nat:10> . exists <nat:6> . exists <nat:2> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:B> \times <var:H> $ equals $ <nat:50> $ . \end{theorem} \begin{proof} Take $ <var:H> = <nat:10> $ and $ <var:B> = <nat:5> $ . Note $ <nat:10> \times <nat:5> = <nat:50> = <var:H> \times <var:B> $ . Consequently , <nat:50> is the multiplication of some numbers $ <var:B> $ , and $ <var:H> $ is validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:H> <var:B> : nat , ( <var:B> * <var:H> = <nat:50> ) . Proof . exists <nat:10> . exists <nat:5> . lia . Qed . 

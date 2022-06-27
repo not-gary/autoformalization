@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The natural number <nat:30> is the multiplication of natural numbers $ <var:G> $ , $ <var:q> $ such that $ <var:G> $ , and $ <var:q> \geq <nat:2> $ . \end{theorem} \begin{proof} Note that $ <var:q> \times <var:G> = <nat:30> $ hints $ <var:q> = <nat:5> $ and $ <var:G> = <nat:6> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:G> <var:q> : nat , ( <nat:30> = <var:G> * <var:q> ) /\ ( <var:G> >= <nat:2> ) /\ ( <var:q> >= <nat:2> ) . Proof . exists <nat:6> . exists <nat:5> . lia . Qed . 

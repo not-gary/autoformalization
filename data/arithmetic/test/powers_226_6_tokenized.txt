@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:w> $ be whole numbers so that $ <var:w> $ larger than <nat:1> plus satisfying the condition that $ <var:w> ^ <nat:6> $ is equal to $ <nat:64> $ . \end{theorem} \begin{proof} Allow $ <var:w> = <nat:2> $ . We verify $ <var:w> ^ <nat:6> = <nat:64> $ . We demonstrate our result holds as $ <nat:2> ^ <nat:6> = <nat:64> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:w> : nat , ( <var:w> > <nat:1> ) /\ ( <var:w> ^ <nat:6> = <nat:64> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:m> ^ <nat:2> $ is the same as $ <nat:4> $ assuming $ <var:m> $ so that $ <var:m> $ larger than <nat:1> . \end{theorem} \begin{proof} Take $ <var:m> = <nat:2> $ . This indicates the proposition is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:m> : nat , ( <var:m> ^ <nat:2> = <nat:4> ) /\ ( <var:m> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

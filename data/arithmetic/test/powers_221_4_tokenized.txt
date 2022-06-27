@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <var:F> ^ <nat:4> = <nat:16> $ given $ <var:F> \in \mathbb{Z}^+ $ so that $ <var:F> \geq <nat:2> $ . \end{theorem} \begin{proof} Notice $ <nat:2> \geq <nat:2> $ . Additionally notice additionally $ <nat:2> ^ <nat:4> = <nat:16> $ . This implies the proposition is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:F> : nat , ( <var:F> ^ <nat:4> = <nat:16> ) /\ ( <var:F> >= <nat:2> ) . Proof . assert ( <genH> : <nat:2> >= <nat:2> ) . { lia . } exists <nat:2> . split . auto . apply <genH> . Qed . 

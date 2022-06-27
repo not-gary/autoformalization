@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are some whole numbers $ <var:n> $ , $ <var:O> $ so that the positive integer <nat:36> is the multiplication of numbers $ <var:n> $ and $ <var:O> $ . \end{theorem} \begin{proof} Allow $ <var:O> = <nat:9> $ , and $ <var:n> = <nat:4> $ . We justify the belief is true in consideration of $ <nat:9> \cdot <nat:4> = <nat:36> $ . So , <nat:36> is the product of $ <var:n> $ and $ <var:O> \in \mathbb{N} $ has been validated . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:n> <var:O> : nat , ( <nat:36> = <var:n> * <var:O> ) . Proof . exists <nat:4> . exists <nat:9> . lia . Qed . 

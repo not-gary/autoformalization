@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Supposing that there is $ <var:f> \in \mathbb{Z}^+ $ we define that $ <var:H> \in \mathbb{Z}^+ $ will be considered to be a <def:square> whole number given $ <var:f> ^ <nat:2> = <var:H> $ . Then <nat:4> is a <def:square> positive integer . \end{theorem} \begin{proof} Note $ <nat:4> = <nat:2> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:square> ( <var:H> : nat ) := exists <var:f> : nat , ( <var:f> ^ <nat:2> = <var:H> ) . Theorem <genP:1> : <def:square> <nat:4> . Proof . unfold <def:square> . exists <nat:2> . auto . Qed . 

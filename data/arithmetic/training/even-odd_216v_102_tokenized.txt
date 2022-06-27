@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:102> + <var:v> \cdot <nat:216> $ will be even given every positive terms $ <var:v> $ . \end{theorem} \begin{proof} Take note that $ <nat:102> $ is even . Recall that the addition between an even number with an even number in $ \mathbb{N} $ is guaranteed to be even . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:v> : nat , Nat . even ( <nat:216> * <var:v> + <nat:102> ) = true . Proof . intros . assert ( <genH> : Nat . even <nat:102> = true ) . { auto . } repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . rewrite <genH> . auto . Qed . 

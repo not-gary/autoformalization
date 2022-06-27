@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:512> is the exponential between integer $ <var:G> \in \mathbb{N} $ repeatedly multiplied to the exponential <nat:9> such that $ <var:G> $ larger than <nat:1> . \end{theorem} \begin{proof} We verify $ <var:G> ^ <nat:9> = <nat:512> $ . Observe $ <nat:2> ^ <nat:9> = <nat:512> $ . This yields the theorem is true . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:G> : nat , ( <nat:512> = <var:G> ^ <nat:9> ) /\ ( <var:G> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

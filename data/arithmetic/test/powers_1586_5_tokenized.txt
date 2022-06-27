@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:32> $ is the same as $ <var:c> ^ <nat:5> $ for $ <var:c> \in \mathbb{N} $ satisfying the condition that $ <var:c> $ greater than <nat:1> . \end{theorem} \begin{proof} Observe that $ <var:c> ^ <nat:5> = <nat:32> $ implies $ <var:c> = <nat:2> $ . Thus , $ <var:c> ^ <nat:5> = <nat:32> $ is true has been proven . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:c> : nat , ( <nat:32> = <var:c> ^ <nat:5> ) /\ ( <var:c> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

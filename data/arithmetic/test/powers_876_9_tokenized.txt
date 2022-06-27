@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:I> \in \mathbb{N} $ satisfying the condition that $ <var:I> $ larger than or equivalent to <nat:2> as well as satisfying the condition that <nat:512> is the raising of of integer $ <var:I> \in \mathbb{N} $ exponentiated to the degree <nat:9> . \end{theorem} \begin{proof} Let $ <var:I> = <nat:2> $ . Notice that $ <nat:512> = <var:I> ^ <nat:9> $ . This indicates our theorem holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:I> : nat , ( <var:I> >= <nat:2> ) /\ ( <nat:512> = <var:I> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

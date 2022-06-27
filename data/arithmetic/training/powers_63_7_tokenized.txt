@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Say that given there exists $ <var:M> \in \mathbb{Z}^+ $ then claim that $ <var:V> \in \mathbb{N} $ is a <def:hepteract> if $ <var:V> = <var:M> ^ <nat:7> $ . For this reason the natural number <nat:128> is a <def:hepteract> whole number . \end{theorem} \begin{proof} Assume $ <var:M> = <nat:2> $ . Notice $ <nat:128> = <nat:2> ^ <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:hepteract> ( <var:V> : nat ) := exists <var:M> : nat , ( <var:V> = <var:M> ^ <nat:7> ) . Theorem <genP:1> : <def:hepteract> <nat:128> . Proof . unfold <def:hepteract> . exists <nat:2> . auto . Qed . 

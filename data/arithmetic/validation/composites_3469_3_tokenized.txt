@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There exist some natural numbers $ <var:T> $ , $ <var:R> $ , $ <var:n> $ where $ <var:T> \times <var:R> \times <var:n> $ is the same as $ <nat:540> $ . \end{theorem} \begin{proof} Let $ <var:T> = <nat:6> $ , $ <var:R> = <nat:10> $ , and $ <var:n> = <nat:9> $ . Note $ <nat:6> \times <nat:9> \times <nat:10> = <nat:540> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:T> <var:R> <var:n> : nat , ( <var:T> * <var:R> * <var:n> = <nat:540> ) . Proof . exists <nat:6> . exists <nat:10> . exists <nat:9> . repeat split . all : lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:4096> $ is equal to $ <var:s> ^ <nat:12> $ where $ <var:s> $ larger than <nat:1> . \end{theorem} \begin{proof} Let $ <var:s> = <nat:2> $ . We verify $ <nat:4096> = <var:s> ^ <nat:12> $ plus $ <var:s> > <nat:1> $ . We justify the result is true by reason of $ <nat:2> ^ <nat:12> = <var:s> ^ <nat:12> = <nat:4096> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:s> : nat , ( <nat:4096> = <var:s> ^ <nat:12> ) /\ ( <var:s> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

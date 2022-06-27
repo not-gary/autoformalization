@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:u> $ be integers satisfying the condition that $ <var:u> $ larger than <nat:1> as well as such that $ <nat:4> $ equals $ <var:u> ^ <nat:2> $ . \end{theorem} \begin{proof} Note $ <var:u> ^ <nat:2> = <nat:4> $ shows $ <var:u> = <nat:2> $ . This yields our statement holds . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:u> : nat , ( <var:u> > <nat:1> ) /\ ( <nat:4> = <var:u> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

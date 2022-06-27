@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:F> $ and $ <var:L> $ are positive integers so that the natural number <nat:12> is the product of integers $ <var:F> $ and $ <var:L> $ . \end{theorem} \begin{proof} Observe $ <nat:3> \times <nat:4> = <nat:12> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:F> <var:L> : nat , ( <nat:12> = <var:F> * <var:L> ) . Proof . exists <nat:4> . exists <nat:3> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The positive integer <nat:4> is the raising of between whole number $ <var:j> $ exponentiated to the exponential <nat:2> satisfying the condition that $ <var:j> $ larger than <nat:1> . \end{theorem} \begin{proof} Let $ <var:j> = <nat:2> $ . Observe that $ <nat:4> = <nat:2> ^ <nat:2> = <var:j> ^ <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:j> : nat , ( <nat:4> = <var:j> ^ <nat:2> ) /\ ( <var:j> > <nat:1> ) . Proof . exists <nat:2> . split . auto . lia . Qed . 

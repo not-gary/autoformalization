@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:r> $ and $ <var:P> \in \mathbb{N} $ so that $ <var:P> * <var:r> $ equals $ <nat:30> $ . \end{theorem} \begin{proof} We justify the result holds considering $ <nat:5> \cdot <nat:6> = <nat:30> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:r> <var:P> : nat , ( <var:P> * <var:r> = <nat:30> ) . Proof . exists <nat:5> . exists <nat:6> . lia . Qed . 

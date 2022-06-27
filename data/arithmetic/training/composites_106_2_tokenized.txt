@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:70> $ equals $ <var:w> \cdot <var:m> $ assuming $ <var:w> $ , $ <var:m> $ where $ <var:m> $ and $ <var:w> \geq <nat:2> $ . \end{theorem} \begin{proof} We present $ <nat:70> = <var:m> \cdot <var:w> $ . We justify our principle is valid for $ <nat:70> = <nat:10> * <nat:7> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:w> <var:m> : nat , ( <nat:70> = <var:w> * <var:m> ) /\ ( <var:m> >= <nat:2> ) /\ ( <var:w> >= <nat:2> ) . Proof . exists <nat:7> . exists <nat:10> . lia . Qed . 

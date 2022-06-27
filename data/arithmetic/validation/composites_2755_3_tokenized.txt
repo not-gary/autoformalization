@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:96> $ is equivalent to $ <var:t> \cdot <var:K> \cdot <var:O> $ assuming $ <var:t> $ , $ <var:K> $ , and $ <var:O> $ . \end{theorem} \begin{proof} Assume $ <var:O> = <nat:12> $ , $ <var:t> = <nat:2> $ , and $ <var:K> = <nat:4> $ . We prove $ <var:O> \cdot <var:t> \cdot <var:K> = <nat:96> $ . Note that $ <var:O> \cdot <var:K> \cdot <var:t> = <nat:96> $ . This shows our thesis holds . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:t> <var:K> <var:O> : nat , ( <nat:96> = <var:t> * <var:K> * <var:O> ) . Proof . exists <nat:2> . exists <nat:4> . exists <nat:12> . repeat split . all : lia . Qed . 

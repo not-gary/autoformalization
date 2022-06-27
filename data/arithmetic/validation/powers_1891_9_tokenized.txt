@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Allow $ <var:B> $ are whole numbers satisfying the condition that $ <var:B> $ more than <nat:1> as well as satisfying the condition that $ <nat:512> $ equals $ <var:B> ^ <nat:9> $ . \end{theorem} \begin{proof} Take $ <var:B> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:B> : nat , ( <var:B> > <nat:1> ) /\ ( <nat:512> = <var:B> ^ <nat:9> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

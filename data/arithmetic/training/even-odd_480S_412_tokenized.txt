@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assuming positive numbers $ <var:S> $ the sum $ <var:S> * <nat:480> + <nat:412> $ is guaranteed to be even . \end{theorem} \begin{proof} Observe that the summing between an even element of $ \mathbb{Z}^+ $ and an even integer is guaranteed to be even . We verify our proposition is proven . \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:S> : nat , Nat . even ( <nat:480> * <var:S> + <nat:412> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . auto . Qed . 

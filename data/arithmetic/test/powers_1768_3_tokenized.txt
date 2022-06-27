@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Take $ <var:P> \in \mathbb{N} $ . Claim that $ <var:Y> \in \mathbb{N} $ will be named a <def:cube> whole number assuming $ <var:Y> = <var:P> ^ <nat:3> $ . Therefore $ <var:Y> = <nat:8> $ is a <def:cube> . \end{theorem} \begin{proof} Notice $ <var:P> ^ <nat:3> = <nat:8> $ indicates $ <var:P> = <nat:2> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Definition <def:cube> ( <var:Y> : nat ) := exists <var:P> : nat , ( <var:Y> = <var:P> ^ <nat:3> ) . Theorem <genP:1> : <def:cube> <nat:8> . Proof . unfold <def:cube> . exists <nat:2> . auto . Qed . 

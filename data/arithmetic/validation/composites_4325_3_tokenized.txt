@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} <nat:288> is the multiplication between $ <var:Z> $ , $ <var:B> $ and $ <var:w> $ . \end{theorem} \begin{proof} Take $ <var:Z> = <nat:4> $ , $ <var:B> = <nat:6> $ , $ <var:w> = <nat:12> $ . Observe $ <nat:288> = <var:Z> \cdot <var:w> \cdot <var:B> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:Z> <var:B> <var:w> : nat , ( <nat:288> = <var:Z> * <var:B> * <var:w> ) . Proof . exists <nat:4> . exists <nat:6> . exists <nat:12> . repeat split . all : lia . Qed . 

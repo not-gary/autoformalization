@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} The number <nat:512> is the repeated product between $ <var:N> $ exponentiated to the power <nat:9> satisfying the condition that $ <var:N> $ greater than <nat:1> . \end{theorem} \begin{proof} We present $ <var:N> ^ <nat:9> = <nat:512> $ . Note $ <nat:512> = <nat:2> ^ <nat:9> $ . Similarly observe that $ <nat:2> > <nat:1> $ . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:N> : nat , ( <nat:512> = <var:N> ^ <nat:9> ) /\ ( <var:N> > <nat:1> ) . Proof . exists <nat:2> . assert ( <genH> : <nat:2> > <nat:1> ) . { lia . } split . auto . apply <genH> . Qed . 

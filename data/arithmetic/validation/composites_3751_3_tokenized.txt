@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:J> $ , $ <var:D> $ and $ <var:a> $ are natural numbers . $ <nat:90> $ is equal to $ <var:a> \cdot <var:D> \cdot <var:J> $ . \end{theorem} \begin{proof} Note $ <nat:9> \cdot <nat:5> \cdot <nat:2> = <nat:90> $ . This produces our theorem holds . As a consequence , $ <nat:90> = <var:J> \times <var:D> \times <var:a> $ has been verified . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:J> <var:D> <var:a> : nat , ( <nat:90> = <var:a> * <var:D> * <var:J> ) . Proof . exists <nat:9> . exists <nat:5> . exists <nat:2> . repeat split . all : lia . Qed . 

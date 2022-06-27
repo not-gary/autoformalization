@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Assume $ <var:L> $ as positive integers where $ <var:L> $ larger than <nat:1> plus such that the positive integer <nat:4> is the raising of of natural number $ <var:L> $ exponentiated to the exponential <nat:2> . \end{theorem} \begin{proof} Allow $ <var:L> = <nat:2> $ . We justify $ <var:L> ^ <nat:2> = <nat:4> $ plus $ <var:L> $ is greater than <nat:1> . This gives the principle is valid . \end{proof} \end{document} 
-~
-Require Import Arith . Require Import Lia . Theorem <genP:1> : exists <var:L> : nat , ( <var:L> > <nat:1> ) /\ ( <nat:4> = <var:L> ^ <nat:2> ) . Proof . exists <nat:2> . split . lia . auto . Qed . 

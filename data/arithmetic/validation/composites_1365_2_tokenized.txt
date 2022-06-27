@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} Let $ <var:S> $ and $ <var:Y> $ be integers so that $ <var:S> $ , and $ <var:Y> > <nat:1> $ and such that $ <var:Y> \cdot <var:S> = <nat:20> $ . \end{theorem} \begin{proof} Assume $ <var:Y> = <nat:4> $ and $ <var:S> = <nat:5> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:S> <var:Y> : nat , ( <var:S> > <nat:1> ) /\ ( <var:Y> > <nat:1> ) /\ ( <var:Y> * <var:S> = <nat:20> ) . Proof . exists <nat:5> . exists <nat:4> . lia . Qed . 

@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:46> * <var:g> + <nat:114> $ is guaranteed to be even for all integers $ <var:g> $ . \end{theorem} \begin{proof} See that multiplying of even integers will be itself an even number . The whole number $ <nat:46> $ is known as an even element of $ \mathbb{N} $ \end{proof} \end{document} 
-~
-Require Import Arith . Theorem <genP:1> : forall <var:g> : nat , Nat . even ( <nat:46> * <var:g> + <nat:114> ) = true . Proof . intros . repeat rewrite Nat . even_add . repeat rewrite Nat . even_mul . assert ( <genH> : Nat . even <nat:46> = true ) . { auto . } repeat rewrite Nat . even_add . rewrite <genH> . auto . Qed . 

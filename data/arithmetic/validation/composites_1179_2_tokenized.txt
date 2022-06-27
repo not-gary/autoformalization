@@ -1,3 +1,0 @@
-\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} There are some integers $ <var:I> $ and $ <var:g> $ where $ <var:I> $ , $ <var:g> $ greater than <nat:1> and so that the number <nat:30> is the product between integers $ <var:I> $ , and $ <var:g> $ . \end{theorem} \begin{proof} Take $ <var:I> = <nat:10> $ , $ <var:g> = <nat:3> $ . \end{proof} \end{document} 
-~
-Require Import Lia . Theorem <genP:1> : exists <var:I> <var:g> : nat , ( <var:I> > <nat:1> ) /\ ( <var:g> > <nat:1> ) /\ ( <nat:30> = <var:I> * <var:g> ) . Proof . exists <nat:10> . exists <nat:3> . lia . Qed . 
