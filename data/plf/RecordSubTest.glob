@@ -1,0 +1,253 @@
+DIGEST be54ffcdabd9311c8c34fafc38165fa8
+FPLF.RecordSubTest
+R70:75 Coq.Strings.String <> <> lib
+R102:110 PLF.RecordSub <> <> lib
+ax 124:130 <> MISSING
+mod 147:151 <> Check
+R217:223 PLF.RecordSubTest <> MISSING defax
+R217:223 PLF.RecordSubTest <> MISSING defax
+R416:419 Coq.Init.Datatypes <> Some constr
+R416:419 Coq.Init.Datatypes <> Some constr
+R599:602 Coq.Init.Datatypes <> None constr
+R599:602 Coq.Init.Datatypes <> None constr
+R684:688 PLF.RecordSubTest Check <> mod
+R716:724 PLF.RecordSub <> <> lib
+def 742:750 <> Unnamed_thm
+R747:750 Coq.Init.Logic <> True ind
+R929:966 PLF.RecordSub RecordSub.Examples subtyping_example_1 prfax
+R971:987 PLF.RecordSub RecordSub subtype ind
+R989:1014 PLF.RecordSub RecordSub.Examples TRcd_kj def
+R1016:1040 PLF.RecordSub RecordSub.Examples TRcd_j def
+R929:966 PLF.RecordSub RecordSub.Examples subtyping_example_1 prfax
+R971:987 PLF.RecordSub RecordSub subtype ind
+R989:1014 PLF.RecordSub RecordSub.Examples TRcd_kj def
+R1016:1040 PLF.RecordSub RecordSub.Examples TRcd_j def
+R1092:1129 PLF.RecordSub RecordSub.Examples subtyping_example_1 prfax
+def 1132:1140 <> Unnamed_thm
+R1137:1140 Coq.Init.Logic <> True ind
+R1330:1367 PLF.RecordSub RecordSub.Examples subtyping_example_2 prfax
+R1372:1388 PLF.RecordSub RecordSub subtype ind
+R1394:1411 PLF.RecordSub RecordSub Ty_Arrow constr
+R1413:1428 PLF.RecordSub RecordSub Ty_Top constr
+R1430:1455 PLF.RecordSub RecordSub.Examples TRcd_kj def
+R1462:1479 PLF.RecordSub RecordSub Ty_Arrow constr
+R1488:1505 PLF.RecordSub RecordSub Ty_Arrow constr
+R1507:1526 PLF.RecordSub RecordSub.Examples C syndef
+R1528:1547 PLF.RecordSub RecordSub.Examples C syndef
+R1556:1580 PLF.RecordSub RecordSub.Examples TRcd_j def
+R1330:1367 PLF.RecordSub RecordSub.Examples subtyping_example_2 prfax
+R1372:1388 PLF.RecordSub RecordSub subtype ind
+R1394:1411 PLF.RecordSub RecordSub Ty_Arrow constr
+R1413:1428 PLF.RecordSub RecordSub Ty_Top constr
+R1430:1455 PLF.RecordSub RecordSub.Examples TRcd_kj def
+R1462:1479 PLF.RecordSub RecordSub Ty_Arrow constr
+R1488:1505 PLF.RecordSub RecordSub Ty_Arrow constr
+R1507:1526 PLF.RecordSub RecordSub.Examples C syndef
+R1528:1547 PLF.RecordSub RecordSub.Examples C syndef
+R1556:1580 PLF.RecordSub RecordSub.Examples TRcd_j def
+R1633:1670 PLF.RecordSub RecordSub.Examples subtyping_example_2 prfax
+def 1673:1681 <> Unnamed_thm
+R1678:1681 Coq.Init.Logic <> True ind
+R1871:1908 PLF.RecordSub RecordSub.Examples subtyping_example_3 prfax
+R1913:1929 PLF.RecordSub RecordSub subtype ind
+R1935:1952 PLF.RecordSub RecordSub Ty_Arrow constr
+R1954:1970 PLF.RecordSub RecordSub Ty_RNil constr
+R1979:1996 PLF.RecordSub RecordSub Ty_RCons constr
+R1998:2017 PLF.RecordSub RecordSub.Examples j syndef
+R2019:2038 PLF.RecordSub RecordSub.Examples A syndef
+R2049:2065 PLF.RecordSub RecordSub Ty_RNil constr
+R2073:2090 PLF.RecordSub RecordSub Ty_Arrow constr
+R2099:2116 PLF.RecordSub RecordSub Ty_RCons constr
+R2118:2137 PLF.RecordSub RecordSub.Examples k syndef
+R2139:2158 PLF.RecordSub RecordSub.Examples B syndef
+R2169:2185 PLF.RecordSub RecordSub Ty_RNil constr
+R2188:2204 PLF.RecordSub RecordSub Ty_RNil constr
+R1871:1908 PLF.RecordSub RecordSub.Examples subtyping_example_3 prfax
+R1913:1929 PLF.RecordSub RecordSub subtype ind
+R1935:1952 PLF.RecordSub RecordSub Ty_Arrow constr
+R1954:1970 PLF.RecordSub RecordSub Ty_RNil constr
+R1979:1996 PLF.RecordSub RecordSub Ty_RCons constr
+R1998:2017 PLF.RecordSub RecordSub.Examples j syndef
+R2019:2038 PLF.RecordSub RecordSub.Examples A syndef
+R2049:2065 PLF.RecordSub RecordSub Ty_RNil constr
+R2073:2090 PLF.RecordSub RecordSub Ty_Arrow constr
+R2099:2116 PLF.RecordSub RecordSub Ty_RCons constr
+R2118:2137 PLF.RecordSub RecordSub.Examples k syndef
+R2139:2158 PLF.RecordSub RecordSub.Examples B syndef
+R2169:2185 PLF.RecordSub RecordSub Ty_RNil constr
+R2188:2204 PLF.RecordSub RecordSub Ty_RNil constr
+R2257:2294 PLF.RecordSub RecordSub.Examples subtyping_example_3 prfax
+def 2297:2305 <> Unnamed_thm
+R2302:2305 Coq.Init.Logic <> True ind
+R2495:2532 PLF.RecordSub RecordSub.Examples subtyping_example_4 prfax
+R2537:2553 PLF.RecordSub RecordSub subtype ind
+R2559:2576 PLF.RecordSub RecordSub Ty_RCons constr
+R2578:2597 PLF.RecordSub RecordSub.Examples x syndef
+R2599:2618 PLF.RecordSub RecordSub.Examples A syndef
+R2627:2644 PLF.RecordSub RecordSub Ty_RCons constr
+R2646:2665 PLF.RecordSub RecordSub.Examples y syndef
+R2667:2686 PLF.RecordSub RecordSub.Examples B syndef
+R2698:2715 PLF.RecordSub RecordSub Ty_RCons constr
+R2717:2736 PLF.RecordSub RecordSub.Examples z syndef
+R2738:2757 PLF.RecordSub RecordSub.Examples C syndef
+R2771:2787 PLF.RecordSub RecordSub Ty_RNil constr
+R2796:2813 PLF.RecordSub RecordSub Ty_RCons constr
+R2815:2834 PLF.RecordSub RecordSub.Examples z syndef
+R2836:2855 PLF.RecordSub RecordSub.Examples C syndef
+R2864:2881 PLF.RecordSub RecordSub Ty_RCons constr
+R2883:2902 PLF.RecordSub RecordSub.Examples y syndef
+R2904:2923 PLF.RecordSub RecordSub.Examples B syndef
+R2935:2952 PLF.RecordSub RecordSub Ty_RCons constr
+R2954:2973 PLF.RecordSub RecordSub.Examples x syndef
+R2975:2994 PLF.RecordSub RecordSub.Examples A syndef
+R3008:3024 PLF.RecordSub RecordSub Ty_RNil constr
+R2495:2532 PLF.RecordSub RecordSub.Examples subtyping_example_4 prfax
+R2537:2553 PLF.RecordSub RecordSub subtype ind
+R2559:2576 PLF.RecordSub RecordSub Ty_RCons constr
+R2578:2597 PLF.RecordSub RecordSub.Examples x syndef
+R2599:2618 PLF.RecordSub RecordSub.Examples A syndef
+R2627:2644 PLF.RecordSub RecordSub Ty_RCons constr
+R2646:2665 PLF.RecordSub RecordSub.Examples y syndef
+R2667:2686 PLF.RecordSub RecordSub.Examples B syndef
+R2698:2715 PLF.RecordSub RecordSub Ty_RCons constr
+R2717:2736 PLF.RecordSub RecordSub.Examples z syndef
+R2738:2757 PLF.RecordSub RecordSub.Examples C syndef
+R2771:2787 PLF.RecordSub RecordSub Ty_RNil constr
+R2796:2813 PLF.RecordSub RecordSub Ty_RCons constr
+R2815:2834 PLF.RecordSub RecordSub.Examples z syndef
+R2836:2855 PLF.RecordSub RecordSub.Examples C syndef
+R2864:2881 PLF.RecordSub RecordSub Ty_RCons constr
+R2883:2902 PLF.RecordSub RecordSub.Examples y syndef
+R2904:2923 PLF.RecordSub RecordSub.Examples B syndef
+R2935:2952 PLF.RecordSub RecordSub Ty_RCons constr
+R2954:2973 PLF.RecordSub RecordSub.Examples x syndef
+R2975:2994 PLF.RecordSub RecordSub.Examples A syndef
+R3008:3024 PLF.RecordSub RecordSub Ty_RNil constr
+R3079:3116 PLF.RecordSub RecordSub.Examples subtyping_example_4 prfax
+def 3119:3127 <> Unnamed_thm
+R3124:3127 Coq.Init.Logic <> True ind
+R3342:3392 PLF.RecordSub RecordSub manual_grade_for_rcd_types_match_informal def
+R3577:3612 PLF.RecordSub RecordSub.Examples2 typing_example_0 prfax
+R3617:3634 PLF.RecordSub RecordSub has_type ind
+R3638:3647 PLF.Maps <> empty def
+R3649:3660 PLF.RecordSub RecordSub ty ind
+R3663:3689 PLF.RecordSub RecordSub.Examples2 trcd_kj def
+R3694:3719 PLF.RecordSub RecordSub.Examples TRcd_kj def
+R3577:3612 PLF.RecordSub RecordSub.Examples2 typing_example_0 prfax
+R3617:3634 PLF.RecordSub RecordSub has_type ind
+R3638:3647 PLF.Maps <> empty def
+R3649:3660 PLF.RecordSub RecordSub ty ind
+R3663:3689 PLF.RecordSub RecordSub.Examples2 trcd_kj def
+R3694:3719 PLF.RecordSub RecordSub.Examples TRcd_kj def
+R3771:3806 PLF.RecordSub RecordSub.Examples2 typing_example_0 prfax
+def 3809:3817 <> Unnamed_thm
+R3814:3817 Coq.Init.Logic <> True ind
+R4002:4037 PLF.RecordSub RecordSub.Examples2 typing_example_1 prfax
+R4042:4059 PLF.RecordSub RecordSub has_type ind
+R4063:4072 PLF.Maps <> empty def
+R4074:4085 PLF.RecordSub RecordSub ty ind
+R4092:4107 PLF.RecordSub RecordSub tm_app constr
+R4116:4131 PLF.RecordSub RecordSub tm_abs constr
+R4133:4152 PLF.RecordSub RecordSub.Examples x syndef
+R4154:4178 PLF.RecordSub RecordSub.Examples TRcd_j def
+R4190:4207 PLF.RecordSub RecordSub tm_rproj constr
+R4210:4225 PLF.RecordSub RecordSub tm_var constr
+R4227:4246 PLF.RecordSub RecordSub.Examples x syndef
+R4261:4280 PLF.RecordSub RecordSub.Examples j syndef
+R4284:4310 PLF.RecordSub RecordSub.Examples2 trcd_kj def
+R4317:4334 PLF.RecordSub RecordSub Ty_Arrow constr
+R4336:4355 PLF.RecordSub RecordSub.Examples B syndef
+R4357:4376 PLF.RecordSub RecordSub.Examples B syndef
+R4002:4037 PLF.RecordSub RecordSub.Examples2 typing_example_1 prfax
+R4042:4059 PLF.RecordSub RecordSub has_type ind
+R4063:4072 PLF.Maps <> empty def
+R4074:4085 PLF.RecordSub RecordSub ty ind
+R4092:4107 PLF.RecordSub RecordSub tm_app constr
+R4116:4131 PLF.RecordSub RecordSub tm_abs constr
+R4133:4152 PLF.RecordSub RecordSub.Examples x syndef
+R4154:4178 PLF.RecordSub RecordSub.Examples TRcd_j def
+R4190:4207 PLF.RecordSub RecordSub tm_rproj constr
+R4210:4225 PLF.RecordSub RecordSub tm_var constr
+R4227:4246 PLF.RecordSub RecordSub.Examples x syndef
+R4261:4280 PLF.RecordSub RecordSub.Examples j syndef
+R4284:4310 PLF.RecordSub RecordSub.Examples2 trcd_kj def
+R4317:4334 PLF.RecordSub RecordSub Ty_Arrow constr
+R4336:4355 PLF.RecordSub RecordSub.Examples B syndef
+R4357:4376 PLF.RecordSub RecordSub.Examples B syndef
+R4429:4464 PLF.RecordSub RecordSub.Examples2 typing_example_1 prfax
+def 4467:4475 <> Unnamed_thm
+R4472:4475 Coq.Init.Logic <> True ind
+R4678:4717 PLF.RecordSub RecordSub canonical_forms_of_arrow_types prfax
+R4738:4754 PLF.RecordSub RecordSub context def
+binder 4730:4734 <> Gamma:2
+R4762:4773 PLF.RecordSub RecordSub tm ind
+binder 4758:4758 <> s:3
+R4785:4796 PLF.RecordSub RecordSub ty ind
+binder 4777:4778 <> T1:4
+binder 4780:4781 <> T2:5
+R4854:4858 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4801:4818 PLF.RecordSub RecordSub has_type ind
+R4820:4824 PLF.RecordSubTest <> Gamma:2 var
+R4826:4826 PLF.RecordSubTest <> s:3 var
+R4829:4846 PLF.RecordSub RecordSub Ty_Arrow constr
+R4848:4849 PLF.RecordSubTest <> T1:4 var
+R4851:4852 PLF.RecordSubTest <> T2:5 var
+R4876:4880 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4859:4873 PLF.RecordSub RecordSub value ind
+R4875:4875 PLF.RecordSubTest <> s:3 var
+R4881:4888 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4946:4951 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4893:4905 Coq.Strings.String <> string ind
+binder 4889:4889 <> x:6
+R4914:4925 PLF.RecordSub RecordSub ty ind
+binder 4909:4910 <> S1:7
+R4934:4945 PLF.RecordSub RecordSub tm ind
+binder 4929:4930 <> s2:8
+R4953:4955 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4952:4952 PLF.RecordSubTest <> s:3 var
+R4956:4971 PLF.RecordSub RecordSub tm_abs constr
+R4973:4973 PLF.RecordSubTest <> x:6 var
+R4975:4976 PLF.RecordSubTest <> S1:7 var
+R4978:4979 PLF.RecordSubTest <> s2:8 var
+R4678:4717 PLF.RecordSub RecordSub canonical_forms_of_arrow_types prfax
+R4738:4754 PLF.RecordSub RecordSub context def
+binder 4730:4734 <> Gamma:9
+R4762:4773 PLF.RecordSub RecordSub tm ind
+binder 4758:4758 <> s:10
+R4785:4796 PLF.RecordSub RecordSub ty ind
+binder 4777:4778 <> T1:11
+binder 4780:4781 <> T2:12
+R4854:4858 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4801:4818 PLF.RecordSub RecordSub has_type ind
+R4820:4824 PLF.RecordSubTest <> Gamma:9 var
+R4826:4826 PLF.RecordSubTest <> s:10 var
+R4829:4846 PLF.RecordSub RecordSub Ty_Arrow constr
+R4848:4849 PLF.RecordSubTest <> T1:11 var
+R4851:4852 PLF.RecordSubTest <> T2:12 var
+R4876:4880 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4859:4873 PLF.RecordSub RecordSub value ind
+R4875:4875 PLF.RecordSubTest <> s:10 var
+R4881:4888 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4946:4951 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4893:4905 Coq.Strings.String <> string ind
+binder 4889:4889 <> x:13
+R4914:4925 PLF.RecordSub RecordSub ty ind
+binder 4909:4910 <> S1:14
+R4934:4945 PLF.RecordSub RecordSub tm ind
+binder 4929:4930 <> s2:15
+R4953:4955 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4952:4952 PLF.RecordSubTest <> s:10 var
+R4956:4971 PLF.RecordSub RecordSub tm_abs constr
+R4973:4973 PLF.RecordSubTest <> x:13 var
+R4975:4976 PLF.RecordSubTest <> S1:14 var
+R4978:4979 PLF.RecordSubTest <> s2:15 var
+R5031:5070 PLF.RecordSub RecordSub canonical_forms_of_arrow_types prfax
+def 5073:5081 <> Unnamed_thm
+R5078:5081 Coq.Init.Logic <> True ind
+R5962:5999 PLF.RecordSub RecordSub.Examples subtyping_example_1 prfax
+R6089:6126 PLF.RecordSub RecordSub.Examples subtyping_example_2 prfax
+R6216:6253 PLF.RecordSub RecordSub.Examples subtyping_example_3 prfax
+R6343:6380 PLF.RecordSub RecordSub.Examples subtyping_example_4 prfax
+R6539:6574 PLF.RecordSub RecordSub.Examples2 typing_example_0 prfax
+R6662:6697 PLF.RecordSub RecordSub.Examples2 typing_example_1 prfax
+R6789:6828 PLF.RecordSub RecordSub canonical_forms_of_arrow_types prfax

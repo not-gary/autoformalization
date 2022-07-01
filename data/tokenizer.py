@@ -19,24 +19,9 @@ def detokenize_coq(content, subset="even-odd"):
     coq = ""
     hypoth_scope = ""
     hypotheses = []
-    geq = False
     for i in range(length):
         tok = seq[i]
-        # nat -> N patching for composites.
-        if subset == "composites" and tok == "nat":
-            tok = "N"
-        elif subset == "composites" and tok == "Lia":
-            tok = "Lia. Require Import NArith. Open Scope N_scope"
-        elif subset == "composites" and tok == "Qed":
-            tok = "Qed. Close Scope N_scope"
-        # > 1 -> >= 2 bug patching for composites.
-        elif subset == "composites" and tok == ">=":
-            geq = True
-            tok = ">="
-        elif subset == "composites" and geq and (tok == ">" or tok == "<nat:1>"):
-            tok = ">=" if tok == ">" else "2"
-        # Detokenizing generic tokens.
-        elif re.match("<nat:.+", tok) or re.match("<var:.+", tok):
+        if re.match("<nat:.+", tok) or re.match("<var:.+", tok):
             tok = tok[5:-1]
             if subset == "composites" and tok == "N":
                 tok = "N0"
@@ -106,11 +91,14 @@ def detokenize_coq(content, subset="even-odd"):
 
     return coq
 
-def check_proof(coq, tgt):
+def check_proof(coq, tgt, subset=""):
     # Check that the proof is correct by calling coqtop.
-    proc = subprocess.Popen(['coqtop'], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, stdin=subprocess.PIPE, encoding='utf8')
+    if subset == "poly":
+        proc = subprocess.Popen(['coqtop', '-Q', 'plf/', 'PLF'], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, stdin=subprocess.PIPE, encoding='utf8')
+    else:
+        proc = subprocess.Popen(['coqtop'], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, stdin=subprocess.PIPE, encoding='utf8')
     try:
-        valid_proof = ("No more subgoals." in proc.communicate(coq + "\n", timeout=10)[0])
+        valid_proof = ("No more subgoals." in proc.communicate(coq + "\n", timeout=600)[0])
     except:
         valid_proof = False
 
@@ -157,7 +145,7 @@ def validate(filename):
         coq = detokenize_coq(translation, detok_sub)
         tgt = detokenize_coq(target, detok_sub)[:-1]
 
-        proof, thm = check_proof(coq, tgt)
+        proof, thm = check_proof(coq, tgt, detok_sub)
 
         # Report rolling averages, stats.
         if not subset in thm_avgs:

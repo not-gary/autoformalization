@@ -1045,7 +1045,7 @@ class Poly():
             "assignment ",
             "binding ",
             "variable binding ",
-            "variable assignmet ",
+            "variable assignment ",
             "environment update ",
             "variable update ",
             ""

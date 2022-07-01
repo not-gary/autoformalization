@@ -1,0 +1,299 @@
+DIGEST 9c1c1f46b378262f9385eb96454058c0
+FPLF.SmallstepTest
+R70:75 Coq.Strings.String <> <> lib
+R102:110 PLF.Smallstep <> <> lib
+ax 124:130 <> MISSING
+mod 147:151 <> Check
+R217:223 PLF.SmallstepTest <> MISSING defax
+R217:223 PLF.SmallstepTest <> MISSING defax
+R416:419 Coq.Init.Datatypes <> Some constr
+R416:419 Coq.Init.Datatypes <> Some constr
+R599:602 Coq.Init.Datatypes <> None constr
+R599:602 Coq.Init.Datatypes <> None constr
+R684:688 PLF.SmallstepTest Check <> mod
+R716:724 PLF.Smallstep <> <> lib
+def 742:750 <> Unnamed_thm
+R747:750 Coq.Init.Logic <> True ind
+R907:930 PLF.Smallstep SimpleArith1 test_step_2 prfax
+R935:951 PLF.Smallstep SimpleArith1 step ind
+R954:954 PLF.Smallstep <> P constr
+R957:957 PLF.Smallstep <> C constr
+R963:963 PLF.Smallstep <> P constr
+R966:966 PLF.Smallstep <> C constr
+R972:972 PLF.Smallstep <> P constr
+R975:975 PLF.Smallstep <> C constr
+R981:981 PLF.Smallstep <> C constr
+R993:993 PLF.Smallstep <> P constr
+R996:996 PLF.Smallstep <> C constr
+R1002:1002 PLF.Smallstep <> P constr
+R1005:1005 PLF.Smallstep <> C constr
+R1011:1011 PLF.Smallstep <> C constr
+R907:930 PLF.Smallstep SimpleArith1 test_step_2 prfax
+R935:951 PLF.Smallstep SimpleArith1 step ind
+R954:954 PLF.Smallstep <> P constr
+R957:957 PLF.Smallstep <> C constr
+R963:963 PLF.Smallstep <> P constr
+R966:966 PLF.Smallstep <> C constr
+R972:972 PLF.Smallstep <> P constr
+R975:975 PLF.Smallstep <> C constr
+R981:981 PLF.Smallstep <> C constr
+R993:993 PLF.Smallstep <> P constr
+R996:996 PLF.Smallstep <> C constr
+R1002:1002 PLF.Smallstep <> P constr
+R1005:1005 PLF.Smallstep <> C constr
+R1011:1011 PLF.Smallstep <> C constr
+R1068:1091 PLF.Smallstep SimpleArith1 test_step_2 prfax
+def 1094:1102 <> Unnamed_thm
+R1099:1102 Coq.Init.Logic <> True ind
+R1269:1286 PLF.Smallstep <> step_deterministic prfax
+R1291:1303 PLF.Smallstep <> deterministic def
+R1305:1306 PLF.Smallstep <> tm ind
+R1308:1311 PLF.Smallstep <> step ind
+R1269:1286 PLF.Smallstep <> step_deterministic prfax
+R1291:1303 PLF.Smallstep <> deterministic def
+R1305:1306 PLF.Smallstep <> tm ind
+R1308:1311 PLF.Smallstep <> step ind
+R1363:1380 PLF.Smallstep <> step_deterministic prfax
+def 1383:1391 <> Unnamed_thm
+R1388:1391 Coq.Init.Logic <> True ind
+R1584:1621 PLF.Smallstep Temp4 manual_grade_for_smallstep_bools def
+R1810:1842 PLF.Smallstep Temp4.Temp5 bool_step_prop4_holds prfax
+R1810:1842 PLF.Smallstep Temp4.Temp5 bool_step_prop4_holds prfax
+R1845:1871 PLF.Smallstep Temp4.Temp5 bool_step_prop4 def
+R1922:1954 PLF.Smallstep Temp4.Temp5 bool_step_prop4_holds prfax
+def 1957:1965 <> Unnamed_thm
+R1962:1965 Coq.Init.Logic <> True ind
+R2130:2145 PLF.Smallstep <> test_multistep_4 prfax
+R2183:2188 PLF.Smallstep <> :::x_'-->*'_x not
+R2150:2150 PLF.Smallstep <> P constr
+R2153:2153 PLF.Smallstep <> C constr
+R2159:2159 PLF.Smallstep <> P constr
+R2162:2162 PLF.Smallstep <> C constr
+R2168:2168 PLF.Smallstep <> P constr
+R2171:2171 PLF.Smallstep <> C constr
+R2177:2177 PLF.Smallstep <> C constr
+R2189:2189 PLF.Smallstep <> P constr
+R2192:2192 PLF.Smallstep <> C constr
+R2198:2198 PLF.Smallstep <> C constr
+R2202:2205 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2211:2211 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2207:2209 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2130:2145 PLF.Smallstep <> test_multistep_4 prfax
+R2183:2188 PLF.Smallstep <> :::x_'-->*'_x not
+R2150:2150 PLF.Smallstep <> P constr
+R2153:2153 PLF.Smallstep <> C constr
+R2159:2159 PLF.Smallstep <> P constr
+R2162:2162 PLF.Smallstep <> C constr
+R2168:2168 PLF.Smallstep <> P constr
+R2171:2171 PLF.Smallstep <> C constr
+R2177:2177 PLF.Smallstep <> C constr
+R2189:2189 PLF.Smallstep <> P constr
+R2192:2192 PLF.Smallstep <> C constr
+R2198:2198 PLF.Smallstep <> C constr
+R2202:2205 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2211:2211 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2207:2209 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2265:2280 PLF.Smallstep <> test_multistep_4 prfax
+def 2283:2291 <> Unnamed_thm
+R2288:2291 Coq.Init.Logic <> True ind
+R2458:2474 PLF.Smallstep <> multistep_congr_2 prfax
+R2498:2499 PLF.Smallstep <> tm ind
+binder 2486:2487 <> t1:2
+binder 2489:2490 <> t2:3
+binder 2492:2494 <> t2':4
+R2510:2513 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2502:2506 PLF.Smallstep <> value ind
+R2508:2509 PLF.SmallstepTest <> t1:2 var
+R2525:2528 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2516:2521 PLF.Smallstep <> :::x_'-->*'_x not
+R2514:2515 PLF.SmallstepTest <> t2:3 var
+R2522:2524 PLF.SmallstepTest <> t2':4 var
+R2536:2541 PLF.Smallstep <> :::x_'-->*'_x not
+R2529:2529 PLF.Smallstep <> P constr
+R2531:2532 PLF.SmallstepTest <> t1:2 var
+R2534:2535 PLF.SmallstepTest <> t2:3 var
+R2542:2542 PLF.Smallstep <> P constr
+R2544:2545 PLF.SmallstepTest <> t1:2 var
+R2547:2549 PLF.SmallstepTest <> t2':4 var
+R2458:2474 PLF.Smallstep <> multistep_congr_2 prfax
+R2498:2499 PLF.Smallstep <> tm ind
+binder 2486:2487 <> t1:5
+binder 2489:2490 <> t2:6
+binder 2492:2494 <> t2':7
+R2510:2513 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2502:2506 PLF.Smallstep <> value ind
+R2508:2509 PLF.SmallstepTest <> t1:5 var
+R2525:2528 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2516:2521 PLF.Smallstep <> :::x_'-->*'_x not
+R2514:2515 PLF.SmallstepTest <> t2:6 var
+R2522:2524 PLF.SmallstepTest <> t2':7 var
+R2536:2541 PLF.Smallstep <> :::x_'-->*'_x not
+R2529:2529 PLF.Smallstep <> P constr
+R2531:2532 PLF.SmallstepTest <> t1:5 var
+R2534:2535 PLF.SmallstepTest <> t2:6 var
+R2542:2542 PLF.Smallstep <> P constr
+R2544:2545 PLF.SmallstepTest <> t1:5 var
+R2547:2549 PLF.SmallstepTest <> t2':7 var
+R2601:2617 PLF.Smallstep <> multistep_congr_2 prfax
+def 2620:2628 <> Unnamed_thm
+R2625:2628 Coq.Init.Logic <> True ind
+R2791:2805 PLF.Smallstep <> eval__multistep prfax
+R2821:2822 PLF.Smallstep <> tm ind
+binder 2817:2817 <> t:8
+R2830:2832 Coq.Init.Datatypes <> nat ind
+binder 2826:2826 <> n:9
+R2843:2846 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2837:2841 PLF.Smallstep <> :::x_'==>'_x not
+R2836:2836 PLF.SmallstepTest <> t:8 var
+R2842:2842 PLF.SmallstepTest <> n:9 var
+R2848:2853 PLF.Smallstep <> :::x_'-->*'_x not
+R2847:2847 PLF.SmallstepTest <> t:8 var
+R2854:2854 PLF.Smallstep <> C constr
+R2856:2856 PLF.SmallstepTest <> n:9 var
+R2791:2805 PLF.Smallstep <> eval__multistep prfax
+R2821:2822 PLF.Smallstep <> tm ind
+binder 2817:2817 <> t:10
+R2830:2832 Coq.Init.Datatypes <> nat ind
+binder 2826:2826 <> n:11
+R2843:2846 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2837:2841 PLF.Smallstep <> :::x_'==>'_x not
+R2836:2836 PLF.SmallstepTest <> t:10 var
+R2842:2842 PLF.SmallstepTest <> n:11 var
+R2848:2853 PLF.Smallstep <> :::x_'-->*'_x not
+R2847:2847 PLF.SmallstepTest <> t:10 var
+R2854:2854 PLF.Smallstep <> C constr
+R2856:2856 PLF.SmallstepTest <> n:11 var
+R2908:2922 PLF.Smallstep <> eval__multistep prfax
+def 2925:2933 <> Unnamed_thm
+R2930:2933 Coq.Init.Logic <> True ind
+R3146:3181 PLF.Smallstep <> manual_grade_for_eval__multistep_inf def
+R3334:3343 PLF.Smallstep <> step__eval prfax
+R3362:3363 PLF.Smallstep <> tm ind
+binder 3355:3355 <> t:12
+binder 3357:3358 <> t':13
+R3371:3373 Coq.Init.Datatypes <> nat ind
+binder 3367:3367 <> n:14
+R3385:3388 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3378:3382 PLF.Smallstep <> :::x_'-->'_x not
+R3377:3377 PLF.SmallstepTest <> t:12 var
+R3383:3384 PLF.SmallstepTest <> t':13 var
+R3397:3400 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3391:3395 PLF.Smallstep <> :::x_'==>'_x not
+R3389:3390 PLF.SmallstepTest <> t':13 var
+R3396:3396 PLF.SmallstepTest <> n:14 var
+R3402:3406 PLF.Smallstep <> :::x_'==>'_x not
+R3401:3401 PLF.SmallstepTest <> t:12 var
+R3407:3407 PLF.SmallstepTest <> n:14 var
+R3334:3343 PLF.Smallstep <> step__eval prfax
+R3362:3363 PLF.Smallstep <> tm ind
+binder 3355:3355 <> t:15
+binder 3357:3358 <> t':16
+R3371:3373 Coq.Init.Datatypes <> nat ind
+binder 3367:3367 <> n:17
+R3385:3388 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3378:3382 PLF.Smallstep <> :::x_'-->'_x not
+R3377:3377 PLF.SmallstepTest <> t:15 var
+R3383:3384 PLF.SmallstepTest <> t':16 var
+R3397:3400 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3391:3395 PLF.Smallstep <> :::x_'==>'_x not
+R3389:3390 PLF.SmallstepTest <> t':16 var
+R3396:3396 PLF.SmallstepTest <> n:17 var
+R3402:3406 PLF.Smallstep <> :::x_'==>'_x not
+R3401:3401 PLF.SmallstepTest <> t:15 var
+R3407:3407 PLF.SmallstepTest <> n:17 var
+R3459:3468 PLF.Smallstep <> step__eval prfax
+def 3471:3479 <> Unnamed_thm
+R3476:3479 Coq.Init.Logic <> True ind
+R3642:3656 PLF.Smallstep <> multistep__eval prfax
+R3675:3676 PLF.Smallstep <> tm ind
+binder 3668:3668 <> t:18
+binder 3670:3671 <> t':19
+R3698:3701 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3679:3692 PLF.Smallstep <> normal_form_of def
+R3694:3694 PLF.SmallstepTest <> t:18 var
+R3696:3697 PLF.SmallstepTest <> t':19 var
+R3702:3708 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3716:3717 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3713:3715 Coq.Init.Datatypes <> nat ind
+binder 3709:3709 <> n:20
+R3726:3729 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3720:3722 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3718:3719 PLF.SmallstepTest <> t':19 var
+R3723:3723 PLF.Smallstep <> C constr
+R3725:3725 PLF.SmallstepTest <> n:20 var
+R3731:3735 PLF.Smallstep <> :::x_'==>'_x not
+R3730:3730 PLF.SmallstepTest <> t:18 var
+R3736:3736 PLF.SmallstepTest <> n:20 var
+R3642:3656 PLF.Smallstep <> multistep__eval prfax
+R3675:3676 PLF.Smallstep <> tm ind
+binder 3668:3668 <> t:21
+binder 3670:3671 <> t':22
+R3698:3701 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3679:3692 PLF.Smallstep <> normal_form_of def
+R3694:3694 PLF.SmallstepTest <> t:21 var
+R3696:3697 PLF.SmallstepTest <> t':22 var
+R3702:3708 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3716:3717 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3713:3715 Coq.Init.Datatypes <> nat ind
+binder 3709:3709 <> n:23
+R3726:3729 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3720:3722 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3718:3719 PLF.SmallstepTest <> t':22 var
+R3723:3723 PLF.Smallstep <> C constr
+R3725:3725 PLF.SmallstepTest <> n:23 var
+R3731:3735 PLF.Smallstep <> :::x_'==>'_x not
+R3730:3730 PLF.SmallstepTest <> t:21 var
+R3736:3736 PLF.SmallstepTest <> n:23 var
+R3788:3802 PLF.Smallstep <> multistep__eval prfax
+def 3805:3813 <> Unnamed_thm
+R3810:3813 Coq.Init.Logic <> True ind
+R4008:4043 PLF.Smallstep <> manual_grade_for_combined_properties def
+R4232:4250 PLF.Smallstep <> compiler_is_correct prfax
+R4232:4250 PLF.Smallstep <> compiler_is_correct prfax
+R4253:4281 PLF.Smallstep <> compiler_is_correct_statement prfax
+R4332:4350 PLF.Smallstep <> compiler_is_correct prfax
+def 4353:4361 <> Unnamed_thm
+R4358:4361 Coq.Init.Logic <> True ind
+R4518:4529 PLF.Smallstep <> normalize_ex prfax
+R4533:4539 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4547:4548 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4545:4546 PLF.Smallstep <> tm ind
+binder 4540:4541 <> e':24
+R4580:4583 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4572:4577 PLF.Smallstep <> :::x_'-->*'_x not
+R4549:4549 PLF.Smallstep <> P constr
+R4552:4552 PLF.Smallstep <> C constr
+R4558:4558 PLF.Smallstep <> P constr
+R4561:4561 PLF.Smallstep <> C constr
+R4567:4567 PLF.Smallstep <> C constr
+R4578:4579 PLF.SmallstepTest <> e':24 var
+R4584:4588 PLF.Smallstep <> value ind
+R4590:4591 PLF.SmallstepTest <> e':24 var
+R4518:4529 PLF.Smallstep <> normalize_ex prfax
+R4533:4539 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4547:4548 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4545:4546 PLF.Smallstep <> tm ind
+binder 4540:4541 <> e':25
+R4580:4583 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4572:4577 PLF.Smallstep <> :::x_'-->*'_x not
+R4549:4549 PLF.Smallstep <> P constr
+R4552:4552 PLF.Smallstep <> C constr
+R4558:4558 PLF.Smallstep <> P constr
+R4561:4561 PLF.Smallstep <> C constr
+R4567:4567 PLF.Smallstep <> C constr
+R4578:4579 PLF.SmallstepTest <> e':25 var
+R4584:4588 PLF.Smallstep <> value ind
+R4590:4591 PLF.SmallstepTest <> e':25 var
+R4643:4654 PLF.Smallstep <> normalize_ex prfax
+def 4657:4665 <> Unnamed_thm
+R4662:4665 Coq.Init.Logic <> True ind
+R5532:5555 PLF.Smallstep SimpleArith1 test_step_2 prfax
+R5625:5642 PLF.Smallstep <> step_deterministic prfax
+R5789:5821 PLF.Smallstep Temp4.Temp5 bool_step_prop4_holds prfax
+R5889:5904 PLF.Smallstep <> test_multistep_4 prfax
+R5973:5989 PLF.Smallstep <> multistep_congr_2 prfax
+R6056:6070 PLF.Smallstep <> eval__multistep prfax
+R6132:6141 PLF.Smallstep <> step__eval prfax
+R6208:6222 PLF.Smallstep <> multistep__eval prfax
+R6352:6363 PLF.Smallstep <> normalize_ex prfax
+R6550:6568 PLF.Smallstep <> compiler_is_correct prfax

@@ -8573,7 +8573,9 @@ def composites(count):
     for x in factors:
         product *= x
 
-    vars = np.array(list(string.ascii_letters))
+    vars = list(string.ascii_letters)
+    vars.remove("N")
+    vars = np.array(vars)
     np.random.shuffle(vars)
     vars = vars[:seed[0] + 1]
     order = np.arange(seed[0])
@@ -8599,15 +8601,15 @@ def composites(count):
         latex += r"\newtheorem{definition}{Definition} "
     latex += r"\begin{document} "
 
-    coq = "Require Import Lia . "
+    coq = "Require Import Lia . Require Import NArith . Open Scope N_scope . "
 
     np.random.shuffle(order)
     if seed[1]:
-        coq += "Definition <def:" + defs[seed[0]] + "-composite> ( " + var_to_token(vars[-1]) + ": nat ) := "
+        coq += "Definition <def:" + defs[seed[0]] + "-composite> ( " + var_to_token(vars[-1]) + ": N ) := "
         coq += "exists "
         for i in range(0, seed[0]):
             coq += var_to_token(vars[i])
-        coq += ": nat , "
+        coq += ": N , "
 
     # Definition
     if seed[1] and not seed[9]: # Explicit definition.
@@ -14748,7 +14750,7 @@ def composites(count):
         coq += "Theorem <genP:1> : exists "
         for i in range(seed[0]):
             coq += var_to_token(vars[i])
-        coq += ": nat , "
+        coq += ": N , "
 
         if seed[2]: # 6 = ab for some ...
             if seed[10] and np.random.binomial(1, 0.5):
@@ -16296,7 +16298,7 @@ def composites(count):
         coq += "lia . "
 
     latex += r"\end{proof} \end{document} "
-    coq += "Qed . "
+    coq += "Qed . Close Scope N_scope . "
 
     # Print.
     filename = args.path + "/" + args.set + "/composites_" + str(count) + "_" + str(seed[0]) + "_tokenized.txt"
@@ -16377,7 +16379,7 @@ def program(method, d, coeff, vars):
                 if term:
                     line += var_to_token(vars[1]) + "+ "
                 line += var_to_token(vars[2] + str(i))
-                if i < 0:
+                if i > 0:
                     line += "; "
                 prog.append(line)
                 term = True
@@ -16399,7 +16401,7 @@ def program(method, d, coeff, vars):
 def condition(method, d, coeff, vars, coq=False):
     post = []
     
-    grammar = Straightline()
+    grammar = Poly()
     land = "/\ " if coq else r"\land "
     times = "* " if coq else np.random.choice(grammar.times)
     
@@ -16515,7 +16517,7 @@ def condition(method, d, coeff, vars, coq=False):
                         line += times + var_to_token(vars[3])
                     elif j > i:
                         line += times + var_to_token(vars[3]) + "^ " + nat_to_token(j - i)
-                    if j > i:
+                    if any(coeff[i:j]):
                         line += "+ "
             post.append(line)
 
@@ -16589,19 +16591,21 @@ def poly(count):
     latex_cond = condition(seed[2], seed[0], coeff, vars)
     coq_cond = condition(seed[2], seed[0], coeff, vars, coq=True)
 
-    if args.debug:
-        print(seed)
-        print(prog)
-        print(latex_cond)
-        print(len(prog), len(latex_cond), lines)
-        print(coeff)
+    # if args.debug:
+    #     print(seed)
+    #     print(prog)
+    #     print(latex_cond)
+    #     print(len(prog), len(latex_cond), lines)
+    #     print(coeff)
     assert(len(prog) == lines)
     assert(len(latex_cond) == lines)
     assert(len(coq_cond) == lines)
 
     latex = r"\begin{document} "
 
-    coq = "Require Import String . From PLF Require Import Imp . From PLF Require Import Hoare . "
+    coq = "Require Import String . Require Import Arith . From PLF Require Import Hoare . "
+    coq += "Definition " + var_to_token(vars[0]) + ": string := \" " + var_to_token(vars[0]) + "\" . "
+    coq += "Definition " + var_to_token(vars[1]) + ": string := \" " + var_to_token(vars[1]) + "\" . "
     for i in range(seed[0]):
         if (coeff[i] != 0 or seed[2] == 1) and seed[2] != 2:
             coq += "Definition " + var_to_token(vars[2] + str(i)) + ": string := \" " + var_to_token(vars[2] + str(i)) + "\" . "
@@ -16616,14 +16620,14 @@ def poly(count):
         latex += np.random.choice(grammar.such)
         latex += r"\begin{verbatim} "
 
-        coq += "Definition <def:poly> := "
+        coq += "Definition <def:poly> := <{ "
 
         for line in prog:
             latex += line
             coq += line
 
         latex += r"\end{verbatim} \end{definition} \begin{theorem} "
-        coq += ". "
+        coq += "}> . "
 
         if seed[3]:
             latex += np.random.choice(grammar.consider)
@@ -16694,7 +16698,7 @@ def poly(count):
             latex += np.random.choice(grammar.done)
         latex += r". \end{theorem} "
 
-        coq += "Theorem <genH:poly_code_correct> : forall "
+        coq += "Theorem <genP:poly_code_correct> : forall "
         coq += var_to_token(vars[3])
         coq += r": nat , {{ "
         coq += var_to_token(vars[0])
@@ -16786,7 +16790,7 @@ def poly(count):
             latex += np.random.choice(grammar.done)
         latex += r". \end{theorem} "
 
-        coq += "Theorem <genH:poly_code_correct> : forall "
+        coq += "Theorem <genP:poly_code_correct> : forall "
         coq += var_to_token(vars[3])
         coq += r": nat , {{ "
         coq += var_to_token(vars[0])
@@ -16863,7 +16867,7 @@ def poly(count):
                     latex += r"\[ \begin{tabular} {rcl} "
                     for j in range(l):
                         latex += (r"\{ " + latex_cond[j - 1] + r"\} & ") if (j > 0) else r"\{ " + var_to_token(vars[0]) + "= " + var_to_token(vars[3]) + r"\} & "
-                        latex += prog[j][:-2] + "& "
+                        latex += (prog[j][:-2] if prog[j][-2] == ";" else prog[j][:-1]) + "& "
                         latex += r"\{ " + latex_cond[j] + r"\} " + (r"\\ " if (j < l - 1) else "")
                     latex += r"\end{tabular} "
                 elif seed[13] == 3: # \verb|...|
@@ -16999,7 +17003,7 @@ def poly(count):
                         latex += r"\[ \begin{tabular} {rcl} "
                         for j in range(l):
                             latex += (r"\{ " + latex_cond[j - 1] + r"\} & ") if (j > 0) else r"\{ " + var_to_token(vars[0]) + "= " + var_to_token(vars[3]) + r"\} & "
-                            latex += prog[j][:-2] + "& "
+                            latex += (prog[j][:-2] if prog[j][-2] == ";" else prog[j][:-1]) + "& "
                             latex += r"\{ " + latex_cond[j] + r"\} " + (r"\\ " if (j < l - 1) else "")
                         latex += r"\end{tabular} "
                     elif seed[13] == 3: # \verb|...|
@@ -17088,8 +17092,8 @@ def poly(count):
 
     latex += r"\end{proof} \end{document} "
 
-    for line in coq_cond:
-        coq += "apply hoare_seq with ( Q := ( ( " + line + r") ) %assertion ) . "
+    for i in range(len(coq_cond) - 1):
+        coq += "apply hoare_seq with ( Q := ( ( " + coq_cond[i] + r") ) %assertion ) . "
     coq += "all : eapply hoare_consequence_pre ; try ( apply hoare_asgn || assn_auto'' ) . Qed . "
 
     # Print.
@@ -17097,7 +17101,7 @@ def poly(count):
 
     if args.debug:
         detok_coq = detokenize_coq(coq, "poly")
-        proof, _ = check_proof(detok_coq, "")
+        proof, _ = check_proof(detok_coq, "", "poly")
 
         print("Example " + str(count) + ": ", end="")
         print(seed)
