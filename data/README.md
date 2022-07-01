@@ -16,10 +16,10 @@ Script for detokenizing Coq and automatically running evaluations for semantic-l
 Script for generating artificial theorems/proofs for our dataset. Arguments:
 | **Command** | **Notes** |
 | -- | -- |
-| `-t=[even-odd|composites|powers|poly]`,<br>`--type=[even-odd|composites|powers|poly]` | Type of dataset to be generated. Default: even-odd |
+| `-t=[even-odd\|composites\|powers\|poly]`,<br>`--type=[even-odd\|composites\|powers\|poly]` | Type of dataset to be generated. Default: even-odd |
 | `-p=path/to/generate/files`,<br>`--path=path/to/generate/files` | Filepath to generate dataset to. Must have subfolders with subsets already made (i.e. training/validation/test). Default: examples |
 | `-n=<int>`,<br>`--num=<int>` | Number of examples to generate. Default: 500 |
-| `-s=[training|validation|test]`,<br>`--set=[training|validation|test]` | Subset of data to be generated. Default: training |
+| `-s=[training\|validation\|test]`,<br>`--set=[training\|validation\|test]` | Subset of data to be generated. Default: training |
 | `-d`, `--debug` | Use debug mode. Does not write to files and prints extra information to terminal. |
 
 For example, to generate the poly dataset, run the following three commands:
