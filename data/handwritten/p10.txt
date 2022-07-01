@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} A number $ <var:n> $ is a <def:half-google> if there exists an integer $ <var:k> $ such that $ <var:n> = <var:k> ^ <nat:5> . $ \end{definition} \begin{theorem} The number $ <nat:32> $ is a <def:half-google> . \end{theorem} \begin{proof} Notice that $ <nat:32> = <nat:2> ^ <nat:5> $ , and hence it is a <def:half-google> . \end{proof} \end{document}
+~
+Proof

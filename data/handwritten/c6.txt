@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} $ <var:w> \in \mathbb{N} $ is called a <def:2-composite> number if there are $ <nat:a> $ , $ <nat:b> \in \mathbb{N} $ greater than or equal to <nat:2> such that $ <var:a> * <var:b> = <var:w> $ . \end{definition} \begin{theorem} The natural number <nat:918> is <def:2-composite> . \end{theorem} \begin{proof} $ <nat:918> = <nat:27> * <nat:34> $ , therefore according to the definition it is a <def:2-composite> number . \end{proof} \end{document}
+~
+Proof

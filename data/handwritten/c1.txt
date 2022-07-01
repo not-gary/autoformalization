@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} A number $ <var:n> $ is said to be a <def:tail> if $ <var:n> = <var:a> * <var:b> * <var:c> $ and $ <var:a> > <nat:2> $ , $ <var:b> > <nat:2> $ , and $ <var:c> > <nat:2> $ . \end{definition} \begin{theorem} The number $ <nat:957> $ is a <def:tail> . \end{theorem} \begin{proof} $ <nat:957> = <nat:29> * <nat:11> * <nat:3> $ . Moreover , $ <nat:29> > <nat:2> $ , $ <nat:11> > <nat:2> $ , and $ <nat:3> > <nat:2> $ . \end{proof} \end{document}
+~
+Proof

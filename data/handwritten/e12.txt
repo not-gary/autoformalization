@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \begin{document} \begin{theorem} $ <nat:12> \times <var:a> + <nat:46> \times <var:b> + <nat:34> \times <var:c> + <nat:6> $ is even , for any integers $ <var:a> $ , $ <var:b> $ , and $ <var:c> $ . \end{theorem} \begin{proof} <nat:6> is an even number . Furthermore , the terms $ <nat:12> \times <var:a> $ ,  $ <nat:46> \times <var:b> $ , and $ <nat:34> \times <var:c> $ are all even using the fact that multiplying an even number with any integer is an even number . Thus , all terms in the expression are even . Since the sum of even numbers is an even number , the expression must be even . \end{proof} \end{document}
+~
+Proof

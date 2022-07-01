@@ -1,0 +1,3 @@
+\documentclass[12pt]{article} \usepackage{amsthm,amsfonts,amssymb} \newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \begin{document} \begin{definition} An <def:enthusiast> is a natural number $ <var:a> = <var:b> ^ <nat:4> $ , where $ <var:b> \in \mathbb{N} $ . \end{definition} \begin{theorem} <nat:81> is an <def:enthusiast> . \end{theorem} \begin{proof} <nat:81> is <nat:3> raised to the power <nat:4> , and therefore is an <def:enthusiast> . \end{proof} \end{document}
+~
+Proof
