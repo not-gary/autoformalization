@@ -41,21 +41,20 @@ def process_minibatch(x, pad, copy_vocab=None, tgt_vocab=None):
     # If output, check for copied tokens and reference them with the copying vocab.
     # Substitute any copied <nat:+ and <var:+ tokens with generic <nat> and <var> tokens for embeddings.
     if copy_vocab is not None:
-        nats = []
-        vars = []
         vocab = len(tgt_vocab)
-        
         for b in range(batch):
+            nats = []
+            vars = []
             for i in range(x.shape[1]):
                 if x[b, i] >= vocab:
                     if re.match("<nat:.+", copy_vocab[b][x[b, i] - vocab]):
-                        if not x[b, i] in nats:
-                            nats.append(x[b, i])
-                        x[b, i] = tgt_vocab.index("<nat" + str(min(nats.index(x[b, i]), 9)) + ">")
+                        if not copy_vocab[b][x[b, i] - vocab] in nats:
+                            nats.append(copy_vocab[b][x[b, i] - vocab])
+                        x[b, i] = tgt_vocab.index("<nat" + str(min(nats.index(copy_vocab[b][x[b, i] - vocab]), 19)) + ">")
                     elif re.match("<var:.+", copy_vocab[b][x[b, i] - vocab]):
-                        if not x[b, i] in vars:
-                            vars.append(x[b, i])
-                        x[b, i] = tgt_vocab.index("<nat" + str(min(vars.index(x[b, i]), 8)) + ">")
+                        if not copy_vocab[b][x[b, i] - vocab] in vars:
+                            vars.append(copy_vocab[b][x[b, i] - vocab])
+                        x[b, i] = tgt_vocab.index("<var" + str(min(vars.index(copy_vocab[b][x[b, i] - vocab]), 19)) + ">")
                     elif re.match("<def:.+", copy_vocab[b][x[b, i] - vocab]):
                         x[b, i] = tgt_vocab.index("<def>")
                     else:

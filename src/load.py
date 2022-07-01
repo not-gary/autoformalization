@@ -81,8 +81,8 @@ def get_vocabulary(lsent, csent):
     vocab_latex = sorted(lcounts)
     vocab_coq = sorted(ccounts)
 
-    vocab_latex = ['<pad>', '<oov>', '<start>', '<eof>', '<def>'] + ['<nat' + str(x) + '>' for x in range(10)] + ['<var' + str(x) + '>' for x in range(9)] + vocab_latex
-    vocab_coq = ['<pad>', '<oov>', '<start>', '<eof>', '<def>'] + ['<nat' + str(x) + '>' for x in range(10)] + ['<var' + str(x) + '>' for x in range(9)] + vocab_coq
+    vocab_latex = ['<pad>', '<oov>', '<start>', '<eof>', '<def>'] + ['<nat' + str(x) + '>' for x in range(20)] + ['<var' + str(x) + '>' for x in range(20)] + vocab_latex
+    vocab_coq = ['<pad>', '<oov>', '<start>', '<eof>', '<def>'] + ['<nat' + str(x) + '>' for x in range(20)] + ['<var' + str(x) + '>' for x in range(20)] + vocab_coq
 
     return vocab_latex, vocab_coq
 
@@ -117,11 +117,11 @@ def convert_ldict_keys(sentences, vocab, input_seqs, copy_vocabs, names=None):
                 # Replace with generic token.
                 if not sentences[i][j] in nats:
                     nats.append(sentences[i][j])
-                sentences[i][j] = vocab.index("<nat" + str(min(nats.index(sentences[i][j]), 9)) + ">")
+                sentences[i][j] = vocab.index("<nat" + str(min(nats.index(sentences[i][j]), 20)) + ">")
             elif re.match("<var:.+", sentences[i][j]):
                 if not sentences[i][j] in vars:
                     vars.append(sentences[i][j])
-                sentences[i][j] = vocab.index("<var" + str(min(vars.index(sentences[i][j]), 8)) + ">")
+                sentences[i][j] = vocab.index("<var" + str(min(vars.index(sentences[i][j]), 20)) + ">")
             elif re.match("<def:.+", sentences[i][j]):
                 sentences[i][j] = vocab.index("<def>")
             elif sentences[i][j] == "<start>" or sentences[i][j] == "<eof>":
