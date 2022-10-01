@@ -19,7 +19,7 @@ def subsequent_mask(size):
     return torch.from_numpy(subsequent_mask) == 0
 
 # Pad and substitute generic <nat>/<var> tokens in minibatch.
-def process_minibatch(x, pad, copy_vocab=None, tgt_vocab=None):
+def process_minibatch(x, pad, copy_vocab=None, tgt_vocab=None, token_maps=None):
     batch = len(x)
     
     # Get the max seq size for the minibatch.
@@ -41,21 +41,20 @@ def process_minibatch(x, pad, copy_vocab=None, tgt_vocab=None):
     # If output, check for copied tokens and reference them with the copying vocab.
     # Substitute any copied <nat:+ and <var:+ tokens with generic <nat> and <var> tokens for embeddings.
     if copy_vocab is not None:
-        nats = []
-        vars = []
         vocab = len(tgt_vocab)
-        
         for b in range(batch):
+            nats = []
+            vars = []
             for i in range(x.shape[1]):
                 if x[b, i] >= vocab:
                     if re.match("<nat:.+", copy_vocab[b][x[b, i] - vocab]):
-                        if not x[b, i] in nats:
-                            nats.append(x[b, i])
-                        x[b, i] = tgt_vocab.index("<nat" + str(min(nats.index(x[b, i]), 9)) + ">")
+                        if not copy_vocab[b][x[b, i] - vocab] in nats:
+                            nats.append(copy_vocab[b][x[b, i] - vocab])
+                        x[b, i] = tgt_vocab.index(token_maps[b][copy_vocab[b][x[b, i] - vocab]])
                     elif re.match("<var:.+", copy_vocab[b][x[b, i] - vocab]):
-                        if not x[b, i] in vars:
-                            vars.append(x[b, i])
-                        x[b, i] = tgt_vocab.index("<nat" + str(min(vars.index(x[b, i]), 8)) + ">")
+                        if not copy_vocab[b][x[b, i] - vocab] in vars:
+                            vars.append(copy_vocab[b][x[b, i] - vocab])
+                        x[b, i] = tgt_vocab.index(token_maps[b][copy_vocab[b][x[b, i] - vocab]])
                     elif re.match("<def:.+", copy_vocab[b][x[b, i] - vocab]):
                         x[b, i] = tgt_vocab.index("<def>")
                     else:
@@ -66,7 +65,7 @@ def process_minibatch(x, pad, copy_vocab=None, tgt_vocab=None):
 
 class Batch:
     "Object for holding a batch of data with mask during training."
-    def __init__(self, src, trg, input_seqs, copy_vocab, tgt_vocab, pad=0):
+    def __init__(self, src, trg, input_seqs, copy_vocab, tgt_vocab, token_maps, pad=0):
         self.vocab = len(tgt_vocab)
 
         self.src = process_minibatch(src, pad)
@@ -74,7 +73,7 @@ class Batch:
         if trg is not None:
             self.trg = process_minibatch(trg, pad)[:, :-1]
             self.trg_y = process_minibatch(trg, pad)[:, 1:]
-            self.trg_a = process_minibatch(trg, pad, copy_vocab, tgt_vocab)[:, :-1]
+            self.trg_a = process_minibatch(trg, pad, copy_vocab, tgt_vocab, token_maps)[:, :-1]
             self.trg_mask = \
                 self.make_std_mask(self.trg, pad)
             self.ntokens = (self.trg_y != pad).data.sum()
@@ -158,7 +157,7 @@ def to_cuda(t):
         t = t.cuda()
     return t
 
-def greedy_decode(model, src, src_mask, input_seq, copy_vocab, tgt_vocab, max_len):
+def greedy_decode(model, src, src_mask, input_seq, copy_vocab, tgt_vocab, token_maps, max_len):
     start_symbol = tgt_vocab.index("<start>")
 
     memory = model.encode(src, src_mask)
@@ -166,7 +165,7 @@ def greedy_decode(model, src, src_mask, input_seq, copy_vocab, tgt_vocab, max_le
     model.generator.copy_weights = to_cuda(torch.zeros(1, 1, src.size(1)))
     for i in range(max_len-1):
         xs = process_minibatch(ys.tolist(), 0)
-        xs_a = process_minibatch(ys.tolist(), 0, copy_vocab, tgt_vocab)
+        xs_a = process_minibatch(ys.tolist(), 0, copy_vocab, tgt_vocab, token_maps)
         out = model.decode(memory, src_mask, 
                            Variable(xs_a), 
                            Variable(subsequent_mask(xs.size(1))

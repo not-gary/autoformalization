@@ -24,7 +24,7 @@ parser.add_argument('--num_epochs',
                     help='Number of epochs to run training for.')
 parser.add_argument('--batch_size',
                     type=int,
-                    default=10,
+                    default=20,
                     help='Batch size for training.')
 parser.add_argument('--learning_rate',
                     type=float,
@@ -40,15 +40,15 @@ parser.add_argument('--T',
                     help='Recursive passes through encoder/decoder stack.')
 parser.add_argument('--d_model',
                     type=int,
-                    default=64,
+                    default=32,
                     help='Size of encoder/decoder states.')
 parser.add_argument('--d_ff',
                     type=int,
-                    default=512,
+                    default=256,
                     help='Width of the feed-forward layers.')
 parser.add_argument('--H',
                     type=int,
-                    default=16,
+                    default=4,
                     help='Number of attention heads.')
 parser.add_argument('--k',
                     type=int,
@@ -90,7 +90,7 @@ parser.add_argument('--gamma',
                     help='Gamma value for ExponentialLR learning rate annealing.')
 parser.add_argument('--patience',
                     type=int,
-                    default=10,
+                    default=5,
                     help='Patience for ReduceLROnPlateau learning rate annealing.')
 
 args, _ = parser.parse_known_args()
@@ -154,7 +154,8 @@ if not args.test:
             train_seq = train_set['latex']['input_seqs'][train_shuffle][s:e]
             train_copy = train_set['latex']['copy_vocabs'][train_shuffle][s:e]
             train_trg = train_set['coq']['sentences'][train_shuffle][s:e]
-            train_batch = Batch(train_src, train_trg, train_seq, train_copy, vocabs['coq'])
+            train_tok = train_set['latex']['token_maps'][train_shuffle][s:e]
+            train_batch = Batch(train_src, train_trg, train_seq, train_copy, vocabs['coq'], train_tok)
 
             # Update loop.
             s = e
@@ -214,13 +215,14 @@ with torch.no_grad():
         test_seq = test_set['latex']['input_seqs'][s:s + 1]
         test_copy = test_set['latex']['copy_vocabs'][s:s + 1]
         test_trg = test_set['coq']['sentences'][s:s + 1]
-        batch = Batch(test_src, test_trg, test_seq, test_copy, vocabs['coq'])
+        test_tok = test_set['latex']['token_maps'][s:s + 1]
+        batch = Batch(test_src, test_trg, test_seq, test_copy, vocabs['coq'], test_tok)
 
         # Slice out an example from batch and pass it for decoding.
         src = batch.src[:1]
         src_mask = (src != 0).unsqueeze(-2)
 
-        out = greedy_decode(model, src, src_mask, batch.input_seqs, batch.copy_vocab, vocabs['coq'], max_len=batch.trg.size(1))
+        out = greedy_decode(model, src, src_mask, batch.input_seqs, batch.copy_vocab, vocabs['coq'], test_tok, max_len=(350 if test_name == "handwritten" else batch.trg.size(1)))
 
         # Print out the translation.
         print("\n\n=== Example " + str(s) + ": " + example_names['test'][s] + " ===")
@@ -281,7 +283,7 @@ with torch.no_grad():
         elif "composites" in example_names['test'][s]:
             subset = "composites_" + example_names['test'][s].split('_')[-2]
         elif "poly" in example_names['test'][s]:
-            subset = "poly_" + str(target.count('%assertion'))
+            subset = "poly_" + str(target.count('%assertion') + 1)
         else:
             subset = "misc"
 

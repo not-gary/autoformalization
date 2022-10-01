@@ -2,6 +2,12 @@
 data/arithmetic/*
 data/poly/*
 
+# Coq
+*.vo
+*.vos
+*.vok
+*.glob
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

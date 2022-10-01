@@ -1,3 +1,5 @@
+from multiprocessing.pool import MapResult
+import numpy as np
 import argparse
 import subprocess
 import torch
@@ -12,6 +14,12 @@ parser.add_argument('-s', '--source',
 args = None
 args, _ = parser.parse_known_args()
 
+def tabs(n):
+    t = ""
+    for i in range(n):
+        t += "  "
+    return t
+
 def detokenize_coq(content, subset="even-odd"):
     seq = content.split(' ')
     length = len(seq)
@@ -19,27 +27,10 @@ def detokenize_coq(content, subset="even-odd"):
     coq = ""
     hypoth_scope = ""
     hypotheses = []
-    geq = False
     for i in range(length):
         tok = seq[i]
-        # nat -> N patching for composites.
-        if subset == "composites" and tok == "nat":
-            tok = "N"
-        elif subset == "composites" and tok == "Lia":
-            tok = "Lia. Require Import NArith. Open Scope N_scope"
-        elif subset == "composites" and tok == "Qed":
-            tok = "Qed. Close Scope N_scope"
-        # > 1 -> >= 2 bug patching for composites.
-        elif subset == "composites" and tok == ">=":
-            geq = True
-            tok = ">="
-        elif subset == "composites" and geq and (tok == ">" or tok == "<nat:1>"):
-            tok = ">=" if tok == ">" else "2"
-        # Detokenizing generic tokens.
-        elif re.match("<nat:.+", tok) or re.match("<var:.+", tok):
+        if re.match("<nat:.+", tok) or re.match("<var:.+", tok):
             tok = tok[5:-1]
-            if subset == "composites" and tok == "N":
-                tok = "N0"
         elif re.match("<def:.+", tok):
             tok = "placeholder_def"
         elif re.match("<genP:.+", tok):
@@ -133,33 +124,26 @@ def validate(filename):
     file = open(filename, 'r')
     examples = file.read().split('\n\n')
     for example in examples:
-        # Split up the example into name, trans., and target.
         seq = example.split()
-        translation = " ".join(seq[seq.index('Translation:') + 1:seq.index('Target:')])
-        # translation = " ".join(seq[seq.index("Target:") + 1:])
+        # translation = " ".join(seq[seq.index('Translation:') + 1:seq.index('Target:')])
+        translation = " ".join(seq[seq.index("Target:") + 1:])
         target = seq[seq.index("Target:") + 1:]
         target = " ".join(target[target.index("Theorem"):target.index("Proof")])
 
-        # Split by subset and length.
-        if "even-odd" in seq[3]:
-            subset = "even-odd_" + str(seq[3].count('_') - 1)
-            detok_sub = "even-odd"
-        elif "powers" in seq[3]:
-            subset = "powers"
-            detok_sub = "powers"
-        elif "composites" in seq[3]:
-            subset = "composites_" + seq[3].split('_')[-2]
-            detok_sub = "composites"
-        elif "poly" in seq[3]:
-            subset = "poly_" + str(translation.count(r'%assertion'))
-            detok_sub = "poly"
-
-        coq = detokenize_coq(translation, detok_sub)
-        tgt = detokenize_coq(target, detok_sub)[:-1]
+        coq = detokenize_coq(translation)
+        tgt = detokenize_coq(target)[:-1]
 
         proof, thm = check_proof(coq, tgt)
 
-        # Report rolling averages, stats.
+        if "even-odd" in seq[3]:
+            subset = "even-odd_" + str(seq[3].count('_') - 1)
+        elif "powers" in seq[3]:
+            subset = "powers"
+        elif "composites" in seq[3]:
+            subset = "composites_" + seq[3].split('_')[-2]
+        elif "poly" in seq[3]:
+            subset = "poly_" + str(translation.count(r'%assertion'))
+
         if not subset in thm_avgs:
             thm_avgs[subset] = [1.0 * thm]
             proof_avgs[subset] = [1.0 * proof]
@@ -173,13 +157,13 @@ def validate(filename):
         print("Translation " + seq[2] + "\tTheorem: " + str(thm) + "\tProof: " + str(proof))
         print("[" + subset + "]\tTheorem: " + str(torch.sum(torch.Tensor(thm_avgs[subset])) / len(thm_avgs[subset])) + "\tProof: " + str(torch.sum(torch.Tensor(proof_avgs[subset])) / len(proof_avgs[subset])) + "\tBoth: " + str(torch.sum(torch.Tensor(total_avgs[subset])) / len(total_avgs[subset])))
 
-        # Print content of misses.
         if not (proof and thm):
-            print("\n" + coq + "\n")
+            print("\n" + coq)
+            input()
 
     print("\nFinal Stats by Length:")
     for key in sorted(thm_avgs):
-        print("[" + key + "]\tTheorem: " + str(torch.sum(torch.Tensor(thm_avgs[key])) / len(thm_avgs[key])) + "\tProof: " + str(torch.sum(torch.Tensor(proof_avgs[key])) / len(proof_avgs[key])) + "\tBoth: " + str(torch.sum(torch.Tensor(total_avgs[key])) / len(total_avgs[key])))
+        print("[" + subset + "]\tTheorem: " + str(torch.sum(torch.Tensor(thm_avgs[subset])) / len(thm_avgs[subset])) + "\tProof: " + str(torch.sum(torch.Tensor(proof_avgs[subset])) / len(proof_avgs[subset])) + "\tBoth: " + str(torch.sum(torch.Tensor(total_avgs[subset])) / len(total_avgs[subset])))
 
 if __name__ == "__main__":
     validate(args.source)
