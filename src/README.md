@@ -4,7 +4,8 @@
 - Python 3.7 or higher
 - PyTorch (w/ CUDA)
 - NumPy
-- Coq 8.13.2 (to evaluate generated proofs, see `data/README.md`)
+- Coq 8.13.2 or higher (to evaluate generated proofs, see `data/README.md`)
+- Programming Language Foundations (included in `data/plf/`)
 
 **How to Run:**
 - Ensure that all dependencies are installed (see above).

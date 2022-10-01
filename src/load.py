@@ -106,22 +106,26 @@ def get_input_seq(sentences):
     return input_seqs, copy_vocabs
 
 def convert_ldict_keys(sentences, vocab, input_seqs, copy_vocabs, names=None):
+    token_maps = []
     for i in range(len(sentences)):
         sentences[i].insert(0, "<start>")
         sentences[i].append("<eof>")
 
-        nats = []
-        vars = []
+        token_map = {}
+        nats = 0
+        vars = 0
         for j in range(len(sentences[i])):
             if re.match("<nat:.+", sentences[i][j]):
                 # Replace with generic token.
-                if not sentences[i][j] in nats:
-                    nats.append(sentences[i][j])
-                sentences[i][j] = vocab.index("<nat" + str(min(nats.index(sentences[i][j]), 20)) + ">")
+                if not sentences[i][j] in token_map:
+                    token_map[sentences[i][j]] = "<nat" + str(min(nats, 19)) + ">"
+                    nats += 1
+                sentences[i][j] = vocab.index(token_map[sentences[i][j]])
             elif re.match("<var:.+", sentences[i][j]):
-                if not sentences[i][j] in vars:
-                    vars.append(sentences[i][j])
-                sentences[i][j] = vocab.index("<var" + str(min(vars.index(sentences[i][j]), 20)) + ">")
+                if not sentences[i][j] in token_map:
+                    token_map[sentences[i][j]] = "<var" + str(min(vars, 19)) + ">"
+                    vars += 1
+                sentences[i][j] = vocab.index(token_map[sentences[i][j]])
             elif re.match("<def:.+", sentences[i][j]):
                 sentences[i][j] = vocab.index("<def>")
             elif sentences[i][j] == "<start>" or sentences[i][j] == "<eof>":
@@ -131,7 +135,8 @@ def convert_ldict_keys(sentences, vocab, input_seqs, copy_vocabs, names=None):
                     sentences[i][j] = vocab.index(sentences[i][j].lower())
                 except ValueError:
                     sentences[i][j] = vocab.index("<oov>")
-    return {'sentences': sentences, 'input_seqs': input_seqs, 'copy_vocabs': copy_vocabs}
+        token_maps.append(token_map)
+    return {'sentences': sentences, 'input_seqs': input_seqs, 'copy_vocabs': copy_vocabs, 'token_maps': token_maps}
 
 
 def convert_cdict_keys(sentences, vocab, copy_vocabs):
@@ -179,6 +184,7 @@ def pad_sentences(latex, coq):
 
     latex['input_seqs'] = np.asarray(latex['input_seqs'])
     latex['copy_vocabs'] = np.asarray(latex['copy_vocabs'])
+    latex['token_maps'] = np.asarray(latex['token_maps'])
 
     coq['sentences'] = np.asarray(coq['sentences'])
 
