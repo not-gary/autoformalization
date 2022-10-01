@@ -1,6 +1,6 @@
 ## Towards Autoformalization of Mathematics and Code Correctness: Experiments with Elementary Proofs
 
-Repository for code & data related to autoformalization experiments with elementary arithmetic and code correctness proofs. README to be updated if accepted to EMNLP '22.
+Repository for code & data related to autoformalization experiments with elementary arithmetic and code correctness proofs.
 
 Code related to the model, including training and evaluation, is found in `src/`.
 
