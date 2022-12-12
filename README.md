@@ -31,7 +31,7 @@ In order to run the code for dataset generation, training, and evaluation, the f
 <h3 id=Dataset>2. Dataset</h3>
 A pre-generated version of our dataset, used for training and evaluation in the paper, is contained in `data/` alongside scripts for generating examples and automatically evaluating proofs. Included are examples of human-written LaTeX proofs and a version of Programming Language Foundations (Pierce et al. 2010).
 
-`examples.py` is the script for generating new examples for each subset of the dataset. The context-free grammar for each example type is contained in `grammar.py`.
+<br>`examples.py` is the script for generating new examples for each subset of the dataset. The context-free grammar for each example type is contained in `grammar.py`.
 
 `detokenizer.py` is a script for automatically detokenizing generated Coq code and automatically evaluating for correctness using the Coq type-checker.
 
@@ -81,7 +81,7 @@ For details on running this script and usage, see the README in `data/`.
 <h3 id=Model>3. Model</h3>
 Code for the implementation of our model, training, and testing is contained in `src/`. For a detailed tutorial on options, usage, and format, see the README in `src/`.
 
-<b id=Architecture>3.1 Architecture</b>
+<br><b id=Architecture>3.1 Architecture</b>
 
 We use a modified Transformer architecture with the following changes:
 - Numbers, variables, and general mathematical terminology are encoded with generic tokens that still preserve co-reference information.
