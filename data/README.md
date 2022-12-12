@@ -1,7 +1,7 @@
 ## Towards Autoformalization of Mathematics and Code Correctness: Experiments with Elementary Proofs
 
 **Datasets:**
-- `arithmetic`: 12,000 examples from even-odd, composites, and powers in each subset (training, validation, test), plus 45 human-written examples (15 for each subset).
+- `arithmetic`: 12,000 examples from even-odd, composites, and powers in each subset (training, validation, test), plus 45 human-written examples (15 for each subset). Readable examples of the human-written proofs are in `Handwritten_Examples.pdf`.
 - `poly`: 5,000 examples in each subset (training, validation, test).
 
 Examples are pre-tokenized.
