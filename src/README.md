@@ -1,10 +1,10 @@
 ## Towards Autoformalization of Mathematics and Code Correctness: Experiments with Elementary Proofs
 
 **Dependencies:**
-- Python 3.7 or higher
+- Python 3
 - PyTorch (w/ CUDA)
-- NumPy
-- Coq 8.13.2 or higher (to evaluate generated proofs, see `data/README.md`)
+- Numpy
+- Coq 8.13.* w/ coqtop (to evaluate generated proofs, see `data/README.md`)
 - Programming Language Foundations (included in `data/plf/`)
 
 **How to Run:**
@@ -36,3 +36,10 @@
 Example commands:
 - To train on arithmetic data: `python3 translate.py --dataset_path=../data/arithmetic --model=arith`
 - To test on handwritten arithmetic data: `python3 translate.py --dataset_path=../data/arithmetic --model=arith --test=handwritten`
+
+**Code Structure**
+- `translate.py`: Main file including routines for training and test evaluation.
+- `load.py`: Preprocessing of input files/data.
+- `model.py`: Implementation of large architectural features, e.g. encoder, decoder, copy mechanism, etc.
+- `attention.py`: Implementation of attention mechmanisms, including self-attention with relative positional embeddings.
+- `util.py`: Implementation of various utility routines and functions, e.g. label smoothing, loss functions, example batching, etc.
