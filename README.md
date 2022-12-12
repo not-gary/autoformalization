@@ -90,7 +90,10 @@ We use a modified Transformer architecture with the following changes:
 - Absolute positional encodings are removed.
 - Relative positional encodings are included in self-attention.
 - The encoder and decoder are allowed `T` recurrent passes.
+
 The following figure shows the architecture visually:
+
+![image](transformer.jpg)
 
 <b id=Training_a_Model>3.2 Training a Model</b>
 
