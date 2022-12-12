@@ -1,7 +1,7 @@
 import numpy as np
 import string
 import argparse
-from tokenizer import detokenize_coq, check_proof
+from detokenizer import detokenize_coq, check_proof
 
 from grammars import EvenOdd, Powers, Composites, Poly
 
