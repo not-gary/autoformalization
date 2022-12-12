@@ -6,13 +6,13 @@
 
 Examples are pre-tokenized.
 
-**tokenizer . py:**
+`detokenizer.py`:<br>
 Script for detokenizing Coq and automatically running evaluations for semantic-level accuracy. Requires coqtop to work. Evaluations were run on v. 8.13.2. To run:
 - `python3 tokenizer.py -s=path/to/stdout/output/file`
 
-*Note:* If the model outputs something before `=== Example 0: file/name ===`, remove these lines so that Example 0 is the first line. Otherwise, there will be a parsing error.
+*Note:* Ensure that the first line of the file is of the form `=== Example 0: file/name ===`. That is, ensure that nothing has been put before the actual generated output from the model. Otherwise, there will be a parsing error.
 
-**examples . py:**
+`examples.py`:<br>
 Script for generating artificial theorems/proofs for our dataset. Arguments:
 | **Command** | **Notes** |
 | -- | -- |
@@ -27,5 +27,13 @@ For example, to generate the poly dataset, run the following three commands:
 - `python3 examples.py -t=poly -p=poly -n=5000 -s=validation`
 - `python3 examples.py -t=poly -p=poly -n=5000 -s=test`
 
-**grammars . py:**
+In general, make sure that the file structure exists before generating examples. A "safe" file structure would be of the form
+```
+name/
+├training/
+├validation/
+└test/
+```
+
+`grammars.py`:<br>
 Database of context-free grammars for data generation, split by example type.
