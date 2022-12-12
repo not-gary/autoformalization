@@ -22,6 +22,7 @@ Code related to the dataset, as well as pre-generated data, is found in `data/`.
   
 <h3 id=Prerequisites>1. Prerequisites</h3>
 In order to run the code for dataset generation, training, and evaluation, the following dependencies are required:
+
 - Python 3
 - Numpy
 - PyTorch
